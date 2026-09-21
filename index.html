@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
 <title>Persiapan UB 1.1</title>
 <style>
   :root{
@@ -49,6 +50,10 @@
     line-height:1.5; -webkit-font-smoothing:antialiased;}
   .wrap{max-width:var(--maxw); margin:0 auto; padding-inline:16px; padding-block:0 48px;}
 
+  /* KaTeX: jangan lebih besar dari teks sekitarnya */
+  .katex{font-size:1.04em}
+  .katex-display{margin:.4em 0}
+
   /* Header */
   .topbar{position:sticky; top:env(safe-area-inset-top,0px); z-index:30;
     background:color-mix(in srgb, var(--bg) 88%, transparent);
@@ -58,7 +63,16 @@
   .brand{display:flex; align-items:baseline; gap:10px; margin-right:auto; min-width:0;}
   .brand h1{font-family:"Spectral", Georgia, serif; font-weight:700; font-size:19px;
     letter-spacing:-.01em; margin:0; text-wrap:balance;}
-  .brand .sub{font-size:12px; color:var(--muted); font-weight:500; white-space:nowrap;}
+  .brand .sub{font-size:12px; color:var(--muted); font-weight:500; white-space:nowrap;
+    overflow:hidden; text-overflow:ellipsis; max-width:38vw;}
+  .score{display:flex; align-items:center; gap:8px; font-family:"IBM Plex Mono", monospace;
+    font-size:13px; font-weight:600; background:var(--surface); border:1px solid var(--border);
+    border-radius:999px; padding:5px 12px; font-variant-numeric:tabular-nums; box-shadow:var(--shadow);}
+  .score b{color:var(--good-ink)} .score .s2{color:var(--bad-ink)}
+  .score .dot{width:1px; height:14px; background:var(--border-strong)}
+  .progress{height:3px; background:var(--border); position:relative; overflow:hidden;}
+  .progress > i{position:absolute; inset:0 auto 0 0; width:0%;
+    background:linear-gradient(90deg, var(--accent), var(--accent-ink)); transition:width .35s ease;}
 
   button{font-family:inherit; cursor:pointer}
   .btn{appearance:none; border:1px solid var(--border-strong); background:var(--surface);
@@ -67,12 +81,15 @@
     transition:background .15s, border-color .15s, color .15s, transform .05s;}
   .btn:hover{background:var(--surface-2); border-color:var(--faint)}
   .btn:active{transform:translateY(1px)}
+  .btn[aria-pressed="true"]{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink)}
   .btn.ghost{border-color:transparent; background:transparent; color:var(--muted); padding:8px 10px}
   .btn.ghost:hover{background:var(--surface-2); color:var(--text)}
   .btn.ghost[aria-current="page"]{background:var(--accent-soft); color:var(--accent-ink)}
+  .btn:disabled{opacity:.4; cursor:not-allowed}
   .big-btn{background:var(--accent); border-color:var(--accent); color:#fff}
   .big-btn:hover{background:var(--accent-ink); border-color:var(--accent-ink)}
   .btn-lg{font-size:14.5px; padding:12px 18px; border-radius:11px}
+  #tExam[aria-pressed="true"]{background:var(--accent); border-color:var(--accent); color:#fff}
   :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:6px}
 
   /* Hero */
@@ -81,7 +98,6 @@
     letter-spacing:-.02em; margin:0 0 6px; text-wrap:balance;}
   .hero p{margin:0; color:var(--muted); font-size:15px}
 
-  /* Sections */
   .sec{margin-top:26px}
   .sec-ttl{font-size:12px; font-weight:600; font-family:"IBM Plex Mono",monospace;
     text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin:0 0 11px;}
@@ -106,7 +122,6 @@
     text-transform:uppercase; letter-spacing:.04em; color:var(--muted);}
   .resume .rn{font-family:"Spectral", Georgia, serif; font-weight:600; font-size:17px; margin-top:2px}
   .resume .btn{margin-left:auto}
-
   .cta{margin-top:20px}
 
   /* Daftar quiz */
@@ -122,16 +137,19 @@
     transition:border-color .15s, transform .08s;}
   a.qcard:hover{border-color:var(--accent); transform:translateY(-1px)}
   .qcard.soon{opacity:.5; box-shadow:none; cursor:not-allowed}
-  .qhead{display:flex; align-items:center; gap:8px}
+  .chead{display:flex; align-items:center; gap:8px}
   .topik{font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600;
     text-transform:uppercase; letter-spacing:.03em; color:var(--muted); min-width:0;
     overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
   .badge{font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600; letter-spacing:.03em;
     text-transform:uppercase; padding:3px 8px; border-radius:6px; border:1px solid transparent;
-    white-space:nowrap; margin-left:auto;}
+    white-space:nowrap;}
+  .chead .badge{margin-left:auto}
   .b-ready{background:var(--good-soft); color:var(--good-ink);
     border-color:color-mix(in srgb,var(--good) 35%,transparent)}
   .b-soon{background:var(--surface-2); color:var(--faint); border-color:var(--border-strong)}
+  .b-ext{background:var(--accent-soft); color:var(--accent-ink);
+    border-color:color-mix(in srgb,var(--accent) 35%,transparent)}
   .qname{font-family:"Spectral", Georgia, serif; font-weight:600; font-size:17.5px;
     margin:0; letter-spacing:-.01em; text-wrap:pretty; line-height:1.3;}
   .qmeta{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--faint);
@@ -144,6 +162,119 @@
   .barrow .pct{font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600;
     color:var(--faint); font-variant-numeric:tabular-nums;}
   .empty{color:var(--muted); font-size:14px; margin:0; padding:10px 0}
+
+  /* ===== Engine quiz ===== */
+  .tools{display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:16px 0 12px}
+
+  .filterbar{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:0 0 14px;
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:11px 13px; box-shadow:var(--shadow);}
+  .flab{font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600;
+    text-transform:uppercase; letter-spacing:.04em; color:var(--muted); flex:none;}
+  .filterbar select{font-family:inherit; font-size:13px; font-weight:500; color:var(--text);
+    background:var(--raise); border:1px solid var(--border-strong); border-radius:9px;
+    padding:8px 10px; flex:1; min-width:180px; max-width:100%;}
+  .fcount{font-family:"IBM Plex Mono",monospace; font-size:11.5px; font-weight:600;
+    color:var(--faint); font-variant-numeric:tabular-nums; flex:none;}
+
+  .nav-wrap{background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:13px 14px; box-shadow:var(--shadow); margin-bottom:14px;}
+  .nav-head{display:flex; align-items:center; gap:10px; margin-bottom:11px; flex-wrap:wrap}
+  .nav-head .ttl{font-size:12px; font-weight:600; font-family:"IBM Plex Mono",monospace;
+    text-transform:uppercase; letter-spacing:.04em; color:var(--muted);}
+  .nav-head .legend{display:flex; gap:12px; flex-wrap:wrap; margin-left:auto}
+  .legend span{font-size:11px; color:var(--muted); display:inline-flex; align-items:center; gap:5px}
+  .lg{width:10px; height:10px; border-radius:3px; display:inline-block; border:1px solid transparent}
+  .grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(38px,1fr)); gap:7px}
+  .chip{position:relative; aspect-ratio:1/1; border:1px solid var(--border-strong); background:var(--raise);
+    border-radius:9px; font-family:"IBM Plex Mono",monospace; font-size:12.5px; font-weight:600;
+    color:var(--muted); display:grid; place-items:center; padding:0;
+    font-variant-numeric:tabular-nums; transition:background .12s, border-color .12s, color .12s;}
+  .chip:hover{border-color:var(--accent); color:var(--text)}
+  .chip.correct{background:var(--good-soft); border-color:var(--good); color:var(--good-ink)}
+  .chip.wrong{background:var(--bad-soft); border-color:var(--bad); color:var(--bad-ink)}
+  .chip.revealed{background:var(--surface-2); border-color:var(--border-strong); color:var(--muted)}
+  .chip.picked{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink)}
+  .chip.current{outline:2.5px solid var(--accent); outline-offset:1px; border-color:var(--accent); color:var(--text)}
+  .chip.flagged::after{content:""; position:absolute; top:-3px; right:-3px; width:9px; height:9px;
+    background:var(--flag); border:1.5px solid var(--surface); border-radius:50%;}
+  .chip.hiddenf{display:none}
+
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:18px 18px 16px; box-shadow:var(--shadow);}
+  .qhead{display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap}
+  .qnum{font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:600; color:var(--accent-ink);
+    background:var(--accent-soft); border-radius:7px; padding:3px 10px; font-variant-numeric:tabular-nums}
+  .qref{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--faint); font-weight:600}
+  .qmod{font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600; color:var(--muted);
+    background:var(--surface-2); border:1px solid var(--border); border-radius:6px; padding:2px 8px;
+    max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .qstate{font-size:11px; font-weight:600; font-family:"IBM Plex Mono",monospace; letter-spacing:.03em;
+    text-transform:uppercase; color:var(--faint)}
+  .qstate.ok{color:var(--good-ink)} .qstate.no{color:var(--bad-ink)} .qstate.rv{color:var(--muted)}
+  .flagbtn{margin-left:auto; appearance:none; border:1px solid var(--border-strong); background:var(--surface);
+    color:var(--muted); font-size:12.5px; font-weight:600; border-radius:9px; padding:6px 11px;
+    display:inline-flex; align-items:center; gap:6px; transition:background .13s, color .13s, border-color .13s}
+  .flagbtn:hover{background:var(--surface-2); color:var(--text)}
+  .flagbtn.on{background:var(--flag-soft); border-color:var(--flag); color:var(--flag-ink)}
+  .qtext{font-size:16.5px; font-weight:500; margin:0 0 15px; text-wrap:pretty; line-height:1.55}
+  .opts{display:flex; flex-direction:column; gap:9px}
+  .opt{display:flex; align-items:flex-start; gap:12px; width:100%; text-align:left; background:var(--raise);
+    border:1px solid var(--border); border-radius:11px; padding:12px 14px; font-size:14.5px; color:var(--text);
+    line-height:1.45; transition:background .13s, border-color .13s}
+  .opt:hover:not(:disabled){background:var(--surface-2); border-color:var(--border-strong)}
+  .opt:disabled{cursor:default}
+  .opt .key{flex:none; width:23px; height:23px; border-radius:6px; display:grid; place-items:center;
+    font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:600; background:var(--surface);
+    border:1px solid var(--border-strong); color:var(--muted); margin-top:1px}
+  .opt.correct{background:var(--good-soft); border-color:var(--good)}
+  .opt.correct .key{background:var(--good); border-color:var(--good); color:#fff}
+  .opt.correct .otext{color:var(--good-ink); font-weight:600}
+  .opt.wrong{background:var(--bad-soft); border-color:var(--bad)}
+  .opt.wrong .key{background:var(--bad); border-color:var(--bad); color:#fff}
+  .opt.wrong .otext{color:var(--bad-ink)}
+  .opt.dim{opacity:.5}
+  .opt.picked{background:var(--accent-soft); border-color:var(--accent)}
+  .opt.picked .key{background:var(--accent); border-color:var(--accent); color:#fff}
+  .opt.picked .otext{color:var(--accent-ink); font-weight:600}
+
+  .qfoot{margin-top:13px}
+  .reveal-btn{font-size:12.5px; color:var(--muted); background:transparent; border:1px dashed var(--border-strong);
+    border-radius:8px; padding:6px 12px; font-weight:600}
+  .reveal-btn:hover{color:var(--text); background:var(--surface-2)}
+  .exp{margin-top:13px; background:var(--surface-2); border:1px solid var(--border); border-radius:10px;
+    padding:12px 14px; font-size:13.5px; color:var(--muted); line-height:1.6}
+  .exp .lab{font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600; text-transform:uppercase;
+    letter-spacing:.05em; color:var(--accent-ink); display:block; margin-bottom:4px}
+  .exp strong{color:var(--text); font-weight:600}
+
+  .pager{display:flex; align-items:center; gap:12px; margin-top:16px}
+  .pager .count{margin:0 auto; font-family:"IBM Plex Mono",monospace; font-size:13px; font-weight:600;
+    color:var(--muted); font-variant-numeric:tabular-nums}
+  .pgbtn{flex:none; min-width:104px; justify-content:center}
+
+  .exam-bar{display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-top:14px;
+    background:var(--surface); border:1px solid var(--border); border-left:3px solid var(--accent);
+    border-radius:12px; padding:12px 14px; box-shadow:var(--shadow)}
+  .exam-bar .et{font-size:13.5px; font-weight:600; color:var(--text)}
+  .exam-bar .et small{display:block; font-weight:500; color:var(--muted); font-size:12px; margin-top:2px}
+  .exam-bar .btn{margin-left:auto}
+
+  .modal-bg{position:fixed; inset:0; background:rgba(10,15,20,.5); display:grid; place-items:center;
+    z-index:100; padding:20px}
+  .modal{background:var(--surface); border:1px solid var(--border); border-radius:14px;
+    box-shadow:var(--shadow); max-width:360px; width:100%; padding:18px}
+  .modal p{margin:0 0 16px; font-size:14.5px; color:var(--text); line-height:1.5}
+  .modal .row{display:flex; gap:10px; justify-content:flex-end}
+
+  @media (max-width:480px){
+    .brand .sub{display:none}
+    .hero h2{font-size:27px}
+    .qtext{font-size:15.5px}
+    .grid{grid-template-columns:repeat(auto-fill, minmax(34px,1fr)); gap:6px}
+    .pgbtn{min-width:0; flex:1}
+  }
+  @media (prefers-reduced-motion: reduce){ *{transition:none !important} }
 </style>
 </head>
 <body>
@@ -152,16 +283,19 @@
   <div class="topbar-in">
     <div class="brand">
       <h1>Persiapan UB 1.1</h1>
-      <span class="sub">Web belajar</span>
+      <span class="sub" id="brandSub">Web belajar</span>
     </div>
+    <div class="score" id="score" aria-live="polite" hidden></div>
     <a class="btn ghost" id="navHome" href="#/">Home</a>
     <a class="btn ghost" id="navQuiz" href="#/quiz">Daftar Quiz</a>
     <button class="btn ghost" id="tTheme" title="Ganti tema">&#9681; Tema</button>
   </div>
+  <div class="progress" id="topProgress" hidden><i id="bar"></i></div>
 </div>
 
 <div class="wrap">
 
+  <!-- ===== HOME ===== -->
   <div id="viewHome" hidden>
     <div class="hero">
       <h2>Persiapan UB 1.1</h2>
@@ -184,7 +318,7 @@
           <div class="rl">Terakhir dibuka</div>
           <div class="rn" id="resumeName"></div>
         </div>
-        <a class="btn big-btn" id="resumeLink" href="#" target="_blank" rel="noopener">Buka</a>
+        <a class="btn big-btn" id="resumeLink" href="#/quiz">Buka</a>
       </div>
     </div>
 
@@ -193,6 +327,7 @@
     </div>
   </div>
 
+  <!-- ===== DAFTAR QUIZ ===== -->
   <div id="viewQuiz" hidden>
     <div class="sec">
       <p class="sec-ttl">Daftar quiz</p>
@@ -204,45 +339,176 @@
     </div>
   </div>
 
+  <!-- ===== ENGINE QUIZ ===== -->
+  <div id="viewPlay" hidden>
+    <div class="tools">
+      <button class="btn" id="tOpts" title="Acak urutan pilihan jawaban">&#8646; Acak pilihan</button>
+      <button class="btn" id="tQord" title="Acak urutan soal">&#8646; Acak urutan soal</button>
+      <button class="btn" id="tExam" title="Mode ujian: kunci disembunyikan sampai selesai">&#9998; Mode ujian</button>
+      <button class="btn" id="tFlagFilter" aria-pressed="false" title="Tampilkan hanya soal bertanda">&#9873; Hanya bertanda</button>
+      <button class="btn ghost" id="tReset" title="Hapus jawaban &amp; ulangi">&#8635; Ulangi</button>
+    </div>
+
+    <div class="filterbar">
+      <label class="flab" for="fModul">Modul</label>
+      <select id="fModul"></select>
+      <span class="fcount" id="fCount"></span>
+    </div>
+
+    <div class="nav-wrap">
+      <div class="nav-head">
+        <span class="ttl">Daftar soal</span>
+        <div class="legend">
+          <span><i class="lg" style="background:var(--good-soft); border-color:var(--good)"></i> Benar</span>
+          <span><i class="lg" style="background:var(--bad-soft); border-color:var(--bad)"></i> Salah</span>
+          <span><i class="lg" style="background:var(--surface-2); border-color:var(--border-strong)"></i> Dilihat</span>
+          <span><i class="lg" style="background:var(--flag); border-color:var(--flag)"></i> Ditandai</span>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+
+    <div id="stage"></div>
+
+    <div class="pager">
+      <button class="btn pgbtn" id="pPrev">&#8592; Sebelumnya</button>
+      <span class="count" id="pCount">0 / 0</span>
+      <button class="btn pgbtn" id="pNext">Berikutnya &#8594;</button>
+    </div>
+
+    <div class="exam-bar" id="examBar" hidden></div>
+  </div>
+
 </div>
 
+<div class="modal-bg" id="modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true">
+    <p id="modalMsg"></p>
+    <div class="row">
+      <button class="btn ghost" id="modalNo" type="button">Batal</button>
+      <button class="btn big-btn" id="modalYes" type="button">Ya</button>
+    </div>
+  </div>
+</div>
+
+<script src="data/recall-blok-1-1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 <script>
-/* Registry quiz — satu-satunya sumber kebenaran untuk kartu & ringkasan.
-   Menambah quiz = menambah satu objek di sini. */
+/* ===========================================================
+   Registry quiz — satu-satunya sumber kebenaran.
+   kind:"internal" -> dimainkan di engine ini (#/quiz/<id>), butuh
+                      window.QUIZ_BANK[id] dari data/<id>.js
+   kind:"eksternal" -> buka href di tab baru
+   =========================================================== */
 const QUIZZES = [
+  { id:"recall-blok-1-1", judul:"Recall Integratif Blok 1.1", topik:"Blok 1.1 · 10 modul",
+    jumlahSoal:100, status:"siap", kind:"internal" },
   { id:"hemoglobinopati", judul:"Hemoglobinopati", topik:"Genetika Molekuler",
-    jumlahSoal:71, status:"siap", href:"https://zer0braincell-001.github.io/fk-quizz/" },
-  { id:"ub-1-1-2026", judul:"Persiapan UB 1.1 2026", topik:"Belum ditentukan",
-    jumlahSoal:null, status:"segera", href:null },
+    jumlahSoal:71, status:"siap", kind:"eksternal",
+    href:"https://zer0braincell-001.github.io/fk-quizz/" },
   { id:"ub-1-1-materi-2", judul:"UB 1.1 — Materi 2", topik:"Belum ditentukan",
-    jumlahSoal:null, status:"segera", href:null },
+    jumlahSoal:null, status:"segera", kind:null },
   { id:"ub-1-1-materi-3", judul:"UB 1.1 — Materi 3", topik:"Belum ditentukan",
-    jumlahSoal:null, status:"segera", href:null },
+    jumlahSoal:null, status:"segera", kind:null },
   { id:"ub-1-1-materi-4", judul:"UB 1.1 — Materi 4", topik:"Belum ditentukan",
-    jumlahSoal:null, status:"segera", href:null },
+    jumlahSoal:null, status:"segera", kind:null },
 ];
 
 const $ = s => document.querySelector(s);
-const SKEY = "persiapan-ub.v1";
+const KEYLET = ["A","B","C","D","E","F"];
+const APPKEY = "persiapan-ub.v1";
+const quizKey = id => "persiapan-ub.quiz." + id + ".v1";
 
-function loadStore(){ try{ return JSON.parse(localStorage.getItem(SKEY)) || {}; }catch(e){ return {}; } }
-function save(){ try{ localStorage.setItem(SKEY, JSON.stringify(store)); }catch(e){} }
-const store = loadStore();
+/* ---------- localStorage (selalu dibungkus try/catch) ---------- */
+function readLS(k, fallback){
+  try{ const v = JSON.parse(localStorage.getItem(k)); return v || fallback; }
+  catch(e){ return fallback; }
+}
+function writeLS(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+
+const app = readLS(APPKEY, {});
+function saveApp(){ writeLS(APPKEY, app); }
 
 (function initTheme(){
-  document.documentElement.setAttribute("data-theme", store.theme || "light");
+  document.documentElement.setAttribute("data-theme", app.theme || "light");
 })();
 
 $("#tTheme").addEventListener("click", () => {
   const root = document.documentElement;
   const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
   root.setAttribute("data-theme", next);
-  store.theme = next; save();
+  app.theme = next; saveApp();
 });
 
-function markOpened(id){ store.last = { id:id, at:Date.now() }; save(); }
+function markOpened(id){ app.last = { id:id, at:Date.now() }; saveApp(); }
+
+function bankOf(id){ return (window.QUIZ_BANK || {})[id] || null; }
+function quizHref(q){
+  if(q.kind === "internal") return "#/quiz/" + q.id;
+  if(q.kind === "eksternal" && q.href) return q.href;
+  return null;
+}
+function shuffle(a){
+  a = a.slice();
+  for(let i=a.length-1; i>0; i--){ const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]] = [a[j],a[i]]; }
+  return a;
+}
+
+/* ---------- KaTeX + **bold** ---------- */
+const DELIMS = [{left:"$", right:"$", display:false}];
+function katexify(el){
+  if(typeof renderMathInElement !== "function") return; // CDN gagal/offline: biarkan teks mentah
+  try{ renderMathInElement(el, {delimiters:DELIMS, throwOnError:false, errorColor:"#B4534A"}); }
+  catch(e){}
+}
+/* Isi el dengan s: segmen $...$ dibiarkan utuh untuk KaTeX, **x** jadi <strong>.
+   Semua teks lewat textContent -> tidak ada jalur injeksi HTML. */
+function richText(el, s){
+  s = String(s == null ? "" : s);
+  s.split(/(\$[^$]*\$)/g).forEach(part => {
+    if(!part) return;
+    if(part.length > 1 && part.charAt(0) === "$" && part.charAt(part.length-1) === "$"){
+      el.appendChild(document.createTextNode(part));
+      return;
+    }
+    part.split("**").forEach((seg, i) => {
+      if(!seg) return;
+      if(i % 2 === 1){
+        const b = document.createElement("strong"); b.textContent = seg; el.appendChild(b);
+      } else {
+        el.appendChild(document.createTextNode(seg));
+      }
+    });
+  });
+  katexify(el);
+}
+const plain = s => String(s == null ? "" : s).replace(/\$/g, "").replace(/\*\*/g, "");
+
+/* ---------- Modal in-page (bukan confirm() bawaan) ---------- */
+const modal = $("#modal"), modalMsg = $("#modalMsg");
+let modalResolve = null;
+function ask(msg){
+  return new Promise(res => { modalMsg.textContent = msg; modal.hidden = false; modalResolve = res; });
+}
+function closeModal(v){
+  modal.hidden = true;
+  const r = modalResolve; modalResolve = null;
+  if(r) r(v);
+}
+$("#modalYes").addEventListener("click", () => closeModal(true));
+$("#modalNo").addEventListener("click", () => closeModal(false));
+modal.addEventListener("click", e => { if(e.target === modal) closeModal(false); });
 
 /* ---------- Home ---------- */
+function progressOf(q){
+  if(q.kind !== "internal") return null;
+  const bank = bankOf(q.id); if(!bank || !bank.length) return null;
+  const st = readLS(quizKey(q.id), {});
+  const n = st.answers ? Object.keys(st.answers).length : 0;
+  return Math.round(n / bank.length * 100);
+}
+
 function renderHome(){
   const ready = QUIZZES.filter(q => q.status === "siap");
   const soon  = QUIZZES.filter(q => q.status !== "siap");
@@ -250,62 +516,53 @@ function renderHome(){
   $("#stSoon").textContent  = soon.length;
   $("#stSoal").textContent  = ready.reduce((n,q) => n + (q.jumlahSoal || 0), 0);
 
-  // hanya tampil kalau quiz terakhir masih ada di registry & masih siap
-  const last = store.last;
-  const quiz = last && QUIZZES.find(q => q.id === last.id && q.status === "siap" && q.href);
+  const last = app.last;
+  const quiz = last && QUIZZES.find(q => q.id === last.id && q.status === "siap" && quizHref(q));
   if(quiz){
     $("#resumeName").textContent = quiz.judul;
-    $("#resumeLink").href = quiz.href;
+    const link = $("#resumeLink");
+    link.href = quizHref(quiz);
+    if(quiz.kind === "eksternal"){ link.target = "_blank"; link.rel = "noopener"; }
+    else { link.removeAttribute("target"); link.removeAttribute("rel"); }
     $("#resumeSec").hidden = false;
   } else {
     $("#resumeSec").hidden = true;
   }
 }
 
-$("#resumeLink").addEventListener("click", () => {
-  if(store.last) markOpened(store.last.id);
-});
-
 /* ---------- Daftar quiz ---------- */
 function card(q){
-  const ready = q.status === "siap" && q.href;
-  const el = document.createElement(ready ? "a" : "div");
-  el.className = "qcard" + (ready ? "" : " soon");
-  if(ready){
-    el.href = q.href;
-    el.target = "_blank";
-    el.rel = "noopener";
+  const href = q.status === "siap" ? quizHref(q) : null;
+  const ext = q.kind === "eksternal";
+  const el = document.createElement(href ? "a" : "div");
+  el.className = "qcard" + (href ? "" : " soon");
+  if(href){
+    el.href = href;
+    if(ext){ el.target = "_blank"; el.rel = "noopener"; }
     el.addEventListener("click", () => markOpened(q.id));
   } else {
     el.setAttribute("aria-disabled", "true");
   }
 
-  const head = document.createElement("div");
-  head.className = "qhead";
-  const topik = document.createElement("span");
-  topik.className = "topik";
-  topik.textContent = q.topik;
+  const head = document.createElement("div"); head.className = "chead";
+  const topik = document.createElement("span"); topik.className = "topik"; topik.textContent = q.topik;
   const badge = document.createElement("span");
-  badge.className = "badge " + (ready ? "b-ready" : "b-soon");
-  badge.textContent = ready ? "Siap" : "Segera";
+  badge.className = "badge " + (!href ? "b-soon" : (ext ? "b-ext" : "b-ready"));
+  badge.textContent = !href ? "Segera" : (ext ? "Situs lain" : "Siap");
   head.append(topik, badge);
 
-  const name = document.createElement("p");
-  name.className = "qname";
-  name.textContent = q.judul;
+  const name = document.createElement("p"); name.className = "qname"; name.textContent = q.judul;
 
-  const meta = document.createElement("div");
-  meta.className = "qmeta";
+  const meta = document.createElement("div"); meta.className = "qmeta";
   meta.textContent = q.jumlahSoal ? q.jumlahSoal + " soal" : "Jumlah soal belum ada";
 
-  const row = document.createElement("div");
-  row.className = "barrow";
-  const bar = document.createElement("div");
-  bar.className = "bar";
-  bar.appendChild(document.createElement("i")); // progress placeholder: 0%
-  const pct = document.createElement("span");
-  pct.className = "pct";
-  pct.textContent = "0%";
+  const row = document.createElement("div"); row.className = "barrow";
+  const bar = document.createElement("div"); bar.className = "bar";
+  const fill = document.createElement("i"); bar.appendChild(fill);
+  const pct = document.createElement("span"); pct.className = "pct";
+  const p = progressOf(q);
+  fill.style.width = (p || 0) + "%";
+  pct.textContent = (p === null ? 0 : p) + "%";
   row.append(bar, pct);
 
   el.append(head, name, meta, row);
@@ -320,22 +577,401 @@ function renderList(){
   hits.forEach(q => grid.appendChild(card(q)));
   $("#qempty").hidden = hits.length > 0;
 }
-
 $("#q").addEventListener("input", renderList);
 
-/* ---------- Routing ---------- */
+/* ===========================================================
+   ENGINE QUIZ
+   Skema item: { n, modul, q, opsi[], kunciIndex, rationale }
+   Benar = oi === it.kunciIndex. oi = INDEX ASLI opsi, bukan posisi tampil.
+   =========================================================== */
+let P = null;
+
+function loadQuizStore(id){
+  const st = readLS(quizKey(id), {});
+  if(!st.answers) st.answers = {};
+  if(!st.flags) st.flags = {};
+  if(typeof st.so !== "boolean") st.so = true;   // acak pilihan default ON
+  if(typeof st.sq !== "boolean") st.sq = false;
+  if(st.mode !== "exam") st.mode = "study";
+  st.submitted = !!st.submitted;
+  if(typeof st.modul !== "string") st.modul = "*";
+  return st;
+}
+function saveQuiz(){ if(P) writeLS(quizKey(P.id), P.st); }
+
+function buildOptOrders(){
+  P.optOrder = {};
+  P.bank.forEach(it => {
+    const idx = it.opsi.map((_, i) => i);
+    P.optOrder[it.n] = P.st.so ? shuffle(idx) : idx;
+  });
+}
+function filteredIdx(){
+  return P.bank.map((_, i) => i).filter(i => P.st.modul === "*" || P.bank[i].modul === P.st.modul);
+}
+function buildOrder(keepBankIdx){
+  const base = filteredIdx();
+  P.order = P.st.sq ? shuffle(base) : base;
+  if(keepBankIdx != null){
+    const pos = P.order.indexOf(keepBankIdx);
+    P.current = pos >= 0 ? pos : 0;
+  }
+  if(P.current >= P.order.length) P.current = Math.max(0, P.order.length - 1);
+}
+const isCorrect = (it, rec) => !!rec && rec.mode !== "reveal" && rec.oi === it.kunciIndex;
+const revealNow = () => (P.st.mode === "study") || (P.st.mode === "exam" && P.st.submitted);
+
+function buildModulFilter(){
+  const sel = $("#fModul");
+  sel.innerHTML = "";
+  const counts = new Map();
+  P.bank.forEach(it => counts.set(it.modul, (counts.get(it.modul) || 0) + 1));
+  const all = document.createElement("option");
+  all.value = "*"; all.textContent = "Semua modul (" + P.bank.length + ")";
+  sel.appendChild(all);
+  counts.forEach((c, m) => {
+    const o = document.createElement("option");
+    o.value = m; o.textContent = m + " (" + c + ")";
+    sel.appendChild(o);
+  });
+  if(!counts.has(P.st.modul)) P.st.modul = "*";
+  sel.value = P.st.modul;
+}
+
+function buildGrid(){
+  const grid = $("#grid");
+  grid.innerHTML = "";
+  P.order.forEach((bi, pos) => {
+    const it = P.bank[bi];
+    const rec = P.st.answers[it.n];
+    const c = document.createElement("button");
+    c.className = "chip"; c.type = "button"; c.textContent = pos + 1;
+    c.title = "Soal " + (pos+1) + " (asli #" + it.n + ") · " +
+      plain(it.q).slice(0,60) + (it.q.length > 60 ? "…" : "");
+    if(rec){
+      if(revealNow()) c.classList.add(rec.mode === "reveal" ? "revealed" : (isCorrect(it,rec) ? "correct" : "wrong"));
+      else c.classList.add("picked");
+    }
+    if(P.st.flags[it.n]) c.classList.add("flagged");
+    if(pos === P.current) c.classList.add("current");
+    if(P.flagFilter && !P.st.flags[it.n]) c.classList.add("hiddenf");
+    c.addEventListener("click", () => {
+      P.current = pos; renderAll();
+      $("#stage").scrollIntoView({behavior:"smooth", block:"start"});
+    });
+    grid.appendChild(c);
+  });
+}
+
+function renderStage(){
+  const stage = $("#stage");
+  stage.innerHTML = "";
+
+  if(!P.order.length){
+    const c = document.createElement("section"); c.className = "card";
+    const p = document.createElement("p"); p.className = "empty";
+    p.textContent = "Tidak ada soal pada filter modul ini.";
+    c.appendChild(p); stage.appendChild(c);
+    $("#pCount").textContent = "0 / 0";
+    $("#pPrev").disabled = true; $("#pNext").disabled = true;
+    return;
+  }
+
+  const it = P.bank[P.order[P.current]];
+  const rec = P.st.answers[it.n];
+  const reveal = revealNow() && !!rec;
+
+  const card = document.createElement("section"); card.className = "card";
+
+  const head = document.createElement("div"); head.className = "qhead";
+  const num = document.createElement("span"); num.className = "qnum";
+  num.textContent = "Soal " + (P.current + 1); head.appendChild(num);
+  const ref = document.createElement("span"); ref.className = "qref";
+  ref.textContent = "asli #" + it.n; head.appendChild(ref);
+  if(P.st.modul === "*"){
+    const md = document.createElement("span"); md.className = "qmod";
+    md.textContent = it.modul.split(":")[0]; head.appendChild(md);
+  }
+  if(reveal){
+    const st = document.createElement("span");
+    if(rec.mode === "reveal"){ st.className = "qstate rv"; st.textContent = "Dilihat"; }
+    else { const ok = isCorrect(it, rec); st.className = "qstate " + (ok ? "ok" : "no"); st.textContent = ok ? "Benar" : "Salah"; }
+    head.appendChild(st);
+  }
+  const fb = document.createElement("button");
+  fb.className = "flagbtn" + (P.st.flags[it.n] ? " on" : ""); fb.type = "button";
+  fb.textContent = (P.st.flags[it.n] ? "⚑ Ditandai" : "⚐ Tandai");
+  fb.addEventListener("click", () => {
+    if(P.st.flags[it.n]) delete P.st.flags[it.n]; else P.st.flags[it.n] = true;
+    saveQuiz(); renderAll();
+  });
+  head.appendChild(fb);
+  card.appendChild(head);
+
+  const qt = document.createElement("p"); qt.className = "qtext";
+  richText(qt, it.q); card.appendChild(qt);
+
+  const opts = document.createElement("div"); opts.className = "opts";
+  P.optOrder[it.n].forEach((oi, idx) => {
+    const b = document.createElement("button"); b.className = "opt"; b.type = "button";
+    b.dataset.oi = oi;
+    const k = document.createElement("span"); k.className = "key"; k.textContent = KEYLET[idx];
+    const t = document.createElement("span"); t.className = "otext";
+    richText(t, it.opsi[oi]);
+    b.append(k, t);
+    if(reveal){
+      b.disabled = true;
+      if(oi === it.kunciIndex) b.classList.add("correct");
+      else if(rec && rec.oi === oi && rec.mode !== "reveal") b.classList.add("wrong");
+      else b.classList.add("dim");
+    } else {
+      if(P.st.mode === "exam" && rec && rec.oi === oi) b.classList.add("picked");
+      b.addEventListener("click", () => answer(it, P.st.mode === "exam" ? "pick" : "guess", oi));
+    }
+    opts.appendChild(b);
+  });
+  card.appendChild(opts);
+
+  if(reveal){
+    card.appendChild(expBlock(it));
+  } else if(P.st.mode === "study"){
+    const foot = document.createElement("div"); foot.className = "qfoot";
+    const rv = document.createElement("button");
+    rv.className = "reveal-btn"; rv.type = "button"; rv.textContent = "Lihat kunci";
+    rv.addEventListener("click", () => answer(it, "reveal", it.kunciIndex));
+    foot.appendChild(rv); card.appendChild(foot);
+  }
+
+  stage.appendChild(card);
+  $("#pCount").textContent = (P.current + 1) + " / " + P.order.length;
+  $("#pPrev").disabled = P.current === 0;
+  $("#pNext").disabled = P.current === P.order.length - 1;
+}
+
+function expBlock(it){
+  const ex = document.createElement("div"); ex.className = "exp";
+  const lab = document.createElement("span"); lab.className = "lab";
+  // huruf kunci = posisi TAMPIL opsi benar (opsi diacak, jadi bukan selalu B)
+  const shown = P.optOrder[it.n].indexOf(it.kunciIndex);
+  lab.textContent = "Kunci: " + KEYLET[shown < 0 ? 0 : shown];
+  ex.appendChild(lab);
+  const kt = document.createElement("div");
+  richText(kt, it.opsi[it.kunciIndex]);
+  kt.style.color = "var(--text)"; kt.style.fontWeight = "600"; kt.style.marginBottom = "7px";
+  ex.appendChild(kt);
+  const rt = document.createElement("div");
+  richText(rt, it.rationale || "");
+  ex.appendChild(rt);
+  return ex;
+}
+
+function answer(it, kind, oi){
+  if(P.st.mode === "study"){
+    if(P.st.answers[it.n]) return;
+    P.st.answers[it.n] = { oi:oi, mode:kind };
+  } else {
+    if(P.st.submitted) return;
+    P.st.answers[it.n] = { oi:oi, mode:"pick" };
+  }
+  saveQuiz(); renderStage(); buildGrid(); updateScore(); updateExamBar();
+}
+
+function tally(){
+  let benar = 0, salah = 0, done = 0, filled = 0;
+  P.order.forEach(bi => {
+    const it = P.bank[bi], rec = P.st.answers[it.n];
+    if(!rec) return;
+    filled++;
+    if(P.st.mode === "exam" && !P.st.submitted) return;
+    done++;
+    const graded = P.st.mode === "exam" ? true : rec.mode === "guess";
+    if(graded){ isCorrect(it, rec) ? benar++ : salah++; }
+  });
+  return { benar, salah, done, filled, N:P.order.length };
+}
+
+function updateScore(){
+  const t = tally(), el = $("#score");
+  if(P.st.mode === "exam" && !P.st.submitted){
+    el.innerHTML = '<span>Terisi <b style="color:var(--accent-ink)">' + t.filled + '</b>/' + t.N + '</span>';
+    $("#bar").style.width = (t.N ? t.filled / t.N * 100 : 0).toFixed(1) + "%";
+  } else {
+    el.innerHTML = '<span>Benar <b>' + t.benar + '</b></span><span class="dot"></span>' +
+      '<span class="s2">Salah ' + t.salah + '</span><span class="dot"></span>' +
+      '<span>' + t.done + '/' + t.N + '</span>';
+    $("#bar").style.width = (t.N ? t.done / t.N * 100 : 0).toFixed(1) + "%";
+  }
+  $("#fCount").textContent = t.N + " soal";
+}
+
+function updateExamBar(){
+  const examBar = $("#examBar");
+  if(P.st.mode !== "exam"){ examBar.hidden = true; examBar.innerHTML = ""; return; }
+  examBar.hidden = false; examBar.innerHTML = "";
+  const t = tally();
+  const info = document.createElement("span"); info.className = "et";
+
+  if(!P.st.submitted){
+    info.innerHTML = "Mode ujian aktif — kunci disembunyikan.<small>Terisi " + t.filled +
+      " dari " + t.N + " soal. Jawaban masih bisa diubah.</small>";
+    examBar.appendChild(info);
+    const b = document.createElement("button"); b.className = "btn big-btn"; b.textContent = "Selesai & koreksi";
+    b.addEventListener("click", async () => {
+      if(t.filled < t.N && !(await ask("Masih ada " + (t.N - t.filled) + " soal kosong. Koreksi sekarang?"))) return;
+      P.st.submitted = true; saveQuiz(); renderAll();
+      window.scrollTo({top:0, behavior:"smooth"});
+    });
+    examBar.appendChild(b);
+  } else {
+    const pct = t.N ? Math.round(t.benar / t.N * 100) : 0;
+    info.innerHTML = "Hasil ujian: <b>" + t.benar + " / " + t.N + "</b> (" + pct +
+      "%)<small>Kunci &amp; penjelasan sudah terbuka di tiap soal.</small>";
+    examBar.appendChild(info);
+    const b = document.createElement("button"); b.className = "btn"; b.textContent = "Ulangi ujian";
+    b.addEventListener("click", () => {
+      P.st.answers = {}; P.st.submitted = false; saveQuiz();
+      buildOptOrders(); buildOrder(); P.current = 0; renderAll();
+      window.scrollTo({top:0, behavior:"smooth"});
+    });
+    examBar.appendChild(b);
+  }
+}
+
+function renderAll(){ buildGrid(); renderStage(); updateScore(); updateExamBar(); }
+
+/* ---------- Kontrol engine ---------- */
+$("#pPrev").addEventListener("click", () => { if(P && P.current > 0){ P.current--; renderAll(); } });
+$("#pNext").addEventListener("click", () => { if(P && P.current < P.order.length - 1){ P.current++; renderAll(); } });
+
+$("#fModul").addEventListener("change", e => {
+  if(!P) return;
+  P.st.modul = e.target.value; saveQuiz();
+  P.current = 0; buildOrder(); renderAll();
+});
+
+$("#tFlagFilter").addEventListener("click", e => {
+  if(!P) return;
+  P.flagFilter = !P.flagFilter;
+  e.currentTarget.setAttribute("aria-pressed", P.flagFilter ? "true" : "false");
+  buildGrid();
+});
+$("#tOpts").addEventListener("click", e => {
+  if(!P) return;
+  P.st.so = !P.st.so; saveQuiz();
+  e.currentTarget.setAttribute("aria-pressed", P.st.so ? "true" : "false");
+  buildOptOrders(); renderStage();
+});
+$("#tQord").addEventListener("click", e => {
+  if(!P) return;
+  P.st.sq = !P.st.sq; saveQuiz();
+  e.currentTarget.setAttribute("aria-pressed", P.st.sq ? "true" : "false");
+  buildOrder(P.order[P.current]); renderAll();
+});
+$("#tExam").addEventListener("click", async () => {
+  if(!P) return;
+  const turningOn = P.st.mode !== "exam";
+  const has = Object.keys(P.st.answers).length > 0;
+  if(has && !(await ask((turningOn ? "Masuk Mode Ujian" : "Kembali ke mode latihan") +
+      " akan menghapus jawaban saat ini. Lanjut?"))) return;
+  P.st.mode = turningOn ? "exam" : "study";
+  P.st.submitted = false;
+  if(has) P.st.answers = {};
+  saveQuiz();
+  $("#tExam").setAttribute("aria-pressed", turningOn ? "true" : "false");
+  P.current = 0; renderAll(); window.scrollTo({top:0, behavior:"smooth"});
+});
+$("#tReset").addEventListener("click", async () => {
+  if(!P) return;
+  if(!(await ask("Hapus semua jawaban & tanda, lalu mulai ulang?"))) return;
+  P.st.answers = {}; P.st.flags = {}; P.st.submitted = false; saveQuiz();
+  buildOptOrders(); buildOrder(); P.current = 0; renderAll();
+  window.scrollTo({top:0, behavior:"smooth"});
+});
+
+document.addEventListener("keydown", e => {
+  if(!P || $("#viewPlay").hidden) return;
+  if(!modal.hidden) return;
+  const tag = (e.target.tagName || "").toUpperCase();
+  if(tag === "INPUT" || tag === "SELECT" || tag === "TEXTAREA") return;
+  if(tag === "BUTTON" && (e.key === " " || e.key === "Enter")) return;
+  if(e.key === "ArrowLeft" && P.current > 0){ P.current--; renderAll(); }
+  else if(e.key === "ArrowRight" && P.current < P.order.length - 1){ P.current++; renderAll(); }
+  else if(e.key.toLowerCase() === "f"){
+    const it = P.bank[P.order[P.current]];
+    if(!it) return;
+    if(P.st.flags[it.n]) delete P.st.flags[it.n]; else P.st.flags[it.n] = true;
+    saveQuiz(); renderAll();
+  }
+});
+
+/* ---------- Mulai / hentikan sesi quiz ---------- */
+function startQuiz(id){
+  const meta = QUIZZES.find(q => q.id === id && q.kind === "internal");
+  const bank = meta ? bankOf(id) : null;
+  if(!meta || !bank || !bank.length){
+    P = null;
+    const stage = $("#stage"); stage.innerHTML = "";
+    const c = document.createElement("section"); c.className = "card";
+    const h = document.createElement("p"); h.className = "qtext";
+    h.textContent = meta ? "Bank soal untuk quiz ini gagal dimuat." : "Quiz tidak ditemukan.";
+    const p = document.createElement("p"); p.className = "empty";
+    p.textContent = meta
+      ? "File data/" + id + ".js tidak termuat. Pastikan file ada di sebelah index.html."
+      : "Periksa kembali tautannya, atau pilih dari Daftar Quiz.";
+    c.append(h, p); stage.appendChild(c);
+    $("#grid").innerHTML = ""; $("#examBar").hidden = true;
+    $("#pCount").textContent = "0 / 0";
+    $("#pPrev").disabled = true; $("#pNext").disabled = true;
+    $("#fModul").innerHTML = ""; $("#fCount").textContent = "";
+    $("#score").hidden = true; $("#topProgress").hidden = true;
+    $("#brandSub").textContent = "Quiz tidak ditemukan";
+    return;
+  }
+
+  P = { id:id, meta:meta, bank:bank, st:loadQuizStore(id), order:[], optOrder:{}, current:0, flagFilter:false };
+  markOpened(id);
+
+  $("#brandSub").textContent = meta.judul;
+  $("#score").hidden = false;
+  $("#topProgress").hidden = false;
+  $("#tOpts").setAttribute("aria-pressed", P.st.so ? "true" : "false");
+  $("#tQord").setAttribute("aria-pressed", P.st.sq ? "true" : "false");
+  $("#tExam").setAttribute("aria-pressed", P.st.mode === "exam" ? "true" : "false");
+  $("#tFlagFilter").setAttribute("aria-pressed", "false");
+
+  buildModulFilter();
+  buildOptOrders();
+  buildOrder();
+  renderAll();
+}
+
+function stopQuiz(){
+  P = null;
+  $("#score").hidden = true;
+  $("#topProgress").hidden = true;
+  $("#brandSub").textContent = "Web belajar";
+}
+
+/* ---------- Routing: #/ , #/quiz , #/quiz/:id ---------- */
 function setCur(el, on){
-  if(on) el.setAttribute("aria-current", "page");
-  else el.removeAttribute("aria-current");
+  if(on) el.setAttribute("aria-current", "page"); else el.removeAttribute("aria-current");
 }
 
 function route(){
-  const onQuiz = (location.hash || "#/").indexOf("#/quiz") === 0;
-  $("#viewHome").hidden = onQuiz;
-  $("#viewQuiz").hidden = !onQuiz;
-  setCur($("#navHome"), !onQuiz);
-  setCur($("#navQuiz"), onQuiz);
-  if(onQuiz) renderList(); else renderHome();
+  if(!modal.hidden) closeModal(false);
+  const h = location.hash || "#/";
+  const m = h.match(/^#\/quiz\/([^/?]+)/);
+  const view = m ? "play" : (h.indexOf("#/quiz") === 0 ? "list" : "home");
+
+  $("#viewHome").hidden = view !== "home";
+  $("#viewQuiz").hidden = view !== "list";
+  $("#viewPlay").hidden = view !== "play";
+  setCur($("#navHome"), view === "home");
+  setCur($("#navQuiz"), view !== "home");
+
+  if(view === "play") startQuiz(decodeURIComponent(m[1]));
+  else { stopQuiz(); if(view === "list") renderList(); else renderHome(); }
+
   window.scrollTo(0,0);
 }
 
