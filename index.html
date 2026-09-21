@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<title>Persiapan UB 1.1</title>
+<style>
+  :root{
+    --bg:#F3F5F7; --surface:#FFFFFF; --surface-2:#EAEEF2; --raise:#F6F8FA;
+    --text:#1A2230; --muted:#5A6675; --faint:#8A94A2;
+    --border:#DDE3EA; --border-strong:#C6D0DA;
+    --accent:#33698F; --accent-ink:#244F6B; --accent-soft:#DEEAF1;
+    --good:#2A8A5E; --good-soft:#DEF0E8; --good-ink:#1E6B47;
+    --bad:#B4534A; --bad-soft:#F3E3E0; --bad-ink:#8C3B34;
+    --flag:#B5811C; --flag-soft:#F5EBD3; --flag-ink:#8A6210;
+    --shadow:0 1px 2px rgba(26,34,48,.05), 0 4px 16px -8px rgba(26,34,48,.16);
+    --radius:14px; --maxw:820px;
+  }
+  :root:not([data-theme="light"]){
+    @media (prefers-color-scheme: dark){
+      --bg:#12171C; --surface:#1A2027; --surface-2:#222A32; --raise:#252E37;
+      --text:#E7ECF1; --muted:#9AA6B2; --faint:#6E7A86;
+      --border:#2C353F; --border-strong:#3A4550;
+      --accent:#6BA8CC; --accent-ink:#8FC0DD; --accent-soft:#1E2E3A;
+      --good:#54B98A; --good-soft:#183227; --good-ink:#84D7B0;
+      --bad:#D38177; --bad-soft:#33211E; --bad-ink:#E7A79F;
+      --flag:#D6A945; --flag-soft:#302710; --flag-ink:#E7C877;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 20px -10px rgba(0,0,0,.55);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12171C; --surface:#1A2027; --surface-2:#222A32; --raise:#252E37;
+    --text:#E7ECF1; --muted:#9AA6B2; --faint:#6E7A86;
+    --border:#2C353F; --border-strong:#3A4550;
+    --accent:#6BA8CC; --accent-ink:#8FC0DD; --accent-soft:#1E2E3A;
+    --good:#54B98A; --good-soft:#183227; --good-ink:#84D7B0;
+    --bad:#D38177; --bad-soft:#33211E; --bad-ink:#E7A79F;
+    --flag:#D6A945; --flag-soft:#302710; --flag-ink:#E7C877;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 20px -10px rgba(0,0,0,.55);
+  }
+
+  *{box-sizing:border-box}
+  [hidden]{display:none!important}
+  html,body{height:100%}
+  body{margin:0; background:var(--bg); color:var(--text);
+    font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height:1.5; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding-inline:16px; padding-block:0 48px;}
+
+  /* Header */
+  .topbar{position:sticky; top:env(safe-area-inset-top,0px); z-index:30;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:saturate(1.3) blur(10px); border-bottom:1px solid var(--border);}
+  .topbar-in{max-width:var(--maxw); margin:0 auto; padding:11px 16px;
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+  .brand{display:flex; align-items:baseline; gap:10px; margin-right:auto; min-width:0;}
+  .brand h1{font-family:"Spectral", Georgia, serif; font-weight:700; font-size:19px;
+    letter-spacing:-.01em; margin:0; text-wrap:balance;}
+  .brand .sub{font-size:12px; color:var(--muted); font-weight:500; white-space:nowrap;}
+
+  button{font-family:inherit; cursor:pointer}
+  .btn{appearance:none; border:1px solid var(--border-strong); background:var(--surface);
+    color:var(--text); font-size:13px; font-weight:600; border-radius:10px; padding:8px 12px;
+    display:inline-flex; align-items:center; gap:7px; text-decoration:none;
+    transition:background .15s, border-color .15s, color .15s, transform .05s;}
+  .btn:hover{background:var(--surface-2); border-color:var(--faint)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{border-color:transparent; background:transparent; color:var(--muted); padding:8px 10px}
+  .btn.ghost:hover{background:var(--surface-2); color:var(--text)}
+  .btn.ghost[aria-current="page"]{background:var(--accent-soft); color:var(--accent-ink)}
+  .big-btn{background:var(--accent); border-color:var(--accent); color:#fff}
+  .big-btn:hover{background:var(--accent-ink); border-color:var(--accent-ink)}
+  .btn-lg{font-size:14.5px; padding:12px 18px; border-radius:11px}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:6px}
+
+  /* Hero */
+  .hero{padding:34px 0 4px}
+  .hero h2{font-family:"Spectral", Georgia, serif; font-weight:700; font-size:34px;
+    letter-spacing:-.02em; margin:0 0 6px; text-wrap:balance;}
+  .hero p{margin:0; color:var(--muted); font-size:15px}
+
+  /* Sections */
+  .sec{margin-top:26px}
+  .sec-ttl{font-size:12px; font-weight:600; font-family:"IBM Plex Mono",monospace;
+    text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin:0 0 11px;}
+
+  /* Stat tiles */
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px}
+  .stat{background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:13px 15px; box-shadow:var(--shadow);}
+  .stat .k{font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600;
+    text-transform:uppercase; letter-spacing:.04em; color:var(--muted);}
+  .stat .v{font-family:"IBM Plex Mono",monospace; font-size:25px; font-weight:600;
+    font-variant-numeric:tabular-nums; margin-top:3px; line-height:1.15;}
+  .stat.ready .v{color:var(--good-ink)}
+  .stat.soon .v{color:var(--faint)}
+
+  /* Lanjut belajar */
+  .resume{display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+    background:var(--surface); border:1px solid var(--border); border-left:3px solid var(--accent);
+    border-radius:12px; padding:13px 15px; box-shadow:var(--shadow);}
+  .resume .rt{min-width:0}
+  .resume .rl{font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600;
+    text-transform:uppercase; letter-spacing:.04em; color:var(--muted);}
+  .resume .rn{font-family:"Spectral", Georgia, serif; font-weight:600; font-size:17px; margin-top:2px}
+  .resume .btn{margin-left:auto}
+
+  .cta{margin-top:20px}
+
+  /* Daftar quiz */
+  .search{margin:0 0 14px}
+  .search input{width:100%; font-family:inherit; font-size:14px; color:var(--text);
+    background:var(--surface); border:1px solid var(--border-strong); border-radius:10px;
+    padding:10px 13px;}
+  .search input::placeholder{color:var(--faint)}
+  .qgrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(235px,1fr)); gap:13px}
+  .qcard{display:flex; flex-direction:column; gap:9px; background:var(--surface);
+    border:1px solid var(--border); border-radius:var(--radius); padding:15px 16px;
+    box-shadow:var(--shadow); text-decoration:none; color:inherit;
+    transition:border-color .15s, transform .08s;}
+  a.qcard:hover{border-color:var(--accent); transform:translateY(-1px)}
+  .qcard.soon{opacity:.5; box-shadow:none; cursor:not-allowed}
+  .qhead{display:flex; align-items:center; gap:8px}
+  .topik{font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600;
+    text-transform:uppercase; letter-spacing:.03em; color:var(--muted); min-width:0;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .badge{font-family:"IBM Plex Mono",monospace; font-size:10.5px; font-weight:600; letter-spacing:.03em;
+    text-transform:uppercase; padding:3px 8px; border-radius:6px; border:1px solid transparent;
+    white-space:nowrap; margin-left:auto;}
+  .b-ready{background:var(--good-soft); color:var(--good-ink);
+    border-color:color-mix(in srgb,var(--good) 35%,transparent)}
+  .b-soon{background:var(--surface-2); color:var(--faint); border-color:var(--border-strong)}
+  .qname{font-family:"Spectral", Georgia, serif; font-weight:600; font-size:17.5px;
+    margin:0; letter-spacing:-.01em; text-wrap:pretty; line-height:1.3;}
+  .qmeta{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--faint);
+    font-weight:600; font-variant-numeric:tabular-nums;}
+  .bar{height:3px; background:var(--border); border-radius:2px; overflow:hidden; position:relative}
+  .bar > i{position:absolute; inset:0 auto 0 0; width:0%;
+    background:linear-gradient(90deg, var(--accent), var(--accent-ink));}
+  .barrow{display:flex; align-items:center; gap:9px; margin-top:1px}
+  .barrow .bar{flex:1}
+  .barrow .pct{font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600;
+    color:var(--faint); font-variant-numeric:tabular-nums;}
+  .empty{color:var(--muted); font-size:14px; margin:0; padding:10px 0}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <h1>Persiapan UB 1.1</h1>
+      <span class="sub">Web belajar</span>
+    </div>
+    <a class="btn ghost" id="navHome" href="#/">Home</a>
+    <a class="btn ghost" id="navQuiz" href="#/quiz">Daftar Quiz</a>
+    <button class="btn ghost" id="tTheme" title="Ganti tema">&#9681; Tema</button>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div id="viewHome" hidden>
+    <div class="hero">
+      <h2>Persiapan UB 1.1</h2>
+      <p>Web belajar</p>
+    </div>
+
+    <div class="sec">
+      <p class="sec-ttl">Ringkasan</p>
+      <div class="stats">
+        <div class="stat ready"><div class="k">Quiz siap</div><div class="v" id="stReady">0</div></div>
+        <div class="stat soon"><div class="k">Segera</div><div class="v" id="stSoon">0</div></div>
+        <div class="stat"><div class="k">Soal tersedia</div><div class="v" id="stSoal">0</div></div>
+      </div>
+    </div>
+
+    <div class="sec" id="resumeSec" hidden>
+      <p class="sec-ttl">Lanjut belajar</p>
+      <div class="resume">
+        <div class="rt">
+          <div class="rl">Terakhir dibuka</div>
+          <div class="rn" id="resumeName"></div>
+        </div>
+        <a class="btn big-btn" id="resumeLink" href="#" target="_blank" rel="noopener">Buka</a>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a class="btn big-btn btn-lg" href="#/quiz">Daftar Quiz &rarr;</a>
+    </div>
+  </div>
+
+  <div id="viewQuiz" hidden>
+    <div class="sec">
+      <p class="sec-ttl">Daftar quiz</p>
+      <div class="search">
+        <input id="q" type="search" placeholder="Cari judul quiz..." autocomplete="off">
+      </div>
+      <div class="qgrid" id="qgrid"></div>
+      <p class="empty" id="qempty" hidden>Tidak ada quiz yang cocok.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+/* Registry quiz — satu-satunya sumber kebenaran untuk kartu & ringkasan.
+   Menambah quiz = menambah satu objek di sini. */
+const QUIZZES = [
+  { id:"hemoglobinopati", judul:"Hemoglobinopati", topik:"Genetika Molekuler",
+    jumlahSoal:71, status:"siap", href:"https://zer0braincell-001.github.io/fk-quizz/" },
+  { id:"ub-1-1-2026", judul:"Persiapan UB 1.1 2026", topik:"Belum ditentukan",
+    jumlahSoal:null, status:"segera", href:null },
+  { id:"ub-1-1-materi-2", judul:"UB 1.1 — Materi 2", topik:"Belum ditentukan",
+    jumlahSoal:null, status:"segera", href:null },
+  { id:"ub-1-1-materi-3", judul:"UB 1.1 — Materi 3", topik:"Belum ditentukan",
+    jumlahSoal:null, status:"segera", href:null },
+  { id:"ub-1-1-materi-4", judul:"UB 1.1 — Materi 4", topik:"Belum ditentukan",
+    jumlahSoal:null, status:"segera", href:null },
+];
+
+const $ = s => document.querySelector(s);
+const SKEY = "persiapan-ub.v1";
+
+function loadStore(){ try{ return JSON.parse(localStorage.getItem(SKEY)) || {}; }catch(e){ return {}; } }
+function save(){ try{ localStorage.setItem(SKEY, JSON.stringify(store)); }catch(e){} }
+const store = loadStore();
+
+(function initTheme(){
+  document.documentElement.setAttribute("data-theme", store.theme || "light");
+})();
+
+$("#tTheme").addEventListener("click", () => {
+  const root = document.documentElement;
+  const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", next);
+  store.theme = next; save();
+});
+
+function markOpened(id){ store.last = { id:id, at:Date.now() }; save(); }
+
+/* ---------- Home ---------- */
+function renderHome(){
+  const ready = QUIZZES.filter(q => q.status === "siap");
+  const soon  = QUIZZES.filter(q => q.status !== "siap");
+  $("#stReady").textContent = ready.length;
+  $("#stSoon").textContent  = soon.length;
+  $("#stSoal").textContent  = ready.reduce((n,q) => n + (q.jumlahSoal || 0), 0);
+
+  // hanya tampil kalau quiz terakhir masih ada di registry & masih siap
+  const last = store.last;
+  const quiz = last && QUIZZES.find(q => q.id === last.id && q.status === "siap" && q.href);
+  if(quiz){
+    $("#resumeName").textContent = quiz.judul;
+    $("#resumeLink").href = quiz.href;
+    $("#resumeSec").hidden = false;
+  } else {
+    $("#resumeSec").hidden = true;
+  }
+}
+
+$("#resumeLink").addEventListener("click", () => {
+  if(store.last) markOpened(store.last.id);
+});
+
+/* ---------- Daftar quiz ---------- */
+function card(q){
+  const ready = q.status === "siap" && q.href;
+  const el = document.createElement(ready ? "a" : "div");
+  el.className = "qcard" + (ready ? "" : " soon");
+  if(ready){
+    el.href = q.href;
+    el.target = "_blank";
+    el.rel = "noopener";
+    el.addEventListener("click", () => markOpened(q.id));
+  } else {
+    el.setAttribute("aria-disabled", "true");
+  }
+
+  const head = document.createElement("div");
+  head.className = "qhead";
+  const topik = document.createElement("span");
+  topik.className = "topik";
+  topik.textContent = q.topik;
+  const badge = document.createElement("span");
+  badge.className = "badge " + (ready ? "b-ready" : "b-soon");
+  badge.textContent = ready ? "Siap" : "Segera";
+  head.append(topik, badge);
+
+  const name = document.createElement("p");
+  name.className = "qname";
+  name.textContent = q.judul;
+
+  const meta = document.createElement("div");
+  meta.className = "qmeta";
+  meta.textContent = q.jumlahSoal ? q.jumlahSoal + " soal" : "Jumlah soal belum ada";
+
+  const row = document.createElement("div");
+  row.className = "barrow";
+  const bar = document.createElement("div");
+  bar.className = "bar";
+  bar.appendChild(document.createElement("i")); // progress placeholder: 0%
+  const pct = document.createElement("span");
+  pct.className = "pct";
+  pct.textContent = "0%";
+  row.append(bar, pct);
+
+  el.append(head, name, meta, row);
+  return el;
+}
+
+function renderList(){
+  const term = ($("#q").value || "").trim().toLowerCase();
+  const hits = term ? QUIZZES.filter(q => q.judul.toLowerCase().includes(term)) : QUIZZES;
+  const grid = $("#qgrid");
+  grid.innerHTML = "";
+  hits.forEach(q => grid.appendChild(card(q)));
+  $("#qempty").hidden = hits.length > 0;
+}
+
+$("#q").addEventListener("input", renderList);
+
+/* ---------- Routing ---------- */
+function setCur(el, on){
+  if(on) el.setAttribute("aria-current", "page");
+  else el.removeAttribute("aria-current");
+}
+
+function route(){
+  const onQuiz = (location.hash || "#/").indexOf("#/quiz") === 0;
+  $("#viewHome").hidden = onQuiz;
+  $("#viewQuiz").hidden = !onQuiz;
+  setCur($("#navHome"), !onQuiz);
+  setCur($("#navQuiz"), onQuiz);
+  if(onQuiz) renderList(); else renderHome();
+  window.scrollTo(0,0);
+}
+
+window.addEventListener("hashchange", route);
+route();
+</script>
+
+</body>
+</html>
