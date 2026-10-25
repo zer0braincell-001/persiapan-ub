@@ -390,6 +390,12 @@
     </div>
 
     <div class="sec">
+      <p class="sec-ttl">Bank soal asli kakak tingkat</p>
+      <div class="qsgrid" id="b12asli"></div>
+      <p class="empty" style="margin-top:9px">Naskah soal UB tahun-tahun sebelumnya, disajikan apa adanya. Kunci jawaban tidak ditandai di berkas aslinya, jadi tiap soal diberi keterangan apakah kuncinya tertulis di pembahasan atau ditentukan lewat analisis.</p>
+    </div>
+
+    <div class="sec">
       <p class="sec-ttl">Per pola soal</p>
       <div class="chipwrap" id="b12pola"></div>
       <p class="empty" style="margin-top:9px">Pola = kaidah pembeda yang dipakai ulang antar soal. Latih per pola kalau mau mengasah cara menyaring distraktor.</p>
@@ -458,6 +464,7 @@
 <script src="data/ub-1-1-materi-3.js"></script>
 <script src="data/ub-1-1-materi-4.js"></script>
 <script src="data/ub-1-2.js"></script>
+<script src="data/ub-1-2-soal.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 <script>
@@ -472,6 +479,8 @@ const QUIZZES = [
      lewat sembunyi:true. Entri ini tetap wajib ada: startQuiz() mencarinya di sini. */
   { id:"ub-1-2", judul:"Bank Soal UB 1.2", topik:"Blok 1.2 Integumen & Muskuloskeletal \u00b7 PPT 1-6",
     jumlahSoal:435, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-2-soal", judul:"SOAL UB 1.2 (naskah asli)", topik:"Bank soal kakak tingkat \u00b7 98 soal",
+    jumlahSoal:98, status:"siap", kind:"internal", sembunyi:true },
   { id:"recall-blok-1-1", judul:"Recall Integratif Blok 1.1", topik:"Blok 1.1 · 10 modul",
     jumlahSoal:100, status:"siap", kind:"internal" },
   { id:"hemoglobinopati", judul:"Hemoglobinopati", topik:"Genetika Molekuler",
@@ -1165,6 +1174,32 @@ function b12card(label, nilai, href, mati){
   return el;
 }
 
+/* Bank naskah asli: quiz tersendiri, jadi progresnya TERPISAH dari bank per-PPT.
+   Disengaja — ini dipakai sebagai try out, bukan latihan per kuliah. */
+const B12_ASLI = [
+  { id:"ub-1-2-soal", nama:"SOAL UB 1.2" }
+];
+
+function renderAsli(){
+  const wrap = $("#b12asli"); wrap.innerHTML = "";
+  B12_ASLI.forEach(b => {
+    const bank = bankOf(b.id) || [];
+    const st = readLS(quizKey(b.id), {});
+    const dik = st.answers ? Object.keys(st.answers).length : 0;
+    const pct = bank.length ? Math.round(dik / bank.length * 100) : 0;
+    const el = document.createElement(bank.length ? "a" : "div");
+    el.className = "qsc";
+    if(bank.length) el.href = "#/quiz/" + b.id; else el.setAttribute("aria-disabled","true");
+    const l = document.createElement("div"); l.className = "l";
+    l.textContent = b.nama + (bank.length ? "" : " (belum dimuat)");
+    const v = document.createElement("div"); v.className = "v"; v.textContent = bank.length + " soal";
+    const m = document.createElement("div"); m.className = "l"; m.style.marginTop = "4px";
+    m.textContent = pct + "% dikerjakan";
+    el.append(l, v, m);
+    wrap.appendChild(el);
+  });
+}
+
 function renderB12(){
   const bank = bankOf(B12.id) || [];
   const st = readLS(quizKey(B12.id), {});
@@ -1232,6 +1267,8 @@ function renderB12(){
     pl.appendChild(a);
   });
   if(!c.size) pl.textContent = "Belum ada soal.";
+
+  renderAsli();
 }
 
 /* ---------- Routing: #/ , #/quiz , #/quiz/:id[?filter] , #/blok12 ---------- */

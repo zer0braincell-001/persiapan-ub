@@ -39,6 +39,23 @@ jadi quiz Blok 1.1 tampil persis seperti semula. Dropdown `#fModul` menyusut men
 Kelas CSS: `.krow` (baris kuliah), `.qsc` (kartu mulai cepat), `.pchip` (chip pola).
 **Jangan pakai `.chip` untuk chip pola** — `.chip` adalah tombol palet nomor dan punya `aspect-ratio:1/1`.
 
+## Bank naskah asli kakak tingkat (`ub-1-2-soal`, dst.)
+Selain bank soal tersusun (`ub-1-2`), ada bank **naskah asli** UB tahun sebelumnya yang disajikan apa adanya.
+Terdaftar di `B12_ASLI` di `index.html` dan dirender `renderAsli()` sebagai seksi di tab Blok 1.2.
+Quiz-nya **terpisah** dari `ub-1-2`, jadi progresnya sendiri — disengaja, karena dipakai sebagai try out.
+
+Sudah masuk: `ub-1-2-soal` (SOAL UB 1.2, 98 soal).
+Menyusul: COSTRAVER 2023 (88 soal) dan REMED (gabungan Tentir + Rangkuman, ±174 soal setelah dedup).
+
+### Aturan penyajian naskah asli
+Kunci jawaban **tidak ditandai** di keempat berkas sumber, dan beberapa kunci yang tertulis **keliru**.
+Karena itu tiap soal wajib membawa dua penanda, yang ikut dicetak di akhir `rationale`:
+- `asliPenuh:false` → ada opsi yang dilengkapi karena di sumber tertulis `-`, `lupa`, atau duplikat.
+- `kunciDari:"analisis"` → kunci tidak ada di sumber dan ditentukan sendiri; `"pembahasan"` → tertulis di sumber.
+Soal yang sumbernya cacat (opsi kembar, pertanyaan rancu, pembahasan salah) diberi `**Catatan:**` di `rationale`.
+Soal yang bergantung gambar diberi awalan `[Soal bergambar]`; kalau kuncinya juga tak dapat ditentukan, soal itu
+**dikecualikan** dan nomornya dicatat di header file data.
+
 ## Quiz `ub-1-2` — Bank Soal UB Blok 1.2
 `data/ub-1-2.js`, 435 soal, mencakup **PPT 1–6**. Akan terus bertambah sampai PPT 17.
 
