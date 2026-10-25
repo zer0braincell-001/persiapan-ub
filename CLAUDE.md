@@ -23,6 +23,10 @@ Semua sisanya dijadikan **text node**. Jadi `<b>`, `<i>`, `<br>`, `<span>` akan 
 - Hindari karakter `$` di soal/penjelasan kecuali memang rumus KaTeX — `$` tunggal memecah parser.
 - **Bug yang masih ada:** `data/hemoglobinopati.js` memuat ~74 tag `<b>`/`<i>` yang tampil mentah. Belum dibersihkan.
 
+## Nav
+Tab topbar: **Home · 1.1 · 1.2 · Tema**. Label sengaja dipendekkan jadi angka blok saja.
+Tombol shortcut "Daftar Quiz" di halaman Home sudah dihapus (kelas `.cta` kini tidak terpakai).
+
 ## Tab Blok 1.2 (`#/blok12`)
 Blok 1.2 punya **tab sendiri** di topbar, bukan kartu di Daftar Quiz (Daftar Quiz = Blok 1.1).
 View `#viewB12`, dirender `renderB12()`. Isinya: kartu Mulai cepat → daftar 17 kuliah → chip per pola.
@@ -38,6 +42,36 @@ jadi quiz Blok 1.1 tampil persis seperti semula. Dropdown `#fModul` menyusut men
 
 Kelas CSS: `.krow` (baris kuliah), `.qsc` (kartu mulai cepat), `.pchip` (chip pola).
 **Jangan pakai `.chip` untuk chip pola** — `.chip` adalah tombol palet nomor dan punya `aspect-ratio:1/1`.
+
+## Bank naskah asli kakak tingkat (`ub-1-2-soal`, dst.)
+Selain bank soal tersusun (`ub-1-2`), ada bank **naskah asli** UB tahun sebelumnya yang disajikan apa adanya.
+Terdaftar di `B12_ASLI` di `index.html` dan dirender `renderAsli()` sebagai seksi di tab Blok 1.2.
+Quiz-nya **terpisah** dari `ub-1-2`, jadi progresnya sendiri — disengaja, karena dipakai sebagai try out.
+
+Tiga bank, total **315 soal**:
+| id | asal | soal | catatan |
+|---|---|---|---|
+| `ub-1-2-soal` | SOAL UB 1.2 | 98 | dari 100; nomor 24 & 48 dikecualikan |
+| `ub-1-2-costraver` | COSTRAVER 2023 | 87 | dari 88; nomor 26 dikecualikan, 89 kosong di sumber |
+| `ub-1-2-remed` | Tentir + Rangkuman **digabung** | 130 | paper yang sama, 56 butir beririsan |
+
+REMED sengaja digabung: Tentir punya blok Pembahasan tapi opsinya banyak yang kosong,
+Rangkuman punya jawaban tercatat tapi sebagian besar butirnya BUKAN pilihan ganda.
+Digabung keduanya saling menambal; dipisah, keduanya pincang dan user mengerjakan 56 soal dua kali.
+
+### Aturan penyajian naskah asli
+Kunci jawaban **tidak ditandai** di keempat berkas sumber, dan beberapa kunci yang tertulis **keliru**.
+Karena itu tiap soal wajib membawa dua penanda, yang ikut dicetak di akhir `rationale`:
+- `asliPenuh:false` → ada opsi yang dilengkapi karena di sumber tertulis `-`, `lupa`, atau duplikat.
+- `kunciDari` → dari mana kunci berasal: `"pembahasan"` (blok Pembahasan di sumber),
+  `"rangkuman"` (jawaban yang dicatat berkas Rangkuman), atau `"analisis"` (ditentukan sendiri).
+
+Angka keseluruhan: dari 315 soal, hanya **155 yang opsinya utuh dari sumber**; 160 sisanya dilengkapi.
+Kunci: 100 dari Pembahasan, 74 dari Rangkuman, 141 dari analisis. **Tidak satu pun berkas sumber
+menandai kunci jawabannya**, jadi penanda ini wajib ada dan jangan dihapus.
+Soal yang sumbernya cacat (opsi kembar, pertanyaan rancu, pembahasan salah) diberi `**Catatan:**` di `rationale`.
+Soal yang bergantung gambar diberi awalan `[Soal bergambar]`; kalau kuncinya juga tak dapat ditentukan, soal itu
+**dikecualikan** dan nomornya dicatat di header file data.
 
 ## Quiz `ub-1-2` — Bank Soal UB Blok 1.2
 `data/ub-1-2.js`, 435 soal, mencakup **PPT 1–6**. Akan terus bertambah sampai PPT 17.
