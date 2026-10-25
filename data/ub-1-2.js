@@ -1,9 +1,17 @@
 /* Bank soal UB Blok 1.2 — Integumen & Muskuloskeletal.
    Sumber: PPT kuliah FK UNS + 4 bank soal UB (Rangkuman, Costraver, SOAL UB 1.2, Tentir Remed).
-   435 soal, PPT 1-6. Akan bertambah seiring PPT 7-17 masuk.
+   435 soal, PPT 1-6. 119 di antaranya dari bank soal UB asli.
+   Akan terus bertambah sampai PPT 17.
+
    Dimuat via <script src> (bukan fetch) supaya jalan di Pages DAN file://.
-   Skema: { n, modul, q, opsi[5], kunciIndex, kunci, rationale }. Benar = opsi[kunciIndex].
-   Markup rationale memakai **tebal** (bukan HTML) sesuai richText() di index.html. */
+
+   Skema engine lama  : { n, modul, q, opsi[], kunciIndex, kunci, rationale }
+   Field tambahan     : { ppt, grup, pola, ubAsli, kodeUB, bahas, diskriminator }
+                        dipakai tab Blok 1.2 untuk filter per-PPT dan per-pola.
+                        'rationale' = gabungan bahas + diskriminator + penanda sumber,
+                        sengaja mandiri supaya engine lama tetap bisa memainkannya apa adanya.
+
+   Markup memakai **tebal** (BUKAN HTML) sesuai richText() di index.html. */
 window.QUIZ_BANK = window.QUIZ_BANK || {};
 window.QUIZ_BANK["ub-1-2"] = [
  {
@@ -19,7 +27,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Serabut elastis",
-  "rationale": "**[UB asli]** Serabut elastis memberi **elasticity** — kemampuan kembali ke bentuk asal. Serabut kolagen memberi **extensibility** — kuat menahan regangan tanpa robek, tapi tidak memulihkan bentuk. Keduanya ada di lapisan retikuler dermis dan selalu dipasangkan sebagai distraktor.  —  **Pola Ciri tetangga:** Kata **“kembali”** → elastis. Kata **“tanpa luka / tidak robek”** → kolagen."
+  "rationale": "**[UB asli]** Serabut elastis memberi **elasticity** — kemampuan kembali ke bentuk asal. Serabut kolagen memberi **extensibility** — kuat menahan regangan tanpa robek, tapi tidak memulihkan bentuk. Keduanya ada di lapisan retikuler dermis dan selalu dipasangkan sebagai distraktor.  —  **Pola Ciri tetangga:** Kata **“kembali”** → elastis. Kata **“tanpa luka / tidak robek”** → kolagen.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Serabut elastis memberi **elasticity** — kemampuan kembali ke bentuk asal. Serabut kolagen memberi **extensibility** — kuat menahan regangan tanpa robek, tapi tidak memulihkan bentuk. Keduanya ada di lapisan retikuler dermis dan selalu dipasangkan sebagai distraktor.",
+  "diskriminator": "Kata **“kembali”** → elastis. Kata **“tanpa luka / tidak robek”** → kolagen."
  },
  {
   "n": 2,
@@ -34,7 +49,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 4,
   "kunci": "Melanin",
-  "rationale": "**[UB asli]** Jalurnya: **tirosin → (tirosinase) → DOPA → dopaquinon → melanin**. Tirosinase adalah enzim pembatas laju, jadi menghambatnya menghentikan produksi melanin — itulah cara kerja krim pemutih. Kebalikannya juga diujikan: kelebihan tirosinase → kulit menghitam.  —  **Pola Turunkan dari prinsip:** Tirosinase hanya muncul di satu jalur: **melanin**. Keratin, sebum, dan lipid punya jalur lain sama sekali."
+  "rationale": "**[UB asli]** Jalurnya: **tirosin → (tirosinase) → DOPA → dopaquinon → melanin**. Tirosinase adalah enzim pembatas laju, jadi menghambatnya menghentikan produksi melanin — itulah cara kerja krim pemutih. Kebalikannya juga diujikan: kelebihan tirosinase → kulit menghitam.  —  **Pola Turunkan dari prinsip:** Tirosinase hanya muncul di satu jalur: **melanin**. Keratin, sebum, dan lipid punya jalur lain sama sekali.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Jalurnya: **tirosin → (tirosinase) → DOPA → dopaquinon → melanin**. Tirosinase adalah enzim pembatas laju, jadi menghambatnya menghentikan produksi melanin — itulah cara kerja krim pemutih. Kebalikannya juga diujikan: kelebihan tirosinase → kulit menghitam.",
+  "diskriminator": "Tirosinase hanya muncul di satu jalur: **melanin**. Keratin, sebum, dan lipid punya jalur lain sama sekali."
  },
  {
   "n": 3,
@@ -49,7 +71,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Berlamel konsentris",
-  "rationale": "**[UB asli]** Tiap distraktor adalah ciri reseptor lain yang sungguhan: **papila dermis** → C. Meissner; **bercabang spray-like** → C. Ruffini; **bulat sferis kapsul tebal** → C. Krause; **stratum basale** → C. Merkel. Inilah bentuk soal UB yang paling khas.  —  **Pola Ciri tetangga:** **Berlamel konsentris** (seperti irisan bawang) hanya dimiliki Vater Pacini. Tidak ada reseptor kulit lain yang berlamel."
+  "rationale": "**[UB asli]** Tiap distraktor adalah ciri reseptor lain yang sungguhan: **papila dermis** → C. Meissner; **bercabang spray-like** → C. Ruffini; **bulat sferis kapsul tebal** → C. Krause; **stratum basale** → C. Merkel. Inilah bentuk soal UB yang paling khas.  —  **Pola Ciri tetangga:** **Berlamel konsentris** (seperti irisan bawang) hanya dimiliki Vater Pacini. Tidak ada reseptor kulit lain yang berlamel.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Tiap distraktor adalah ciri reseptor lain yang sungguhan: **papila dermis** → C. Meissner; **bercabang spray-like** → C. Ruffini; **bulat sferis kapsul tebal** → C. Krause; **stratum basale** → C. Merkel. Inilah bentuk soal UB yang paling khas.",
+  "diskriminator": "**Berlamel konsentris** (seperti irisan bawang) hanya dimiliki Vater Pacini. Tidak ada reseptor kulit lain yang berlamel."
  },
  {
   "n": 4,
@@ -64,7 +93,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Terdapat anchoring fibril",
-  "rationale": "**[UB asli]** Lapisan papiler = **JP longgar** dengan fibroblas, makrofag, sel mast, leukosit; isi khasnya **papila dermis, anchoring fibril (kolagen tipe VII), dan korpuskulum Meissner**. Distraktornya: avaskuler → epidermis; adiposa → subkutan; JP padat ireguler → lapisan retikuler; C. Merkel → stratum basale epidermis.  —  **Pola Ciri tetangga:** **Anchoring fibril = kolagen tipe VII** dan hanya ada di papiler. Kolagen **tipe I** ada di retikuler."
+  "rationale": "**[UB asli]** Lapisan papiler = **JP longgar** dengan fibroblas, makrofag, sel mast, leukosit; isi khasnya **papila dermis, anchoring fibril (kolagen tipe VII), dan korpuskulum Meissner**. Distraktornya: avaskuler → epidermis; adiposa → subkutan; JP padat ireguler → lapisan retikuler; C. Merkel → stratum basale epidermis.  —  **Pola Ciri tetangga:** **Anchoring fibril = kolagen tipe VII** dan hanya ada di papiler. Kolagen **tipe I** ada di retikuler.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Lapisan papiler = **JP longgar** dengan fibroblas, makrofag, sel mast, leukosit; isi khasnya **papila dermis, anchoring fibril (kolagen tipe VII), dan korpuskulum Meissner**. Distraktornya: avaskuler → epidermis; adiposa → subkutan; JP padat ireguler → lapisan retikuler; C. Merkel → stratum basale epidermis.",
+  "diskriminator": "**Anchoring fibril = kolagen tipe VII** dan hanya ada di papiler. Kolagen **tipe I** ada di retikuler."
  },
  {
   "n": 5,
@@ -79,7 +115,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sel berbentuk kuboid atau kolumnar dengan aksis tegak lurus permukaan kulit",
-  "rationale": "**[UB asli]** Stratum basale: sel **kuboid/silindris dengan aksis panjang tegak lurus permukaan**, melekat ke membran basal lewat **hemidesmosom**, antar sel lewat **desmosom**, dan mitosisnya intens — pusat regenerasi epidermis. Distraktornya: keratohialin → granulosum; tonofibril → spinosum; sel Langerhans → terutama spinosum.  —  **Pola Ciri tetangga:** Bentuk **kuboid/kolumnar tegak lurus permukaan**. Semua stratum di atasnya berbentuk pipih atau poligonal."
+  "rationale": "**[UB asli]** Stratum basale: sel **kuboid/silindris dengan aksis panjang tegak lurus permukaan**, melekat ke membran basal lewat **hemidesmosom**, antar sel lewat **desmosom**, dan mitosisnya intens — pusat regenerasi epidermis. Distraktornya: keratohialin → granulosum; tonofibril → spinosum; sel Langerhans → terutama spinosum.  —  **Pola Ciri tetangga:** Bentuk **kuboid/kolumnar tegak lurus permukaan**. Semua stratum di atasnya berbentuk pipih atau poligonal.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Stratum basale: sel **kuboid/silindris dengan aksis panjang tegak lurus permukaan**, melekat ke membran basal lewat **hemidesmosom**, antar sel lewat **desmosom**, dan mitosisnya intens — pusat regenerasi epidermis. Distraktornya: keratohialin → granulosum; tonofibril → spinosum; sel Langerhans → terutama spinosum.",
+  "diskriminator": "Bentuk **kuboid/kolumnar tegak lurus permukaan**. Semua stratum di atasnya berbentuk pipih atau poligonal."
  },
  {
   "n": 6,
@@ -94,7 +137,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Lunula",
-  "rationale": "**[UB asli]** **Lunula** (dari luna = bulan) adalah area keputihan bulan sabit di proksimal badan kuku. **Eponikium** = perluasan stratum korneum yang menutupi dorsal jari di proksimal (kutikula). **Hiponikium** = penebalan stratum korneum di bawah tepi bebas kuku, distal. **Matriks** = pusat regenerasi di proksimal dasar kuku.  —  **Pola Kategori jawaban:** Bentuk **bulan sabit putih** → lunula. Epo = di atas/proksimal, Hipo = di bawah/distal."
+  "rationale": "**[UB asli]** **Lunula** (dari luna = bulan) adalah area keputihan bulan sabit di proksimal badan kuku. **Eponikium** = perluasan stratum korneum yang menutupi dorsal jari di proksimal (kutikula). **Hiponikium** = penebalan stratum korneum di bawah tepi bebas kuku, distal. **Matriks** = pusat regenerasi di proksimal dasar kuku.  —  **Pola Kategori jawaban:** Bentuk **bulan sabit putih** → lunula. Epo = di atas/proksimal, Hipo = di bawah/distal.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Lunula** (dari luna = bulan) adalah area keputihan bulan sabit di proksimal badan kuku. **Eponikium** = perluasan stratum korneum yang menutupi dorsal jari di proksimal (kutikula). **Hiponikium** = penebalan stratum korneum di bawah tepi bebas kuku, distal. **Matriks** = pusat regenerasi di proksimal dasar kuku.",
+  "diskriminator": "Bentuk **bulan sabit putih** → lunula. Epo = di atas/proksimal, Hipo = di bawah/distal."
  },
  {
   "n": 7,
@@ -109,7 +159,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Vagina eksterna",
-  "rationale": "**[UB asli]** Stratum Malphigi = **stratum basale + stratum spinosum**. Vagina eksterna terdiri atas tepat dua lapisan: yang identik stratum basale (luar) dan yang identik stratum spinosum (dalam) — jadi vagina eksterna = Malphigi. Vagina interna punya tiga lapis: Henle (granulosum), Huxley (lusidum), kutikula (korneum).  —  **Pola Turunkan dari prinsip:** Malphigi = **dua lapisan**. Hanya vagina eksterna yang terdiri dari dua lapisan; vagina interna tiga."
+  "rationale": "**[UB asli]** Stratum Malphigi = **stratum basale + stratum spinosum**. Vagina eksterna terdiri atas tepat dua lapisan: yang identik stratum basale (luar) dan yang identik stratum spinosum (dalam) — jadi vagina eksterna = Malphigi. Vagina interna punya tiga lapis: Henle (granulosum), Huxley (lusidum), kutikula (korneum).  —  **Pola Turunkan dari prinsip:** Malphigi = **dua lapisan**. Hanya vagina eksterna yang terdiri dari dua lapisan; vagina interna tiga.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Stratum Malphigi = **stratum basale + stratum spinosum**. Vagina eksterna terdiri atas tepat dua lapisan: yang identik stratum basale (luar) dan yang identik stratum spinosum (dalam) — jadi vagina eksterna = Malphigi. Vagina interna punya tiga lapis: Henle (granulosum), Huxley (lusidum), kutikula (korneum).",
+  "diskriminator": "Malphigi = **dua lapisan**. Hanya vagina eksterna yang terdiri dari dua lapisan; vagina interna tiga."
  },
  {
   "n": 8,
@@ -124,7 +181,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Stratum lusidum",
-  "rationale": "Vagina interna dari luar ke dalam: **Henle = granulosum**, **Huxley = lusidum**, **kutikula = korneum**. Gabungkan dengan vagina eksterna (basale + spinosum) dan kamu mendapatkan lima lapisan epidermis dalam urutan yang sama — folikel rambut adalah epidermis yang melekuk masuk.  —  **Pola Pasangan berlawanan:** Urutan alfabetis **He**nle sebelum **Hu**xley, sejalan dengan granulosum sebelum lusidum."
+  "rationale": "Vagina interna dari luar ke dalam: **Henle = granulosum**, **Huxley = lusidum**, **kutikula = korneum**. Gabungkan dengan vagina eksterna (basale + spinosum) dan kamu mendapatkan lima lapisan epidermis dalam urutan yang sama — folikel rambut adalah epidermis yang melekuk masuk.  —  **Pola Pasangan berlawanan:** Urutan alfabetis **He**nle sebelum **Hu**xley, sejalan dengan granulosum sebelum lusidum.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Vagina interna dari luar ke dalam: **Henle = granulosum**, **Huxley = lusidum**, **kutikula = korneum**. Gabungkan dengan vagina eksterna (basale + spinosum) dan kamu mendapatkan lima lapisan epidermis dalam urutan yang sama — folikel rambut adalah epidermis yang melekuk masuk.",
+  "diskriminator": "Urutan alfabetis **He**nle sebelum **Hu**xley, sejalan dengan granulosum sebelum lusidum."
  },
  {
   "n": 9,
@@ -139,7 +203,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 4,
   "kunci": "Glassy membrane (membran vitreus)",
-  "rationale": "**[UB asli]** Di antara selubung akar dermal (jaringan ikat, serupa dermis) dan selubung akar epidermal (epitel, serupa epidermis) terdapat **glassy membrane / membran vitreus**, yang serupa dengan **membran basal** di bawah epidermis kulit. Logikanya konsisten: folikel meniru susunan kulit, termasuk membran basal di antara epitel dan jaringan ikatnya.  —  **Pola Kategori jawaban:** Posisinya **di antara dua selubung**. Henle, Huxley, kutikula, dan vagina semuanya berada di dalam selubung epidermal."
+  "rationale": "**[UB asli]** Di antara selubung akar dermal (jaringan ikat, serupa dermis) dan selubung akar epidermal (epitel, serupa epidermis) terdapat **glassy membrane / membran vitreus**, yang serupa dengan **membran basal** di bawah epidermis kulit. Logikanya konsisten: folikel meniru susunan kulit, termasuk membran basal di antara epitel dan jaringan ikatnya.  —  **Pola Kategori jawaban:** Posisinya **di antara dua selubung**. Henle, Huxley, kutikula, dan vagina semuanya berada di dalam selubung epidermal.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Di antara selubung akar dermal (jaringan ikat, serupa dermis) dan selubung akar epidermal (epitel, serupa epidermis) terdapat **glassy membrane / membran vitreus**, yang serupa dengan **membran basal** di bawah epidermis kulit. Logikanya konsisten: folikel meniru susunan kulit, termasuk membran basal di antara epitel dan jaringan ikatnya.",
+  "diskriminator": "Posisinya **di antara dua selubung**. Henle, Huxley, kutikula, dan vagina semuanya berada di dalam selubung epidermal."
  },
  {
   "n": 10,
@@ -154,7 +225,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Kelenjar ekrin",
-  "rationale": "**[UB asli]** Konteksnya **termoregulasi**, dan hanya kelenjar **ekrin (= merokrin = kelenjar keringat sejati)** yang berperan di situ: tersebar luas, sekretnya cair dan mudah menguap. Kelenjar apokrin **tidak** berperan dalam termoregulasi. Perhatikan opsi “holokrin” — itu nama **cara sekresi**, bukan nama kelenjar; distraktor lintas kategori.  —  **Pola Turunkan dari prinsip:** **Termoregulasi → ekrin.** Apokrin hanya untuk emotional &amp; sexual sweating."
+  "rationale": "**[UB asli]** Konteksnya **termoregulasi**, dan hanya kelenjar **ekrin (= merokrin = kelenjar keringat sejati)** yang berperan di situ: tersebar luas, sekretnya cair dan mudah menguap. Kelenjar apokrin **tidak** berperan dalam termoregulasi. Perhatikan opsi “holokrin” — itu nama **cara sekresi**, bukan nama kelenjar; distraktor lintas kategori.  —  **Pola Turunkan dari prinsip:** **Termoregulasi → ekrin.** Apokrin hanya untuk emotional &amp; sexual sweating.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Konteksnya **termoregulasi**, dan hanya kelenjar **ekrin (= merokrin = kelenjar keringat sejati)** yang berperan di situ: tersebar luas, sekretnya cair dan mudah menguap. Kelenjar apokrin **tidak** berperan dalam termoregulasi. Perhatikan opsi “holokrin” — itu nama **cara sekresi**, bukan nama kelenjar; distraktor lintas kategori.",
+  "diskriminator": "**Termoregulasi → ekrin.** Apokrin hanya untuk emotional &amp; sexual sweating."
  },
  {
   "n": 11,
@@ -169,7 +247,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Apokrin",
-  "rationale": "**[UB asli]** Sekret **apokrin** = komposisi ekrin **+ protein &amp; lipid**. Sekretnya sendiri sebenarnya **tidak berbau**; bau badan muncul karena **bakteri mengurai protein dan lipid** itu. Ekrin/merokrin yang isinya hampir hanya air tidak memberi substrat bagi bakteri — itu sebabnya telapak tangan berkeringat banyak tapi tidak bau.  —  **Pola Kategori jawaban:** Bau badan butuh **substrat protein &amp; lipid** — hanya apokrin yang punya."
+  "rationale": "**[UB asli]** Sekret **apokrin** = komposisi ekrin **+ protein &amp; lipid**. Sekretnya sendiri sebenarnya **tidak berbau**; bau badan muncul karena **bakteri mengurai protein dan lipid** itu. Ekrin/merokrin yang isinya hampir hanya air tidak memberi substrat bagi bakteri — itu sebabnya telapak tangan berkeringat banyak tapi tidak bau.  —  **Pola Kategori jawaban:** Bau badan butuh **substrat protein &amp; lipid** — hanya apokrin yang punya.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Sekret **apokrin** = komposisi ekrin **+ protein &amp; lipid**. Sekretnya sendiri sebenarnya **tidak berbau**; bau badan muncul karena **bakteri mengurai protein dan lipid** itu. Ekrin/merokrin yang isinya hampir hanya air tidak memberi substrat bagi bakteri — itu sebabnya telapak tangan berkeringat banyak tapi tidak bau.",
+  "diskriminator": "Bau badan butuh **substrat protein &amp; lipid** — hanya apokrin yang punya."
  },
  {
   "n": 12,
@@ -184,7 +269,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Duktus ekskretorius dilapisi epitel skuamosa kompleks",
-  "rationale": "**[UB asli]** Kelenjar sebasea = **asiner bercabang simpleks**, **holokrin**, dan umumnya **bermuara ke folikel rambut** — sehingga duktusnya dilapisi epitel skuamosa kompleks seperti epidermis. Distraktornya milik kelenjar keringat sejati: dua lapis kubis dan sel mioepitel di pars sekretorius, bentuk tubuler bergelung, muara di pori-pori kulit.  —  **Pola Ciri tetangga:** **Muaranya ke folikel rambut** → epitelnya skuamosa kompleks. Ekrin bermuara ke pori kulit."
+  "rationale": "**[UB asli]** Kelenjar sebasea = **asiner bercabang simpleks**, **holokrin**, dan umumnya **bermuara ke folikel rambut** — sehingga duktusnya dilapisi epitel skuamosa kompleks seperti epidermis. Distraktornya milik kelenjar keringat sejati: dua lapis kubis dan sel mioepitel di pars sekretorius, bentuk tubuler bergelung, muara di pori-pori kulit.  —  **Pola Ciri tetangga:** **Muaranya ke folikel rambut** → epitelnya skuamosa kompleks. Ekrin bermuara ke pori kulit.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Kelenjar sebasea = **asiner bercabang simpleks**, **holokrin**, dan umumnya **bermuara ke folikel rambut** — sehingga duktusnya dilapisi epitel skuamosa kompleks seperti epidermis. Distraktornya milik kelenjar keringat sejati: dua lapis kubis dan sel mioepitel di pars sekretorius, bentuk tubuler bergelung, muara di pori-pori kulit.",
+  "diskriminator": "**Muaranya ke folikel rambut** → epitelnya skuamosa kompleks. Ekrin bermuara ke pori kulit."
  },
  {
   "n": 13,
@@ -199,7 +291,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Holokrin",
-  "rationale": "**Holokrin** — holo = whole: **seluruh sel mati dan menjadi sekret**. Itu sebabnya sebum kental dan bercampur sisa sel, dan itu pula yang membuatnya bisa menyumbat → jerawat. Bandingkan: **merokrin** = eksositosis, sel utuh (ekrin); **apokrin** = sekret keluar bersama sebagian sitoplasma dan membran sel.  —  **Pola Kategori jawaban:** Satu kata **holokrin** menjelaskan patofisiologi jerawat: sekretnya memuat sel yang hancur."
+  "rationale": "**Holokrin** — holo = whole: **seluruh sel mati dan menjadi sekret**. Itu sebabnya sebum kental dan bercampur sisa sel, dan itu pula yang membuatnya bisa menyumbat → jerawat. Bandingkan: **merokrin** = eksositosis, sel utuh (ekrin); **apokrin** = sekret keluar bersama sebagian sitoplasma dan membran sel.  —  **Pola Kategori jawaban:** Satu kata **holokrin** menjelaskan patofisiologi jerawat: sekretnya memuat sel yang hancur.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Holokrin** — holo = whole: **seluruh sel mati dan menjadi sekret**. Itu sebabnya sebum kental dan bercampur sisa sel, dan itu pula yang membuatnya bisa menyumbat → jerawat. Bandingkan: **merokrin** = eksositosis, sel utuh (ekrin); **apokrin** = sekret keluar bersama sebagian sitoplasma dan membran sel.",
+  "diskriminator": "Satu kata **holokrin** menjelaskan patofisiologi jerawat: sekretnya memuat sel yang hancur."
  },
  {
   "n": 14,
@@ -214,7 +313,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Melanosit",
-  "rationale": "**Melanosit**: hemidesmosom dengan lamina basal — ya; desmosom dengan keratinosit — **tidak**. Logikanya fungsional: melanosit harus menyelipkan tonjolannya di antara keratinosit untuk mentransfer granula melanin; ikatan desmosom yang kaku akan menghalanginya. Sebaliknya **sel Merkel justru membentuk desmosom** dengan keratinosit.  —  **Pola Ciri tetangga:** Melanosit = **hemidesmosom ya, desmosom tidak**. Merkel = desmosom ya. Ini pembeda keduanya di stratum basale."
+  "rationale": "**Melanosit**: hemidesmosom dengan lamina basal — ya; desmosom dengan keratinosit — **tidak**. Logikanya fungsional: melanosit harus menyelipkan tonjolannya di antara keratinosit untuk mentransfer granula melanin; ikatan desmosom yang kaku akan menghalanginya. Sebaliknya **sel Merkel justru membentuk desmosom** dengan keratinosit.  —  **Pola Ciri tetangga:** Melanosit = **hemidesmosom ya, desmosom tidak**. Merkel = desmosom ya. Ini pembeda keduanya di stratum basale.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Melanosit**: hemidesmosom dengan lamina basal — ya; desmosom dengan keratinosit — **tidak**. Logikanya fungsional: melanosit harus menyelipkan tonjolannya di antara keratinosit untuk mentransfer granula melanin; ikatan desmosom yang kaku akan menghalanginya. Sebaliknya **sel Merkel justru membentuk desmosom** dengan keratinosit.",
+  "diskriminator": "Melanosit = **hemidesmosom ya, desmosom tidak**. Merkel = desmosom ya. Ini pembeda keduanya di stratum basale."
  },
  {
   "n": 15,
@@ -229,7 +335,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Melanin di keratinosit lebih banyak daripada di melanosit",
-  "rationale": "**[UB asli]** Melanosit **memproduksi** tetapi tidak **menyimpan** — granula melanin ditransfer ke keratinosit, jadi melanin di keratinosit memang lebih banyak. Opsi lain: UV **meningkatkan** sintesis melanin; badan sel melanosit di antara sel **stratum basale**, bukan granulosum; RE granuler mensintesis **tirosinase**, sedangkan melanin disintesis di **melanosom**; granula ditimbun di sekitar inti **keratinosit**, bukan melanosit.  —  **Pola Penghasil vs produk:** Melanosit = **penghasil**, keratinosit = **depot**. Semua distraktor memindahkan peran ke sel yang salah."
+  "rationale": "**[UB asli]** Melanosit **memproduksi** tetapi tidak **menyimpan** — granula melanin ditransfer ke keratinosit, jadi melanin di keratinosit memang lebih banyak. Opsi lain: UV **meningkatkan** sintesis melanin; badan sel melanosit di antara sel **stratum basale**, bukan granulosum; RE granuler mensintesis **tirosinase**, sedangkan melanin disintesis di **melanosom**; granula ditimbun di sekitar inti **keratinosit**, bukan melanosit.  —  **Pola Penghasil vs produk:** Melanosit = **penghasil**, keratinosit = **depot**. Semua distraktor memindahkan peran ke sel yang salah.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "PRO",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Melanosit **memproduksi** tetapi tidak **menyimpan** — granula melanin ditransfer ke keratinosit, jadi melanin di keratinosit memang lebih banyak. Opsi lain: UV **meningkatkan** sintesis melanin; badan sel melanosit di antara sel **stratum basale**, bukan granulosum; RE granuler mensintesis **tirosinase**, sedangkan melanin disintesis di **melanosom**; granula ditimbun di sekitar inti **keratinosit**, bukan melanosit.",
+  "diskriminator": "Melanosit = **penghasil**, keratinosit = **depot**. Semua distraktor memindahkan peran ke sel yang salah."
  },
  {
   "n": 16,
@@ -244,7 +357,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Berfungsi fagositosis dan menyajikan antigen kepada limfosit",
-  "rationale": "**[UB asli]** Itu **sel Langerhans**: sel dendritik berbentuk stellate di **stratum spinosum**, punya reseptor dan penanda imunologis mirip makrofag → mampu **fagositosis** dan bertindak sebagai **APC**. Distraktornya: produksi melanin → melanosit; desmosom dan ujung saraf bebas → sel Merkel.  —  **Pola Ciri tetangga:** Petunjuknya sudah di soal: **pengecatan emas klorida** khas sel Langerhans. Lokasinya **spinosum**, bukan basale seperti melanosit."
+  "rationale": "**[UB asli]** Itu **sel Langerhans**: sel dendritik berbentuk stellate di **stratum spinosum**, punya reseptor dan penanda imunologis mirip makrofag → mampu **fagositosis** dan bertindak sebagai **APC**. Distraktornya: produksi melanin → melanosit; desmosom dan ujung saraf bebas → sel Merkel.  —  **Pola Ciri tetangga:** Petunjuknya sudah di soal: **pengecatan emas klorida** khas sel Langerhans. Lokasinya **spinosum**, bukan basale seperti melanosit.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Itu **sel Langerhans**: sel dendritik berbentuk stellate di **stratum spinosum**, punya reseptor dan penanda imunologis mirip makrofag → mampu **fagositosis** dan bertindak sebagai **APC**. Distraktornya: produksi melanin → melanosit; desmosom dan ujung saraf bebas → sel Merkel.",
+  "diskriminator": "Petunjuknya sudah di soal: **pengecatan emas klorida** khas sel Langerhans. Lokasinya **spinosum**, bukan basale seperti melanosit."
  },
  {
   "n": 17,
@@ -259,7 +379,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "C. Meissner",
-  "rationale": "**[UB asli]** Dua kandidat ada di dermis: Meissner dan Ruffini, dan **keduanya silindris dengan kapsul JP tipis**. Pembedanya: Meissner di **papila dermis**, kapsulnya mengandung **sel pipih transversal**, akhir sarafnya **bercabang 2**; Ruffini di dermis (bukan papila), tanpa sel pipih transversal, akhir saraf **spray-like**, ukurannya lebih kecil.  —  **Pola Ciri tetangga:** **Sel pipih transversal + lokasi papila dermis** → Meissner. Kapsul tipis saja tidak cukup; Ruffini juga tipis."
+  "rationale": "**[UB asli]** Dua kandidat ada di dermis: Meissner dan Ruffini, dan **keduanya silindris dengan kapsul JP tipis**. Pembedanya: Meissner di **papila dermis**, kapsulnya mengandung **sel pipih transversal**, akhir sarafnya **bercabang 2**; Ruffini di dermis (bukan papila), tanpa sel pipih transversal, akhir saraf **spray-like**, ukurannya lebih kecil.  —  **Pola Ciri tetangga:** **Sel pipih transversal + lokasi papila dermis** → Meissner. Kapsul tipis saja tidak cukup; Ruffini juga tipis.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Dua kandidat ada di dermis: Meissner dan Ruffini, dan **keduanya silindris dengan kapsul JP tipis**. Pembedanya: Meissner di **papila dermis**, kapsulnya mengandung **sel pipih transversal**, akhir sarafnya **bercabang 2**; Ruffini di dermis (bukan papila), tanpa sel pipih transversal, akhir saraf **spray-like**, ukurannya lebih kecil.",
+  "diskriminator": "**Sel pipih transversal + lokasi papila dermis** → Meissner. Kapsul tipis saja tidak cukup; Ruffini juga tipis."
  },
  {
   "n": 18,
@@ -274,7 +401,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Stratum granulosum",
-  "rationale": "Keratinosit mati saat naik ke permukaan. **Stratum granulosum** adalah lapisan terakhir yang intinya masih terlihat (di tengah sel); mulai stratum lusidum intinya sudah hilang. Ini diskriminator paling berguna saat membaca preparat: begitu inti hilang, kamu sudah di lusidum/korneum.  —  **Pola Turunkan dari prinsip:** **Granulosum = batas inti.** Di bawahnya berinti, di atasnya tidak."
+  "rationale": "Keratinosit mati saat naik ke permukaan. **Stratum granulosum** adalah lapisan terakhir yang intinya masih terlihat (di tengah sel); mulai stratum lusidum intinya sudah hilang. Ini diskriminator paling berguna saat membaca preparat: begitu inti hilang, kamu sudah di lusidum/korneum.  —  **Pola Turunkan dari prinsip:** **Granulosum = batas inti.** Di bawahnya berinti, di atasnya tidak.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Keratinosit mati saat naik ke permukaan. **Stratum granulosum** adalah lapisan terakhir yang intinya masih terlihat (di tengah sel); mulai stratum lusidum intinya sudah hilang. Ini diskriminator paling berguna saat membaca preparat: begitu inti hilang, kamu sudah di lusidum/korneum.",
+  "diskriminator": "**Granulosum = batas inti.** Di bawahnya berinti, di atasnya tidak."
  },
  {
   "n": 19,
@@ -289,7 +423,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Berisi granula keratohialin yang akan menjadi tetes-tetes eleidin",
-  "rationale": "**[UB asli]** Rantai transformasinya satu arah: **granula keratohialin (granulosum) → tetes eleidin (lusidum) → keratin (korneum)**. Pilihan yang membalik arah rantai itu (eleidin → keratohialin) adalah jebakan yang paling sering dipakai. Distraktor lainnya: “sitoplasma seluruhnya keratin” → korneum; “hanya pada kulit tebal” → lusidum; “sel kuboid dengan mitosis aktif” → basale.  —  **Pola Pasangan berlawanan:** Arah rantainya: **keratohialin → eleidin → keratin**. Granulosum punya **granula**; lusidum punya **tetes**."
+  "rationale": "**[UB asli]** Rantai transformasinya satu arah: **granula keratohialin (granulosum) → tetes eleidin (lusidum) → keratin (korneum)**. Pilihan yang membalik arah rantai itu (eleidin → keratohialin) adalah jebakan yang paling sering dipakai. Distraktor lainnya: “sitoplasma seluruhnya keratin” → korneum; “hanya pada kulit tebal” → lusidum; “sel kuboid dengan mitosis aktif” → basale.  —  **Pola Pasangan berlawanan:** Arah rantainya: **keratohialin → eleidin → keratin**. Granulosum punya **granula**; lusidum punya **tetes**.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "LAW",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Rantai transformasinya satu arah: **granula keratohialin (granulosum) → tetes eleidin (lusidum) → keratin (korneum)**. Pilihan yang membalik arah rantai itu (eleidin → keratohialin) adalah jebakan yang paling sering dipakai. Distraktor lainnya: “sitoplasma seluruhnya keratin” → korneum; “hanya pada kulit tebal” → lusidum; “sel kuboid dengan mitosis aktif” → basale.",
+  "diskriminator": "Arah rantainya: **keratohialin → eleidin → keratin**. Granulosum punya **granula**; lusidum punya **tetes**."
  },
  {
   "n": 20,
@@ -304,7 +445,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Epidermis",
-  "rationale": "**Epidermis adalah epitel, dan semua epitel bersifat avaskuler** — nutrisinya datang dengan difusi dari kapiler di papila dermis. Jadi luka yang tidak berdarah sama sekali masih terbatas di epidermis. Begitu lapisan papiler dermis terkena, perdarahan muncul karena di situ ada pleksus papiler.  —  **Pola Turunkan dari prinsip:** **Tidak berdarah = masih avaskuler = epidermis.** Pembuluh darah pertama ada di dermis."
+  "rationale": "**Epidermis adalah epitel, dan semua epitel bersifat avaskuler** — nutrisinya datang dengan difusi dari kapiler di papila dermis. Jadi luka yang tidak berdarah sama sekali masih terbatas di epidermis. Begitu lapisan papiler dermis terkena, perdarahan muncul karena di situ ada pleksus papiler.  —  **Pola Turunkan dari prinsip:** **Tidak berdarah = masih avaskuler = epidermis.** Pembuluh darah pertama ada di dermis.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Epidermis adalah epitel, dan semua epitel bersifat avaskuler** — nutrisinya datang dengan difusi dari kapiler di papila dermis. Jadi luka yang tidak berdarah sama sekali masih terbatas di epidermis. Begitu lapisan papiler dermis terkena, perdarahan muncul karena di situ ada pleksus papiler.",
+  "diskriminator": "**Tidak berdarah = masih avaskuler = epidermis.** Pembuluh darah pertama ada di dermis."
  },
  {
   "n": 21,
@@ -319,7 +467,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Pars sekretorius",
-  "rationale": "**Pars sekretorius**: epitel berlapis kubis, **ada sel mioepitel**, diameter lebih besar, tercat lebih pucat; di dalamnya ada **dark cell** (granula glikoprotein, bakterisidal) dan **clear cell** (produksi keringat). **Pars ekskretorius**: dua lapis sel kubis, **tanpa** mioepitel, diameter lebih kecil, tercat lebih gelap.  —  **Pola Ciri tetangga:** **Sel mioepitel** hanya pada pars sekretorius — bagian yang memproduksi perlu diperas; saluran tidak."
+  "rationale": "**Pars sekretorius**: epitel berlapis kubis, **ada sel mioepitel**, diameter lebih besar, tercat lebih pucat; di dalamnya ada **dark cell** (granula glikoprotein, bakterisidal) dan **clear cell** (produksi keringat). **Pars ekskretorius**: dua lapis sel kubis, **tanpa** mioepitel, diameter lebih kecil, tercat lebih gelap.  —  **Pola Ciri tetangga:** **Sel mioepitel** hanya pada pars sekretorius — bagian yang memproduksi perlu diperas; saluran tidak.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Pars sekretorius**: epitel berlapis kubis, **ada sel mioepitel**, diameter lebih besar, tercat lebih pucat; di dalamnya ada **dark cell** (granula glikoprotein, bakterisidal) dan **clear cell** (produksi keringat). **Pars ekskretorius**: dua lapis sel kubis, **tanpa** mioepitel, diameter lebih kecil, tercat lebih gelap.",
+  "diskriminator": "**Sel mioepitel** hanya pada pars sekretorius — bagian yang memproduksi perlu diperas; saluran tidak."
  },
  {
   "n": 22,
@@ -334,7 +489,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Sama pada keduanya",
-  "rationale": "**Jumlah melanosit per unit luas epidermis sama pada semua orang** — tidak dipengaruhi jenis kelamin maupun ras. Yang berbeda adalah **jumlah granula melanin di dalam keratinosit** (dan ukuran serta aktivitas melanosomnya). Catatan: jumlah melanosit **berbeda antar regio** tubuh (paha ≠ lutut), tapi konstan antar orang untuk regio yang sama.  —  **Pola Turunkan dari prinsip:** Jumlah **melanosit** sama; jumlah **granula melanin di keratinosit** yang berbeda."
+  "rationale": "**Jumlah melanosit per unit luas epidermis sama pada semua orang** — tidak dipengaruhi jenis kelamin maupun ras. Yang berbeda adalah **jumlah granula melanin di dalam keratinosit** (dan ukuran serta aktivitas melanosomnya). Catatan: jumlah melanosit **berbeda antar regio** tubuh (paha ≠ lutut), tapi konstan antar orang untuk regio yang sama.  —  **Pola Turunkan dari prinsip:** Jumlah **melanosit** sama; jumlah **granula melanin di keratinosit** yang berbeda.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Jumlah melanosit per unit luas epidermis sama pada semua orang** — tidak dipengaruhi jenis kelamin maupun ras. Yang berbeda adalah **jumlah granula melanin di dalam keratinosit** (dan ukuran serta aktivitas melanosomnya). Catatan: jumlah melanosit **berbeda antar regio** tubuh (paha ≠ lutut), tapi konstan antar orang untuk regio yang sama.",
+  "diskriminator": "Jumlah **melanosit** sama; jumlah **granula melanin di keratinosit** yang berbeda."
  },
  {
   "n": 23,
@@ -349,7 +511,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Bulbus rambut",
-  "rationale": "**[UB asli]** **Folikel** adalah keseluruhan struktur tabung yang mengelilingi akar rambut; **bulbus** adalah bagian folikel di pangkal akar yang **menggembung/membesar**. Dasar bulbus ditembus jaringan ikat dermal membentuk **papila rambut**, yang kaya kapiler dan di sekitarnya terdapat pusat regenerasi rambut.  —  **Pola Kategori jawaban:** Kata **“menggembung”** → bulbus. Folikel = tabungnya secara keseluruhan."
+  "rationale": "**[UB asli]** **Folikel** adalah keseluruhan struktur tabung yang mengelilingi akar rambut; **bulbus** adalah bagian folikel di pangkal akar yang **menggembung/membesar**. Dasar bulbus ditembus jaringan ikat dermal membentuk **papila rambut**, yang kaya kapiler dan di sekitarnya terdapat pusat regenerasi rambut.  —  **Pola Kategori jawaban:** Kata **“menggembung”** → bulbus. Folikel = tabungnya secara keseluruhan.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Folikel** adalah keseluruhan struktur tabung yang mengelilingi akar rambut; **bulbus** adalah bagian folikel di pangkal akar yang **menggembung/membesar**. Dasar bulbus ditembus jaringan ikat dermal membentuk **papila rambut**, yang kaya kapiler dan di sekitarnya terdapat pusat regenerasi rambut.",
+  "diskriminator": "Kata **“menggembung”** → bulbus. Folikel = tabungnya secara keseluruhan."
  },
  {
   "n": 24,
@@ -364,7 +533,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Medula – korteks – kutikula",
-  "rationale": "Dari dalam ke luar: **medula → korteks → kutikula**. Logikanya seperti pohon: inti lunak di tengah, lapisan keras di luar. Kutikula rambut terhubung langsung dengan kutikula vagina interna, dan sel keduanya saling tumpang tindih (mengunci) sehingga rambut tidak mudah tercabut.  —  **Pola Pasangan berlawanan:** Perhatikan arah yang diminta soal — **dalam ke luar** vs **luar ke dalam** membalik seluruh jawaban."
+  "rationale": "Dari dalam ke luar: **medula → korteks → kutikula**. Logikanya seperti pohon: inti lunak di tengah, lapisan keras di luar. Kutikula rambut terhubung langsung dengan kutikula vagina interna, dan sel keduanya saling tumpang tindih (mengunci) sehingga rambut tidak mudah tercabut.  —  **Pola Pasangan berlawanan:** Perhatikan arah yang diminta soal — **dalam ke luar** vs **luar ke dalam** membalik seluruh jawaban.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Dari dalam ke luar: **medula → korteks → kutikula**. Logikanya seperti pohon: inti lunak di tengah, lapisan keras di luar. Kutikula rambut terhubung langsung dengan kutikula vagina interna, dan sel keduanya saling tumpang tindih (mengunci) sehingga rambut tidak mudah tercabut.",
+  "diskriminator": "Perhatikan arah yang diminta soal — **dalam ke luar** vs **luar ke dalam** membalik seluruh jawaban."
  },
  {
   "n": 25,
@@ -379,7 +555,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "C. Meissner",
-  "rationale": "Sentuhan ringan di papila dermis → **C. Meissner**. Tekanan dalam dan getaran masih terasa, artinya **C. Vater Pacini** (dermis dalam &amp; subkutan) masih utuh. Krause dan Ruffini terkait suhu dan tekanan, bukan sentuhan ringan di ujung jari.  —  **Pola Turunkan dari prinsip:** Fungsi yang **hilang** menunjuk reseptornya; fungsi yang **tersisa** mengeliminasi reseptor lain. Baca keduanya."
+  "rationale": "Sentuhan ringan di papila dermis → **C. Meissner**. Tekanan dalam dan getaran masih terasa, artinya **C. Vater Pacini** (dermis dalam &amp; subkutan) masih utuh. Krause dan Ruffini terkait suhu dan tekanan, bukan sentuhan ringan di ujung jari.  —  **Pola Turunkan dari prinsip:** Fungsi yang **hilang** menunjuk reseptornya; fungsi yang **tersisa** mengeliminasi reseptor lain. Baca keduanya.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Sentuhan ringan di papila dermis → **C. Meissner**. Tekanan dalam dan getaran masih terasa, artinya **C. Vater Pacini** (dermis dalam &amp; subkutan) masih utuh. Krause dan Ruffini terkait suhu dan tekanan, bukan sentuhan ringan di ujung jari.",
+  "diskriminator": "Fungsi yang **hilang** menunjuk reseptornya; fungsi yang **tersisa** mengeliminasi reseptor lain. Baca keduanya."
  },
  {
   "n": 26,
@@ -394,7 +577,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Abduksi",
-  "rationale": "**[UB asli]** **Abduksi** = menjauhi midline; **adduksi** = mendekati midline. Patokannya adalah **bidang median** — sama dengan patokan medial/lateral. Jadi abduksi/adduksi adalah versi bergerak dari medial/lateral.  —  **Pola Pasangan berlawanan:** **AB**duksi = **AB**sen, pergi menjauh. **AD**duksi = **AD**d, membawa mendekat."
+  "rationale": "**[UB asli]** **Abduksi** = menjauhi midline; **adduksi** = mendekati midline. Patokannya adalah **bidang median** — sama dengan patokan medial/lateral. Jadi abduksi/adduksi adalah versi bergerak dari medial/lateral.  —  **Pola Pasangan berlawanan:** **AB**duksi = **AB**sen, pergi menjauh. **AD**duksi = **AD**d, membawa mendekat.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "LAW",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Abduksi** = menjauhi midline; **adduksi** = mendekati midline. Patokannya adalah **bidang median** — sama dengan patokan medial/lateral. Jadi abduksi/adduksi adalah versi bergerak dari medial/lateral.",
+  "diskriminator": "**AB**duksi = **AB**sen, pergi menjauh. **AD**duksi = **AD**d, membawa mendekat."
  },
  {
   "n": 27,
@@ -409,7 +599,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Fleksi",
-  "rationale": "**[UB asli]** **Fleksi** memperkecil sudut; **ekstensi** memperbesar sudut atau mengembalikan ke posisi anatomi. Patokannya **sudut**, bukan arah gerak — penting karena di beberapa sendi arah geraknya tidak intuitif. Abduksi/adduksi patokannya midline, bukan sudut.  —  **Pola Pasangan berlawanan:** Fleksi/ekstensi diukur dari **sudut sendi**; abduksi/adduksi dari **jarak ke midline**. Dua patokan berbeda."
+  "rationale": "**[UB asli]** **Fleksi** memperkecil sudut; **ekstensi** memperbesar sudut atau mengembalikan ke posisi anatomi. Patokannya **sudut**, bukan arah gerak — penting karena di beberapa sendi arah geraknya tidak intuitif. Abduksi/adduksi patokannya midline, bukan sudut.  —  **Pola Pasangan berlawanan:** Fleksi/ekstensi diukur dari **sudut sendi**; abduksi/adduksi dari **jarak ke midline**. Dua patokan berbeda.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "LAW",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Fleksi** memperkecil sudut; **ekstensi** memperbesar sudut atau mengembalikan ke posisi anatomi. Patokannya **sudut**, bukan arah gerak — penting karena di beberapa sendi arah geraknya tidak intuitif. Abduksi/adduksi patokannya midline, bukan sudut.",
+  "diskriminator": "Fleksi/ekstensi diukur dari **sudut sendi**; abduksi/adduksi dari **jarak ke midline**. Dua patokan berbeda."
  },
  {
   "n": 28,
@@ -424,7 +621,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Sutura sagittalis",
-  "rationale": "**[UB asli]** Sendi fibrosa dihubungkan **jaringan ikat fibrosa**, tanpa rongga sendi, nyaris tidak bergerak: **sutura** (cranium), **syndesmosis** (tibia–fibula), **gomphosis** (gigi–alveolus). Distraktornya: art. intervertebralis dan symphysis pubis = **kartilaginosa sekunder**; art. humeri dan TMJ = **sinovial**.  —  **Pola Ciri tetangga:** Kuncinya **ada/tidaknya rongga sendi**. Fibrosa dan kartilaginosa tanpa rongga; sinovial dengan rongga."
+  "rationale": "**[UB asli]** Sendi fibrosa dihubungkan **jaringan ikat fibrosa**, tanpa rongga sendi, nyaris tidak bergerak: **sutura** (cranium), **syndesmosis** (tibia–fibula), **gomphosis** (gigi–alveolus). Distraktornya: art. intervertebralis dan symphysis pubis = **kartilaginosa sekunder**; art. humeri dan TMJ = **sinovial**.  —  **Pola Ciri tetangga:** Kuncinya **ada/tidaknya rongga sendi**. Fibrosa dan kartilaginosa tanpa rongga; sinovial dengan rongga.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Sendi fibrosa dihubungkan **jaringan ikat fibrosa**, tanpa rongga sendi, nyaris tidak bergerak: **sutura** (cranium), **syndesmosis** (tibia–fibula), **gomphosis** (gigi–alveolus). Distraktornya: art. intervertebralis dan symphysis pubis = **kartilaginosa sekunder**; art. humeri dan TMJ = **sinovial**.",
+  "diskriminator": "Kuncinya **ada/tidaknya rongga sendi**. Fibrosa dan kartilaginosa tanpa rongga; sinovial dengan rongga."
  },
  {
   "n": 29,
@@ -439,7 +643,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Kartilaginosa sekunder / fibrokartilaginosa (simfisis)",
-  "rationale": "**[UB asli]** Discus intervertebralis adalah **sendi kartilaginosa sekunder (simfisis)** yang penghubungnya **fibrokartilago**. Masuk akal secara fungsional: discus harus menahan beban berat sekaligus sedikit fleksibel, dan fibrokartilago paling kuat menahan tekanan karena kaya kolagen tipe I.  —  **Pola Kategori jawaban:** Kartilaginosa **primer = hialin** (lempeng epifisis); **sekunder = fibrokartilago** (discus, symphysis pubis)."
+  "rationale": "**[UB asli]** Discus intervertebralis adalah **sendi kartilaginosa sekunder (simfisis)** yang penghubungnya **fibrokartilago**. Masuk akal secara fungsional: discus harus menahan beban berat sekaligus sedikit fleksibel, dan fibrokartilago paling kuat menahan tekanan karena kaya kolagen tipe I.  —  **Pola Kategori jawaban:** Kartilaginosa **primer = hialin** (lempeng epifisis); **sekunder = fibrokartilago** (discus, symphysis pubis).",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Discus intervertebralis adalah **sendi kartilaginosa sekunder (simfisis)** yang penghubungnya **fibrokartilago**. Masuk akal secara fungsional: discus harus menahan beban berat sekaligus sedikit fleksibel, dan fibrokartilago paling kuat menahan tekanan karena kaya kolagen tipe I.",
+  "diskriminator": "Kartilaginosa **primer = hialin** (lempeng epifisis); **sekunder = fibrokartilago** (discus, symphysis pubis)."
  },
  {
   "n": 30,
@@ -454,7 +665,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Ball and socket",
-  "rationale": "**[UB asli]** Art. coxae = **ball-and-socket (spheroidea)**, multiaksial: caput femoris (bola) masuk ke acetabulum (cangkir). Inilah dasar **DDH** (developmental dysplasia of the hip): kalau acetabulum terlalu dangkal, caput femoris tidak berartikulasi dengan baik.  —  **Pola Turunkan dari prinsip:** **Bentuk permukaan sendi menentukan gerakan.** Bola dalam cangkir → gerakan segala arah → multiaksial."
+  "rationale": "**[UB asli]** Art. coxae = **ball-and-socket (spheroidea)**, multiaksial: caput femoris (bola) masuk ke acetabulum (cangkir). Inilah dasar **DDH** (developmental dysplasia of the hip): kalau acetabulum terlalu dangkal, caput femoris tidak berartikulasi dengan baik.  —  **Pola Turunkan dari prinsip:** **Bentuk permukaan sendi menentukan gerakan.** Bola dalam cangkir → gerakan segala arah → multiaksial.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Art. coxae = **ball-and-socket (spheroidea)**, multiaksial: caput femoris (bola) masuk ke acetabulum (cangkir). Inilah dasar **DDH** (developmental dysplasia of the hip): kalau acetabulum terlalu dangkal, caput femoris tidak berartikulasi dengan baik.",
+  "diskriminator": "**Bentuk permukaan sendi menentukan gerakan.** Bola dalam cangkir → gerakan segala arah → multiaksial."
  },
  {
   "n": 31,
@@ -469,7 +687,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 4,
   "kunci": "Condyloid",
-  "rationale": "**[UB asli]** Metacarpophalangeal = **condyloid (condylaris)**, biaksial. Bandingkan contoh dari PPT: plane → sternoclavicular &amp; acromioclavicular; hinge → art. cubiti; pivot → atlantoaxial; ellipsoid → wrist; saddle → carpometacarpal pollicis; ball-and-socket → art. coxae.  —  **Pola Ciri tetangga:** Hafal **pasangan jenis–contoh** dari PPT, karena soal selalu masuk lewat contohnya, bukan definisinya."
+  "rationale": "**[UB asli]** Metacarpophalangeal = **condyloid (condylaris)**, biaksial. Bandingkan contoh dari PPT: plane → sternoclavicular &amp; acromioclavicular; hinge → art. cubiti; pivot → atlantoaxial; ellipsoid → wrist; saddle → carpometacarpal pollicis; ball-and-socket → art. coxae.  —  **Pola Ciri tetangga:** Hafal **pasangan jenis–contoh** dari PPT, karena soal selalu masuk lewat contohnya, bukan definisinya.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Metacarpophalangeal = **condyloid (condylaris)**, biaksial. Bandingkan contoh dari PPT: plane → sternoclavicular &amp; acromioclavicular; hinge → art. cubiti; pivot → atlantoaxial; ellipsoid → wrist; saddle → carpometacarpal pollicis; ball-and-socket → art. coxae.",
+  "diskriminator": "Hafal **pasangan jenis–contoh** dari PPT, karena soal selalu masuk lewat contohnya, bukan definisinya."
  },
  {
   "n": 32,
@@ -484,7 +709,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Ellipsoid",
-  "rationale": "**[UB asli]** Wrist joint (art. radiocarpalis) = **ellipsoid**, biaksial. Catat bahwa PPT mendaftar **condyloid dan ellipsoid secara terpisah** (D dan E), meskipun banyak buku menggabungkan keduanya — untuk UB ini ikuti pembagian PPT: metacarpophalangeal = condyloid, wrist = ellipsoid.  —  **Pola Ciri tetangga:** **Ginglymus = hinge** (siku), **sellaris = saddle** (jempol). Nama Latin dan Inggrisnya dipakai bergantian di soal."
+  "rationale": "**[UB asli]** Wrist joint (art. radiocarpalis) = **ellipsoid**, biaksial. Catat bahwa PPT mendaftar **condyloid dan ellipsoid secara terpisah** (D dan E), meskipun banyak buku menggabungkan keduanya — untuk UB ini ikuti pembagian PPT: metacarpophalangeal = condyloid, wrist = ellipsoid.  —  **Pola Ciri tetangga:** **Ginglymus = hinge** (siku), **sellaris = saddle** (jempol). Nama Latin dan Inggrisnya dipakai bergantian di soal.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Wrist joint (art. radiocarpalis) = **ellipsoid**, biaksial. Catat bahwa PPT mendaftar **condyloid dan ellipsoid secara terpisah** (D dan E), meskipun banyak buku menggabungkan keduanya — untuk UB ini ikuti pembagian PPT: metacarpophalangeal = condyloid, wrist = ellipsoid.",
+  "diskriminator": "**Ginglymus = hinge** (siku), **sellaris = saddle** (jempol). Nama Latin dan Inggrisnya dipakai bergantian di soal."
  },
  {
   "n": 33,
@@ -499,7 +731,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Articulatio atlantoaxialis",
-  "rationale": "**[UB asli]** **Geleng-geleng = rotasi = pivot (trochoidea) = art. atlantoaxialis** (C1–C2). **Mengangguk = fleksi-ekstensi = art. atlantooccipitalis** (os occipitale–C1). Porosnya adalah **dens axis** — tonjolan seperti gigi pada C2 yang menjadi pasak tempat atlas berputar.  —  **Pola Ciri tetangga:** **Geleng = rotasi = atlantoaxialis. Angguk = atlantooccipitalis.** Dua sendi ini selalu dipasang berdampingan."
+  "rationale": "**[UB asli]** **Geleng-geleng = rotasi = pivot (trochoidea) = art. atlantoaxialis** (C1–C2). **Mengangguk = fleksi-ekstensi = art. atlantooccipitalis** (os occipitale–C1). Porosnya adalah **dens axis** — tonjolan seperti gigi pada C2 yang menjadi pasak tempat atlas berputar.  —  **Pola Ciri tetangga:** **Geleng = rotasi = atlantoaxialis. Angguk = atlantooccipitalis.** Dua sendi ini selalu dipasang berdampingan.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Geleng-geleng = rotasi = pivot (trochoidea) = art. atlantoaxialis** (C1–C2). **Mengangguk = fleksi-ekstensi = art. atlantooccipitalis** (os occipitale–C1). Porosnya adalah **dens axis** — tonjolan seperti gigi pada C2 yang menjadi pasak tempat atlas berputar.",
+  "diskriminator": "**Geleng = rotasi = atlantoaxialis. Angguk = atlantooccipitalis.** Dua sendi ini selalu dipasang berdampingan."
  },
  {
   "n": 34,
@@ -514,7 +753,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Atlantoaxialis — pivot",
-  "rationale": "Mengangguk masih bisa → art. atlantooccipitalis utuh. Menggeleng tidak bisa → **art. atlantoaxialis** terganggu, dan jenisnya **pivot (trochoidea)**. Dua distraktor sengaja mencampur nama sendi yang benar dengan jenis yang salah — “atlantooccipitalis–pivot” dan “atlantoaxialis–ellipsoid”. Distraktor dua lapis.  —  **Pola Pasangan berlawanan:** Soal menuntut **dua jawaban sekaligus**: nama sendi dan jenisnya. Pastikan keduanya cocok."
+  "rationale": "Mengangguk masih bisa → art. atlantooccipitalis utuh. Menggeleng tidak bisa → **art. atlantoaxialis** terganggu, dan jenisnya **pivot (trochoidea)**. Dua distraktor sengaja mencampur nama sendi yang benar dengan jenis yang salah — “atlantooccipitalis–pivot” dan “atlantoaxialis–ellipsoid”. Distraktor dua lapis.  —  **Pola Pasangan berlawanan:** Soal menuntut **dua jawaban sekaligus**: nama sendi dan jenisnya. Pastikan keduanya cocok.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Mengangguk masih bisa → art. atlantooccipitalis utuh. Menggeleng tidak bisa → **art. atlantoaxialis** terganggu, dan jenisnya **pivot (trochoidea)**. Dua distraktor sengaja mencampur nama sendi yang benar dengan jenis yang salah — “atlantooccipitalis–pivot” dan “atlantoaxialis–ellipsoid”. Distraktor dua lapis.",
+  "diskriminator": "Soal menuntut **dua jawaban sekaligus**: nama sendi dan jenisnya. Pastikan keduanya cocok."
  },
  {
   "n": 35,
@@ -529,7 +775,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Tulang pipih",
-  "rationale": "**[UB asli]** Scapula = **tulang pipih (os planum)**: tipis dan lebar seperti lembaran. Lima bentuk tulang: panjang (humerus, femur), pendek (ossa carpalia, tarsalia), **pipih (scapula, costae, sternum, ossa cranii)**, ireguler (vertebrae, os coxae, mandibula), sesamoid (patella, os pisiforme).  —  **Pola Kategori jawaban:** Pipih = **lembaran**; ireguler = **bergumpal dengan banyak tonjolan** seperti vertebra. Itu pembeda tersering."
+  "rationale": "**[UB asli]** Scapula = **tulang pipih (os planum)**: tipis dan lebar seperti lembaran. Lima bentuk tulang: panjang (humerus, femur), pendek (ossa carpalia, tarsalia), **pipih (scapula, costae, sternum, ossa cranii)**, ireguler (vertebrae, os coxae, mandibula), sesamoid (patella, os pisiforme).  —  **Pola Kategori jawaban:** Pipih = **lembaran**; ireguler = **bergumpal dengan banyak tonjolan** seperti vertebra. Itu pembeda tersering.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Scapula = **tulang pipih (os planum)**: tipis dan lebar seperti lembaran. Lima bentuk tulang: panjang (humerus, femur), pendek (ossa carpalia, tarsalia), **pipih (scapula, costae, sternum, ossa cranii)**, ireguler (vertebrae, os coxae, mandibula), sesamoid (patella, os pisiforme).",
+  "diskriminator": "Pipih = **lembaran**; ireguler = **bergumpal dengan banyak tonjolan** seperti vertebra. Itu pembeda tersering."
  },
  {
   "n": 36,
@@ -544,7 +797,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Patella",
-  "rationale": "**[UB asli]** **Patella** adalah tulang sesamoid karena **tertanam di dalam tendo** M. quadriceps femoris, dan berfungsi sebagai katrol yang memperbesar momen gaya ekstensi lutut. Cuboideum, navicular, dan talus adalah ossa tarsalia = **tulang pendek**; humerus = tulang panjang.  —  **Pola Kategori jawaban:** Sesamoid = **tertanam di dalam tendo**. Itu satu-satunya kriterianya."
+  "rationale": "**[UB asli]** **Patella** adalah tulang sesamoid karena **tertanam di dalam tendo** M. quadriceps femoris, dan berfungsi sebagai katrol yang memperbesar momen gaya ekstensi lutut. Cuboideum, navicular, dan talus adalah ossa tarsalia = **tulang pendek**; humerus = tulang panjang.  —  **Pola Kategori jawaban:** Sesamoid = **tertanam di dalam tendo**. Itu satu-satunya kriterianya.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Patella** adalah tulang sesamoid karena **tertanam di dalam tendo** M. quadriceps femoris, dan berfungsi sebagai katrol yang memperbesar momen gaya ekstensi lutut. Cuboideum, navicular, dan talus adalah ossa tarsalia = **tulang pendek**; humerus = tulang panjang.",
+  "diskriminator": "Sesamoid = **tertanam di dalam tendo**. Itu satu-satunya kriterianya."
  },
  {
   "n": 37,
@@ -559,7 +819,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 4,
   "kunci": "M. brachialis",
-  "rationale": "**[UB asli]** Fleksor siku: **M. brachialis** (prime mover sejati), M. biceps brachii, M. brachioradialis. **M. triceps brachii dan M. anconeus adalah antagonis** — keduanya ekstensor siku. M. coracobrachialis bekerja pada bahu; M. palmaris longus pada pergelangan tangan.  —  **Pola Ciri tetangga:** Untuk setiap otot, hafal **lawannya** juga: distraktor terkuat selalu otot yang melakukan gerakan kebalikannya."
+  "rationale": "**[UB asli]** Fleksor siku: **M. brachialis** (prime mover sejati), M. biceps brachii, M. brachioradialis. **M. triceps brachii dan M. anconeus adalah antagonis** — keduanya ekstensor siku. M. coracobrachialis bekerja pada bahu; M. palmaris longus pada pergelangan tangan.  —  **Pola Ciri tetangga:** Untuk setiap otot, hafal **lawannya** juga: distraktor terkuat selalu otot yang melakukan gerakan kebalikannya.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Fleksor siku: **M. brachialis** (prime mover sejati), M. biceps brachii, M. brachioradialis. **M. triceps brachii dan M. anconeus adalah antagonis** — keduanya ekstensor siku. M. coracobrachialis bekerja pada bahu; M. palmaris longus pada pergelangan tangan.",
+  "diskriminator": "Untuk setiap otot, hafal **lawannya** juga: distraktor terkuat selalu otot yang melakukan gerakan kebalikannya."
  },
  {
   "n": 38,
@@ -574,7 +841,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "M. anconeus",
-  "rationale": "**[UB asli]** **M. anconeus** membantu (assistant/sinergis) M. triceps brachii dalam ekstensi siku. M. brachialis dan M. biceps brachii adalah **antagonis** di gerakan ini; pronator teres dan pronator quadratus bekerja pada pronasi lengan bawah, bukan pada siku.  —  **Pola Ciri tetangga:** Peran otot **relatif terhadap gerakannya**: M. brachialis prime mover saat fleksi, antagonis saat ekstensi."
+  "rationale": "**[UB asli]** **M. anconeus** membantu (assistant/sinergis) M. triceps brachii dalam ekstensi siku. M. brachialis dan M. biceps brachii adalah **antagonis** di gerakan ini; pronator teres dan pronator quadratus bekerja pada pronasi lengan bawah, bukan pada siku.  —  **Pola Ciri tetangga:** Peran otot **relatif terhadap gerakannya**: M. brachialis prime mover saat fleksi, antagonis saat ekstensi.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**M. anconeus** membantu (assistant/sinergis) M. triceps brachii dalam ekstensi siku. M. brachialis dan M. biceps brachii adalah **antagonis** di gerakan ini; pronator teres dan pronator quadratus bekerja pada pronasi lengan bawah, bukan pada siku.",
+  "diskriminator": "Peran otot **relatif terhadap gerakannya**: M. brachialis prime mover saat fleksi, antagonis saat ekstensi."
  },
  {
   "n": 39,
@@ -589,7 +863,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "M. triceps brachii",
-  "rationale": "**[UB asli]** ROM **ekstensi** yang menurun berarti **ekstensor**-nya cedera → **M. triceps brachii**. Tiga distraktor (biceps brachii, brachioradialis, brachialis) semuanya **fleksor** siku; kalau mereka cedera, yang menurun adalah ROM fleksi.  —  **Pola Turunkan dari prinsip:** Baca **gerakan mana** yang terganggu, lalu cari otot yang melakukan gerakan itu — bukan yang melakukan kebalikannya."
+  "rationale": "**[UB asli]** ROM **ekstensi** yang menurun berarti **ekstensor**-nya cedera → **M. triceps brachii**. Tiga distraktor (biceps brachii, brachioradialis, brachialis) semuanya **fleksor** siku; kalau mereka cedera, yang menurun adalah ROM fleksi.  —  **Pola Turunkan dari prinsip:** Baca **gerakan mana** yang terganggu, lalu cari otot yang melakukan gerakan itu — bukan yang melakukan kebalikannya.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "ROM **ekstensi** yang menurun berarti **ekstensor**-nya cedera → **M. triceps brachii**. Tiga distraktor (biceps brachii, brachioradialis, brachialis) semuanya **fleksor** siku; kalau mereka cedera, yang menurun adalah ROM fleksi.",
+  "diskriminator": "Baca **gerakan mana** yang terganggu, lalu cari otot yang melakukan gerakan itu — bukan yang melakukan kebalikannya."
  },
  {
   "n": 40,
@@ -604,7 +885,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "M. brachialis",
-  "rationale": "**[UB asli]** **M. brachialis** dianggap prime mover sejati fleksi siku karena efektif pada **semua posisi lengan bawah**, sedangkan M. biceps brachii paling efektif saat supinasi. Distraktornya: triceps dan anconeus = ekstensor (antagonis); pectoralis major dan deltoideus = otot bahu yang tidak melintasi siku.  —  **Pola Ciri tetangga:** Istilah **prime mover** = otot utama, bukan pembantu (sinergis) dan bukan penstabil (fixator)."
+  "rationale": "**[UB asli]** **M. brachialis** dianggap prime mover sejati fleksi siku karena efektif pada **semua posisi lengan bawah**, sedangkan M. biceps brachii paling efektif saat supinasi. Distraktornya: triceps dan anconeus = ekstensor (antagonis); pectoralis major dan deltoideus = otot bahu yang tidak melintasi siku.  —  **Pola Ciri tetangga:** Istilah **prime mover** = otot utama, bukan pembantu (sinergis) dan bukan penstabil (fixator).",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**M. brachialis** dianggap prime mover sejati fleksi siku karena efektif pada **semua posisi lengan bawah**, sedangkan M. biceps brachii paling efektif saat supinasi. Distraktornya: triceps dan anconeus = ekstensor (antagonis); pectoralis major dan deltoideus = otot bahu yang tidak melintasi siku.",
+  "diskriminator": "Istilah **prime mover** = otot utama, bukan pembantu (sinergis) dan bukan penstabil (fixator)."
  },
  {
   "n": 41,
@@ -619,7 +907,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Aferen — sensorik",
-  "rationale": "**Radix posterior = aferen = sensorik** (impuls masuk ke SSP). **Radix anterior = eferen = motorik** (impuls keluar ke otot). Ini tulang punggung lengkung refleks: reseptor → aferen → radix posterior → medula spinalis → radix anterior → eferen → otot.  —  **Pola Pasangan berlawanan:** **A**feren = **A**rrive (masuk) = sensorik. **E**feren = **E**xit (keluar) = motorik. **P**osterior = **P**ersepsi."
+  "rationale": "**Radix posterior = aferen = sensorik** (impuls masuk ke SSP). **Radix anterior = eferen = motorik** (impuls keluar ke otot). Ini tulang punggung lengkung refleks: reseptor → aferen → radix posterior → medula spinalis → radix anterior → eferen → otot.  —  **Pola Pasangan berlawanan:** **A**feren = **A**rrive (masuk) = sensorik. **E**feren = **E**xit (keluar) = motorik. **P**osterior = **P**ersepsi.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Radix posterior = aferen = sensorik** (impuls masuk ke SSP). **Radix anterior = eferen = motorik** (impuls keluar ke otot). Ini tulang punggung lengkung refleks: reseptor → aferen → radix posterior → medula spinalis → radix anterior → eferen → otot.",
+  "diskriminator": "**A**feren = **A**rrive (masuk) = sensorik. **E**feren = **E**xit (keluar) = motorik. **P**osterior = **P**ersepsi."
  },
  {
   "n": 42,
@@ -634,7 +929,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sutura sagittalis",
-  "rationale": "**[UB asli]** **Sutura sagittalis** berjalan di garis tengah (bidang sagittal) dari depan ke belakang, memisahkan kedua os parietale. Sutura coronalis memisahkan os frontale dari os parietale; sutura lambdoidea memisahkan os parietale dari os occipitale di posterior.  —  **Pola Nama = petunjuk:** Nama sutura menunjuk **bidang atau bentuknya**: sagittalis di bidang sagittal; coronalis di bidang coronal; lambdoidea berbentuk huruf λ."
+  "rationale": "**[UB asli]** **Sutura sagittalis** berjalan di garis tengah (bidang sagittal) dari depan ke belakang, memisahkan kedua os parietale. Sutura coronalis memisahkan os frontale dari os parietale; sutura lambdoidea memisahkan os parietale dari os occipitale di posterior.  —  **Pola Nama = petunjuk:** Nama sutura menunjuk **bidang atau bentuknya**: sagittalis di bidang sagittal; coronalis di bidang coronal; lambdoidea berbentuk huruf λ.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "NAM",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Sutura sagittalis** berjalan di garis tengah (bidang sagittal) dari depan ke belakang, memisahkan kedua os parietale. Sutura coronalis memisahkan os frontale dari os parietale; sutura lambdoidea memisahkan os parietale dari os occipitale di posterior.",
+  "diskriminator": "Nama sutura menunjuk **bidang atau bentuknya**: sagittalis di bidang sagittal; coronalis di bidang coronal; lambdoidea berbentuk huruf λ."
  },
  {
   "n": 43,
@@ -649,7 +951,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Bregma",
-  "rationale": "**[UB asli]** Titik temu **sutura coronalis dan sutura sagittalis** berbentuk rhomboid. Pada **neonatus** masih terbuka dan disebut **fontanella mayor / fonticulus anterior**; setelah menutup pada usia 2–3 tahun disebut **bregma**. Karena soal menyebut “dewasa”, jawabannya bregma.  —  **Pola Diskriminator konteks:** Satu kata **usia** menentukan jawabannya: neonatus → fontanella; dewasa → bregma. Struktur sama, dua nama."
+  "rationale": "**[UB asli]** Titik temu **sutura coronalis dan sutura sagittalis** berbentuk rhomboid. Pada **neonatus** masih terbuka dan disebut **fontanella mayor / fonticulus anterior**; setelah menutup pada usia 2–3 tahun disebut **bregma**. Karena soal menyebut “dewasa”, jawabannya bregma.  —  **Pola Diskriminator konteks:** Satu kata **usia** menentukan jawabannya: neonatus → fontanella; dewasa → bregma. Struktur sama, dua nama.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "USI",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Titik temu **sutura coronalis dan sutura sagittalis** berbentuk rhomboid. Pada **neonatus** masih terbuka dan disebut **fontanella mayor / fonticulus anterior**; setelah menutup pada usia 2–3 tahun disebut **bregma**. Karena soal menyebut “dewasa”, jawabannya bregma.",
+  "diskriminator": "Satu kata **usia** menentukan jawabannya: neonatus → fontanella; dewasa → bregma. Struktur sama, dua nama."
  },
  {
   "n": 44,
@@ -664,7 +973,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Lambda",
-  "rationale": "**[UB asli]** **Lambda** = titik temu sutura sagittalis dengan sutura lambdoidea, di posterior cranium (pada neonatus: fontanella minor / fonticulus posterior). **Bregma** = titik temu sutura sagittalis dengan sutura **coronalis**, di anterior. Keduanya di garis tengah dan mudah tertukar.  —  **Pola Pasangan berlawanan:** **Bregma di depan (coronalis), Lambda di belakang (lambdoidea).** Namanya mengikuti sutura yang menyilang."
+  "rationale": "**[UB asli]** **Lambda** = titik temu sutura sagittalis dengan sutura lambdoidea, di posterior cranium (pada neonatus: fontanella minor / fonticulus posterior). **Bregma** = titik temu sutura sagittalis dengan sutura **coronalis**, di anterior. Keduanya di garis tengah dan mudah tertukar.  —  **Pola Pasangan berlawanan:** **Bregma di depan (coronalis), Lambda di belakang (lambdoidea).** Namanya mengikuti sutura yang menyilang.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "LAW",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Lambda** = titik temu sutura sagittalis dengan sutura lambdoidea, di posterior cranium (pada neonatus: fontanella minor / fonticulus posterior). **Bregma** = titik temu sutura sagittalis dengan sutura **coronalis**, di anterior. Keduanya di garis tengah dan mudah tertukar.",
+  "diskriminator": "**Bregma di depan (coronalis), Lambda di belakang (lambdoidea).** Namanya mengikuti sutura yang menyilang."
  },
  {
   "n": 45,
@@ -679,7 +995,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Os occipitale",
-  "rationale": "**[UB asli]** Tiga petunjuk mengarah ke satu tulang: **foramen magnum**, **condylus occipitalis** yang bersendi dengan atlas, dan keberadaan **art. atlantooccipitalis** — yang namanya sendiri sudah memuat “occipitalis”. Jawabannya **os occipitale**.  —  **Pola Nama = petunjuk:** Nama sendinya membocorkan tulangnya: **atlanto-occipitalis** = atlas + os occipitale."
+  "rationale": "**[UB asli]** Tiga petunjuk mengarah ke satu tulang: **foramen magnum**, **condylus occipitalis** yang bersendi dengan atlas, dan keberadaan **art. atlantooccipitalis** — yang namanya sendiri sudah memuat “occipitalis”. Jawabannya **os occipitale**.  —  **Pola Nama = petunjuk:** Nama sendinya membocorkan tulangnya: **atlanto-occipitalis** = atlas + os occipitale.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "NAM",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Tiga petunjuk mengarah ke satu tulang: **foramen magnum**, **condylus occipitalis** yang bersendi dengan atlas, dan keberadaan **art. atlantooccipitalis** — yang namanya sendiri sudah memuat “occipitalis”. Jawabannya **os occipitale**.",
+  "diskriminator": "Nama sendinya membocorkan tulangnya: **atlanto-occipitalis** = atlas + os occipitale."
  },
  {
   "n": 46,
@@ -694,7 +1017,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Os occipitale",
-  "rationale": "**[UB asli]** **Neurocranium** membungkus otak: os frontale, os parietale, os **occipitale**, os temporale, os sphenoidale, os ethmoidale. **Viscerocranium** membentuk wajah: os nasale, os maxillare, os zygomaticum, os mandibulae, os palatinum, os vomer, os lacrimale.  —  **Pola Angka & daftar:** Ini keanggotaan daftar, bukan penalaran — **hafal dua daftar**: neurocranium (6 jenis) vs viscerocranium."
+  "rationale": "**[UB asli]** **Neurocranium** membungkus otak: os frontale, os parietale, os **occipitale**, os temporale, os sphenoidale, os ethmoidale. **Viscerocranium** membentuk wajah: os nasale, os maxillare, os zygomaticum, os mandibulae, os palatinum, os vomer, os lacrimale.  —  **Pola Angka & daftar:** Ini keanggotaan daftar, bukan penalaran — **hafal dua daftar**: neurocranium (6 jenis) vs viscerocranium.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "ANG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Neurocranium** membungkus otak: os frontale, os parietale, os **occipitale**, os temporale, os sphenoidale, os ethmoidale. **Viscerocranium** membentuk wajah: os nasale, os maxillare, os zygomaticum, os mandibulae, os palatinum, os vomer, os lacrimale.",
+  "diskriminator": "Ini keanggotaan daftar, bukan penalaran — **hafal dua daftar**: neurocranium (6 jenis) vs viscerocranium."
  },
  {
   "n": 47,
@@ -709,7 +1039,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Arcus vertebrae",
-  "rationale": "**[UB asli]** Struktur dasar vertebra: **corpus vertebrae** dan **arcus vertebrae** — keduanya dimiliki semua vertebra. **Foramen transversarium hanya pada vertebrae cervicales** (C1–C7); **processus spinosus tidak dimiliki os atlas (C1)**. Karena itu jawabannya arcus vertebrae.  —  **Pola Ciri tetangga:** Kata **“semua”** mengubah soal menjadi uji pengecualian: cari satu vertebra yang tidak punya struktur itu."
+  "rationale": "**[UB asli]** Struktur dasar vertebra: **corpus vertebrae** dan **arcus vertebrae** — keduanya dimiliki semua vertebra. **Foramen transversarium hanya pada vertebrae cervicales** (C1–C7); **processus spinosus tidak dimiliki os atlas (C1)**. Karena itu jawabannya arcus vertebrae.  —  **Pola Ciri tetangga:** Kata **“semua”** mengubah soal menjadi uji pengecualian: cari satu vertebra yang tidak punya struktur itu.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Struktur dasar vertebra: **corpus vertebrae** dan **arcus vertebrae** — keduanya dimiliki semua vertebra. **Foramen transversarium hanya pada vertebrae cervicales** (C1–C7); **processus spinosus tidak dimiliki os atlas (C1)**. Karena itu jawabannya arcus vertebrae.",
+  "diskriminator": "Kata **“semua”** mengubah soal menjadi uji pengecualian: cari satu vertebra yang tidak punya struktur itu."
  },
  {
   "n": 48,
@@ -724,7 +1061,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Vertebra lumbalis I",
-  "rationale": "**[UB asli]** **Vertebrae lumbales** menanggung beban tubuh paling berat, sehingga corpusnya paling besar dan processus spinosusnya tebal, pendek, serta menghadap horizontal. Vertebrae cervicales paling kecil; thoracales punya processus spinosus panjang mengarah ke bawah.  —  **Pola Turunkan dari prinsip:** Ukuran corpus mengikuti **beban yang ditanggung**: makin ke kaudal makin besar, sampai sacrum."
+  "rationale": "**[UB asli]** **Vertebrae lumbales** menanggung beban tubuh paling berat, sehingga corpusnya paling besar dan processus spinosusnya tebal, pendek, serta menghadap horizontal. Vertebrae cervicales paling kecil; thoracales punya processus spinosus panjang mengarah ke bawah.  —  **Pola Turunkan dari prinsip:** Ukuran corpus mengikuti **beban yang ditanggung**: makin ke kaudal makin besar, sampai sacrum.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Vertebrae lumbales** menanggung beban tubuh paling berat, sehingga corpusnya paling besar dan processus spinosusnya tebal, pendek, serta menghadap horizontal. Vertebrae cervicales paling kecil; thoracales punya processus spinosus panjang mengarah ke bawah.",
+  "diskriminator": "Ukuran corpus mengikuti **beban yang ditanggung**: makin ke kaudal makin besar, sampai sacrum."
  },
  {
   "n": 49,
@@ -739,7 +1083,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "C2",
-  "rationale": "**[UB asli]** Tonjolan seperti gigi = **dens axis** (processus odontoideus) pada **C2 / axis**. Odontoid sendiri berarti “menyerupai gigi”. Dens inilah poros tempat atlas (C1) berputar, sehingga C2 adalah dasar anatomis gerakan menggeleng.  —  **Pola Nama = petunjuk:** Satu struktur menjawab dua soal: **dens axis** → C2, dan **geleng-geleng** → art. atlantoaxialis."
+  "rationale": "**[UB asli]** Tonjolan seperti gigi = **dens axis** (processus odontoideus) pada **C2 / axis**. Odontoid sendiri berarti “menyerupai gigi”. Dens inilah poros tempat atlas (C1) berputar, sehingga C2 adalah dasar anatomis gerakan menggeleng.  —  **Pola Nama = petunjuk:** Satu struktur menjawab dua soal: **dens axis** → C2, dan **geleng-geleng** → art. atlantoaxialis.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "NAM",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Tonjolan seperti gigi = **dens axis** (processus odontoideus) pada **C2 / axis**. Odontoid sendiri berarti “menyerupai gigi”. Dens inilah poros tempat atlas (C1) berputar, sehingga C2 adalah dasar anatomis gerakan menggeleng.",
+  "diskriminator": "Satu struktur menjawab dua soal: **dens axis** → C2, dan **geleng-geleng** → art. atlantoaxialis."
  },
  {
   "n": 50,
@@ -754,7 +1105,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Membrana synovialis",
-  "rationale": "**[UB asli]** Capsula articularis punya dua lapis: **capsula fibrosa** (luar) dan **membrana synovialis** (dalam), dan membrana synovialis inilah yang **memproduksi cairan sinovial**. Fungsi tiga pelengkap sendi: **ligamentum = penguat**, **bursa = bantalan**, **membran sinovial = pelumas**.  —  **Pola Penghasil vs produk:** Soal menanyakan **tempat/sel penghasil**, bukan zat yang dihasilkan. Membran sinovial ≠ cairan sinovial."
+  "rationale": "**[UB asli]** Capsula articularis punya dua lapis: **capsula fibrosa** (luar) dan **membrana synovialis** (dalam), dan membrana synovialis inilah yang **memproduksi cairan sinovial**. Fungsi tiga pelengkap sendi: **ligamentum = penguat**, **bursa = bantalan**, **membran sinovial = pelumas**.  —  **Pola Penghasil vs produk:** Soal menanyakan **tempat/sel penghasil**, bukan zat yang dihasilkan. Membran sinovial ≠ cairan sinovial.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "PRO",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Capsula articularis punya dua lapis: **capsula fibrosa** (luar) dan **membrana synovialis** (dalam), dan membrana synovialis inilah yang **memproduksi cairan sinovial**. Fungsi tiga pelengkap sendi: **ligamentum = penguat**, **bursa = bantalan**, **membran sinovial = pelumas**.",
+  "diskriminator": "Soal menanyakan **tempat/sel penghasil**, bukan zat yang dihasilkan. Membran sinovial ≠ cairan sinovial."
  },
  {
   "n": 51,
@@ -769,7 +1127,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Kelenjar sebasea",
-  "rationale": "**[UB asli]** Jerawat = gangguan aliran **sebum** dari **kelenjar sebasea**. Usia 15 tahun bukan hiasan: produksi sebum dirangsang **hormon androgen** yang melonjak saat pubertas, sehingga sebum berlebihan → lingkungan disukai bakteri → peradangan → jerawat.  —  **Pola Diskriminator konteks:** **Jerawat = sebum = sebasea.** Semua distraktor adalah kelenjar keringat, yang tidak menyebabkan jerawat."
+  "rationale": "**[UB asli]** Jerawat = gangguan aliran **sebum** dari **kelenjar sebasea**. Usia 15 tahun bukan hiasan: produksi sebum dirangsang **hormon androgen** yang melonjak saat pubertas, sehingga sebum berlebihan → lingkungan disukai bakteri → peradangan → jerawat.  —  **Pola Diskriminator konteks:** **Jerawat = sebum = sebasea.** Semua distraktor adalah kelenjar keringat, yang tidak menyebabkan jerawat.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "USI",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Jerawat = gangguan aliran **sebum** dari **kelenjar sebasea**. Usia 15 tahun bukan hiasan: produksi sebum dirangsang **hormon androgen** yang melonjak saat pubertas, sehingga sebum berlebihan → lingkungan disukai bakteri → peradangan → jerawat.",
+  "diskriminator": "**Jerawat = sebum = sebasea.** Semua distraktor adalah kelenjar keringat, yang tidak menyebabkan jerawat."
  },
  {
   "n": 52,
@@ -784,7 +1149,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Lubrikasi rambut dan kulit",
-  "rationale": "**[UB asli]** Perhatikan pergeseran pertanyaannya: bukan “kelenjar apa”, tapi **fungsi substansinya**. Substansinya adalah **sebum**, dan fungsinya: **melapisi permukaan rambut**, **melumasi kulit**, mencegah evaporasi berlebihan, dan bersifat antimikroba. Termoregulasi adalah fungsi keringat ekrin, bukan sebum.  —  **Pola Kategori jawaban:** Soal yang nyaris sama bisa menanyakan **kelenjar**, **substansi**, atau **fungsi**. Baca kategori yang diminta."
+  "rationale": "**[UB asli]** Perhatikan pergeseran pertanyaannya: bukan “kelenjar apa”, tapi **fungsi substansinya**. Substansinya adalah **sebum**, dan fungsinya: **melapisi permukaan rambut**, **melumasi kulit**, mencegah evaporasi berlebihan, dan bersifat antimikroba. Termoregulasi adalah fungsi keringat ekrin, bukan sebum.  —  **Pola Kategori jawaban:** Soal yang nyaris sama bisa menanyakan **kelenjar**, **substansi**, atau **fungsi**. Baca kategori yang diminta.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Perhatikan pergeseran pertanyaannya: bukan “kelenjar apa”, tapi **fungsi substansinya**. Substansinya adalah **sebum**, dan fungsinya: **melapisi permukaan rambut**, **melumasi kulit**, mencegah evaporasi berlebihan, dan bersifat antimikroba. Termoregulasi adalah fungsi keringat ekrin, bukan sebum.",
+  "diskriminator": "Soal yang nyaris sama bisa menanyakan **kelenjar**, **substansi**, atau **fungsi**. Baca kategori yang diminta."
  },
  {
   "n": 53,
@@ -799,7 +1171,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Androgen",
-  "rationale": "**Androgen** merangsang kelenjar sebasea. Inilah sebabnya jerawat memuncak pada masa pubertas, ketika androgen melonjak pada laki-laki maupun perempuan. Jadi jerawat pada dasarnya persoalan **hormonal**, bukan persoalan kebersihan.  —  **Pola Turunkan dari prinsip:** Hubungkan **usia pasien → hormon → kelenjar**. Rantai ini membuat soal kasus jerawat bisa dinalar."
+  "rationale": "**Androgen** merangsang kelenjar sebasea. Inilah sebabnya jerawat memuncak pada masa pubertas, ketika androgen melonjak pada laki-laki maupun perempuan. Jadi jerawat pada dasarnya persoalan **hormonal**, bukan persoalan kebersihan.  —  **Pola Turunkan dari prinsip:** Hubungkan **usia pasien → hormon → kelenjar**. Rantai ini membuat soal kasus jerawat bisa dinalar.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Androgen** merangsang kelenjar sebasea. Inilah sebabnya jerawat memuncak pada masa pubertas, ketika androgen melonjak pada laki-laki maupun perempuan. Jadi jerawat pada dasarnya persoalan **hormonal**, bukan persoalan kebersihan.",
+  "diskriminator": "Hubungkan **usia pasien → hormon → kelenjar**. Rantai ini membuat soal kasus jerawat bisa dinalar."
  },
  {
   "n": 54,
@@ -814,7 +1193,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Keratin",
-  "rationale": "**[UB asli]** **Callus = peningkatan produksi KERATIN di stratum korneum**. Perhatikan opsi C: **keratinosit** adalah **sel** penghasilnya, bukan **substansi** yang diproduksi — dan soal bertanya tentang substansi. Secara histologis, area yang sering tergesek juga menunjukkan **tonofibril lebih banyak** di stratum spinosum.  —  **Pola Penghasil vs produk:** **Keratin = substansi; keratinosit = sel.** Pasangan penghasil–produk yang paling sering dipakai sebagai distraktor."
+  "rationale": "**[UB asli]** **Callus = peningkatan produksi KERATIN di stratum korneum**. Perhatikan opsi C: **keratinosit** adalah **sel** penghasilnya, bukan **substansi** yang diproduksi — dan soal bertanya tentang substansi. Secara histologis, area yang sering tergesek juga menunjukkan **tonofibril lebih banyak** di stratum spinosum.  —  **Pola Penghasil vs produk:** **Keratin = substansi; keratinosit = sel.** Pasangan penghasil–produk yang paling sering dipakai sebagai distraktor.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "PRO",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Callus = peningkatan produksi KERATIN di stratum korneum**. Perhatikan opsi C: **keratinosit** adalah **sel** penghasilnya, bukan **substansi** yang diproduksi — dan soal bertanya tentang substansi. Secara histologis, area yang sering tergesek juga menunjukkan **tonofibril lebih banyak** di stratum spinosum.",
+  "diskriminator": "**Keratin = substansi; keratinosit = sel.** Pasangan penghasil–produk yang paling sering dipakai sebagai distraktor."
  },
  {
   "n": 55,
@@ -829,7 +1215,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Kolesterol → kolekalsiferol",
-  "rationale": "**[UB asli]** Jalurnya: **kolesterol —(UV, di KULIT)→ kolekalsiferol (vit D₃) —(HATI)→ kalsidiol —(GINJAL)→ kalsitriol** → absorpsi kalsium &amp; fosfat di usus halus. **UV hanya diperlukan pada langkah pertama**, jadi memblokir UV menghentikan konversi kolesterol → kolekalsiferol. Tahap di hati dan ginjal tidak butuh UV.  —  **Pola Turunkan dari prinsip:** Tiga organ berurutan: **KULIT → HATI → GINJAL**. Yang butuh UV cuma langkah di kulit."
+  "rationale": "**[UB asli]** Jalurnya: **kolesterol —(UV, di KULIT)→ kolekalsiferol (vit D₃) —(HATI)→ kalsidiol —(GINJAL)→ kalsitriol** → absorpsi kalsium &amp; fosfat di usus halus. **UV hanya diperlukan pada langkah pertama**, jadi memblokir UV menghentikan konversi kolesterol → kolekalsiferol. Tahap di hati dan ginjal tidak butuh UV.  —  **Pola Turunkan dari prinsip:** Tiga organ berurutan: **KULIT → HATI → GINJAL**. Yang butuh UV cuma langkah di kulit.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Jalurnya: **kolesterol —(UV, di KULIT)→ kolekalsiferol (vit D₃) —(HATI)→ kalsidiol —(GINJAL)→ kalsitriol** → absorpsi kalsium &amp; fosfat di usus halus. **UV hanya diperlukan pada langkah pertama**, jadi memblokir UV menghentikan konversi kolesterol → kolekalsiferol. Tahap di hati dan ginjal tidak butuh UV.",
+  "diskriminator": "Tiga organ berurutan: **KULIT → HATI → GINJAL**. Yang butuh UV cuma langkah di kulit."
  },
  {
   "n": 56,
@@ -844,7 +1237,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Vitamin D",
-  "rationale": "**[UB asli]** **Vitamin D** (bentuk aktifnya kalsitriol) meningkatkan absorpsi kalsium di usus dan reabsorpsinya di ginjal. Empat peran vitamin D: absorpsi Ca di usus &amp; reabsorpsi di ginjal, mempertahankan kadar Ca dan fosfat untuk pembentukan tulang, **meningkatkan aktivitas osteoblas DAN osteoklas**, serta menjaga fungsi hormon paratiroid.  —  **Pola Kategori jawaban:** Perhatikan kata **VITAMIN** di soal. Versi lain dari soal ini menanyakan **HORMON**, dan jawabannya berbeda."
+  "rationale": "**[UB asli]** **Vitamin D** (bentuk aktifnya kalsitriol) meningkatkan absorpsi kalsium di usus dan reabsorpsinya di ginjal. Empat peran vitamin D: absorpsi Ca di usus &amp; reabsorpsi di ginjal, mempertahankan kadar Ca dan fosfat untuk pembentukan tulang, **meningkatkan aktivitas osteoblas DAN osteoklas**, serta menjaga fungsi hormon paratiroid.  —  **Pola Kategori jawaban:** Perhatikan kata **VITAMIN** di soal. Versi lain dari soal ini menanyakan **HORMON**, dan jawabannya berbeda.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Vitamin D** (bentuk aktifnya kalsitriol) meningkatkan absorpsi kalsium di usus dan reabsorpsinya di ginjal. Empat peran vitamin D: absorpsi Ca di usus &amp; reabsorpsi di ginjal, mempertahankan kadar Ca dan fosfat untuk pembentukan tulang, **meningkatkan aktivitas osteoblas DAN osteoklas**, serta menjaga fungsi hormon paratiroid.",
+  "diskriminator": "Perhatikan kata **VITAMIN** di soal. Versi lain dari soal ini menanyakan **HORMON**, dan jawabannya berbeda."
  },
  {
   "n": 57,
@@ -859,7 +1259,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Estrogen",
-  "rationale": "**[UB asli]** Jawabannya **estrogen**. Soal ini adalah pasangan dari soal sebelumnya, dengan redaksi nyaris identik — hanya kata terakhirnya berbeda: **“vitamin” → vitamin D**, **“hormon” → estrogen**. Estrogen juga **menekan aktivitas osteoklas** dalam resorpsi tulang, sehingga defisiensinya memicu osteoporosis.  —  **Pola Kategori jawaban:** Satu kata — **vitamin** atau **hormon** — memisahkan dua jawaban yang sama sekali berbeda."
+  "rationale": "**[UB asli]** Jawabannya **estrogen**. Soal ini adalah pasangan dari soal sebelumnya, dengan redaksi nyaris identik — hanya kata terakhirnya berbeda: **“vitamin” → vitamin D**, **“hormon” → estrogen**. Estrogen juga **menekan aktivitas osteoklas** dalam resorpsi tulang, sehingga defisiensinya memicu osteoporosis.  —  **Pola Kategori jawaban:** Satu kata — **vitamin** atau **hormon** — memisahkan dua jawaban yang sama sekali berbeda.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Jawabannya **estrogen**. Soal ini adalah pasangan dari soal sebelumnya, dengan redaksi nyaris identik — hanya kata terakhirnya berbeda: **“vitamin” → vitamin D**, **“hormon” → estrogen**. Estrogen juga **menekan aktivitas osteoklas** dalam resorpsi tulang, sehingga defisiensinya memicu osteoporosis.",
+  "diskriminator": "Satu kata — **vitamin** atau **hormon** — memisahkan dua jawaban yang sama sekali berbeda."
  },
  {
   "n": 58,
@@ -874,7 +1281,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Osteomalasia",
-  "rationale": "**[UB asli]** **Osteomalasia** (malacia = pelunakan) = defisiensi vitamin D pada **dewasa**, yaitu tulang yang sudah selesai tumbuh sehingga yang terjadi adalah gangguan mineralisasi → tulang lunak. **Rakitis** = defisiensi vitamin D pada **anak**. **Osteoporosis** mekanismenya berbeda: **penurunan massa tulang**, terkait usia, defisiensi estrogen, dan kortikosteroid.  —  **Pola Diskriminator konteks:** Kata **“dewasa”** adalah diskriminatornya. Slide fisiologi menulis “osteoporosis”, tetapi kunci soal UB adalah osteomalasia — ikuti kata usia di soal."
+  "rationale": "**[UB asli]** **Osteomalasia** (malacia = pelunakan) = defisiensi vitamin D pada **dewasa**, yaitu tulang yang sudah selesai tumbuh sehingga yang terjadi adalah gangguan mineralisasi → tulang lunak. **Rakitis** = defisiensi vitamin D pada **anak**. **Osteoporosis** mekanismenya berbeda: **penurunan massa tulang**, terkait usia, defisiensi estrogen, dan kortikosteroid.  —  **Pola Diskriminator konteks:** Kata **“dewasa”** adalah diskriminatornya. Slide fisiologi menulis “osteoporosis”, tetapi kunci soal UB adalah osteomalasia — ikuti kata usia di soal.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "USI",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Osteomalasia** (malacia = pelunakan) = defisiensi vitamin D pada **dewasa**, yaitu tulang yang sudah selesai tumbuh sehingga yang terjadi adalah gangguan mineralisasi → tulang lunak. **Rakitis** = defisiensi vitamin D pada **anak**. **Osteoporosis** mekanismenya berbeda: **penurunan massa tulang**, terkait usia, defisiensi estrogen, dan kortikosteroid.",
+  "diskriminator": "Kata **“dewasa”** adalah diskriminatornya. Slide fisiologi menulis “osteoporosis”, tetapi kunci soal UB adalah osteomalasia — ikuti kata usia di soal."
  },
  {
   "n": 59,
@@ -889,7 +1303,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Rakitis",
-  "rationale": "**[UB asli]** **Rakitis** = defisiensi vitamin D pada **anak**, pada tulang yang **masih tumbuh**, sehingga menimbulkan deformitas pertumbuhan. Soal ini dan soal sebelumnya sengaja dibuat berpasangan dengan opsi yang hampir sama — yang membedakan hanya usia pasiennya.  —  **Pola Diskriminator konteks:** **Anak = rakitis. Dewasa = osteomalasia.** Penyebab sama (vitamin D), usia yang membedakan."
+  "rationale": "**[UB asli]** **Rakitis** = defisiensi vitamin D pada **anak**, pada tulang yang **masih tumbuh**, sehingga menimbulkan deformitas pertumbuhan. Soal ini dan soal sebelumnya sengaja dibuat berpasangan dengan opsi yang hampir sama — yang membedakan hanya usia pasiennya.  —  **Pola Diskriminator konteks:** **Anak = rakitis. Dewasa = osteomalasia.** Penyebab sama (vitamin D), usia yang membedakan.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "USI",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Rakitis** = defisiensi vitamin D pada **anak**, pada tulang yang **masih tumbuh**, sehingga menimbulkan deformitas pertumbuhan. Soal ini dan soal sebelumnya sengaja dibuat berpasangan dengan opsi yang hampir sama — yang membedakan hanya usia pasiennya.",
+  "diskriminator": "**Anak = rakitis. Dewasa = osteomalasia.** Penyebab sama (vitamin D), usia yang membedakan."
  },
  {
   "n": 60,
@@ -904,7 +1325,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 4,
   "kunci": "Free nerve ending",
-  "rationale": "**[UB asli]** Nyeri dideteksi **ujung saraf bebas (free nerve ending)** yang telanjang — tanpa kapsul dan tanpa sel pendamping. Hati-hati: ujung saraf bebas yang **melekat pada sel Merkel** membentuk corpusculum Merkel, dan itu **mekanoreseptor sentuhan ringan**, bukan reseptor nyeri. Yang menentukan modalitas adalah struktur pendampingnya, bukan sarafnya.  —  **Pola Dua kerangka:** Soal **fisiologi** → nyeri &amp; suhu = ujung saraf bebas. Soal **histologi** → dingin = C. Krause, panas = C. Ruffini."
+  "rationale": "**[UB asli]** Nyeri dideteksi **ujung saraf bebas (free nerve ending)** yang telanjang — tanpa kapsul dan tanpa sel pendamping. Hati-hati: ujung saraf bebas yang **melekat pada sel Merkel** membentuk corpusculum Merkel, dan itu **mekanoreseptor sentuhan ringan**, bukan reseptor nyeri. Yang menentukan modalitas adalah struktur pendampingnya, bukan sarafnya.  —  **Pola Dua kerangka:** Soal **fisiologi** → nyeri &amp; suhu = ujung saraf bebas. Soal **histologi** → dingin = C. Krause, panas = C. Ruffini.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "KER",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Nyeri dideteksi **ujung saraf bebas (free nerve ending)** yang telanjang — tanpa kapsul dan tanpa sel pendamping. Hati-hati: ujung saraf bebas yang **melekat pada sel Merkel** membentuk corpusculum Merkel, dan itu **mekanoreseptor sentuhan ringan**, bukan reseptor nyeri. Yang menentukan modalitas adalah struktur pendampingnya, bukan sarafnya.",
+  "diskriminator": "Soal **fisiologi** → nyeri &amp; suhu = ujung saraf bebas. Soal **histologi** → dingin = C. Krause, panas = C. Ruffini."
  },
  {
   "n": 61,
@@ -919,7 +1347,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Nyeri",
-  "rationale": "**[UB asli]** Reseptor suhu dibedakan menjadi tiga: dingin, hangat, dan **nyeri** — dan **reseptor nyeri dirangsang oleh derajat panas atau dingin yang EKSTREM**. Pada −80 °C stimulusnya sudah melampaui rentang termoreseptor dan masuk wilayah merusak jaringan, sehingga yang terangsang adalah nosiseptor.  —  **Pola Turunkan dari prinsip:** Prinsip umum: **stimulus ekstrem — panas maupun dingin — dirasakan sebagai NYERI, bukan sebagai suhu.**"
+  "rationale": "**[UB asli]** Reseptor suhu dibedakan menjadi tiga: dingin, hangat, dan **nyeri** — dan **reseptor nyeri dirangsang oleh derajat panas atau dingin yang EKSTREM**. Pada −80 °C stimulusnya sudah melampaui rentang termoreseptor dan masuk wilayah merusak jaringan, sehingga yang terangsang adalah nosiseptor.  —  **Pola Turunkan dari prinsip:** Prinsip umum: **stimulus ekstrem — panas maupun dingin — dirasakan sebagai NYERI, bukan sebagai suhu.**",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Reseptor suhu dibedakan menjadi tiga: dingin, hangat, dan **nyeri** — dan **reseptor nyeri dirangsang oleh derajat panas atau dingin yang EKSTREM**. Pada −80 °C stimulusnya sudah melampaui rentang termoreseptor dan masuk wilayah merusak jaringan, sehingga yang terangsang adalah nosiseptor.",
+  "diskriminator": "Prinsip umum: **stimulus ekstrem — panas maupun dingin — dirasakan sebagai NYERI, bukan sebagai suhu.**"
  },
  {
   "n": 62,
@@ -934,7 +1369,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "C. Vater Pacini",
-  "rationale": "**[UB asli]** Fungsi yang **tersisa** adalah tekanan → **C. Vater Pacini** (reseptor tekanan, sentuhan kasar, getaran; terletak di dermis dalam dan subkutan). Yang hilang adalah modalitas suhu, yang menurut PPT histologi diperankan C. Krause (dingin) dan C. Ruffini (panas).  —  **Pola Turunkan dari prinsip:** Baca **apa yang masih bisa**, bukan hanya apa yang hilang. Yang tersisa menunjuk langsung ke jawabannya."
+  "rationale": "**[UB asli]** Fungsi yang **tersisa** adalah tekanan → **C. Vater Pacini** (reseptor tekanan, sentuhan kasar, getaran; terletak di dermis dalam dan subkutan). Yang hilang adalah modalitas suhu, yang menurut PPT histologi diperankan C. Krause (dingin) dan C. Ruffini (panas).  —  **Pola Turunkan dari prinsip:** Baca **apa yang masih bisa**, bukan hanya apa yang hilang. Yang tersisa menunjuk langsung ke jawabannya.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Fungsi yang **tersisa** adalah tekanan → **C. Vater Pacini** (reseptor tekanan, sentuhan kasar, getaran; terletak di dermis dalam dan subkutan). Yang hilang adalah modalitas suhu, yang menurut PPT histologi diperankan C. Krause (dingin) dan C. Ruffini (panas).",
+  "diskriminator": "Baca **apa yang masih bisa**, bukan hanya apa yang hilang. Yang tersisa menunjuk langsung ke jawabannya."
  },
  {
   "n": 63,
@@ -949,7 +1391,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Melanin",
-  "rationale": "**[UB asli]** **Melanin**. Kanker kulit berasal dari **mutasi DNA** akibat UV, dan melanin membentuk selubung pelindung di atas **inti keratinosit** sehingga DNA terlindungi. Keratin melindungi secara mekanis (abrasi, panas, mikroba, kimia); lipid lamelar mencegah kehilangan air; sebum bersifat antimikroba — tidak ada yang melindungi DNA.  —  **Pola Penghasil vs produk:** Kanker = kerusakan DNA, jadi pelindungnya harus yang **melindungi inti sel** → melanin, bukan keratin."
+  "rationale": "**[UB asli]** **Melanin**. Kanker kulit berasal dari **mutasi DNA** akibat UV, dan melanin membentuk selubung pelindung di atas **inti keratinosit** sehingga DNA terlindungi. Keratin melindungi secara mekanis (abrasi, panas, mikroba, kimia); lipid lamelar mencegah kehilangan air; sebum bersifat antimikroba — tidak ada yang melindungi DNA.  —  **Pola Penghasil vs produk:** Kanker = kerusakan DNA, jadi pelindungnya harus yang **melindungi inti sel** → melanin, bukan keratin.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "PRO",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Melanin**. Kanker kulit berasal dari **mutasi DNA** akibat UV, dan melanin membentuk selubung pelindung di atas **inti keratinosit** sehingga DNA terlindungi. Keratin melindungi secara mekanis (abrasi, panas, mikroba, kimia); lipid lamelar mencegah kehilangan air; sebum bersifat antimikroba — tidak ada yang melindungi DNA.",
+  "diskriminator": "Kanker = kerusakan DNA, jadi pelindungnya harus yang **melindungi inti sel** → melanin, bukan keratin."
  },
  {
   "n": 64,
@@ -964,7 +1413,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Membentuk selubung di sekitar inti keratinosit sehingga DNA terlindungi",
-  "rationale": "Granula melanin yang ditransfer ke keratinosit **diposisikan mengelilingi inti sel**, membentuk “protective veil” yang memblokir UV sebelum mencapai DNA. Rantainya: UV → mutasi DNA di nukleus keratinosit → kanker kulit; melanin memotong rantai itu **tepat di langkah pertama**.  —  **Pola Turunkan dari prinsip:** Lokasi granula melanin — **di sekitar inti keratinosit** — adalah seluruh penjelasannya."
+  "rationale": "Granula melanin yang ditransfer ke keratinosit **diposisikan mengelilingi inti sel**, membentuk “protective veil” yang memblokir UV sebelum mencapai DNA. Rantainya: UV → mutasi DNA di nukleus keratinosit → kanker kulit; melanin memotong rantai itu **tepat di langkah pertama**.  —  **Pola Turunkan dari prinsip:** Lokasi granula melanin — **di sekitar inti keratinosit** — adalah seluruh penjelasannya.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Granula melanin yang ditransfer ke keratinosit **diposisikan mengelilingi inti sel**, membentuk “protective veil” yang memblokir UV sebelum mencapai DNA. Rantainya: UV → mutasi DNA di nukleus keratinosit → kanker kulit; melanin memotong rantai itu **tepat di langkah pertama**.",
+  "diskriminator": "Lokasi granula melanin — **di sekitar inti keratinosit** — adalah seluruh penjelasannya."
  },
  {
   "n": 65,
@@ -979,7 +1435,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "α-MSH (α-melanocyte stimulating hormone)",
-  "rationale": "Keratinosit mengeluarkan **α-MSH** yang merangsang melanosit sehingga produksi melanin meningkat — inilah mekanisme penggelapan kulit (tanning). Logikanya: **keratinosit yang terancam, tetapi melanosit yang bekerja**, sehingga perlu sinyal di antara keduanya. Tirosinase adalah enzim di dalam melanosom, bukan sinyal antar sel.  —  **Pola Turunkan dari prinsip:** Unit melanin epidermal bertukar **dua hal**: granula melanin (melanosit → keratinosit) dan sinyal α-MSH (keratinosit → melanosit)."
+  "rationale": "Keratinosit mengeluarkan **α-MSH** yang merangsang melanosit sehingga produksi melanin meningkat — inilah mekanisme penggelapan kulit (tanning). Logikanya: **keratinosit yang terancam, tetapi melanosit yang bekerja**, sehingga perlu sinyal di antara keduanya. Tirosinase adalah enzim di dalam melanosom, bukan sinyal antar sel.  —  **Pola Turunkan dari prinsip:** Unit melanin epidermal bertukar **dua hal**: granula melanin (melanosit → keratinosit) dan sinyal α-MSH (keratinosit → melanosit).",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Keratinosit mengeluarkan **α-MSH** yang merangsang melanosit sehingga produksi melanin meningkat — inilah mekanisme penggelapan kulit (tanning). Logikanya: **keratinosit yang terancam, tetapi melanosit yang bekerja**, sehingga perlu sinyal di antara keduanya. Tirosinase adalah enzim di dalam melanosom, bukan sinyal antar sel.",
+  "diskriminator": "Unit melanin epidermal bertukar **dua hal**: granula melanin (melanosit → keratinosit) dan sinyal α-MSH (keratinosit → melanosit)."
  },
  {
   "n": 66,
@@ -994,7 +1457,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Simpatis",
-  "rationale": "Produksi keringat bergantung pada **stimulasi saraf simpatis**, dan kekuatan stimulasi itu menentukan bukan hanya volume tetapi juga **komposisi** keringat — makin kuat, makin banyak sisa metabolisme (urea, asam urat, amonia, asam amino, glukosa, asam laktat) yang terbawa.  —  **Pola Kategori jawaban:** Keringat = **simpatis**. Catatan Guyton: kelenjar keringat adalah pengecualian — simpatis tetapi neurotransmiternya asetilkolin."
+  "rationale": "Produksi keringat bergantung pada **stimulasi saraf simpatis**, dan kekuatan stimulasi itu menentukan bukan hanya volume tetapi juga **komposisi** keringat — makin kuat, makin banyak sisa metabolisme (urea, asam urat, amonia, asam amino, glukosa, asam laktat) yang terbawa.  —  **Pola Kategori jawaban:** Keringat = **simpatis**. Catatan Guyton: kelenjar keringat adalah pengecualian — simpatis tetapi neurotransmiternya asetilkolin.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Produksi keringat bergantung pada **stimulasi saraf simpatis**, dan kekuatan stimulasi itu menentukan bukan hanya volume tetapi juga **komposisi** keringat — makin kuat, makin banyak sisa metabolisme (urea, asam urat, amonia, asam amino, glukosa, asam laktat) yang terbawa.",
+  "diskriminator": "Keringat = **simpatis**. Catatan Guyton: kelenjar keringat adalah pengecualian — simpatis tetapi neurotransmiternya asetilkolin."
  },
  {
   "n": 67,
@@ -1009,7 +1479,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Kelenjar apokrin",
-  "rationale": "Empat dari lima pilihan merujuk **kelenjar yang sama**: ekrin, merokrin, kelenjar keringat sejati, dan kelenjar keringat di telapak tangan semuanya satu kelenjar. Hanya **apokrin** yang berbeda, dan slide menyatakan tegas: emotional &amp; sexual sweating → **not involved in thermoregulation**.  —  **Pola Ciri tetangga:** Dua alasan struktural apokrin tidak bisa: **distribusinya terbatas** dan **sekretnya kental** sehingga sulit menguap."
+  "rationale": "Empat dari lima pilihan merujuk **kelenjar yang sama**: ekrin, merokrin, kelenjar keringat sejati, dan kelenjar keringat di telapak tangan semuanya satu kelenjar. Hanya **apokrin** yang berbeda, dan slide menyatakan tegas: emotional &amp; sexual sweating → **not involved in thermoregulation**.  —  **Pola Ciri tetangga:** Dua alasan struktural apokrin tidak bisa: **distribusinya terbatas** dan **sekretnya kental** sehingga sulit menguap.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Empat dari lima pilihan merujuk **kelenjar yang sama**: ekrin, merokrin, kelenjar keringat sejati, dan kelenjar keringat di telapak tangan semuanya satu kelenjar. Hanya **apokrin** yang berbeda, dan slide menyatakan tegas: emotional &amp; sexual sweating → **not involved in thermoregulation**.",
+  "diskriminator": "Dua alasan struktural apokrin tidak bisa: **distribusinya terbatas** dan **sekretnya kental** sehingga sulit menguap."
  },
  {
   "n": 68,
@@ -1024,7 +1501,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Prostaglandin",
-  "rationale": "Dua kelompok zat kimia nyeri: yang **memicu langsung** (bradikinin, serotonin, histamin, ion kalium, asam, asetilkolin, enzim proteolitik) dan yang **hanya meningkatkan sensitivitas** (**prostaglandin** dan **substance P**). Inilah dasar kerja NSAID seperti ibuprofen dan aspirin: menghambat sintesis prostaglandin sehingga sensitisasi hilang.  —  **Pola Ciri tetangga:** **Memicu vs mensensitisasi** adalah dua kategori berbeda. Hanya prostaglandin dan substance P di kelompok kedua."
+  "rationale": "Dua kelompok zat kimia nyeri: yang **memicu langsung** (bradikinin, serotonin, histamin, ion kalium, asam, asetilkolin, enzim proteolitik) dan yang **hanya meningkatkan sensitivitas** (**prostaglandin** dan **substance P**). Inilah dasar kerja NSAID seperti ibuprofen dan aspirin: menghambat sintesis prostaglandin sehingga sensitisasi hilang.  —  **Pola Ciri tetangga:** **Memicu vs mensensitisasi** adalah dua kategori berbeda. Hanya prostaglandin dan substance P di kelompok kedua.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Dua kelompok zat kimia nyeri: yang **memicu langsung** (bradikinin, serotonin, histamin, ion kalium, asam, asetilkolin, enzim proteolitik) dan yang **hanya meningkatkan sensitivitas** (**prostaglandin** dan **substance P**). Inilah dasar kerja NSAID seperti ibuprofen dan aspirin: menghambat sintesis prostaglandin sehingga sensitisasi hilang.",
+  "diskriminator": "**Memicu vs mensensitisasi** adalah dua kategori berbeda. Hanya prostaglandin dan substance P di kelompok kedua."
  },
  {
   "n": 69,
@@ -1039,7 +1523,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Sembuh lebih baik dengan jaringan parut lebih sedikit",
-  "rationale": "Garis cleavage dibentuk oleh **susunan serabut kolagen**. Irisan **sejajar** hanya memisahkan serabut tanpa memotongnya, dan ketegangan kolagen justru **merapatkan** tepi luka → sembuh lebih baik, parut minimal. Irisan **tegak lurus** memotong serabut dan ketegangan di kedua sisi **menarik luka terbuka** → parut lebih banyak.  —  **Pola Pasangan berlawanan:** **Sejajar = merapat. Tegak lurus = tertarik terbuka.** Pasangan berlawanan yang mudah tertukar."
+  "rationale": "Garis cleavage dibentuk oleh **susunan serabut kolagen**. Irisan **sejajar** hanya memisahkan serabut tanpa memotongnya, dan ketegangan kolagen justru **merapatkan** tepi luka → sembuh lebih baik, parut minimal. Irisan **tegak lurus** memotong serabut dan ketegangan di kedua sisi **menarik luka terbuka** → parut lebih banyak.  —  **Pola Pasangan berlawanan:** **Sejajar = merapat. Tegak lurus = tertarik terbuka.** Pasangan berlawanan yang mudah tertukar.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Garis cleavage dibentuk oleh **susunan serabut kolagen**. Irisan **sejajar** hanya memisahkan serabut tanpa memotongnya, dan ketegangan kolagen justru **merapatkan** tepi luka → sembuh lebih baik, parut minimal. Irisan **tegak lurus** memotong serabut dan ketegangan di kedua sisi **menarik luka terbuka** → parut lebih banyak.",
+  "diskriminator": "**Sejajar = merapat. Tegak lurus = tertarik terbuka.** Pasangan berlawanan yang mudah tertukar."
  },
  {
   "n": 70,
@@ -1054,7 +1545,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Kulit tipis",
-  "rationale": "Patch transdermal harus menembus epidermis sampai mencapai pembuluh darah, jadi lebih efektif pada **kulit tipis** — yang **tidak memiliki stratum lucidum** dan stratum korneumnya lebih tipis, sehingga lapisan yang harus ditembus lebih sedikit. Contoh patch: nitrogliserin, estradiol, kontrasepsi, nikotin, fentanil.  —  **Pola Turunkan dari prinsip:** Telapak tangan, stratum lucidum tebal, dan telapak kaki semuanya merujuk **kulit tebal** — satu kategori yang salah, disamarkan jadi tiga pilihan."
+  "rationale": "Patch transdermal harus menembus epidermis sampai mencapai pembuluh darah, jadi lebih efektif pada **kulit tipis** — yang **tidak memiliki stratum lucidum** dan stratum korneumnya lebih tipis, sehingga lapisan yang harus ditembus lebih sedikit. Contoh patch: nitrogliserin, estradiol, kontrasepsi, nikotin, fentanil.  —  **Pola Turunkan dari prinsip:** Telapak tangan, stratum lucidum tebal, dan telapak kaki semuanya merujuk **kulit tebal** — satu kategori yang salah, disamarkan jadi tiga pilihan.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Patch transdermal harus menembus epidermis sampai mencapai pembuluh darah, jadi lebih efektif pada **kulit tipis** — yang **tidak memiliki stratum lucidum** dan stratum korneumnya lebih tipis, sehingga lapisan yang harus ditembus lebih sedikit. Contoh patch: nitrogliserin, estradiol, kontrasepsi, nikotin, fentanil.",
+  "diskriminator": "Telapak tangan, stratum lucidum tebal, dan telapak kaki semuanya merujuk **kulit tebal** — satu kategori yang salah, disamarkan jadi tiga pilihan."
  },
  {
   "n": 71,
@@ -1069,7 +1567,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Vitamin C",
-  "rationale": "Sawar utama kulit berbasis **lemak** (keratin + lipid lamelar dari stratum granulosum), sehingga **zat larut lemak menembus** dan **zat larut air dapat diabaikan**. Yang menembus: vitamin **A, D, E, K**, O₂ dan CO₂, obat, serta zat toksik larut lemak (aseton, karbon tetraklorida, timbal, merkuri, arsen). **Vitamin C larut air** → tidak menembus.  —  **Pola Turunkan dari prinsip:** Satu prinsip menurunkan seluruh daftar: **sawarnya lemak, jadi yang lolos adalah yang larut lemak.**"
+  "rationale": "Sawar utama kulit berbasis **lemak** (keratin + lipid lamelar dari stratum granulosum), sehingga **zat larut lemak menembus** dan **zat larut air dapat diabaikan**. Yang menembus: vitamin **A, D, E, K**, O₂ dan CO₂, obat, serta zat toksik larut lemak (aseton, karbon tetraklorida, timbal, merkuri, arsen). **Vitamin C larut air** → tidak menembus.  —  **Pola Turunkan dari prinsip:** Satu prinsip menurunkan seluruh daftar: **sawarnya lemak, jadi yang lolos adalah yang larut lemak.**",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Sawar utama kulit berbasis **lemak** (keratin + lipid lamelar dari stratum granulosum), sehingga **zat larut lemak menembus** dan **zat larut air dapat diabaikan**. Yang menembus: vitamin **A, D, E, K**, O₂ dan CO₂, obat, serta zat toksik larut lemak (aseton, karbon tetraklorida, timbal, merkuri, arsen). **Vitamin C larut air** → tidak menembus.",
+  "diskriminator": "Satu prinsip menurunkan seluruh daftar: **sawarnya lemak, jadi yang lolos adalah yang larut lemak.**"
  },
  {
   "n": 72,
@@ -1084,7 +1589,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Vasokonstriksi pembuluh dermis dan pengalihan darah ke organ vital",
-  "rationale": "Dermis menyimpan **8–10% aliran darah** pada orang dewasa yang beristirahat, sehingga kulit berfungsi sebagai cadangan darah. Saat kehilangan darah banyak: **vasokonstriksi** pembuluh kulit → darah dialihkan ke **organ vital** → kulit pucat. Mekanisme vasokonstriksi yang sama juga dipakai untuk **menahan panas** saat kedinginan.  —  **Pola Pasangan berlawanan:** **Konstriksi = menyempit. Dilatasi = melebar.** Pucat berarti darah berkurang → konstriksi."
+  "rationale": "Dermis menyimpan **8–10% aliran darah** pada orang dewasa yang beristirahat, sehingga kulit berfungsi sebagai cadangan darah. Saat kehilangan darah banyak: **vasokonstriksi** pembuluh kulit → darah dialihkan ke **organ vital** → kulit pucat. Mekanisme vasokonstriksi yang sama juga dipakai untuk **menahan panas** saat kedinginan.  —  **Pola Pasangan berlawanan:** **Konstriksi = menyempit. Dilatasi = melebar.** Pucat berarti darah berkurang → konstriksi.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Dermis menyimpan **8–10% aliran darah** pada orang dewasa yang beristirahat, sehingga kulit berfungsi sebagai cadangan darah. Saat kehilangan darah banyak: **vasokonstriksi** pembuluh kulit → darah dialihkan ke **organ vital** → kulit pucat. Mekanisme vasokonstriksi yang sama juga dipakai untuk **menahan panas** saat kedinginan.",
+  "diskriminator": "**Konstriksi = menyempit. Dilatasi = melebar.** Pucat berarti darah berkurang → konstriksi."
  },
  {
   "n": 73,
@@ -1099,7 +1611,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Basale – spinosum – granulosum – lusidum – korneum",
-  "rationale": "Dari dalam ke luar: **basale → spinosum → granulosum → lusidum → korneum**. Lima lapisan ini bukan lima jenis sel berbeda, melainkan **lima tahap hidup satu keratinosit**: lahir di basale, naik sambil mati dan berubah jadi keratin, lalu terlepas di korneum. Siklus lengkapnya 15–30 hari. Catat juga **stratum Malphigi = basale + spinosum**.  —  **Pola Pasangan berlawanan:** Perhatikan arah yang diminta. Dan jangan tertukar urutan **granulosum sebelum lusidum** — sejalan dengan keratohialin sebelum eleidin."
+  "rationale": "Dari dalam ke luar: **basale → spinosum → granulosum → lusidum → korneum**. Lima lapisan ini bukan lima jenis sel berbeda, melainkan **lima tahap hidup satu keratinosit**: lahir di basale, naik sambil mati dan berubah jadi keratin, lalu terlepas di korneum. Siklus lengkapnya 15–30 hari. Catat juga **stratum Malphigi = basale + spinosum**.  —  **Pola Pasangan berlawanan:** Perhatikan arah yang diminta. Dan jangan tertukar urutan **granulosum sebelum lusidum** — sejalan dengan keratohialin sebelum eleidin.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Dari dalam ke luar: **basale → spinosum → granulosum → lusidum → korneum**. Lima lapisan ini bukan lima jenis sel berbeda, melainkan **lima tahap hidup satu keratinosit**: lahir di basale, naik sambil mati dan berubah jadi keratin, lalu terlepas di korneum. Siklus lengkapnya 15–30 hari. Catat juga **stratum Malphigi = basale + spinosum**.",
+  "diskriminator": "Perhatikan arah yang diminta. Dan jangan tertukar urutan **granulosum sebelum lusidum** — sejalan dengan keratohialin sebelum eleidin."
  },
  {
   "n": 74,
@@ -1114,7 +1633,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Hanya tampak pada kulit tebal, sel pipih tanpa inti, sitoplasma berisi tetes eleidin",
-  "rationale": "Stratum lusidum: **hanya ada di kulit tebal** (telapak tangan dan telapak kaki), beberapa lapis sel pipih tampak **pucat, tanpa inti**, sitoplasma berisi **tetes eleidin**. Distraktornya: granula keratohialin → granulosum; tonofibril → spinosum; deskuamasi → korneum.  —  **Pola Ciri tetangga:** **“Hanya di kulit tebal”** adalah penanda eksklusif lusidum. Kalau preparat tidak menunjukkan lusidum, itu kulit tipis."
+  "rationale": "Stratum lusidum: **hanya ada di kulit tebal** (telapak tangan dan telapak kaki), beberapa lapis sel pipih tampak **pucat, tanpa inti**, sitoplasma berisi **tetes eleidin**. Distraktornya: granula keratohialin → granulosum; tonofibril → spinosum; deskuamasi → korneum.  —  **Pola Ciri tetangga:** **“Hanya di kulit tebal”** adalah penanda eksklusif lusidum. Kalau preparat tidak menunjukkan lusidum, itu kulit tipis.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Stratum lusidum: **hanya ada di kulit tebal** (telapak tangan dan telapak kaki), beberapa lapis sel pipih tampak **pucat, tanpa inti**, sitoplasma berisi **tetes eleidin**. Distraktornya: granula keratohialin → granulosum; tonofibril → spinosum; deskuamasi → korneum.",
+  "diskriminator": "**“Hanya di kulit tebal”** adalah penanda eksklusif lusidum. Kalau preparat tidak menunjukkan lusidum, itu kulit tipis."
  },
  {
   "n": 75,
@@ -1129,7 +1655,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Tonjolan sitoplasma pada permukaan sel yang penuh berkas tonofibril",
-  "rationale": "Itu **stratum spinosum**. Sel-selnya membentuk **tonjolan sitoplasma** yang penuh berkas **tonofibril**, dan tonjolan antar sel bertemu di **desmosom** — di bawah mikroskop cahaya tampak berduri. Area kulit yang sering terkena tekanan atau gesekan menunjukkan **tonofibril lebih banyak**, karena daya lekat antar selnya harus lebih kuat.  —  **Pola Ciri tetangga:** **Tonofibril + desmosom** adalah penyebab gambaran berduri. Hemidesmosom milik basale, dan arahnya ke membran basal, bukan antar sel."
+  "rationale": "Itu **stratum spinosum**. Sel-selnya membentuk **tonjolan sitoplasma** yang penuh berkas **tonofibril**, dan tonjolan antar sel bertemu di **desmosom** — di bawah mikroskop cahaya tampak berduri. Area kulit yang sering terkena tekanan atau gesekan menunjukkan **tonofibril lebih banyak**, karena daya lekat antar selnya harus lebih kuat.  —  **Pola Ciri tetangga:** **Tonofibril + desmosom** adalah penyebab gambaran berduri. Hemidesmosom milik basale, dan arahnya ke membran basal, bukan antar sel.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Itu **stratum spinosum**. Sel-selnya membentuk **tonjolan sitoplasma** yang penuh berkas **tonofibril**, dan tonjolan antar sel bertemu di **desmosom** — di bawah mikroskop cahaya tampak berduri. Area kulit yang sering terkena tekanan atau gesekan menunjukkan **tonofibril lebih banyak**, karena daya lekat antar selnya harus lebih kuat.",
+  "diskriminator": "**Tonofibril + desmosom** adalah penyebab gambaran berduri. Hemidesmosom milik basale, dan arahnya ke membran basal, bukan antar sel."
  },
  {
   "n": 76,
@@ -1144,7 +1677,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Pada bagian basalnya melekat ujung saraf bebas dan membentuk desmosom dengan keratinosit",
-  "rationale": "Sel Merkel: di **lapisan basal**, pada dasarnya melekat **ujung saraf bebas** sehingga membentuk **corpusculum Merkel** (mekanoreseptor sentuhan ringan yang sangat sensitif), dan **membentuk desmosom dengan keratinosit**. Bentuknya mirip keratinosit tetapi **hanya sedikit atau tanpa melanosom**. Ditemukan di area sangat sensitif seperti ujung jari dan genitalia eksterna.  —  **Pola Ciri tetangga:** **Merkel membentuk desmosom; melanosit tidak.** Itu pembeda keduanya, karena keduanya tinggal di stratum basale."
+  "rationale": "Sel Merkel: di **lapisan basal**, pada dasarnya melekat **ujung saraf bebas** sehingga membentuk **corpusculum Merkel** (mekanoreseptor sentuhan ringan yang sangat sensitif), dan **membentuk desmosom dengan keratinosit**. Bentuknya mirip keratinosit tetapi **hanya sedikit atau tanpa melanosom**. Ditemukan di area sangat sensitif seperti ujung jari dan genitalia eksterna.  —  **Pola Ciri tetangga:** **Merkel membentuk desmosom; melanosit tidak.** Itu pembeda keduanya, karena keduanya tinggal di stratum basale.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Sel Merkel: di **lapisan basal**, pada dasarnya melekat **ujung saraf bebas** sehingga membentuk **corpusculum Merkel** (mekanoreseptor sentuhan ringan yang sangat sensitif), dan **membentuk desmosom dengan keratinosit**. Bentuknya mirip keratinosit tetapi **hanya sedikit atau tanpa melanosom**. Ditemukan di area sangat sensitif seperti ujung jari dan genitalia eksterna.",
+  "diskriminator": "**Merkel membentuk desmosom; melanosit tidak.** Itu pembeda keduanya, karena keduanya tinggal di stratum basale."
  },
  {
   "n": 77,
@@ -1159,7 +1699,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Berupa jaringan pengikat padat ireguler yang didominasi kolagen tipe I",
-  "rationale": "Lapisan retikuler: **lebih tebal**, berupa **JP padat ireguler** yang terutama tersusun oleh **serabut kolagen tipe I**, dan juga mengandung serabut elastis. Tiga distraktor terakhir semuanya milik **lapisan papiler**: JP longgar dengan sel mast, lebih tipis, anchoring fibril tipe VII, dan korpuskulum Meissner.  —  **Pola Ciri tetangga:** Papiler = **longgar, tipis, tipe VII**. Retikuler = **padat ireguler, tebal, tipe I**. Dua lapisan, dua tipe kolagen."
+  "rationale": "Lapisan retikuler: **lebih tebal**, berupa **JP padat ireguler** yang terutama tersusun oleh **serabut kolagen tipe I**, dan juga mengandung serabut elastis. Tiga distraktor terakhir semuanya milik **lapisan papiler**: JP longgar dengan sel mast, lebih tipis, anchoring fibril tipe VII, dan korpuskulum Meissner.  —  **Pola Ciri tetangga:** Papiler = **longgar, tipis, tipe VII**. Retikuler = **padat ireguler, tebal, tipe I**. Dua lapisan, dua tipe kolagen.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Lapisan retikuler: **lebih tebal**, berupa **JP padat ireguler** yang terutama tersusun oleh **serabut kolagen tipe I**, dan juga mengandung serabut elastis. Tiga distraktor terakhir semuanya milik **lapisan papiler**: JP longgar dengan sel mast, lebih tipis, anchoring fibril tipe VII, dan korpuskulum Meissner.",
+  "diskriminator": "Papiler = **longgar, tipis, tipe VII**. Retikuler = **padat ireguler, tebal, tipe I**. Dua lapisan, dua tipe kolagen."
  },
  {
   "n": 78,
@@ -1174,7 +1721,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Dasar kuku (nail bed)",
-  "rationale": "**[UB asli]** **Dasar kuku (nail bed)** terletak di bawah lempeng kuku dan terdiri atas **stratum spinosum + stratum basale** — yaitu **stratum Malphigi**. Granulosum, lusidum, dan korneum tidak ada di situ karena fungsi kornifikasinya sudah diambil alih lempeng kuku itu sendiri. Pusat regenerasinya ada di bagian proksimal dasar kuku, yaitu **matriks kuku**.  —  **Pola Kategori jawaban:** Petunjuknya **“spinosum + basale”** = Malphigi = dasar kuku. Tidak ada struktur kuku lain yang disusun dua stratum itu."
+  "rationale": "**[UB asli]** **Dasar kuku (nail bed)** terletak di bawah lempeng kuku dan terdiri atas **stratum spinosum + stratum basale** — yaitu **stratum Malphigi**. Granulosum, lusidum, dan korneum tidak ada di situ karena fungsi kornifikasinya sudah diambil alih lempeng kuku itu sendiri. Pusat regenerasinya ada di bagian proksimal dasar kuku, yaitu **matriks kuku**.  —  **Pola Kategori jawaban:** Petunjuknya **“spinosum + basale”** = Malphigi = dasar kuku. Tidak ada struktur kuku lain yang disusun dua stratum itu.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Dasar kuku (nail bed)** terletak di bawah lempeng kuku dan terdiri atas **stratum spinosum + stratum basale** — yaitu **stratum Malphigi**. Granulosum, lusidum, dan korneum tidak ada di situ karena fungsi kornifikasinya sudah diambil alih lempeng kuku itu sendiri. Pusat regenerasinya ada di bagian proksimal dasar kuku, yaitu **matriks kuku**.",
+  "diskriminator": "Petunjuknya **“spinosum + basale”** = Malphigi = dasar kuku. Tidak ada struktur kuku lain yang disusun dua stratum itu."
  },
  {
   "n": 79,
@@ -1189,7 +1743,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Hiponikium",
-  "rationale": "**Hiponikium** (hipo = di bawah) = penebalan stratum korneum di **bawah tepi bebas kuku**, di sisi **distal**. **Eponikium** (epi = di atas) = perluasan stratum korneum yang menutupi dorsal jari dan memanjang ke **proksimal** badan kuku — yang sehari-hari disebut kutikula.  —  **Pola Pasangan berlawanan:** **Epo = atas/proksimal. Hipo = bawah/distal.** Awalannya yang menentukan, bukan hafalan terpisah."
+  "rationale": "**Hiponikium** (hipo = di bawah) = penebalan stratum korneum di **bawah tepi bebas kuku**, di sisi **distal**. **Eponikium** (epi = di atas) = perluasan stratum korneum yang menutupi dorsal jari dan memanjang ke **proksimal** badan kuku — yang sehari-hari disebut kutikula.  —  **Pola Pasangan berlawanan:** **Epo = atas/proksimal. Hipo = bawah/distal.** Awalannya yang menentukan, bukan hafalan terpisah.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Hiponikium** (hipo = di bawah) = penebalan stratum korneum di **bawah tepi bebas kuku**, di sisi **distal**. **Eponikium** (epi = di atas) = perluasan stratum korneum yang menutupi dorsal jari dan memanjang ke **proksimal** badan kuku — yang sehari-hari disebut kutikula.",
+  "diskriminator": "**Epo = atas/proksimal. Hipo = bawah/distal.** Awalannya yang menentukan, bukan hafalan terpisah."
  },
  {
   "n": 80,
@@ -1204,7 +1765,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Pada selubung akar dermal dan papila dermal; kontraksinya membuat rambut berdiri tegak",
-  "rationale": "Satu ujung berkas otot **arrector pili** melekat pada **selubung akar dermal** folikel, ujung lainnya pada **papila dermal**. Saat berkontraksi, rambut **berdiri tegak** — inilah mekanisme merinding. Perhatikan bahwa kontraksinya juga menekan kelenjar sebasea yang bermuara ke folikel yang sama.  —  **Pola Kategori jawaban:** Soal menuntut **dua jawaban**: perlekatan dan akibatnya. Pastikan keduanya benar, bukan hanya salah satu."
+  "rationale": "Satu ujung berkas otot **arrector pili** melekat pada **selubung akar dermal** folikel, ujung lainnya pada **papila dermal**. Saat berkontraksi, rambut **berdiri tegak** — inilah mekanisme merinding. Perhatikan bahwa kontraksinya juga menekan kelenjar sebasea yang bermuara ke folikel yang sama.  —  **Pola Kategori jawaban:** Soal menuntut **dua jawaban**: perlekatan dan akibatnya. Pastikan keduanya benar, bukan hanya salah satu.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Satu ujung berkas otot **arrector pili** melekat pada **selubung akar dermal** folikel, ujung lainnya pada **papila dermal**. Saat berkontraksi, rambut **berdiri tegak** — inilah mekanisme merinding. Perhatikan bahwa kontraksinya juga menekan kelenjar sebasea yang bermuara ke folikel yang sama.",
+  "diskriminator": "Soal menuntut **dua jawaban**: perlekatan dan akibatnya. Pastikan keduanya benar, bukan hanya salah satu."
  },
  {
   "n": 81,
@@ -1219,7 +1787,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Kelenjar keringat besar (apokrin)",
-  "rationale": "Keduanya adalah **kelenjar keringat besar (apokrin)** yang dimodifikasi. Daftar lengkap keluarga apokrin: **aksila, areola mammae, perineum, region berbarbis wajah, kelenjar Moll (kelopak mata), kelenjar serumen (telinga), dan kelenjar mammae**. Cirinya: lebih besar, di dermis dan subkutan, bermuara ke folikel rambut, sekret lebih kental.  —  **Pola Angka & daftar:** Ini keanggotaan daftar — hafal tujuh anggota keluarga apokrin. Yang **bukan** anggotanya: kelenjar di telapak tangan dan kaki (ekrin)."
+  "rationale": "Keduanya adalah **kelenjar keringat besar (apokrin)** yang dimodifikasi. Daftar lengkap keluarga apokrin: **aksila, areola mammae, perineum, region berbarbis wajah, kelenjar Moll (kelopak mata), kelenjar serumen (telinga), dan kelenjar mammae**. Cirinya: lebih besar, di dermis dan subkutan, bermuara ke folikel rambut, sekret lebih kental.  —  **Pola Angka & daftar:** Ini keanggotaan daftar — hafal tujuh anggota keluarga apokrin. Yang **bukan** anggotanya: kelenjar di telapak tangan dan kaki (ekrin).",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Keduanya adalah **kelenjar keringat besar (apokrin)** yang dimodifikasi. Daftar lengkap keluarga apokrin: **aksila, areola mammae, perineum, region berbarbis wajah, kelenjar Moll (kelopak mata), kelenjar serumen (telinga), dan kelenjar mammae**. Cirinya: lebih besar, di dermis dan subkutan, bermuara ke folikel rambut, sekret lebih kental.",
+  "diskriminator": "Ini keanggotaan daftar — hafal tujuh anggota keluarga apokrin. Yang **bukan** anggotanya: kelenjar di telapak tangan dan kaki (ekrin)."
  },
  {
   "n": 82,
@@ -1234,7 +1809,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Menghasilkan granula glikoprotein yang bersifat bakterisidal",
-  "rationale": "**Dark cell** menghasilkan **granula glikoprotein** yang bersifat **bakterisidal**. **Clear cell** yang berperan dalam **produksi keringat** — mengangkut cairan interstisial dari dermis ke lumen. Yang berkontraksi memeras kelenjar adalah **sel mioepitel**, dan sel itu hanya ada di pars sekretorius, tidak di pars ekskretorius.  —  **Pola Ciri tetangga:** **Dark = Defense** (bakterisidal). **Clear = Cairan** (keringat). Dua sel, dua peran, mudah tertukar."
+  "rationale": "**Dark cell** menghasilkan **granula glikoprotein** yang bersifat **bakterisidal**. **Clear cell** yang berperan dalam **produksi keringat** — mengangkut cairan interstisial dari dermis ke lumen. Yang berkontraksi memeras kelenjar adalah **sel mioepitel**, dan sel itu hanya ada di pars sekretorius, tidak di pars ekskretorius.  —  **Pola Ciri tetangga:** **Dark = Defense** (bakterisidal). **Clear = Cairan** (keringat). Dua sel, dua peran, mudah tertukar.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Dark cell** menghasilkan **granula glikoprotein** yang bersifat **bakterisidal**. **Clear cell** yang berperan dalam **produksi keringat** — mengangkut cairan interstisial dari dermis ke lumen. Yang berkontraksi memeras kelenjar adalah **sel mioepitel**, dan sel itu hanya ada di pars sekretorius, tidak di pars ekskretorius.",
+  "diskriminator": "**Dark = Defense** (bakterisidal). **Clear = Cairan** (keringat). Dua sel, dua peran, mudah tertukar."
  },
  {
   "n": 83,
@@ -1249,7 +1831,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Keratinosit",
-  "rationale": "Pematangan awal limfosit T terjadi di **timus**, pematangan lanjut di epidermis dengan bantuan zat **serupa timopoietin yang diproduksi KERATINOSIT**. Sel Langerhans berperan di tahap berbeda: ia memfagositosis antigen dan **mempresentasikannya** ke limfosit, yaitu **mengaktivasi**, bukan mematangkan.  —  **Pola Turunkan dari prinsip:** Pisahkan **pematangan** (keratinosit) dari **aktivasi** (sel Langerhans). Keratinosit bukan hanya sel struktural — ia bagian dari sistem imun kulit."
+  "rationale": "Pematangan awal limfosit T terjadi di **timus**, pematangan lanjut di epidermis dengan bantuan zat **serupa timopoietin yang diproduksi KERATINOSIT**. Sel Langerhans berperan di tahap berbeda: ia memfagositosis antigen dan **mempresentasikannya** ke limfosit, yaitu **mengaktivasi**, bukan mematangkan.  —  **Pola Turunkan dari prinsip:** Pisahkan **pematangan** (keratinosit) dari **aktivasi** (sel Langerhans). Keratinosit bukan hanya sel struktural — ia bagian dari sistem imun kulit.",
+  "ppt": 1,
+  "grup": "Histologi Integument",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Pematangan awal limfosit T terjadi di **timus**, pematangan lanjut di epidermis dengan bantuan zat **serupa timopoietin yang diproduksi KERATINOSIT**. Sel Langerhans berperan di tahap berbeda: ia memfagositosis antigen dan **mempresentasikannya** ke limfosit, yaitu **mengaktivasi**, bukan mematangkan.",
+  "diskriminator": "Pisahkan **pematangan** (keratinosit) dari **aktivasi** (sel Langerhans). Keratinosit bukan hanya sel struktural — ia bagian dari sistem imun kulit."
  },
  {
   "n": 84,
@@ -1264,7 +1853,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Radius lateral terhadap ulna",
-  "rationale": "Posisi anatomi: berdiri tegak, ekstremitas superior di samping tubuh, **wajah dan telapak tangan menghadap ke depan** — artinya lengan bawah dalam keadaan **supinasi**. Dalam posisi itu **radius lateral, ulna medial**, jempol lateral, kelingking medial. Saat pronasi radius memang menyilang ke medial, tetapi **jawaban anatomis tidak berubah** karena patokannya selalu posisi anatomi.  —  **Pola Turunkan dari prinsip:** Semua istilah arah diukur dari **posisi anatomi**, bukan posisi aktual. Reset dulu bayanganmu sebelum menjawab."
+  "rationale": "Posisi anatomi: berdiri tegak, ekstremitas superior di samping tubuh, **wajah dan telapak tangan menghadap ke depan** — artinya lengan bawah dalam keadaan **supinasi**. Dalam posisi itu **radius lateral, ulna medial**, jempol lateral, kelingking medial. Saat pronasi radius memang menyilang ke medial, tetapi **jawaban anatomis tidak berubah** karena patokannya selalu posisi anatomi.  —  **Pola Turunkan dari prinsip:** Semua istilah arah diukur dari **posisi anatomi**, bukan posisi aktual. Reset dulu bayanganmu sebelum menjawab.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Posisi anatomi: berdiri tegak, ekstremitas superior di samping tubuh, **wajah dan telapak tangan menghadap ke depan** — artinya lengan bawah dalam keadaan **supinasi**. Dalam posisi itu **radius lateral, ulna medial**, jempol lateral, kelingking medial. Saat pronasi radius memang menyilang ke medial, tetapi **jawaban anatomis tidak berubah** karena patokannya selalu posisi anatomi.",
+  "diskriminator": "Semua istilah arah diukur dari **posisi anatomi**, bukan posisi aktual. Reset dulu bayanganmu sebelum menjawab."
  },
  {
   "n": 85,
@@ -1279,7 +1875,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Bidang midsagittal / median",
-  "rationale": "**Bidang midsagittal / median** berada tepat di garis tengah sehingga membagi tubuh menjadi dua bagian **sama besar**. **Frontal (= coronal)** membagi anterior–posterior; **transversal (= horizontal)** membagi superior–inferior. Bidang **sagittal/parasagittal** sejajar median tetapi tidak di tengah, sehingga bagiannya **tidak sama besar**.  —  **Pola Kategori jawaban:** Soal menanyakan **nama bidang**, bukan hasil pembagiannya. Dan pembeda median vs sagittal adalah **“sama besar atau tidak”**."
+  "rationale": "**Bidang midsagittal / median** berada tepat di garis tengah sehingga membagi tubuh menjadi dua bagian **sama besar**. **Frontal (= coronal)** membagi anterior–posterior; **transversal (= horizontal)** membagi superior–inferior. Bidang **sagittal/parasagittal** sejajar median tetapi tidak di tengah, sehingga bagiannya **tidak sama besar**.  —  **Pola Kategori jawaban:** Soal menanyakan **nama bidang**, bukan hasil pembagiannya. Dan pembeda median vs sagittal adalah **“sama besar atau tidak”**.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Bidang midsagittal / median** berada tepat di garis tengah sehingga membagi tubuh menjadi dua bagian **sama besar**. **Frontal (= coronal)** membagi anterior–posterior; **transversal (= horizontal)** membagi superior–inferior. Bidang **sagittal/parasagittal** sejajar median tetapi tidak di tengah, sehingga bagiannya **tidak sama besar**.",
+  "diskriminator": "Soal menanyakan **nama bidang**, bukan hasil pembagiannya. Dan pembeda median vs sagittal adalah **“sama besar atau tidak”**."
  },
  {
   "n": 86,
@@ -1294,7 +1897,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Articulatio radioulnaris",
-  "rationale": "**[UB asli]** Pronasi dan supinasi memerlukan **radius berputar menyilang di atas ulna**, dan itu terjadi pada **articulatio radioulnaris** (proksimal dan distal). **Art. cubiti adalah hinge joint** — hanya bisa fleksi–ekstensi, tidak bisa memutar. Pronasi/supinasi termasuk **gerakan khusus** yang hanya mungkin di sendi tertentu.  —  **Pola Ciri tetangga:** Jenis sendi membatasi gerakan: hinge hanya satu aksis. Jadi sendi yang memutar lengan bawah tidak mungkin art. cubiti."
+  "rationale": "**[UB asli]** Pronasi dan supinasi memerlukan **radius berputar menyilang di atas ulna**, dan itu terjadi pada **articulatio radioulnaris** (proksimal dan distal). **Art. cubiti adalah hinge joint** — hanya bisa fleksi–ekstensi, tidak bisa memutar. Pronasi/supinasi termasuk **gerakan khusus** yang hanya mungkin di sendi tertentu.  —  **Pola Ciri tetangga:** Jenis sendi membatasi gerakan: hinge hanya satu aksis. Jadi sendi yang memutar lengan bawah tidak mungkin art. cubiti.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Pronasi dan supinasi memerlukan **radius berputar menyilang di atas ulna**, dan itu terjadi pada **articulatio radioulnaris** (proksimal dan distal). **Art. cubiti adalah hinge joint** — hanya bisa fleksi–ekstensi, tidak bisa memutar. Pronasi/supinasi termasuk **gerakan khusus** yang hanya mungkin di sendi tertentu.",
+  "diskriminator": "Jenis sendi membatasi gerakan: hinge hanya satu aksis. Jadi sendi yang memutar lengan bawah tidak mungkin art. cubiti."
  },
  {
   "n": 87,
@@ -1309,7 +1919,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "M. sternocleidomastoideus",
-  "rationale": "**[UB asli]** Bongkar namanya: **sterno** (sternum) + **cleido** (clavicula) + **mastoideus** (processus mastoideus). Namanya sendiri sudah menyebutkan ketiga perlekatannya — ini contoh paling bersih dari penamaan otot berdasarkan **pelekatan**. Kamu tidak perlu menghafal soal ini; cukup membaca namanya.  —  **Pola Nama = petunjuk:** Otot apa pun yang namanya memuat **“mastoideus”** melekat pada processus mastoideus. Nama Latin adalah deskripsi, bukan label."
+  "rationale": "**[UB asli]** Bongkar namanya: **sterno** (sternum) + **cleido** (clavicula) + **mastoideus** (processus mastoideus). Namanya sendiri sudah menyebutkan ketiga perlekatannya — ini contoh paling bersih dari penamaan otot berdasarkan **pelekatan**. Kamu tidak perlu menghafal soal ini; cukup membaca namanya.  —  **Pola Nama = petunjuk:** Otot apa pun yang namanya memuat **“mastoideus”** melekat pada processus mastoideus. Nama Latin adalah deskripsi, bukan label.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "NAM",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Bongkar namanya: **sterno** (sternum) + **cleido** (clavicula) + **mastoideus** (processus mastoideus). Namanya sendiri sudah menyebutkan ketiga perlekatannya — ini contoh paling bersih dari penamaan otot berdasarkan **pelekatan**. Kamu tidak perlu menghafal soal ini; cukup membaca namanya.",
+  "diskriminator": "Otot apa pun yang namanya memuat **“mastoideus”** melekat pada processus mastoideus. Nama Latin adalah deskripsi, bukan label."
  },
  {
   "n": 88,
@@ -1324,7 +1941,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "M. erector spinae",
-  "rationale": "**[UB asli]** Bongkar namanya: **erector** = yang menegakkan, **spinae** = tulang belakang. Yang menegakkan tulang belakang adalah **ekstensor punggung** — namanya adalah jawabannya. Ini penamaan otot berdasarkan **aksi**. Bandingkan: M. rectus abdominis di anterior justru **fleksor** tulang belakang, yaitu antagonisnya.  —  **Pola Nama = petunjuk:** Otot **posterior** tulang belakang → ekstensi. Otot **anterior** (rectus abdominis) → fleksi. Prinsip kompartemen."
+  "rationale": "**[UB asli]** Bongkar namanya: **erector** = yang menegakkan, **spinae** = tulang belakang. Yang menegakkan tulang belakang adalah **ekstensor punggung** — namanya adalah jawabannya. Ini penamaan otot berdasarkan **aksi**. Bandingkan: M. rectus abdominis di anterior justru **fleksor** tulang belakang, yaitu antagonisnya.  —  **Pola Nama = petunjuk:** Otot **posterior** tulang belakang → ekstensi. Otot **anterior** (rectus abdominis) → fleksi. Prinsip kompartemen.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "NAM",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Bongkar namanya: **erector** = yang menegakkan, **spinae** = tulang belakang. Yang menegakkan tulang belakang adalah **ekstensor punggung** — namanya adalah jawabannya. Ini penamaan otot berdasarkan **aksi**. Bandingkan: M. rectus abdominis di anterior justru **fleksor** tulang belakang, yaitu antagonisnya.",
+  "diskriminator": "Otot **posterior** tulang belakang → ekstensi. Otot **anterior** (rectus abdominis) → fleksi. Prinsip kompartemen."
  },
  {
   "n": 89,
@@ -1339,7 +1963,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "M. latissimus dorsi",
-  "rationale": "**[UB asli]** Menarik lengan ke belakang = **ekstensi/hiperekstensi articulatio humeri**, dan prime mover-nya **M. latissimus dorsi** (dibantu M. trapezius). M. pectoralis major di **anterior** thorax justru melakukan fleksi dan adduksi lengan — antagonisnya. M. deltoideus terutama abduksi.  —  **Pola Ciri tetangga:** **Punggung (posterior) → menarik ke belakang. Dada (anterior) → menarik ke depan.** Lokasi otot menentukan arah tarikannya."
+  "rationale": "**[UB asli]** Menarik lengan ke belakang = **ekstensi/hiperekstensi articulatio humeri**, dan prime mover-nya **M. latissimus dorsi** (dibantu M. trapezius). M. pectoralis major di **anterior** thorax justru melakukan fleksi dan adduksi lengan — antagonisnya. M. deltoideus terutama abduksi.  —  **Pola Ciri tetangga:** **Punggung (posterior) → menarik ke belakang. Dada (anterior) → menarik ke depan.** Lokasi otot menentukan arah tarikannya.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Menarik lengan ke belakang = **ekstensi/hiperekstensi articulatio humeri**, dan prime mover-nya **M. latissimus dorsi** (dibantu M. trapezius). M. pectoralis major di **anterior** thorax justru melakukan fleksi dan adduksi lengan — antagonisnya. M. deltoideus terutama abduksi.",
+  "diskriminator": "**Punggung (posterior) → menarik ke belakang. Dada (anterior) → menarik ke depan.** Lokasi otot menentukan arah tarikannya."
  },
  {
   "n": 90,
@@ -1354,7 +1985,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Sendi sinovial menyerap dan menyebarkan beban mekanik ke sekitarnya",
-  "rationale": "**[UB asli]** **Sendi sinovial menyerap dan menyebarkan beban** lewat beberapa komponen sekaligus: **kartilago hialin** yang mendeformasi saat dibebani, **cairan sinovial** yang bertindak sebagai bantalan hidrolik, **bursa** sebagai bantalan tambahan, serta **ligamentum dan capsula** yang membatasi gerak berlebih. Beban jadi tidak terkonsentrasi di satu titik tulang.  —  **Pola Turunkan dari prinsip:** Ini menjelaskan juga kebalikannya: kalau kartilago articularis rusak (osteoartritis), bantalannya hilang dan beban langsung ke tulang → nyeri."
+  "rationale": "**[UB asli]** **Sendi sinovial menyerap dan menyebarkan beban** lewat beberapa komponen sekaligus: **kartilago hialin** yang mendeformasi saat dibebani, **cairan sinovial** yang bertindak sebagai bantalan hidrolik, **bursa** sebagai bantalan tambahan, serta **ligamentum dan capsula** yang membatasi gerak berlebih. Beban jadi tidak terkonsentrasi di satu titik tulang.  —  **Pola Turunkan dari prinsip:** Ini menjelaskan juga kebalikannya: kalau kartilago articularis rusak (osteoartritis), bantalannya hilang dan beban langsung ke tulang → nyeri.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Sendi sinovial menyerap dan menyebarkan beban** lewat beberapa komponen sekaligus: **kartilago hialin** yang mendeformasi saat dibebani, **cairan sinovial** yang bertindak sebagai bantalan hidrolik, **bursa** sebagai bantalan tambahan, serta **ligamentum dan capsula** yang membatasi gerak berlebih. Beban jadi tidak terkonsentrasi di satu titik tulang.",
+  "diskriminator": "Ini menjelaskan juga kebalikannya: kalau kartilago articularis rusak (osteoartritis), bantalannya hilang dan beban langsung ke tulang → nyeri."
  },
  {
   "n": 91,
@@ -1369,7 +2007,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Sutura lambdoidea",
-  "rationale": "**[UB asli]** **Sutura lambdoidea** memisahkan os parietale dari **os occipitale** di posterior cranium, dan bentuknya menyerupai huruf Yunani **lambda (λ)** — dari situ namanya. **Sutura coronalis** di anterior (frontale–parietale), **sutura sagittalis** di garis tengah (parietale kanan–kiri), **sutura squamosa** di lateral (parietale–temporale).  —  **Pola Nama = petunjuk:** Letak + tulang yang dipisahkan: **coronalis depan, sagittalis tengah, lambdoidea belakang, squamosa samping**."
+  "rationale": "**[UB asli]** **Sutura lambdoidea** memisahkan os parietale dari **os occipitale** di posterior cranium, dan bentuknya menyerupai huruf Yunani **lambda (λ)** — dari situ namanya. **Sutura coronalis** di anterior (frontale–parietale), **sutura sagittalis** di garis tengah (parietale kanan–kiri), **sutura squamosa** di lateral (parietale–temporale).  —  **Pola Nama = petunjuk:** Letak + tulang yang dipisahkan: **coronalis depan, sagittalis tengah, lambdoidea belakang, squamosa samping**.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "NAM",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Sutura lambdoidea** memisahkan os parietale dari **os occipitale** di posterior cranium, dan bentuknya menyerupai huruf Yunani **lambda (λ)** — dari situ namanya. **Sutura coronalis** di anterior (frontale–parietale), **sutura sagittalis** di garis tengah (parietale kanan–kiri), **sutura squamosa** di lateral (parietale–temporale).",
+  "diskriminator": "Letak + tulang yang dipisahkan: **coronalis depan, sagittalis tengah, lambdoidea belakang, squamosa samping**."
  },
  {
   "n": 92,
@@ -1384,7 +2029,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 4,
   "kunci": "Articulatio coxae",
-  "rationale": "**[UB asli]** Caput femoris bersendi dengan **acetabulum** os coxae, membentuk **articulatio coxae** — sendi **ball-and-socket**. Pada DDH, “socket”-nya (acetabulum) terlalu dangkal sehingga “ball”-nya (caput femoris) tidak terkunci. Nama penyakitnya sendiri sudah memberi tahu sendinya: **hip** → art. coxae.  —  **Pola Ciri tetangga:** Dua kata di soal langsung menunjuk sendinya: **caput femoris** + **acetabulum**. Sendi lain tidak melibatkan keduanya."
+  "rationale": "**[UB asli]** Caput femoris bersendi dengan **acetabulum** os coxae, membentuk **articulatio coxae** — sendi **ball-and-socket**. Pada DDH, “socket”-nya (acetabulum) terlalu dangkal sehingga “ball”-nya (caput femoris) tidak terkunci. Nama penyakitnya sendiri sudah memberi tahu sendinya: **hip** → art. coxae.  —  **Pola Ciri tetangga:** Dua kata di soal langsung menunjuk sendinya: **caput femoris** + **acetabulum**. Sendi lain tidak melibatkan keduanya.",
+  "ppt": 2,
+  "grup": "Terminologi & Pengantar Anatomi",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Caput femoris bersendi dengan **acetabulum** os coxae, membentuk **articulatio coxae** — sendi **ball-and-socket**. Pada DDH, “socket”-nya (acetabulum) terlalu dangkal sehingga “ball”-nya (caput femoris) tidak terkunci. Nama penyakitnya sendiri sudah memberi tahu sendinya: **hip** → art. coxae.",
+  "diskriminator": "Dua kata di soal langsung menunjuk sendinya: **caput femoris** + **acetabulum**. Sendi lain tidak melibatkan keduanya."
  },
  {
   "n": 93,
@@ -1399,7 +2051,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 4,
   "kunci": "Produksi sel darah merah",
-  "rationale": "Enam fungsi integumen: **termoregulasi, menyimpan darah, proteksi, mendeteksi sensasi kutaneus, ekskresi &amp; absorpsi, dan sintesis vitamin D**. **Produksi sel darah merah** terjadi di sumsum tulang, bukan di kulit. Perhatikan bahwa dari enam fungsi itu hanya satu yang pasif (proteksi) — kulit adalah organ metabolik aktif.  —  **Pola Kategori jawaban:** Hafal keenam fungsinya sebagai daftar, karena soal bertipe **“KECUALI”** menguji keanggotaan, bukan pemahaman."
+  "rationale": "Enam fungsi integumen: **termoregulasi, menyimpan darah, proteksi, mendeteksi sensasi kutaneus, ekskresi &amp; absorpsi, dan sintesis vitamin D**. **Produksi sel darah merah** terjadi di sumsum tulang, bukan di kulit. Perhatikan bahwa dari enam fungsi itu hanya satu yang pasif (proteksi) — kulit adalah organ metabolik aktif.  —  **Pola Kategori jawaban:** Hafal keenam fungsinya sebagai daftar, karena soal bertipe **“KECUALI”** menguji keanggotaan, bukan pemahaman.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Enam fungsi integumen: **termoregulasi, menyimpan darah, proteksi, mendeteksi sensasi kutaneus, ekskresi &amp; absorpsi, dan sintesis vitamin D**. **Produksi sel darah merah** terjadi di sumsum tulang, bukan di kulit. Perhatikan bahwa dari enam fungsi itu hanya satu yang pasif (proteksi) — kulit adalah organ metabolik aktif.",
+  "diskriminator": "Hafal keenam fungsinya sebagai daftar, karena soal bertipe **“KECUALI”** menguji keanggotaan, bukan pemahaman."
  },
  {
   "n": 94,
@@ -1414,7 +2073,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Mengeluarkan keringat di permukaan, dan mengatur aliran darah di dermis",
-  "rationale": "Slide menyatakan tegas dua cara: **liberating sweat at its surface** dan **adjusting the flow of blood in the dermis**. Keduanya bekerja berlawanan arah sesuai kondisi — saat panas: vasodilatasi + keringat naik; saat dingin: vasokonstriksi + keringat turun. Jalur kehilangan panasnya sendiri ada tiga: **konduksi, radiasi, evaporasi**.  —  **Pola Kategori jawaban:** Jangan tertukar dengan triad lain di bagian yang sama: **3 jalur kehilangan panas** dan **3 fungsi keringat** adalah daftar yang berbeda."
+  "rationale": "Slide menyatakan tegas dua cara: **liberating sweat at its surface** dan **adjusting the flow of blood in the dermis**. Keduanya bekerja berlawanan arah sesuai kondisi — saat panas: vasodilatasi + keringat naik; saat dingin: vasokonstriksi + keringat turun. Jalur kehilangan panasnya sendiri ada tiga: **konduksi, radiasi, evaporasi**.  —  **Pola Kategori jawaban:** Jangan tertukar dengan triad lain di bagian yang sama: **3 jalur kehilangan panas** dan **3 fungsi keringat** adalah daftar yang berbeda.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Slide menyatakan tegas dua cara: **liberating sweat at its surface** dan **adjusting the flow of blood in the dermis**. Keduanya bekerja berlawanan arah sesuai kondisi — saat panas: vasodilatasi + keringat naik; saat dingin: vasokonstriksi + keringat turun. Jalur kehilangan panasnya sendiri ada tiga: **konduksi, radiasi, evaporasi**.",
+  "diskriminator": "Jangan tertukar dengan triad lain di bagian yang sama: **3 jalur kehilangan panas** dan **3 fungsi keringat** adalah daftar yang berbeda."
  },
  {
   "n": 95,
@@ -1429,7 +2095,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Vasodilatasi, agar darah dialirkan ke permukaan dan panas dilepas",
-  "rationale": "Saat kepanasan: **vasodilatasi** → darah dialirkan ke permukaan kulit → panas dilepas lewat konduksi, radiasi, dan evaporasi → suhu turun. Itulah sebabnya wajah memerah saat olahraga. Saat kedinginan terjadi kebalikannya: **vasokonstriksi** → darah ditarik dari permukaan → panas ditahan, dan kulit tampak pucat serta dingin.  —  **Pola Pasangan berlawanan:** **Dilatasi = melebar (buang panas). Konstriksi = menyempit (tahan panas atau selamatkan organ vital).**"
+  "rationale": "Saat kepanasan: **vasodilatasi** → darah dialirkan ke permukaan kulit → panas dilepas lewat konduksi, radiasi, dan evaporasi → suhu turun. Itulah sebabnya wajah memerah saat olahraga. Saat kedinginan terjadi kebalikannya: **vasokonstriksi** → darah ditarik dari permukaan → panas ditahan, dan kulit tampak pucat serta dingin.  —  **Pola Pasangan berlawanan:** **Dilatasi = melebar (buang panas). Konstriksi = menyempit (tahan panas atau selamatkan organ vital).**",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Saat kepanasan: **vasodilatasi** → darah dialirkan ke permukaan kulit → panas dilepas lewat konduksi, radiasi, dan evaporasi → suhu turun. Itulah sebabnya wajah memerah saat olahraga. Saat kedinginan terjadi kebalikannya: **vasokonstriksi** → darah ditarik dari permukaan → panas ditahan, dan kulit tampak pucat serta dingin.",
+  "diskriminator": "**Dilatasi = melebar (buang panas). Konstriksi = menyempit (tahan panas atau selamatkan organ vital).**"
  },
  {
   "n": 96,
@@ -1444,7 +2117,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Keratinosit 90%, melanosit 8%",
-  "rationale": "**Keratinosit 90%** dan **melanosit 8%** dari seluruh sel epidermis; sisanya sel Langerhans, sel Merkel, dan limfosit. Keratinosit juga yang memproduksi **keratin**, protein fibrosa dan tangguh yang melindungi dari abrasi, panas, mikroba, dan bahan kimia, serta terdapat pula di rambut dan kuku.  —  **Pola Angka & daftar:** Angka tidak bisa dinalar — harus dihafal. Dua angka saja: **90 dan 8**."
+  "rationale": "**Keratinosit 90%** dan **melanosit 8%** dari seluruh sel epidermis; sisanya sel Langerhans, sel Merkel, dan limfosit. Keratinosit juga yang memproduksi **keratin**, protein fibrosa dan tangguh yang melindungi dari abrasi, panas, mikroba, dan bahan kimia, serta terdapat pula di rambut dan kuku.  —  **Pola Angka & daftar:** Angka tidak bisa dinalar — harus dihafal. Dua angka saja: **90 dan 8**.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Keratinosit 90%** dan **melanosit 8%** dari seluruh sel epidermis; sisanya sel Langerhans, sel Merkel, dan limfosit. Keratinosit juga yang memproduksi **keratin**, protein fibrosa dan tangguh yang melindungi dari abrasi, panas, mikroba, dan bahan kimia, serta terdapat pula di rambut dan kuku.",
+  "diskriminator": "Angka tidak bisa dinalar — harus dihafal. Dua angka saja: **90 dan 8**."
  },
  {
   "n": 97,
@@ -1459,7 +2139,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Granula lamelar keratinosit di stratum granulosum",
-  "rationale": "Lipid penyekat diproduksi oleh **granula lamelar keratinosit** di **stratum granulosum**, dan berfungsi menghambat evaporasi serta masuknya air — water repellent sealant. Jadi stratum granulosum punya **dua** jenis granula: **keratohialin** (menjadi eleidin lalu keratin) dan **lamelar** (menjadi lipid penyekat).  —  **Pola Penghasil vs produk:** Dua granula di satu lapisan. Jangan tertukar: **keratohialin → keratin**; **lamelar → lipid**. Sebum berbeda lagi — dari kelenjar sebasea."
+  "rationale": "Lipid penyekat diproduksi oleh **granula lamelar keratinosit** di **stratum granulosum**, dan berfungsi menghambat evaporasi serta masuknya air — water repellent sealant. Jadi stratum granulosum punya **dua** jenis granula: **keratohialin** (menjadi eleidin lalu keratin) dan **lamelar** (menjadi lipid penyekat).  —  **Pola Penghasil vs produk:** Dua granula di satu lapisan. Jangan tertukar: **keratohialin → keratin**; **lamelar → lipid**. Sebum berbeda lagi — dari kelenjar sebasea.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "PRO",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Lipid penyekat diproduksi oleh **granula lamelar keratinosit** di **stratum granulosum**, dan berfungsi menghambat evaporasi serta masuknya air — water repellent sealant. Jadi stratum granulosum punya **dua** jenis granula: **keratohialin** (menjadi eleidin lalu keratin) dan **lamelar** (menjadi lipid penyekat).",
+  "diskriminator": "Dua granula di satu lapisan. Jangan tertukar: **keratohialin → keratin**; **lamelar → lipid**. Sebum berbeda lagi — dari kelenjar sebasea."
  },
  {
   "n": 98,
@@ -1474,7 +2161,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Menambah jumlah corpuscles of touch sehingga kulit lebih sensitif",
-  "rationale": "Tiga fungsi epidermal ridges: **ikatan kuat epidermis–dermis** (proteksi dari stres mekanik), **meningkatkan friksi** (memperbaiki cengkeraman), dan **memperluas permukaan** → **menambah jumlah corpuscles of touch**. Karena korpuskulum Meissner terletak di **papila dermis**, makin banyak papila berarti makin banyak Meissner — itulah sebabnya ujung jari sangat sensitif. Rigi inilah yang juga membentuk **sidik jari**.  —  **Pola Turunkan dari prinsip:** Soal menanyakan konsekuensi dari **perluasan permukaan** saja, bukan ketiga fungsinya. Baca fungsi mana yang ditanya."
+  "rationale": "Tiga fungsi epidermal ridges: **ikatan kuat epidermis–dermis** (proteksi dari stres mekanik), **meningkatkan friksi** (memperbaiki cengkeraman), dan **memperluas permukaan** → **menambah jumlah corpuscles of touch**. Karena korpuskulum Meissner terletak di **papila dermis**, makin banyak papila berarti makin banyak Meissner — itulah sebabnya ujung jari sangat sensitif. Rigi inilah yang juga membentuk **sidik jari**.  —  **Pola Turunkan dari prinsip:** Soal menanyakan konsekuensi dari **perluasan permukaan** saja, bukan ketiga fungsinya. Baca fungsi mana yang ditanya.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Tiga fungsi epidermal ridges: **ikatan kuat epidermis–dermis** (proteksi dari stres mekanik), **meningkatkan friksi** (memperbaiki cengkeraman), dan **memperluas permukaan** → **menambah jumlah corpuscles of touch**. Karena korpuskulum Meissner terletak di **papila dermis**, makin banyak papila berarti makin banyak Meissner — itulah sebabnya ujung jari sangat sensitif. Rigi inilah yang juga membentuk **sidik jari**.",
+  "diskriminator": "Soal menanyakan konsekuensi dari **perluasan permukaan** saja, bukan ketiga fungsinya. Baca fungsi mana yang ditanya."
  },
  {
   "n": 99,
@@ -1489,7 +2183,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Slow pain dipicu stimulus kimiawi, fast pain tidak",
-  "rationale": "**Fast pain** dipicu stimulus **mekanik dan termal**. **Slow pain** dipicu **mekanik, termal, DAN kimiawi**. Jadi pembedanya satu kata: **stimulus kimiawi hanya memicu slow pain**. Logikanya, zat kimia perlu waktu untuk terakumulasi dari jaringan yang rusak — itu sebabnya nyeri setelah cedera sering muncul belakangan dan bertahan lama.  —  **Pola Ciri tetangga:** Satu pembeda saja: **kimiawi**. Keduanya sama-sama dipicu mekanik dan termal, jadi dua hal itu bukan pembeda."
+  "rationale": "**Fast pain** dipicu stimulus **mekanik dan termal**. **Slow pain** dipicu **mekanik, termal, DAN kimiawi**. Jadi pembedanya satu kata: **stimulus kimiawi hanya memicu slow pain**. Logikanya, zat kimia perlu waktu untuk terakumulasi dari jaringan yang rusak — itu sebabnya nyeri setelah cedera sering muncul belakangan dan bertahan lama.  —  **Pola Ciri tetangga:** Satu pembeda saja: **kimiawi**. Keduanya sama-sama dipicu mekanik dan termal, jadi dua hal itu bukan pembeda.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Fast pain** dipicu stimulus **mekanik dan termal**. **Slow pain** dipicu **mekanik, termal, DAN kimiawi**. Jadi pembedanya satu kata: **stimulus kimiawi hanya memicu slow pain**. Logikanya, zat kimia perlu waktu untuk terakumulasi dari jaringan yang rusak — itu sebabnya nyeri setelah cedera sering muncul belakangan dan bertahan lama.",
+  "diskriminator": "Satu pembeda saja: **kimiawi**. Keduanya sama-sama dipicu mekanik dan termal, jadi dua hal itu bukan pembeda."
  },
  {
   "n": 100,
@@ -1504,7 +2205,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Reseptor dingin melekat pada serabut Aδ bermielin dan jumlahnya lebih banyak",
-  "rationale": "Keduanya berupa **ujung saraf bebas**, tetapi: **reseptor dingin → serabut Aδ BERMIELIN** dan **jumlahnya lebih banyak**; **reseptor hangat → serabut C tak bermielin** dan lebih sedikit. Slide menjelaskan alasannya: deteksi suhu di perifer terutama ditujukan untuk **mendeteksi dingin**, bukan panas — karena dingin lebih mengancam kelangsungan hidup, sehingga sistem peringatannya dibuat lebih padat dan lebih cepat.  —  **Pola Angka & daftar:** Satu alasan menjelaskan dua perbedaan sekaligus: **dingin lebih berbahaya → reseptor lebih banyak (padat) dan bermielin (cepat)**. Dan **mielin = kecepatan**."
+  "rationale": "Keduanya berupa **ujung saraf bebas**, tetapi: **reseptor dingin → serabut Aδ BERMIELIN** dan **jumlahnya lebih banyak**; **reseptor hangat → serabut C tak bermielin** dan lebih sedikit. Slide menjelaskan alasannya: deteksi suhu di perifer terutama ditujukan untuk **mendeteksi dingin**, bukan panas — karena dingin lebih mengancam kelangsungan hidup, sehingga sistem peringatannya dibuat lebih padat dan lebih cepat.  —  **Pola Angka & daftar:** Satu alasan menjelaskan dua perbedaan sekaligus: **dingin lebih berbahaya → reseptor lebih banyak (padat) dan bermielin (cepat)**. Dan **mielin = kecepatan**.",
+  "ppt": 3,
+  "grup": "Fisiologi Integument",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Keduanya berupa **ujung saraf bebas**, tetapi: **reseptor dingin → serabut Aδ BERMIELIN** dan **jumlahnya lebih banyak**; **reseptor hangat → serabut C tak bermielin** dan lebih sedikit. Slide menjelaskan alasannya: deteksi suhu di perifer terutama ditujukan untuk **mendeteksi dingin**, bukan panas — karena dingin lebih mengancam kelangsungan hidup, sehingga sistem peringatannya dibuat lebih padat dan lebih cepat.",
+  "diskriminator": "Satu alasan menjelaskan dua perbedaan sekaligus: **dingin lebih berbahaya → reseptor lebih banyak (padat) dan bermielin (cepat)**. Dan **mielin = kecepatan**."
  },
  {
   "n": 101,
@@ -1519,7 +2227,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Jaringan atau struktur yang menghubungkan kedua tulang",
-  "rationale": "Slide menegaskan satu pertanyaan pembuka: **“Apa jaringan atau struktur yang menghubungkan kedua tulang itu?”** Dari jawabannya muncul tiga kategori: **fibrosa** (jaringan ikat fibrosa), **kartilaginosa** (kartilago), dan **sinovial** (permukaan artikular + kapsul + rongga). Luas gerakan adalah **akibat** dari struktur itu, bukan dasar klasifikasinya.  —  **Pola Kategori jawaban:** Klasifikasi struktural dimulai dari **penghubungnya**; gerakan menyusul. Urutannya: struktur → jenis → gerakan."
+  "rationale": "Slide menegaskan satu pertanyaan pembuka: **“Apa jaringan atau struktur yang menghubungkan kedua tulang itu?”** Dari jawabannya muncul tiga kategori: **fibrosa** (jaringan ikat fibrosa), **kartilaginosa** (kartilago), dan **sinovial** (permukaan artikular + kapsul + rongga). Luas gerakan adalah **akibat** dari struktur itu, bukan dasar klasifikasinya.  —  **Pola Kategori jawaban:** Klasifikasi struktural dimulai dari **penghubungnya**; gerakan menyusul. Urutannya: struktur → jenis → gerakan.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Slide menegaskan satu pertanyaan pembuka: **“Apa jaringan atau struktur yang menghubungkan kedua tulang itu?”** Dari jawabannya muncul tiga kategori: **fibrosa** (jaringan ikat fibrosa), **kartilaginosa** (kartilago), dan **sinovial** (permukaan artikular + kapsul + rongga). Luas gerakan adalah **akibat** dari struktur itu, bukan dasar klasifikasinya.",
+  "diskriminator": "Klasifikasi struktural dimulai dari **penghubungnya**; gerakan menyusul. Urutannya: struktur → jenis → gerakan."
  },
  {
   "n": 102,
@@ -1534,7 +2249,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Tanpa rongga sendi, gerakan sangat sedikit atau tidak ada",
-  "rationale": "Sendi **fibrosa**: penghubungnya jaringan ikat fibrosa padat, **tanpa rongga sendi**, gerakan **sangat sedikit atau tidak ada**. Distraktornya: “ada rongga + gerak bebas” → sinovial; “tanpa rongga + gerak sedang dengan deformasi” → kartilaginosa.  —  **Pola Ciri tetangga:** Dua variabel yang dikombinasikan: **ada/tidak rongga** dan **besar gerakan**. Hanya sinovial yang punya rongga."
+  "rationale": "Sendi **fibrosa**: penghubungnya jaringan ikat fibrosa padat, **tanpa rongga sendi**, gerakan **sangat sedikit atau tidak ada**. Distraktornya: “ada rongga + gerak bebas” → sinovial; “tanpa rongga + gerak sedang dengan deformasi” → kartilaginosa.  —  **Pola Ciri tetangga:** Dua variabel yang dikombinasikan: **ada/tidak rongga** dan **besar gerakan**. Hanya sinovial yang punya rongga.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Sendi **fibrosa**: penghubungnya jaringan ikat fibrosa padat, **tanpa rongga sendi**, gerakan **sangat sedikit atau tidak ada**. Distraktornya: “ada rongga + gerak bebas” → sinovial; “tanpa rongga + gerak sedang dengan deformasi” → kartilaginosa.",
+  "diskriminator": "Dua variabel yang dikombinasikan: **ada/tidak rongga** dan **besar gerakan**. Hanya sinovial yang punya rongga."
  },
  {
   "n": 103,
@@ -1549,7 +2271,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Symphysis pubis",
-  "rationale": "**[UB asli]** Tiga subtipe sendi fibrosa: **sutura** (cranium), **syndesmosis** (ligamen interoseus, misalnya tibia–fibula), dan **gomphosis** (gigi–alveolus). **Symphysis pubis** adalah sendi **kartilaginosa sekunder** karena penghubungnya **fibrokartilago** — ada kartilagonya.  —  **Pola Ciri tetangga:** Pertanyaan verifikasi: **ada kartilagonya atau tidak?** Symphysis punya fibrokartilago, jadi dia kartilaginosa, bukan fibrosa."
+  "rationale": "**[UB asli]** Tiga subtipe sendi fibrosa: **sutura** (cranium), **syndesmosis** (ligamen interoseus, misalnya tibia–fibula), dan **gomphosis** (gigi–alveolus). **Symphysis pubis** adalah sendi **kartilaginosa sekunder** karena penghubungnya **fibrokartilago** — ada kartilagonya.  —  **Pola Ciri tetangga:** Pertanyaan verifikasi: **ada kartilagonya atau tidak?** Symphysis punya fibrokartilago, jadi dia kartilaginosa, bukan fibrosa.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Tiga subtipe sendi fibrosa: **sutura** (cranium), **syndesmosis** (ligamen interoseus, misalnya tibia–fibula), dan **gomphosis** (gigi–alveolus). **Symphysis pubis** adalah sendi **kartilaginosa sekunder** karena penghubungnya **fibrokartilago** — ada kartilagonya.",
+  "diskriminator": "Pertanyaan verifikasi: **ada kartilagonya atau tidak?** Symphysis punya fibrokartilago, jadi dia kartilaginosa, bukan fibrosa."
  },
  {
   "n": 104,
@@ -1564,7 +2293,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Kartilago hialin; sinkondrosis spheno-occipitalis",
-  "rationale": "**Sinkondrosis = kartilaginosa primer = kartilago HIALIN**, gerakannya sangat sedikit. Contoh yang diberikan slide: **sinkondrosis spheno-occipitalis** — sendi hialin antara os sphenoidale dan os occipitale yang menutup selama perkembangan. Contoh lain: lempeng epifisis.  —  **Pola Kategori jawaban:** Jembatan hafalan dari slide: **hialin → sinkondrosis; fibrokartilago → simfisis**. Jenis kartilago menentukan subtipenya."
+  "rationale": "**Sinkondrosis = kartilaginosa primer = kartilago HIALIN**, gerakannya sangat sedikit. Contoh yang diberikan slide: **sinkondrosis spheno-occipitalis** — sendi hialin antara os sphenoidale dan os occipitale yang menutup selama perkembangan. Contoh lain: lempeng epifisis.  —  **Pola Kategori jawaban:** Jembatan hafalan dari slide: **hialin → sinkondrosis; fibrokartilago → simfisis**. Jenis kartilago menentukan subtipenya.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Sinkondrosis = kartilaginosa primer = kartilago HIALIN**, gerakannya sangat sedikit. Contoh yang diberikan slide: **sinkondrosis spheno-occipitalis** — sendi hialin antara os sphenoidale dan os occipitale yang menutup selama perkembangan. Contoh lain: lempeng epifisis.",
+  "diskriminator": "Jembatan hafalan dari slide: **hialin → sinkondrosis; fibrokartilago → simfisis**. Jenis kartilago menentukan subtipenya."
  },
  {
   "n": 105,
@@ -1579,7 +2315,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Fibrokartilago; sendi antar corpus vertebrae melalui discus intervertebralis",
-  "rationale": "**Simfisis = kartilaginosa sekunder = FIBROKARTILAGO**, memberi hubungan kuat dengan gerakan terbatas. Contoh dari slide: **sendi antar corpus vertebrae melalui discus intervertebralis**. Contoh lain: symphysis pubis. Perhatikan opsi terakhir — **sutura adalah sendi fibrosa**, bukan simfisis.  —  **Pola Kategori jawaban:** Fibrokartilago dipilih karena simfisis harus **menahan tekanan berat** sekaligus sedikit lentur."
+  "rationale": "**Simfisis = kartilaginosa sekunder = FIBROKARTILAGO**, memberi hubungan kuat dengan gerakan terbatas. Contoh dari slide: **sendi antar corpus vertebrae melalui discus intervertebralis**. Contoh lain: symphysis pubis. Perhatikan opsi terakhir — **sutura adalah sendi fibrosa**, bukan simfisis.  —  **Pola Kategori jawaban:** Fibrokartilago dipilih karena simfisis harus **menahan tekanan berat** sekaligus sedikit lentur.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Simfisis = kartilaginosa sekunder = FIBROKARTILAGO**, memberi hubungan kuat dengan gerakan terbatas. Contoh dari slide: **sendi antar corpus vertebrae melalui discus intervertebralis**. Contoh lain: symphysis pubis. Perhatikan opsi terakhir — **sutura adalah sendi fibrosa**, bukan simfisis.",
+  "diskriminator": "Fibrokartilago dipilih karena simfisis harus **menahan tekanan berat** sekaligus sedikit lentur."
  },
  {
   "n": 106,
@@ -1594,7 +2337,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Jenis kartilago penghubungnya",
-  "rationale": "Keduanya sendi **kartilaginosa**, keduanya **tanpa rongga sendi**, keduanya gerakannya terbatas. Pembedanya tunggal: **jenis kartilagonya** — sinkondrosis memakai **hialin**, simfisis memakai **fibrokartilago**.  —  **Pola Pasangan berlawanan:** Kalau dua kategori punya banyak kesamaan, carilah **satu variabel** yang berbeda. Di sini: jenis kartilago."
+  "rationale": "Keduanya sendi **kartilaginosa**, keduanya **tanpa rongga sendi**, keduanya gerakannya terbatas. Pembedanya tunggal: **jenis kartilagonya** — sinkondrosis memakai **hialin**, simfisis memakai **fibrokartilago**.  —  **Pola Pasangan berlawanan:** Kalau dua kategori punya banyak kesamaan, carilah **satu variabel** yang berbeda. Di sini: jenis kartilago.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Keduanya sendi **kartilaginosa**, keduanya **tanpa rongga sendi**, keduanya gerakannya terbatas. Pembedanya tunggal: **jenis kartilagonya** — sinkondrosis memakai **hialin**, simfisis memakai **fibrokartilago**.",
+  "diskriminator": "Kalau dua kategori punya banyak kesamaan, carilah **satu variabel** yang berbeda. Di sini: jenis kartilago."
  },
  {
   "n": 107,
@@ -1609,7 +2359,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Fibrosa, karena tidak mengandung kartilago sama sekali",
-  "rationale": "**Sutura = sendi FIBROSA.** Penghubungnya jaringan ikat kolagen padat, dan **tidak ada kartilago sama sekali**. Jangan tertipu kemiripan bunyi antara “fibrosa” dan “fibrokartilago”: kata **“fibro”** hanya berarti kaya kolagen, dan itu **sifat**, bukan kategori. Yang menentukan kategori adalah **ada atau tidaknya kartilago**.  —  **Pola Ciri tetangga:** **Fibrosa = tanpa kartilago. Fibrokartilago = salah satu jenis kartilago.** Pertanyaan pemutusnya: ada kartilagonya atau tidak?"
+  "rationale": "**Sutura = sendi FIBROSA.** Penghubungnya jaringan ikat kolagen padat, dan **tidak ada kartilago sama sekali**. Jangan tertipu kemiripan bunyi antara “fibrosa” dan “fibrokartilago”: kata **“fibro”** hanya berarti kaya kolagen, dan itu **sifat**, bukan kategori. Yang menentukan kategori adalah **ada atau tidaknya kartilago**.  —  **Pola Ciri tetangga:** **Fibrosa = tanpa kartilago. Fibrokartilago = salah satu jenis kartilago.** Pertanyaan pemutusnya: ada kartilagonya atau tidak?",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Sutura = sendi FIBROSA.** Penghubungnya jaringan ikat kolagen padat, dan **tidak ada kartilago sama sekali**. Jangan tertipu kemiripan bunyi antara “fibrosa” dan “fibrokartilago”: kata **“fibro”** hanya berarti kaya kolagen, dan itu **sifat**, bukan kategori. Yang menentukan kategori adalah **ada atau tidaknya kartilago**.",
+  "diskriminator": "**Fibrosa = tanpa kartilago. Fibrokartilago = salah satu jenis kartilago.** Pertanyaan pemutusnya: ada kartilagonya atau tidak?"
  },
  {
   "n": 108,
@@ -1624,7 +2381,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Sendi kartilaginosa sekunder (simfisis)",
-  "rationale": "**[UB asli]** Fibrokartilago adalah **kartilago**, sehingga sendinya masuk kategori **kartilaginosa**; dan karena kartilagonya fibrokartilago (bukan hialin), subtipenya **sekunder = simfisis**. Opsi terakhir menjebak karena TMJ juga punya discus fibrokartilago — tetapi TMJ **punya rongga sendi**, sedangkan simfisis tidak.  —  **Pola Ciri tetangga:** Dua langkah: ada kartilago → kartilaginosa. Kartilagonya fibro → **sekunder/simfisis**."
+  "rationale": "**[UB asli]** Fibrokartilago adalah **kartilago**, sehingga sendinya masuk kategori **kartilaginosa**; dan karena kartilagonya fibrokartilago (bukan hialin), subtipenya **sekunder = simfisis**. Opsi terakhir menjebak karena TMJ juga punya discus fibrokartilago — tetapi TMJ **punya rongga sendi**, sedangkan simfisis tidak.  —  **Pola Ciri tetangga:** Dua langkah: ada kartilago → kartilaginosa. Kartilagonya fibro → **sekunder/simfisis**.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Fibrokartilago adalah **kartilago**, sehingga sendinya masuk kategori **kartilaginosa**; dan karena kartilagonya fibrokartilago (bukan hialin), subtipenya **sekunder = simfisis**. Opsi terakhir menjebak karena TMJ juga punya discus fibrokartilago — tetapi TMJ **punya rongga sendi**, sedangkan simfisis tidak.",
+  "diskriminator": "Dua langkah: ada kartilago → kartilaginosa. Kartilagonya fibro → **sekunder/simfisis**."
  },
  {
   "n": 109,
@@ -1639,7 +2403,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 4,
   "kunci": "Discus intervertebralis",
-  "rationale": "Empat komponen sendi sinovial: **cartilago articularis** (biasanya hialin), **cavitas articularis** berisi cairan sinovial, **capsula articularis** (lapis luar fibrosa + lapis dalam membrana synovialis), dan **ligamentum** yang memperkuat serta mengarahkan sendi. **Discus intervertebralis** adalah penghubung sendi **simfisis**, bukan komponen sendi sinovial.  —  **Pola Kategori jawaban:** Hafal empat komponennya sebagai paket; distraktornya selalu struktur dari kategori sendi lain."
+  "rationale": "Empat komponen sendi sinovial: **cartilago articularis** (biasanya hialin), **cavitas articularis** berisi cairan sinovial, **capsula articularis** (lapis luar fibrosa + lapis dalam membrana synovialis), dan **ligamentum** yang memperkuat serta mengarahkan sendi. **Discus intervertebralis** adalah penghubung sendi **simfisis**, bukan komponen sendi sinovial.  —  **Pola Kategori jawaban:** Hafal empat komponennya sebagai paket; distraktornya selalu struktur dari kategori sendi lain.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Empat komponen sendi sinovial: **cartilago articularis** (biasanya hialin), **cavitas articularis** berisi cairan sinovial, **capsula articularis** (lapis luar fibrosa + lapis dalam membrana synovialis), dan **ligamentum** yang memperkuat serta mengarahkan sendi. **Discus intervertebralis** adalah penghubung sendi **simfisis**, bukan komponen sendi sinovial.",
+  "diskriminator": "Hafal empat komponennya sebagai paket; distraktornya selalu struktur dari kategori sendi lain."
  },
  {
   "n": 110,
@@ -1654,7 +2425,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Kartilago hialin",
-  "rationale": "Permukaan artikular sendi sinovial **umumnya kartilago hialin** — licin, gesekan rendah, dan baik untuk permukaan yang saling meluncur. Kartilago ini **avaskuler**, sehingga nutrisinya datang dengan **difusi dari cairan sinovial**.  —  **Pola Kategori jawaban:** Kata **“umumnya”** menandakan ada pengecualian — dan pengecualiannya adalah TMJ, yang memakai fibrokartilago."
+  "rationale": "Permukaan artikular sendi sinovial **umumnya kartilago hialin** — licin, gesekan rendah, dan baik untuk permukaan yang saling meluncur. Kartilago ini **avaskuler**, sehingga nutrisinya datang dengan **difusi dari cairan sinovial**.  —  **Pola Kategori jawaban:** Kata **“umumnya”** menandakan ada pengecualian — dan pengecualiannya adalah TMJ, yang memakai fibrokartilago.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Permukaan artikular sendi sinovial **umumnya kartilago hialin** — licin, gesekan rendah, dan baik untuk permukaan yang saling meluncur. Kartilago ini **avaskuler**, sehingga nutrisinya datang dengan **difusi dari cairan sinovial**.",
+  "diskriminator": "Kata **“umumnya”** menandakan ada pengecualian — dan pengecualiannya adalah TMJ, yang memakai fibrokartilago."
  },
  {
   "n": 111,
@@ -1669,7 +2447,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Lapis luar fibrosa dan lapis dalam membrana synovialis",
-  "rationale": "Capsula articularis: **lapis luar fibrosa** yang memberi kekuatan mekanis, dan **lapis dalam membrana synovialis** yang **menghasilkan cairan sinovial**. Opsi B membalik urutannya — bentuk jebakan yang paling sering dipakai untuk soal berlapis.  —  **Pola Kategori jawaban:** Logikanya: yang **kuat di luar** (fibrosa), yang **mengeluarkan cairan di dalam** (sinovial), menghadap rongga."
+  "rationale": "Capsula articularis: **lapis luar fibrosa** yang memberi kekuatan mekanis, dan **lapis dalam membrana synovialis** yang **menghasilkan cairan sinovial**. Opsi B membalik urutannya — bentuk jebakan yang paling sering dipakai untuk soal berlapis.  —  **Pola Kategori jawaban:** Logikanya: yang **kuat di luar** (fibrosa), yang **mengeluarkan cairan di dalam** (sinovial), menghadap rongga.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Capsula articularis: **lapis luar fibrosa** yang memberi kekuatan mekanis, dan **lapis dalam membrana synovialis** yang **menghasilkan cairan sinovial**. Opsi B membalik urutannya — bentuk jebakan yang paling sering dipakai untuk soal berlapis.",
+  "diskriminator": "Logikanya: yang **kuat di luar** (fibrosa), yang **mengeluarkan cairan di dalam** (sinovial), menghadap rongga."
  },
  {
   "n": 112,
@@ -1684,7 +2469,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Membrana synovialis",
-  "rationale": "**[UB asli]** **Membrana synovialis** — lapis dalam capsula articularis — yang **memproduksi** cairan sinovial. Cairan itu melumasi sendi sekaligus **memberi nutrisi kartilago artikular** yang avaskuler. Perhatikan pembedaan kategori: soal menanyakan **penghasilnya**, bukan zat yang dihasilkan.  —  **Pola Penghasil vs produk:** **Membran sinovial = penghasil. Cairan sinovial = produk.** Dua arah soal, dua jawaban berbeda."
+  "rationale": "**[UB asli]** **Membrana synovialis** — lapis dalam capsula articularis — yang **memproduksi** cairan sinovial. Cairan itu melumasi sendi sekaligus **memberi nutrisi kartilago artikular** yang avaskuler. Perhatikan pembedaan kategori: soal menanyakan **penghasilnya**, bukan zat yang dihasilkan.  —  **Pola Penghasil vs produk:** **Membran sinovial = penghasil. Cairan sinovial = produk.** Dua arah soal, dua jawaban berbeda.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "PRO",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Membrana synovialis** — lapis dalam capsula articularis — yang **memproduksi** cairan sinovial. Cairan itu melumasi sendi sekaligus **memberi nutrisi kartilago artikular** yang avaskuler. Perhatikan pembedaan kategori: soal menanyakan **penghasilnya**, bukan zat yang dihasilkan.",
+  "diskriminator": "**Membran sinovial = penghasil. Cairan sinovial = produk.** Dua arah soal, dua jawaban berbeda."
  },
  {
   "n": 113,
@@ -1699,7 +2491,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Memperkuat dan mengarahkan gerakan sendi",
-  "rationale": "Slide menyebut peran ligamentum: **memperkuat (reinforce) dan mengarahkan (guide)** sendi. Jadi ligamentum tidak hanya mengikat — dia juga **membatasi arah gerakan** sehingga sendi bergerak pada jalur yang benar. Yang menjadi **bantalan** adalah bursa; yang **melumasi** adalah membran sinovial.  —  **Pola Kategori jawaban:** Tiga pelengkap sendi, tiga peran: **ligamentum = penguat; bursa = bantalan; membran sinovial = pelumas**."
+  "rationale": "Slide menyebut peran ligamentum: **memperkuat (reinforce) dan mengarahkan (guide)** sendi. Jadi ligamentum tidak hanya mengikat — dia juga **membatasi arah gerakan** sehingga sendi bergerak pada jalur yang benar. Yang menjadi **bantalan** adalah bursa; yang **melumasi** adalah membran sinovial.  —  **Pola Kategori jawaban:** Tiga pelengkap sendi, tiga peran: **ligamentum = penguat; bursa = bantalan; membran sinovial = pelumas**.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Slide menyebut peran ligamentum: **memperkuat (reinforce) dan mengarahkan (guide)** sendi. Jadi ligamentum tidak hanya mengikat — dia juga **membatasi arah gerakan** sehingga sendi bergerak pada jalur yang benar. Yang menjadi **bantalan** adalah bursa; yang **melumasi** adalah membran sinovial.",
+  "diskriminator": "Tiga pelengkap sendi, tiga peran: **ligamentum = penguat; bursa = bantalan; membran sinovial = pelumas**."
  },
  {
   "n": 114,
@@ -1714,7 +2513,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Fibrokartilago, berbeda dari sendi sinovial lainnya",
-  "rationale": "Slide menuliskannya **dua kali** sebagai pengecualian penting: **permukaan artikular TMJ dilapisi FIBROKARTILAGO, bukan kartilago hialin.** Alasannya fungsional — TMJ menanggung beban besar dan **berulang** (mengunyah ribuan kali sehari), dan fibrokartilago paling tahan tekanan.  —  **Pola Ciri tetangga:** Pengulangan oleh dosen hampir selalu berarti akan diujikan. TMJ = **satu-satunya** sendi sinovial dengan permukaan fibrokartilago."
+  "rationale": "Slide menuliskannya **dua kali** sebagai pengecualian penting: **permukaan artikular TMJ dilapisi FIBROKARTILAGO, bukan kartilago hialin.** Alasannya fungsional — TMJ menanggung beban besar dan **berulang** (mengunyah ribuan kali sehari), dan fibrokartilago paling tahan tekanan.  —  **Pola Ciri tetangga:** Pengulangan oleh dosen hampir selalu berarti akan diujikan. TMJ = **satu-satunya** sendi sinovial dengan permukaan fibrokartilago.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Slide menuliskannya **dua kali** sebagai pengecualian penting: **permukaan artikular TMJ dilapisi FIBROKARTILAGO, bukan kartilago hialin.** Alasannya fungsional — TMJ menanggung beban besar dan **berulang** (mengunyah ribuan kali sehari), dan fibrokartilago paling tahan tekanan.",
+  "diskriminator": "Pengulangan oleh dosen hampir selalu berarti akan diujikan. TMJ = **satu-satunya** sendi sinovial dengan permukaan fibrokartilago."
  },
  {
   "n": 115,
@@ -1729,7 +2535,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Salah, karena articulatio temporomandibularis memakai fibrokartilago",
-  "rationale": "Pengecualiannya **hanya TMJ**. Perhatikan bahwa **articulatio atlantooccipitalis justru memakai kartilago HIALIN** — slide menyebutnya eksplisit. Jadi dua sendi yang bertetangga di dasar tengkorak memakai jenis kartilago yang berbeda, dan itu kontras yang sering diujikan.  —  **Pola Ciri tetangga:** Hafal pasangan kontrasnya: **AO joint = hialin; TMJ = fibrokartilago**. Keduanya sinovial, keduanya di cranium."
+  "rationale": "Pengecualiannya **hanya TMJ**. Perhatikan bahwa **articulatio atlantooccipitalis justru memakai kartilago HIALIN** — slide menyebutnya eksplisit. Jadi dua sendi yang bertetangga di dasar tengkorak memakai jenis kartilago yang berbeda, dan itu kontras yang sering diujikan.  —  **Pola Ciri tetangga:** Hafal pasangan kontrasnya: **AO joint = hialin; TMJ = fibrokartilago**. Keduanya sinovial, keduanya di cranium.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Pengecualiannya **hanya TMJ**. Perhatikan bahwa **articulatio atlantooccipitalis justru memakai kartilago HIALIN** — slide menyebutnya eksplisit. Jadi dua sendi yang bertetangga di dasar tengkorak memakai jenis kartilago yang berbeda, dan itu kontras yang sering diujikan.",
+  "diskriminator": "Hafal pasangan kontrasnya: **AO joint = hialin; TMJ = fibrokartilago**. Keduanya sinovial, keduanya di cranium."
  },
  {
   "n": 116,
@@ -1744,7 +2557,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Adanya cavitas articularis di antara kedua tulang",
-  "rationale": "Hanya sendi sinovial yang punya **cavitas articularis**; sendi fibrosa dan kartilaginosa **tidak punya rongga**. Ciri ini juga satu-satunya yang **bisa dilihat** pada gambar — “gerak bebas” adalah konsekuensi fungsional yang tidak tampak di preparat. Adanya kartilago tidak memutuskan apa pun, karena sendi kartilaginosa juga punya kartilago.  —  **Pola Ciri tetangga:** Soal bergambar menuntut ciri yang **terlihat**. Rongga sendi terlihat; gerakan tidak."
+  "rationale": "Hanya sendi sinovial yang punya **cavitas articularis**; sendi fibrosa dan kartilaginosa **tidak punya rongga**. Ciri ini juga satu-satunya yang **bisa dilihat** pada gambar — “gerak bebas” adalah konsekuensi fungsional yang tidak tampak di preparat. Adanya kartilago tidak memutuskan apa pun, karena sendi kartilaginosa juga punya kartilago.  —  **Pola Ciri tetangga:** Soal bergambar menuntut ciri yang **terlihat**. Rongga sendi terlihat; gerakan tidak.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Hanya sendi sinovial yang punya **cavitas articularis**; sendi fibrosa dan kartilaginosa **tidak punya rongga**. Ciri ini juga satu-satunya yang **bisa dilihat** pada gambar — “gerak bebas” adalah konsekuensi fungsional yang tidak tampak di preparat. Adanya kartilago tidak memutuskan apa pun, karena sendi kartilaginosa juga punya kartilago.",
+  "diskriminator": "Soal bergambar menuntut ciri yang **terlihat**. Rongga sendi terlihat; gerakan tidak."
  },
  {
   "n": 117,
@@ -1759,7 +2579,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Fibrosa → kartilaginosa → sinovial",
-  "rationale": "**Fibrosa** (hampir tidak bergerak, sinartrosis) → **kartilaginosa** (sedikit bergerak, amfiartrosis) → **sinovial** (bergerak bebas, diartrosis). Urutan ini sejalan dengan penghubungnya: makin kaku penghubungnya, makin sedikit gerakannya.  —  **Pola Pasangan berlawanan:** Perhatikan arah yang diminta — **kaku ke bebas** atau **bebas ke kaku** membalik seluruh jawaban."
+  "rationale": "**Fibrosa** (hampir tidak bergerak, sinartrosis) → **kartilaginosa** (sedikit bergerak, amfiartrosis) → **sinovial** (bergerak bebas, diartrosis). Urutan ini sejalan dengan penghubungnya: makin kaku penghubungnya, makin sedikit gerakannya.  —  **Pola Pasangan berlawanan:** Perhatikan arah yang diminta — **kaku ke bebas** atau **bebas ke kaku** membalik seluruh jawaban.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Fibrosa** (hampir tidak bergerak, sinartrosis) → **kartilaginosa** (sedikit bergerak, amfiartrosis) → **sinovial** (bergerak bebas, diartrosis). Urutan ini sejalan dengan penghubungnya: makin kaku penghubungnya, makin sedikit gerakannya.",
+  "diskriminator": "Perhatikan arah yang diminta — **kaku ke bebas** atau **bebas ke kaku** membalik seluruh jawaban."
  },
  {
   "n": 118,
@@ -1774,7 +2601,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Aksis selalu tegak lurus terhadap bidang gerakan",
-  "rationale": "Prinsip tunggalnya: **aksis selalu TEGAK LURUS terhadap bidang gerakan.** Gerakan terjadi **di dalam** sebuah bidang dan **berputar mengelilingi** sebuah aksis, dan keduanya tegak lurus. Analoginya pintu: pintu menyapu bidang mendatar, tetapi engselnya tegak.  —  **Pola Turunkan dari prinsip:** Konsekuensi langsung: **nama bidang dan nama aksis tidak pernah sama**. Kalau sama, jawabanmu pasti salah."
+  "rationale": "Prinsip tunggalnya: **aksis selalu TEGAK LURUS terhadap bidang gerakan.** Gerakan terjadi **di dalam** sebuah bidang dan **berputar mengelilingi** sebuah aksis, dan keduanya tegak lurus. Analoginya pintu: pintu menyapu bidang mendatar, tetapi engselnya tegak.  —  **Pola Turunkan dari prinsip:** Konsekuensi langsung: **nama bidang dan nama aksis tidak pernah sama**. Kalau sama, jawabanmu pasti salah.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Prinsip tunggalnya: **aksis selalu TEGAK LURUS terhadap bidang gerakan.** Gerakan terjadi **di dalam** sebuah bidang dan **berputar mengelilingi** sebuah aksis, dan keduanya tegak lurus. Analoginya pintu: pintu menyapu bidang mendatar, tetapi engselnya tegak.",
+  "diskriminator": "Konsekuensi langsung: **nama bidang dan nama aksis tidak pernah sama**. Kalau sama, jawabanmu pasti salah."
  },
  {
   "n": 119,
@@ -1789,7 +2623,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Bidang transversal; aksis vertikal",
-  "rationale": "**Rotasi = bidang transversal, aksis vertikal/longitudinal.** Contoh dari slide: mengatakan “TIDAK” (menggeleng) adalah rotasi di bidang transversal di sekitar aksis vertikal. Pakai model tusuk sate: saat menggeleng, tusuk satenya menembus puncak kepala ke bawah — itu aksis vertikal.  —  **Pola Turunkan dari prinsip:** Opsi D menjebak dengan memberi nama yang sama untuk bidang dan aksis — otomatis salah, karena keduanya tegak lurus."
+  "rationale": "**Rotasi = bidang transversal, aksis vertikal/longitudinal.** Contoh dari slide: mengatakan “TIDAK” (menggeleng) adalah rotasi di bidang transversal di sekitar aksis vertikal. Pakai model tusuk sate: saat menggeleng, tusuk satenya menembus puncak kepala ke bawah — itu aksis vertikal.  —  **Pola Turunkan dari prinsip:** Opsi D menjebak dengan memberi nama yang sama untuk bidang dan aksis — otomatis salah, karena keduanya tegak lurus.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Rotasi = bidang transversal, aksis vertikal/longitudinal.** Contoh dari slide: mengatakan “TIDAK” (menggeleng) adalah rotasi di bidang transversal di sekitar aksis vertikal. Pakai model tusuk sate: saat menggeleng, tusuk satenya menembus puncak kepala ke bawah — itu aksis vertikal.",
+  "diskriminator": "Opsi D menjebak dengan memberi nama yang sama untuk bidang dan aksis — otomatis salah, karena keduanya tegak lurus."
  },
  {
   "n": 120,
@@ -1804,7 +2645,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Bidang sagittal; aksis transversal (mediolateral)",
-  "rationale": "**Fleksi–ekstensi = bidang sagittal, aksis transversal (mediolateral).** Saat mengangguk, kepala bergerak depan–belakang sehingga menyapu bidang sagittal, dan tusuk satenya menembus dari telinga kiri ke telinga kanan — itu aksis transversal.  —  **Pola Turunkan dari prinsip:** Pasangan menyilang: bidang **sagittal** ↔ aksis **transversal**. Tidak pernah sama nama."
+  "rationale": "**Fleksi–ekstensi = bidang sagittal, aksis transversal (mediolateral).** Saat mengangguk, kepala bergerak depan–belakang sehingga menyapu bidang sagittal, dan tusuk satenya menembus dari telinga kiri ke telinga kanan — itu aksis transversal.  —  **Pola Turunkan dari prinsip:** Pasangan menyilang: bidang **sagittal** ↔ aksis **transversal**. Tidak pernah sama nama.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Fleksi–ekstensi = bidang sagittal, aksis transversal (mediolateral).** Saat mengangguk, kepala bergerak depan–belakang sehingga menyapu bidang sagittal, dan tusuk satenya menembus dari telinga kiri ke telinga kanan — itu aksis transversal.",
+  "diskriminator": "Pasangan menyilang: bidang **sagittal** ↔ aksis **transversal**. Tidak pernah sama nama."
  },
  {
   "n": 121,
@@ -1819,7 +2667,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Bidang frontal; aksis anteroposterior",
-  "rationale": "**Lateral fleksi, abduksi, dan adduksi = bidang frontal, aksis anteroposterior (AP).** Saat menekuk kepala ke arah pundak, kepala bergerak pada bidang yang sejajar punggung (frontal), dan tusuk satenya menembus dari hidung ke belakang kepala — itu aksis AP.  —  **Pola Turunkan dari prinsip:** Lengkapi tabelnya: sagittal↔transversal, frontal↔AP, transversal↔vertikal. Tiga pasangan, semuanya menyilang."
+  "rationale": "**Lateral fleksi, abduksi, dan adduksi = bidang frontal, aksis anteroposterior (AP).** Saat menekuk kepala ke arah pundak, kepala bergerak pada bidang yang sejajar punggung (frontal), dan tusuk satenya menembus dari hidung ke belakang kepala — itu aksis AP.  —  **Pola Turunkan dari prinsip:** Lengkapi tabelnya: sagittal↔transversal, frontal↔AP, transversal↔vertikal. Tiga pasangan, semuanya menyilang.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Lateral fleksi, abduksi, dan adduksi = bidang frontal, aksis anteroposterior (AP).** Saat menekuk kepala ke arah pundak, kepala bergerak pada bidang yang sejajar punggung (frontal), dan tusuk satenya menembus dari hidung ke belakang kepala — itu aksis AP.",
+  "diskriminator": "Lengkapi tabelnya: sagittal↔transversal, frontal↔AP, transversal↔vertikal. Tiga pasangan, semuanya menyilang."
  },
  {
   "n": 122,
@@ -1834,7 +2689,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Karena aksis selalu tegak lurus bidang, sehingga namanya tidak mungkin sama",
-  "rationale": "Karena **aksis tegak lurus terhadap bidangnya**, orientasi keduanya selalu berbeda — sehingga **namanya tidak mungkin sama**. Bidang transversal berpasangan dengan aksis **vertikal**; bidang sagittal dengan aksis **transversal**; bidang frontal dengan aksis **AP**.  —  **Pola Turunkan dari prinsip:** Ini alat verifikasi gratis: kalau nama bidang = nama aksis pada satu opsi, **eliminasi opsi itu** tanpa berpikir lebih jauh."
+  "rationale": "Karena **aksis tegak lurus terhadap bidangnya**, orientasi keduanya selalu berbeda — sehingga **namanya tidak mungkin sama**. Bidang transversal berpasangan dengan aksis **vertikal**; bidang sagittal dengan aksis **transversal**; bidang frontal dengan aksis **AP**.  —  **Pola Turunkan dari prinsip:** Ini alat verifikasi gratis: kalau nama bidang = nama aksis pada satu opsi, **eliminasi opsi itu** tanpa berpikir lebih jauh.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Karena **aksis tegak lurus terhadap bidangnya**, orientasi keduanya selalu berbeda — sehingga **namanya tidak mungkin sama**. Bidang transversal berpasangan dengan aksis **vertikal**; bidang sagittal dengan aksis **transversal**; bidang frontal dengan aksis **AP**.",
+  "diskriminator": "Ini alat verifikasi gratis: kalau nama bidang = nama aksis pada satu opsi, **eliminasi opsi itu** tanpa berpikir lebih jauh."
  },
  {
   "n": 123,
@@ -1849,7 +2711,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Gerakan gliding kecil tanpa aksis putar yang jelas; facet joint",
-  "rationale": "**Nonaksial** bukan berarti tidak bergerak — dia **bergerak dengan menggeser (gliding)**, tetapi **tanpa aksis putar yang jelas**. Jenisnya **plane joint**, dan contoh dari slide adalah **facet joint (art. zygapophysialis)** antar vertebrae serta sendi costovertebralis dan costotransversaria.  —  **Pola Ciri tetangga:** Nonaksial = **ada gerakan, tidak ada aksis**. Yang benar-benar tidak bergerak adalah sendi fibrosa, bukan nonaksial."
+  "rationale": "**Nonaksial** bukan berarti tidak bergerak — dia **bergerak dengan menggeser (gliding)**, tetapi **tanpa aksis putar yang jelas**. Jenisnya **plane joint**, dan contoh dari slide adalah **facet joint (art. zygapophysialis)** antar vertebrae serta sendi costovertebralis dan costotransversaria.  —  **Pola Ciri tetangga:** Nonaksial = **ada gerakan, tidak ada aksis**. Yang benar-benar tidak bergerak adalah sendi fibrosa, bukan nonaksial.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Nonaksial** bukan berarti tidak bergerak — dia **bergerak dengan menggeser (gliding)**, tetapi **tanpa aksis putar yang jelas**. Jenisnya **plane joint**, dan contoh dari slide adalah **facet joint (art. zygapophysialis)** antar vertebrae serta sendi costovertebralis dan costotransversaria.",
+  "diskriminator": "Nonaksial = **ada gerakan, tidak ada aksis**. Yang benar-benar tidak bergerak adalah sendi fibrosa, bukan nonaksial."
  },
  {
   "n": 124,
@@ -1864,7 +2733,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Orientasi aksisnya berbeda: hinge transversal, pivot vertikal",
-  "rationale": "Keduanya punya **satu** aksis, jadi jumlahnya sama. Yang berbeda **arah aksisnya**: **hinge** beraksis **transversal** → gerakannya **fleksi–ekstensi** (contoh: art. cubiti); **pivot** beraksis **vertikal** → gerakannya **rotasi** (contoh: art. atlantoaxialis mediana).  —  **Pola Pasangan berlawanan:** **Jumlah aksis** menentukan berapa banyak gerakan. **Arah aksis** menentukan gerakan apa. Dua variabel berbeda."
+  "rationale": "Keduanya punya **satu** aksis, jadi jumlahnya sama. Yang berbeda **arah aksisnya**: **hinge** beraksis **transversal** → gerakannya **fleksi–ekstensi** (contoh: art. cubiti); **pivot** beraksis **vertikal** → gerakannya **rotasi** (contoh: art. atlantoaxialis mediana).  —  **Pola Pasangan berlawanan:** **Jumlah aksis** menentukan berapa banyak gerakan. **Arah aksis** menentukan gerakan apa. Dua variabel berbeda.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Keduanya punya **satu** aksis, jadi jumlahnya sama. Yang berbeda **arah aksisnya**: **hinge** beraksis **transversal** → gerakannya **fleksi–ekstensi** (contoh: art. cubiti); **pivot** beraksis **vertikal** → gerakannya **rotasi** (contoh: art. atlantoaxialis mediana).",
+  "diskriminator": "**Jumlah aksis** menentukan berapa banyak gerakan. **Arah aksis** menentukan gerakan apa. Dua variabel berbeda."
  },
  {
   "n": 125,
@@ -1879,7 +2755,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Biaksial; condyloid (ellipsoid)",
-  "rationale": "**Biaksial, condyloid (ellipsoid).** Dua aksisnya: **transversal** untuk fleksi–ekstensi, dan **anteroposterior** untuk lateral fleksi ringan. Karena ada dua aksis, dia tidak mungkin hinge (yang uniaksial) — itulah sebabnya bentuknya condyloid.  —  **Pola Ciri tetangga:** Hitung gerakannya: dua gerakan dengan dua aksis → biaksial. Jumlah aksis menentukan bentuk sendinya."
+  "rationale": "**Biaksial, condyloid (ellipsoid).** Dua aksisnya: **transversal** untuk fleksi–ekstensi, dan **anteroposterior** untuk lateral fleksi ringan. Karena ada dua aksis, dia tidak mungkin hinge (yang uniaksial) — itulah sebabnya bentuknya condyloid.  —  **Pola Ciri tetangga:** Hitung gerakannya: dua gerakan dengan dua aksis → biaksial. Jumlah aksis menentukan bentuk sendinya.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Biaksial, condyloid (ellipsoid).** Dua aksisnya: **transversal** untuk fleksi–ekstensi, dan **anteroposterior** untuk lateral fleksi ringan. Karena ada dua aksis, dia tidak mungkin hinge (yang uniaksial) — itulah sebabnya bentuknya condyloid.",
+  "diskriminator": "Hitung gerakannya: dua gerakan dengan dua aksis → biaksial. Jumlah aksis menentukan bentuk sendinya."
  },
  {
   "n": 126,
@@ -1894,7 +2777,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Tiga aksis; shoulder dan hip",
-  "rationale": "**Multiaksial = tiga aksis**, jenisnya **ball-and-socket**, dan contoh dari slide adalah **shoulder (art. humeri) dan hip (art. coxae)**. Bentuk bola dalam cangkir memungkinkan gerakan pada ketiga bidang sekaligus plus rotasi.  —  **Pola Ciri tetangga:** Hierarki jumlah aksis: nonaksial (0) → uniaksial (1) → biaksial (2) → multiaksial (3). Bentuk sendi mengikuti jumlahnya."
+  "rationale": "**Multiaksial = tiga aksis**, jenisnya **ball-and-socket**, dan contoh dari slide adalah **shoulder (art. humeri) dan hip (art. coxae)**. Bentuk bola dalam cangkir memungkinkan gerakan pada ketiga bidang sekaligus plus rotasi.  —  **Pola Ciri tetangga:** Hierarki jumlah aksis: nonaksial (0) → uniaksial (1) → biaksial (2) → multiaksial (3). Bentuk sendi mengikuti jumlahnya.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Multiaksial = tiga aksis**, jenisnya **ball-and-socket**, dan contoh dari slide adalah **shoulder (art. humeri) dan hip (art. coxae)**. Bentuk bola dalam cangkir memungkinkan gerakan pada ketiga bidang sekaligus plus rotasi.",
+  "diskriminator": "Hierarki jumlah aksis: nonaksial (0) → uniaksial (1) → biaksial (2) → multiaksial (3). Bentuk sendi mengikuti jumlahnya."
  },
  {
   "n": 127,
@@ -1909,7 +2799,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Plane synovial; mengarahkan dan membatasi gerakan",
-  "rationale": "Facet joint = **plane synovial**, geraknya **gliding kecil dan nonaksial**, dan perannya **mengarahkan serta membatasi** gerakan regional tulang belakang. Peran **mendistribusikan beban dan menyerap guncangan** dipegang sistem sendi yang lain, yaitu **simfisis antar corpus vertebrae**.  —  **Pola Ciri tetangga:** Dua sistem sendi, dua peran: yang **depan (simfisis) MENAHAN**, yang **belakang (facet) MENGARAHKAN**."
+  "rationale": "Facet joint = **plane synovial**, geraknya **gliding kecil dan nonaksial**, dan perannya **mengarahkan serta membatasi** gerakan regional tulang belakang. Peran **mendistribusikan beban dan menyerap guncangan** dipegang sistem sendi yang lain, yaitu **simfisis antar corpus vertebrae**.  —  **Pola Ciri tetangga:** Dua sistem sendi, dua peran: yang **depan (simfisis) MENAHAN**, yang **belakang (facet) MENGARAHKAN**.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Facet joint = **plane synovial**, geraknya **gliding kecil dan nonaksial**, dan perannya **mengarahkan serta membatasi** gerakan regional tulang belakang. Peran **mendistribusikan beban dan menyerap guncangan** dipegang sistem sendi yang lain, yaitu **simfisis antar corpus vertebrae**.",
+  "diskriminator": "Dua sistem sendi, dua peran: yang **depan (simfisis) MENAHAN**, yang **belakang (facet) MENGARAHKAN**."
  },
  {
   "n": 128,
@@ -1924,7 +2821,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Apa yang bertemu · apa yang menghubungkan · jenisnya apa · bagaimana bergeraknya",
-  "rationale": "Template empat pertanyaan dari slide: **(1) Apa yang bertemu?** → nama tulang/permukaan; **(2) Apa yang menghubungkan?** → jaringan fibrosa, kartilago, atau struktur sinovial; **(3) Jenisnya apa?** → fibrosa/kartilaginosa/sinovial; **(4) Bagaimana bergeraknya?** → bidang + gerakan + aksis.  —  **Pola Kategori jawaban:** Pakai template yang sama untuk semua sendi. Dosen menjelaskan AO, TMJ, simfisis, facet, dan costae dengan urutan ini."
+  "rationale": "Template empat pertanyaan dari slide: **(1) Apa yang bertemu?** → nama tulang/permukaan; **(2) Apa yang menghubungkan?** → jaringan fibrosa, kartilago, atau struktur sinovial; **(3) Jenisnya apa?** → fibrosa/kartilaginosa/sinovial; **(4) Bagaimana bergeraknya?** → bidang + gerakan + aksis.  —  **Pola Kategori jawaban:** Pakai template yang sama untuk semua sendi. Dosen menjelaskan AO, TMJ, simfisis, facet, dan costae dengan urutan ini.",
+  "ppt": 4,
+  "grup": "Sendi & kartilago",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Template empat pertanyaan dari slide: **(1) Apa yang bertemu?** → nama tulang/permukaan; **(2) Apa yang menghubungkan?** → jaringan fibrosa, kartilago, atau struktur sinovial; **(3) Jenisnya apa?** → fibrosa/kartilaginosa/sinovial; **(4) Bagaimana bergeraknya?** → bidang + gerakan + aksis.",
+  "diskriminator": "Pakai template yang sama untuk semua sendi. Dosen menjelaskan AO, TMJ, simfisis, facet, dan costae dengan urutan ini."
  },
  {
   "n": 129,
@@ -1939,7 +2843,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Fungsi: melindungi otak versus membentuk kerangka wajah",
-  "rationale": "Slide membaginya berdasarkan **fungsi**: **neurocranium** adalah tulang yang **mengelilingi dan melindungi otak**; **viscerocranium** adalah tulang yang **membentuk kerangka wajah**. Pembagian ini bukan berdasarkan letak atas–bawah, karena sphenoidale dan ethmoidale terletak “di dalam wajah” tetapi membentuk dasar tengkorak sehingga termasuk neurocranium.  —  **Pola Kategori jawaban:** Pertanyaan pemutusnya: **“tulang ini melindungi otak, atau membentuk muka?”**"
+  "rationale": "Slide membaginya berdasarkan **fungsi**: **neurocranium** adalah tulang yang **mengelilingi dan melindungi otak**; **viscerocranium** adalah tulang yang **membentuk kerangka wajah**. Pembagian ini bukan berdasarkan letak atas–bawah, karena sphenoidale dan ethmoidale terletak “di dalam wajah” tetapi membentuk dasar tengkorak sehingga termasuk neurocranium.  —  **Pola Kategori jawaban:** Pertanyaan pemutusnya: **“tulang ini melindungi otak, atau membentuk muka?”**",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Slide membaginya berdasarkan **fungsi**: **neurocranium** adalah tulang yang **mengelilingi dan melindungi otak**; **viscerocranium** adalah tulang yang **membentuk kerangka wajah**. Pembagian ini bukan berdasarkan letak atas–bawah, karena sphenoidale dan ethmoidale terletak “di dalam wajah” tetapi membentuk dasar tengkorak sehingga termasuk neurocranium.",
+  "diskriminator": "Pertanyaan pemutusnya: **“tulang ini melindungi otak, atau membentuk muka?”**"
  },
  {
   "n": 130,
@@ -1954,7 +2865,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Os sphenoidale dan os ethmoidale",
-  "rationale": "**[UB asli]** Enam tulang neurocranium: **os frontale, os parietale, os temporale, os occipitale, os sphenoidale, os ethmoidale**. Slide menandai dua terakhir dengan catatan **“also remember”** karena keduanya **tidak terlihat dari tampilan lateral** — dan justru itu yang sering dijadikan soal. Semua opsi lain berisi tulang viscerocranium.  —  **Pola Angka & daftar:** Mnemonik: **FPTO + SE** — Frontale, Parietale, Temporale, Occipitale, Sphenoidale, Ethmoidale."
+  "rationale": "**[UB asli]** Enam tulang neurocranium: **os frontale, os parietale, os temporale, os occipitale, os sphenoidale, os ethmoidale**. Slide menandai dua terakhir dengan catatan **“also remember”** karena keduanya **tidak terlihat dari tampilan lateral** — dan justru itu yang sering dijadikan soal. Semua opsi lain berisi tulang viscerocranium.  —  **Pola Angka & daftar:** Mnemonik: **FPTO + SE** — Frontale, Parietale, Temporale, Occipitale, Sphenoidale, Ethmoidale.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "ANG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Enam tulang neurocranium: **os frontale, os parietale, os temporale, os occipitale, os sphenoidale, os ethmoidale**. Slide menandai dua terakhir dengan catatan **“also remember”** karena keduanya **tidak terlihat dari tampilan lateral** — dan justru itu yang sering dijadikan soal. Semua opsi lain berisi tulang viscerocranium.",
+  "diskriminator": "Mnemonik: **FPTO + SE** — Frontale, Parietale, Temporale, Occipitale, Sphenoidale, Ethmoidale."
  },
  {
   "n": 131,
@@ -1969,7 +2887,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Karena keduanya tidak terlihat dari tampilan lateral tengkorak",
-  "rationale": "Keduanya membentuk **dasar tengkorak**, sehingga **tidak tampak dari tampilan lateral** yang dipakai slide untuk mengajarkan empat tulang lainnya. Mahasiswa yang hanya menghafal apa yang terlihat akan melewatkannya — dan soal UB memang menanyakan pasangan ini secara spesifik.  —  **Pola Angka & daftar:** Penanda “also remember” dari dosen adalah sinyal: **ini yang paling mudah terlewat, jadi ini yang diujikan**."
+  "rationale": "Keduanya membentuk **dasar tengkorak**, sehingga **tidak tampak dari tampilan lateral** yang dipakai slide untuk mengajarkan empat tulang lainnya. Mahasiswa yang hanya menghafal apa yang terlihat akan melewatkannya — dan soal UB memang menanyakan pasangan ini secara spesifik.  —  **Pola Angka & daftar:** Penanda “also remember” dari dosen adalah sinyal: **ini yang paling mudah terlewat, jadi ini yang diujikan**.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Keduanya membentuk **dasar tengkorak**, sehingga **tidak tampak dari tampilan lateral** yang dipakai slide untuk mengajarkan empat tulang lainnya. Mahasiswa yang hanya menghafal apa yang terlihat akan melewatkannya — dan soal UB memang menanyakan pasangan ini secara spesifik.",
+  "diskriminator": "Penanda “also remember” dari dosen adalah sinyal: **ini yang paling mudah terlewat, jadi ini yang diujikan**."
  },
  {
   "n": 132,
@@ -1984,7 +2909,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Os zygomaticum",
-  "rationale": "**[UB asli]** **Os zygomaticum** (tulang pipi) adalah viscerocranium. Tiga tulang viscerocranium utama menurut slide: **os zygomaticum, maxilla, mandibula**; selebihnya **nasale, lacrimale, palatinum, vomer, concha nasalis inferior**. Empat opsi lainnya semuanya neurocranium.  —  **Pola Angka & daftar:** Semua yang bisa kamu sentuh di **wajah** adalah viscerocranium; yang membentuk **kubah dan dasar** tengkorak adalah neurocranium."
+  "rationale": "**[UB asli]** **Os zygomaticum** (tulang pipi) adalah viscerocranium. Tiga tulang viscerocranium utama menurut slide: **os zygomaticum, maxilla, mandibula**; selebihnya **nasale, lacrimale, palatinum, vomer, concha nasalis inferior**. Empat opsi lainnya semuanya neurocranium.  —  **Pola Angka & daftar:** Semua yang bisa kamu sentuh di **wajah** adalah viscerocranium; yang membentuk **kubah dan dasar** tengkorak adalah neurocranium.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "ANG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Os zygomaticum** (tulang pipi) adalah viscerocranium. Tiga tulang viscerocranium utama menurut slide: **os zygomaticum, maxilla, mandibula**; selebihnya **nasale, lacrimale, palatinum, vomer, concha nasalis inferior**. Empat opsi lainnya semuanya neurocranium.",
+  "diskriminator": "Semua yang bisa kamu sentuh di **wajah** adalah viscerocranium; yang membentuk **kubah dan dasar** tengkorak adalah neurocranium."
  },
  {
   "n": 133,
@@ -1999,7 +2931,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Bukan keduanya — tulang di leher yang tidak bersendi dengan tulang lain",
-  "rationale": "**Os hyoideum bukan neurocranium maupun viscerocranium.** Dia terletak di leher, berbentuk seperti huruf U, dan **tidak bersendi dengan tulang mana pun** — digantung oleh otot dan ligamen. Dia sering dipasang sebagai distraktor pada soal penyusun cranium, dan dalam konteks itu **selalu salah**.  —  **Pola Angka & daftar:** Begitu melihat **os hyoideum** pada soal cranium, eliminasi langsung — dia bukan anggota kedua daftar."
+  "rationale": "**Os hyoideum bukan neurocranium maupun viscerocranium.** Dia terletak di leher, berbentuk seperti huruf U, dan **tidak bersendi dengan tulang mana pun** — digantung oleh otot dan ligamen. Dia sering dipasang sebagai distraktor pada soal penyusun cranium, dan dalam konteks itu **selalu salah**.  —  **Pola Angka & daftar:** Begitu melihat **os hyoideum** pada soal cranium, eliminasi langsung — dia bukan anggota kedua daftar.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Os hyoideum bukan neurocranium maupun viscerocranium.** Dia terletak di leher, berbentuk seperti huruf U, dan **tidak bersendi dengan tulang mana pun** — digantung oleh otot dan ligamen. Dia sering dipasang sebagai distraktor pada soal penyusun cranium, dan dalam konteks itu **selalu salah**.",
+  "diskriminator": "Begitu melihat **os hyoideum** pada soal cranium, eliminasi langsung — dia bukan anggota kedua daftar."
  },
  {
   "n": 134,
@@ -2014,7 +2953,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Os temporale",
-  "rationale": "**Processus mastoideus adalah bagian os temporale**, berupa tonjolan keras di belakang dan bawah meatus acusticus externus. Ini juga tempat melekatnya **M. sternocleidomastoideus** — dan nama otot itu sudah menyebutkan perlekatannya: sterno + cleido + mastoideus.  —  **Pola Nama = petunjuk:** Letak processus mastoideus dekat lubang telinga, dan lubang telinga (meatus acusticus externus) ada pada **os temporale**."
+  "rationale": "**Processus mastoideus adalah bagian os temporale**, berupa tonjolan keras di belakang dan bawah meatus acusticus externus. Ini juga tempat melekatnya **M. sternocleidomastoideus** — dan nama otot itu sudah menyebutkan perlekatannya: sterno + cleido + mastoideus.  —  **Pola Nama = petunjuk:** Letak processus mastoideus dekat lubang telinga, dan lubang telinga (meatus acusticus externus) ada pada **os temporale**.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Processus mastoideus adalah bagian os temporale**, berupa tonjolan keras di belakang dan bawah meatus acusticus externus. Ini juga tempat melekatnya **M. sternocleidomastoideus** — dan nama otot itu sudah menyebutkan perlekatannya: sterno + cleido + mastoideus.",
+  "diskriminator": "Letak processus mastoideus dekat lubang telinga, dan lubang telinga (meatus acusticus externus) ada pada **os temporale**."
  },
  {
   "n": 135,
@@ -2029,7 +2975,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Sendi fibrosa antar tulang tengkorak",
-  "rationale": "Slide mendefinisikannya langsung: **sutura adalah SENDI FIBROSA antar tulang tengkorak.** Tidak ada kartilago di dalamnya, tidak ada rongga sendi, dan gerakannya praktis nol. Inilah contoh baku sendi fibrosa yang dipakai di tiga soal UB berbeda.  —  **Pola Ciri tetangga:** Sutura **selalu** fibrosa, tanpa pengecualian — jangan tertukar dengan fibrokartilago."
+  "rationale": "Slide mendefinisikannya langsung: **sutura adalah SENDI FIBROSA antar tulang tengkorak.** Tidak ada kartilago di dalamnya, tidak ada rongga sendi, dan gerakannya praktis nol. Inilah contoh baku sendi fibrosa yang dipakai di tiga soal UB berbeda.  —  **Pola Ciri tetangga:** Sutura **selalu** fibrosa, tanpa pengecualian — jangan tertukar dengan fibrokartilago.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Slide mendefinisikannya langsung: **sutura adalah SENDI FIBROSA antar tulang tengkorak.** Tidak ada kartilago di dalamnya, tidak ada rongga sendi, dan gerakannya praktis nol. Inilah contoh baku sendi fibrosa yang dipakai di tiga soal UB berbeda.",
+  "diskriminator": "Sutura **selalu** fibrosa, tanpa pengecualian — jangan tertukar dengan fibrokartilago."
  },
  {
   "n": 136,
@@ -2044,7 +2997,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Os frontale dari os parietale",
-  "rationale": "**Sutura coronalis** berjalan melintang di bidang coronal dan memisahkan **os frontale dari os parietale**. Tiga sutura lainnya: **sagittalis** (parietale dextra–sinistra), **lambdoidea** (parietale–occipitale), **squamosa** (parietale–temporale).  —  **Pola Nama = petunjuk:** Nama sutura menunjuk **bidang atau bentuknya**: coronalis di bidang coronal, sagittalis di bidang sagittal."
+  "rationale": "**Sutura coronalis** berjalan melintang di bidang coronal dan memisahkan **os frontale dari os parietale**. Tiga sutura lainnya: **sagittalis** (parietale dextra–sinistra), **lambdoidea** (parietale–occipitale), **squamosa** (parietale–temporale).  —  **Pola Nama = petunjuk:** Nama sutura menunjuk **bidang atau bentuknya**: coronalis di bidang coronal, sagittalis di bidang sagittal.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Sutura coronalis** berjalan melintang di bidang coronal dan memisahkan **os frontale dari os parietale**. Tiga sutura lainnya: **sagittalis** (parietale dextra–sinistra), **lambdoidea** (parietale–occipitale), **squamosa** (parietale–temporale).",
+  "diskriminator": "Nama sutura menunjuk **bidang atau bentuknya**: coronalis di bidang coronal, sagittalis di bidang sagittal."
  },
  {
   "n": 137,
@@ -2059,7 +3019,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Sutura sagittalis",
-  "rationale": "**[UB asli]** **Sutura sagittalis** berjalan di garis tengah pada bidang sagittal, dari depan ke belakang, memisahkan kedua **os parietale**. Dia juga menjadi patokan dua titik temu penting: **bregma** di anterior (dengan coronalis) dan **lambda** di posterior (dengan lambdoidea).  —  **Pola Nama = petunjuk:** Garis tengah depan–belakang → bidang sagittal → **sutura sagittalis**. Namanya menyebutkan arahnya."
+  "rationale": "**[UB asli]** **Sutura sagittalis** berjalan di garis tengah pada bidang sagittal, dari depan ke belakang, memisahkan kedua **os parietale**. Dia juga menjadi patokan dua titik temu penting: **bregma** di anterior (dengan coronalis) dan **lambda** di posterior (dengan lambdoidea).  —  **Pola Nama = petunjuk:** Garis tengah depan–belakang → bidang sagittal → **sutura sagittalis**. Namanya menyebutkan arahnya.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "NAM",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Sutura sagittalis** berjalan di garis tengah pada bidang sagittal, dari depan ke belakang, memisahkan kedua **os parietale**. Dia juga menjadi patokan dua titik temu penting: **bregma** di anterior (dengan coronalis) dan **lambda** di posterior (dengan lambdoidea).",
+  "diskriminator": "Garis tengah depan–belakang → bidang sagittal → **sutura sagittalis**. Namanya menyebutkan arahnya."
  },
  {
   "n": 138,
@@ -2074,7 +3041,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Sutura lambdoidea",
-  "rationale": "**[UB asli]** **Sutura lambdoidea** berada di **posterior** cranium, memisahkan os parietale dari **os occipitale**, dan bentuknya menyerupai huruf Yunani **lambda (λ)** — dari situ namanya. Soal UB sering menanyakan “sutura di posterior cranium” dengan jawaban lambdoidea bersama os occipitale.  —  **Pola Nama = petunjuk:** Peta letak: **coronalis depan · sagittalis tengah · lambdoidea belakang · squamosa samping**."
+  "rationale": "**[UB asli]** **Sutura lambdoidea** berada di **posterior** cranium, memisahkan os parietale dari **os occipitale**, dan bentuknya menyerupai huruf Yunani **lambda (λ)** — dari situ namanya. Soal UB sering menanyakan “sutura di posterior cranium” dengan jawaban lambdoidea bersama os occipitale.  —  **Pola Nama = petunjuk:** Peta letak: **coronalis depan · sagittalis tengah · lambdoidea belakang · squamosa samping**.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "NAM",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Sutura lambdoidea** berada di **posterior** cranium, memisahkan os parietale dari **os occipitale**, dan bentuknya menyerupai huruf Yunani **lambda (λ)** — dari situ namanya. Soal UB sering menanyakan “sutura di posterior cranium” dengan jawaban lambdoidea bersama os occipitale.",
+  "diskriminator": "Peta letak: **coronalis depan · sagittalis tengah · lambdoidea belakang · squamosa samping**."
  },
  {
   "n": 139,
@@ -2089,7 +3063,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Os parietale dari os temporale",
-  "rationale": "**Sutura squamosa** berada di **lateral** tengkorak dan memisahkan **os parietale dari os temporale**. Namanya dari squama = sisik, karena tepi os temporale di situ tipis dan menumpang seperti sisik — berbeda dari sutura lain yang tepinya bergerigi saling mengunci.  —  **Pola Nama = petunjuk:** Empat sutura, empat pasangan tulang. Hafal pasangannya, bukan hanya namanya."
+  "rationale": "**Sutura squamosa** berada di **lateral** tengkorak dan memisahkan **os parietale dari os temporale**. Namanya dari squama = sisik, karena tepi os temporale di situ tipis dan menumpang seperti sisik — berbeda dari sutura lain yang tepinya bergerigi saling mengunci.  —  **Pola Nama = petunjuk:** Empat sutura, empat pasangan tulang. Hafal pasangannya, bukan hanya namanya.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Sutura squamosa** berada di **lateral** tengkorak dan memisahkan **os parietale dari os temporale**. Namanya dari squama = sisik, karena tepi os temporale di situ tipis dan menumpang seperti sisik — berbeda dari sutura lain yang tepinya bergerigi saling mengunci.",
+  "diskriminator": "Empat sutura, empat pasangan tulang. Hafal pasangannya, bukan hanya namanya."
  },
  {
   "n": 140,
@@ -2104,7 +3085,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Bregma",
-  "rationale": "**[UB asli]** Titik temu sutura **sagittalis + coronalis** berbentuk rhomboid. Pada **neonatus** masih terbuka dan disebut **fontanella mayor / fonticulus anterior**; setelah menutup pada usia 2–3 tahun disebut **BREGMA**. Karena soal menyebut “dewasa”, jawabannya bregma.  —  **Pola Diskriminator konteks:** Satu kata **usia** menentukan jawabannya: neonatus → fontanella; dewasa → bregma. Struktur sama, dua nama."
+  "rationale": "**[UB asli]** Titik temu sutura **sagittalis + coronalis** berbentuk rhomboid. Pada **neonatus** masih terbuka dan disebut **fontanella mayor / fonticulus anterior**; setelah menutup pada usia 2–3 tahun disebut **BREGMA**. Karena soal menyebut “dewasa”, jawabannya bregma.  —  **Pola Diskriminator konteks:** Satu kata **usia** menentukan jawabannya: neonatus → fontanella; dewasa → bregma. Struktur sama, dua nama.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "USI",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Titik temu sutura **sagittalis + coronalis** berbentuk rhomboid. Pada **neonatus** masih terbuka dan disebut **fontanella mayor / fonticulus anterior**; setelah menutup pada usia 2–3 tahun disebut **BREGMA**. Karena soal menyebut “dewasa”, jawabannya bregma.",
+  "diskriminator": "Satu kata **usia** menentukan jawabannya: neonatus → fontanella; dewasa → bregma. Struktur sama, dua nama."
  },
  {
   "n": 141,
@@ -2119,7 +3107,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Lambda",
-  "rationale": "**[UB asli]** **Lambda** = titik temu sutura sagittalis dengan sutura **lambdoidea**, di posterior cranium (pada neonatus: **fontanella minor / fonticulus posterior**). Bandingkan **bregma** = titik temu sagittalis dengan **coronalis**, di anterior. Keduanya di garis tengah dan mudah tertukar.  —  **Pola Pasangan berlawanan:** **Bregma di depan (coronalis); Lambda di belakang (lambdoidea).** Nama titik mengikuti sutura yang menyilang."
+  "rationale": "**[UB asli]** **Lambda** = titik temu sutura sagittalis dengan sutura **lambdoidea**, di posterior cranium (pada neonatus: **fontanella minor / fonticulus posterior**). Bandingkan **bregma** = titik temu sagittalis dengan **coronalis**, di anterior. Keduanya di garis tengah dan mudah tertukar.  —  **Pola Pasangan berlawanan:** **Bregma di depan (coronalis); Lambda di belakang (lambdoidea).** Nama titik mengikuti sutura yang menyilang.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "LAW",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Lambda** = titik temu sutura sagittalis dengan sutura **lambdoidea**, di posterior cranium (pada neonatus: **fontanella minor / fonticulus posterior**). Bandingkan **bregma** = titik temu sagittalis dengan **coronalis**, di anterior. Keduanya di garis tengah dan mudah tertukar.",
+  "diskriminator": "**Bregma di depan (coronalis); Lambda di belakang (lambdoidea).** Nama titik mengikuti sutura yang menyilang."
  },
  {
   "n": 142,
@@ -2134,7 +3129,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Lambda",
-  "rationale": "**Fontanella minor → LAMBDA.** Dan pasangannya: **fontanella mayor → BREGMA**. Keduanya adalah struktur yang sama pada dua tahap usia yang berbeda: terbuka pada bayi (memungkinkan kepala memampat saat persalinan dan otak tumbuh), menutup pada anak.  —  **Pola Diskriminator konteks:** Dua pasangan usia yang harus kamu kunci: **mayor→bregma (anterior)** dan **minor→lambda (posterior)**."
+  "rationale": "**Fontanella minor → LAMBDA.** Dan pasangannya: **fontanella mayor → BREGMA**. Keduanya adalah struktur yang sama pada dua tahap usia yang berbeda: terbuka pada bayi (memungkinkan kepala memampat saat persalinan dan otak tumbuh), menutup pada anak.  —  **Pola Diskriminator konteks:** Dua pasangan usia yang harus kamu kunci: **mayor→bregma (anterior)** dan **minor→lambda (posterior)**.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Fontanella minor → LAMBDA.** Dan pasangannya: **fontanella mayor → BREGMA**. Keduanya adalah struktur yang sama pada dua tahap usia yang berbeda: terbuka pada bayi (memungkinkan kepala memampat saat persalinan dan otak tumbuh), menutup pada anak.",
+  "diskriminator": "Dua pasangan usia yang harus kamu kunci: **mayor→bregma (anterior)** dan **minor→lambda (posterior)**."
  },
  {
   "n": 143,
@@ -2149,7 +3151,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Frontale, parietale, temporale, sphenoidale",
-  "rationale": "**Pterion = frontale + parietale + temporale + sphenoidale.** Perhatikan bahwa keempatnya adalah tulang **neurocranium** — itu cara cepat memverifikasi: pterion berada di dinding tengkorak, jadi semua pembentuknya harus tulang pelindung otak. Os zygomaticum adalah viscerocranium, jadi opsi yang memuatnya salah.  —  **Pola Angka & daftar:** Mnemonik **FPTS**. Dan verifikasinya: **semuanya neurocranium** — kalau ada tulang wajah di opsi, eliminasi."
+  "rationale": "**Pterion = frontale + parietale + temporale + sphenoidale.** Perhatikan bahwa keempatnya adalah tulang **neurocranium** — itu cara cepat memverifikasi: pterion berada di dinding tengkorak, jadi semua pembentuknya harus tulang pelindung otak. Os zygomaticum adalah viscerocranium, jadi opsi yang memuatnya salah.  —  **Pola Angka & daftar:** Mnemonik **FPTS**. Dan verifikasinya: **semuanya neurocranium** — kalau ada tulang wajah di opsi, eliminasi.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Pterion = frontale + parietale + temporale + sphenoidale.** Perhatikan bahwa keempatnya adalah tulang **neurocranium** — itu cara cepat memverifikasi: pterion berada di dinding tengkorak, jadi semua pembentuknya harus tulang pelindung otak. Os zygomaticum adalah viscerocranium, jadi opsi yang memuatnya salah.",
+  "diskriminator": "Mnemonik **FPTS**. Dan verifikasinya: **semuanya neurocranium** — kalau ada tulang wajah di opsi, eliminasi."
  },
  {
   "n": 144,
@@ -2164,7 +3173,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Arteria meningea media; hematoma epidural",
-  "rationale": "Pterion adalah **daerah paling tipis** di seluruh cranium, dan tepat di baliknya berjalan **arteria meningea media**. Fraktur di situ dapat merobek arteri tersebut sehingga darah terkumpul di antara tulang dan duramater → **hematoma epidural**. Itu sebabnya benturan samping kepala yang tampak ringan bisa berakibat fatal.  —  **Pola Turunkan dari prinsip:** Rantai sebabnya: **tulang paling tipis + arteri tepat di baliknya = risiko tinggi** meski benturannya ringan."
+  "rationale": "Pterion adalah **daerah paling tipis** di seluruh cranium, dan tepat di baliknya berjalan **arteria meningea media**. Fraktur di situ dapat merobek arteri tersebut sehingga darah terkumpul di antara tulang dan duramater → **hematoma epidural**. Itu sebabnya benturan samping kepala yang tampak ringan bisa berakibat fatal.  —  **Pola Turunkan dari prinsip:** Rantai sebabnya: **tulang paling tipis + arteri tepat di baliknya = risiko tinggi** meski benturannya ringan.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Pterion adalah **daerah paling tipis** di seluruh cranium, dan tepat di baliknya berjalan **arteria meningea media**. Fraktur di situ dapat merobek arteri tersebut sehingga darah terkumpul di antara tulang dan duramater → **hematoma epidural**. Itu sebabnya benturan samping kepala yang tampak ringan bisa berakibat fatal.",
+  "diskriminator": "Rantai sebabnya: **tulang paling tipis + arteri tepat di baliknya = risiko tinggi** meski benturannya ringan."
  },
  {
   "n": 145,
@@ -2179,7 +3195,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Posterior dan inferior",
-  "rationale": "Slide memberi contoh latihan bahasa anatomi ini secara eksplisit: **“The mastoid process is posterior and inferior to the external acoustic meatus.”** Coba sentuh sendiri — benjolan keras di **belakang dan bawah** lubang telingamu itu processus mastoideus.  —  **Pola Turunkan dari prinsip:** Latih menyebut letak dengan **istilah arah anatomi**, bukan “di belakang bawah telinga”. Soal memakai istilah anatomi."
+  "rationale": "Slide memberi contoh latihan bahasa anatomi ini secara eksplisit: **“The mastoid process is posterior and inferior to the external acoustic meatus.”** Coba sentuh sendiri — benjolan keras di **belakang dan bawah** lubang telingamu itu processus mastoideus.  —  **Pola Turunkan dari prinsip:** Latih menyebut letak dengan **istilah arah anatomi**, bukan “di belakang bawah telinga”. Soal memakai istilah anatomi.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Slide memberi contoh latihan bahasa anatomi ini secara eksplisit: **“The mastoid process is posterior and inferior to the external acoustic meatus.”** Coba sentuh sendiri — benjolan keras di **belakang dan bawah** lubang telingamu itu processus mastoideus.",
+  "diskriminator": "Latih menyebut letak dengan **istilah arah anatomi**, bukan “di belakang bawah telinga”. Soal memakai istilah anatomi."
  },
  {
   "n": 146,
@@ -2194,7 +3217,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 4,
   "kunci": "Foramen magnum",
-  "rationale": "Empat landmark yang diajarkan untuk dipalpasi: **margo supraorbitalis, arcus zygomaticus, meatus acusticus externus, processus mastoideus**, ditambah regio occipitalis externa. **Foramen magnum** berada di **dasar tengkorak** dan tidak mungkin dipalpasi dari luar. Slide menegaskan kebiasaan klinis: **palpasi → lokalisasi → namai**.  —  **Pola Kategori jawaban:** Landmark permukaan harus **bisa disentuh**. Struktur di dasar tengkorak otomatis bukan landmark permukaan."
+  "rationale": "Empat landmark yang diajarkan untuk dipalpasi: **margo supraorbitalis, arcus zygomaticus, meatus acusticus externus, processus mastoideus**, ditambah regio occipitalis externa. **Foramen magnum** berada di **dasar tengkorak** dan tidak mungkin dipalpasi dari luar. Slide menegaskan kebiasaan klinis: **palpasi → lokalisasi → namai**.  —  **Pola Kategori jawaban:** Landmark permukaan harus **bisa disentuh**. Struktur di dasar tengkorak otomatis bukan landmark permukaan.",
+  "ppt": 4,
+  "grup": "Cranium",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Empat landmark yang diajarkan untuk dipalpasi: **margo supraorbitalis, arcus zygomaticus, meatus acusticus externus, processus mastoideus**, ditambah regio occipitalis externa. **Foramen magnum** berada di **dasar tengkorak** dan tidak mungkin dipalpasi dari luar. Slide menegaskan kebiasaan klinis: **palpasi → lokalisasi → namai**.",
+  "diskriminator": "Landmark permukaan harus **bisa disentuh**. Struktur di dasar tengkorak otomatis bukan landmark permukaan."
  },
  {
   "n": 147,
@@ -2209,7 +3239,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Menghubungkan cavitas cranii dengan canalis vertebralis",
-  "rationale": "**Foramen magnum menghubungkan cavitas cranii dengan canalis vertebralis** — di situlah batang otak berlanjut menjadi medulla spinalis. Peralihan **medulla oblongata → medulla spinalis** terjadi tepat di level foramen magnum. Yang melewati **foramen transversarium** adalah arteria vertebralis, bukan foramen magnum.  —  **Pola Kategori jawaban:** Namanya sendiri sudah menjelaskan: **foramen = lubang; magnum = besar** — lubang terbesar di tengkorak, untuk struktur terpenting."
+  "rationale": "**Foramen magnum menghubungkan cavitas cranii dengan canalis vertebralis** — di situlah batang otak berlanjut menjadi medulla spinalis. Peralihan **medulla oblongata → medulla spinalis** terjadi tepat di level foramen magnum. Yang melewati **foramen transversarium** adalah arteria vertebralis, bukan foramen magnum.  —  **Pola Kategori jawaban:** Namanya sendiri sudah menjelaskan: **foramen = lubang; magnum = besar** — lubang terbesar di tengkorak, untuk struktur terpenting.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Foramen magnum menghubungkan cavitas cranii dengan canalis vertebralis** — di situlah batang otak berlanjut menjadi medulla spinalis. Peralihan **medulla oblongata → medulla spinalis** terjadi tepat di level foramen magnum. Yang melewati **foramen transversarium** adalah arteria vertebralis, bukan foramen magnum.",
+  "diskriminator": "Namanya sendiri sudah menjelaskan: **foramen = lubang; magnum = besar** — lubang terbesar di tengkorak, untuk struktur terpenting."
  },
  {
   "n": 148,
@@ -2224,7 +3261,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Atlas (C1)",
-  "rationale": "**Condylus occipitalis bersendi dengan ATLAS (C1)**, membentuk **articulatio atlantooccipitalis**. Condylus ini **berpasangan** (kanan dan kiri), terletak di lateral foramen magnum. Yang bersendi dengan **dens axis** adalah atlas, bukan os occipitale — itu articulatio atlantoaxialis mediana.  —  **Pola Ciri tetangga:** Nama sendinya membocorkan pasangannya: **atlanto-occipitalis** = atlas + os occipitale."
+  "rationale": "**Condylus occipitalis bersendi dengan ATLAS (C1)**, membentuk **articulatio atlantooccipitalis**. Condylus ini **berpasangan** (kanan dan kiri), terletak di lateral foramen magnum. Yang bersendi dengan **dens axis** adalah atlas, bukan os occipitale — itu articulatio atlantoaxialis mediana.  —  **Pola Ciri tetangga:** Nama sendinya membocorkan pasangannya: **atlanto-occipitalis** = atlas + os occipitale.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Condylus occipitalis bersendi dengan ATLAS (C1)**, membentuk **articulatio atlantooccipitalis**. Condylus ini **berpasangan** (kanan dan kiri), terletak di lateral foramen magnum. Yang bersendi dengan **dens axis** adalah atlas, bukan os occipitale — itu articulatio atlantoaxialis mediana.",
+  "diskriminator": "Nama sendinya membocorkan pasangannya: **atlanto-occipitalis** = atlas + os occipitale."
  },
  {
   "n": 149,
@@ -2239,7 +3283,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Os occipitale",
-  "rationale": "**[UB asli]** Tiga petunjuk mengarah ke satu tulang: **foramen magnum**, **condylus occipitalis** yang bersendi dengan atlas, dan nama sendinya **articulatio atlantooccipitalis** yang sudah memuat kata “occipitalis”. Jawabannya **os occipitale** — tulang paling posterior pada neurocranium.  —  **Pola Nama = petunjuk:** Kata **“bersendi”** pada soal menandakan **condylus** (permukaan artikular), bukan epicondylus yang tidak bersendi."
+  "rationale": "**[UB asli]** Tiga petunjuk mengarah ke satu tulang: **foramen magnum**, **condylus occipitalis** yang bersendi dengan atlas, dan nama sendinya **articulatio atlantooccipitalis** yang sudah memuat kata “occipitalis”. Jawabannya **os occipitale** — tulang paling posterior pada neurocranium.  —  **Pola Nama = petunjuk:** Kata **“bersendi”** pada soal menandakan **condylus** (permukaan artikular), bukan epicondylus yang tidak bersendi.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "NAM",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Tiga petunjuk mengarah ke satu tulang: **foramen magnum**, **condylus occipitalis** yang bersendi dengan atlas, dan nama sendinya **articulatio atlantooccipitalis** yang sudah memuat kata “occipitalis”. Jawabannya **os occipitale** — tulang paling posterior pada neurocranium.",
+  "diskriminator": "Kata **“bersendi”** pada soal menandakan **condylus** (permukaan artikular), bukan epicondylus yang tidak bersendi."
  },
  {
   "n": 150,
@@ -2254,7 +3305,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Sinovial · condyloid (ellipsoid) · biaksial",
-  "rationale": "Slide menuliskannya lengkap: **sinovial · condyloid (ellipsoid) · biaksial**. Penghubungnya **kartilago artikular hialin + kapsul sendi**. Gerakannya **fleksi + ekstensi** dengan sedikit **lateral fleksi** — dua gerakan, dua aksis, sehingga biaksial.  —  **Pola Ciri tetangga:** Jawabannya bertingkat tiga: **kategori · bentuk · jumlah aksis**. Pastikan ketiganya cocok, bukan hanya satu."
+  "rationale": "Slide menuliskannya lengkap: **sinovial · condyloid (ellipsoid) · biaksial**. Penghubungnya **kartilago artikular hialin + kapsul sendi**. Gerakannya **fleksi + ekstensi** dengan sedikit **lateral fleksi** — dua gerakan, dua aksis, sehingga biaksial.  —  **Pola Ciri tetangga:** Jawabannya bertingkat tiga: **kategori · bentuk · jumlah aksis**. Pastikan ketiganya cocok, bukan hanya satu.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Slide menuliskannya lengkap: **sinovial · condyloid (ellipsoid) · biaksial**. Penghubungnya **kartilago artikular hialin + kapsul sendi**. Gerakannya **fleksi + ekstensi** dengan sedikit **lateral fleksi** — dua gerakan, dua aksis, sehingga biaksial.",
+  "diskriminator": "Jawabannya bertingkat tiga: **kategori · bentuk · jumlah aksis**. Pastikan ketiganya cocok, bukan hanya satu."
  },
  {
   "n": 151,
@@ -2269,7 +3327,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Kartilago hialin",
-  "rationale": "Slide menyebut penghubungnya: **kartilago artikular HIALIN + kapsul sendi** — sesuai aturan umum sendi sinovial. Bandingkan dengan **TMJ** yang memakai **fibrokartilago**. Dua sendi ini bertetangga di dasar tengkorak tetapi memakai jenis kartilago berbeda, dan kontras itu sering diujikan.  —  **Pola Ciri tetangga:** Hafal pasangan kontrasnya: **AO = hialin; TMJ = fibrokartilago**."
+  "rationale": "Slide menyebut penghubungnya: **kartilago artikular HIALIN + kapsul sendi** — sesuai aturan umum sendi sinovial. Bandingkan dengan **TMJ** yang memakai **fibrokartilago**. Dua sendi ini bertetangga di dasar tengkorak tetapi memakai jenis kartilago berbeda, dan kontras itu sering diujikan.  —  **Pola Ciri tetangga:** Hafal pasangan kontrasnya: **AO = hialin; TMJ = fibrokartilago**.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Slide menyebut penghubungnya: **kartilago artikular HIALIN + kapsul sendi** — sesuai aturan umum sendi sinovial. Bandingkan dengan **TMJ** yang memakai **fibrokartilago**. Dua sendi ini bertetangga di dasar tengkorak tetapi memakai jenis kartilago berbeda, dan kontras itu sering diujikan.",
+  "diskriminator": "Hafal pasangan kontrasnya: **AO = hialin; TMJ = fibrokartilago**."
  },
  {
   "n": 152,
@@ -2284,7 +3349,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Bidang sagittal; aksis transversal",
-  "rationale": "Gerakan utamanya **fleksi–ekstensi** (mengangguk), yang terjadi di **bidang sagittal** di sekitar **aksis transversal**. Slide menyatakannya persis: “Small nod = flexion/extension in the sagittal plane around a transverse axis.” Gerakan keduanya, lateral fleksi, memakai bidang frontal dan aksis AP.  —  **Pola Turunkan dari prinsip:** Pakai model tusuk sate: saat mengangguk, tusuk satenya menembus **telinga ke telinga** = aksis transversal."
+  "rationale": "Gerakan utamanya **fleksi–ekstensi** (mengangguk), yang terjadi di **bidang sagittal** di sekitar **aksis transversal**. Slide menyatakannya persis: “Small nod = flexion/extension in the sagittal plane around a transverse axis.” Gerakan keduanya, lateral fleksi, memakai bidang frontal dan aksis AP.  —  **Pola Turunkan dari prinsip:** Pakai model tusuk sate: saat mengangguk, tusuk satenya menembus **telinga ke telinga** = aksis transversal.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Gerakan utamanya **fleksi–ekstensi** (mengangguk), yang terjadi di **bidang sagittal** di sekitar **aksis transversal**. Slide menyatakannya persis: “Small nod = flexion/extension in the sagittal plane around a transverse axis.” Gerakan keduanya, lateral fleksi, memakai bidang frontal dan aksis AP.",
+  "diskriminator": "Pakai model tusuk sate: saat mengangguk, tusuk satenya menembus **telinga ke telinga** = aksis transversal."
  },
  {
   "n": 153,
@@ -2299,7 +3371,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Karena menghasilkan dua gerakan dengan dua aksis: fleksi–ekstensi dan lateral fleksi",
-  "rationale": "Biaksial ditentukan oleh **jumlah aksis gerakan**, bukan jumlah tulang atau jumlah condylus. AO joint punya **dua**: **aksis transversal** untuk fleksi–ekstensi, dan **aksis anteroposterior** untuk lateral fleksi ringan. Rotasi **bukan** gerakan AO joint — itu milik art. atlantoaxialis.  —  **Pola Turunkan dari prinsip:** Hitung **aksisnya**, bukan tulangnya. Dua aksis → biaksial → bentuknya condyloid, bukan hinge."
+  "rationale": "Biaksial ditentukan oleh **jumlah aksis gerakan**, bukan jumlah tulang atau jumlah condylus. AO joint punya **dua**: **aksis transversal** untuk fleksi–ekstensi, dan **aksis anteroposterior** untuk lateral fleksi ringan. Rotasi **bukan** gerakan AO joint — itu milik art. atlantoaxialis.  —  **Pola Turunkan dari prinsip:** Hitung **aksisnya**, bukan tulangnya. Dua aksis → biaksial → bentuknya condyloid, bukan hinge.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Biaksial ditentukan oleh **jumlah aksis gerakan**, bukan jumlah tulang atau jumlah condylus. AO joint punya **dua**: **aksis transversal** untuk fleksi–ekstensi, dan **aksis anteroposterior** untuk lateral fleksi ringan. Rotasi **bukan** gerakan AO joint — itu milik art. atlantoaxialis.",
+  "diskriminator": "Hitung **aksisnya**, bukan tulangnya. Dua aksis → biaksial → bentuknya condyloid, bukan hinge."
  },
  {
   "n": 154,
@@ -2314,7 +3393,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Tiga sendi: satu median pivot dan dua lateral plane",
-  "rationale": "Art. atlantoaxialis adalah **kompleks tiga sendi**: satu **median** (antara dens axis dan atlas, jenis **PIVOT**) dan dua **lateral** (jenis **PLANE**). Yang menghasilkan **rotasi** adalah yang median pivot, dengan **dens axis** sebagai porosnya.  —  **Pola Angka & daftar:** Bagian **median** yang memutar; bagian **lateral** hanya menggeser. Rotasi berasal dari pivot, bukan plane."
+  "rationale": "Art. atlantoaxialis adalah **kompleks tiga sendi**: satu **median** (antara dens axis dan atlas, jenis **PIVOT**) dan dua **lateral** (jenis **PLANE**). Yang menghasilkan **rotasi** adalah yang median pivot, dengan **dens axis** sebagai porosnya.  —  **Pola Angka & daftar:** Bagian **median** yang memutar; bagian **lateral** hanya menggeser. Rotasi berasal dari pivot, bukan plane.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Art. atlantoaxialis adalah **kompleks tiga sendi**: satu **median** (antara dens axis dan atlas, jenis **PIVOT**) dan dua **lateral** (jenis **PLANE**). Yang menghasilkan **rotasi** adalah yang median pivot, dengan **dens axis** sebagai porosnya.",
+  "diskriminator": "Bagian **median** yang memutar; bagian **lateral** hanya menggeser. Rotasi berasal dari pivot, bukan plane."
  },
  {
   "n": 155,
@@ -2329,7 +3415,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Art. atlantoaxialis; bidang transversal; aksis vertikal",
-  "rationale": "**[UB asli]** Menggeleng = **ROTASI** → terjadi di **art. atlantoaxialis** (bagian median, jenis pivot), pada **bidang transversal** di sekitar **aksis vertikal**. Bandingkan mengangguk = fleksi–ekstensi → **art. atlantooccipitalis**, bidang sagittal, aksis transversal.  —  **Pola Turunkan dari prinsip:** Jembatan dari slide: **“Say YES: transverse axis. Say NO: vertical axis.”** Tapi jawaban yang ditulis harus istilah anatominya."
+  "rationale": "**[UB asli]** Menggeleng = **ROTASI** → terjadi di **art. atlantoaxialis** (bagian median, jenis pivot), pada **bidang transversal** di sekitar **aksis vertikal**. Bandingkan mengangguk = fleksi–ekstensi → **art. atlantooccipitalis**, bidang sagittal, aksis transversal.  —  **Pola Turunkan dari prinsip:** Jembatan dari slide: **“Say YES: transverse axis. Say NO: vertical axis.”** Tapi jawaban yang ditulis harus istilah anatominya.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Menggeleng = **ROTASI** → terjadi di **art. atlantoaxialis** (bagian median, jenis pivot), pada **bidang transversal** di sekitar **aksis vertikal**. Bandingkan mengangguk = fleksi–ekstensi → **art. atlantooccipitalis**, bidang sagittal, aksis transversal.",
+  "diskriminator": "Jembatan dari slide: **“Say YES: transverse axis. Say NO: vertical axis.”** Tapi jawaban yang ditulis harus istilah anatominya."
  },
  {
   "n": 156,
@@ -2344,7 +3437,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Atlas berbentuk cincin tanpa corpus khas; axis memiliki dens sebagai poros rotasi",
-  "rationale": "**[UB asli]** **Atlas (C1)**: berbentuk **cincin**, **tanpa corpus vertebrae yang khas**, dan **menopang condylus occipitalis**. **Axis (C2)**: memiliki **dens** yang berfungsi sebagai **poros rotasi**. Secara embriologis dens sebenarnya adalah corpus atlas yang menyatu ke C2 — itulah sebabnya atlas berbentuk cincin. Atlas juga **tidak punya processus spinosus**.  —  **Pola Pasangan berlawanan:** Namanya menjelaskan fungsinya: **Atlas** memikul (seperti Atlas memikul bumi); **Axis** adalah sumbu/poros."
+  "rationale": "**[UB asli]** **Atlas (C1)**: berbentuk **cincin**, **tanpa corpus vertebrae yang khas**, dan **menopang condylus occipitalis**. **Axis (C2)**: memiliki **dens** yang berfungsi sebagai **poros rotasi**. Secara embriologis dens sebenarnya adalah corpus atlas yang menyatu ke C2 — itulah sebabnya atlas berbentuk cincin. Atlas juga **tidak punya processus spinosus**.  —  **Pola Pasangan berlawanan:** Namanya menjelaskan fungsinya: **Atlas** memikul (seperti Atlas memikul bumi); **Axis** adalah sumbu/poros.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "LAW",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Atlas (C1)**: berbentuk **cincin**, **tanpa corpus vertebrae yang khas**, dan **menopang condylus occipitalis**. **Axis (C2)**: memiliki **dens** yang berfungsi sebagai **poros rotasi**. Secara embriologis dens sebenarnya adalah corpus atlas yang menyatu ke C2 — itulah sebabnya atlas berbentuk cincin. Atlas juga **tidak punya processus spinosus**.",
+  "diskriminator": "Namanya menjelaskan fungsinya: **Atlas** memikul (seperti Atlas memikul bumi); **Axis** adalah sumbu/poros."
  },
  {
   "n": 157,
@@ -2359,7 +3459,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Sinovial · modified hinge (ginglymoarthrodial)",
-  "rationale": "**[UB asli]** Slide menuliskannya eksplisit: **sinovial · modified hinge (ginglymoarthrodial)** — gabungan ginglymus (hinge) dan arthrodial (plane/gliding), karena geraknya memang dua macam: **rotasi + translasi**. Kalau opsi soal memuat “condylaris” dan “ginglymus” sekaligus, pilih **ginglymus** karena itu yang ada di PPT resmi.  —  **Pola Ciri tetangga:** Yang **pasti benar** dalam kondisi apa pun: **TMJ adalah sendi SINOVIAL**. Itu jangkar yang tidak pernah salah."
+  "rationale": "**[UB asli]** Slide menuliskannya eksplisit: **sinovial · modified hinge (ginglymoarthrodial)** — gabungan ginglymus (hinge) dan arthrodial (plane/gliding), karena geraknya memang dua macam: **rotasi + translasi**. Kalau opsi soal memuat “condylaris” dan “ginglymus” sekaligus, pilih **ginglymus** karena itu yang ada di PPT resmi.  —  **Pola Ciri tetangga:** Yang **pasti benar** dalam kondisi apa pun: **TMJ adalah sendi SINOVIAL**. Itu jangkar yang tidak pernah salah.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Slide menuliskannya eksplisit: **sinovial · modified hinge (ginglymoarthrodial)** — gabungan ginglymus (hinge) dan arthrodial (plane/gliding), karena geraknya memang dua macam: **rotasi + translasi**. Kalau opsi soal memuat “condylaris” dan “ginglymus” sekaligus, pilih **ginglymus** karena itu yang ada di PPT resmi.",
+  "diskriminator": "Yang **pasti benar** dalam kondisi apa pun: **TMJ adalah sendi SINOVIAL**. Itu jangkar yang tidak pernah salah."
  },
  {
   "n": 158,
@@ -2374,7 +3481,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Membagi rongga sendi menjadi dua kompartemen: atas dan bawah",
-  "rationale": "Discus artikular TMJ terbuat dari **fibrokartilago** dan **membagi sendi menjadi dua kompartemen: atas dan bawah**. Pembagian inilah yang memungkinkan TMJ melakukan **dua jenis gerakan sekaligus** — rotasi di kompartemen bawah dan translasi di kompartemen atas.  —  **Pola Kategori jawaban:** Dua kompartemen → dua jenis gerakan. Itu sebabnya TMJ disebut **modified** hinge, bukan hinge biasa."
+  "rationale": "Discus artikular TMJ terbuat dari **fibrokartilago** dan **membagi sendi menjadi dua kompartemen: atas dan bawah**. Pembagian inilah yang memungkinkan TMJ melakukan **dua jenis gerakan sekaligus** — rotasi di kompartemen bawah dan translasi di kompartemen atas.  —  **Pola Kategori jawaban:** Dua kompartemen → dua jenis gerakan. Itu sebabnya TMJ disebut **modified** hinge, bukan hinge biasa.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Discus artikular TMJ terbuat dari **fibrokartilago** dan **membagi sendi menjadi dua kompartemen: atas dan bawah**. Pembagian inilah yang memungkinkan TMJ melakukan **dua jenis gerakan sekaligus** — rotasi di kompartemen bawah dan translasi di kompartemen atas.",
+  "diskriminator": "Dua kompartemen → dua jenis gerakan. Itu sebabnya TMJ disebut **modified** hinge, bukan hinge biasa."
  },
  {
   "n": 159,
@@ -2389,7 +3503,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Translasi ke anterior tanpa aksis putar yang tetap",
-  "rationale": "Dua fase pembukaan mulut: **pembukaan awal = ROTASI** unit condylus–discus di sekitar aksis transversal; **pembukaan lebih lebar = TRANSLASI ke ANTERIOR** (gliding, tanpa aksis tetap). Arahnya **ke depan**, bukan ke samping — pergeseran ke samping adalah **lateral excursion**, gerakan yang berbeda.  —  **Pola Diskriminator konteks:** Fase menentukan jawabannya: **awal = rotasi; lebar = translasi anterior**. Baca fase mana yang ditanya."
+  "rationale": "Dua fase pembukaan mulut: **pembukaan awal = ROTASI** unit condylus–discus di sekitar aksis transversal; **pembukaan lebih lebar = TRANSLASI ke ANTERIOR** (gliding, tanpa aksis tetap). Arahnya **ke depan**, bukan ke samping — pergeseran ke samping adalah **lateral excursion**, gerakan yang berbeda.  —  **Pola Diskriminator konteks:** Fase menentukan jawabannya: **awal = rotasi; lebar = translasi anterior**. Baca fase mana yang ditanya.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Dua fase pembukaan mulut: **pembukaan awal = ROTASI** unit condylus–discus di sekitar aksis transversal; **pembukaan lebih lebar = TRANSLASI ke ANTERIOR** (gliding, tanpa aksis tetap). Arahnya **ke depan**, bukan ke samping — pergeseran ke samping adalah **lateral excursion**, gerakan yang berbeda.",
+  "diskriminator": "Fase menentukan jawabannya: **awal = rotasi; lebar = translasi anterior**. Baca fase mana yang ditanya."
  },
  {
   "n": 160,
@@ -2404,7 +3525,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Elevasi",
-  "rationale": "**Elevasi = mandibula NAIK = mulut MENUTUP.Depresi = mandibula TURUN = mulut MEMBUKA.** Intuisi sering tertukar karena kita memikirkan mulut yang “terbuka lebar”, padahal patokannya adalah **arah gerak mandibula**, bukan keadaan mulut.  —  **Pola Pasangan berlawanan:** Lihat **yang bergerak (mandibula)**, bukan **yang terbuka (mulut)**. Elevasi = naik = menutup."
+  "rationale": "**Elevasi = mandibula NAIK = mulut MENUTUP.Depresi = mandibula TURUN = mulut MEMBUKA.** Intuisi sering tertukar karena kita memikirkan mulut yang “terbuka lebar”, padahal patokannya adalah **arah gerak mandibula**, bukan keadaan mulut.  —  **Pola Pasangan berlawanan:** Lihat **yang bergerak (mandibula)**, bukan **yang terbuka (mulut)**. Elevasi = naik = menutup.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Elevasi = mandibula NAIK = mulut MENUTUP.Depresi = mandibula TURUN = mulut MEMBUKA.** Intuisi sering tertukar karena kita memikirkan mulut yang “terbuka lebar”, padahal patokannya adalah **arah gerak mandibula**, bukan keadaan mulut.",
+  "diskriminator": "Lihat **yang bergerak (mandibula)**, bukan **yang terbuka (mulut)**. Elevasi = naik = menutup."
  },
  {
   "n": 161,
@@ -2419,7 +3547,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 4,
   "kunci": "Sirkumduksi",
-  "rationale": "Lima gerakan mandibula menurut slide: **elevasi** (menutup), **depresi** (membuka), **protrusi** (ke depan), **retrusi** (ke belakang), dan **lateral excursion** (menyamping). **Sirkumduksi** tidak termasuk — itu gerakan kombinasi pada sendi multiaksial seperti art. humeri.  —  **Pola Kategori jawaban:** Perhatikan bahwa mandibula memakai kosakata **gerakan khusus** yang sama dengan scapula: elevasi/depresi dan protraksi/retraksi."
+  "rationale": "Lima gerakan mandibula menurut slide: **elevasi** (menutup), **depresi** (membuka), **protrusi** (ke depan), **retrusi** (ke belakang), dan **lateral excursion** (menyamping). **Sirkumduksi** tidak termasuk — itu gerakan kombinasi pada sendi multiaksial seperti art. humeri.  —  **Pola Kategori jawaban:** Perhatikan bahwa mandibula memakai kosakata **gerakan khusus** yang sama dengan scapula: elevasi/depresi dan protraksi/retraksi.",
+  "ppt": 4,
+  "grup": "Sendi cranium",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Lima gerakan mandibula menurut slide: **elevasi** (menutup), **depresi** (membuka), **protrusi** (ke depan), **retrusi** (ke belakang), dan **lateral excursion** (menyamping). **Sirkumduksi** tidak termasuk — itu gerakan kombinasi pada sendi multiaksial seperti art. humeri.",
+  "diskriminator": "Perhatikan bahwa mandibula memakai kosakata **gerakan khusus** yang sama dengan scapula: elevasi/depresi dan protraksi/retraksi."
  },
  {
   "n": 162,
@@ -2434,7 +3569,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "7 · 12 · 5 · 5 · 4",
-  "rationale": "**Cervical 7 · Thoracic 12 · Lumbar 5 · Sacrum 5 (menyatu) · Coccyx biasanya 4 (menyatu)** — total 33, dengan 24 di antaranya masih bergerak. Hafal urutan angka **7–12–5–5–4**. Fungsinya menurut slide: cervical untuk **mobilitas**, thoracic untuk **artikulasi costae**, lumbar untuk **menanggung beban**, sacrum untuk **transfer beban**.  —  **Pola Angka & daftar:** Hafal angkanya sebagai satu deret. Dan kaitkan tiap angka dengan **fungsi regionya**, karena itu yang menurunkan ciri morfologisnya."
+  "rationale": "**Cervical 7 · Thoracic 12 · Lumbar 5 · Sacrum 5 (menyatu) · Coccyx biasanya 4 (menyatu)** — total 33, dengan 24 di antaranya masih bergerak. Hafal urutan angka **7–12–5–5–4**. Fungsinya menurut slide: cervical untuk **mobilitas**, thoracic untuk **artikulasi costae**, lumbar untuk **menanggung beban**, sacrum untuk **transfer beban**.  —  **Pola Angka & daftar:** Hafal angkanya sebagai satu deret. Dan kaitkan tiap angka dengan **fungsi regionya**, karena itu yang menurunkan ciri morfologisnya.",
+  "ppt": 4,
+  "grup": "Vertebrae",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Cervical 7 · Thoracic 12 · Lumbar 5 · Sacrum 5 (menyatu) · Coccyx biasanya 4 (menyatu)** — total 33, dengan 24 di antaranya masih bergerak. Hafal urutan angka **7–12–5–5–4**. Fungsinya menurut slide: cervical untuk **mobilitas**, thoracic untuk **artikulasi costae**, lumbar untuk **menanggung beban**, sacrum untuk **transfer beban**.",
+  "diskriminator": "Hafal angkanya sebagai satu deret. Dan kaitkan tiap angka dengan **fungsi regionya**, karena itu yang menurunkan ciri morfologisnya."
  },
  {
   "n": 163,
@@ -2449,7 +3591,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Artikulasi dengan costae",
-  "rationale": "Slide memasangkan tiap regio dengan fungsinya: cervical → **mobilitas**; **thoracic → artikulasi dengan costae**; lumbar → **menanggung beban**; sacrum → **transfer beban**; coccyx → segmen terminal. Dari fungsi inilah ciri morfologis tiap regio dapat diturunkan — thoracic punya **facies costalis** karena harus bersendi dengan costae.  —  **Pola Kategori jawaban:** Premis slide: **“Shape changes because function changes.”** Tahu fungsinya, kamu bisa menurunkan cirinya."
+  "rationale": "Slide memasangkan tiap regio dengan fungsinya: cervical → **mobilitas**; **thoracic → artikulasi dengan costae**; lumbar → **menanggung beban**; sacrum → **transfer beban**; coccyx → segmen terminal. Dari fungsi inilah ciri morfologis tiap regio dapat diturunkan — thoracic punya **facies costalis** karena harus bersendi dengan costae.  —  **Pola Kategori jawaban:** Premis slide: **“Shape changes because function changes.”** Tahu fungsinya, kamu bisa menurunkan cirinya.",
+  "ppt": 4,
+  "grup": "Vertebrae",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Slide memasangkan tiap regio dengan fungsinya: cervical → **mobilitas**; **thoracic → artikulasi dengan costae**; lumbar → **menanggung beban**; sacrum → **transfer beban**; coccyx → segmen terminal. Dari fungsi inilah ciri morfologis tiap regio dapat diturunkan — thoracic punya **facies costalis** karena harus bersendi dengan costae.",
+  "diskriminator": "Premis slide: **“Shape changes because function changes.”** Tahu fungsinya, kamu bisa menurunkan cirinya."
  },
  {
   "n": 164,
@@ -2464,7 +3613,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Cervical lordosis · thoracal kifosis · lumbal lordosis",
-  "rationale": "**Lordosis cervical** (konveks ke anterior) → **kifosis thoracal** (konveks ke posterior) → **lordosis lumbal** (konveks ke anterior). Polanya **berselang**. Kurva ini membantu **keseimbangan, fleksibilitas, dan distribusi beban** — kolom vertebra bukan tongkat lurus.  —  **Pola Pasangan berlawanan:** **Lordosis = konveks ANTERIOR. Kifosis = konveks POSTERIOR.** Dua istilah berlawanan yang mudah tertukar."
+  "rationale": "**Lordosis cervical** (konveks ke anterior) → **kifosis thoracal** (konveks ke posterior) → **lordosis lumbal** (konveks ke anterior). Polanya **berselang**. Kurva ini membantu **keseimbangan, fleksibilitas, dan distribusi beban** — kolom vertebra bukan tongkat lurus.  —  **Pola Pasangan berlawanan:** **Lordosis = konveks ANTERIOR. Kifosis = konveks POSTERIOR.** Dua istilah berlawanan yang mudah tertukar.",
+  "ppt": 4,
+  "grup": "Vertebrae",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Lordosis cervical** (konveks ke anterior) → **kifosis thoracal** (konveks ke posterior) → **lordosis lumbal** (konveks ke anterior). Polanya **berselang**. Kurva ini membantu **keseimbangan, fleksibilitas, dan distribusi beban** — kolom vertebra bukan tongkat lurus.",
+  "diskriminator": "**Lordosis = konveks ANTERIOR. Kifosis = konveks POSTERIOR.** Dua istilah berlawanan yang mudah tertukar."
  },
  {
   "n": 165,
@@ -2479,7 +3635,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Corpus · foramen vertebrale · processus",
-  "rationale": "Template vertebra: **CORPUS** (anterior, penahan beban), **FORAMEN VERTEBRALE** (lubang untuk canalis vertebralis), dan **PROCESSUS** (spinosus, transversus, articularis). Opsi B adalah struktur ujung posterior **costa**; opsi C adalah bagian **sternum**; opsi D adalah komponen **discus intervertebralis**.  —  **Pola Kategori jawaban:** Slide menginstruksikan: **kuasai template dulu, baru bandingkan antar regio**. Tanpa template, ciri regional tidak ada patokannya."
+  "rationale": "Template vertebra: **CORPUS** (anterior, penahan beban), **FORAMEN VERTEBRALE** (lubang untuk canalis vertebralis), dan **PROCESSUS** (spinosus, transversus, articularis). Opsi B adalah struktur ujung posterior **costa**; opsi C adalah bagian **sternum**; opsi D adalah komponen **discus intervertebralis**.  —  **Pola Kategori jawaban:** Slide menginstruksikan: **kuasai template dulu, baru bandingkan antar regio**. Tanpa template, ciri regional tidak ada patokannya.",
+  "ppt": 4,
+  "grup": "Vertebrae",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Template vertebra: **CORPUS** (anterior, penahan beban), **FORAMEN VERTEBRALE** (lubang untuk canalis vertebralis), dan **PROCESSUS** (spinosus, transversus, articularis). Opsi B adalah struktur ujung posterior **costa**; opsi C adalah bagian **sternum**; opsi D adalah komponen **discus intervertebralis**.",
+  "diskriminator": "Slide menginstruksikan: **kuasai template dulu, baru bandingkan antar regio**. Tanpa template, ciri regional tidak ada patokannya."
  },
  {
   "n": 166,
@@ -2494,7 +3657,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Cervical; arteria vertebralis",
-  "rationale": "Tiga petunjuk itu khas **vertebra CERVICAL**: corpus kecil (beban paling ringan), foramen vertebrale besar triangular (medulla spinalis segmen cervical paling tebal), dan **foramen transversarium** — jalan lewat **arteria vertebralis** menuju otak. Lubang ini **hanya ada pada vertebrae cervicales**.  —  **Pola Ciri tetangga:** **Foramen transversarium = penanda eksklusif cervical.** Begitu terlihat, regio lain langsung tereliminasi."
+  "rationale": "Tiga petunjuk itu khas **vertebra CERVICAL**: corpus kecil (beban paling ringan), foramen vertebrale besar triangular (medulla spinalis segmen cervical paling tebal), dan **foramen transversarium** — jalan lewat **arteria vertebralis** menuju otak. Lubang ini **hanya ada pada vertebrae cervicales**.  —  **Pola Ciri tetangga:** **Foramen transversarium = penanda eksklusif cervical.** Begitu terlihat, regio lain langsung tereliminasi.",
+  "ppt": 4,
+  "grup": "Vertebrae",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Tiga petunjuk itu khas **vertebra CERVICAL**: corpus kecil (beban paling ringan), foramen vertebrale besar triangular (medulla spinalis segmen cervical paling tebal), dan **foramen transversarium** — jalan lewat **arteria vertebralis** menuju otak. Lubang ini **hanya ada pada vertebrae cervicales**.",
+  "diskriminator": "**Foramen transversarium = penanda eksklusif cervical.** Begitu terlihat, regio lain langsung tereliminasi."
  },
  {
   "n": 167,
@@ -2509,7 +3679,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Thoracal; agar saling bertumpang seperti sirap sehingga membatasi gerakan",
-  "rationale": "**Facies costalis** adalah penanda eksklusif **vertebra THORACAL** — permukaan untuk bersendi dengan costae. Processus spinosusnya **panjang dan mengarah ke bawah** sehingga saling bertumpang seperti sirap atap, yang **membatasi gerakan** — dan itu memang diinginkan, karena rongga thorax harus stabil untuk melindungi jantung dan paru.  —  **Pola Ciri tetangga:** **Facies costalis = penanda eksklusif thoracal.** Dan bentuk processus mengikuti kebutuhan: stabil, bukan lincah."
+  "rationale": "**Facies costalis** adalah penanda eksklusif **vertebra THORACAL** — permukaan untuk bersendi dengan costae. Processus spinosusnya **panjang dan mengarah ke bawah** sehingga saling bertumpang seperti sirap atap, yang **membatasi gerakan** — dan itu memang diinginkan, karena rongga thorax harus stabil untuk melindungi jantung dan paru.  —  **Pola Ciri tetangga:** **Facies costalis = penanda eksklusif thoracal.** Dan bentuk processus mengikuti kebutuhan: stabil, bukan lincah.",
+  "ppt": 4,
+  "grup": "Vertebrae",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Facies costalis** adalah penanda eksklusif **vertebra THORACAL** — permukaan untuk bersendi dengan costae. Processus spinosusnya **panjang dan mengarah ke bawah** sehingga saling bertumpang seperti sirap atap, yang **membatasi gerakan** — dan itu memang diinginkan, karena rongga thorax harus stabil untuk melindungi jantung dan paru.",
+  "diskriminator": "**Facies costalis = penanda eksklusif thoracal.** Dan bentuk processus mengikuti kebutuhan: stabil, bukan lincah."
  },
  {
   "n": 168,
@@ -2524,7 +3701,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Vertebra lumbalis I",
-  "rationale": "**[UB asli]** **Vertebrae lumbales** menanggung **seluruh berat tubuh di atasnya**, sehingga corpusnya **paling besar** dan processusnya **tebal, pendek, menghadap horizontal**. Jawaban ini bisa **diturunkan** dari fungsi regio (menanggung beban), bukan dihafal: makin ke kaudal beban makin besar, maka corpus makin besar.  —  **Pola Turunkan dari prinsip:** Ukuran corpus mengikuti **beban yang ditanggung**. Cervical paling kecil, lumbal paling besar."
+  "rationale": "**[UB asli]** **Vertebrae lumbales** menanggung **seluruh berat tubuh di atasnya**, sehingga corpusnya **paling besar** dan processusnya **tebal, pendek, menghadap horizontal**. Jawaban ini bisa **diturunkan** dari fungsi regio (menanggung beban), bukan dihafal: makin ke kaudal beban makin besar, maka corpus makin besar.  —  **Pola Turunkan dari prinsip:** Ukuran corpus mengikuti **beban yang ditanggung**. Cervical paling kecil, lumbal paling besar.",
+  "ppt": 4,
+  "grup": "Vertebrae",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Vertebrae lumbales** menanggung **seluruh berat tubuh di atasnya**, sehingga corpusnya **paling besar** dan processusnya **tebal, pendek, menghadap horizontal**. Jawaban ini bisa **diturunkan** dari fungsi regio (menanggung beban), bukan dihafal: makin ke kaudal beban makin besar, maka corpus makin besar.",
+  "diskriminator": "Ukuran corpus mengikuti **beban yang ditanggung**. Cervical paling kecil, lumbal paling besar."
  },
  {
   "n": 169,
@@ -2539,7 +3723,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Arcus vertebrae",
-  "rationale": "**[UB asli]** **Corpus dan arcus vertebrae** dimiliki semua vertebra — arcus adalah lengkung tulang di posterior corpus yang bersama corpus membentuk foramen vertebrale. Yang **tidak** dimiliki semua: **processus spinosus** (tidak ada pada atlas/C1), **foramen transversarium** (hanya cervicales), **facies costalis** (hanya thoracales), **dens** (hanya axis/C2).  —  **Pola Ciri tetangga:** Kata **“SEMUA”** mengubah soal menjadi uji pengecualian: cari satu vertebra yang tidak punya struktur itu."
+  "rationale": "**[UB asli]** **Corpus dan arcus vertebrae** dimiliki semua vertebra — arcus adalah lengkung tulang di posterior corpus yang bersama corpus membentuk foramen vertebrale. Yang **tidak** dimiliki semua: **processus spinosus** (tidak ada pada atlas/C1), **foramen transversarium** (hanya cervicales), **facies costalis** (hanya thoracales), **dens** (hanya axis/C2).  —  **Pola Ciri tetangga:** Kata **“SEMUA”** mengubah soal menjadi uji pengecualian: cari satu vertebra yang tidak punya struktur itu.",
+  "ppt": 4,
+  "grup": "Vertebrae",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Corpus dan arcus vertebrae** dimiliki semua vertebra — arcus adalah lengkung tulang di posterior corpus yang bersama corpus membentuk foramen vertebrale. Yang **tidak** dimiliki semua: **processus spinosus** (tidak ada pada atlas/C1), **foramen transversarium** (hanya cervicales), **facies costalis** (hanya thoracales), **dens** (hanya axis/C2).",
+  "diskriminator": "Kata **“SEMUA”** mengubah soal menjadi uji pengecualian: cari satu vertebra yang tidak punya struktur itu."
  },
  {
   "n": 170,
@@ -2554,7 +3745,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Antar corpus = simfisis (menahan beban); facet joint = plane synovial (mengarahkan gerakan)",
-  "rationale": "Slide menyatakan pembagian kerjanya: **“Body-to-body symphyses carry load; facet joints guide movement.”** Sendi antar **corpus** = **simfisis** (penghubung: discus intervertebralis), perannya **distribusi beban + penyerap guncangan**. **Facet joint** = **plane synovial**, perannya **mengarahkan dan membatasi** gerakan.  —  **Pola Ciri tetangga:** Dua sistem, dua peran: yang **depan MENAHAN**, yang **belakang MENGARAHKAN**. Opsi C membalik keduanya."
+  "rationale": "Slide menyatakan pembagian kerjanya: **“Body-to-body symphyses carry load; facet joints guide movement.”** Sendi antar **corpus** = **simfisis** (penghubung: discus intervertebralis), perannya **distribusi beban + penyerap guncangan**. **Facet joint** = **plane synovial**, perannya **mengarahkan dan membatasi** gerakan.  —  **Pola Ciri tetangga:** Dua sistem, dua peran: yang **depan MENAHAN**, yang **belakang MENGARAHKAN**. Opsi C membalik keduanya.",
+  "ppt": 4,
+  "grup": "Vertebrae",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Slide menyatakan pembagian kerjanya: **“Body-to-body symphyses carry load; facet joints guide movement.”** Sendi antar **corpus** = **simfisis** (penghubung: discus intervertebralis), perannya **distribusi beban + penyerap guncangan**. **Facet joint** = **plane synovial**, perannya **mengarahkan dan membatasi** gerakan.",
+  "diskriminator": "Dua sistem, dua peran: yang **depan MENAHAN**, yang **belakang MENGARAHKAN**. Opsi C membalik keduanya."
  },
  {
   "n": 171,
@@ -2569,7 +3767,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Annulus fibrosus (cincin fibrokartilago) di luar dan nucleus pulposus (gel lunak) di tengah; pada herniasi nucleus menonjol keluar dan dapat menekan radix saraf",
-  "rationale": "**[UB asli]** Discus = **annulus fibrosus** (cincin fibrokartilago keras di luar) mengelilingi **nucleus pulposus** (inti gel lunak) — seperti donat berisi. Annulus menahan, nucleus menyerap tekanan secara hidrolik. Pada **herniasi**, annulus robek sehingga **nucleus menonjol keluar** dan dapat **menekan radix saraf**.  —  **Pola Turunkan dari prinsip:** Yang keras di **luar** (annulus), yang lunak di **tengah** (nucleus). Opsi B membalik posisinya."
+  "rationale": "**[UB asli]** Discus = **annulus fibrosus** (cincin fibrokartilago keras di luar) mengelilingi **nucleus pulposus** (inti gel lunak) — seperti donat berisi. Annulus menahan, nucleus menyerap tekanan secara hidrolik. Pada **herniasi**, annulus robek sehingga **nucleus menonjol keluar** dan dapat **menekan radix saraf**.  —  **Pola Turunkan dari prinsip:** Yang keras di **luar** (annulus), yang lunak di **tengah** (nucleus). Opsi B membalik posisinya.",
+  "ppt": 4,
+  "grup": "Vertebrae",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Discus = **annulus fibrosus** (cincin fibrokartilago keras di luar) mengelilingi **nucleus pulposus** (inti gel lunak) — seperti donat berisi. Annulus menahan, nucleus menyerap tekanan secara hidrolik. Pada **herniasi**, annulus robek sehingga **nucleus menonjol keluar** dan dapat **menekan radix saraf**.",
+  "diskriminator": "Yang keras di **luar** (annulus), yang lunak di **tengah** (nucleus). Opsi B membalik posisinya."
  },
  {
   "n": 172,
@@ -2584,7 +3789,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Cranium, sternum, vertebrae, costae",
-  "rationale": "**[UB asli]** **Skeleton axial** adalah sumbu tubuh: **cranium, sternum, vertebrae, dan costae**. **Clavicula dan scapula** termasuk **skeleton appendicular** (ekstremitas superior), demikian pula humerus dan femur. Jadi setiap opsi yang memuat clavicula, scapula, atau tulang ekstremitas otomatis salah.  —  **Pola Kategori jawaban:** Axial = **sumbu tubuh**. Begitu ada tulang ekstremitas di dalam opsi, eliminasi opsi itu."
+  "rationale": "**[UB asli]** **Skeleton axial** adalah sumbu tubuh: **cranium, sternum, vertebrae, dan costae**. **Clavicula dan scapula** termasuk **skeleton appendicular** (ekstremitas superior), demikian pula humerus dan femur. Jadi setiap opsi yang memuat clavicula, scapula, atau tulang ekstremitas otomatis salah.  —  **Pola Kategori jawaban:** Axial = **sumbu tubuh**. Begitu ada tulang ekstremitas di dalam opsi, eliminasi opsi itu.",
+  "ppt": 4,
+  "grup": "Thorax",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Skeleton axial** adalah sumbu tubuh: **cranium, sternum, vertebrae, dan costae**. **Clavicula dan scapula** termasuk **skeleton appendicular** (ekstremitas superior), demikian pula humerus dan femur. Jadi setiap opsi yang memuat clavicula, scapula, atau tulang ekstremitas otomatis salah.",
+  "diskriminator": "Axial = **sumbu tubuh**. Begitu ada tulang ekstremitas di dalam opsi, eliminasi opsi itu."
  },
  {
   "n": 173,
@@ -2599,7 +3811,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "7 pasang; costae verae memiliki cartilago costalis sendiri yang langsung melekat ke sternum",
-  "rationale": "**[UB asli]** **Costae verae = costa 1–7**, masing-masing punya **cartilago costalis sendiri yang langsung melekat ke sternum**. **Costae spuriae = costa 8–12**, **tidak** punya perlekatan individual langsung ke sternum. Dasar klasifikasinya adalah **bagaimana tiap costa mencapai sternum**.  —  **Pola Angka & daftar:** Pembedanya **cara mencapai sternum**: langsung lewat cartilago sendiri (vera) vs tidak langsung (spuria)."
+  "rationale": "**[UB asli]** **Costae verae = costa 1–7**, masing-masing punya **cartilago costalis sendiri yang langsung melekat ke sternum**. **Costae spuriae = costa 8–12**, **tidak** punya perlekatan individual langsung ke sternum. Dasar klasifikasinya adalah **bagaimana tiap costa mencapai sternum**.  —  **Pola Angka & daftar:** Pembedanya **cara mencapai sternum**: langsung lewat cartilago sendiri (vera) vs tidak langsung (spuria).",
+  "ppt": 4,
+  "grup": "Thorax",
+  "pola": "ANG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Costae verae = costa 1–7**, masing-masing punya **cartilago costalis sendiri yang langsung melekat ke sternum**. **Costae spuriae = costa 8–12**, **tidak** punya perlekatan individual langsung ke sternum. Dasar klasifikasinya adalah **bagaimana tiap costa mencapai sternum**.",
+  "diskriminator": "Pembedanya **cara mencapai sternum**: langsung lewat cartilago sendiri (vera) vs tidak langsung (spuria)."
  },
  {
   "n": 174,
@@ -2614,7 +3833,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Costae spuriae dan costae fluctuantes",
-  "rationale": "Ketiga kelompok ini **tumpang tindih**: **costae verae 1–7**; **costae spuriae 8–12**; **costae fluctuantes 11–12**. Jadi costa 11 dan 12 adalah **spuriae SEKALIGUS fluctuantes** — costae fluctuantes adalah **bagian dari** costae spuriae, bukan kelompok yang terpisah.  —  **Pola Ciri tetangga:** Hafal rentangnya, bukan labelnya: **1–7 vera · 8–12 spuria · 11–12 fluctuantes**. Rentang terakhir ada di dalam rentang kedua."
+  "rationale": "Ketiga kelompok ini **tumpang tindih**: **costae verae 1–7**; **costae spuriae 8–12**; **costae fluctuantes 11–12**. Jadi costa 11 dan 12 adalah **spuriae SEKALIGUS fluctuantes** — costae fluctuantes adalah **bagian dari** costae spuriae, bukan kelompok yang terpisah.  —  **Pola Ciri tetangga:** Hafal rentangnya, bukan labelnya: **1–7 vera · 8–12 spuria · 11–12 fluctuantes**. Rentang terakhir ada di dalam rentang kedua.",
+  "ppt": 4,
+  "grup": "Thorax",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Ketiga kelompok ini **tumpang tindih**: **costae verae 1–7**; **costae spuriae 8–12**; **costae fluctuantes 11–12**. Jadi costa 11 dan 12 adalah **spuriae SEKALIGUS fluctuantes** — costae fluctuantes adalah **bagian dari** costae spuriae, bukan kelompok yang terpisah.",
+  "diskriminator": "Hafal rentangnya, bukan labelnya: **1–7 vera · 8–12 spuria · 11–12 fluctuantes**. Rentang terakhir ada di dalam rentang kedua."
  },
  {
   "n": 175,
@@ -2629,7 +3855,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Costae spuriae, tetapi bukan costae fluctuantes",
-  "rationale": "Costa 9 ada dalam rentang **8–12 = costae spuriae**, tetapi **bukan** fluctuantes karena fluctuantes hanya **11–12**. Costa 8, 9, dan 10 tetap melekat ke sternum, tetapi **tidak langsung** — melalui cartilago costa di atasnya. Mnemonik: **7 nempel langsung, 3 nempel nebeng, 2 nggak nempel.**  —  **Pola Diskriminator konteks:** Nomor costa di soal adalah diskriminatornya. **8–10** = spuria saja; **11–12** = spuria + fluctuantes."
+  "rationale": "Costa 9 ada dalam rentang **8–12 = costae spuriae**, tetapi **bukan** fluctuantes karena fluctuantes hanya **11–12**. Costa 8, 9, dan 10 tetap melekat ke sternum, tetapi **tidak langsung** — melalui cartilago costa di atasnya. Mnemonik: **7 nempel langsung, 3 nempel nebeng, 2 nggak nempel.**  —  **Pola Diskriminator konteks:** Nomor costa di soal adalah diskriminatornya. **8–10** = spuria saja; **11–12** = spuria + fluctuantes.",
+  "ppt": 4,
+  "grup": "Thorax",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Costa 9 ada dalam rentang **8–12 = costae spuriae**, tetapi **bukan** fluctuantes karena fluctuantes hanya **11–12**. Costa 8, 9, dan 10 tetap melekat ke sternum, tetapi **tidak langsung** — melalui cartilago costa di atasnya. Mnemonik: **7 nempel langsung, 3 nempel nebeng, 2 nggak nempel.**",
+  "diskriminator": "Nomor costa di soal adalah diskriminatornya. **8–10** = spuria saja; **11–12** = spuria + fluctuantes."
  },
  {
   "n": 176,
@@ -2644,7 +3877,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Caput → collum → tuberculum",
-  "rationale": "Ujung posterior costa: **CAPUT → COLLUM → TUBERCULUM**. Lalu corpus (shaft) dengan **angulus**, dan di tepi inferior permukaan dalam terdapat **sulcus costae**. Perhatikan bahwa **sulcus costae bukan bagian ujung posterior** — dia ada di tepi inferior corpus costae.  —  **Pola Pasangan berlawanan:** Tiga struktur ujung posterior, dan dua di antaranya membentuk sendi: **caput** dan **tuberculum**. Collum hanya penghubung."
+  "rationale": "Ujung posterior costa: **CAPUT → COLLUM → TUBERCULUM**. Lalu corpus (shaft) dengan **angulus**, dan di tepi inferior permukaan dalam terdapat **sulcus costae**. Perhatikan bahwa **sulcus costae bukan bagian ujung posterior** — dia ada di tepi inferior corpus costae.  —  **Pola Pasangan berlawanan:** Tiga struktur ujung posterior, dan dua di antaranya membentuk sendi: **caput** dan **tuberculum**. Collum hanya penghubung.",
+  "ppt": 4,
+  "grup": "Thorax",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Ujung posterior costa: **CAPUT → COLLUM → TUBERCULUM**. Lalu corpus (shaft) dengan **angulus**, dan di tepi inferior permukaan dalam terdapat **sulcus costae**. Perhatikan bahwa **sulcus costae bukan bagian ujung posterior** — dia ada di tepi inferior corpus costae.",
+  "diskriminator": "Tiga struktur ujung posterior, dan dua di antaranya membentuk sendi: **caput** dan **tuberculum**. Collum hanya penghubung."
  },
  {
   "n": 177,
@@ -2659,7 +3899,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Vena, arteria, dan nervus intercostalis; jarum dimasukkan tepat di atas tepi superior costa di bawahnya",
-  "rationale": "Sulcus costae berada di **permukaan dalam pada tepi inferior costa**, dan di dalamnya berjalan berkas **vena, arteria, dan nervus intercostalis**. Karena berkas itu bersembunyi di tepi **inferior** costa di atas, jarum dimasukkan **tepat di atas tepi superior costa di bawahnya** — yaitu di bagian bawah spatium intercostale, menjauhi berkas tersebut.  —  **Pola Turunkan dari prinsip:** Prinsip umum kamus bone marking: **sulcus (alur) pada tulang biasanya berarti ada pembuluh atau saraf di situ** — sama seperti sulcus nervi radialis."
+  "rationale": "Sulcus costae berada di **permukaan dalam pada tepi inferior costa**, dan di dalamnya berjalan berkas **vena, arteria, dan nervus intercostalis**. Karena berkas itu bersembunyi di tepi **inferior** costa di atas, jarum dimasukkan **tepat di atas tepi superior costa di bawahnya** — yaitu di bagian bawah spatium intercostale, menjauhi berkas tersebut.  —  **Pola Turunkan dari prinsip:** Prinsip umum kamus bone marking: **sulcus (alur) pada tulang biasanya berarti ada pembuluh atau saraf di situ** — sama seperti sulcus nervi radialis.",
+  "ppt": 4,
+  "grup": "Thorax",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Sulcus costae berada di **permukaan dalam pada tepi inferior costa**, dan di dalamnya berjalan berkas **vena, arteria, dan nervus intercostalis**. Karena berkas itu bersembunyi di tepi **inferior** costa di atas, jarum dimasukkan **tepat di atas tepi superior costa di bawahnya** — yaitu di bagian bawah spatium intercostale, menjauhi berkas tersebut.",
+  "diskriminator": "Prinsip umum kamus bone marking: **sulcus (alur) pada tulang biasanya berarti ada pembuluh atau saraf di situ** — sama seperti sulcus nervi radialis."
  },
  {
   "n": 178,
@@ -2674,7 +3921,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Manubrium dan corpus sterni; membantu menemukan costa ke-2 dan menghitung spatium intercostale",
-  "rationale": "**Angulus sterni = pertemuan manubrium dan corpus sterni**, dan dia bisa **diraba** sebagai tonjolan melintang di tengah dada. Gunanya: **cartilago costa ke-2 melekat tepat di situ**, sehingga begitu kamu menemukan angulus sterni kamu langsung tahu itu costa 2 — lalu bisa **menghitung spatium intercostale** ke bawah.  —  **Pola Kategori jawaban:** Tiga bagian sternum: **manubrium · corpus · processus xiphoideus**. Angulus ada di pertemuan dua yang pertama."
+  "rationale": "**Angulus sterni = pertemuan manubrium dan corpus sterni**, dan dia bisa **diraba** sebagai tonjolan melintang di tengah dada. Gunanya: **cartilago costa ke-2 melekat tepat di situ**, sehingga begitu kamu menemukan angulus sterni kamu langsung tahu itu costa 2 — lalu bisa **menghitung spatium intercostale** ke bawah.  —  **Pola Kategori jawaban:** Tiga bagian sternum: **manubrium · corpus · processus xiphoideus**. Angulus ada di pertemuan dua yang pertama.",
+  "ppt": 4,
+  "grup": "Thorax",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Angulus sterni = pertemuan manubrium dan corpus sterni**, dan dia bisa **diraba** sebagai tonjolan melintang di tengah dada. Gunanya: **cartilago costa ke-2 melekat tepat di situ**, sehingga begitu kamu menemukan angulus sterni kamu langsung tahu itu costa 2 — lalu bisa **menghitung spatium intercostale** ke bawah.",
+  "diskriminator": "Tiga bagian sternum: **manubrium · corpus · processus xiphoideus**. Angulus ada di pertemuan dua yang pertama."
  },
  {
   "n": 179,
@@ -2689,7 +3943,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Art. costovertebralis: caput ↔ corpus vertebrae; art. costotransversaria: tuberculum ↔ processus transversus",
-  "rationale": "**Art. costovertebralis (capitis costae)**: **CAPUT costae ↔ regio corpus vertebrae**. **Art. costotransversaria**: **TUBERCULUM costae ↔ processus transversus**. Nama sendinya menyebutkan tulang pasangannya, dan struktur costanya mengikuti geometri: corpus vertebrae ada di tengah sehingga disentuh caput (paling medial); processus transversus menjulur ke samping sehingga disentuh tuberculum (lebih lateral).  —  **Pola Ciri tetangga:** Urutan medial–lateral cocok: **caput↔corpus (medial), tuberculum↔processus transversus (lateral)**."
+  "rationale": "**Art. costovertebralis (capitis costae)**: **CAPUT costae ↔ regio corpus vertebrae**. **Art. costotransversaria**: **TUBERCULUM costae ↔ processus transversus**. Nama sendinya menyebutkan tulang pasangannya, dan struktur costanya mengikuti geometri: corpus vertebrae ada di tengah sehingga disentuh caput (paling medial); processus transversus menjulur ke samping sehingga disentuh tuberculum (lebih lateral).  —  **Pola Ciri tetangga:** Urutan medial–lateral cocok: **caput↔corpus (medial), tuberculum↔processus transversus (lateral)**.",
+  "ppt": 4,
+  "grup": "Thorax",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Art. costovertebralis (capitis costae)**: **CAPUT costae ↔ regio corpus vertebrae**. **Art. costotransversaria**: **TUBERCULUM costae ↔ processus transversus**. Nama sendinya menyebutkan tulang pasangannya, dan struktur costanya mengikuti geometri: corpus vertebrae ada di tengah sehingga disentuh caput (paling medial); processus transversus menjulur ke samping sehingga disentuh tuberculum (lebih lateral).",
+  "diskriminator": "Urutan medial–lateral cocok: **caput↔corpus (medial), tuberculum↔processus transversus (lateral)**."
  },
  {
   "n": 180,
@@ -2704,7 +3965,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Ke atas dan ke luar; volume thorax meningkat",
-  "rationale": "Pada **inspirasi, costae bergerak ke ATAS dan ke LUAR** → **volume thorax meningkat** → tekanan turun → udara masuk. Gerakan ini berasal dari **banyak gerakan kecil** pada sendi costovertebralis dan costotransversaria yang dijumlahkan. Itu sebabnya semua sendi costae berjenis **plane synovial**: thorax harus kaku untuk melindungi, tetapi tetap lentur untuk bernapas.  —  **Pola Turunkan dari prinsip:** Arah gerak menentukan volume: **atas + luar = volume naik = inspirasi**. Ekspirasi kebalikannya."
+  "rationale": "Pada **inspirasi, costae bergerak ke ATAS dan ke LUAR** → **volume thorax meningkat** → tekanan turun → udara masuk. Gerakan ini berasal dari **banyak gerakan kecil** pada sendi costovertebralis dan costotransversaria yang dijumlahkan. Itu sebabnya semua sendi costae berjenis **plane synovial**: thorax harus kaku untuk melindungi, tetapi tetap lentur untuk bernapas.  —  **Pola Turunkan dari prinsip:** Arah gerak menentukan volume: **atas + luar = volume naik = inspirasi**. Ekspirasi kebalikannya.",
+  "ppt": 4,
+  "grup": "Thorax",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Pada **inspirasi, costae bergerak ke ATAS dan ke LUAR** → **volume thorax meningkat** → tekanan turun → udara masuk. Gerakan ini berasal dari **banyak gerakan kecil** pada sendi costovertebralis dan costotransversaria yang dijumlahkan. Itu sebabnya semua sendi costae berjenis **plane synovial**: thorax harus kaku untuk melindungi, tetapi tetap lentur untuk bernapas.",
+  "diskriminator": "Arah gerak menentukan volume: **atas + luar = volume naik = inspirasi**. Ekspirasi kebalikannya."
  },
  {
   "n": 181,
@@ -2719,7 +3987,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Clavicula dan scapula",
-  "rationale": "**Cingulum membri superioris (gelang bahu) = CLAVICULA + SCAPULA.** Humerus sudah masuk **pars libera**. Pembagian ini penting karena otot pun terbagi mengikutinya: yang berinsersio di cingulum menggerakkan scapula/clavicula, yang berinsersio di humerus menggerakkan lengan.  —  **Pola Kategori jawaban:** Cingulum = yang **menempelkan** lengan ke badan. Pars libera = yang **bergerak bebas**."
+  "rationale": "**Cingulum membri superioris (gelang bahu) = CLAVICULA + SCAPULA.** Humerus sudah masuk **pars libera**. Pembagian ini penting karena otot pun terbagi mengikutinya: yang berinsersio di cingulum menggerakkan scapula/clavicula, yang berinsersio di humerus menggerakkan lengan.  —  **Pola Kategori jawaban:** Cingulum = yang **menempelkan** lengan ke badan. Pars libera = yang **bergerak bebas**.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Cingulum membri superioris (gelang bahu) = CLAVICULA + SCAPULA.** Humerus sudah masuk **pars libera**. Pembagian ini penting karena otot pun terbagi mengikutinya: yang berinsersio di cingulum menggerakkan scapula/clavicula, yang berinsersio di humerus menggerakkan lengan.",
+  "diskriminator": "Cingulum = yang **menempelkan** lengan ke badan. Pars libera = yang **bergerak bebas**."
  },
  {
   "n": 182,
@@ -2734,7 +4009,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Humerus → radius-ulna → carpal-metacarpal-phalanges",
-  "rationale": "Pars libera: **regio brachium (humerus)** → **regio antebrachium (radius + ulna)** → **regio manus (ossa carpi, ossa metacarpi, phalanges)**. Clavicula dan scapula bukan bagian pars libera — keduanya cingulum.  —  **Pola Kategori jawaban:** Tiga regio, tiga kelompok tulang. Hafal urutannya dari proksimal ke distal."
+  "rationale": "Pars libera: **regio brachium (humerus)** → **regio antebrachium (radius + ulna)** → **regio manus (ossa carpi, ossa metacarpi, phalanges)**. Clavicula dan scapula bukan bagian pars libera — keduanya cingulum.  —  **Pola Kategori jawaban:** Tiga regio, tiga kelompok tulang. Hafal urutannya dari proksimal ke distal.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Pars libera: **regio brachium (humerus)** → **regio antebrachium (radius + ulna)** → **regio manus (ossa carpi, ossa metacarpi, phalanges)**. Clavicula dan scapula bukan bagian pars libera — keduanya cingulum.",
+  "diskriminator": "Tiga regio, tiga kelompok tulang. Hafal urutannya dari proksimal ke distal."
  },
  {
   "n": 183,
@@ -2749,7 +4031,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Art. sternoclavicularis di medial dan art. acromioclavicularis di lateral",
-  "rationale": "Ujung **medial (ekstremitas sternalis)** → **art. sternoclavicularis** dengan sternum. Ujung **lateral (ekstremitas acromialis)** → **art. acromioclavicularis** dengan acromion scapulae. Nama sendi menyebutkan tulang pasangannya.  —  **Pola Ciri tetangga:** **Sterno** = sternum = medial (dekat garis tengah). **Acromio** = acromion = lateral."
+  "rationale": "Ujung **medial (ekstremitas sternalis)** → **art. sternoclavicularis** dengan sternum. Ujung **lateral (ekstremitas acromialis)** → **art. acromioclavicularis** dengan acromion scapulae. Nama sendi menyebutkan tulang pasangannya.  —  **Pola Ciri tetangga:** **Sterno** = sternum = medial (dekat garis tengah). **Acromio** = acromion = lateral.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Ujung **medial (ekstremitas sternalis)** → **art. sternoclavicularis** dengan sternum. Ujung **lateral (ekstremitas acromialis)** → **art. acromioclavicularis** dengan acromion scapulae. Nama sendi menyebutkan tulang pasangannya.",
+  "diskriminator": "**Sterno** = sternum = medial (dekat garis tengah). **Acromio** = acromion = lateral."
  },
  {
   "n": 184,
@@ -2764,7 +4053,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Karena merupakan satu-satunya hubungan tulang antara ekstremitas superior dan skeleton axial",
-  "rationale": "Clavicula adalah **satu-satunya hubungan tulang** antara ekstremitas superior dan skeleton axial — seluruh beban lengan disalurkan ke badan hanya lewat satu tulang ini. Ditambah letaknya superfisial dan bentuknya melengkung, maka benturan pada bahu atau lengan terluruskan hampir selalu diteruskan ke clavicula.  —  **Pola Turunkan dari prinsip:** Satu tulang menanggung seluruh beban lengan → titik terlemah pada rantai beban."
+  "rationale": "Clavicula adalah **satu-satunya hubungan tulang** antara ekstremitas superior dan skeleton axial — seluruh beban lengan disalurkan ke badan hanya lewat satu tulang ini. Ditambah letaknya superfisial dan bentuknya melengkung, maka benturan pada bahu atau lengan terluruskan hampir selalu diteruskan ke clavicula.  —  **Pola Turunkan dari prinsip:** Satu tulang menanggung seluruh beban lengan → titik terlemah pada rantai beban.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Clavicula adalah **satu-satunya hubungan tulang** antara ekstremitas superior dan skeleton axial — seluruh beban lengan disalurkan ke badan hanya lewat satu tulang ini. Ditambah letaknya superfisial dan bentuknya melengkung, maka benturan pada bahu atau lengan terluruskan hampir selalu diteruskan ke clavicula.",
+  "diskriminator": "Satu tulang menanggung seluruh beban lengan → titik terlemah pada rantai beban."
  },
  {
   "n": 185,
@@ -2779,7 +4075,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Facies costalis (ventral) dan facies dorsalis (posterior)",
-  "rationale": "Dua permukaan scapula: **facies costalis** (menghadap costae = ventral/anterior) dan **facies dorsalis** (menghadap kulit = posterior). Hati-hati: **margo medialis** scapula memang kadang disebut **margo vertebralis** — tetapi itu **TEPI**, bukan permukaan. Scapula punya tiga tepi (superior, lateralis, medialis) dan dua permukaan.  —  **Pola Kategori jawaban:** Permukaan = **facies** (costalis & dorsalis). Tepi = **margo** (superior, lateralis, medialis/vertebralis). Dua hal berbeda."
+  "rationale": "Dua permukaan scapula: **facies costalis** (menghadap costae = ventral/anterior) dan **facies dorsalis** (menghadap kulit = posterior). Hati-hati: **margo medialis** scapula memang kadang disebut **margo vertebralis** — tetapi itu **TEPI**, bukan permukaan. Scapula punya tiga tepi (superior, lateralis, medialis) dan dua permukaan.  —  **Pola Kategori jawaban:** Permukaan = **facies** (costalis & dorsalis). Tepi = **margo** (superior, lateralis, medialis/vertebralis). Dua hal berbeda.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Dua permukaan scapula: **facies costalis** (menghadap costae = ventral/anterior) dan **facies dorsalis** (menghadap kulit = posterior). Hati-hati: **margo medialis** scapula memang kadang disebut **margo vertebralis** — tetapi itu **TEPI**, bukan permukaan. Scapula punya tiga tepi (superior, lateralis, medialis) dan dua permukaan.",
+  "diskriminator": "Permukaan = **facies** (costalis & dorsalis). Tepi = **margo** (superior, lateralis, medialis/vertebralis). Dua hal berbeda."
  },
  {
   "n": 186,
@@ -2794,7 +4097,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Fossa subscapularis",
-  "rationale": "**Facies costalis (ventral) berisi FOSSA SUBSCAPULARIS.** Fossa supraspinata dan fossa infraspinata berada di **facies dorsalis**, dipisahkan oleh spina scapulae. Fossa coronoidea adalah struktur humerus, bukan scapula.  —  **Pola Ciri tetangga:** Hanya **satu** fossa di sisi ventral: subscapularis. Dua fossa lain di sisi dorsal."
+  "rationale": "**Facies costalis (ventral) berisi FOSSA SUBSCAPULARIS.** Fossa supraspinata dan fossa infraspinata berada di **facies dorsalis**, dipisahkan oleh spina scapulae. Fossa coronoidea adalah struktur humerus, bukan scapula.  —  **Pola Ciri tetangga:** Hanya **satu** fossa di sisi ventral: subscapularis. Dua fossa lain di sisi dorsal.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Facies costalis (ventral) berisi FOSSA SUBSCAPULARIS.** Fossa supraspinata dan fossa infraspinata berada di **facies dorsalis**, dipisahkan oleh spina scapulae. Fossa coronoidea adalah struktur humerus, bukan scapula.",
+  "diskriminator": "Hanya **satu** fossa di sisi ventral: subscapularis. Dua fossa lain di sisi dorsal."
  },
  {
   "n": 187,
@@ -2809,7 +4119,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Spina scapulae; fossa supraspinata dan fossa infraspinata",
-  "rationale": "**SPINA SCAPULAE** membagi facies dorsalis menjadi **fossa supraspinata** (di atas spina) dan **fossa infraspinata** (di bawah spina). Nama fossa menyebutkan posisinya relatif terhadap spina: supra = di atas, infra = di bawah.  —  **Pola Ciri tetangga:** Fossa **subscapularis** tidak pernah muncul di sisi dorsal — dia eksklusif facies costalis."
+  "rationale": "**SPINA SCAPULAE** membagi facies dorsalis menjadi **fossa supraspinata** (di atas spina) dan **fossa infraspinata** (di bawah spina). Nama fossa menyebutkan posisinya relatif terhadap spina: supra = di atas, infra = di bawah.  —  **Pola Ciri tetangga:** Fossa **subscapularis** tidak pernah muncul di sisi dorsal — dia eksklusif facies costalis.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**SPINA SCAPULAE** membagi facies dorsalis menjadi **fossa supraspinata** (di atas spina) dan **fossa infraspinata** (di bawah spina). Nama fossa menyebutkan posisinya relatif terhadap spina: supra = di atas, infra = di bawah.",
+  "diskriminator": "Fossa **subscapularis** tidak pernah muncul di sisi dorsal — dia eksklusif facies costalis."
  },
  {
   "n": 188,
@@ -2824,7 +4141,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "M. supraspinatus",
-  "rationale": "Kaidah paling efisien di scapula: **nama fossa menyebutkan nama ototnya**. Fossa supraspinata → **M. supraspinatus**; fossa infraspinata → M. infraspinatus; fossa subscapularis → M. subscapularis. Tiga fossa, tiga otot, nama identik.  —  **Pola Nama = petunjuk:** Kamu tidak perlu menghafal origo ketiga otot ini — **origonya adalah fossa yang senama**."
+  "rationale": "Kaidah paling efisien di scapula: **nama fossa menyebutkan nama ototnya**. Fossa supraspinata → **M. supraspinatus**; fossa infraspinata → M. infraspinatus; fossa subscapularis → M. subscapularis. Tiga fossa, tiga otot, nama identik.  —  **Pola Nama = petunjuk:** Kamu tidak perlu menghafal origo ketiga otot ini — **origonya adalah fossa yang senama**.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Kaidah paling efisien di scapula: **nama fossa menyebutkan nama ototnya**. Fossa supraspinata → **M. supraspinatus**; fossa infraspinata → M. infraspinatus; fossa subscapularis → M. subscapularis. Tiga fossa, tiga otot, nama identik.",
+  "diskriminator": "Kamu tidak perlu menghafal origo ketiga otot ini — **origonya adalah fossa yang senama**."
  },
  {
   "n": 189,
@@ -2839,7 +4163,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "M. subscapularis",
-  "rationale": "**[UB asli]** Dua langkah: **(1)** M. teres major **bukan** anggota rotator cuff → tereliminasi. **(2)** Dari tiga sisanya, hanya **M. subscapularis** yang berorigo di sisi **ventral** scapula, yaitu **fossa subscapularis = facies costalis**. Supraspinatus dan infraspinatus berada di facies dorsalis.  —  **Pola Ciri tetangga:** Jebakannya istilah: **facies costalis = permukaan yang menghadap costae = ventral = fossa subscapularis**."
+  "rationale": "**[UB asli]** Dua langkah: **(1)** M. teres major **bukan** anggota rotator cuff → tereliminasi. **(2)** Dari tiga sisanya, hanya **M. subscapularis** yang berorigo di sisi **ventral** scapula, yaitu **fossa subscapularis = facies costalis**. Supraspinatus dan infraspinatus berada di facies dorsalis.  —  **Pola Ciri tetangga:** Jebakannya istilah: **facies costalis = permukaan yang menghadap costae = ventral = fossa subscapularis**.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Dua langkah: **(1)** M. teres major **bukan** anggota rotator cuff → tereliminasi. **(2)** Dari tiga sisanya, hanya **M. subscapularis** yang berorigo di sisi **ventral** scapula, yaitu **fossa subscapularis = facies costalis**. Supraspinatus dan infraspinatus berada di facies dorsalis.",
+  "diskriminator": "Jebakannya istilah: **facies costalis = permukaan yang menghadap costae = ventral = fossa subscapularis**."
  },
  {
   "n": 190,
@@ -2854,7 +4185,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Caput humeri",
-  "rationale": "**Cavitas glenoidalis bersendi dengan CAPUT HUMERI**, membentuk **articulatio humeri (glenohumeralis)**. Yang bersendi dengan clavicula adalah **facies articularis clavicularis** pada acromion. Caput radii bersendi dengan capitulum humeri, bukan scapula.  —  **Pola Ciri tetangga:** Nama sendinya membocorkan pasangannya: **gleno-humeralis** = cavitas glenoidalis + humerus."
+  "rationale": "**Cavitas glenoidalis bersendi dengan CAPUT HUMERI**, membentuk **articulatio humeri (glenohumeralis)**. Yang bersendi dengan clavicula adalah **facies articularis clavicularis** pada acromion. Caput radii bersendi dengan capitulum humeri, bukan scapula.  —  **Pola Ciri tetangga:** Nama sendinya membocorkan pasangannya: **gleno-humeralis** = cavitas glenoidalis + humerus.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Cavitas glenoidalis bersendi dengan CAPUT HUMERI**, membentuk **articulatio humeri (glenohumeralis)**. Yang bersendi dengan clavicula adalah **facies articularis clavicularis** pada acromion. Caput radii bersendi dengan capitulum humeri, bukan scapula.",
+  "diskriminator": "Nama sendinya membocorkan pasangannya: **gleno-humeralis** = cavitas glenoidalis + humerus."
  },
  {
   "n": 191,
@@ -2869,7 +4207,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "M. biceps brachii caput longum",
-  "rationale": "**[UB asli]** **Tuberculum SUPRAglenoidale → M. BICEPS brachii caput longum.Tuberculum INFRAglenoidale → M. TRICEPS brachii caput longum.** Bisa diturunkan dari posisi otot: biceps ada di **anterior** dan menarik ke atas-depan, jadi origonya di **atas** cavitas; triceps di posterior, origonya di bawah.  —  **Pola Ciri tetangga:** **Supra → biceps (anterior/fleksor). Infra → triceps (posterior/ekstensor).** Posisi origo mengikuti arah tarikan."
+  "rationale": "**[UB asli]** **Tuberculum SUPRAglenoidale → M. BICEPS brachii caput longum.Tuberculum INFRAglenoidale → M. TRICEPS brachii caput longum.** Bisa diturunkan dari posisi otot: biceps ada di **anterior** dan menarik ke atas-depan, jadi origonya di **atas** cavitas; triceps di posterior, origonya di bawah.  —  **Pola Ciri tetangga:** **Supra → biceps (anterior/fleksor). Infra → triceps (posterior/ekstensor).** Posisi origo mengikuti arah tarikan.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Tuberculum SUPRAglenoidale → M. BICEPS brachii caput longum.Tuberculum INFRAglenoidale → M. TRICEPS brachii caput longum.** Bisa diturunkan dari posisi otot: biceps ada di **anterior** dan menarik ke atas-depan, jadi origonya di **atas** cavitas; triceps di posterior, origonya di bawah.",
+  "diskriminator": "**Supra → biceps (anterior/fleksor). Infra → triceps (posterior/ekstensor).** Posisi origo mengikuti arah tarikan."
  },
  {
   "n": 192,
@@ -2884,7 +4229,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "M. triceps brachii caput longum",
-  "rationale": "**[UB asli]** **Tuberculum infraglenoidale → M. triceps brachii caput longum.** Caput mediale dan laterale triceps berorigo di **facies posterior humeri**, bukan di scapula — jadi hanya caput longum yang melintasi dua sendi (humeri dan cubiti).  —  **Pola Pasangan berlawanan:** Pasangan yang selalu dijebak: **supra = biceps, infra = triceps**, keduanya **caput longum**."
+  "rationale": "**[UB asli]** **Tuberculum infraglenoidale → M. triceps brachii caput longum.** Caput mediale dan laterale triceps berorigo di **facies posterior humeri**, bukan di scapula — jadi hanya caput longum yang melintasi dua sendi (humeri dan cubiti).  —  **Pola Pasangan berlawanan:** Pasangan yang selalu dijebak: **supra = biceps, infra = triceps**, keduanya **caput longum**.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "LAW",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Tuberculum infraglenoidale → M. triceps brachii caput longum.** Caput mediale dan laterale triceps berorigo di **facies posterior humeri**, bukan di scapula — jadi hanya caput longum yang melintasi dua sendi (humeri dan cubiti).",
+  "diskriminator": "Pasangan yang selalu dijebak: **supra = biceps, infra = triceps**, keduanya **caput longum**."
  },
  {
   "n": 193,
@@ -2899,7 +4251,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Clavicula",
-  "rationale": "**Acromion bersendi dengan clavicula** melalui **facies articularis clavicularis**, membentuk **art. acromioclavicularis** — sendi **plane**. Acromion adalah tonjolan paling lateral scapula, yang kita rasakan sebagai puncak bahu, dan juga menjadi salah satu origo M. deltoideus serta insersio M. trapezius.  —  **Pola Ciri tetangga:** Acromion punya tiga peran: bersendi dengan clavicula, origo deltoideus, insersio trapezius."
+  "rationale": "**Acromion bersendi dengan clavicula** melalui **facies articularis clavicularis**, membentuk **art. acromioclavicularis** — sendi **plane**. Acromion adalah tonjolan paling lateral scapula, yang kita rasakan sebagai puncak bahu, dan juga menjadi salah satu origo M. deltoideus serta insersio M. trapezius.  —  **Pola Ciri tetangga:** Acromion punya tiga peran: bersendi dengan clavicula, origo deltoideus, insersio trapezius.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Acromion bersendi dengan clavicula** melalui **facies articularis clavicularis**, membentuk **art. acromioclavicularis** — sendi **plane**. Acromion adalah tonjolan paling lateral scapula, yang kita rasakan sebagai puncak bahu, dan juga menjadi salah satu origo M. deltoideus serta insersio M. trapezius.",
+  "diskriminator": "Acromion punya tiga peran: bersendi dengan clavicula, origo deltoideus, insersio trapezius."
  },
  {
   "n": 194,
@@ -2914,7 +4273,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "M. triceps brachii caput longum (origo)",
-  "rationale": "Tiga otot melekat pada processus coracoideus: **M. coracobrachialis** (origo), **M. biceps brachii caput breve** (origo), dan **M. pectoralis minor** (insersio). **M. triceps brachii caput longum** berorigo pada **tuberculum infraglenoidale**, bukan processus coracoideus.  —  **Pola Angka & daftar:** Nama **coraco**brachialis sudah menyebutkan origonya. Yang satu lagi: biceps caput breve dan pectoralis minor."
+  "rationale": "Tiga otot melekat pada processus coracoideus: **M. coracobrachialis** (origo), **M. biceps brachii caput breve** (origo), dan **M. pectoralis minor** (insersio). **M. triceps brachii caput longum** berorigo pada **tuberculum infraglenoidale**, bukan processus coracoideus.  —  **Pola Angka & daftar:** Nama **coraco**brachialis sudah menyebutkan origonya. Yang satu lagi: biceps caput breve dan pectoralis minor.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Tiga otot melekat pada processus coracoideus: **M. coracobrachialis** (origo), **M. biceps brachii caput breve** (origo), dan **M. pectoralis minor** (insersio). **M. triceps brachii caput longum** berorigo pada **tuberculum infraglenoidale**, bukan processus coracoideus.",
+  "diskriminator": "Nama **coraco**brachialis sudah menyebutkan origonya. Yang satu lagi: biceps caput breve dan pectoralis minor."
  },
  {
   "n": 195,
@@ -2929,7 +4295,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "M. deltoideus",
-  "rationale": "**[UB asli]** **Tuberositas DELTOIDEA → insersio M. DELTOIDEUS.** Namanya sudah membocorkan jawabannya — penamaan landmark berdasarkan otot yang melekat padanya. Catat bahwa tuberositas deltoidea juga menjadi patokan **origo M. brachialis** (facies anterior humeri distal tuberositas deltoidea).  —  **Pola Nama = petunjuk:** Nama landmark seringkali menyebutkan otot yang melekat. Baca namanya sebelum menghafal."
+  "rationale": "**[UB asli]** **Tuberositas DELTOIDEA → insersio M. DELTOIDEUS.** Namanya sudah membocorkan jawabannya — penamaan landmark berdasarkan otot yang melekat padanya. Catat bahwa tuberositas deltoidea juga menjadi patokan **origo M. brachialis** (facies anterior humeri distal tuberositas deltoidea).  —  **Pola Nama = petunjuk:** Nama landmark seringkali menyebutkan otot yang melekat. Baca namanya sebelum menghafal.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "NAM",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Tuberositas DELTOIDEA → insersio M. DELTOIDEUS.** Namanya sudah membocorkan jawabannya — penamaan landmark berdasarkan otot yang melekat padanya. Catat bahwa tuberositas deltoidea juga menjadi patokan **origo M. brachialis** (facies anterior humeri distal tuberositas deltoidea).",
+  "diskriminator": "Nama landmark seringkali menyebutkan otot yang melekat. Baca namanya sebelum menghafal."
  },
  {
   "n": 196,
@@ -2944,7 +4317,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "M. latissimus dorsi",
-  "rationale": "**Sulcus intertubercularis → insersio M. LATISSIMUS DORSI.** Bandingkan: **crista tuberculi majoris → M. pectoralis major**; **crista tuberculi minoris → M. coracobrachialis**; **tuberositas deltoidea → M. deltoideus**. Keempat landmark proksimal humerus ini sering ditukar.  —  **Pola Ciri tetangga:** Tiga landmark berdekatan di proksimal humerus: **sulcus intertubercularis (latissimus), crista tuberculi majoris (pectoralis major), tuberositas deltoidea (deltoideus)**."
+  "rationale": "**Sulcus intertubercularis → insersio M. LATISSIMUS DORSI.** Bandingkan: **crista tuberculi majoris → M. pectoralis major**; **crista tuberculi minoris → M. coracobrachialis**; **tuberositas deltoidea → M. deltoideus**. Keempat landmark proksimal humerus ini sering ditukar.  —  **Pola Ciri tetangga:** Tiga landmark berdekatan di proksimal humerus: **sulcus intertubercularis (latissimus), crista tuberculi majoris (pectoralis major), tuberositas deltoidea (deltoideus)**.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Sulcus intertubercularis → insersio M. LATISSIMUS DORSI.** Bandingkan: **crista tuberculi majoris → M. pectoralis major**; **crista tuberculi minoris → M. coracobrachialis**; **tuberositas deltoidea → M. deltoideus**. Keempat landmark proksimal humerus ini sering ditukar.",
+  "diskriminator": "Tiga landmark berdekatan di proksimal humerus: **sulcus intertubercularis (latissimus), crista tuberculi majoris (pectoralis major), tuberositas deltoidea (deltoideus)**."
  },
  {
   "n": 197,
@@ -2959,7 +4339,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "M. pectoralis major",
-  "rationale": "**Crista tuberculi majoris → insersio M. PECTORALIS MAJOR.** Perhatikan kesesuaian namanya: **tuberculum MAJUS → pectoralis MAJOR**. M. pectoralis minor berinsersio di **processus coracoideus**, bukan humerus; M. serratus anterior dan M. subclavius juga tidak menyentuh humerus.  —  **Pola Ciri tetangga:** Dari empat otot regio pectoralis, **hanya pectoralis major** yang berinsersio di humerus."
+  "rationale": "**Crista tuberculi majoris → insersio M. PECTORALIS MAJOR.** Perhatikan kesesuaian namanya: **tuberculum MAJUS → pectoralis MAJOR**. M. pectoralis minor berinsersio di **processus coracoideus**, bukan humerus; M. serratus anterior dan M. subclavius juga tidak menyentuh humerus.  —  **Pola Ciri tetangga:** Dari empat otot regio pectoralis, **hanya pectoralis major** yang berinsersio di humerus.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Crista tuberculi majoris → insersio M. PECTORALIS MAJOR.** Perhatikan kesesuaian namanya: **tuberculum MAJUS → pectoralis MAJOR**. M. pectoralis minor berinsersio di **processus coracoideus**, bukan humerus; M. serratus anterior dan M. subclavius juga tidak menyentuh humerus.",
+  "diskriminator": "Dari empat otot regio pectoralis, **hanya pectoralis major** yang berinsersio di humerus."
  },
  {
   "n": 198,
@@ -2974,7 +4361,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "N. radialis; fraktur atau dislokasi humerus sering menyebabkan drop hand",
-  "rationale": "**Sulcus nervi radialis** pada facies posterior humeri dilalui **N. RADIALIS**, yang melingkari batang humerus. Karena letaknya menempel tulang, fraktur atau dislokasi humerus hampir selalu melibatkan saraf ini → **drop hand / drop wrist**.  —  **Pola Turunkan dari prinsip:** Kaidah dari PPT 4: **sulcus pada tulang berarti ada pembuluh atau saraf yang berjalan di situ**."
+  "rationale": "**Sulcus nervi radialis** pada facies posterior humeri dilalui **N. RADIALIS**, yang melingkari batang humerus. Karena letaknya menempel tulang, fraktur atau dislokasi humerus hampir selalu melibatkan saraf ini → **drop hand / drop wrist**.  —  **Pola Turunkan dari prinsip:** Kaidah dari PPT 4: **sulcus pada tulang berarti ada pembuluh atau saraf yang berjalan di situ**.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Sulcus nervi radialis** pada facies posterior humeri dilalui **N. RADIALIS**, yang melingkari batang humerus. Karena letaknya menempel tulang, fraktur atau dislokasi humerus hampir selalu melibatkan saraf ini → **drop hand / drop wrist**.",
+  "diskriminator": "Kaidah dari PPT 4: **sulcus pada tulang berarti ada pembuluh atau saraf yang berjalan di situ**."
  },
  {
   "n": 199,
@@ -2989,7 +4383,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "M. triceps brachii",
-  "rationale": "**Olecranon → insersio M. TRICEPS BRACHII.** Karena itu triceps adalah **ekstensor siku**: dia menarik olecranon ke posterior sehingga siku terluruskan. Bandingkan: **tuberositas ulnae → M. brachialis**; **tuberositas radii → M. biceps brachii**.  —  **Pola Ciri tetangga:** Tiga insersio berbeda di antebrachium proksimal: **olecranon (triceps), tuberositas ulnae (brachialis), tuberositas radii (biceps)**."
+  "rationale": "**Olecranon → insersio M. TRICEPS BRACHII.** Karena itu triceps adalah **ekstensor siku**: dia menarik olecranon ke posterior sehingga siku terluruskan. Bandingkan: **tuberositas ulnae → M. brachialis**; **tuberositas radii → M. biceps brachii**.  —  **Pola Ciri tetangga:** Tiga insersio berbeda di antebrachium proksimal: **olecranon (triceps), tuberositas ulnae (brachialis), tuberositas radii (biceps)**.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Olecranon → insersio M. TRICEPS BRACHII.** Karena itu triceps adalah **ekstensor siku**: dia menarik olecranon ke posterior sehingga siku terluruskan. Bandingkan: **tuberositas ulnae → M. brachialis**; **tuberositas radii → M. biceps brachii**.",
+  "diskriminator": "Tiga insersio berbeda di antebrachium proksimal: **olecranon (triceps), tuberositas ulnae (brachialis), tuberositas radii (biceps)**."
  },
  {
   "n": 200,
@@ -3004,7 +4405,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Trochlea humeri",
-  "rationale": "**Incisura trochlearis ulnae bersendi dengan TROCHLEA HUMERI**, membentuk **art. humeroulnaris** — komponen **hinge** dari art. cubiti. **Capitulum humeri** bersendi dengan **caput radii** (art. humeroradialis). Nama struktur dan pasangannya cocok: trochlea ↔ incisura trochlearis.  —  **Pola Ciri tetangga:** Pasangan artikular siku: **trochlea ↔ ulna; capitulum ↔ radius**. Nama incisura trochlearis menyebutkan pasangannya."
+  "rationale": "**Incisura trochlearis ulnae bersendi dengan TROCHLEA HUMERI**, membentuk **art. humeroulnaris** — komponen **hinge** dari art. cubiti. **Capitulum humeri** bersendi dengan **caput radii** (art. humeroradialis). Nama struktur dan pasangannya cocok: trochlea ↔ incisura trochlearis.  —  **Pola Ciri tetangga:** Pasangan artikular siku: **trochlea ↔ ulna; capitulum ↔ radius**. Nama incisura trochlearis menyebutkan pasangannya.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Incisura trochlearis ulnae bersendi dengan TROCHLEA HUMERI**, membentuk **art. humeroulnaris** — komponen **hinge** dari art. cubiti. **Capitulum humeri** bersendi dengan **caput radii** (art. humeroradialis). Nama struktur dan pasangannya cocok: trochlea ↔ incisura trochlearis.",
+  "diskriminator": "Pasangan artikular siku: **trochlea ↔ ulna; capitulum ↔ radius**. Nama incisura trochlearis menyebutkan pasangannya."
  },
  {
   "n": 201,
@@ -3019,7 +4427,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "M. biceps brachii",
-  "rationale": "**[UB asli]** **Tuberositas radii → insersio M. BICEPS BRACHII.** Karena insersionya pada radius, biceps berperan sebagai fleksor siku **sekaligus supinator** — efektivitasnya bergantung posisi radius. Bandingkan **M. brachialis** yang berinsersio di **tuberositas ulnae**, sehingga dia fleksor murni.  —  **Pola Ciri tetangga:** Insersio menentukan fungsi tambahan: **radius (biceps) → bisa supinasi; ulna (brachialis) → fleksi murni**."
+  "rationale": "**[UB asli]** **Tuberositas radii → insersio M. BICEPS BRACHII.** Karena insersionya pada radius, biceps berperan sebagai fleksor siku **sekaligus supinator** — efektivitasnya bergantung posisi radius. Bandingkan **M. brachialis** yang berinsersio di **tuberositas ulnae**, sehingga dia fleksor murni.  —  **Pola Ciri tetangga:** Insersio menentukan fungsi tambahan: **radius (biceps) → bisa supinasi; ulna (brachialis) → fleksi murni**.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Tuberositas radii → insersio M. BICEPS BRACHII.** Karena insersionya pada radius, biceps berperan sebagai fleksor siku **sekaligus supinator** — efektivitasnya bergantung posisi radius. Bandingkan **M. brachialis** yang berinsersio di **tuberositas ulnae**, sehingga dia fleksor murni.",
+  "diskriminator": "Insersio menentukan fungsi tambahan: **radius (biceps) → bisa supinasi; ulna (brachialis) → fleksi murni**."
  },
  {
   "n": 202,
@@ -3034,7 +4449,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Ulna medial, dominan di siku; radius lateral, dominan di pergelangan tangan",
-  "rationale": "**ULNA medial, dominan di SIKU** (olecranon + incisura trochlearis mengunci trochlea humeri). **RADIUS lateral, dominan di PERGELANGAN TANGAN** (ossa carpi bersendi dengan facies articularis carpea radii). Konsekuensi klinik: **fraktur pergelangan tangan hampir selalu fraktur radius distal**.  —  **Pola Turunkan dari prinsip:** Perannya terbalik antara proksimal dan distal. Satu prinsip menjelaskan dua pola cedera."
+  "rationale": "**ULNA medial, dominan di SIKU** (olecranon + incisura trochlearis mengunci trochlea humeri). **RADIUS lateral, dominan di PERGELANGAN TANGAN** (ossa carpi bersendi dengan facies articularis carpea radii). Konsekuensi klinik: **fraktur pergelangan tangan hampir selalu fraktur radius distal**.  —  **Pola Turunkan dari prinsip:** Perannya terbalik antara proksimal dan distal. Satu prinsip menjelaskan dua pola cedera.",
+  "ppt": 5,
+  "grup": "Ossa & landmark",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**ULNA medial, dominan di SIKU** (olecranon + incisura trochlearis mengunci trochlea humeri). **RADIUS lateral, dominan di PERGELANGAN TANGAN** (ossa carpi bersendi dengan facies articularis carpea radii). Konsekuensi klinik: **fraktur pergelangan tangan hampir selalu fraktur radius distal**.",
+  "diskriminator": "Perannya terbalik antara proksimal dan distal. Satu prinsip menjelaskan dua pola cedera."
  },
  {
   "n": 203,
@@ -3049,7 +4471,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Incisura clavicularis sterni + ekstremitas sternalis clavicula + cartilago costa I",
-  "rationale": "Tiga struktur bertemu di satu sendi: **incisura clavicularis sterni**, **ekstremitas sternalis clavicula**, dan **cartilago costa I**. Sendi ini juga punya **discus articularis** dan diperkuat empat ligamen: lig. sternoclaviculare anterius & posterius, lig. interclaviculare, lig. costoclaviculare.  —  **Pola Kategori jawaban:** Satu-satunya sendi di tubuh tempat **tiga tulang** bertemu di sini: sternum, clavicula, costa I."
+  "rationale": "Tiga struktur bertemu di satu sendi: **incisura clavicularis sterni**, **ekstremitas sternalis clavicula**, dan **cartilago costa I**. Sendi ini juga punya **discus articularis** dan diperkuat empat ligamen: lig. sternoclaviculare anterius & posterius, lig. interclaviculare, lig. costoclaviculare.  —  **Pola Kategori jawaban:** Satu-satunya sendi di tubuh tempat **tiga tulang** bertemu di sini: sternum, clavicula, costa I.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Tiga struktur bertemu di satu sendi: **incisura clavicularis sterni**, **ekstremitas sternalis clavicula**, dan **cartilago costa I**. Sendi ini juga punya **discus articularis** dan diperkuat empat ligamen: lig. sternoclaviculare anterius & posterius, lig. interclaviculare, lig. costoclaviculare.",
+  "diskriminator": "Satu-satunya sendi di tubuh tempat **tiga tulang** bertemu di sini: sternum, clavicula, costa I."
  },
  {
   "n": 204,
@@ -3064,7 +4493,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Plane synovial; protraksi–retraksi dan elevasi–depresi",
-  "rationale": "**Plane synovial**, nonaksial — PPT 4 menyebutnya eksplisit sebagai contoh **plane joint**. Gerakannya **gliding**: **protraksi–retraksi** dan **elevasi–depresi**, yaitu gerakan khusus yang dipakai untuk clavicula dan scapula.  —  **Pola Ciri tetangga:** Plane joint = **nonaksial = gliding**, bukan berarti tidak bergerak."
+  "rationale": "**Plane synovial**, nonaksial — PPT 4 menyebutnya eksplisit sebagai contoh **plane joint**. Gerakannya **gliding**: **protraksi–retraksi** dan **elevasi–depresi**, yaitu gerakan khusus yang dipakai untuk clavicula dan scapula.  —  **Pola Ciri tetangga:** Plane joint = **nonaksial = gliding**, bukan berarti tidak bergerak.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Plane synovial**, nonaksial — PPT 4 menyebutnya eksplisit sebagai contoh **plane joint**. Gerakannya **gliding**: **protraksi–retraksi** dan **elevasi–depresi**, yaitu gerakan khusus yang dipakai untuk clavicula dan scapula.",
+  "diskriminator": "Plane joint = **nonaksial = gliding**, bukan berarti tidak bergerak."
  },
  {
   "n": 205,
@@ -3079,7 +4515,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Acromion scapulae + ekstremitas acromialis clavicula",
-  "rationale": "**Acromion scapulae + ekstremitas acromialis clavicula**, jenisnya **plane synovial** (nonaksial). Fungsinya memungkinkan scapula berputar sedikit relatif terhadap clavicula saat lengan diangkat. Cedera di sini disebut **shoulder separation** — berbeda dari dislokasi bahu yang terjadi di art. humeri.  —  **Pola Kategori jawaban:** Jangan tertukar: **shoulder separation = art. acromioclavicularis; shoulder dislocation = art. humeri**."
+  "rationale": "**Acromion scapulae + ekstremitas acromialis clavicula**, jenisnya **plane synovial** (nonaksial). Fungsinya memungkinkan scapula berputar sedikit relatif terhadap clavicula saat lengan diangkat. Cedera di sini disebut **shoulder separation** — berbeda dari dislokasi bahu yang terjadi di art. humeri.  —  **Pola Kategori jawaban:** Jangan tertukar: **shoulder separation = art. acromioclavicularis; shoulder dislocation = art. humeri**.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Acromion scapulae + ekstremitas acromialis clavicula**, jenisnya **plane synovial** (nonaksial). Fungsinya memungkinkan scapula berputar sedikit relatif terhadap clavicula saat lengan diangkat. Cedera di sini disebut **shoulder separation** — berbeda dari dislokasi bahu yang terjadi di art. humeri.",
+  "diskriminator": "Jangan tertukar: **shoulder separation = art. acromioclavicularis; shoulder dislocation = art. humeri**."
  },
  {
   "n": 206,
@@ -3094,7 +4537,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Caput humeri + cavitas glenoidalis scapulae",
-  "rationale": "**Caput humeri + cavitas glenoidalis scapulae** — karena itu nama lainnya **articulatio glenohumeralis**. Jenisnya **ball-and-socket (spheroidea)**, **multiaksial**: fleksi–ekstensi, abduksi–adduksi, rotasi medial–lateral, dan sirkumduksi.  —  **Pola Kategori jawaban:** Nama alternatifnya menyebutkan kedua pasangannya: **gleno**idalis + **humeri**."
+  "rationale": "**Caput humeri + cavitas glenoidalis scapulae** — karena itu nama lainnya **articulatio glenohumeralis**. Jenisnya **ball-and-socket (spheroidea)**, **multiaksial**: fleksi–ekstensi, abduksi–adduksi, rotasi medial–lateral, dan sirkumduksi.  —  **Pola Kategori jawaban:** Nama alternatifnya menyebutkan kedua pasangannya: **gleno**idalis + **humeri**.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Caput humeri + cavitas glenoidalis scapulae** — karena itu nama lainnya **articulatio glenohumeralis**. Jenisnya **ball-and-socket (spheroidea)**, **multiaksial**: fleksi–ekstensi, abduksi–adduksi, rotasi medial–lateral, dan sirkumduksi.",
+  "diskriminator": "Nama alternatifnya menyebutkan kedua pasangannya: **gleno**idalis + **humeri**."
  },
  {
   "n": 207,
@@ -3109,7 +4559,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Multiaksial",
-  "rationale": "**MULTIAKSIAL** — tiga aksis, jenisnya **ball-and-socket**. PPT 4 menyebut shoulder dan hip sebagai contohnya. Ini yang memberinya rentang gerak paling luas di seluruh tubuh: gerakan pada ketiga bidang plus rotasi plus sirkumduksi.  —  **Pola Ciri tetangga:** Hierarki aksis: nonaksial (0) → uniaksial (1) → biaksial (2) → **multiaksial (3)**."
+  "rationale": "**MULTIAKSIAL** — tiga aksis, jenisnya **ball-and-socket**. PPT 4 menyebut shoulder dan hip sebagai contohnya. Ini yang memberinya rentang gerak paling luas di seluruh tubuh: gerakan pada ketiga bidang plus rotasi plus sirkumduksi.  —  **Pola Ciri tetangga:** Hierarki aksis: nonaksial (0) → uniaksial (1) → biaksial (2) → **multiaksial (3)**.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**MULTIAKSIAL** — tiga aksis, jenisnya **ball-and-socket**. PPT 4 menyebut shoulder dan hip sebagai contohnya. Ini yang memberinya rentang gerak paling luas di seluruh tubuh: gerakan pada ketiga bidang plus rotasi plus sirkumduksi.",
+  "diskriminator": "Hierarki aksis: nonaksial (0) → uniaksial (1) → biaksial (2) → **multiaksial (3)**."
  },
  {
   "n": 208,
@@ -3124,7 +4581,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Karena cavitas glenoidalis sangat dangkal dibandingkan caput humeri",
-  "rationale": "**Cavitas glenoidalis sangat dangkal** dibandingkan caput humeri — jauh lebih dangkal daripada acetabulum pada art. coxae. Itu memberi rentang gerak paling luas, tetapi sekaligus membuatnya paling mudah lepas. Prinsip umumnya: **stabilitas dan mobilitas berbanding terbalik**.  —  **Pola Turunkan dari prinsip:** Rentang gerak luas adalah **akibat**; penyebab strukturalnya **socket yang dangkal**."
+  "rationale": "**Cavitas glenoidalis sangat dangkal** dibandingkan caput humeri — jauh lebih dangkal daripada acetabulum pada art. coxae. Itu memberi rentang gerak paling luas, tetapi sekaligus membuatnya paling mudah lepas. Prinsip umumnya: **stabilitas dan mobilitas berbanding terbalik**.  —  **Pola Turunkan dari prinsip:** Rentang gerak luas adalah **akibat**; penyebab strukturalnya **socket yang dangkal**.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Cavitas glenoidalis sangat dangkal** dibandingkan caput humeri — jauh lebih dangkal daripada acetabulum pada art. coxae. Itu memberi rentang gerak paling luas, tetapi sekaligus membuatnya paling mudah lepas. Prinsip umumnya: **stabilitas dan mobilitas berbanding terbalik**.",
+  "diskriminator": "Rentang gerak luas adalah **akibat**; penyebab strukturalnya **socket yang dangkal**."
  },
  {
   "n": 209,
@@ -3139,7 +4603,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Labrum glenoidale dan rotator cuff",
-  "rationale": "**(1) Labrum glenoidale** — cincin fibrokartilago di tepi cavitas yang memperdalam cekungan. **(2) Rotator cuff** — empat otot (supraspinatus, infraspinatus, teres minor, subscapularis) yang melingkupi sendi dan menahan caput humeri di tempatnya.  —  **Pola Turunkan dari prinsip:** Stabilitas bahu bergantung pada **otot**, bukan pada bentuk tulang. Itu sebabnya robekan rotator cuff mengganggu stabilitas."
+  "rationale": "**(1) Labrum glenoidale** — cincin fibrokartilago di tepi cavitas yang memperdalam cekungan. **(2) Rotator cuff** — empat otot (supraspinatus, infraspinatus, teres minor, subscapularis) yang melingkupi sendi dan menahan caput humeri di tempatnya.  —  **Pola Turunkan dari prinsip:** Stabilitas bahu bergantung pada **otot**, bukan pada bentuk tulang. Itu sebabnya robekan rotator cuff mengganggu stabilitas.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**(1) Labrum glenoidale** — cincin fibrokartilago di tepi cavitas yang memperdalam cekungan. **(2) Rotator cuff** — empat otot (supraspinatus, infraspinatus, teres minor, subscapularis) yang melingkupi sendi dan menahan caput humeri di tempatnya.",
+  "diskriminator": "Stabilitas bahu bergantung pada **otot**, bukan pada bentuk tulang. Itu sebabnya robekan rotator cuff mengganggu stabilitas."
  },
  {
   "n": 210,
@@ -3154,7 +4625,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Tiga: art. humeroulnaris, art. humeroradialis, art. radioulnaris proximalis",
-  "rationale": "Art. cubiti adalah **sendi gabungan dengan TIGA sub-sendi dalam satu kapsul**: **art. humeroulnaris** (hinge), **art. humeroradialis** (spheroidea), dan **art. radioulnaris proximalis** (pivot). Art. radioulnaris **distalis** adalah sendi terpisah di pergelangan tangan, bukan bagian art. cubiti.  —  **Pola Angka & daftar:** Satu kapsul, tiga sendi, dua jenis gerakan: **fleksi–ekstensi** dan **pronasi–supinasi**."
+  "rationale": "Art. cubiti adalah **sendi gabungan dengan TIGA sub-sendi dalam satu kapsul**: **art. humeroulnaris** (hinge), **art. humeroradialis** (spheroidea), dan **art. radioulnaris proximalis** (pivot). Art. radioulnaris **distalis** adalah sendi terpisah di pergelangan tangan, bukan bagian art. cubiti.  —  **Pola Angka & daftar:** Satu kapsul, tiga sendi, dua jenis gerakan: **fleksi–ekstensi** dan **pronasi–supinasi**.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Art. cubiti adalah **sendi gabungan dengan TIGA sub-sendi dalam satu kapsul**: **art. humeroulnaris** (hinge), **art. humeroradialis** (spheroidea), dan **art. radioulnaris proximalis** (pivot). Art. radioulnaris **distalis** adalah sendi terpisah di pergelangan tangan, bukan bagian art. cubiti.",
+  "diskriminator": "Satu kapsul, tiga sendi, dua jenis gerakan: **fleksi–ekstensi** dan **pronasi–supinasi**."
  },
  {
   "n": 211,
@@ -3169,7 +4647,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Trochlea humeri + incisura trochlearis ulnae; hinge (ginglymus)",
-  "rationale": "**Trochlea humeri + incisura trochlearis ulnae**, jenisnya **HINGE (ginglymus)**, uniaksial dengan aksis **transversal** → hanya menghasilkan **fleksi–ekstensi**. Inilah komponen yang memberi siku sifat engselnya.  —  **Pola Ciri tetangga:** Hinge = aksis transversal = **hanya fleksi–ekstensi**. Tidak bisa rotasi, apa pun jumlah aksisnya."
+  "rationale": "**Trochlea humeri + incisura trochlearis ulnae**, jenisnya **HINGE (ginglymus)**, uniaksial dengan aksis **transversal** → hanya menghasilkan **fleksi–ekstensi**. Inilah komponen yang memberi siku sifat engselnya.  —  **Pola Ciri tetangga:** Hinge = aksis transversal = **hanya fleksi–ekstensi**. Tidak bisa rotasi, apa pun jumlah aksisnya.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Trochlea humeri + incisura trochlearis ulnae**, jenisnya **HINGE (ginglymus)**, uniaksial dengan aksis **transversal** → hanya menghasilkan **fleksi–ekstensi**. Inilah komponen yang memberi siku sifat engselnya.",
+  "diskriminator": "Hinge = aksis transversal = **hanya fleksi–ekstensi**. Tidak bisa rotasi, apa pun jumlah aksisnya."
  },
  {
   "n": 212,
@@ -3184,7 +4669,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Capitulum humeri + caput radii",
-  "rationale": "**Capitulum humeri + caput radii.** Pasangan artikular siku tersusun rapi: **trochlea ↔ ulna** (incisura trochlearis), **capitulum ↔ radius** (caput radii). Sementara **caput radii + incisura radialis ulnae** membentuk sendi ketiga, yaitu art. radioulnaris proximalis.  —  **Pola Ciri tetangga:** Hafal dua pasangan humerus: **trochlea untuk ulna, capitulum untuk radius**."
+  "rationale": "**Capitulum humeri + caput radii.** Pasangan artikular siku tersusun rapi: **trochlea ↔ ulna** (incisura trochlearis), **capitulum ↔ radius** (caput radii). Sementara **caput radii + incisura radialis ulnae** membentuk sendi ketiga, yaitu art. radioulnaris proximalis.  —  **Pola Ciri tetangga:** Hafal dua pasangan humerus: **trochlea untuk ulna, capitulum untuk radius**.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Capitulum humeri + caput radii.** Pasangan artikular siku tersusun rapi: **trochlea ↔ ulna** (incisura trochlearis), **capitulum ↔ radius** (caput radii). Sementara **caput radii + incisura radialis ulnae** membentuk sendi ketiga, yaitu art. radioulnaris proximalis.",
+  "diskriminator": "Hafal dua pasangan humerus: **trochlea untuk ulna, capitulum untuk radius**."
  },
  {
   "n": 213,
@@ -3199,7 +4691,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Caput radii + incisura radialis ulnae; pivot; pronasi–supinasi",
-  "rationale": "**Circumferentia articularis caput radii + incisura radialis ulnae**, jenisnya **PIVOT (trochoidea)**, uniaksial dengan aksis **vertikal/longitudinal** → menghasilkan **PRONASI–SUPINASI**. Opsi C menggambarkan art. radioulnaris **distalis**, yang juga pivot tetapi letaknya di pergelangan.  —  **Pola Ciri tetangga:** Pivot = aksis **vertikal** = rotasi. Di lengan bawah, rotasinya disebut pronasi–supinasi."
+  "rationale": "**Circumferentia articularis caput radii + incisura radialis ulnae**, jenisnya **PIVOT (trochoidea)**, uniaksial dengan aksis **vertikal/longitudinal** → menghasilkan **PRONASI–SUPINASI**. Opsi C menggambarkan art. radioulnaris **distalis**, yang juga pivot tetapi letaknya di pergelangan.  —  **Pola Ciri tetangga:** Pivot = aksis **vertikal** = rotasi. Di lengan bawah, rotasinya disebut pronasi–supinasi.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Circumferentia articularis caput radii + incisura radialis ulnae**, jenisnya **PIVOT (trochoidea)**, uniaksial dengan aksis **vertikal/longitudinal** → menghasilkan **PRONASI–SUPINASI**. Opsi C menggambarkan art. radioulnaris **distalis**, yang juga pivot tetapi letaknya di pergelangan.",
+  "diskriminator": "Pivot = aksis **vertikal** = rotasi. Di lengan bawah, rotasinya disebut pronasi–supinasi."
  },
  {
   "n": 214,
@@ -3214,7 +4713,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Art. radioulnaris; karena aksis hinge transversal sehingga hanya memungkinkan fleksi–ekstensi",
-  "rationale": "**[UB asli]** Pronasi–supinasi terjadi di **art. radioulnaris** (proximalis dan distalis, keduanya **pivot**). Komponen **hinge** tidak bisa melakukannya bukan karena jumlah aksisnya — keduanya uniaksial — melainkan karena **arah aksis hinge adalah TRANSVERSAL**, yang secara geometris hanya memungkinkan fleksi–ekstensi.  —  **Pola Turunkan dari prinsip:** **Jumlah aksis** menentukan berapa banyak gerakan; **arah aksis** menentukan gerakan apa."
+  "rationale": "**[UB asli]** Pronasi–supinasi terjadi di **art. radioulnaris** (proximalis dan distalis, keduanya **pivot**). Komponen **hinge** tidak bisa melakukannya bukan karena jumlah aksisnya — keduanya uniaksial — melainkan karena **arah aksis hinge adalah TRANSVERSAL**, yang secara geometris hanya memungkinkan fleksi–ekstensi.  —  **Pola Turunkan dari prinsip:** **Jumlah aksis** menentukan berapa banyak gerakan; **arah aksis** menentukan gerakan apa.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Pronasi–supinasi terjadi di **art. radioulnaris** (proximalis dan distalis, keduanya **pivot**). Komponen **hinge** tidak bisa melakukannya bukan karena jumlah aksisnya — keduanya uniaksial — melainkan karena **arah aksis hinge adalah TRANSVERSAL**, yang secara geometris hanya memungkinkan fleksi–ekstensi.",
+  "diskriminator": "**Jumlah aksis** menentukan berapa banyak gerakan; **arah aksis** menentukan gerakan apa."
  },
  {
   "n": 215,
@@ -3229,7 +4735,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Facies articularis carpea radii + discus articularis + ossa carpi proksimal; ellipsoid",
-  "rationale": "**[UB asli]** **Facies articularis carpea radii + discus articularis + ossa carpi deretan proksimal** (os scaphoideum, lunatum, triquetrum), jenisnya **ELLIPSOID** dan **biaksial** — fleksi–ekstensi (aksis transversal) plus abduksi–adduksi/deviasi radial–ulnar (aksis AP).  —  **Pola Ciri tetangga:** Tiga komponen, bukan dua. Dan jenisnya **ellipsoid** — inilah jawaban soal UB tentang wrist joint."
+  "rationale": "**[UB asli]** **Facies articularis carpea radii + discus articularis + ossa carpi deretan proksimal** (os scaphoideum, lunatum, triquetrum), jenisnya **ELLIPSOID** dan **biaksial** — fleksi–ekstensi (aksis transversal) plus abduksi–adduksi/deviasi radial–ulnar (aksis AP).  —  **Pola Ciri tetangga:** Tiga komponen, bukan dua. Dan jenisnya **ellipsoid** — inilah jawaban soal UB tentang wrist joint.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Facies articularis carpea radii + discus articularis + ossa carpi deretan proksimal** (os scaphoideum, lunatum, triquetrum), jenisnya **ELLIPSOID** dan **biaksial** — fleksi–ekstensi (aksis transversal) plus abduksi–adduksi/deviasi radial–ulnar (aksis AP).",
+  "diskriminator": "Tiga komponen, bukan dua. Dan jenisnya **ellipsoid** — inilah jawaban soal UB tentang wrist joint."
  },
  {
   "n": 216,
@@ -3244,7 +4757,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Discus articularis fibrokartilago",
-  "rationale": "**Discus articularis** — lempeng fibrokartilago yang menutupi ujung distal ulna sehingga ulna tidak bersentuhan dengan ossa carpi. Ini konsisten dengan pembagian peran: **radius dominan di pergelangan, ulna dominan di siku**.  —  **Pola Ciri tetangga:** Konsekuensinya: cedera pergelangan tangan melibatkan **radius distal**, bukan ulna."
+  "rationale": "**Discus articularis** — lempeng fibrokartilago yang menutupi ujung distal ulna sehingga ulna tidak bersentuhan dengan ossa carpi. Ini konsisten dengan pembagian peran: **radius dominan di pergelangan, ulna dominan di siku**.  —  **Pola Ciri tetangga:** Konsekuensinya: cedera pergelangan tangan melibatkan **radius distal**, bukan ulna.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Discus articularis** — lempeng fibrokartilago yang menutupi ujung distal ulna sehingga ulna tidak bersentuhan dengan ossa carpi. Ini konsisten dengan pembagian peran: **radius dominan di pergelangan, ulna dominan di siku**.",
+  "diskriminator": "Konsekuensinya: cedera pergelangan tangan melibatkan **radius distal**, bukan ulna."
  },
  {
   "n": 217,
@@ -3259,7 +4779,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Radiocarpalis → mediocarpalis → carpometacarpalis → metacarpophalangea → interphalangea proximalis → interphalangea distalis",
-  "rationale": "Rantainya: **radiocarpalis → mediocarpalis → carpometacarpalis → metacarpophalangea → interphalangea proximalis → interphalangea distalis**. Kaidahnya: **nama sendi = dua tulang yang bertemu, disambung**. Jadi kamu cukup tahu urutan tulangnya (radius → carpi → metacarpi → phalanges) lalu sambung namanya.  —  **Pola Pasangan berlawanan:** Tidak ada sendi bernama **metacarpalis** atau **carpophalangea** dalam rantai ini — itu distraktor bentukan."
+  "rationale": "Rantainya: **radiocarpalis → mediocarpalis → carpometacarpalis → metacarpophalangea → interphalangea proximalis → interphalangea distalis**. Kaidahnya: **nama sendi = dua tulang yang bertemu, disambung**. Jadi kamu cukup tahu urutan tulangnya (radius → carpi → metacarpi → phalanges) lalu sambung namanya.  —  **Pola Pasangan berlawanan:** Tidak ada sendi bernama **metacarpalis** atau **carpophalangea** dalam rantai ini — itu distraktor bentukan.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Rantainya: **radiocarpalis → mediocarpalis → carpometacarpalis → metacarpophalangea → interphalangea proximalis → interphalangea distalis**. Kaidahnya: **nama sendi = dua tulang yang bertemu, disambung**. Jadi kamu cukup tahu urutan tulangnya (radius → carpi → metacarpi → phalanges) lalu sambung namanya.",
+  "diskriminator": "Tidak ada sendi bernama **metacarpalis** atau **carpophalangea** dalam rantai ini — itu distraktor bentukan."
  },
  {
   "n": 218,
@@ -3274,7 +4801,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Saddle (sellaris); memungkinkan oposisi",
-  "rationale": "**Saddle joint (sellaris)** — satu-satunya jenis sendi yang memungkinkan **OPOSISI**, yaitu jempol menyentuh ujung jari lain. Oposisi butuh gerakan pada dua bidang plus sedikit rotasi, dan hanya permukaan berbentuk sadel yang memungkinkannya. Hinge atau plane tidak akan pernah bisa.  —  **Pola Ciri tetangga:** **Oposisi = saddle joint = carpometacarpalis pollicis.** Satu gerakan, satu sendi, eksklusif."
+  "rationale": "**Saddle joint (sellaris)** — satu-satunya jenis sendi yang memungkinkan **OPOSISI**, yaitu jempol menyentuh ujung jari lain. Oposisi butuh gerakan pada dua bidang plus sedikit rotasi, dan hanya permukaan berbentuk sadel yang memungkinkannya. Hinge atau plane tidak akan pernah bisa.  —  **Pola Ciri tetangga:** **Oposisi = saddle joint = carpometacarpalis pollicis.** Satu gerakan, satu sendi, eksklusif.",
+  "ppt": 5,
+  "grup": "Articulationes",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Saddle joint (sellaris)** — satu-satunya jenis sendi yang memungkinkan **OPOSISI**, yaitu jempol menyentuh ujung jari lain. Oposisi butuh gerakan pada dua bidang plus sedikit rotasi, dan hanya permukaan berbentuk sadel yang memungkinkannya. Hinge atau plane tidak akan pernah bisa.",
+  "diskriminator": "**Oposisi = saddle joint = carpometacarpalis pollicis.** Satu gerakan, satu sendi, eksklusif."
  },
  {
   "n": 219,
@@ -3289,7 +4823,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Protuberantia occipitalis externa, processus spinosus VC7 dan semua vertebrae thoracales",
-  "rationale": "**M. trapezius** berorigo luas: **protuberantia occipitalis externa, processus spinosus VC7, dan semua vertebrae thoracales**. Distraktornya milik tetangganya: opsi B = latissimus dorsi; C = levator scapulae; D = rhomboideus major; E = pectoralis major.  —  **Pola Ciri tetangga:** Trapezius adalah satu-satunya otot regio ini yang berorigo sampai ke **cranium** (protuberantia occipitalis)."
+  "rationale": "**M. trapezius** berorigo luas: **protuberantia occipitalis externa, processus spinosus VC7, dan semua vertebrae thoracales**. Distraktornya milik tetangganya: opsi B = latissimus dorsi; C = levator scapulae; D = rhomboideus major; E = pectoralis major.  —  **Pola Ciri tetangga:** Trapezius adalah satu-satunya otot regio ini yang berorigo sampai ke **cranium** (protuberantia occipitalis).",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**M. trapezius** berorigo luas: **protuberantia occipitalis externa, processus spinosus VC7, dan semua vertebrae thoracales**. Distraktornya milik tetangganya: opsi B = latissimus dorsi; C = levator scapulae; D = rhomboideus major; E = pectoralis major.",
+  "diskriminator": "Trapezius adalah satu-satunya otot regio ini yang berorigo sampai ke **cranium** (protuberantia occipitalis)."
  },
  {
   "n": 220,
@@ -3304,7 +4845,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Clavicula, spina scapulae, dan acromion",
-  "rationale": "**Clavicula, spina scapulae, dan acromion** — ketiganya struktur cingulum, jadi trapezius menggerakkan **scapula dan clavicula**, bukan humerus. Menarik: ketiga tempat ini juga merupakan **origo M. deltoideus**, sehingga ada rantai estafet trapezius → scapula → deltoideus → humerus.  —  **Pola Ciri tetangga:** Insersio trapezius = origo deltoideus. Satu tempat, dua otot, dua peran berurutan."
+  "rationale": "**Clavicula, spina scapulae, dan acromion** — ketiganya struktur cingulum, jadi trapezius menggerakkan **scapula dan clavicula**, bukan humerus. Menarik: ketiga tempat ini juga merupakan **origo M. deltoideus**, sehingga ada rantai estafet trapezius → scapula → deltoideus → humerus.  —  **Pola Ciri tetangga:** Insersio trapezius = origo deltoideus. Satu tempat, dua otot, dua peran berurutan.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Clavicula, spina scapulae, dan acromion** — ketiganya struktur cingulum, jadi trapezius menggerakkan **scapula dan clavicula**, bukan humerus. Menarik: ketiga tempat ini juga merupakan **origo M. deltoideus**, sehingga ada rantai estafet trapezius → scapula → deltoideus → humerus.",
+  "diskriminator": "Insersio trapezius = origo deltoideus. Satu tempat, dua otot, dua peran berurutan."
  },
  {
   "n": 221,
@@ -3319,7 +4867,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "N. accessorius",
-  "rationale": "**N. ACCESSORIUS** — yaitu **nervus cranialis XI**, bukan cabang plexus brachialis. M. trapezius adalah satu-satunya otot di regio ini yang diinervasi saraf kranial. Alasannya embriologis: trapezius berkembang dari lengkung brankial, bukan dari somit anggota gerak.  —  **Pola Angka & daftar:** Satu-satunya otot ekstremitas superior dengan inervasi **saraf kranial**. Itu penanda khasnya."
+  "rationale": "**N. ACCESSORIUS** — yaitu **nervus cranialis XI**, bukan cabang plexus brachialis. M. trapezius adalah satu-satunya otot di regio ini yang diinervasi saraf kranial. Alasannya embriologis: trapezius berkembang dari lengkung brankial, bukan dari somit anggota gerak.  —  **Pola Angka & daftar:** Satu-satunya otot ekstremitas superior dengan inervasi **saraf kranial**. Itu penanda khasnya.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. ACCESSORIUS** — yaitu **nervus cranialis XI**, bukan cabang plexus brachialis. M. trapezius adalah satu-satunya otot di regio ini yang diinervasi saraf kranial. Alasannya embriologis: trapezius berkembang dari lengkung brankial, bukan dari somit anggota gerak.",
+  "diskriminator": "Satu-satunya otot ekstremitas superior dengan inervasi **saraf kranial**. Itu penanda khasnya."
  },
  {
   "n": 222,
@@ -3334,7 +4889,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "M. trapezius",
-  "rationale": "**M. trapezius**, oleh **n. accessorius (CN XI)**. Semua otot lain di kedua regio diinervasi cabang **plexus brachialis**: latissimus dorsi (n. thoracodorsalis), rhomboideus (n. dorsalis scapulae), serratus anterior (n. thoracicus longus), pectoralis major (n. pectoralis medialis et lateralis).  —  **Pola Kategori jawaban:** Kalau soal menyebut **saraf kranial** pada otot bahu, jawabannya hampir pasti trapezius."
+  "rationale": "**M. trapezius**, oleh **n. accessorius (CN XI)**. Semua otot lain di kedua regio diinervasi cabang **plexus brachialis**: latissimus dorsi (n. thoracodorsalis), rhomboideus (n. dorsalis scapulae), serratus anterior (n. thoracicus longus), pectoralis major (n. pectoralis medialis et lateralis).  —  **Pola Kategori jawaban:** Kalau soal menyebut **saraf kranial** pada otot bahu, jawabannya hampir pasti trapezius.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**M. trapezius**, oleh **n. accessorius (CN XI)**. Semua otot lain di kedua regio diinervasi cabang **plexus brachialis**: latissimus dorsi (n. thoracodorsalis), rhomboideus (n. dorsalis scapulae), serratus anterior (n. thoracicus longus), pectoralis major (n. pectoralis medialis et lateralis).",
+  "diskriminator": "Kalau soal menyebut **saraf kranial** pada otot bahu, jawabannya hampir pasti trapezius."
  },
  {
   "n": 223,
@@ -3349,7 +4911,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "M. trapezius",
-  "rationale": "**[UB asli]** **M. trapezius** — namanya adalah bentuknya. Distraktornya: **M. rhomboideus** berbentuk belah ketupat (rhomboid); **M. latissimus dorsi** lebar seperti kipas (latissimus = paling lebar); **M. pectoralis major** ada di dada bukan punggung; **M. scalenus** di leher.  —  **Pola Nama = petunjuk:** Tiga otot regio ini dinamai dari bentuk/ukuran: **trapezius** (trapesium), **rhomboideus** (belah ketupat), **latissimus** (paling lebar)."
+  "rationale": "**[UB asli]** **M. trapezius** — namanya adalah bentuknya. Distraktornya: **M. rhomboideus** berbentuk belah ketupat (rhomboid); **M. latissimus dorsi** lebar seperti kipas (latissimus = paling lebar); **M. pectoralis major** ada di dada bukan punggung; **M. scalenus** di leher.  —  **Pola Nama = petunjuk:** Tiga otot regio ini dinamai dari bentuk/ukuran: **trapezius** (trapesium), **rhomboideus** (belah ketupat), **latissimus** (paling lebar).",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "NAM",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**M. trapezius** — namanya adalah bentuknya. Distraktornya: **M. rhomboideus** berbentuk belah ketupat (rhomboid); **M. latissimus dorsi** lebar seperti kipas (latissimus = paling lebar); **M. pectoralis major** ada di dada bukan punggung; **M. scalenus** di leher.",
+  "diskriminator": "Tiga otot regio ini dinamai dari bentuk/ukuran: **trapezius** (trapesium), **rhomboideus** (belah ketupat), **latissimus** (paling lebar)."
  },
  {
   "n": 224,
@@ -3364,7 +4933,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Processus spinosus VT 7–12, spina iliaca, dan 4 costae bagian bawah",
-  "rationale": "**Processus spinosus VT 7–12, spina iliaca, dan 4 costae bagian bawah** — origo yang sangat luas, mencakup vertebra, pelvis, dan costae. Itu sebabnya dia otot terlebar di punggung. Distraktornya: A = rhomboideus minor; C = trapezius; D = levator scapulae; E = serratus anterior.  —  **Pola Ciri tetangga:** Origo latissimus dorsi mencakup **tiga wilayah**: vertebrae thoracales bawah, spina iliaca, dan costae."
+  "rationale": "**Processus spinosus VT 7–12, spina iliaca, dan 4 costae bagian bawah** — origo yang sangat luas, mencakup vertebra, pelvis, dan costae. Itu sebabnya dia otot terlebar di punggung. Distraktornya: A = rhomboideus minor; C = trapezius; D = levator scapulae; E = serratus anterior.  —  **Pola Ciri tetangga:** Origo latissimus dorsi mencakup **tiga wilayah**: vertebrae thoracales bawah, spina iliaca, dan costae.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Processus spinosus VT 7–12, spina iliaca, dan 4 costae bagian bawah** — origo yang sangat luas, mencakup vertebra, pelvis, dan costae. Itu sebabnya dia otot terlebar di punggung. Distraktornya: A = rhomboideus minor; C = trapezius; D = levator scapulae; E = serratus anterior.",
+  "diskriminator": "Origo latissimus dorsi mencakup **tiga wilayah**: vertebrae thoracales bawah, spina iliaca, dan costae."
  },
  {
   "n": 225,
@@ -3379,7 +4955,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Sulcus intertubercularis humeri",
-  "rationale": "**Sulcus intertubercularis humeri.** Bersama M. pectoralis major, latissimus dorsi adalah salah satu dari **hanya dua** otot di regio dorsum dan pectoralis yang berinsersio di **humerus** — dan karena itu keduanya yang menggerakkan lengan, bukan hanya scapula.  —  **Pola Ciri tetangga:** Dua otot berinsersio di humerus: **latissimus dorsi (sulcus intertubercularis)** dan **pectoralis major (crista tuberculi majoris)**."
+  "rationale": "**Sulcus intertubercularis humeri.** Bersama M. pectoralis major, latissimus dorsi adalah salah satu dari **hanya dua** otot di regio dorsum dan pectoralis yang berinsersio di **humerus** — dan karena itu keduanya yang menggerakkan lengan, bukan hanya scapula.  —  **Pola Ciri tetangga:** Dua otot berinsersio di humerus: **latissimus dorsi (sulcus intertubercularis)** dan **pectoralis major (crista tuberculi majoris)**.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Sulcus intertubercularis humeri.** Bersama M. pectoralis major, latissimus dorsi adalah salah satu dari **hanya dua** otot di regio dorsum dan pectoralis yang berinsersio di **humerus** — dan karena itu keduanya yang menggerakkan lengan, bukan hanya scapula.",
+  "diskriminator": "Dua otot berinsersio di humerus: **latissimus dorsi (sulcus intertubercularis)** dan **pectoralis major (crista tuberculi majoris)**."
  },
  {
   "n": 226,
@@ -3394,7 +4977,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Ekstensi, adduksi, dan endorotasi lengan atas",
-  "rationale": "**Ekstensi, adduksi, dan endorotasi lengan atas.** Semuanya bisa diturunkan dari jalurnya: otot ini datang dari **posterior-bawah** lalu menempel di **anterior** humerus (sulcus intertubercularis) — maka ia menarik lengan ke belakang (ekstensi), ke tubuh (adduksi), dan memutarnya ke dalam (endorotasi).  —  **Pola Ciri tetangga:** Prinsip kompartemen: otot **posterior** → ekstensi. Dan insersio di sisi anterior humerus → endorotasi."
+  "rationale": "**Ekstensi, adduksi, dan endorotasi lengan atas.** Semuanya bisa diturunkan dari jalurnya: otot ini datang dari **posterior-bawah** lalu menempel di **anterior** humerus (sulcus intertubercularis) — maka ia menarik lengan ke belakang (ekstensi), ke tubuh (adduksi), dan memutarnya ke dalam (endorotasi).  —  **Pola Ciri tetangga:** Prinsip kompartemen: otot **posterior** → ekstensi. Dan insersio di sisi anterior humerus → endorotasi.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Ekstensi, adduksi, dan endorotasi lengan atas.** Semuanya bisa diturunkan dari jalurnya: otot ini datang dari **posterior-bawah** lalu menempel di **anterior** humerus (sulcus intertubercularis) — maka ia menarik lengan ke belakang (ekstensi), ke tubuh (adduksi), dan memutarnya ke dalam (endorotasi).",
+  "diskriminator": "Prinsip kompartemen: otot **posterior** → ekstensi. Dan insersio di sisi anterior humerus → endorotasi."
  },
  {
   "n": 227,
@@ -3409,7 +4999,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "N. thoracodorsalis",
-  "rationale": "**N. THORACODORSALIS**, cabang fasciculus posterior plexus brachialis. Kaidah nama membantunya: **thoraco·dorsalis** → melayani otot **dorsum** yang berorigo dari thorax, yaitu **latissimus DORSI**.  —  **Pola Angka & daftar:** Nama saraf menyebutkan ototnya: thoraco**dorsalis** → latissimus **dorsi**."
+  "rationale": "**N. THORACODORSALIS**, cabang fasciculus posterior plexus brachialis. Kaidah nama membantunya: **thoraco·dorsalis** → melayani otot **dorsum** yang berorigo dari thorax, yaitu **latissimus DORSI**.  —  **Pola Angka & daftar:** Nama saraf menyebutkan ototnya: thoraco**dorsalis** → latissimus **dorsi**.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. THORACODORSALIS**, cabang fasciculus posterior plexus brachialis. Kaidah nama membantunya: **thoraco·dorsalis** → melayani otot **dorsum** yang berorigo dari thorax, yaitu **latissimus DORSI**.",
+  "diskriminator": "Nama saraf menyebutkan ototnya: thoraco**dorsalis** → latissimus **dorsi**."
  },
  {
   "n": 228,
@@ -3424,7 +5021,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "M. latissimus dorsi",
-  "rationale": "**[UB asli]** Menarik lengan ke belakang = **ekstensi/hiperekstensi art. humeri**, dan prime mover-nya **M. latissimus dorsi** (dibantu M. trapezius). **M. pectoralis major** di anterior justru melakukan fleksi dan adduksi — dia antagonisnya di gerakan ini.  —  **Pola Turunkan dari prinsip:** Bisa diturunkan: **punggung (posterior) → menarik ke belakang; dada (anterior) → menarik ke depan**."
+  "rationale": "**[UB asli]** Menarik lengan ke belakang = **ekstensi/hiperekstensi art. humeri**, dan prime mover-nya **M. latissimus dorsi** (dibantu M. trapezius). **M. pectoralis major** di anterior justru melakukan fleksi dan adduksi — dia antagonisnya di gerakan ini.  —  **Pola Turunkan dari prinsip:** Bisa diturunkan: **punggung (posterior) → menarik ke belakang; dada (anterior) → menarik ke depan**.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Menarik lengan ke belakang = **ekstensi/hiperekstensi art. humeri**, dan prime mover-nya **M. latissimus dorsi** (dibantu M. trapezius). **M. pectoralis major** di anterior justru melakukan fleksi dan adduksi — dia antagonisnya di gerakan ini.",
+  "diskriminator": "Bisa diturunkan: **punggung (posterior) → menarik ke belakang; dada (anterior) → menarik ke depan**."
  },
  {
   "n": 229,
@@ -3439,7 +5043,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Processus spinosus VT 2–5",
-  "rationale": "**Processus spinosus VT 2–5.** Tiga otot kelompok ini berorigo berurutan dari atas ke bawah tanpa tumpang tindih: **M. levator scapulae (proc. transversus VC 1–4) → M. rhomboideus minor (proc. spinosus VC7–VT1) → M. rhomboideus major (proc. spinosus VT 2–5)**.  —  **Pola Ciri tetangga:** Hafal ketiganya sebagai **deret berurutan**, bukan tiga fakta terpisah. Major paling bawah."
+  "rationale": "**Processus spinosus VT 2–5.** Tiga otot kelompok ini berorigo berurutan dari atas ke bawah tanpa tumpang tindih: **M. levator scapulae (proc. transversus VC 1–4) → M. rhomboideus minor (proc. spinosus VC7–VT1) → M. rhomboideus major (proc. spinosus VT 2–5)**.  —  **Pola Ciri tetangga:** Hafal ketiganya sebagai **deret berurutan**, bukan tiga fakta terpisah. Major paling bawah.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Processus spinosus VT 2–5.** Tiga otot kelompok ini berorigo berurutan dari atas ke bawah tanpa tumpang tindih: **M. levator scapulae (proc. transversus VC 1–4) → M. rhomboideus minor (proc. spinosus VC7–VT1) → M. rhomboideus major (proc. spinosus VT 2–5)**.",
+  "diskriminator": "Hafal ketiganya sebagai **deret berurutan**, bukan tiga fakta terpisah. Major paling bawah."
  },
  {
   "n": 230,
@@ -3454,7 +5065,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Processus spinosus VC7 dan VT1",
-  "rationale": "**Processus spinosus VC7 dan VT1** — tepat di atas origo rhomboideus **major** (VT 2–5). Keduanya berinsersio di **margo medialis scapulae** dan diinervasi **n. dorsalis scapulae**, dengan fungsi yang sama: mengangkat dan adduksi scapula.  —  **Pola Pasangan berlawanan:** **Minor di atas, major di bawah.** Perhatikan: VC7–VT1 (minor) tepat berbatasan dengan VT2–5 (major)."
+  "rationale": "**Processus spinosus VC7 dan VT1** — tepat di atas origo rhomboideus **major** (VT 2–5). Keduanya berinsersio di **margo medialis scapulae** dan diinervasi **n. dorsalis scapulae**, dengan fungsi yang sama: mengangkat dan adduksi scapula.  —  **Pola Pasangan berlawanan:** **Minor di atas, major di bawah.** Perhatikan: VC7–VT1 (minor) tepat berbatasan dengan VT2–5 (major).",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Processus spinosus VC7 dan VT1** — tepat di atas origo rhomboideus **major** (VT 2–5). Keduanya berinsersio di **margo medialis scapulae** dan diinervasi **n. dorsalis scapulae**, dengan fungsi yang sama: mengangkat dan adduksi scapula.",
+  "diskriminator": "**Minor di atas, major di bawah.** Perhatikan: VC7–VT1 (minor) tepat berbatasan dengan VT2–5 (major)."
  },
  {
   "n": 231,
@@ -3469,7 +5087,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Processus transversus VC 1–4",
-  "rationale": "**Processus transversus VC 1–4** — perhatikan bahwa ini satu-satunya dari tiga otot kelompok itu yang berorigo pada **processus TRANSVERSUS**, sementara kedua rhomboideus berorigo pada **processus SPINOSUS**.  —  **Pola Ciri tetangga:** Diskriminatornya jenis processus: **levator scapulae = transversus; rhomboideus = spinosus**."
+  "rationale": "**Processus transversus VC 1–4** — perhatikan bahwa ini satu-satunya dari tiga otot kelompok itu yang berorigo pada **processus TRANSVERSUS**, sementara kedua rhomboideus berorigo pada **processus SPINOSUS**.  —  **Pola Ciri tetangga:** Diskriminatornya jenis processus: **levator scapulae = transversus; rhomboideus = spinosus**.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Processus transversus VC 1–4** — perhatikan bahwa ini satu-satunya dari tiga otot kelompok itu yang berorigo pada **processus TRANSVERSUS**, sementara kedua rhomboideus berorigo pada **processus SPINOSUS**.",
+  "diskriminator": "Diskriminatornya jenis processus: **levator scapulae = transversus; rhomboideus = spinosus**."
  },
  {
   "n": 232,
@@ -3484,7 +5109,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Rhomboideus major, rhomboideus minor, levator scapulae; n. dorsalis scapulae",
-  "rationale": "**M. rhomboideus major, M. rhomboideus minor, dan M. levator scapulae** — ketiganya berinsersio di **margo medialis scapulae** dan diinervasi **n. dorsalis scapulae**. Hafal sebagai satu paket; pembedanya hanya origo. Catat bahwa **M. serratus anterior** juga berinsersio di margo medialis, tetapi sarafnya **n. thoracicus longus**.  —  **Pola Angka & daftar:** Satu insersio, satu saraf, tiga otot. Yang **mirip tapi beda saraf**: serratus anterior."
+  "rationale": "**M. rhomboideus major, M. rhomboideus minor, dan M. levator scapulae** — ketiganya berinsersio di **margo medialis scapulae** dan diinervasi **n. dorsalis scapulae**. Hafal sebagai satu paket; pembedanya hanya origo. Catat bahwa **M. serratus anterior** juga berinsersio di margo medialis, tetapi sarafnya **n. thoracicus longus**.  —  **Pola Angka & daftar:** Satu insersio, satu saraf, tiga otot. Yang **mirip tapi beda saraf**: serratus anterior.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**M. rhomboideus major, M. rhomboideus minor, dan M. levator scapulae** — ketiganya berinsersio di **margo medialis scapulae** dan diinervasi **n. dorsalis scapulae**. Hafal sebagai satu paket; pembedanya hanya origo. Catat bahwa **M. serratus anterior** juga berinsersio di margo medialis, tetapi sarafnya **n. thoracicus longus**.",
+  "diskriminator": "Satu insersio, satu saraf, tiga otot. Yang **mirip tapi beda saraf**: serratus anterior."
  },
  {
   "n": 233,
@@ -3499,7 +5131,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Angulus superior",
-  "rationale": "**Angulus superior** margo medialis scapulae. Sesuai namanya — **levator** = yang mengangkat — dia menarik **bagian medial-atas** scapula ke atas, dan menarik bahu ke belakang. Menempel di sudut atas membuat tarikannya efektif untuk mengangkat.  —  **Pola Ciri tetangga:** **Levator = mengangkat**, jadi insersionya logis di **angulus superior**, bukan inferior."
+  "rationale": "**Angulus superior** margo medialis scapulae. Sesuai namanya — **levator** = yang mengangkat — dia menarik **bagian medial-atas** scapula ke atas, dan menarik bahu ke belakang. Menempel di sudut atas membuat tarikannya efektif untuk mengangkat.  —  **Pola Ciri tetangga:** **Levator = mengangkat**, jadi insersionya logis di **angulus superior**, bukan inferior.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Angulus superior** margo medialis scapulae. Sesuai namanya — **levator** = yang mengangkat — dia menarik **bagian medial-atas** scapula ke atas, dan menarik bahu ke belakang. Menempel di sudut atas membuat tarikannya efektif untuk mengangkat.",
+  "diskriminator": "**Levator = mengangkat**, jadi insersionya logis di **angulus superior**, bukan inferior."
  },
  {
   "n": 234,
@@ -3514,7 +5153,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Setengah medial clavicula, sternum, dan cartilago costae 1–6",
-  "rationale": "**[UB asli]** **Setengah medial clavicula, sternum, dan cartilago costae 1–6.** Tiga origo ini yang menjadi ciri khas soal UB. Distraktornya: B = pectoralis minor (costae 3–5); C = subclavius; D = serratus anterior; E = latissimus dorsi.  —  **Pola Ciri tetangga:** Tiga origo = tiga tulang berbeda (clavicula, sternum, costae). Tidak ada otot lain di regio ini dengan pola seperti itu."
+  "rationale": "**[UB asli]** **Setengah medial clavicula, sternum, dan cartilago costae 1–6.** Tiga origo ini yang menjadi ciri khas soal UB. Distraktornya: B = pectoralis minor (costae 3–5); C = subclavius; D = serratus anterior; E = latissimus dorsi.  —  **Pola Ciri tetangga:** Tiga origo = tiga tulang berbeda (clavicula, sternum, costae). Tidak ada otot lain di regio ini dengan pola seperti itu.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Setengah medial clavicula, sternum, dan cartilago costae 1–6.** Tiga origo ini yang menjadi ciri khas soal UB. Distraktornya: B = pectoralis minor (costae 3–5); C = subclavius; D = serratus anterior; E = latissimus dorsi.",
+  "diskriminator": "Tiga origo = tiga tulang berbeda (clavicula, sternum, costae). Tidak ada otot lain di regio ini dengan pola seperti itu."
  },
  {
   "n": 235,
@@ -3529,7 +5175,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Crista tuberculi majoris humeri",
-  "rationale": "**Crista tuberculi majoris humeri** — perhatikan kesesuaian namanya: tuberculum **MAJUS** → pectoralis **MAJOR**. Dari empat otot regio pectoralis, **hanya dia** yang berinsersio di humerus; tiga lainnya di scapula atau clavicula.  —  **Pola Ciri tetangga:** Jangan tertukar dengan **sulcus intertubercularis**, yang milik latissimus dorsi."
+  "rationale": "**Crista tuberculi majoris humeri** — perhatikan kesesuaian namanya: tuberculum **MAJUS** → pectoralis **MAJOR**. Dari empat otot regio pectoralis, **hanya dia** yang berinsersio di humerus; tiga lainnya di scapula atau clavicula.  —  **Pola Ciri tetangga:** Jangan tertukar dengan **sulcus intertubercularis**, yang milik latissimus dorsi.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Crista tuberculi majoris humeri** — perhatikan kesesuaian namanya: tuberculum **MAJUS** → pectoralis **MAJOR**. Dari empat otot regio pectoralis, **hanya dia** yang berinsersio di humerus; tiga lainnya di scapula atau clavicula.",
+  "diskriminator": "Jangan tertukar dengan **sulcus intertubercularis**, yang milik latissimus dorsi."
  },
  {
   "n": 236,
@@ -3544,7 +5197,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Adduksi dan endorotasi lengan atas",
-  "rationale": "**Adduksi dan endorotasi lengan atas**, ditambah **fleksi** lewat bagian klavikularnya. Perhatikan bahwa adduksi dan endorotasi **sama dengan fungsi latissimus dorsi** — karena insersio keduanya berdekatan di tuberculum humeri. Yang berbeda: pectoralis major **fleksi**, latissimus dorsi **ekstensi**.  —  **Pola Ciri tetangga:** Dua otot, dua fungsi sama (adduksi + endorotasi), satu fungsi berlawanan (fleksi vs ekstensi)."
+  "rationale": "**Adduksi dan endorotasi lengan atas**, ditambah **fleksi** lewat bagian klavikularnya. Perhatikan bahwa adduksi dan endorotasi **sama dengan fungsi latissimus dorsi** — karena insersio keduanya berdekatan di tuberculum humeri. Yang berbeda: pectoralis major **fleksi**, latissimus dorsi **ekstensi**.  —  **Pola Ciri tetangga:** Dua otot, dua fungsi sama (adduksi + endorotasi), satu fungsi berlawanan (fleksi vs ekstensi).",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Adduksi dan endorotasi lengan atas**, ditambah **fleksi** lewat bagian klavikularnya. Perhatikan bahwa adduksi dan endorotasi **sama dengan fungsi latissimus dorsi** — karena insersio keduanya berdekatan di tuberculum humeri. Yang berbeda: pectoralis major **fleksi**, latissimus dorsi **ekstensi**.",
+  "diskriminator": "Dua otot, dua fungsi sama (adduksi + endorotasi), satu fungsi berlawanan (fleksi vs ekstensi)."
  },
  {
   "n": 237,
@@ -3559,7 +5219,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "N. pectoralis medialis et lateralis",
-  "rationale": "**N. pectoralis medialis ET lateralis** — dua saraf. Bandingkan **M. pectoralis minor** yang hanya diinervasi **n. pectoralis medialis**. Jadi jumlah sarafnya sendiri menjadi pembeda antara major dan minor.  —  **Pola Angka & daftar:** **Major = dua saraf (medialis + lateralis); minor = satu saraf (medialis saja)**."
+  "rationale": "**N. pectoralis medialis ET lateralis** — dua saraf. Bandingkan **M. pectoralis minor** yang hanya diinervasi **n. pectoralis medialis**. Jadi jumlah sarafnya sendiri menjadi pembeda antara major dan minor.  —  **Pola Angka & daftar:** **Major = dua saraf (medialis + lateralis); minor = satu saraf (medialis saja)**.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. pectoralis medialis ET lateralis** — dua saraf. Bandingkan **M. pectoralis minor** yang hanya diinervasi **n. pectoralis medialis**. Jadi jumlah sarafnya sendiri menjadi pembeda antara major dan minor.",
+  "diskriminator": "**Major = dua saraf (medialis + lateralis); minor = satu saraf (medialis saja)**."
  },
  {
   "n": 238,
@@ -3574,7 +5241,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "M. pectoralis major",
-  "rationale": "**[UB asli]** **M. pectoralis major.** Kata kunci tercepat adalah **insersio di humerus** — karena dari empat otot regio pectoralis, hanya dia yang menyentuh humerus. Pectoralis minor → processus coracoideus; serratus anterior → margo medialis scapulae; subclavius → facies inferior claviculae.  —  **Pola Ciri tetangga:** Satu kata **“humerus”** mengeliminasi tiga distraktor tanpa perlu menghafal origonya."
+  "rationale": "**[UB asli]** **M. pectoralis major.** Kata kunci tercepat adalah **insersio di humerus** — karena dari empat otot regio pectoralis, hanya dia yang menyentuh humerus. Pectoralis minor → processus coracoideus; serratus anterior → margo medialis scapulae; subclavius → facies inferior claviculae.  —  **Pola Ciri tetangga:** Satu kata **“humerus”** mengeliminasi tiga distraktor tanpa perlu menghafal origonya.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**M. pectoralis major.** Kata kunci tercepat adalah **insersio di humerus** — karena dari empat otot regio pectoralis, hanya dia yang menyentuh humerus. Pectoralis minor → processus coracoideus; serratus anterior → margo medialis scapulae; subclavius → facies inferior claviculae.",
+  "diskriminator": "Satu kata **“humerus”** mengeliminasi tiga distraktor tanpa perlu menghafal origonya."
  },
  {
   "n": 239,
@@ -3589,7 +5263,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Margo cranialis dan facies externa costae 3–5",
-  "rationale": "**Margo cranialis dan facies externa costae 3–5.** Bandingkan dengan tetangganya di regio yang sama: **pectoralis major** = costae 1–6 + clavicula + sternum; **subclavius** = cartilago costalis I; **serratus anterior** = costae 1–8.  —  **Pola Ciri tetangga:** Empat otot pectoralis, empat rentang costae berbeda: **minor 3–5 · major 1–6 · subclavius I · serratus 1–8**."
+  "rationale": "**Margo cranialis dan facies externa costae 3–5.** Bandingkan dengan tetangganya di regio yang sama: **pectoralis major** = costae 1–6 + clavicula + sternum; **subclavius** = cartilago costalis I; **serratus anterior** = costae 1–8.  —  **Pola Ciri tetangga:** Empat otot pectoralis, empat rentang costae berbeda: **minor 3–5 · major 1–6 · subclavius I · serratus 1–8**.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Margo cranialis dan facies externa costae 3–5.** Bandingkan dengan tetangganya di regio yang sama: **pectoralis major** = costae 1–6 + clavicula + sternum; **subclavius** = cartilago costalis I; **serratus anterior** = costae 1–8.",
+  "diskriminator": "Empat otot pectoralis, empat rentang costae berbeda: **minor 3–5 · major 1–6 · subclavius I · serratus 1–8**."
  },
  {
   "n": 240,
@@ -3604,7 +5285,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Processus coracoideus scapulae; menarik scapula ke ventral dan caudal",
-  "rationale": "**Processus coracoideus scapulae**, fungsinya **menarik scapula ke ventral dan caudal** (ke depan dan ke bawah). Karena insersionya di scapula, dia menggerakkan **cingulum**, bukan lengan — berbeda dari pectoralis major.  —  **Pola Ciri tetangga:** Insersio menentukan apa yang digerakkan: **scapula (minor) vs humerus (major)**."
+  "rationale": "**Processus coracoideus scapulae**, fungsinya **menarik scapula ke ventral dan caudal** (ke depan dan ke bawah). Karena insersionya di scapula, dia menggerakkan **cingulum**, bukan lengan — berbeda dari pectoralis major.  —  **Pola Ciri tetangga:** Insersio menentukan apa yang digerakkan: **scapula (minor) vs humerus (major)**.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Processus coracoideus scapulae**, fungsinya **menarik scapula ke ventral dan caudal** (ke depan dan ke bawah). Karena insersionya di scapula, dia menggerakkan **cingulum**, bukan lengan — berbeda dari pectoralis major.",
+  "diskriminator": "Insersio menentukan apa yang digerakkan: **scapula (minor) vs humerus (major)**."
  },
  {
   "n": 241,
@@ -3619,7 +5307,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "N. pectoralis medialis",
-  "rationale": "**N. pectoralis medialis** saja. Ini pembeda dari **M. pectoralis major** yang diinervasi **medialis DAN lateralis**. Jadi untuk pasangan major–minor, jumlah sarafnya ikut membedakan, bukan hanya ukuran dan insersionya.  —  **Pola Pasangan berlawanan:** **Minor = medialis saja. Major = medialis + lateralis.**"
+  "rationale": "**N. pectoralis medialis** saja. Ini pembeda dari **M. pectoralis major** yang diinervasi **medialis DAN lateralis**. Jadi untuk pasangan major–minor, jumlah sarafnya ikut membedakan, bukan hanya ukuran dan insersionya.  —  **Pola Pasangan berlawanan:** **Minor = medialis saja. Major = medialis + lateralis.**",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. pectoralis medialis** saja. Ini pembeda dari **M. pectoralis major** yang diinervasi **medialis DAN lateralis**. Jadi untuk pasangan major–minor, jumlah sarafnya ikut membedakan, bukan hanya ukuran dan insersionya.",
+  "diskriminator": "**Minor = medialis saja. Major = medialis + lateralis.**"
  },
  {
   "n": 242,
@@ -3634,7 +5329,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Cartilago costalis I → facies inferior claviculae",
-  "rationale": "**Origo: cartilago costalis I. Insersio: facies inferior claviculae.** Fungsinya menarik bahu ke **ventral** dan menstabilkan clavicula. Namanya menjelaskan letaknya — **sub·clavius** = di bawah clavicula.  —  **Pola Ciri tetangga:** Nama otot menyebutkan letaknya: **sub-clavius** = di bawah clavicula, dan insersionya memang di facies **inferior** claviculae."
+  "rationale": "**Origo: cartilago costalis I. Insersio: facies inferior claviculae.** Fungsinya menarik bahu ke **ventral** dan menstabilkan clavicula. Namanya menjelaskan letaknya — **sub·clavius** = di bawah clavicula.  —  **Pola Ciri tetangga:** Nama otot menyebutkan letaknya: **sub-clavius** = di bawah clavicula, dan insersionya memang di facies **inferior** claviculae.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Origo: cartilago costalis I. Insersio: facies inferior claviculae.** Fungsinya menarik bahu ke **ventral** dan menstabilkan clavicula. Namanya menjelaskan letaknya — **sub·clavius** = di bawah clavicula.",
+  "diskriminator": "Nama otot menyebutkan letaknya: **sub-clavius** = di bawah clavicula, dan insersionya memang di facies **inferior** claviculae."
  },
  {
   "n": 243,
@@ -3649,7 +5351,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Costae 1–8 bagian luar tepi atas → margo medialis scapulae",
-  "rationale": "**Origo: costae 1–8 bagian luar tepi atas. Insersio: margo medialis scapulae.** Fungsinya **rotasi scapula** dan menarik scapula ke bawah-depan, serta menahan scapula menempel pada dinding thorax. Namanya dari serratus = bergerigi, karena origonya bergerigi mengikuti deretan costae.  —  **Pola Ciri tetangga:** Dia berinsersio di margo medialis scapulae seperti kelompok rhomboideus, tapi **sarafnya berbeda**."
+  "rationale": "**Origo: costae 1–8 bagian luar tepi atas. Insersio: margo medialis scapulae.** Fungsinya **rotasi scapula** dan menarik scapula ke bawah-depan, serta menahan scapula menempel pada dinding thorax. Namanya dari serratus = bergerigi, karena origonya bergerigi mengikuti deretan costae.  —  **Pola Ciri tetangga:** Dia berinsersio di margo medialis scapulae seperti kelompok rhomboideus, tapi **sarafnya berbeda**.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Origo: costae 1–8 bagian luar tepi atas. Insersio: margo medialis scapulae.** Fungsinya **rotasi scapula** dan menarik scapula ke bawah-depan, serta menahan scapula menempel pada dinding thorax. Namanya dari serratus = bergerigi, karena origonya bergerigi mengikuti deretan costae.",
+  "diskriminator": "Dia berinsersio di margo medialis scapulae seperti kelompok rhomboideus, tapi **sarafnya berbeda**."
  },
  {
   "n": 244,
@@ -3664,7 +5373,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "N. thoracicus longus; winging scapula",
-  "rationale": "**N. THORACICUS LONGUS → M. serratus anterior.** Lesinya menyebabkan **WINGING SCAPULA**: serratus anterior tidak lagi menahan scapula menempel ke dinding thorax, sehingga scapula **menonjol ke belakang seperti sayap** — paling jelas saat pasien mendorong dinding.  —  **Pola Turunkan dari prinsip:** Rantainya: **saraf → otot → fungsi hilang → tanda klinis**. Serratus menahan scapula, jadi lesinya membuat scapula terangkat."
+  "rationale": "**N. THORACICUS LONGUS → M. serratus anterior.** Lesinya menyebabkan **WINGING SCAPULA**: serratus anterior tidak lagi menahan scapula menempel ke dinding thorax, sehingga scapula **menonjol ke belakang seperti sayap** — paling jelas saat pasien mendorong dinding.  —  **Pola Turunkan dari prinsip:** Rantainya: **saraf → otot → fungsi hilang → tanda klinis**. Serratus menahan scapula, jadi lesinya membuat scapula terangkat.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. THORACICUS LONGUS → M. serratus anterior.** Lesinya menyebabkan **WINGING SCAPULA**: serratus anterior tidak lagi menahan scapula menempel ke dinding thorax, sehingga scapula **menonjol ke belakang seperti sayap** — paling jelas saat pasien mendorong dinding.",
+  "diskriminator": "Rantainya: **saraf → otot → fungsi hilang → tanda klinis**. Serratus menahan scapula, jadi lesinya membuat scapula terangkat."
  },
  {
   "n": 245,
@@ -3679,7 +5395,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "M. pectoralis major",
-  "rationale": "**[UB asli]** **Fleksi art. humeri = mengangkat lengan ke DEPAN**, jadi otot pembantunya harus berada di **anterior** → **M. pectoralis major** (bagian klavikularnya). Distraktornya: latissimus dorsi dan teres major di **posterior** → ekstensi (antagonis); supraspinatus → abduksi; teres minor → eksorotasi.  —  **Pola Turunkan dari prinsip:** **Anterior = fleksi. Posterior = ekstensi.** Dan deltoid bagian klavikular juga anterior, sehingga keduanya sejalan."
+  "rationale": "**[UB asli]** **Fleksi art. humeri = mengangkat lengan ke DEPAN**, jadi otot pembantunya harus berada di **anterior** → **M. pectoralis major** (bagian klavikularnya). Distraktornya: latissimus dorsi dan teres major di **posterior** → ekstensi (antagonis); supraspinatus → abduksi; teres minor → eksorotasi.  —  **Pola Turunkan dari prinsip:** **Anterior = fleksi. Posterior = ekstensi.** Dan deltoid bagian klavikular juga anterior, sehingga keduanya sejalan.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Fleksi art. humeri = mengangkat lengan ke DEPAN**, jadi otot pembantunya harus berada di **anterior** → **M. pectoralis major** (bagian klavikularnya). Distraktornya: latissimus dorsi dan teres major di **posterior** → ekstensi (antagonis); supraspinatus → abduksi; teres minor → eksorotasi.",
+  "diskriminator": "**Anterior = fleksi. Posterior = ekstensi.** Dan deltoid bagian klavikular juga anterior, sehingga keduanya sejalan."
  },
  {
   "n": 246,
@@ -3694,7 +5417,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sama: adduksi dan endorotasi. Berlawanan: fleksi (pectoralis) vs ekstensi (latissimus)",
-  "rationale": "Keduanya melakukan **adduksi dan endorotasi** karena insersionya berdekatan di tuberculum humeri. Tetapi **pectoralis major di anterior → FLEKSI**, sedangkan **latissimus dorsi di posterior → EKSTENSI**. Jadi keduanya **antagonis parsial**: bekerja sama untuk adduksi, saling melawan untuk fleksi-ekstensi.  —  **Pola Pasangan berlawanan:** Insersio yang berdekatan menjelaskan **fungsi yang sama**; letak anterior vs posterior menjelaskan yang **berlawanan**."
+  "rationale": "Keduanya melakukan **adduksi dan endorotasi** karena insersionya berdekatan di tuberculum humeri. Tetapi **pectoralis major di anterior → FLEKSI**, sedangkan **latissimus dorsi di posterior → EKSTENSI**. Jadi keduanya **antagonis parsial**: bekerja sama untuk adduksi, saling melawan untuk fleksi-ekstensi.  —  **Pola Pasangan berlawanan:** Insersio yang berdekatan menjelaskan **fungsi yang sama**; letak anterior vs posterior menjelaskan yang **berlawanan**.",
+  "ppt": 5,
+  "grup": "Musculi dorsum & pectoralis",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Keduanya melakukan **adduksi dan endorotasi** karena insersionya berdekatan di tuberculum humeri. Tetapi **pectoralis major di anterior → FLEKSI**, sedangkan **latissimus dorsi di posterior → EKSTENSI**. Jadi keduanya **antagonis parsial**: bekerja sama untuk adduksi, saling melawan untuk fleksi-ekstensi.",
+  "diskriminator": "Insersio yang berdekatan menjelaskan **fungsi yang sama**; letak anterior vs posterior menjelaskan yang **berlawanan**."
  },
  {
   "n": 247,
@@ -3709,7 +5439,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "M. supraspinatus dan M. infraspinatus",
-  "rationale": "**N. suprascapularis → M. supraspinatus + M. infraspinatus.** Pola inervasi regio deltoidea sangat rapi: tiga saraf, tepat dua otot masing-masing — **suprascapularis** (supraspinatus, infraspinatus), **axillaris** (deltoideus, teres minor), **subscapularis** (subscapularis, teres major).  —  **Pola Angka & daftar:** Hafal sebagai **tiga pasangan**, bukan enam item. Nama saraf menunjuk wilayah scapula yang dilayaninya."
+  "rationale": "**N. suprascapularis → M. supraspinatus + M. infraspinatus.** Pola inervasi regio deltoidea sangat rapi: tiga saraf, tepat dua otot masing-masing — **suprascapularis** (supraspinatus, infraspinatus), **axillaris** (deltoideus, teres minor), **subscapularis** (subscapularis, teres major).  —  **Pola Angka & daftar:** Hafal sebagai **tiga pasangan**, bukan enam item. Nama saraf menunjuk wilayah scapula yang dilayaninya.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. suprascapularis → M. supraspinatus + M. infraspinatus.** Pola inervasi regio deltoidea sangat rapi: tiga saraf, tepat dua otot masing-masing — **suprascapularis** (supraspinatus, infraspinatus), **axillaris** (deltoideus, teres minor), **subscapularis** (subscapularis, teres major).",
+  "diskriminator": "Hafal sebagai **tiga pasangan**, bukan enam item. Nama saraf menunjuk wilayah scapula yang dilayaninya."
  },
  {
   "n": 248,
@@ -3724,7 +5461,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "M. deltoideus dan M. teres minor",
-  "rationale": "**N. axillaris → M. deltoideus + M. teres minor.** Perhatikan bahwa **teres MINOR** ikut n. axillaris sementara **teres MAJOR** ikut n. subscapularis — satu kata minor/major mengubah sarafnya.  —  **Pola Angka & daftar:** Dua otot yang mirip nama tapi beda saraf: **teres minor (axillaris) vs teres major (subscapularis)**."
+  "rationale": "**N. axillaris → M. deltoideus + M. teres minor.** Perhatikan bahwa **teres MINOR** ikut n. axillaris sementara **teres MAJOR** ikut n. subscapularis — satu kata minor/major mengubah sarafnya.  —  **Pola Angka & daftar:** Dua otot yang mirip nama tapi beda saraf: **teres minor (axillaris) vs teres major (subscapularis)**.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. axillaris → M. deltoideus + M. teres minor.** Perhatikan bahwa **teres MINOR** ikut n. axillaris sementara **teres MAJOR** ikut n. subscapularis — satu kata minor/major mengubah sarafnya.",
+  "diskriminator": "Dua otot yang mirip nama tapi beda saraf: **teres minor (axillaris) vs teres major (subscapularis)**."
  },
  {
   "n": 249,
@@ -3739,7 +5483,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "M. subscapularis dan M. teres major",
-  "rationale": "**N. subscapularis → M. subscapularis + M. teres major.** Menarik: kedua otot ini sama-sama melakukan **ENDOrotasi**, sementara pasangan n. suprascapularis dan n. axillaris mengurus eksorotasi (infraspinatus, teres minor). Jadi saraf dan arah rotasi ikut sejalan.  —  **Pola Angka & daftar:** Satu saraf, dua otot, satu arah rotasi: **subscapularis dan teres major keduanya endorotasi**."
+  "rationale": "**N. subscapularis → M. subscapularis + M. teres major.** Menarik: kedua otot ini sama-sama melakukan **ENDOrotasi**, sementara pasangan n. suprascapularis dan n. axillaris mengurus eksorotasi (infraspinatus, teres minor). Jadi saraf dan arah rotasi ikut sejalan.  —  **Pola Angka & daftar:** Satu saraf, dua otot, satu arah rotasi: **subscapularis dan teres major keduanya endorotasi**.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. subscapularis → M. subscapularis + M. teres major.** Menarik: kedua otot ini sama-sama melakukan **ENDOrotasi**, sementara pasangan n. suprascapularis dan n. axillaris mengurus eksorotasi (infraspinatus, teres minor). Jadi saraf dan arah rotasi ikut sejalan.",
+  "diskriminator": "Satu saraf, dua otot, satu arah rotasi: **subscapularis dan teres major keduanya endorotasi**."
  },
  {
   "n": 250,
@@ -3754,7 +5505,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Supraspinatus, infraspinatus, teres minor, subscapularis",
-  "rationale": "Rotator cuff = **SITS**: **S**upraspinatus, **I**nfraspinatus, **T**eres minor, **S**ubscapularis. Dua otot yang sering diselundupkan sebagai distraktor: **M. teres MAJOR** dan **M. deltoideus** — keduanya **bukan** anggota cuff.  —  **Pola Angka & daftar:** Mnemonik **SITS**. Dan ingat yang bukan anggota: **teres major** dan **deltoideus**."
+  "rationale": "Rotator cuff = **SITS**: **S**upraspinatus, **I**nfraspinatus, **T**eres minor, **S**ubscapularis. Dua otot yang sering diselundupkan sebagai distraktor: **M. teres MAJOR** dan **M. deltoideus** — keduanya **bukan** anggota cuff.  —  **Pola Angka & daftar:** Mnemonik **SITS**. Dan ingat yang bukan anggota: **teres major** dan **deltoideus**.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Rotator cuff = **SITS**: **S**upraspinatus, **I**nfraspinatus, **T**eres minor, **S**ubscapularis. Dua otot yang sering diselundupkan sebagai distraktor: **M. teres MAJOR** dan **M. deltoideus** — keduanya **bukan** anggota cuff.",
+  "diskriminator": "Mnemonik **SITS**. Dan ingat yang bukan anggota: **teres major** dan **deltoideus**."
  },
  {
   "n": 251,
@@ -3769,7 +5527,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "M. teres major",
-  "rationale": "**M. TERES MAJOR bukan anggota rotator cuff**, meskipun namanya mirip teres minor dan letaknya bersebelahan. Pembedanya lengkap: teres minor = anggota cuff, n. axillaris, **ekso**rotasi; teres major = bukan cuff, n. subscapularis, **endo**rotasi + adduksi.  —  **Pola Ciri tetangga:** Satu kata **minor/major** membedakan keanggotaan cuff, saraf, DAN arah rotasi sekaligus."
+  "rationale": "**M. TERES MAJOR bukan anggota rotator cuff**, meskipun namanya mirip teres minor dan letaknya bersebelahan. Pembedanya lengkap: teres minor = anggota cuff, n. axillaris, **ekso**rotasi; teres major = bukan cuff, n. subscapularis, **endo**rotasi + adduksi.  —  **Pola Ciri tetangga:** Satu kata **minor/major** membedakan keanggotaan cuff, saraf, DAN arah rotasi sekaligus.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**M. TERES MAJOR bukan anggota rotator cuff**, meskipun namanya mirip teres minor dan letaknya bersebelahan. Pembedanya lengkap: teres minor = anggota cuff, n. axillaris, **ekso**rotasi; teres major = bukan cuff, n. subscapularis, **endo**rotasi + adduksi.",
+  "diskriminator": "Satu kata **minor/major** membedakan keanggotaan cuff, saraf, DAN arah rotasi sekaligus."
  },
  {
   "n": 252,
@@ -3784,7 +5549,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Teres minor eksorotasi, teres major endorotasi",
-  "rationale": "**Teres MINOR → EKSOrotasi** (bersama infraspinatus). **Teres MAJOR → ENDOrotasi + adduksi** (mirip latissimus dorsi, dan memang keduanya bertetangga). Jadi dua otot bersebelahan dengan nama hampir sama justru **berlawanan** fungsi rotasinya.  —  **Pola Pasangan berlawanan:** Kelompok eksorotasi: **infraspinatus + teres minor**. Kelompok endorotasi: **subscapularis + teres major**."
+  "rationale": "**Teres MINOR → EKSOrotasi** (bersama infraspinatus). **Teres MAJOR → ENDOrotasi + adduksi** (mirip latissimus dorsi, dan memang keduanya bertetangga). Jadi dua otot bersebelahan dengan nama hampir sama justru **berlawanan** fungsi rotasinya.  —  **Pola Pasangan berlawanan:** Kelompok eksorotasi: **infraspinatus + teres minor**. Kelompok endorotasi: **subscapularis + teres major**.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Teres MINOR → EKSOrotasi** (bersama infraspinatus). **Teres MAJOR → ENDOrotasi + adduksi** (mirip latissimus dorsi, dan memang keduanya bertetangga). Jadi dua otot bersebelahan dengan nama hampir sama justru **berlawanan** fungsi rotasinya.",
+  "diskriminator": "Kelompok eksorotasi: **infraspinatus + teres minor**. Kelompok endorotasi: **subscapularis + teres major**."
  },
  {
   "n": 253,
@@ -3799,7 +5571,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Memulai gerakan abduksi lengan (0–15 derajat)",
-  "rationale": "**M. supraspinatus memulai abduksi** lengan pada rentang awal (sekitar 0–15 derajat), setelah itu **M. deltoideus** bagian tengah mengambil alih. Itu sebabnya robekan supraspinatus membuat pasien sulit **memulai** mengangkat lengan ke samping meski deltoid masih utuh.  —  **Pola Ciri tetangga:** Supraspinatus = **pemicu** abduksi; deltoid bagian tengah = **penerus** abduksi."
+  "rationale": "**M. supraspinatus memulai abduksi** lengan pada rentang awal (sekitar 0–15 derajat), setelah itu **M. deltoideus** bagian tengah mengambil alih. Itu sebabnya robekan supraspinatus membuat pasien sulit **memulai** mengangkat lengan ke samping meski deltoid masih utuh.  —  **Pola Ciri tetangga:** Supraspinatus = **pemicu** abduksi; deltoid bagian tengah = **penerus** abduksi.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**M. supraspinatus memulai abduksi** lengan pada rentang awal (sekitar 0–15 derajat), setelah itu **M. deltoideus** bagian tengah mengambil alih. Itu sebabnya robekan supraspinatus membuat pasien sulit **memulai** mengangkat lengan ke samping meski deltoid masih utuh.",
+  "diskriminator": "Supraspinatus = **pemicu** abduksi; deltoid bagian tengah = **penerus** abduksi."
  },
  {
   "n": 254,
@@ -3814,7 +5593,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Eksorotasi lengan",
-  "rationale": "Keduanya melakukan **EKSOrotasi (rotasi lateral)** lengan. Keduanya juga berada di **facies dorsalis** wilayah scapula — logis, karena otot di sisi belakang yang menarik akan memutar lengan ke luar. Pasangan kebalikannya: **subscapularis dan teres major → endorotasi**.  —  **Pola Ciri tetangga:** Posisi menentukan arah rotasi: **dorsal → eksorotasi; ventral → endorotasi**."
+  "rationale": "Keduanya melakukan **EKSOrotasi (rotasi lateral)** lengan. Keduanya juga berada di **facies dorsalis** wilayah scapula — logis, karena otot di sisi belakang yang menarik akan memutar lengan ke luar. Pasangan kebalikannya: **subscapularis dan teres major → endorotasi**.  —  **Pola Ciri tetangga:** Posisi menentukan arah rotasi: **dorsal → eksorotasi; ventral → endorotasi**.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Keduanya melakukan **EKSOrotasi (rotasi lateral)** lengan. Keduanya juga berada di **facies dorsalis** wilayah scapula — logis, karena otot di sisi belakang yang menarik akan memutar lengan ke luar. Pasangan kebalikannya: **subscapularis dan teres major → endorotasi**.",
+  "diskriminator": "Posisi menentukan arah rotasi: **dorsal → eksorotasi; ventral → endorotasi**."
  },
  {
   "n": 255,
@@ -3829,7 +5615,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Endorotasi lengan",
-  "rationale": "**ENDOrotasi (rotasi medial)** lengan. Logikanya dari letaknya: subscapularis adalah satu-satunya anggota cuff di **facies costalis (ventral)** scapula, dan otot yang menarik dari sisi depan akan memutar lengan ke dalam.  —  **Pola Ciri tetangga:** Satu-satunya anggota cuff di sisi **ventral**, dan satu-satunya anggota cuff yang **endorotasi**."
+  "rationale": "**ENDOrotasi (rotasi medial)** lengan. Logikanya dari letaknya: subscapularis adalah satu-satunya anggota cuff di **facies costalis (ventral)** scapula, dan otot yang menarik dari sisi depan akan memutar lengan ke dalam.  —  **Pola Ciri tetangga:** Satu-satunya anggota cuff di sisi **ventral**, dan satu-satunya anggota cuff yang **endorotasi**.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**ENDOrotasi (rotasi medial)** lengan. Logikanya dari letaknya: subscapularis adalah satu-satunya anggota cuff di **facies costalis (ventral)** scapula, dan otot yang menarik dari sisi depan akan memutar lengan ke dalam.",
+  "diskriminator": "Satu-satunya anggota cuff di sisi **ventral**, dan satu-satunya anggota cuff yang **endorotasi**."
  },
  {
   "n": 256,
@@ -3844,7 +5637,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Menahan caput humeri di dalam cavitas glenoidalis (stabilisasi sendi)",
-  "rationale": "Fungsi utamanya **STABILISASI** — menahan caput humeri di dalam cavitas glenoidalis yang dangkal. Rotasi hanya pekerjaan sampingan. Ingat dari bagian articulationes: karena cavitas glenoidalis dangkal, **stabilitas bahu bergantung pada otot, bukan bentuk tulang**.  —  **Pola Turunkan dari prinsip:** Namanya menipu: disebut **rotator** cuff, tapi tugas utamanya **menahan**, bukan memutar."
+  "rationale": "Fungsi utamanya **STABILISASI** — menahan caput humeri di dalam cavitas glenoidalis yang dangkal. Rotasi hanya pekerjaan sampingan. Ingat dari bagian articulationes: karena cavitas glenoidalis dangkal, **stabilitas bahu bergantung pada otot, bukan bentuk tulang**.  —  **Pola Turunkan dari prinsip:** Namanya menipu: disebut **rotator** cuff, tapi tugas utamanya **menahan**, bukan memutar.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Fungsi utamanya **STABILISASI** — menahan caput humeri di dalam cavitas glenoidalis yang dangkal. Rotasi hanya pekerjaan sampingan. Ingat dari bagian articulationes: karena cavitas glenoidalis dangkal, **stabilitas bahu bergantung pada otot, bukan bentuk tulang**.",
+  "diskriminator": "Namanya menipu: disebut **rotator** cuff, tapi tugas utamanya **menahan**, bukan memutar."
  },
  {
   "n": 257,
@@ -3859,7 +5659,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Clavicula, acromion, dan spina scapulae",
-  "rationale": "**Clavicula** (bagian anterior), **acromion** (bagian tengah), dan **spina scapulae** (bagian posterior). Ketiga tempat ini juga merupakan **insersio M. trapezius** — sehingga ada rantai estafet: trapezius menggerakkan scapula, lalu deltoideus yang berorigo di scapula itu menggerakkan humerus.  —  **Pola Ciri tetangga:** Tiga origo = tiga bagian otot = tiga arah gerakan."
+  "rationale": "**Clavicula** (bagian anterior), **acromion** (bagian tengah), dan **spina scapulae** (bagian posterior). Ketiga tempat ini juga merupakan **insersio M. trapezius** — sehingga ada rantai estafet: trapezius menggerakkan scapula, lalu deltoideus yang berorigo di scapula itu menggerakkan humerus.  —  **Pola Ciri tetangga:** Tiga origo = tiga bagian otot = tiga arah gerakan.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Clavicula** (bagian anterior), **acromion** (bagian tengah), dan **spina scapulae** (bagian posterior). Ketiga tempat ini juga merupakan **insersio M. trapezius** — sehingga ada rantai estafet: trapezius menggerakkan scapula, lalu deltoideus yang berorigo di scapula itu menggerakkan humerus.",
+  "diskriminator": "Tiga origo = tiga bagian otot = tiga arah gerakan."
  },
  {
   "n": 258,
@@ -3874,7 +5681,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Fleksi lengan",
-  "rationale": "**Bagian anterior (origo clavicula) → FLEKSI** lengan. **Bagian tengah (acromion) → ABDUKSI**. **Bagian posterior (spina scapulae) → EKSTENSI**. Semuanya bisa diturunkan: **arah tarikan mengikuti letak origo** — origo di depan menarik ke depan, origo di belakang menarik ke belakang.  —  **Pola Turunkan dari prinsip:** Tidak perlu hafal tiga fungsi — turunkan dari letak origonya."
+  "rationale": "**Bagian anterior (origo clavicula) → FLEKSI** lengan. **Bagian tengah (acromion) → ABDUKSI**. **Bagian posterior (spina scapulae) → EKSTENSI**. Semuanya bisa diturunkan: **arah tarikan mengikuti letak origo** — origo di depan menarik ke depan, origo di belakang menarik ke belakang.  —  **Pola Turunkan dari prinsip:** Tidak perlu hafal tiga fungsi — turunkan dari letak origonya.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Bagian anterior (origo clavicula) → FLEKSI** lengan. **Bagian tengah (acromion) → ABDUKSI**. **Bagian posterior (spina scapulae) → EKSTENSI**. Semuanya bisa diturunkan: **arah tarikan mengikuti letak origo** — origo di depan menarik ke depan, origo di belakang menarik ke belakang.",
+  "diskriminator": "Tidak perlu hafal tiga fungsi — turunkan dari letak origonya."
  },
  {
   "n": 259,
@@ -3889,7 +5703,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Abduksi lengan",
-  "rationale": "**Bagian tengah (origo acromion) → ABDUKSI** lengan, melanjutkan gerakan yang dimulai **M. supraspinatus**. Acromion berada di **sisi samping-atas** bahu, jadi tarikannya mengangkat lengan ke **samping**.  —  **Pola Turunkan dari prinsip:** Rantai abduksi: **supraspinatus memulai (0–15°) → deltoid tengah melanjutkan**."
+  "rationale": "**Bagian tengah (origo acromion) → ABDUKSI** lengan, melanjutkan gerakan yang dimulai **M. supraspinatus**. Acromion berada di **sisi samping-atas** bahu, jadi tarikannya mengangkat lengan ke **samping**.  —  **Pola Turunkan dari prinsip:** Rantai abduksi: **supraspinatus memulai (0–15°) → deltoid tengah melanjutkan**.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Bagian tengah (origo acromion) → ABDUKSI** lengan, melanjutkan gerakan yang dimulai **M. supraspinatus**. Acromion berada di **sisi samping-atas** bahu, jadi tarikannya mengangkat lengan ke **samping**.",
+  "diskriminator": "Rantai abduksi: **supraspinatus memulai (0–15°) → deltoid tengah melanjutkan**."
  },
  {
   "n": 260,
@@ -3904,7 +5725,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Tuberositas deltoidea humeri; n. axillaris",
-  "rationale": "**[UB asli]** Otot terbesar regio deltoidea adalah **M. deltoideus**: insersio di **TUBEROSITAS DELTOIDEA humeri**, inervasi **N. AXILLARIS**. Namanya membocorkan insersionya — tuberositas **deltoidea** untuk M. **deltoideus**.  —  **Pola Angka & daftar:** Soal menuntut **dua** jawaban: insersio dan saraf. Pastikan keduanya cocok pada opsi yang kamu pilih."
+  "rationale": "**[UB asli]** Otot terbesar regio deltoidea adalah **M. deltoideus**: insersio di **TUBEROSITAS DELTOIDEA humeri**, inervasi **N. AXILLARIS**. Namanya membocorkan insersionya — tuberositas **deltoidea** untuk M. **deltoideus**.  —  **Pola Angka & daftar:** Soal menuntut **dua** jawaban: insersio dan saraf. Pastikan keduanya cocok pada opsi yang kamu pilih.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "ANG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Otot terbesar regio deltoidea adalah **M. deltoideus**: insersio di **TUBEROSITAS DELTOIDEA humeri**, inervasi **N. AXILLARIS**. Namanya membocorkan insersionya — tuberositas **deltoidea** untuk M. **deltoideus**.",
+  "diskriminator": "Soal menuntut **dua** jawaban: insersio dan saraf. Pastikan keduanya cocok pada opsi yang kamu pilih."
  },
  {
   "n": 261,
@@ -3919,7 +5747,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Trapezius memutar scapula lebih dahulu, lalu deltoideus menggerakkan humerus dari landasan baru itu",
-  "rationale": "Ada **rantai estafet**: untuk mengangkat lengan sampai di atas kepala, **scapula harus diputar dulu** oleh trapezius dan serratus anterior, baru deltoid dapat melanjutkan abduksi humerus. Saat deltoid bekerja, trapezius bertindak sebagai **FIXATOR** yang menstabilkan origonya.  —  **Pola Turunkan dari prinsip:** Ini penerapan konsep **fixator** dari PPT 2: otot yang menstabilkan origo agar prime mover bekerja efektif."
+  "rationale": "Ada **rantai estafet**: untuk mengangkat lengan sampai di atas kepala, **scapula harus diputar dulu** oleh trapezius dan serratus anterior, baru deltoid dapat melanjutkan abduksi humerus. Saat deltoid bekerja, trapezius bertindak sebagai **FIXATOR** yang menstabilkan origonya.  —  **Pola Turunkan dari prinsip:** Ini penerapan konsep **fixator** dari PPT 2: otot yang menstabilkan origo agar prime mover bekerja efektif.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Ada **rantai estafet**: untuk mengangkat lengan sampai di atas kepala, **scapula harus diputar dulu** oleh trapezius dan serratus anterior, baru deltoid dapat melanjutkan abduksi humerus. Saat deltoid bekerja, trapezius bertindak sebagai **FIXATOR** yang menstabilkan origonya.",
+  "diskriminator": "Ini penerapan konsep **fixator** dari PPT 2: otot yang menstabilkan origo agar prime mover bekerja efektif."
  },
  {
   "n": 262,
@@ -3934,7 +5769,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Processus coracoideus → facies anterior humeri distal, crista tuberculi minoris",
-  "rationale": "**Origo: processus coracoideus. Insersio: facies anterior humeri distal, crista tuberculi minoris.** Namanya menyebutkan kedua ujungnya: **coraco** (processus coracoideus) + **brachialis** (humerus/brachium). Dia satu-satunya otot brachium yang berinsersio di **humerus**, bukan di antebrachium.  —  **Pola Ciri tetangga:** Nama otot = origo + insersio. Dan dia tidak melintasi siku, jadi tidak ikut fleksi siku."
+  "rationale": "**Origo: processus coracoideus. Insersio: facies anterior humeri distal, crista tuberculi minoris.** Namanya menyebutkan kedua ujungnya: **coraco** (processus coracoideus) + **brachialis** (humerus/brachium). Dia satu-satunya otot brachium yang berinsersio di **humerus**, bukan di antebrachium.  —  **Pola Ciri tetangga:** Nama otot = origo + insersio. Dan dia tidak melintasi siku, jadi tidak ikut fleksi siku.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Origo: processus coracoideus. Insersio: facies anterior humeri distal, crista tuberculi minoris.** Namanya menyebutkan kedua ujungnya: **coraco** (processus coracoideus) + **brachialis** (humerus/brachium). Dia satu-satunya otot brachium yang berinsersio di **humerus**, bukan di antebrachium.",
+  "diskriminator": "Nama otot = origo + insersio. Dan dia tidak melintasi siku, jadi tidak ikut fleksi siku."
  },
  {
   "n": 263,
@@ -3949,7 +5791,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Facies anterior humeri distal tuberositas deltoidea",
-  "rationale": "**Facies anterior humeri, distal dari tuberositas deltoidea.** Perhatikan bahwa origonya di **humerus**, bukan scapula — jadi M. brachialis hanya melintasi **satu** sendi (art. cubiti). Itu sebabnya dia fleksor murni dan tidak ikut menggerakkan bahu.  —  **Pola Ciri tetangga:** Otot yang melintasi **satu sendi** fungsinya tunggal. Biceps melintasi dua sendi, jadi fungsinya ganda."
+  "rationale": "**Facies anterior humeri, distal dari tuberositas deltoidea.** Perhatikan bahwa origonya di **humerus**, bukan scapula — jadi M. brachialis hanya melintasi **satu** sendi (art. cubiti). Itu sebabnya dia fleksor murni dan tidak ikut menggerakkan bahu.  —  **Pola Ciri tetangga:** Otot yang melintasi **satu sendi** fungsinya tunggal. Biceps melintasi dua sendi, jadi fungsinya ganda.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Facies anterior humeri, distal dari tuberositas deltoidea.** Perhatikan bahwa origonya di **humerus**, bukan scapula — jadi M. brachialis hanya melintasi **satu** sendi (art. cubiti). Itu sebabnya dia fleksor murni dan tidak ikut menggerakkan bahu.",
+  "diskriminator": "Otot yang melintasi **satu sendi** fungsinya tunggal. Biceps melintasi dua sendi, jadi fungsinya ganda."
  },
  {
   "n": 264,
@@ -3964,7 +5813,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Tuberositas ulnae",
-  "rationale": "**Tuberositas ULNAE.** Ini pembeda penting dari **M. biceps brachii** yang berinsersio di **tuberositas RADII**. Karena berinsersio pada ulna — tulang yang tidak berputar — M. brachialis adalah **fleksor murni** yang efektif pada semua posisi lengan bawah.  —  **Pola Ciri tetangga:** **Brachialis → ulna (fleksi murni). Biceps → radius (fleksi + supinasi).**"
+  "rationale": "**Tuberositas ULNAE.** Ini pembeda penting dari **M. biceps brachii** yang berinsersio di **tuberositas RADII**. Karena berinsersio pada ulna — tulang yang tidak berputar — M. brachialis adalah **fleksor murni** yang efektif pada semua posisi lengan bawah.  —  **Pola Ciri tetangga:** **Brachialis → ulna (fleksi murni). Biceps → radius (fleksi + supinasi).**",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Tuberositas ULNAE.** Ini pembeda penting dari **M. biceps brachii** yang berinsersio di **tuberositas RADII**. Karena berinsersio pada ulna — tulang yang tidak berputar — M. brachialis adalah **fleksor murni** yang efektif pada semua posisi lengan bawah.",
+  "diskriminator": "**Brachialis → ulna (fleksi murni). Biceps → radius (fleksi + supinasi).**"
  },
  {
   "n": 265,
@@ -3979,7 +5835,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Tuberculum supraglenoidale",
-  "rationale": "**[UB asli]** **Caput longum → tuberculum SUPRAglenoidale.** Sementara **caput breve → processus coracoideus bagian lateral**. Dua caput, dua origo, keduanya di scapula — itulah sebabnya biceps melintasi **art. humeri DAN art. cubiti**, sehingga ikut berperan pada fleksi bahu juga.  —  **Pola Ciri tetangga:** **Supra**glenoidale = biceps caput longum. **Infra**glenoidale = triceps caput longum."
+  "rationale": "**[UB asli]** **Caput longum → tuberculum SUPRAglenoidale.** Sementara **caput breve → processus coracoideus bagian lateral**. Dua caput, dua origo, keduanya di scapula — itulah sebabnya biceps melintasi **art. humeri DAN art. cubiti**, sehingga ikut berperan pada fleksi bahu juga.  —  **Pola Ciri tetangga:** **Supra**glenoidale = biceps caput longum. **Infra**glenoidale = triceps caput longum.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Caput longum → tuberculum SUPRAglenoidale.** Sementara **caput breve → processus coracoideus bagian lateral**. Dua caput, dua origo, keduanya di scapula — itulah sebabnya biceps melintasi **art. humeri DAN art. cubiti**, sehingga ikut berperan pada fleksi bahu juga.",
+  "diskriminator": "**Supra**glenoidale = biceps caput longum. **Infra**glenoidale = triceps caput longum."
  },
  {
   "n": 266,
@@ -3994,7 +5857,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Processus coracoideus bagian lateral",
-  "rationale": "**Caput breve → processus coracoideus bagian lateral** — bersama **M. coracobrachialis** yang juga berorigo di situ. Jadi processus coracoideus adalah origo bagi **dua** otot (biceps caput breve, coracobrachialis) dan insersio bagi **satu** otot (pectoralis minor).  —  **Pola Ciri tetangga:** Processus coracoideus: **dua origo, satu insersio**. Hafal ketiganya sebagai satu kelompok."
+  "rationale": "**Caput breve → processus coracoideus bagian lateral** — bersama **M. coracobrachialis** yang juga berorigo di situ. Jadi processus coracoideus adalah origo bagi **dua** otot (biceps caput breve, coracobrachialis) dan insersio bagi **satu** otot (pectoralis minor).  —  **Pola Ciri tetangga:** Processus coracoideus: **dua origo, satu insersio**. Hafal ketiganya sebagai satu kelompok.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Caput breve → processus coracoideus bagian lateral** — bersama **M. coracobrachialis** yang juga berorigo di situ. Jadi processus coracoideus adalah origo bagi **dua** otot (biceps caput breve, coracobrachialis) dan insersio bagi **satu** otot (pectoralis minor).",
+  "diskriminator": "Processus coracoideus: **dua origo, satu insersio**. Hafal ketiganya sebagai satu kelompok."
  },
  {
   "n": 267,
@@ -4009,7 +5879,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Tuberositas radii",
-  "rationale": "**Tuberositas RADII.** Karena berinsersio pada radius — tulang yang berputar saat pronasi–supinasi — biceps berfungsi sebagai **fleksor siku sekaligus SUPINATOR**, dan paling kuat saat lengan bawah dalam posisi supinasi.  —  **Pola Ciri tetangga:** Insersio pada **radius** memberi fungsi tambahan supinasi; insersio pada **ulna** (brachialis) tidak."
+  "rationale": "**Tuberositas RADII.** Karena berinsersio pada radius — tulang yang berputar saat pronasi–supinasi — biceps berfungsi sebagai **fleksor siku sekaligus SUPINATOR**, dan paling kuat saat lengan bawah dalam posisi supinasi.  —  **Pola Ciri tetangga:** Insersio pada **radius** memberi fungsi tambahan supinasi; insersio pada **ulna** (brachialis) tidak.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Tuberositas RADII.** Karena berinsersio pada radius — tulang yang berputar saat pronasi–supinasi — biceps berfungsi sebagai **fleksor siku sekaligus SUPINATOR**, dan paling kuat saat lengan bawah dalam posisi supinasi.",
+  "diskriminator": "Insersio pada **radius** memberi fungsi tambahan supinasi; insersio pada **ulna** (brachialis) tidak."
  },
  {
   "n": 268,
@@ -4024,7 +5901,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Tuberculum infraglenoidale",
-  "rationale": "**[UB asli]** **Caput longum → tuberculum INFRAglenoidale** (satu-satunya caput triceps yang berorigo di scapula). **Caput mediale dan caput laterale → facies posterior humeri.** Jadi hanya caput longum yang melintasi art. humeri, sehingga triceps juga ikut membantu ekstensi dan adduksi bahu.  —  **Pola Ciri tetangga:** Dari tiga caput triceps, **hanya caput longum** berorigo di scapula; dua lainnya di humerus."
+  "rationale": "**[UB asli]** **Caput longum → tuberculum INFRAglenoidale** (satu-satunya caput triceps yang berorigo di scapula). **Caput mediale dan caput laterale → facies posterior humeri.** Jadi hanya caput longum yang melintasi art. humeri, sehingga triceps juga ikut membantu ekstensi dan adduksi bahu.  —  **Pola Ciri tetangga:** Dari tiga caput triceps, **hanya caput longum** berorigo di scapula; dua lainnya di humerus.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Caput longum → tuberculum INFRAglenoidale** (satu-satunya caput triceps yang berorigo di scapula). **Caput mediale dan caput laterale → facies posterior humeri.** Jadi hanya caput longum yang melintasi art. humeri, sehingga triceps juga ikut membantu ekstensi dan adduksi bahu.",
+  "diskriminator": "Dari tiga caput triceps, **hanya caput longum** berorigo di scapula; dua lainnya di humerus."
  },
  {
   "n": 269,
@@ -4039,7 +5923,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Olecranon",
-  "rationale": "**OLECRANON** ulnae. Karena menarik olecranon ke posterior, triceps adalah **ekstensor siku**. Tiga insersio berbeda di antebrachium proksimal yang sering ditukar: **olecranon (triceps) · tuberositas ulnae (brachialis) · tuberositas radii (biceps)**.  —  **Pola Ciri tetangga:** Hafal ketiga insersio itu sebagai satu kelompok, karena distraktornya selalu diambil dari ketiganya."
+  "rationale": "**OLECRANON** ulnae. Karena menarik olecranon ke posterior, triceps adalah **ekstensor siku**. Tiga insersio berbeda di antebrachium proksimal yang sering ditukar: **olecranon (triceps) · tuberositas ulnae (brachialis) · tuberositas radii (biceps)**.  —  **Pola Ciri tetangga:** Hafal ketiga insersio itu sebagai satu kelompok, karena distraktornya selalu diambil dari ketiganya.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**OLECRANON** ulnae. Karena menarik olecranon ke posterior, triceps adalah **ekstensor siku**. Tiga insersio berbeda di antebrachium proksimal yang sering ditukar: **olecranon (triceps) · tuberositas ulnae (brachialis) · tuberositas radii (biceps)**.",
+  "diskriminator": "Hafal ketiga insersio itu sebagai satu kelompok, karena distraktornya selalu diambil dari ketiganya."
  },
  {
   "n": 270,
@@ -4054,7 +5945,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Tiga otot; n. musculocutaneus",
-  "rationale": "**Tiga otot** — M. coracobrachialis, M. brachialis, M. biceps brachii — semuanya diinervasi **N. MUSCULOCUTANEUS** dan semuanya **fleksor**. Ini penerapan prinsip kompartemen: satu saraf melayani satu kompartemen dengan satu jenis fungsi.  —  **Pola Turunkan dari prinsip:** **Anterior brachium = 3 otot = fleksor = n. musculocutaneus.** Satu kalimat, seluruh kompartemen."
+  "rationale": "**Tiga otot** — M. coracobrachialis, M. brachialis, M. biceps brachii — semuanya diinervasi **N. MUSCULOCUTANEUS** dan semuanya **fleksor**. Ini penerapan prinsip kompartemen: satu saraf melayani satu kompartemen dengan satu jenis fungsi.  —  **Pola Turunkan dari prinsip:** **Anterior brachium = 3 otot = fleksor = n. musculocutaneus.** Satu kalimat, seluruh kompartemen.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Tiga otot** — M. coracobrachialis, M. brachialis, M. biceps brachii — semuanya diinervasi **N. MUSCULOCUTANEUS** dan semuanya **fleksor**. Ini penerapan prinsip kompartemen: satu saraf melayani satu kompartemen dengan satu jenis fungsi.",
+  "diskriminator": "**Anterior brachium = 3 otot = fleksor = n. musculocutaneus.** Satu kalimat, seluruh kompartemen."
  },
  {
   "n": 271,
@@ -4069,7 +5967,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Satu otot (M. triceps brachii); n. radialis",
-  "rationale": "**Satu otot — M. triceps brachii — diinervasi N. RADIALIS**, dan dia **ekstensor**. Pembelahan brachium sangat bersih: anterior = 3 fleksor + n. musculocutaneus; posterior = 1 ekstensor + n. radialis.  —  **Pola Turunkan dari prinsip:** Kalau soal menyebut **posterior brachium**, sarafnya pasti **n. radialis** — tanpa perlu menghafal ototnya."
+  "rationale": "**Satu otot — M. triceps brachii — diinervasi N. RADIALIS**, dan dia **ekstensor**. Pembelahan brachium sangat bersih: anterior = 3 fleksor + n. musculocutaneus; posterior = 1 ekstensor + n. radialis.  —  **Pola Turunkan dari prinsip:** Kalau soal menyebut **posterior brachium**, sarafnya pasti **n. radialis** — tanpa perlu menghafal ototnya.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Satu otot — M. triceps brachii — diinervasi N. RADIALIS**, dan dia **ekstensor**. Pembelahan brachium sangat bersih: anterior = 3 fleksor + n. musculocutaneus; posterior = 1 ekstensor + n. radialis.",
+  "diskriminator": "Kalau soal menyebut **posterior brachium**, sarafnya pasti **n. radialis** — tanpa perlu menghafal ototnya."
  },
  {
   "n": 272,
@@ -4084,7 +5989,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Tuberositas radii os radius",
-  "rationale": "**[UB asli]** Penyaringan tiga langkah: **(1)** otot ventral brachium ada tiga — coracobrachialis, brachialis, biceps brachii. **(2)** Yang **superfisial** hanya **M. biceps brachii**; dua lainnya profunda. **(3)** Insersio biceps = **tuberositas radii**. Perhatikan bahwa dua opsi terakhir adalah **ORIGO**, bukan insersio.  —  **Pola Ciri tetangga:** Soal ini menguji pemisahan **origo vs insersio**. Aturannya: origo proksimal dan tetap; insersio distal dan bergerak."
+  "rationale": "**[UB asli]** Penyaringan tiga langkah: **(1)** otot ventral brachium ada tiga — coracobrachialis, brachialis, biceps brachii. **(2)** Yang **superfisial** hanya **M. biceps brachii**; dua lainnya profunda. **(3)** Insersio biceps = **tuberositas radii**. Perhatikan bahwa dua opsi terakhir adalah **ORIGO**, bukan insersio.  —  **Pola Ciri tetangga:** Soal ini menguji pemisahan **origo vs insersio**. Aturannya: origo proksimal dan tetap; insersio distal dan bergerak.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Penyaringan tiga langkah: **(1)** otot ventral brachium ada tiga — coracobrachialis, brachialis, biceps brachii. **(2)** Yang **superfisial** hanya **M. biceps brachii**; dua lainnya profunda. **(3)** Insersio biceps = **tuberositas radii**. Perhatikan bahwa dua opsi terakhir adalah **ORIGO**, bukan insersio.",
+  "diskriminator": "Soal ini menguji pemisahan **origo vs insersio**. Aturannya: origo proksimal dan tetap; insersio distal dan bergerak."
  },
  {
   "n": 273,
@@ -4099,7 +6011,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "M. brachialis",
-  "rationale": "**[UB asli]** **M. BRACHIALIS** dianggap prime mover sejati karena berinsersio pada **tuberositas ulnae** sehingga efektif pada **semua posisi** lengan bawah. M. biceps brachii berinsersio pada radius, sehingga efektivitasnya bergantung posisi radius — paling kuat saat supinasi. M. coracobrachialis tidak melintasi siku sama sekali.  —  **Pola Ciri tetangga:** Brachialis = fleksor **murni** dan tak bergantung posisi. Biceps = fleksor **+ supinator**, bergantung posisi."
+  "rationale": "**[UB asli]** **M. BRACHIALIS** dianggap prime mover sejati karena berinsersio pada **tuberositas ulnae** sehingga efektif pada **semua posisi** lengan bawah. M. biceps brachii berinsersio pada radius, sehingga efektivitasnya bergantung posisi radius — paling kuat saat supinasi. M. coracobrachialis tidak melintasi siku sama sekali.  —  **Pola Ciri tetangga:** Brachialis = fleksor **murni** dan tak bergantung posisi. Biceps = fleksor **+ supinator**, bergantung posisi.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**M. BRACHIALIS** dianggap prime mover sejati karena berinsersio pada **tuberositas ulnae** sehingga efektif pada **semua posisi** lengan bawah. M. biceps brachii berinsersio pada radius, sehingga efektivitasnya bergantung posisi radius — paling kuat saat supinasi. M. coracobrachialis tidak melintasi siku sama sekali.",
+  "diskriminator": "Brachialis = fleksor **murni** dan tak bergantung posisi. Biceps = fleksor **+ supinator**, bergantung posisi."
  },
  {
   "n": 274,
@@ -4114,7 +6033,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "M. triceps brachii",
-  "rationale": "**[UB asli]** ROM **ekstensi** yang menurun berarti **ekstensor**-nya cedera → **M. TRICEPS BRACHII**, satu-satunya otot di kompartemen posterior brachium. Tiga distraktor (biceps, brachialis, brachioradialis) semuanya **fleksor**; kalau mereka cedera, yang menurun adalah ROM fleksi.  —  **Pola Turunkan dari prinsip:** Baca **gerakan mana** yang terganggu, lalu cari otot yang melakukan gerakan itu — bukan kebalikannya."
+  "rationale": "**[UB asli]** ROM **ekstensi** yang menurun berarti **ekstensor**-nya cedera → **M. TRICEPS BRACHII**, satu-satunya otot di kompartemen posterior brachium. Tiga distraktor (biceps, brachialis, brachioradialis) semuanya **fleksor**; kalau mereka cedera, yang menurun adalah ROM fleksi.  —  **Pola Turunkan dari prinsip:** Baca **gerakan mana** yang terganggu, lalu cari otot yang melakukan gerakan itu — bukan kebalikannya.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "ROM **ekstensi** yang menurun berarti **ekstensor**-nya cedera → **M. TRICEPS BRACHII**, satu-satunya otot di kompartemen posterior brachium. Tiga distraktor (biceps, brachialis, brachioradialis) semuanya **fleksor**; kalau mereka cedera, yang menurun adalah ROM fleksi.",
+  "diskriminator": "Baca **gerakan mana** yang terganggu, lalu cari otot yang melakukan gerakan itu — bukan kebalikannya."
  },
  {
   "n": 275,
@@ -4129,7 +6055,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "M. anconeus",
-  "rationale": "**[UB asli]** **M. ANCONEUS** membantu (assistant/sinergis) triceps dalam ekstensi siku. Dia otot kecil di posterior siku, bagian dari regio antebrachium. M. brachialis dan M. biceps brachii adalah **antagonis** di gerakan ini; M. pronator teres mengurusi pronasi.  —  **Pola Ciri tetangga:** Prime mover ekstensi siku = **triceps**; sinergisnya = **anconeus**. Keduanya posterior, keduanya n. radialis."
+  "rationale": "**[UB asli]** **M. ANCONEUS** membantu (assistant/sinergis) triceps dalam ekstensi siku. Dia otot kecil di posterior siku, bagian dari regio antebrachium. M. brachialis dan M. biceps brachii adalah **antagonis** di gerakan ini; M. pronator teres mengurusi pronasi.  —  **Pola Ciri tetangga:** Prime mover ekstensi siku = **triceps**; sinergisnya = **anconeus**. Keduanya posterior, keduanya n. radialis.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**M. ANCONEUS** membantu (assistant/sinergis) triceps dalam ekstensi siku. Dia otot kecil di posterior siku, bagian dari regio antebrachium. M. brachialis dan M. biceps brachii adalah **antagonis** di gerakan ini; M. pronator teres mengurusi pronasi.",
+  "diskriminator": "Prime mover ekstensi siku = **triceps**; sinergisnya = **anconeus**. Keduanya posterior, keduanya n. radialis."
  },
  {
   "n": 276,
@@ -4144,7 +6077,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "M. brachialis",
-  "rationale": "**[UB asli]** **M. BRACHIALIS** — keduanya fleksor siku, jadi bekerja **agonis** (bersama). M. triceps brachii dan M. anconeus adalah **antagonis** (ekstensor). M. coracobrachialis tidak melintasi siku. M. pronator quadratus mengurusi pronasi.  —  **Pola Ciri tetangga:** Agonis = searah; antagonis = berlawanan. Distraktor terkuat selalu otot yang melakukan gerakan **kebalikannya**."
+  "rationale": "**[UB asli]** **M. BRACHIALIS** — keduanya fleksor siku, jadi bekerja **agonis** (bersama). M. triceps brachii dan M. anconeus adalah **antagonis** (ekstensor). M. coracobrachialis tidak melintasi siku. M. pronator quadratus mengurusi pronasi.  —  **Pola Ciri tetangga:** Agonis = searah; antagonis = berlawanan. Distraktor terkuat selalu otot yang melakukan gerakan **kebalikannya**.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**M. BRACHIALIS** — keduanya fleksor siku, jadi bekerja **agonis** (bersama). M. triceps brachii dan M. anconeus adalah **antagonis** (ekstensor). M. coracobrachialis tidak melintasi siku. M. pronator quadratus mengurusi pronasi.",
+  "diskriminator": "Agonis = searah; antagonis = berlawanan. Distraktor terkuat selalu otot yang melakukan gerakan **kebalikannya**."
  },
  {
   "n": 277,
@@ -4159,7 +6099,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Fixator",
-  "rationale": "**FIXATOR** — trapezius menstabilkan scapula, yaitu **origo** M. deltoideus, agar deltoid dapat bekerja efektif. Ingat empat peran otot dari PPT 2: **prime mover** (penghasil utama), **antagonis** (pelawan), **sinergis** (pembantu), **fixator** (penstabil origo).  —  **Pola Penghasil vs produk:** Yang menstabilkan **origo** prime mover = fixator. Yang menambah kekuatan gerakan = sinergis."
+  "rationale": "**FIXATOR** — trapezius menstabilkan scapula, yaitu **origo** M. deltoideus, agar deltoid dapat bekerja efektif. Ingat empat peran otot dari PPT 2: **prime mover** (penghasil utama), **antagonis** (pelawan), **sinergis** (pembantu), **fixator** (penstabil origo).  —  **Pola Penghasil vs produk:** Yang menstabilkan **origo** prime mover = fixator. Yang menambah kekuatan gerakan = sinergis.",
+  "ppt": 5,
+  "grup": "Musculi deltoidea & brachium",
+  "pola": "PRO",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**FIXATOR** — trapezius menstabilkan scapula, yaitu **origo** M. deltoideus, agar deltoid dapat bekerja efektif. Ingat empat peran otot dari PPT 2: **prime mover** (penghasil utama), **antagonis** (pelawan), **sinergis** (pembantu), **fixator** (penstabil origo).",
+  "diskriminator": "Yang menstabilkan **origo** prime mover = fixator. Yang menambah kekuatan gerakan = sinergis."
  },
  {
   "n": 278,
@@ -4174,7 +6121,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "N. medianus",
-  "rationale": "**N. MEDIANUS** menginervasi sebagian besar otot **ventral/anterior antebrachium** — yaitu kelompok **fleksor** dan **pronator**. (Sebagian kecil, yaitu M. flexor carpi ulnaris dan separuh m. flexor digitorum profundus, diinervasi n. ulnaris.) Kompartemen **dorsal/posterior** — kelompok **ekstensor** — diinervasi **n. radialis**.  —  **Pola Turunkan dari prinsip:** **Ventral antebrachium = fleksor = n. medianus. Dorsal antebrachium = ekstensor = n. radialis.**"
+  "rationale": "**N. MEDIANUS** menginervasi sebagian besar otot **ventral/anterior antebrachium** — yaitu kelompok **fleksor** dan **pronator**. (Sebagian kecil, yaitu M. flexor carpi ulnaris dan separuh m. flexor digitorum profundus, diinervasi n. ulnaris.) Kompartemen **dorsal/posterior** — kelompok **ekstensor** — diinervasi **n. radialis**.  —  **Pola Turunkan dari prinsip:** **Ventral antebrachium = fleksor = n. medianus. Dorsal antebrachium = ekstensor = n. radialis.**",
+  "ppt": 5,
+  "grup": "Antebrachium & manus",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. MEDIANUS** menginervasi sebagian besar otot **ventral/anterior antebrachium** — yaitu kelompok **fleksor** dan **pronator**. (Sebagian kecil, yaitu M. flexor carpi ulnaris dan separuh m. flexor digitorum profundus, diinervasi n. ulnaris.) Kompartemen **dorsal/posterior** — kelompok **ekstensor** — diinervasi **n. radialis**.",
+  "diskriminator": "**Ventral antebrachium = fleksor = n. medianus. Dorsal antebrachium = ekstensor = n. radialis.**"
  },
  {
   "n": 279,
@@ -4189,7 +6143,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Ape hand",
-  "rationale": "**[UB asli]** Sebagian besar otot ventral antebrachii diinervasi **N. MEDIANUS**, dan lesinya menyebabkan **APE HAND** (simian hand): jempol tidak dapat melakukan **oposisi** dan otot thenar mengalami atrofi, sehingga tangan tampak seperti tangan kera. **Claw hand** adalah lesi **n. ulnaris**; **drop wrist** lesi **n. radialis**.  —  **Pola Turunkan dari prinsip:** Rantainya: **ventral antebrachium → n. medianus → ape hand**. Hafal tiga pasangan saraf–eponim tangan."
+  "rationale": "**[UB asli]** Sebagian besar otot ventral antebrachii diinervasi **N. MEDIANUS**, dan lesinya menyebabkan **APE HAND** (simian hand): jempol tidak dapat melakukan **oposisi** dan otot thenar mengalami atrofi, sehingga tangan tampak seperti tangan kera. **Claw hand** adalah lesi **n. ulnaris**; **drop wrist** lesi **n. radialis**.  —  **Pola Turunkan dari prinsip:** Rantainya: **ventral antebrachium → n. medianus → ape hand**. Hafal tiga pasangan saraf–eponim tangan.",
+  "ppt": 5,
+  "grup": "Antebrachium & manus",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Sebagian besar otot ventral antebrachii diinervasi **N. MEDIANUS**, dan lesinya menyebabkan **APE HAND** (simian hand): jempol tidak dapat melakukan **oposisi** dan otot thenar mengalami atrofi, sehingga tangan tampak seperti tangan kera. **Claw hand** adalah lesi **n. ulnaris**; **drop wrist** lesi **n. radialis**.",
+  "diskriminator": "Rantainya: **ventral antebrachium → n. medianus → ape hand**. Hafal tiga pasangan saraf–eponim tangan."
  },
  {
   "n": 280,
@@ -4204,7 +6165,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "N. medianus, a. brachialis, tendo M. biceps brachii",
-  "rationale": "Dari **medial ke lateral**: **N. medianus → A. brachialis → Tendo M. biceps brachii**. Mnemonik **MAT** (Median, Artery, Tendon). Di lapisan superfisial di atasnya berjalan **vena mediana cubiti**, yang menjadi lokasi baku pengambilan darah dan injeksi intravena.  —  **Pola Kategori jawaban:** Urutan **medial → lateral: MAT**. Dan yang superfisial (untuk disuntik) adalah **vena mediana cubiti**."
+  "rationale": "Dari **medial ke lateral**: **N. medianus → A. brachialis → Tendo M. biceps brachii**. Mnemonik **MAT** (Median, Artery, Tendon). Di lapisan superfisial di atasnya berjalan **vena mediana cubiti**, yang menjadi lokasi baku pengambilan darah dan injeksi intravena.  —  **Pola Kategori jawaban:** Urutan **medial → lateral: MAT**. Dan yang superfisial (untuk disuntik) adalah **vena mediana cubiti**.",
+  "ppt": 5,
+  "grup": "Antebrachium & manus",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Dari **medial ke lateral**: **N. medianus → A. brachialis → Tendo M. biceps brachii**. Mnemonik **MAT** (Median, Artery, Tendon). Di lapisan superfisial di atasnya berjalan **vena mediana cubiti**, yang menjadi lokasi baku pengambilan darah dan injeksi intravena.",
+  "diskriminator": "Urutan **medial → lateral: MAT**. Dan yang superfisial (untuk disuntik) adalah **vena mediana cubiti**."
  },
  {
   "n": 281,
@@ -4219,7 +6187,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "V. mediana cubiti",
-  "rationale": "**[UB asli]** **VENA MEDIANA CUBITI** — vena superfisial yang menghubungkan v. cephalica dan v. basilica di depan siku. Dipilih karena **besar, superfisial, relatif terfiksasi**, dan tidak berdampingan langsung dengan arteri besar. **A. brachialis** justru harus dihindari karena itu arteri.  —  **Pola Ciri tetangga:** Untuk injeksi dipilih **VENA** superfisial, bukan arteri. Perhatikan prefiks **v.** versus **a.** pada opsi."
+  "rationale": "**[UB asli]** **VENA MEDIANA CUBITI** — vena superfisial yang menghubungkan v. cephalica dan v. basilica di depan siku. Dipilih karena **besar, superfisial, relatif terfiksasi**, dan tidak berdampingan langsung dengan arteri besar. **A. brachialis** justru harus dihindari karena itu arteri.  —  **Pola Ciri tetangga:** Untuk injeksi dipilih **VENA** superfisial, bukan arteri. Perhatikan prefiks **v.** versus **a.** pada opsi.",
+  "ppt": 5,
+  "grup": "Antebrachium & manus",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**VENA MEDIANA CUBITI** — vena superfisial yang menghubungkan v. cephalica dan v. basilica di depan siku. Dipilih karena **besar, superfisial, relatif terfiksasi**, dan tidak berdampingan langsung dengan arteri besar. **A. brachialis** justru harus dihindari karena itu arteri.",
+  "diskriminator": "Untuk injeksi dipilih **VENA** superfisial, bukan arteri. Perhatikan prefiks **v.** versus **a.** pada opsi."
  },
  {
   "n": 282,
@@ -4234,7 +6209,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Ossa carpi dan flexor retinaculum; n. medianus",
-  "rationale": "**Canalis carpi** dibatasi oleh **ossa carpi** (dasar dan dinding) serta **FLEXOR RETINACULUM** (atap), dan yang melewatinya adalah **N. MEDIANUS** bersama tendon-tendon fleksor jari. **N. ulnaris TIDAK** lewat canalis carpi — dia lewat canalis Guyon di sebelahnya.  —  **Pola Kategori jawaban:** Canalis carpi = **flexor** retinaculum + **n. medianus**. Jangan tertukar dengan n. ulnaris."
+  "rationale": "**Canalis carpi** dibatasi oleh **ossa carpi** (dasar dan dinding) serta **FLEXOR RETINACULUM** (atap), dan yang melewatinya adalah **N. MEDIANUS** bersama tendon-tendon fleksor jari. **N. ulnaris TIDAK** lewat canalis carpi — dia lewat canalis Guyon di sebelahnya.  —  **Pola Kategori jawaban:** Canalis carpi = **flexor** retinaculum + **n. medianus**. Jangan tertukar dengan n. ulnaris.",
+  "ppt": 5,
+  "grup": "Antebrachium & manus",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Canalis carpi** dibatasi oleh **ossa carpi** (dasar dan dinding) serta **FLEXOR RETINACULUM** (atap), dan yang melewatinya adalah **N. MEDIANUS** bersama tendon-tendon fleksor jari. **N. ulnaris TIDAK** lewat canalis carpi — dia lewat canalis Guyon di sebelahnya.",
+  "diskriminator": "Canalis carpi = **flexor** retinaculum + **n. medianus**. Jangan tertukar dengan n. ulnaris."
  },
  {
   "n": 283,
@@ -4249,7 +6231,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Ape hand",
-  "rationale": "**[UB asli]** Saluran itu **canalis carpi**, dan saraf yang ditutupi flexor retinaculum adalah **N. MEDIANUS**. Penjepitannya disebut **carpal tunnel syndrome**, dan bila berlanjut sampai atrofi otot thenar maka gambarannya menjadi **APE HAND**.  —  **Pola Turunkan dari prinsip:** Rantai: **canalis carpi → flexor retinaculum → n. medianus → ape hand**."
+  "rationale": "**[UB asli]** Saluran itu **canalis carpi**, dan saraf yang ditutupi flexor retinaculum adalah **N. MEDIANUS**. Penjepitannya disebut **carpal tunnel syndrome**, dan bila berlanjut sampai atrofi otot thenar maka gambarannya menjadi **APE HAND**.  —  **Pola Turunkan dari prinsip:** Rantai: **canalis carpi → flexor retinaculum → n. medianus → ape hand**.",
+  "ppt": 5,
+  "grup": "Antebrachium & manus",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Saluran itu **canalis carpi**, dan saraf yang ditutupi flexor retinaculum adalah **N. MEDIANUS**. Penjepitannya disebut **carpal tunnel syndrome**, dan bila berlanjut sampai atrofi otot thenar maka gambarannya menjadi **APE HAND**.",
+  "diskriminator": "Rantai: **canalis carpi → flexor retinaculum → n. medianus → ape hand**."
  },
  {
   "n": 284,
@@ -4264,7 +6253,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "M. palmar interossei",
-  "rationale": "**[UB asli]** **M. PALMAR INTEROSSEI** melakukan **ADDUKSI** jari (mendekatkan jari ke aksis tangan), sementara **M. dorsal interossei** melakukan **ABDUKSI** jari. Mnemonik baku: **PAD–DAB** — **P**almar **AD**duct, **D**orsal **AB**duct.  —  **Pola Ciri tetangga:** **PAD–DAB**: Palmar = ADduksi, Dorsal = ABduksi. Distraktornya otot dengan fungsi yang sama sekali lain."
+  "rationale": "**[UB asli]** **M. PALMAR INTEROSSEI** melakukan **ADDUKSI** jari (mendekatkan jari ke aksis tangan), sementara **M. dorsal interossei** melakukan **ABDUKSI** jari. Mnemonik baku: **PAD–DAB** — **P**almar **AD**duct, **D**orsal **AB**duct.  —  **Pola Ciri tetangga:** **PAD–DAB**: Palmar = ADduksi, Dorsal = ABduksi. Distraktornya otot dengan fungsi yang sama sekali lain.",
+  "ppt": 5,
+  "grup": "Antebrachium & manus",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**M. PALMAR INTEROSSEI** melakukan **ADDUKSI** jari (mendekatkan jari ke aksis tangan), sementara **M. dorsal interossei** melakukan **ABDUKSI** jari. Mnemonik baku: **PAD–DAB** — **P**almar **AD**duct, **D**orsal **AB**duct.",
+  "diskriminator": "**PAD–DAB**: Palmar = ADduksi, Dorsal = ABduksi. Distraktornya otot dengan fungsi yang sama sekali lain."
  },
  {
   "n": 285,
@@ -4279,7 +6275,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Pronasi; n. medianus",
-  "rationale": "**PRONASI**, diinervasi **N. MEDIANUS** — konsisten dengan kaidah bahwa otot ventral antebrachium (fleksor dan pronator) diinervasi n. medianus. Namanya menyebutkan fungsinya: **pronator** = yang melakukan pronasi. Pasangannya **M. pronator quadratus** di distal.  —  **Pola Ciri tetangga:** Nama otot menyebutkan aksinya. Dan pronasi terjadi di **art. radioulnaris**, bukan di komponen hinge siku."
+  "rationale": "**PRONASI**, diinervasi **N. MEDIANUS** — konsisten dengan kaidah bahwa otot ventral antebrachium (fleksor dan pronator) diinervasi n. medianus. Namanya menyebutkan fungsinya: **pronator** = yang melakukan pronasi. Pasangannya **M. pronator quadratus** di distal.  —  **Pola Ciri tetangga:** Nama otot menyebutkan aksinya. Dan pronasi terjadi di **art. radioulnaris**, bukan di komponen hinge siku.",
+  "ppt": 5,
+  "grup": "Antebrachium & manus",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**PRONASI**, diinervasi **N. MEDIANUS** — konsisten dengan kaidah bahwa otot ventral antebrachium (fleksor dan pronator) diinervasi n. medianus. Namanya menyebutkan fungsinya: **pronator** = yang melakukan pronasi. Pasangannya **M. pronator quadratus** di distal.",
+  "diskriminator": "Nama otot menyebutkan aksinya. Dan pronasi terjadi di **art. radioulnaris**, bukan di komponen hinge siku."
  },
  {
   "n": 286,
@@ -4294,7 +6297,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Ekstensor; n. radialis",
-  "rationale": "**Kompartemen dorsal = kelompok EKSTENSOR = N. RADIALIS.** Inilah sebabnya lesi n. radialis menyebabkan **drop hand/drop wrist**: semua ekstensor pergelangan mati, sehingga pergelangan tangan terkulai dan tidak bisa diangkat.  —  **Pola Turunkan dari prinsip:** **Dorsal = ekstensor = n. radialis.** Dan nama kelainannya bisa diturunkan: ekstensor mati → tangan jatuh."
+  "rationale": "**Kompartemen dorsal = kelompok EKSTENSOR = N. RADIALIS.** Inilah sebabnya lesi n. radialis menyebabkan **drop hand/drop wrist**: semua ekstensor pergelangan mati, sehingga pergelangan tangan terkulai dan tidak bisa diangkat.  —  **Pola Turunkan dari prinsip:** **Dorsal = ekstensor = n. radialis.** Dan nama kelainannya bisa diturunkan: ekstensor mati → tangan jatuh.",
+  "ppt": 5,
+  "grup": "Antebrachium & manus",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Kompartemen dorsal = kelompok EKSTENSOR = N. RADIALIS.** Inilah sebabnya lesi n. radialis menyebabkan **drop hand/drop wrist**: semua ekstensor pergelangan mati, sehingga pergelangan tangan terkulai dan tidak bisa diangkat.",
+  "diskriminator": "**Dorsal = ekstensor = n. radialis.** Dan nama kelainannya bisa diturunkan: ekstensor mati → tangan jatuh."
  },
  {
   "n": 287,
@@ -4309,7 +6319,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Posterior siku; ekstensi siku",
-  "rationale": "**M. anconeus** adalah otot kecil di **POSTERIOR siku** yang membantu **EKSTENSI siku** — sinergis M. triceps brachii, dan seperti triceps dia diinervasi **n. radialis**. Konsisten dengan prinsip kompartemen: posterior → ekstensi → n. radialis.  —  **Pola Ciri tetangga:** Posisi menentukan fungsi dan saraf: **posterior siku → ekstensi → n. radialis**."
+  "rationale": "**M. anconeus** adalah otot kecil di **POSTERIOR siku** yang membantu **EKSTENSI siku** — sinergis M. triceps brachii, dan seperti triceps dia diinervasi **n. radialis**. Konsisten dengan prinsip kompartemen: posterior → ekstensi → n. radialis.  —  **Pola Ciri tetangga:** Posisi menentukan fungsi dan saraf: **posterior siku → ekstensi → n. radialis**.",
+  "ppt": 5,
+  "grup": "Antebrachium & manus",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**M. anconeus** adalah otot kecil di **POSTERIOR siku** yang membantu **EKSTENSI siku** — sinergis M. triceps brachii, dan seperti triceps dia diinervasi **n. radialis**. Konsisten dengan prinsip kompartemen: posterior → ekstensi → n. radialis.",
+  "diskriminator": "Posisi menentukan fungsi dan saraf: **posterior siku → ekstensi → n. radialis**."
  },
  {
   "n": 288,
@@ -4324,7 +6341,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "A. subclavia → a. axillaris → a. brachialis → a. radialis dan a. ulnaris",
-  "rationale": "Rantainya: **A. subclavia** (dextra et sinistra) → **A. axillaris** → **A. brachialis** → bercabang menjadi **A. radialis** dan **A. ulnaris** → keduanya beranastomosis membentuk **arcus palmaris superficialis et profundus**.  —  **Pola Pasangan berlawanan:** Nama arteri mengikuti **regio yang dilaluinya**: subclavia (bawah clavicula) → axillaris (aksila) → brachialis (brachium) → radialis/ulnaris (antebrachium)."
+  "rationale": "Rantainya: **A. subclavia** (dextra et sinistra) → **A. axillaris** → **A. brachialis** → bercabang menjadi **A. radialis** dan **A. ulnaris** → keduanya beranastomosis membentuk **arcus palmaris superficialis et profundus**.  —  **Pola Pasangan berlawanan:** Nama arteri mengikuti **regio yang dilaluinya**: subclavia (bawah clavicula) → axillaris (aksila) → brachialis (brachium) → radialis/ulnaris (antebrachium).",
+  "ppt": 5,
+  "grup": "Vaskularisasi & inervasi",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Rantainya: **A. subclavia** (dextra et sinistra) → **A. axillaris** → **A. brachialis** → bercabang menjadi **A. radialis** dan **A. ulnaris** → keduanya beranastomosis membentuk **arcus palmaris superficialis et profundus**.",
+  "diskriminator": "Nama arteri mengikuti **regio yang dilaluinya**: subclavia (bawah clavicula) → axillaris (aksila) → brachialis (brachium) → radialis/ulnaris (antebrachium)."
  },
  {
   "n": 289,
@@ -4339,7 +6363,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "A. radialis dan a. ulnaris",
-  "rationale": "**A. brachialis bercabang menjadi A. RADIALIS dan A. ULNARIS** setinggi fossa cubiti. Keduanya berjalan di antebrachium sesuai namanya (radialis di sisi radius/lateral, ulnaris di sisi ulna/medial), lalu beranastomosis di tangan membentuk **arcus palmaris superficialis et profundus**.  —  **Pola Ciri tetangga:** Percabangan terjadi di **fossa cubiti**, dan nama cabangnya mengikuti tulang yang disusurinya."
+  "rationale": "**A. brachialis bercabang menjadi A. RADIALIS dan A. ULNARIS** setinggi fossa cubiti. Keduanya berjalan di antebrachium sesuai namanya (radialis di sisi radius/lateral, ulnaris di sisi ulna/medial), lalu beranastomosis di tangan membentuk **arcus palmaris superficialis et profundus**.  —  **Pola Ciri tetangga:** Percabangan terjadi di **fossa cubiti**, dan nama cabangnya mengikuti tulang yang disusurinya.",
+  "ppt": 5,
+  "grup": "Vaskularisasi & inervasi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**A. brachialis bercabang menjadi A. RADIALIS dan A. ULNARIS** setinggi fossa cubiti. Keduanya berjalan di antebrachium sesuai namanya (radialis di sisi radius/lateral, ulnaris di sisi ulna/medial), lalu beranastomosis di tangan membentuk **arcus palmaris superficialis et profundus**.",
+  "diskriminator": "Percabangan terjadi di **fossa cubiti**, dan nama cabangnya mengikuti tulang yang disusurinya."
  },
  {
   "n": 290,
@@ -4354,7 +6385,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Arcus palmaris superficialis et profundus",
-  "rationale": "**Arcus palmaris superficialis et profundus** — dua lengkung arteri di palmar manus. Keberadaan dua lengkung yang saling terhubung berarti tangan punya **suplai darah ganda**, sehingga penyumbatan salah satu arteri tidak langsung menyebabkan iskemia tangan.  —  **Pola Kategori jawaban:** Dua lengkung = **jalur cadangan**. Itu sebabnya a. radialis bisa dipakai untuk pengambilan darah arteri atau graft."
+  "rationale": "**Arcus palmaris superficialis et profundus** — dua lengkung arteri di palmar manus. Keberadaan dua lengkung yang saling terhubung berarti tangan punya **suplai darah ganda**, sehingga penyumbatan salah satu arteri tidak langsung menyebabkan iskemia tangan.  —  **Pola Kategori jawaban:** Dua lengkung = **jalur cadangan**. Itu sebabnya a. radialis bisa dipakai untuk pengambilan darah arteri atau graft.",
+  "ppt": 5,
+  "grup": "Vaskularisasi & inervasi",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Arcus palmaris superficialis et profundus** — dua lengkung arteri di palmar manus. Keberadaan dua lengkung yang saling terhubung berarti tangan punya **suplai darah ganda**, sehingga penyumbatan salah satu arteri tidak langsung menyebabkan iskemia tangan.",
+  "diskriminator": "Dua lengkung = **jalur cadangan**. Itu sebabnya a. radialis bisa dipakai untuk pengambilan darah arteri atau graft."
  },
  {
   "n": 291,
@@ -4369,7 +6407,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "A. radialis; sisi lateral",
-  "rationale": "**A. RADIALIS**, di sisi **LATERAL** pergelangan tangan (sisi jempol dalam posisi anatomi). Dipilih karena di situ ia berjalan superfisial di atas tulang radius sehingga mudah ditekan. Konsisten dengan posisi anatomi: **radius lateral, ulna medial**.  —  **Pola Turunkan dari prinsip:** Nama arteri menyebutkan tulang yang disusurinya: **a. radialis → radius → lateral**."
+  "rationale": "**A. RADIALIS**, di sisi **LATERAL** pergelangan tangan (sisi jempol dalam posisi anatomi). Dipilih karena di situ ia berjalan superfisial di atas tulang radius sehingga mudah ditekan. Konsisten dengan posisi anatomi: **radius lateral, ulna medial**.  —  **Pola Turunkan dari prinsip:** Nama arteri menyebutkan tulang yang disusurinya: **a. radialis → radius → lateral**.",
+  "ppt": 5,
+  "grup": "Vaskularisasi & inervasi",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**A. RADIALIS**, di sisi **LATERAL** pergelangan tangan (sisi jempol dalam posisi anatomi). Dipilih karena di situ ia berjalan superfisial di atas tulang radius sehingga mudah ditekan. Konsisten dengan posisi anatomi: **radius lateral, ulna medial**.",
+  "diskriminator": "Nama arteri menyebutkan tulang yang disusurinya: **a. radialis → radius → lateral**."
  },
  {
   "n": 292,
@@ -4384,7 +6429,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Tiga: lateralis, medialis, dan posterior",
-  "rationale": "Slide menyatakan: plexus brachialis terbagi menjadi **TIGA fasciculus — LATERALIS, MEDIALIS, dan POSTERIOR**. Dari ketiga fasciculus inilah seluruh saraf ekstremitas superior bercabang, sehingga menghafal keanggotaan tiap fasciculus memberi peta lengkap inervasi lengan.  —  **Pola Angka & daftar:** Tiga fasciculus, tiga kelompok saraf. Yang **posterior** paling penting karena memuat n. radialis dan n. axillaris."
+  "rationale": "Slide menyatakan: plexus brachialis terbagi menjadi **TIGA fasciculus — LATERALIS, MEDIALIS, dan POSTERIOR**. Dari ketiga fasciculus inilah seluruh saraf ekstremitas superior bercabang, sehingga menghafal keanggotaan tiap fasciculus memberi peta lengkap inervasi lengan.  —  **Pola Angka & daftar:** Tiga fasciculus, tiga kelompok saraf. Yang **posterior** paling penting karena memuat n. radialis dan n. axillaris.",
+  "ppt": 5,
+  "grup": "Vaskularisasi & inervasi",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Slide menyatakan: plexus brachialis terbagi menjadi **TIGA fasciculus — LATERALIS, MEDIALIS, dan POSTERIOR**. Dari ketiga fasciculus inilah seluruh saraf ekstremitas superior bercabang, sehingga menghafal keanggotaan tiap fasciculus memberi peta lengkap inervasi lengan.",
+  "diskriminator": "Tiga fasciculus, tiga kelompok saraf. Yang **posterior** paling penting karena memuat n. radialis dan n. axillaris."
  },
  {
   "n": 293,
@@ -4399,7 +6451,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "N. thoracalis lateralis, n. musculocutaneus, n. medianus radix lateral",
-  "rationale": "**Fasciculus lateralis:N. thoracalis lateralis** (= n. pectoralis lateralis), **N. musculocutaneus**, dan **N. medianus radix lateral**. Catat bahwa **n. musculocutaneus** — yang melayani seluruh kompartemen anterior brachium — berasal dari sini.  —  **Pola Angka & daftar:** Fasciculus lateralis memuat **n. musculocutaneus**, saraf fleksor brachium."
+  "rationale": "**Fasciculus lateralis:N. thoracalis lateralis** (= n. pectoralis lateralis), **N. musculocutaneus**, dan **N. medianus radix lateral**. Catat bahwa **n. musculocutaneus** — yang melayani seluruh kompartemen anterior brachium — berasal dari sini.  —  **Pola Angka & daftar:** Fasciculus lateralis memuat **n. musculocutaneus**, saraf fleksor brachium.",
+  "ppt": 5,
+  "grup": "Vaskularisasi & inervasi",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Fasciculus lateralis:N. thoracalis lateralis** (= n. pectoralis lateralis), **N. musculocutaneus**, dan **N. medianus radix lateral**. Catat bahwa **n. musculocutaneus** — yang melayani seluruh kompartemen anterior brachium — berasal dari sini.",
+  "diskriminator": "Fasciculus lateralis memuat **n. musculocutaneus**, saraf fleksor brachium."
  },
  {
   "n": 294,
@@ -4414,7 +6473,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "N. thoracalis medialis, n. cutaneus brachii medialis, n. cutaneus antebrachii medialis, n. ulnaris, n. medianus radix medial",
-  "rationale": "**Fasciculus medialis:N. thoracalis medialis**, **N. cutaneus brachii medialis**, **N. cutaneus antebrachii medialis**, **N. ULNARIS**, dan **N. medianus radix medial**. Perhatikan bahwa semua namanya memuat kata **medialis** atau mengurus sisi medial lengan — termasuk n. ulnaris (ulna = medial).  —  **Pola Angka & daftar:** Kaidah: fasciculus **medialis** melayani sisi **medial**, dan **n. ulnaris** ada di situ karena ulna medial."
+  "rationale": "**Fasciculus medialis:N. thoracalis medialis**, **N. cutaneus brachii medialis**, **N. cutaneus antebrachii medialis**, **N. ULNARIS**, dan **N. medianus radix medial**. Perhatikan bahwa semua namanya memuat kata **medialis** atau mengurus sisi medial lengan — termasuk n. ulnaris (ulna = medial).  —  **Pola Angka & daftar:** Kaidah: fasciculus **medialis** melayani sisi **medial**, dan **n. ulnaris** ada di situ karena ulna medial.",
+  "ppt": 5,
+  "grup": "Vaskularisasi & inervasi",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Fasciculus medialis:N. thoracalis medialis**, **N. cutaneus brachii medialis**, **N. cutaneus antebrachii medialis**, **N. ULNARIS**, dan **N. medianus radix medial**. Perhatikan bahwa semua namanya memuat kata **medialis** atau mengurus sisi medial lengan — termasuk n. ulnaris (ulna = medial).",
+  "diskriminator": "Kaidah: fasciculus **medialis** melayani sisi **medial**, dan **n. ulnaris** ada di situ karena ulna medial."
  },
  {
   "n": 295,
@@ -4429,7 +6495,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "N. subscapularis superior dan inferior, n. radialis, n. axillaris, n. thoracodorsalis",
-  "rationale": "**Fasciculus posterior:N. subscapularis superior** dan **inferior**, **N. RADIALIS**, **N. AXILLARIS**, dan **N. thoracodorsalis**. Pola yang bisa dinalar: fasciculus posterior melayani otot-otot di sisi **posterior/ekstensor** — triceps dan ekstensor antebrachium (radialis), deltoid (axillaris), latissimus dorsi (thoracodorsalis).  —  **Pola Angka & daftar:** **Fasciculus posterior = saraf untuk otot posterior/ekstensor.** Semua saraf ekstensor berasal dari sini."
+  "rationale": "**Fasciculus posterior:N. subscapularis superior** dan **inferior**, **N. RADIALIS**, **N. AXILLARIS**, dan **N. thoracodorsalis**. Pola yang bisa dinalar: fasciculus posterior melayani otot-otot di sisi **posterior/ekstensor** — triceps dan ekstensor antebrachium (radialis), deltoid (axillaris), latissimus dorsi (thoracodorsalis).  —  **Pola Angka & daftar:** **Fasciculus posterior = saraf untuk otot posterior/ekstensor.** Semua saraf ekstensor berasal dari sini.",
+  "ppt": 5,
+  "grup": "Vaskularisasi & inervasi",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Fasciculus posterior:N. subscapularis superior** dan **inferior**, **N. RADIALIS**, **N. AXILLARIS**, dan **N. thoracodorsalis**. Pola yang bisa dinalar: fasciculus posterior melayani otot-otot di sisi **posterior/ekstensor** — triceps dan ekstensor antebrachium (radialis), deltoid (axillaris), latissimus dorsi (thoracodorsalis).",
+  "diskriminator": "**Fasciculus posterior = saraf untuk otot posterior/ekstensor.** Semua saraf ekstensor berasal dari sini."
  },
  {
   "n": 296,
@@ -4444,7 +6517,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Memiliki dua radix: dari fasciculus lateralis dan fasciculus medialis",
-  "rationale": "**N. medianus memiliki DUA RADIX** — satu dari **fasciculus lateralis** dan satu dari **fasciculus medialis** — sehingga ia muncul di daftar kedua fasciculus itu. Inilah sebabnya n. medianus melayani wilayah yang luas: sebagian besar fleksor antebrachium plus otot thenar tangan.  —  **Pola Ciri tetangga:** Satu-satunya saraf yang tercantum di **dua** fasciculus. Kalau soal menanyakan saraf dengan dua radix, itu n. medianus."
+  "rationale": "**N. medianus memiliki DUA RADIX** — satu dari **fasciculus lateralis** dan satu dari **fasciculus medialis** — sehingga ia muncul di daftar kedua fasciculus itu. Inilah sebabnya n. medianus melayani wilayah yang luas: sebagian besar fleksor antebrachium plus otot thenar tangan.  —  **Pola Ciri tetangga:** Satu-satunya saraf yang tercantum di **dua** fasciculus. Kalau soal menanyakan saraf dengan dua radix, itu n. medianus.",
+  "ppt": 5,
+  "grup": "Vaskularisasi & inervasi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. medianus memiliki DUA RADIX** — satu dari **fasciculus lateralis** dan satu dari **fasciculus medialis** — sehingga ia muncul di daftar kedua fasciculus itu. Inilah sebabnya n. medianus melayani wilayah yang luas: sebagian besar fleksor antebrachium plus otot thenar tangan.",
+  "diskriminator": "Satu-satunya saraf yang tercantum di **dua** fasciculus. Kalau soal menanyakan saraf dengan dua radix, itu n. medianus."
  },
  {
   "n": 297,
@@ -4459,7 +6539,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Posterior",
-  "rationale": "**Fasciculus POSTERIOR** — konsisten dengan fungsinya: n. radialis melayani seluruh kelompok **ekstensor**, yaitu M. triceps brachii di posterior brachium dan kelompok ekstensor di dorsal antebrachium. Saraf posterior untuk otot posterior.  —  **Pola Ciri tetangga:** **Posterior → ekstensor → n. radialis.** Satu rantai yang bisa diturunkan, bukan dihafal."
+  "rationale": "**Fasciculus POSTERIOR** — konsisten dengan fungsinya: n. radialis melayani seluruh kelompok **ekstensor**, yaitu M. triceps brachii di posterior brachium dan kelompok ekstensor di dorsal antebrachium. Saraf posterior untuk otot posterior.  —  **Pola Ciri tetangga:** **Posterior → ekstensor → n. radialis.** Satu rantai yang bisa diturunkan, bukan dihafal.",
+  "ppt": 5,
+  "grup": "Vaskularisasi & inervasi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Fasciculus POSTERIOR** — konsisten dengan fungsinya: n. radialis melayani seluruh kelompok **ekstensor**, yaitu M. triceps brachii di posterior brachium dan kelompok ekstensor di dorsal antebrachium. Saraf posterior untuk otot posterior.",
+  "diskriminator": "**Posterior → ekstensor → n. radialis.** Satu rantai yang bisa diturunkan, bukan dihafal."
  },
  {
   "n": 298,
@@ -4474,7 +6561,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Medialis",
-  "rationale": "**Fasciculus MEDIALIS** — sejalan dengan namanya, karena **ulna adalah tulang MEDIAL** antebrachium dan n. ulnaris melayani sisi medial lengan dan tangan. Lesinya menyebabkan **claw hand**.  —  **Pola Ciri tetangga:** Kaidah nama: **ulnaris → ulna → medial → fasciculus medialis**."
+  "rationale": "**Fasciculus MEDIALIS** — sejalan dengan namanya, karena **ulna adalah tulang MEDIAL** antebrachium dan n. ulnaris melayani sisi medial lengan dan tangan. Lesinya menyebabkan **claw hand**.  —  **Pola Ciri tetangga:** Kaidah nama: **ulnaris → ulna → medial → fasciculus medialis**.",
+  "ppt": 5,
+  "grup": "Vaskularisasi & inervasi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Fasciculus MEDIALIS** — sejalan dengan namanya, karena **ulna adalah tulang MEDIAL** antebrachium dan n. ulnaris melayani sisi medial lengan dan tangan. Lesinya menyebabkan **claw hand**.",
+  "diskriminator": "Kaidah nama: **ulnaris → ulna → medial → fasciculus medialis**."
  },
  {
   "n": 299,
@@ -4489,7 +6583,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Posterior; M. deltoideus dan M. teres minor",
-  "rationale": "**Fasciculus POSTERIOR**, menginervasi **M. deltoideus dan M. teres minor**. Lesinya menyebabkan **kelemahan abduksi lengan** (karena deltoid bagian tengah mati) dan hilangnya sensasi di kulit atas bahu.  —  **Pola Ciri tetangga:** Jangan tertukar dengan n. radialis yang juga dari fasciculus posterior tapi melayani **triceps** dan ekstensor antebrachium."
+  "rationale": "**Fasciculus POSTERIOR**, menginervasi **M. deltoideus dan M. teres minor**. Lesinya menyebabkan **kelemahan abduksi lengan** (karena deltoid bagian tengah mati) dan hilangnya sensasi di kulit atas bahu.  —  **Pola Ciri tetangga:** Jangan tertukar dengan n. radialis yang juga dari fasciculus posterior tapi melayani **triceps** dan ekstensor antebrachium.",
+  "ppt": 5,
+  "grup": "Vaskularisasi & inervasi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Fasciculus POSTERIOR**, menginervasi **M. deltoideus dan M. teres minor**. Lesinya menyebabkan **kelemahan abduksi lengan** (karena deltoid bagian tengah mati) dan hilangnya sensasi di kulit atas bahu.",
+  "diskriminator": "Jangan tertukar dengan n. radialis yang juga dari fasciculus posterior tapi melayani **triceps** dan ekstensor antebrachium."
  },
  {
   "n": 300,
@@ -4504,7 +6605,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "N. medianus",
-  "rationale": "**[UB asli]** **APE HAND = lesi N. MEDIANUS.** Jempol tidak dapat melakukan **oposisi** dan otot thenar atrofi, sehingga tangan tampak datar seperti tangan kera. Catatan: salah satu catatan di rangkuman soal menuliskan ape hand → n. ulnaris — itu **KELIRU**; n. ulnaris menghasilkan **claw hand**.  —  **Pola Ciri tetangga:** Tiga pasangan tangan: **medianus → ape hand; ulnaris → claw hand; radialis → drop hand**."
+  "rationale": "**[UB asli]** **APE HAND = lesi N. MEDIANUS.** Jempol tidak dapat melakukan **oposisi** dan otot thenar atrofi, sehingga tangan tampak datar seperti tangan kera. Catatan: salah satu catatan di rangkuman soal menuliskan ape hand → n. ulnaris — itu **KELIRU**; n. ulnaris menghasilkan **claw hand**.  —  **Pola Ciri tetangga:** Tiga pasangan tangan: **medianus → ape hand; ulnaris → claw hand; radialis → drop hand**.",
+  "ppt": 5,
+  "grup": "Klinis",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**APE HAND = lesi N. MEDIANUS.** Jempol tidak dapat melakukan **oposisi** dan otot thenar atrofi, sehingga tangan tampak datar seperti tangan kera. Catatan: salah satu catatan di rangkuman soal menuliskan ape hand → n. ulnaris — itu **KELIRU**; n. ulnaris menghasilkan **claw hand**.",
+  "diskriminator": "Tiga pasangan tangan: **medianus → ape hand; ulnaris → claw hand; radialis → drop hand**."
  },
  {
   "n": 301,
@@ -4519,7 +6627,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "N. ulnaris",
-  "rationale": "**[UB asli]** **CLAW HAND = lesi N. ULNARIS.** Otot-otot intrinsik tangan (terutama interossei dan lumbricales medial) mengalami paralisis sehingga jari menekuk seperti **cakar**. N. ulnaris berasal dari **fasciculus medialis** dan melayani sisi medial tangan.  —  **Pola Ciri tetangga:** **Claw = cakar = jari menekuk = n. ulnaris.** Jangan tertukar dengan ape hand (medianus)."
+  "rationale": "**[UB asli]** **CLAW HAND = lesi N. ULNARIS.** Otot-otot intrinsik tangan (terutama interossei dan lumbricales medial) mengalami paralisis sehingga jari menekuk seperti **cakar**. N. ulnaris berasal dari **fasciculus medialis** dan melayani sisi medial tangan.  —  **Pola Ciri tetangga:** **Claw = cakar = jari menekuk = n. ulnaris.** Jangan tertukar dengan ape hand (medianus).",
+  "ppt": 5,
+  "grup": "Klinis",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**CLAW HAND = lesi N. ULNARIS.** Otot-otot intrinsik tangan (terutama interossei dan lumbricales medial) mengalami paralisis sehingga jari menekuk seperti **cakar**. N. ulnaris berasal dari **fasciculus medialis** dan melayani sisi medial tangan.",
+  "diskriminator": "**Claw = cakar = jari menekuk = n. ulnaris.** Jangan tertukar dengan ape hand (medianus)."
  },
  {
   "n": 302,
@@ -4534,7 +6649,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "N. radialis; ekstensor pergelangan paralisis sehingga pergelangan terkulai",
-  "rationale": "**[UB asli]** **DROP HAND = lesi N. RADIALIS.** N. radialis melayani seluruh kelompok **EKSTENSOR** (dorsal antebrachium), jadi bila lesi, pergelangan tangan tidak dapat diekstensikan dan **terkulai jatuh**. Namanya bisa diturunkan dari fungsi yang hilang: ekstensor mati → tangan jatuh.  —  **Pola Turunkan dari prinsip:** **N. radialis = saraf ekstensor.** Ekstensor mati → tidak bisa mengangkat pergelangan → drop."
+  "rationale": "**[UB asli]** **DROP HAND = lesi N. RADIALIS.** N. radialis melayani seluruh kelompok **EKSTENSOR** (dorsal antebrachium), jadi bila lesi, pergelangan tangan tidak dapat diekstensikan dan **terkulai jatuh**. Namanya bisa diturunkan dari fungsi yang hilang: ekstensor mati → tangan jatuh.  —  **Pola Turunkan dari prinsip:** **N. radialis = saraf ekstensor.** Ekstensor mati → tidak bisa mengangkat pergelangan → drop.",
+  "ppt": 5,
+  "grup": "Klinis",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**DROP HAND = lesi N. RADIALIS.** N. radialis melayani seluruh kelompok **EKSTENSOR** (dorsal antebrachium), jadi bila lesi, pergelangan tangan tidak dapat diekstensikan dan **terkulai jatuh**. Namanya bisa diturunkan dari fungsi yang hilang: ekstensor mati → tangan jatuh.",
+  "diskriminator": "**N. radialis = saraf ekstensor.** Ekstensor mati → tidak bisa mengangkat pergelangan → drop."
  },
  {
   "n": 303,
@@ -4549,7 +6671,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "N. thoracicus longus; M. serratus anterior",
-  "rationale": "**N. THORACICUS LONGUS → M. SERRATUS ANTERIOR → WINGING SCAPULA.** Serratus anterior menahan scapula menempel pada dinding thorax; bila sarafnya lesi, scapula **menonjol ke belakang seperti sayap**, paling jelas saat pasien mendorong dinding.  —  **Pola Turunkan dari prinsip:** Fungsi yang hilang menjelaskan tandanya: penahan scapula mati → scapula terangkat dari dinding thorax."
+  "rationale": "**N. THORACICUS LONGUS → M. SERRATUS ANTERIOR → WINGING SCAPULA.** Serratus anterior menahan scapula menempel pada dinding thorax; bila sarafnya lesi, scapula **menonjol ke belakang seperti sayap**, paling jelas saat pasien mendorong dinding.  —  **Pola Turunkan dari prinsip:** Fungsi yang hilang menjelaskan tandanya: penahan scapula mati → scapula terangkat dari dinding thorax.",
+  "ppt": 5,
+  "grup": "Klinis",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. THORACICUS LONGUS → M. SERRATUS ANTERIOR → WINGING SCAPULA.** Serratus anterior menahan scapula menempel pada dinding thorax; bila sarafnya lesi, scapula **menonjol ke belakang seperti sayap**, paling jelas saat pasien mendorong dinding.",
+  "diskriminator": "Fungsi yang hilang menjelaskan tandanya: penahan scapula mati → scapula terangkat dari dinding thorax."
  },
  {
   "n": 304,
@@ -4564,7 +6693,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Ruptur tendo ekstensor pada sendi interphalangea distalis, bukan lesi saraf",
-  "rationale": "**MALLET FINGER bukan kelainan saraf** — dia disebabkan **ruptur atau avulsi tendo ekstensor** pada **sendi interphalangea distalis (DIP)**, sehingga ujung jari tidak dapat diekstensikan dan menekuk permanen. Empat kelainan lain (ape, claw, drop hand, winging scapula) semuanya lesi **saraf**.  —  **Pola Kategori jawaban:** Dari lima kelainan di slide, **hanya mallet finger** bukan lesi saraf. Itu diskriminatornya."
+  "rationale": "**MALLET FINGER bukan kelainan saraf** — dia disebabkan **ruptur atau avulsi tendo ekstensor** pada **sendi interphalangea distalis (DIP)**, sehingga ujung jari tidak dapat diekstensikan dan menekuk permanen. Empat kelainan lain (ape, claw, drop hand, winging scapula) semuanya lesi **saraf**.  —  **Pola Kategori jawaban:** Dari lima kelainan di slide, **hanya mallet finger** bukan lesi saraf. Itu diskriminatornya.",
+  "ppt": 5,
+  "grup": "Klinis",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**MALLET FINGER bukan kelainan saraf** — dia disebabkan **ruptur atau avulsi tendo ekstensor** pada **sendi interphalangea distalis (DIP)**, sehingga ujung jari tidak dapat diekstensikan dan menekuk permanen. Empat kelainan lain (ape, claw, drop hand, winging scapula) semuanya lesi **saraf**.",
+  "diskriminator": "Dari lima kelainan di slide, **hanya mallet finger** bukan lesi saraf. Itu diskriminatornya."
  },
  {
   "n": 305,
@@ -4579,7 +6715,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Drop hand",
-  "rationale": "**[UB asli]** Kunci soal UB: dislokasi posterior art. humeri → paralisis **n. radialis** → **DROP HAND**. Catatan kejujuran: secara klasik dislokasi bahu lebih sering melukai **n. axillaris**, sedangkan n. radialis lebih khas terkena pada **fraktur batang humerus** (karena berjalan di sulcus nervi radialis). Namun untuk UB ini, ikuti kunci: drop hand.  —  **Pola Turunkan dari prinsip:** Soal menyebut **paralisis nervus pada humerus** → arahkan ke **n. radialis → drop hand**, karena n. radialis melingkari humerus."
+  "rationale": "**[UB asli]** Kunci soal UB: dislokasi posterior art. humeri → paralisis **n. radialis** → **DROP HAND**. Catatan kejujuran: secara klasik dislokasi bahu lebih sering melukai **n. axillaris**, sedangkan n. radialis lebih khas terkena pada **fraktur batang humerus** (karena berjalan di sulcus nervi radialis). Namun untuk UB ini, ikuti kunci: drop hand.  —  **Pola Turunkan dari prinsip:** Soal menyebut **paralisis nervus pada humerus** → arahkan ke **n. radialis → drop hand**, karena n. radialis melingkari humerus.",
+  "ppt": 5,
+  "grup": "Klinis",
+  "pola": "TUR",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Kunci soal UB: dislokasi posterior art. humeri → paralisis **n. radialis** → **DROP HAND**. Catatan kejujuran: secara klasik dislokasi bahu lebih sering melukai **n. axillaris**, sedangkan n. radialis lebih khas terkena pada **fraktur batang humerus** (karena berjalan di sulcus nervi radialis). Namun untuk UB ini, ikuti kunci: drop hand.",
+  "diskriminator": "Soal menyebut **paralisis nervus pada humerus** → arahkan ke **n. radialis → drop hand**, karena n. radialis melingkari humerus."
  },
  {
   "n": 306,
@@ -4594,7 +6737,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 2,
   "kunci": "Abduksi lengan",
-  "rationale": "**N. axillaris → M. deltoideus + M. teres minor**, dan deltoid bagian tengah adalah penggerak utama **ABDUKSI lengan**. Jadi lesinya menyebabkan pasien **tidak dapat mengangkat lengan ke samping** melewati rentang awal. Rentang 0–15 derajat masih mungkin karena dikerjakan **M. supraspinatus** (n. suprascapularis).  —  **Pola Turunkan dari prinsip:** Rantai: **saraf → otot → gerakan hilang**. Axillaris melayani deltoid, deltoid mengabduksi."
+  "rationale": "**N. axillaris → M. deltoideus + M. teres minor**, dan deltoid bagian tengah adalah penggerak utama **ABDUKSI lengan**. Jadi lesinya menyebabkan pasien **tidak dapat mengangkat lengan ke samping** melewati rentang awal. Rentang 0–15 derajat masih mungkin karena dikerjakan **M. supraspinatus** (n. suprascapularis).  —  **Pola Turunkan dari prinsip:** Rantai: **saraf → otot → gerakan hilang**. Axillaris melayani deltoid, deltoid mengabduksi.",
+  "ppt": 5,
+  "grup": "Klinis",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. axillaris → M. deltoideus + M. teres minor**, dan deltoid bagian tengah adalah penggerak utama **ABDUKSI lengan**. Jadi lesinya menyebabkan pasien **tidak dapat mengangkat lengan ke samping** melewati rentang awal. Rentang 0–15 derajat masih mungkin karena dikerjakan **M. supraspinatus** (n. suprascapularis).",
+  "diskriminator": "Rantai: **saraf → otot → gerakan hilang**. Axillaris melayani deltoid, deltoid mengabduksi."
  },
  {
   "n": 307,
@@ -4609,7 +6759,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Abduksi awal lengan dan eksorotasi lengan",
-  "rationale": "**N. suprascapularis → M. supraspinatus + M. infraspinatus.** Supraspinatus **memulai abduksi** (0–15 derajat), infraspinatus melakukan **eksorotasi**. Jadi lesinya mengganggu keduanya: pasien sulit **memulai** mengangkat lengan dan sulit memutar lengan ke luar.  —  **Pola Turunkan dari prinsip:** Satu saraf, dua otot, dua gerakan hilang. Hafal pasangan saraf–otot, gerakan menyusul."
+  "rationale": "**N. suprascapularis → M. supraspinatus + M. infraspinatus.** Supraspinatus **memulai abduksi** (0–15 derajat), infraspinatus melakukan **eksorotasi**. Jadi lesinya mengganggu keduanya: pasien sulit **memulai** mengangkat lengan dan sulit memutar lengan ke luar.  —  **Pola Turunkan dari prinsip:** Satu saraf, dua otot, dua gerakan hilang. Hafal pasangan saraf–otot, gerakan menyusul.",
+  "ppt": 5,
+  "grup": "Klinis",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. suprascapularis → M. supraspinatus + M. infraspinatus.** Supraspinatus **memulai abduksi** (0–15 derajat), infraspinatus melakukan **eksorotasi**. Jadi lesinya mengganggu keduanya: pasien sulit **memulai** mengangkat lengan dan sulit memutar lengan ke luar.",
+  "diskriminator": "Satu saraf, dua otot, dua gerakan hilang. Hafal pasangan saraf–otot, gerakan menyusul."
  },
  {
   "n": 308,
@@ -4624,7 +6781,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Fleksi siku",
-  "rationale": "**N. musculocutaneus** melayani seluruh kompartemen **anterior brachium**: M. coracobrachialis, M. brachialis, dan M. biceps brachii — ketiganya **FLEKSOR siku**. Jadi lesinya menyebabkan kelemahan **fleksi siku** (dan supinasi, karena biceps juga supinator).  —  **Pola Turunkan dari prinsip:** **Anterior brachium = fleksor = n. musculocutaneus.** Prinsip kompartemen langsung memberi jawabannya."
+  "rationale": "**N. musculocutaneus** melayani seluruh kompartemen **anterior brachium**: M. coracobrachialis, M. brachialis, dan M. biceps brachii — ketiganya **FLEKSOR siku**. Jadi lesinya menyebabkan kelemahan **fleksi siku** (dan supinasi, karena biceps juga supinator).  —  **Pola Turunkan dari prinsip:** **Anterior brachium = fleksor = n. musculocutaneus.** Prinsip kompartemen langsung memberi jawabannya.",
+  "ppt": 5,
+  "grup": "Klinis",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**N. musculocutaneus** melayani seluruh kompartemen **anterior brachium**: M. coracobrachialis, M. brachialis, dan M. biceps brachii — ketiganya **FLEKSOR siku**. Jadi lesinya menyebabkan kelemahan **fleksi siku** (dan supinasi, karena biceps juga supinator).",
+  "diskriminator": "**Anterior brachium = fleksor = n. musculocutaneus.** Prinsip kompartemen langsung memberi jawabannya."
  },
  {
   "n": 309,
@@ -4639,7 +6803,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Medianus–ape hand · ulnaris–claw hand · radialis–drop hand · thoracicus longus–winging scapula",
-  "rationale": "Empat pasangan baku: **N. medianus → APE HAND** (oposisi jempol hilang); **N. ulnaris → CLAW HAND** (jari menekuk seperti cakar); **N. radialis → DROP HAND** (ekstensor mati, pergelangan terkulai); **N. thoracicus longus → WINGING SCAPULA** (serratus anterior mati).  —  **Pola Angka & daftar:** Hafal empat pasangan ini sebagai satu blok — mereka muncul bersama-sama sebagai distraktor di banyak soal UB."
+  "rationale": "Empat pasangan baku: **N. medianus → APE HAND** (oposisi jempol hilang); **N. ulnaris → CLAW HAND** (jari menekuk seperti cakar); **N. radialis → DROP HAND** (ekstensor mati, pergelangan terkulai); **N. thoracicus longus → WINGING SCAPULA** (serratus anterior mati).  —  **Pola Angka & daftar:** Hafal empat pasangan ini sebagai satu blok — mereka muncul bersama-sama sebagai distraktor di banyak soal UB.",
+  "ppt": 5,
+  "grup": "Klinis",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Empat pasangan baku: **N. medianus → APE HAND** (oposisi jempol hilang); **N. ulnaris → CLAW HAND** (jari menekuk seperti cakar); **N. radialis → DROP HAND** (ekstensor mati, pergelangan terkulai); **N. thoracicus longus → WINGING SCAPULA** (serratus anterior mati).",
+  "diskriminator": "Hafal empat pasangan ini sebagai satu blok — mereka muncul bersama-sama sebagai distraktor di banyak soal UB."
  },
  {
   "n": 310,
@@ -4654,7 +6825,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sarkoplasma",
-  "rationale": "Awalan **sarko-** (dari sarx = daging/otot) dipakai untuk menamai ulang organel sel otot. **Sarkoplasma = sitoplasma** sel otot.  —  **Pola Nama = petunjuk:** Hafal satu kaidah, bukan empat istilah: setiap organel sel otot diberi awalan **sarko-**."
+  "rationale": "Awalan **sarko-** (dari sarx = daging/otot) dipakai untuk menamai ulang organel sel otot. **Sarkoplasma = sitoplasma** sel otot.  —  **Pola Nama = petunjuk:** Hafal satu kaidah, bukan empat istilah: setiap organel sel otot diberi awalan **sarko-**.",
+  "ppt": 6,
+  "grup": "Terminologi",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Awalan **sarko-** (dari sarx = daging/otot) dipakai untuk menamai ulang organel sel otot. **Sarkoplasma = sitoplasma** sel otot.",
+  "diskriminator": "Hafal satu kaidah, bukan empat istilah: setiap organel sel otot diberi awalan **sarko-**."
  },
  {
   "n": 311,
@@ -4669,7 +6847,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sarkosom",
-  "rationale": "**Sarkosom = mitokondria** sel otot. Akhiran -som menandai badan/organel.  —  **Pola Nama = petunjuk:** Sarko**SOM** → badan → mitokondria. Bedakan dari sarko**MER**, yang adalah satuan kontraktil, bukan organel."
+  "rationale": "**Sarkosom = mitokondria** sel otot. Akhiran -som menandai badan/organel.  —  **Pola Nama = petunjuk:** Sarko**SOM** → badan → mitokondria. Bedakan dari sarko**MER**, yang adalah satuan kontraktil, bukan organel.",
+  "ppt": 6,
+  "grup": "Terminologi",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Sarkosom = mitokondria** sel otot. Akhiran -som menandai badan/organel.",
+  "diskriminator": "Sarko**SOM** → badan → mitokondria. Bedakan dari sarko**MER**, yang adalah satuan kontraktil, bukan organel."
  },
  {
   "n": 312,
@@ -4684,7 +6869,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sarkolema",
-  "rationale": "**Sarkolema** adalah membran sel otot. Akhiran -lema berarti selubung/pembungkus.  —  **Pola Kategori jawaban:** Jangan tertukar dengan **endomisium**, yang bukan membran sel melainkan jaringan ikat pembungkus di luar sarkolema."
+  "rationale": "**Sarkolema** adalah membran sel otot. Akhiran -lema berarti selubung/pembungkus.  —  **Pola Kategori jawaban:** Jangan tertukar dengan **endomisium**, yang bukan membran sel melainkan jaringan ikat pembungkus di luar sarkolema.",
+  "ppt": 6,
+  "grup": "Terminologi",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Sarkolema** adalah membran sel otot. Akhiran -lema berarti selubung/pembungkus.",
+  "diskriminator": "Jangan tertukar dengan **endomisium**, yang bukan membran sel melainkan jaringan ikat pembungkus di luar sarkolema."
  },
  {
   "n": 313,
@@ -4699,7 +6891,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Retikulum sarkoplasmik",
-  "rationale": "**Retikulum sarkoplasmik** = retikulum endoplasmik sel otot. Pada otot skelet dia menjadi gudang penyimpanan Ca²⁺.  —  **Pola Nama = petunjuk:** **Sisterna terminal** dan **tubulus T** adalah bagian dari sistem ini, bukan nama penggantinya."
+  "rationale": "**Retikulum sarkoplasmik** = retikulum endoplasmik sel otot. Pada otot skelet dia menjadi gudang penyimpanan Ca²⁺.  —  **Pola Nama = petunjuk:** **Sisterna terminal** dan **tubulus T** adalah bagian dari sistem ini, bukan nama penggantinya.",
+  "ppt": 6,
+  "grup": "Terminologi",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Retikulum sarkoplasmik** = retikulum endoplasmik sel otot. Pada otot skelet dia menjadi gudang penyimpanan Ca²⁺.",
+  "diskriminator": "**Sisterna terminal** dan **tubulus T** adalah bagian dari sistem ini, bukan nama penggantinya."
  },
  {
   "n": 314,
@@ -4714,7 +6913,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Simpanan glikogen berada di sarkoplasma",
-  "rationale": "**[UB asli]** Soal UB asli. Pada **miosit** glikogen disimpan di **sarkoplasma**; pada hepatosit di **sitoplasma**. Secara substansi sama — yang diuji adalah **terminologinya**, bukan biologinya.  —  **Pola Diskriminator konteks:** Kalau soal menanyakan perbedaan sel otot dengan sel lain, periksa apakah pembedanya **nyata** atau hanya **penamaan**. Di soal ini hanya penamaan, dan itu tetap kunci yang benar."
+  "rationale": "**[UB asli]** Soal UB asli. Pada **miosit** glikogen disimpan di **sarkoplasma**; pada hepatosit di **sitoplasma**. Secara substansi sama — yang diuji adalah **terminologinya**, bukan biologinya.  —  **Pola Diskriminator konteks:** Kalau soal menanyakan perbedaan sel otot dengan sel lain, periksa apakah pembedanya **nyata** atau hanya **penamaan**. Di soal ini hanya penamaan, dan itu tetap kunci yang benar.",
+  "ppt": 6,
+  "grup": "Terminologi",
+  "pola": "USI",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "Soal UB asli. Pada **miosit** glikogen disimpan di **sarkoplasma**; pada hepatosit di **sitoplasma**. Secara substansi sama — yang diuji adalah **terminologinya**, bukan biologinya.",
+  "diskriminator": "Kalau soal menanyakan perbedaan sel otot dengan sel lain, periksa apakah pembedanya **nyata** atau hanya **penamaan**. Di soal ini hanya penamaan, dan itu tetap kunci yang benar."
  },
  {
   "n": 315,
@@ -4729,7 +6935,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sarkomer adalah nama lain mitokondria sel otot",
-  "rationale": "**Sarkomer** bukan organel — dia adalah **satuan kontraktil**, yaitu daerah antara dua garis Z. Mitokondria sel otot adalah **sarkosom**.  —  **Pola Ciri tetangga:** Sarko**MER** = satuan ukur (meros = bagian). Sarko**SOM** = badan/organel."
+  "rationale": "**Sarkomer** bukan organel — dia adalah **satuan kontraktil**, yaitu daerah antara dua garis Z. Mitokondria sel otot adalah **sarkosom**.  —  **Pola Ciri tetangga:** Sarko**MER** = satuan ukur (meros = bagian). Sarko**SOM** = badan/organel.",
+  "ppt": 6,
+  "grup": "Terminologi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Sarkomer** bukan organel — dia adalah **satuan kontraktil**, yaitu daerah antara dua garis Z. Mitokondria sel otot adalah **sarkosom**.",
+  "diskriminator": "Sarko**MER** = satuan ukur (meros = bagian). Sarko**SOM** = badan/organel."
  },
  {
   "n": 316,
@@ -4744,7 +6957,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot bergaris, bersama otot skelet",
-  "rationale": "Klasifikasi **histologis** memakai kriteria **bergaris atau tidak**. Otot jantung **bergaris**, jadi sekelompok dengan **otot skelet**.  —  **Pola Dua kerangka:** Dua kerangka berbeda: **histologis** memakai kriteria bergaris; **fisiologis** memakai kriteria sadar/tidak sadar. Periksa kerangka mana yang diminta soal."
+  "rationale": "Klasifikasi **histologis** memakai kriteria **bergaris atau tidak**. Otot jantung **bergaris**, jadi sekelompok dengan **otot skelet**.  —  **Pola Dua kerangka:** Dua kerangka berbeda: **histologis** memakai kriteria bergaris; **fisiologis** memakai kriteria sadar/tidak sadar. Periksa kerangka mana yang diminta soal.",
+  "ppt": 6,
+  "grup": "Klasifikasi",
+  "pola": "KER",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Klasifikasi **histologis** memakai kriteria **bergaris atau tidak**. Otot jantung **bergaris**, jadi sekelompok dengan **otot skelet**.",
+  "diskriminator": "Dua kerangka berbeda: **histologis** memakai kriteria bergaris; **fisiologis** memakai kriteria sadar/tidak sadar. Periksa kerangka mana yang diminta soal."
  },
  {
   "n": 317,
@@ -4759,7 +6979,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot tidak sadar, bersama otot polos",
-  "rationale": "Klasifikasi **fisiologis** memakai kriteria **sadar/tidak sadar**. Otot jantung **involunter**, jadi sekelompok dengan **otot polos**.  —  **Pola Dua kerangka:** Otot jantung berpindah kelompok di dua skema klasifikasi — itulah sebabnya dia muncul di banyak soal pembanding."
+  "rationale": "Klasifikasi **fisiologis** memakai kriteria **sadar/tidak sadar**. Otot jantung **involunter**, jadi sekelompok dengan **otot polos**.  —  **Pola Dua kerangka:** Otot jantung berpindah kelompok di dua skema klasifikasi — itulah sebabnya dia muncul di banyak soal pembanding.",
+  "ppt": 6,
+  "grup": "Klasifikasi",
+  "pola": "KER",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Klasifikasi **fisiologis** memakai kriteria **sadar/tidak sadar**. Otot jantung **involunter**, jadi sekelompok dengan **otot polos**.",
+  "diskriminator": "Otot jantung berpindah kelompok di dua skema klasifikasi — itulah sebabnya dia muncul di banyak soal pembanding."
  },
  {
   "n": 318,
@@ -4774,7 +7001,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Salah, karena otot jantung bergaris tetapi involunter",
-  "rationale": "**Otot jantung** adalah bukti penyangkalnya: bergaris tetapi **involunter**. Klasifikasi histologis dan fisiologis tidak sejajar.  —  **Pola Pasangan berlawanan:** Otot polos **tidak** bergaris, dan otot skelet memang volunter — kedua pernyataan itu salah fakta, bukan hanya salah logika."
+  "rationale": "**Otot jantung** adalah bukti penyangkalnya: bergaris tetapi **involunter**. Klasifikasi histologis dan fisiologis tidak sejajar.  —  **Pola Pasangan berlawanan:** Otot polos **tidak** bergaris, dan otot skelet memang volunter — kedua pernyataan itu salah fakta, bukan hanya salah logika.",
+  "ppt": 6,
+  "grup": "Klasifikasi",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Otot jantung** adalah bukti penyangkalnya: bergaris tetapi **involunter**. Klasifikasi histologis dan fisiologis tidak sejajar.",
+  "diskriminator": "Otot polos **tidak** bergaris, dan otot skelet memang volunter — kedua pernyataan itu salah fakta, bukan hanya salah logika."
  },
  {
   "n": 319,
@@ -4789,7 +7023,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot polos",
-  "rationale": "Hanya **otot polos** yang tidak bergaris. Otot jantung dan otot skelet keduanya bergaris.  —  **Pola Kategori jawaban:** Satu jenis saja yang tidak bergaris, dan itu otot polos. Dua lainnya bergaris."
+  "rationale": "Hanya **otot polos** yang tidak bergaris. Otot jantung dan otot skelet keduanya bergaris.  —  **Pola Kategori jawaban:** Satu jenis saja yang tidak bergaris, dan itu otot polos. Dua lainnya bergaris.",
+  "ppt": 6,
+  "grup": "Klasifikasi",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Hanya **otot polos** yang tidak bergaris. Otot jantung dan otot skelet keduanya bergaris.",
+  "diskriminator": "Satu jenis saja yang tidak bergaris, dan itu otot polos. Dua lainnya bergaris."
  },
  {
   "n": 320,
@@ -4804,7 +7045,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot skelet",
-  "rationale": "Hanya **otot skelet** yang volunter. Otot polos dan otot jantung keduanya involunter.  —  **Pola Kategori jawaban:** Cermin dari soal sebelumnya: satu jenis bergaris-tapi-involunter (jantung), dan satu jenis volunter (skelet)."
+  "rationale": "Hanya **otot skelet** yang volunter. Otot polos dan otot jantung keduanya involunter.  —  **Pola Kategori jawaban:** Cermin dari soal sebelumnya: satu jenis bergaris-tapi-involunter (jantung), dan satu jenis volunter (skelet).",
+  "ppt": 6,
+  "grup": "Klasifikasi",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Hanya **otot skelet** yang volunter. Otot polos dan otot jantung keduanya involunter.",
+  "diskriminator": "Cermin dari soal sebelumnya: satu jenis bergaris-tapi-involunter (jantung), dan satu jenis volunter (skelet)."
  },
  {
   "n": 321,
@@ -4819,7 +7067,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Kontraksi ritmis spontan (miogenik)",
-  "rationale": "**Kontraksi miogenik ritmis** hanya dimiliki otot jantung. Involunter juga dimiliki otot polos; bergaris juga dimiliki otot skelet; inti tunggal di tengah juga dimiliki otot polos; mitosis justru milik otot polos.  —  **Pola Ciri tetangga:** Kata **“spontan”** atau **“miogenik”** → otot jantung, tanpa kandidat lain."
+  "rationale": "**Kontraksi miogenik ritmis** hanya dimiliki otot jantung. Involunter juga dimiliki otot polos; bergaris juga dimiliki otot skelet; inti tunggal di tengah juga dimiliki otot polos; mitosis justru milik otot polos.  —  **Pola Ciri tetangga:** Kata **“spontan”** atau **“miogenik”** → otot jantung, tanpa kandidat lain.",
+  "ppt": 6,
+  "grup": "Klasifikasi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Kontraksi miogenik ritmis** hanya dimiliki otot jantung. Involunter juga dimiliki otot polos; bergaris juga dimiliki otot skelet; inti tunggal di tengah juga dimiliki otot polos; mitosis justru milik otot polos.",
+  "diskriminator": "Kata **“spontan”** atau **“miogenik”** → otot jantung, tanpa kandidat lain."
  },
  {
   "n": 322,
@@ -4834,7 +7089,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Fusiform (gelendong)",
-  "rationale": "Sel otot polos berbentuk **fusiform** — tebal di tengah dan meruncing di kedua ujungnya.  —  **Pola Nama = petunjuk:** Tiga bentuk, tiga otot: **fusiform** = polos · **silindris bercabang** = jantung · **silindris lurus** = skelet."
+  "rationale": "Sel otot polos berbentuk **fusiform** — tebal di tengah dan meruncing di kedua ujungnya.  —  **Pola Nama = petunjuk:** Tiga bentuk, tiga otot: **fusiform** = polos · **silindris bercabang** = jantung · **silindris lurus** = skelet.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Sel otot polos berbentuk **fusiform** — tebal di tengah dan meruncing di kedua ujungnya.",
+  "diskriminator": "Tiga bentuk, tiga otot: **fusiform** = polos · **silindris bercabang** = jantung · **silindris lurus** = skelet."
  },
  {
   "n": 323,
@@ -4849,7 +7111,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Satu inti memanjang di tengah sel",
-  "rationale": "Otot polos: **satu inti, bentuk memanjang, letak di tengah** sel.  —  **Pola Ciri tetangga:** Hanya otot skelet yang berinti **banyak dan di tepi**. Dua otot involunter berinti satu di tengah."
+  "rationale": "Otot polos: **satu inti, bentuk memanjang, letak di tengah** sel.  —  **Pola Ciri tetangga:** Hanya otot skelet yang berinti **banyak dan di tepi**. Dua otot involunter berinti satu di tengah.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Otot polos: **satu inti, bentuk memanjang, letak di tengah** sel.",
+  "diskriminator": "Hanya otot skelet yang berinti **banyak dan di tepi**. Dua otot involunter berinti satu di tengah."
  },
  {
   "n": 324,
@@ -4864,7 +7133,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Bulatan dengan diameter berbeda-beda dan tidak semuanya berinti",
-  "rationale": "**[UB asli · CO 34, CO 86]** Karena sel otot polos **fusiform**, satu sel bisa terpotong di bagian tengahnya (diameter besar, inti kena) atau di ujung yang meruncing (diameter kecil, inti tidak kena). Hasilnya: **bulatan berdiameter berbeda-beda dan tidak semua berinti**.  —  **Pola Diskriminator konteks:** Gambaran sel **gelendong** adalah potongan **BUJUR**, bukan lintang. Baca kata “lintang” atau “bujur” sebelum membaca opsi."
+  "rationale": "**[UB asli · CO 34, CO 86]** Karena sel otot polos **fusiform**, satu sel bisa terpotong di bagian tengahnya (diameter besar, inti kena) atau di ujung yang meruncing (diameter kecil, inti tidak kena). Hasilnya: **bulatan berdiameter berbeda-beda dan tidak semua berinti**.  —  **Pola Diskriminator konteks:** Gambaran sel **gelendong** adalah potongan **BUJUR**, bukan lintang. Baca kata “lintang” atau “bujur” sebelum membaca opsi.",
+  "ppt": 6,
+  "grup": "Penampang",
+  "pola": "USI",
+  "ubAsli": true,
+  "kodeUB": "CO 34, CO 86",
+  "bahas": "Karena sel otot polos **fusiform**, satu sel bisa terpotong di bagian tengahnya (diameter besar, inti kena) atau di ujung yang meruncing (diameter kecil, inti tidak kena). Hasilnya: **bulatan berdiameter berbeda-beda dan tidak semua berinti**.",
+  "diskriminator": "Gambaran sel **gelendong** adalah potongan **BUJUR**, bukan lintang. Baca kata “lintang” atau “bujur” sebelum membaca opsi."
  },
  {
   "n": 325,
@@ -4879,7 +7155,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sel fusiform dengan inti memanjang di tengah",
-  "rationale": "Pada potongan **bujur**, bentuk **fusiform** dengan inti memanjang di tengah terlihat utuh.  —  **Pola Diskriminator konteks:** Pasangan terbalik dari soal sebelumnya. Satu kata di pokok soal mengubah seluruh jawabannya."
+  "rationale": "Pada potongan **bujur**, bentuk **fusiform** dengan inti memanjang di tengah terlihat utuh.  —  **Pola Diskriminator konteks:** Pasangan terbalik dari soal sebelumnya. Satu kata di pokok soal mengubah seluruh jawabannya.",
+  "ppt": 6,
+  "grup": "Penampang",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Pada potongan **bujur**, bentuk **fusiform** dengan inti memanjang di tengah terlihat utuh.",
+  "diskriminator": "Pasangan terbalik dari soal sebelumnya. Satu kata di pokok soal mengubah seluruh jawabannya."
  },
  {
   "n": 326,
@@ -4894,7 +7177,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Karena bentuk sel yang fusiform membuat tiap sel terpotong pada titik yang berbeda sepanjang panjangnya",
-  "rationale": "Sel **fusiform** tebal di tengah dan meruncing di ujung. Dalam satu lapangan pandang, sel-sel terpotong pada **titik yang berbeda** sepanjang panjangnya — ada yang di bagian tebal, ada yang di ujung tipis.  —  **Pola Turunkan dari prinsip:** Dan ini sekaligus menjelaskan mengapa **tidak semua bulatan berinti**: yang terpotong di ujung meruncing tidak mengenai intinya yang terletak di tengah sel."
+  "rationale": "Sel **fusiform** tebal di tengah dan meruncing di ujung. Dalam satu lapangan pandang, sel-sel terpotong pada **titik yang berbeda** sepanjang panjangnya — ada yang di bagian tebal, ada yang di ujung tipis.  —  **Pola Turunkan dari prinsip:** Dan ini sekaligus menjelaskan mengapa **tidak semua bulatan berinti**: yang terpotong di ujung meruncing tidak mengenai intinya yang terletak di tengah sel.",
+  "ppt": 6,
+  "grup": "Penampang",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Sel **fusiform** tebal di tengah dan meruncing di ujung. Dalam satu lapangan pandang, sel-sel terpotong pada **titik yang berbeda** sepanjang panjangnya — ada yang di bagian tebal, ada yang di ujung tipis.",
+  "diskriminator": "Dan ini sekaligus menjelaskan mengapa **tidak semua bulatan berinti**: yang terpotong di ujung meruncing tidak mengenai intinya yang terletak di tengah sel."
  },
  {
   "n": 327,
@@ -4909,7 +7199,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Panjang 30–200 µm, tebal 5–10 µm",
-  "rationale": "Otot polos: **panjang 30–200 µm, tebal 5–10 µm**.  —  **Pola Angka & daftar:** Bandingkan: sel otot **jantung** ±100 µm dengan diameter ±15 µm, dan **serabut Purkinje** berdiameter ±50 µm."
+  "rationale": "Otot polos: **panjang 30–200 µm, tebal 5–10 µm**.  —  **Pola Angka & daftar:** Bandingkan: sel otot **jantung** ±100 µm dengan diameter ±15 µm, dan **serabut Purkinje** berdiameter ±50 µm.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Otot polos: **panjang 30–200 µm, tebal 5–10 µm**.",
+  "diskriminator": "Bandingkan: sel otot **jantung** ±100 µm dengan diameter ±15 µm, dan **serabut Purkinje** berdiameter ±50 µm."
  },
  {
   "n": 328,
@@ -4924,7 +7221,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sel-sel mesenkim",
-  "rationale": "Sebagian besar otot polos berasal dari **sel mesenkim** (mesoderm), dengan beberapa pengecualian yang berasal dari ektoderm.  —  **Pola Kategori jawaban:** Pertanyaan berikutnya selalu tentang **pengecualiannya** — dan slide menandainya khusus, jadi pasti jadi soal."
+  "rationale": "Sebagian besar otot polos berasal dari **sel mesenkim** (mesoderm), dengan beberapa pengecualian yang berasal dari ektoderm.  —  **Pola Kategori jawaban:** Pertanyaan berikutnya selalu tentang **pengecualiannya** — dan slide menandainya khusus, jadi pasti jadi soal.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Sebagian besar otot polos berasal dari **sel mesenkim** (mesoderm), dengan beberapa pengecualian yang berasal dari ektoderm.",
+  "diskriminator": "Pertanyaan berikutnya selalu tentang **pengecualiannya** — dan slide menandainya khusus, jadi pasti jadi soal."
  },
  {
   "n": 329,
@@ -4939,7 +7243,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Dinding usus",
-  "rationale": "Empat pengecualian berasal **ektoderm**: **iris · kelenjar liur · kelenjar keringat · kelenjar lakrimalis**. Otot polos **dinding usus** berasal dari **mesenkim** seperti kebanyakan otot polos lain.  —  **Pola Angka & daftar:** Empat pengecualian itu punya logika: semuanya berkembang bersama **epitel permukaan atau jaringan saraf**, yang sama-sama ektoderm. Kelenjar keringat dan lakrimalis berasal dari epidermis; iris dari kantung optik."
+  "rationale": "Empat pengecualian berasal **ektoderm**: **iris · kelenjar liur · kelenjar keringat · kelenjar lakrimalis**. Otot polos **dinding usus** berasal dari **mesenkim** seperti kebanyakan otot polos lain.  —  **Pola Angka & daftar:** Empat pengecualian itu punya logika: semuanya berkembang bersama **epitel permukaan atau jaringan saraf**, yang sama-sama ektoderm. Kelenjar keringat dan lakrimalis berasal dari epidermis; iris dari kantung optik.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Empat pengecualian berasal **ektoderm**: **iris · kelenjar liur · kelenjar keringat · kelenjar lakrimalis**. Otot polos **dinding usus** berasal dari **mesenkim** seperti kebanyakan otot polos lain.",
+  "diskriminator": "Empat pengecualian itu punya logika: semuanya berkembang bersama **epitel permukaan atau jaringan saraf**, yang sama-sama ektoderm. Kelenjar keringat dan lakrimalis berasal dari epidermis; iris dari kantung optik."
  },
  {
   "n": 330,
@@ -4954,7 +7265,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Karena keempatnya berkembang bersama epitel permukaan atau jaringan saraf yang juga berasal dari ektoderm",
-  "rationale": "Kelenjar keringat dan lakrimalis berkembang dari **epidermis** (ektoderm); iris berkembang dari **kantung optik** yang juga ektoderm. Otot polosnya ikut berasal dari jaringan asal organnya.  —  **Pola Turunkan dari prinsip:** Pengecualian yang punya alasan lebih mudah diingat daripada daftar hafalan. Tanya: “organ ini berkembang dari apa?”"
+  "rationale": "Kelenjar keringat dan lakrimalis berkembang dari **epidermis** (ektoderm); iris berkembang dari **kantung optik** yang juga ektoderm. Otot polosnya ikut berasal dari jaringan asal organnya.  —  **Pola Turunkan dari prinsip:** Pengecualian yang punya alasan lebih mudah diingat daripada daftar hafalan. Tanya: “organ ini berkembang dari apa?”",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Kelenjar keringat dan lakrimalis berkembang dari **epidermis** (ektoderm); iris berkembang dari **kantung optik** yang juga ektoderm. Otot polosnya ikut berasal dari jaringan asal organnya.",
+  "diskriminator": "Pengecualian yang punya alasan lebih mudah diingat daripada daftar hafalan. Tanya: “organ ini berkembang dari apa?”"
  },
  {
   "n": 331,
@@ -4969,7 +7287,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Pertengahan esofagus sampai anus",
-  "rationale": "Otot polos saluran cerna ada dari **pertengahan esofagus sampai anus**. Bagian **atas esofagus** justru otot **skelet**.  —  **Pola Diskriminator konteks:** Itulah sebabnya **menelan dimulai secara sadar** lalu menjadi tidak sadar — sepertiga atas esofagus masih otot skelet."
+  "rationale": "Otot polos saluran cerna ada dari **pertengahan esofagus sampai anus**. Bagian **atas esofagus** justru otot **skelet**.  —  **Pola Diskriminator konteks:** Itulah sebabnya **menelan dimulai secara sadar** lalu menjadi tidak sadar — sepertiga atas esofagus masih otot skelet.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Otot polos saluran cerna ada dari **pertengahan esofagus sampai anus**. Bagian **atas esofagus** justru otot **skelet**.",
+  "diskriminator": "Itulah sebabnya **menelan dimulai secara sadar** lalu menjadi tidak sadar — sepertiga atas esofagus masih otot skelet."
  },
  {
   "n": 332,
@@ -4984,7 +7309,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot polos",
-  "rationale": "Otot **arrector pili** di dermis adalah **otot polos** — materi ini menyebut dermis sebagai salah satu lokasi otot polos. Karena itu merinding bersifat **involunter**.  —  **Pola Ciri tetangga:** Hubungkan dengan PPT 1: **m. arrector pili** melekat pada folikel rambut, dan kontraksinya tidak bisa kamu perintahkan secara sadar — konsisten dengan otot polos."
+  "rationale": "Otot **arrector pili** di dermis adalah **otot polos** — materi ini menyebut dermis sebagai salah satu lokasi otot polos. Karena itu merinding bersifat **involunter**.  —  **Pola Ciri tetangga:** Hubungkan dengan PPT 1: **m. arrector pili** melekat pada folikel rambut, dan kontraksinya tidak bisa kamu perintahkan secara sadar — konsisten dengan otot polos.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Otot **arrector pili** di dermis adalah **otot polos** — materi ini menyebut dermis sebagai salah satu lokasi otot polos. Karena itu merinding bersifat **involunter**.",
+  "diskriminator": "Hubungkan dengan PPT 1: **m. arrector pili** melekat pada folikel rambut, dan kontraksinya tidak bisa kamu perintahkan secara sadar — konsisten dengan otot polos."
  },
  {
   "n": 333,
@@ -4999,7 +7331,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Lidah",
-  "rationale": "**Lidah** tersusun dari otot **skelet** — itulah sebabnya kamu bisa menggerakkannya secara sadar. Bronkiolus, ureter, uterus, dan iris semuanya berotot polos.  —  **Pola Kategori jawaban:** Uji cepat: **bisa kamu gerakkan sesuka hati?** Kalau ya, itu otot skelet. Lidah bisa, usus tidak."
+  "rationale": "**Lidah** tersusun dari otot **skelet** — itulah sebabnya kamu bisa menggerakkannya secara sadar. Bronkiolus, ureter, uterus, dan iris semuanya berotot polos.  —  **Pola Kategori jawaban:** Uji cepat: **bisa kamu gerakkan sesuka hati?** Kalau ya, itu otot skelet. Lidah bisa, usus tidak.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Lidah** tersusun dari otot **skelet** — itulah sebabnya kamu bisa menggerakkannya secara sadar. Bronkiolus, ureter, uterus, dan iris semuanya berotot polos.",
+  "diskriminator": "Uji cepat: **bisa kamu gerakkan sesuka hati?** Kalau ya, itu otot skelet. Lidah bisa, usus tidak."
  },
  {
   "n": 334,
@@ -5014,7 +7353,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Caveolae",
-  "rationale": "**Caveolae** adalah lekukan kecil sarkolema otot polos yang berfungsi dalam **depolarisasi dan pengaturan aliran Ca²⁺** — fungsinya analog tubulus T, tetapi jauh lebih sederhana.  —  **Pola Ciri tetangga:** Tiga sistem untuk satu fungsi yang sama: **caveolae** = polos · **tubulus T** = jantung · **tubulus T + triad** = skelet. Makin cepat kontraksinya, makin canggih sistemnya."
+  "rationale": "**Caveolae** adalah lekukan kecil sarkolema otot polos yang berfungsi dalam **depolarisasi dan pengaturan aliran Ca²⁺** — fungsinya analog tubulus T, tetapi jauh lebih sederhana.  —  **Pola Ciri tetangga:** Tiga sistem untuk satu fungsi yang sama: **caveolae** = polos · **tubulus T** = jantung · **tubulus T + triad** = skelet. Makin cepat kontraksinya, makin canggih sistemnya.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Caveolae** adalah lekukan kecil sarkolema otot polos yang berfungsi dalam **depolarisasi dan pengaturan aliran Ca²⁺** — fungsinya analog tubulus T, tetapi jauh lebih sederhana.",
+  "diskriminator": "Tiga sistem untuk satu fungsi yang sama: **caveolae** = polos · **tubulus T** = jantung · **tubulus T + triad** = skelet. Makin cepat kontraksinya, makin canggih sistemnya."
  },
  {
   "n": 335,
@@ -5029,7 +7375,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Karena otot polos berkontraksi lambat dan berkelanjutan sehingga tidak perlu pelepasan Ca²⁺ yang sangat cepat dan serentak",
-  "rationale": "Kecanggihan sistem tubulus sebanding dengan **kebutuhan kecepatan dan keserentakan** kontraksi. Otot polos berkontraksi **lambat dan berkelanjutan**, jadi caveolae sederhana sudah cukup.  —  **Pola Turunkan dari prinsip:** Otot polos **tetap** butuh Ca²⁺ dan **tetap** dipersarafi (autonom) serta **tetap** punya aktin-miosin — tiga opsi itu salah fakta."
+  "rationale": "Kecanggihan sistem tubulus sebanding dengan **kebutuhan kecepatan dan keserentakan** kontraksi. Otot polos berkontraksi **lambat dan berkelanjutan**, jadi caveolae sederhana sudah cukup.  —  **Pola Turunkan dari prinsip:** Otot polos **tetap** butuh Ca²⁺ dan **tetap** dipersarafi (autonom) serta **tetap** punya aktin-miosin — tiga opsi itu salah fakta.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Kecanggihan sistem tubulus sebanding dengan **kebutuhan kecepatan dan keserentakan** kontraksi. Otot polos berkontraksi **lambat dan berkelanjutan**, jadi caveolae sederhana sudah cukup.",
+  "diskriminator": "Otot polos **tetap** butuh Ca²⁺ dan **tetap** dipersarafi (autonom) serta **tetap** punya aktin-miosin — tiga opsi itu salah fakta."
  },
  {
   "n": 336,
@@ -5044,7 +7397,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sel",
-  "rationale": "Satuan kontraktil otot polos adalah **SEL**, bukan sarkomer — konsekuensi langsung dari tidak adanya pita dan garis Z yang teratur.  —  **Pola Ciri tetangga:** Tanpa garis Z yang teratur, **sarkomer tidak bisa didefinisikan**. Satuan kontraktil otot jantung dan skelet adalah sarkomer; otot polos adalah sel."
+  "rationale": "Satuan kontraktil otot polos adalah **SEL**, bukan sarkomer — konsekuensi langsung dari tidak adanya pita dan garis Z yang teratur.  —  **Pola Ciri tetangga:** Tanpa garis Z yang teratur, **sarkomer tidak bisa didefinisikan**. Satuan kontraktil otot jantung dan skelet adalah sarkomer; otot polos adalah sel.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Satuan kontraktil otot polos adalah **SEL**, bukan sarkomer — konsekuensi langsung dari tidak adanya pita dan garis Z yang teratur.",
+  "diskriminator": "Tanpa garis Z yang teratur, **sarkomer tidak bisa didefinisikan**. Satuan kontraktil otot jantung dan skelet adalah sarkomer; otot polos adalah sel."
  },
  {
   "n": 337,
@@ -5059,7 +7419,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Filamen tebal dan tipis saling bergeser, tetapi susunannya tidak teratur",
-  "rationale": "Mekanismenya tetap **pergeseran filamen** antara miofilamen tebal dan tipis — sama seperti otot skelet. Yang berbeda hanya **keteraturan susunannya**: pada otot polos susunannya tidak teratur.  —  **Pola Ciri tetangga:** Jangan simpulkan bahwa “tidak bergaris” berarti “tanpa aktin-miosin”. Protein kontraktilnya tetap ada; yang tidak ada hanya **susunan teraturnya**."
+  "rationale": "Mekanismenya tetap **pergeseran filamen** antara miofilamen tebal dan tipis — sama seperti otot skelet. Yang berbeda hanya **keteraturan susunannya**: pada otot polos susunannya tidak teratur.  —  **Pola Ciri tetangga:** Jangan simpulkan bahwa “tidak bergaris” berarti “tanpa aktin-miosin”. Protein kontraktilnya tetap ada; yang tidak ada hanya **susunan teraturnya**.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Mekanismenya tetap **pergeseran filamen** antara miofilamen tebal dan tipis — sama seperti otot skelet. Yang berbeda hanya **keteraturan susunannya**: pada otot polos susunannya tidak teratur.",
+  "diskriminator": "Jangan simpulkan bahwa “tidak bergaris” berarti “tanpa aktin-miosin”. Protein kontraktilnya tetap ada; yang tidak ada hanya **susunan teraturnya**."
  },
  {
   "n": 338,
@@ -5074,7 +7441,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Filamen tebal dan tipis paralel dan memanjang",
-  "rationale": "Saat **relaksasi**, filamen tebal dan tipis **paralel dan memanjang**. Saat **kontraksi**, susunannya menjadi **tidak teratur**.  —  **Pola Ciri tetangga:** Pasangan berlawanan yang mudah dibalik soal: relaksasi = **paralel memanjang**; kontraksi = **tidak teratur**."
+  "rationale": "Saat **relaksasi**, filamen tebal dan tipis **paralel dan memanjang**. Saat **kontraksi**, susunannya menjadi **tidak teratur**.  —  **Pola Ciri tetangga:** Pasangan berlawanan yang mudah dibalik soal: relaksasi = **paralel memanjang**; kontraksi = **tidak teratur**.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Saat **relaksasi**, filamen tebal dan tipis **paralel dan memanjang**. Saat **kontraksi**, susunannya menjadi **tidak teratur**.",
+  "diskriminator": "Pasangan berlawanan yang mudah dibalik soal: relaksasi = **paralel memanjang**; kontraksi = **tidak teratur**."
  },
  {
   "n": 339,
@@ -5089,7 +7463,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Seratnya bermielin",
-  "rationale": "Semua serat saraf otot polos bersifat **post ganglionik dan TIDAK bermielin**, berasal dari sistem saraf **autonom** (simpatis dan parasimpatis), dengan hubungan mioneural berupa **sinaps** sederhana.  —  **Pola Kategori jawaban:** Hubungkan dengan prinsip **mielin = kecepatan** dari PPT 3: serat tak bermielin menghantar lambat — dan itu cocok, karena otot polos tidak butuh respons cepat."
+  "rationale": "Semua serat saraf otot polos bersifat **post ganglionik dan TIDAK bermielin**, berasal dari sistem saraf **autonom** (simpatis dan parasimpatis), dengan hubungan mioneural berupa **sinaps** sederhana.  —  **Pola Kategori jawaban:** Hubungkan dengan prinsip **mielin = kecepatan** dari PPT 3: serat tak bermielin menghantar lambat — dan itu cocok, karena otot polos tidak butuh respons cepat.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Semua serat saraf otot polos bersifat **post ganglionik dan TIDAK bermielin**, berasal dari sistem saraf **autonom** (simpatis dan parasimpatis), dengan hubungan mioneural berupa **sinaps** sederhana.",
+  "diskriminator": "Hubungkan dengan prinsip **mielin = kecepatan** dari PPT 3: serat tak bermielin menghantar lambat — dan itu cocok, karena otot polos tidak butuh respons cepat."
  },
  {
   "n": 340,
@@ -5104,7 +7485,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Motor end plate",
-  "rationale": "Otot skelet: **MOTOR END PLATE** — struktur khusus yang jauh lebih kompleks. Otot polos: **sinaps** sederhana.  —  **Pola Ciri tetangga:** Tiga pola persarafan: **motor end plate + asetilkolin** → skelet · **sinaps sederhana + post ganglionik tak bermielin** → polos · **tidak ada keduanya (spontan)** → jantung."
+  "rationale": "Otot skelet: **MOTOR END PLATE** — struktur khusus yang jauh lebih kompleks. Otot polos: **sinaps** sederhana.  —  **Pola Ciri tetangga:** Tiga pola persarafan: **motor end plate + asetilkolin** → skelet · **sinaps sederhana + post ganglionik tak bermielin** → polos · **tidak ada keduanya (spontan)** → jantung.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Otot skelet: **MOTOR END PLATE** — struktur khusus yang jauh lebih kompleks. Otot polos: **sinaps** sederhana.",
+  "diskriminator": "Tiga pola persarafan: **motor end plate + asetilkolin** → skelet · **sinaps sederhana + post ganglionik tak bermielin** → polos · **tidak ada keduanya (spontan)** → jantung."
  },
  {
   "n": 341,
@@ -5119,7 +7507,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot polos visera (unitary)",
-  "rationale": "**Otot polos visera / unitary**: akhiran saraf hanya menempel pada permukaan pembungkusnya, dan impuls menyebar **dari sel ke sel melalui NEXUS**.  —  **Pola Kategori jawaban:** Kata kunci **nexus sebagai jalur impuls** → unitary/visera. Kalau tiap sel punya saraf sendiri → multi unit."
+  "rationale": "**Otot polos visera / unitary**: akhiran saraf hanya menempel pada permukaan pembungkusnya, dan impuls menyebar **dari sel ke sel melalui NEXUS**.  —  **Pola Kategori jawaban:** Kata kunci **nexus sebagai jalur impuls** → unitary/visera. Kalau tiap sel punya saraf sendiri → multi unit.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Otot polos visera / unitary**: akhiran saraf hanya menempel pada permukaan pembungkusnya, dan impuls menyebar **dari sel ke sel melalui NEXUS**.",
+  "diskriminator": "Kata kunci **nexus sebagai jalur impuls** → unitary/visera. Kalau tiap sel punya saraf sendiri → multi unit."
  },
  {
   "n": 342,
@@ -5134,7 +7529,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot polos multi unit",
-  "rationale": "**Otot polos multi unit**: masing-masing saraf menginervasi selnya sendiri-sendiri, tiap sel mendapat saraf terminal.  —  **Pola Kategori jawaban:** Perhatikan bahwa **visera** dan **unitary** adalah nama untuk jenis yang SAMA, jadi keduanya tidak mungkin menjadi kunci di soal ini."
+  "rationale": "**Otot polos multi unit**: masing-masing saraf menginervasi selnya sendiri-sendiri, tiap sel mendapat saraf terminal.  —  **Pola Kategori jawaban:** Perhatikan bahwa **visera** dan **unitary** adalah nama untuk jenis yang SAMA, jadi keduanya tidak mungkin menjadi kunci di soal ini.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Otot polos multi unit**: masing-masing saraf menginervasi selnya sendiri-sendiri, tiap sel mendapat saraf terminal.",
+  "diskriminator": "Perhatikan bahwa **visera** dan **unitary** adalah nama untuk jenis yang SAMA, jadi keduanya tidak mungkin menjadi kunci di soal ini."
  },
  {
   "n": 343,
@@ -5149,7 +7551,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Iris, arteri besar, dinding duktus deferens",
-  "rationale": "**Multi unit**: **iris · arteri besar · dinding duktus deferens**. **Unitary/visera**: usus · uterus · ureter · pembuluh darah kecil-sedang.  —  **Pola Angka & daftar:** Diskriminator cepat: **iris** atau **duktus deferens** → multi unit · **usus** atau **uterus** → unitary."
+  "rationale": "**Multi unit**: **iris · arteri besar · dinding duktus deferens**. **Unitary/visera**: usus · uterus · ureter · pembuluh darah kecil-sedang.  —  **Pola Angka & daftar:** Diskriminator cepat: **iris** atau **duktus deferens** → multi unit · **usus** atau **uterus** → unitary.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Multi unit**: **iris · arteri besar · dinding duktus deferens**. **Unitary/visera**: usus · uterus · ureter · pembuluh darah kecil-sedang.",
+  "diskriminator": "Diskriminator cepat: **iris** atau **duktus deferens** → multi unit · **usus** atau **uterus** → unitary."
  },
  {
   "n": 344,
@@ -5164,7 +7573,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Usus, uterus, ureter, pembuluh darah kecil dan sedang",
-  "rationale": "**Unitary/visera**: **usus · uterus · ureter · pembuluh darah kecil dan sedang**.  —  **Pola Angka & daftar:** Perhatikan ukuran pembuluh: **arteri BESAR** → multi unit · **pembuluh KECIL–SEDANG** → unitary. Satu kata ukuran yang menentukan."
+  "rationale": "**Unitary/visera**: **usus · uterus · ureter · pembuluh darah kecil dan sedang**.  —  **Pola Angka & daftar:** Perhatikan ukuran pembuluh: **arteri BESAR** → multi unit · **pembuluh KECIL–SEDANG** → unitary. Satu kata ukuran yang menentukan.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Unitary/visera**: **usus · uterus · ureter · pembuluh darah kecil dan sedang**.",
+  "diskriminator": "Perhatikan ukuran pembuluh: **arteri BESAR** → multi unit · **pembuluh KECIL–SEDANG** → unitary. Satu kata ukuran yang menentukan."
  },
  {
   "n": 345,
@@ -5179,7 +7595,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Karena keduanya memerlukan kontraksi massal yang serentak sebagai satu kesatuan",
-  "rationale": "Usus harus berperistaltik sebagai **satu gelombang**, dan uterus berkontraksi **serentak** saat persalinan. Kalau tiap sel harus diperintah sendiri, koordinasi itu tidak mungkin — maka impuls disebarkan sel ke sel lewat **nexus**.  —  **Pola Turunkan dari prinsip:** Dan kebalikannya menjelaskan multi unit: **iris** perlu kontrol halus dan selektif untuk mengatur pupil, jadi tiap sel harus diperintah sendiri."
+  "rationale": "Usus harus berperistaltik sebagai **satu gelombang**, dan uterus berkontraksi **serentak** saat persalinan. Kalau tiap sel harus diperintah sendiri, koordinasi itu tidak mungkin — maka impuls disebarkan sel ke sel lewat **nexus**.  —  **Pola Turunkan dari prinsip:** Dan kebalikannya menjelaskan multi unit: **iris** perlu kontrol halus dan selektif untuk mengatur pupil, jadi tiap sel harus diperintah sendiri.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Usus harus berperistaltik sebagai **satu gelombang**, dan uterus berkontraksi **serentak** saat persalinan. Kalau tiap sel harus diperintah sendiri, koordinasi itu tidak mungkin — maka impuls disebarkan sel ke sel lewat **nexus**.",
+  "diskriminator": "Dan kebalikannya menjelaskan multi unit: **iris** perlu kontrol halus dan selektif untuk mengatur pupil, jadi tiap sel harus diperintah sendiri."
  },
  {
   "n": 346,
@@ -5194,7 +7617,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Hipertrofi",
-  "rationale": "**Hipertrofi** = pembesaran **UKURAN** sel. **Hiperplasia** = peningkatan **JUMLAH** sel.  —  **Pola Pasangan berlawanan:** Hiper·**TROFI** dari trophe = nutrisi/pertumbuhan → sel **tumbuh membesar**. Hiper·**PLASIA** dari plasis = pembentukan → sel **dibentuk lebih banyak**."
+  "rationale": "**Hipertrofi** = pembesaran **UKURAN** sel. **Hiperplasia** = peningkatan **JUMLAH** sel.  —  **Pola Pasangan berlawanan:** Hiper·**TROFI** dari trophe = nutrisi/pertumbuhan → sel **tumbuh membesar**. Hiper·**PLASIA** dari plasis = pembentukan → sel **dibentuk lebih banyak**.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Hipertrofi** = pembesaran **UKURAN** sel. **Hiperplasia** = peningkatan **JUMLAH** sel.",
+  "diskriminator": "Hiper·**TROFI** dari trophe = nutrisi/pertumbuhan → sel **tumbuh membesar**. Hiper·**PLASIA** dari plasis = pembentukan → sel **dibentuk lebih banyak**."
  },
  {
   "n": 347,
@@ -5209,7 +7639,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Hiperplasia",
-  "rationale": "Materi menyebut **miometrium uterus pada kehamilan** sebagai contoh **hiperplasia** — jumlah selnya bertambah. Secara praktis uterus mengalami hipertrofi juga, tetapi contoh yang ditandai untuk hiperplasia adalah ini.  —  **Pola Diskriminator konteks:** Logikanya: uterus harus membesar **berkali-kali lipat**, dan itu tidak mungkin hanya dengan membesarkan sel yang ada."
+  "rationale": "Materi menyebut **miometrium uterus pada kehamilan** sebagai contoh **hiperplasia** — jumlah selnya bertambah. Secara praktis uterus mengalami hipertrofi juga, tetapi contoh yang ditandai untuk hiperplasia adalah ini.  —  **Pola Diskriminator konteks:** Logikanya: uterus harus membesar **berkali-kali lipat**, dan itu tidak mungkin hanya dengan membesarkan sel yang ada.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Materi menyebut **miometrium uterus pada kehamilan** sebagai contoh **hiperplasia** — jumlah selnya bertambah. Secara praktis uterus mengalami hipertrofi juga, tetapi contoh yang ditandai untuk hiperplasia adalah ini.",
+  "diskriminator": "Logikanya: uterus harus membesar **berkali-kali lipat**, dan itu tidak mungkin hanya dengan membesarkan sel yang ada."
  },
  {
   "n": 348,
@@ -5224,7 +7661,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Hipertrofi",
-  "rationale": "Keduanya adalah contoh **hipertrofi** — sel otot polos **membesar** karena harus bekerja melawan beban yang lebih berat.  —  **Pola Diskriminator konteks:** Pola yang sama di keduanya: ada **beban mekanik berlebih** (tekanan darah tinggi, sumbatan kemih) → sel menebal untuk menahannya."
+  "rationale": "Keduanya adalah contoh **hipertrofi** — sel otot polos **membesar** karena harus bekerja melawan beban yang lebih berat.  —  **Pola Diskriminator konteks:** Pola yang sama di keduanya: ada **beban mekanik berlebih** (tekanan darah tinggi, sumbatan kemih) → sel menebal untuk menahannya.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Keduanya adalah contoh **hipertrofi** — sel otot polos **membesar** karena harus bekerja melawan beban yang lebih berat.",
+  "diskriminator": "Pola yang sama di keduanya: ada **beban mekanik berlebih** (tekanan darah tinggi, sumbatan kemih) → sel menebal untuk menahannya."
  },
  {
   "n": 349,
@@ -5239,7 +7683,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot polos rahim selama kehamilan",
-  "rationale": "Materi membedakan rangsangan **FISIOLOGIS** — **rahim selama hamil** — dari **PATOLOGIS** — **arteriol pada hipertensi**.  —  **Pola Diskriminator konteks:** Proses selulernya sama; yang berbeda adalah **konteksnya normal atau akibat penyakit**. Jadi hipertrofi tidak selalu patologis."
+  "rationale": "Materi membedakan rangsangan **FISIOLOGIS** — **rahim selama hamil** — dari **PATOLOGIS** — **arteriol pada hipertensi**.  —  **Pola Diskriminator konteks:** Proses selulernya sama; yang berbeda adalah **konteksnya normal atau akibat penyakit**. Jadi hipertrofi tidak selalu patologis.",
+  "ppt": 6,
+  "grup": "Otot Polos",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Materi membedakan rangsangan **FISIOLOGIS** — **rahim selama hamil** — dari **PATOLOGIS** — **arteriol pada hipertensi**.",
+  "diskriminator": "Proses selulernya sama; yang berbeda adalah **konteksnya normal atau akibat penyakit**. Jadi hipertrofi tidak selalu patologis."
  },
  {
   "n": 350,
@@ -5254,7 +7705,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot polos",
-  "rationale": "Hanya **otot polos** yang sel-selnya dapat membelah secara **mitosis**. Sumber sel baru juga bisa dari diferensiasi sel mesenkim atau sel mesenkim residual.  —  **Pola Ciri tetangga:** Urutan kemampuan regenerasi: **polos > skelet > jantung**. Hanya yang paling atas bisa bermitosis sendiri."
+  "rationale": "Hanya **otot polos** yang sel-selnya dapat membelah secara **mitosis**. Sumber sel baru juga bisa dari diferensiasi sel mesenkim atau sel mesenkim residual.  —  **Pola Ciri tetangga:** Urutan kemampuan regenerasi: **polos > skelet > jantung**. Hanya yang paling atas bisa bermitosis sendiri.",
+  "ppt": 6,
+  "grup": "Regenerasi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Hanya **otot polos** yang sel-selnya dapat membelah secara **mitosis**. Sumber sel baru juga bisa dari diferensiasi sel mesenkim atau sel mesenkim residual.",
+  "diskriminator": "Urutan kemampuan regenerasi: **polos > skelet > jantung**. Hanya yang paling atas bisa bermitosis sendiri."
  },
  {
   "n": 351,
@@ -5269,7 +7727,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Daerah parut dapat kembali berkontraksi setelah beberapa bulan",
-  "rationale": "**Jaringan parut tidak bisa berkontraksi dan tidak bisa menghantarkan impuls**, dan itu bersifat **permanen**. Empat konsekuensi lainnya mengikuti langsung dari sifat itu.  —  **Pola Turunkan dari prinsip:** Satu fakta histologi — regenerasi buruk → parut — menjelaskan seluruh gambaran klinis pasca-infark. Ini pola menurunkan dari prinsip, bukan hafalan daftar."
+  "rationale": "**Jaringan parut tidak bisa berkontraksi dan tidak bisa menghantarkan impuls**, dan itu bersifat **permanen**. Empat konsekuensi lainnya mengikuti langsung dari sifat itu.  —  **Pola Turunkan dari prinsip:** Satu fakta histologi — regenerasi buruk → parut — menjelaskan seluruh gambaran klinis pasca-infark. Ini pola menurunkan dari prinsip, bukan hafalan daftar.",
+  "ppt": 6,
+  "grup": "Regenerasi",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Jaringan parut tidak bisa berkontraksi dan tidak bisa menghantarkan impuls**, dan itu bersifat **permanen**. Empat konsekuensi lainnya mengikuti langsung dari sifat itu.",
+  "diskriminator": "Satu fakta histologi — regenerasi buruk → parut — menjelaskan seluruh gambaran klinis pasca-infark. Ini pola menurunkan dari prinsip, bukan hafalan daftar."
  },
  {
   "n": 352,
@@ -5284,7 +7749,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot jantung beranastomose (bercabang)",
-  "rationale": "**[UB asli · CO 24]** **Hanya otot jantung yang bercabang (anastomose)**. Otot skelet silindris lurus; otot polos fusiform. Keduanya tanpa cabang.  —  **Pola Ciri tetangga:** Kalau gambaran mikroskopis menunjukkan **percabangan**, jawabannya pasti otot jantung — tidak ada kandidat lain. **Area Cohnheim** justru ciri otot skelet."
+  "rationale": "**[UB asli · CO 24]** **Hanya otot jantung yang bercabang (anastomose)**. Otot skelet silindris lurus; otot polos fusiform. Keduanya tanpa cabang.  —  **Pola Ciri tetangga:** Kalau gambaran mikroskopis menunjukkan **percabangan**, jawabannya pasti otot jantung — tidak ada kandidat lain. **Area Cohnheim** justru ciri otot skelet.",
+  "ppt": 6,
+  "grup": "Otot Jantung",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": "CO 24",
+  "bahas": "**Hanya otot jantung yang bercabang (anastomose)**. Otot skelet silindris lurus; otot polos fusiform. Keduanya tanpa cabang.",
+  "diskriminator": "Kalau gambaran mikroskopis menunjukkan **percabangan**, jawabannya pasti otot jantung — tidak ada kandidat lain. **Area Cohnheim** justru ciri otot skelet."
  },
  {
   "n": 353,
@@ -5299,7 +7771,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Karena jantung harus berkontraksi sebagai satu kesatuan terkoordinasi dalam tiga dimensi untuk meremas ruang berbentuk kantung",
-  "rationale": "Serat lurus paralel (seperti otot skelet, yang hanya perlu menarik tendo **satu arah**) tidak bisa meremas ruang berbentuk kantung. Jaringan **bercabang yang saling beranastomose** bisa berkontraksi terkoordinasi dalam tiga dimensi.  —  **Pola Turunkan dari prinsip:** Bentuk mengikuti fungsi: otot skelet menarik **satu arah** → serat lurus · jantung **meremas** → serat bercabang."
+  "rationale": "Serat lurus paralel (seperti otot skelet, yang hanya perlu menarik tendo **satu arah**) tidak bisa meremas ruang berbentuk kantung. Jaringan **bercabang yang saling beranastomose** bisa berkontraksi terkoordinasi dalam tiga dimensi.  —  **Pola Turunkan dari prinsip:** Bentuk mengikuti fungsi: otot skelet menarik **satu arah** → serat lurus · jantung **meremas** → serat bercabang.",
+  "ppt": 6,
+  "grup": "Otot Jantung",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Serat lurus paralel (seperti otot skelet, yang hanya perlu menarik tendo **satu arah**) tidak bisa meremas ruang berbentuk kantung. Jaringan **bercabang yang saling beranastomose** bisa berkontraksi terkoordinasi dalam tiga dimensi.",
+  "diskriminator": "Bentuk mengikuti fungsi: otot skelet menarik **satu arah** → serat lurus · jantung **meremas** → serat bercabang."
  },
  {
   "n": 354,
@@ -5314,7 +7793,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Panjang ±100 µm, diameter ±15 µm",
-  "rationale": "Sel otot jantung: **panjang ±100 µm, diameter ±15 µm**.  —  **Pola Angka & daftar:** Tiga angka yang perlu dibedakan: otot polos **30–200 × 5–10 µm** · otot jantung **±100 µm, ø15 µm** · serabut Purkinje **ø50 µm**."
+  "rationale": "Sel otot jantung: **panjang ±100 µm, diameter ±15 µm**.  —  **Pola Angka & daftar:** Tiga angka yang perlu dibedakan: otot polos **30–200 × 5–10 µm** · otot jantung **±100 µm, ø15 µm** · serabut Purkinje **ø50 µm**.",
+  "ppt": 6,
+  "grup": "Otot Jantung",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Sel otot jantung: **panjang ±100 µm, diameter ±15 µm**.",
+  "diskriminator": "Tiga angka yang perlu dibedakan: otot polos **30–200 × 5–10 µm** · otot jantung **±100 µm, ø15 µm** · serabut Purkinje **ø50 µm**."
  },
  {
   "n": 355,
@@ -5329,7 +7815,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Satu inti di tengah sel",
-  "rationale": "Otot jantung: **SATU inti, letak di TENGAH** sel.  —  **Pola Ciri tetangga:** Tabel inti yang menjawab banyak soal: **polos** 1-tengah-memanjang · **jantung** 1-tengah-lonjong · **skelet** BANYAK-TEPI-lonjong."
+  "rationale": "Otot jantung: **SATU inti, letak di TENGAH** sel.  —  **Pola Ciri tetangga:** Tabel inti yang menjawab banyak soal: **polos** 1-tengah-memanjang · **jantung** 1-tengah-lonjong · **skelet** BANYAK-TEPI-lonjong.",
+  "ppt": 6,
+  "grup": "Otot Jantung",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Otot jantung: **SATU inti, letak di TENGAH** sel.",
+  "diskriminator": "Tabel inti yang menjawab banyak soal: **polos** 1-tengah-memanjang · **jantung** 1-tengah-lonjong · **skelet** BANYAK-TEPI-lonjong."
  },
  {
   "n": 356,
@@ -5344,7 +7837,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Inti lonjong di tengah sel",
-  "rationale": "**[UB asli · CO 45]** **Inti di tengah** adalah ciri otot jantung; otot skelet berinti **banyak di tepi**. Tiga opsi lain salah fakta: pita H ada **di dalam** pita A, garis Z ada di tengah pita **I**, dan diskus isotrop (pita I) berisi filamen **tipis**.  —  **Pola Ciri tetangga:** Catatan kejujuran: soal aslinya juga memuat opsi “area seperti pulau” (Area Cohnheim), yang **juga** pembeda sah. Kalau ketemu soal ambigu seperti ini, pilih opsi yang menyebut ciri **secara eksplisit tanpa parafrasa**."
+  "rationale": "**[UB asli · CO 45]** **Inti di tengah** adalah ciri otot jantung; otot skelet berinti **banyak di tepi**. Tiga opsi lain salah fakta: pita H ada **di dalam** pita A, garis Z ada di tengah pita **I**, dan diskus isotrop (pita I) berisi filamen **tipis**.  —  **Pola Ciri tetangga:** Catatan kejujuran: soal aslinya juga memuat opsi “area seperti pulau” (Area Cohnheim), yang **juga** pembeda sah. Kalau ketemu soal ambigu seperti ini, pilih opsi yang menyebut ciri **secara eksplisit tanpa parafrasa**.",
+  "ppt": 6,
+  "grup": "Otot Jantung",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": "CO 45",
+  "bahas": "**Inti di tengah** adalah ciri otot jantung; otot skelet berinti **banyak di tepi**. Tiga opsi lain salah fakta: pita H ada **di dalam** pita A, garis Z ada di tengah pita **I**, dan diskus isotrop (pita I) berisi filamen **tipis**.",
+  "diskriminator": "Catatan kejujuran: soal aslinya juga memuat opsi “area seperti pulau” (Area Cohnheim), yang **juga** pembeda sah. Kalau ketemu soal ambigu seperti ini, pilih opsi yang menyebut ciri **secara eksplisit tanpa parafrasa**."
  },
  {
   "n": 357,
@@ -5359,7 +7859,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Garis Z",
-  "rationale": "**[UB asli · CO 43]** **Diskus interkalaris selalu melintasi serat pada GARIS Z.**  —  **Pola Ciri tetangga:** Bisa diturunkan, tidak perlu dihafal: garis Z adalah tempat **aktin melekat** dan ujung sarkomer. Diskus interkalaris adalah batas antar sel yang harus meneruskan tarikan antar sarkomer, jadi dia **menggantikan garis Z** di batas sel."
+  "rationale": "**[UB asli · CO 43]** **Diskus interkalaris selalu melintasi serat pada GARIS Z.**  —  **Pola Ciri tetangga:** Bisa diturunkan, tidak perlu dihafal: garis Z adalah tempat **aktin melekat** dan ujung sarkomer. Diskus interkalaris adalah batas antar sel yang harus meneruskan tarikan antar sarkomer, jadi dia **menggantikan garis Z** di batas sel.",
+  "ppt": 6,
+  "grup": "Diskus Interkalaris",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": "CO 43",
+  "bahas": "**Diskus interkalaris selalu melintasi serat pada GARIS Z.**",
+  "diskriminator": "Bisa diturunkan, tidak perlu dihafal: garis Z adalah tempat **aktin melekat** dan ujung sarkomer. Diskus interkalaris adalah batas antar sel yang harus meneruskan tarikan antar sarkomer, jadi dia **menggantikan garis Z** di batas sel."
  },
  {
   "n": 358,
@@ -5374,7 +7881,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Karena garis Z adalah ujung sarkomer dan tempat perlekatan aktin, sehingga tarikan antar sel dapat diteruskan tanpa memutus rangkaian sarkomer",
-  "rationale": "Garis Z adalah tempat filamen **aktin melekat** dan merupakan **ujung sarkomer**. Hanya di titik itu batas antar sel bisa diletakkan tanpa memutus rangkaian sarkomer. Secara fungsional diskus interkalaris **menggantikan garis Z**.  —  **Pola Turunkan dari prinsip:** Kalau lupa jawabannya, turunkan: diskus = **batas antar sel** = harus di **ujung sarkomer** = **garis Z**."
+  "rationale": "Garis Z adalah tempat filamen **aktin melekat** dan merupakan **ujung sarkomer**. Hanya di titik itu batas antar sel bisa diletakkan tanpa memutus rangkaian sarkomer. Secara fungsional diskus interkalaris **menggantikan garis Z**.  —  **Pola Turunkan dari prinsip:** Kalau lupa jawabannya, turunkan: diskus = **batas antar sel** = harus di **ujung sarkomer** = **garis Z**.",
+  "ppt": 6,
+  "grup": "Diskus Interkalaris",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Garis Z adalah tempat filamen **aktin melekat** dan merupakan **ujung sarkomer**. Hanya di titik itu batas antar sel bisa diletakkan tanpa memutus rangkaian sarkomer. Secara fungsional diskus interkalaris **menggantikan garis Z**.",
+  "diskriminator": "Kalau lupa jawabannya, turunkan: diskus = **batas antar sel** = harus di **ujung sarkomer** = **garis Z**."
  },
  {
   "n": 359,
@@ -5389,7 +7903,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Fascia adherens",
-  "rationale": "**[UB asli · SOAL 21, SOAL 28]** **FASCIA ADHERENS** adalah tempat perlekatan filamen **aktin** dari sarkomer terminal.  —  **Pola Kategori jawaban:** Kata kunci **“aktin”** → fascia adherens, selalu. Perhatikan bahwa **macula adherens** dan **desmosom** adalah dua nama untuk hal yang sama, demikian pula **gap junction** dan **nexus**."
+  "rationale": "**[UB asli · SOAL 21, SOAL 28]** **FASCIA ADHERENS** adalah tempat perlekatan filamen **aktin** dari sarkomer terminal.  —  **Pola Kategori jawaban:** Kata kunci **“aktin”** → fascia adherens, selalu. Perhatikan bahwa **macula adherens** dan **desmosom** adalah dua nama untuk hal yang sama, demikian pula **gap junction** dan **nexus**.",
+  "ppt": 6,
+  "grup": "Diskus Interkalaris",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": "SOAL 21, SOAL 28",
+  "bahas": "**FASCIA ADHERENS** adalah tempat perlekatan filamen **aktin** dari sarkomer terminal.",
+  "diskriminator": "Kata kunci **“aktin”** → fascia adherens, selalu. Perhatikan bahwa **macula adherens** dan **desmosom** adalah dua nama untuk hal yang sama, demikian pula **gap junction** dan **nexus**."
  },
  {
   "n": 360,
@@ -5404,7 +7925,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Macula adherens (desmosom)",
-  "rationale": "**Macula adherens**, yaitu **desmosom**, adalah hubungan **MEKANIK** yang mencegah sel terpisah saat kontraksi.  —  **Pola Kategori jawaban:** Tiga komponen, tiga fungsi: **fascia adherens** = perlekatan aktin · **macula adherens** = mekanik · **gap junction** = ionik."
+  "rationale": "**Macula adherens**, yaitu **desmosom**, adalah hubungan **MEKANIK** yang mencegah sel terpisah saat kontraksi.  —  **Pola Kategori jawaban:** Tiga komponen, tiga fungsi: **fascia adherens** = perlekatan aktin · **macula adherens** = mekanik · **gap junction** = ionik.",
+  "ppt": 6,
+  "grup": "Diskus Interkalaris",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Macula adherens**, yaitu **desmosom**, adalah hubungan **MEKANIK** yang mencegah sel terpisah saat kontraksi.",
+  "diskriminator": "Tiga komponen, tiga fungsi: **fascia adherens** = perlekatan aktin · **macula adherens** = mekanik · **gap junction** = ionik."
  },
  {
   "n": 361,
@@ -5419,7 +7947,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Gap junction (nexus)",
-  "rationale": "**Gap junction**, yang juga disebut **nexus**, adalah hubungan **IONIK** — ion dapat lewat sehingga impuls menyebar dari sel ke sel.  —  **Pola Kategori jawaban:** Inilah dasar kontraksi serentak jantung: impuls menyebar **sel ke sel**, bukan karena tiap sel punya saraf sendiri."
+  "rationale": "**Gap junction**, yang juga disebut **nexus**, adalah hubungan **IONIK** — ion dapat lewat sehingga impuls menyebar dari sel ke sel.  —  **Pola Kategori jawaban:** Inilah dasar kontraksi serentak jantung: impuls menyebar **sel ke sel**, bukan karena tiap sel punya saraf sendiri.",
+  "ppt": 6,
+  "grup": "Diskus Interkalaris",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Gap junction**, yang juga disebut **nexus**, adalah hubungan **IONIK** — ion dapat lewat sehingga impuls menyebar dari sel ke sel.",
+  "diskriminator": "Inilah dasar kontraksi serentak jantung: impuls menyebar **sel ke sel**, bukan karena tiap sel punya saraf sendiri."
  },
  {
   "n": 362,
@@ -5434,7 +7969,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Fascia berarti lembaran/pita memanjang, sesuai untuk melekatkan filamen yang panjang",
-  "rationale": "Fascia = **lembaran/pita memanjang** → cocok untuk perlekatan **filamen aktin** yang panjang. Macula = **bercak** → perlekatan setitik-titik (desmosom). Gap = **celah** → lubang tempat ion lewat.  —  **Pola Nama = petunjuk:** Tiga nama, tiga bentuk, tiga fungsi — dan bentuknya menjelaskan fungsinya. Ini pola nama-sebagai-petunjuk yang paling bersih di PPT ini."
+  "rationale": "Fascia = **lembaran/pita memanjang** → cocok untuk perlekatan **filamen aktin** yang panjang. Macula = **bercak** → perlekatan setitik-titik (desmosom). Gap = **celah** → lubang tempat ion lewat.  —  **Pola Nama = petunjuk:** Tiga nama, tiga bentuk, tiga fungsi — dan bentuknya menjelaskan fungsinya. Ini pola nama-sebagai-petunjuk yang paling bersih di PPT ini.",
+  "ppt": 6,
+  "grup": "Diskus Interkalaris",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Fascia = **lembaran/pita memanjang** → cocok untuk perlekatan **filamen aktin** yang panjang. Macula = **bercak** → perlekatan setitik-titik (desmosom). Gap = **celah** → lubang tempat ion lewat.",
+  "diskriminator": "Tiga nama, tiga bentuk, tiga fungsi — dan bentuknya menjelaskan fungsinya. Ini pola nama-sebagai-petunjuk yang paling bersih di PPT ini."
  },
  {
   "n": 363,
@@ -5449,7 +7991,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Bercak setitik-titik",
-  "rationale": "Macula = **bercak/titik** → perlekatan **setitik-setitik**, yaitu desmosom, yang fungsinya murni **mekanik** seperti ancing.  —  **Pola Nama = petunjuk:** Perhatikan konsistensinya dengan arti kata macula di tempat lain, misalnya **makula** pada kulit berarti bercak datar."
+  "rationale": "Macula = **bercak/titik** → perlekatan **setitik-setitik**, yaitu desmosom, yang fungsinya murni **mekanik** seperti ancing.  —  **Pola Nama = petunjuk:** Perhatikan konsistensinya dengan arti kata macula di tempat lain, misalnya **makula** pada kulit berarti bercak datar.",
+  "ppt": 6,
+  "grup": "Diskus Interkalaris",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Macula = **bercak/titik** → perlekatan **setitik-setitik**, yaitu desmosom, yang fungsinya murni **mekanik** seperti ancing.",
+  "diskriminator": "Perhatikan konsistensinya dengan arti kata macula di tempat lain, misalnya **makula** pada kulit berarti bercak datar."
  },
  {
   "n": 364,
@@ -5464,7 +8013,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Tiga: fascia adherens, macula adherens, gap junction",
-  "rationale": "**Tiga** hubungan: **fascia adherens** (perlekatan aktin), **macula adherens/desmosom** (mekanik), dan **gap junction/nexus** (ionik).  —  **Pola Angka & daftar:** Hati-hati dengan opsi yang memakai **sinonim** seolah dua hal berbeda — desmosom = macula adherens, dan nexus = gap junction."
+  "rationale": "**Tiga** hubungan: **fascia adherens** (perlekatan aktin), **macula adherens/desmosom** (mekanik), dan **gap junction/nexus** (ionik).  —  **Pola Angka & daftar:** Hati-hati dengan opsi yang memakai **sinonim** seolah dua hal berbeda — desmosom = macula adherens, dan nexus = gap junction.",
+  "ppt": 6,
+  "grup": "Diskus Interkalaris",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Tiga** hubungan: **fascia adherens** (perlekatan aktin), **macula adherens/desmosom** (mekanik), dan **gap junction/nexus** (ionik).",
+  "diskriminator": "Hati-hati dengan opsi yang memakai **sinonim** seolah dua hal berbeda — desmosom = macula adherens, dan nexus = gap junction."
  },
  {
   "n": 365,
@@ -5479,7 +8035,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot polos tipe unitary dan otot jantung",
-  "rationale": "**Nexus** ada pada **otot polos tipe unitary** (jalur impuls sel ke sel) dan pada **otot jantung** (di dalam diskus interkalaris) — dengan fungsi yang persis sama.  —  **Pola Ciri tetangga:** **Otot skelet tidak punya hubungan sel-ke-sel sama sekali** — setiap serat diperintah sarafnya sendiri. Jadi kata “nexus” otomatis mengeliminasi otot skelet."
+  "rationale": "**Nexus** ada pada **otot polos tipe unitary** (jalur impuls sel ke sel) dan pada **otot jantung** (di dalam diskus interkalaris) — dengan fungsi yang persis sama.  —  **Pola Ciri tetangga:** **Otot skelet tidak punya hubungan sel-ke-sel sama sekali** — setiap serat diperintah sarafnya sendiri. Jadi kata “nexus” otomatis mengeliminasi otot skelet.",
+  "ppt": 6,
+  "grup": "Diskus Interkalaris",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Nexus** ada pada **otot polos tipe unitary** (jalur impuls sel ke sel) dan pada **otot jantung** (di dalam diskus interkalaris) — dengan fungsi yang persis sama.",
+  "diskriminator": "**Otot skelet tidak punya hubungan sel-ke-sel sama sekali** — setiap serat diperintah sarafnya sendiri. Jadi kata “nexus” otomatis mengeliminasi otot skelet."
  },
  {
   "n": 366,
@@ -5494,7 +8057,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Gap junction pada diskus interkalaris yang menyebarkan impuls dari sel ke sel",
-  "rationale": "**Gap junction** pada diskus interkalaris menyebarkan impuls **sel ke sel**. Secara prinsip ini sama dengan otot polos unitary, dan inilah yang memungkinkan kontraksi serentak tanpa setiap sel dipersarafi sendiri.  —  **Pola Turunkan dari prinsip:** Dan ini sekaligus menjelaskan **kenapa jantung bisa miogenik**: satu sel memulai, seluruh massa ikut lewat nexus. **Motor end plate** dan **triad** adalah perangkat otot skelet; **caveolae** perangkat otot polos."
+  "rationale": "**Gap junction** pada diskus interkalaris menyebarkan impuls **sel ke sel**. Secara prinsip ini sama dengan otot polos unitary, dan inilah yang memungkinkan kontraksi serentak tanpa setiap sel dipersarafi sendiri.  —  **Pola Turunkan dari prinsip:** Dan ini sekaligus menjelaskan **kenapa jantung bisa miogenik**: satu sel memulai, seluruh massa ikut lewat nexus. **Motor end plate** dan **triad** adalah perangkat otot skelet; **caveolae** perangkat otot polos.",
+  "ppt": 6,
+  "grup": "Otot Jantung",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Gap junction** pada diskus interkalaris menyebarkan impuls **sel ke sel**. Secara prinsip ini sama dengan otot polos unitary, dan inilah yang memungkinkan kontraksi serentak tanpa setiap sel dipersarafi sendiri.",
+  "diskriminator": "Dan ini sekaligus menjelaskan **kenapa jantung bisa miogenik**: satu sel memulai, seluruh massa ikut lewat nexus. **Motor end plate** dan **triad** adalah perangkat otot skelet; **caveolae** perangkat otot polos."
  },
  {
   "n": 367,
@@ -5509,7 +8079,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Rangsang kontraksi berasal dari otot itu sendiri, bukan dari saraf",
-  "rationale": "**Miogenik** = myo (otot) + genesis (asal) → **rangsang berasal dari otot itu sendiri**. Saraf autonom hanya **memodulasi kecepatannya**, bukan memulainya.  —  **Pola Nama = petunjuk:** Bukti nyatanya: jantung yang dilepas dari tubuh dan diberi nutrisi **masih berdenyut**, sementara otot skelet yang sarafnya dipotong **lumpuh total**."
+  "rationale": "**Miogenik** = myo (otot) + genesis (asal) → **rangsang berasal dari otot itu sendiri**. Saraf autonom hanya **memodulasi kecepatannya**, bukan memulainya.  —  **Pola Nama = petunjuk:** Bukti nyatanya: jantung yang dilepas dari tubuh dan diberi nutrisi **masih berdenyut**, sementara otot skelet yang sarafnya dipotong **lumpuh total**.",
+  "ppt": 6,
+  "grup": "Otot Jantung",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Miogenik** = myo (otot) + genesis (asal) → **rangsang berasal dari otot itu sendiri**. Saraf autonom hanya **memodulasi kecepatannya**, bukan memulainya.",
+  "diskriminator": "Bukti nyatanya: jantung yang dilepas dari tubuh dan diberi nutrisi **masih berdenyut**, sementara otot skelet yang sarafnya dipotong **lumpuh total**."
  },
  {
   "n": 368,
@@ -5524,7 +8101,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Besar dan banyak",
-  "rationale": "Mitokondria otot jantung **BESAR dan BANYAK**.  —  **Pola Ciri tetangga:** Turunkan dari fungsinya: jantung berkontraksi **tanpa henti seumur hidup** dan tidak boleh lelah → mutlak butuh **fosforilasi oksidatif** → butuh mitokondria besar dan banyak."
+  "rationale": "Mitokondria otot jantung **BESAR dan BANYAK**.  —  **Pola Ciri tetangga:** Turunkan dari fungsinya: jantung berkontraksi **tanpa henti seumur hidup** dan tidak boleh lelah → mutlak butuh **fosforilasi oksidatif** → butuh mitokondria besar dan banyak.",
+  "ppt": 6,
+  "grup": "Otot Jantung",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Mitokondria otot jantung **BESAR dan BANYAK**.",
+  "diskriminator": "Turunkan dari fungsinya: jantung berkontraksi **tanpa henti seumur hidup** dan tidak boleh lelah → mutlak butuh **fosforilasi oksidatif** → butuh mitokondria besar dan banyak."
  },
  {
   "n": 369,
@@ -5539,7 +8123,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sumbatan aliran darah koroner menyebabkan kematian sel otot jantung dalam hitungan menit",
-  "rationale": "Karena jantung bergantung hampir sepenuhnya pada **fosforilasi oksidatif**, terputusnya pasokan oksigen langsung mematikan selnya dalam hitungan menit — itulah **infark miokard**.  —  **Pola Turunkan dari prinsip:** Rantai penurunannya: banyak mitokondria → metabolisme oksidatif → **mutlak butuh oksigen** → iskemia = kematian sel cepat → parut permanen."
+  "rationale": "Karena jantung bergantung hampir sepenuhnya pada **fosforilasi oksidatif**, terputusnya pasokan oksigen langsung mematikan selnya dalam hitungan menit — itulah **infark miokard**.  —  **Pola Turunkan dari prinsip:** Rantai penurunannya: banyak mitokondria → metabolisme oksidatif → **mutlak butuh oksigen** → iskemia = kematian sel cepat → parut permanen.",
+  "ppt": 6,
+  "grup": "Otot Jantung",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Karena jantung bergantung hampir sepenuhnya pada **fosforilasi oksidatif**, terputusnya pasokan oksigen langsung mematikan selnya dalam hitungan menit — itulah **infark miokard**.",
+  "diskriminator": "Rantai penurunannya: banyak mitokondria → metabolisme oksidatif → **mutlak butuh oksigen** → iskemia = kematian sel cepat → parut permanen."
  },
  {
   "n": 370,
@@ -5554,7 +8145,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Garis Z",
-  "rationale": "Pada otot **jantung**, tubulus T terletak di **garis Z**, dan **tanpa sisterna terminal yang besar**.  —  **Pola Ciri tetangga:** Pembeda bersih: tubulus T di **garis Z** → jantung · tubulus T di **perbatasan A–I** → skelet."
+  "rationale": "Pada otot **jantung**, tubulus T terletak di **garis Z**, dan **tanpa sisterna terminal yang besar**.  —  **Pola Ciri tetangga:** Pembeda bersih: tubulus T di **garis Z** → jantung · tubulus T di **perbatasan A–I** → skelet.",
+  "ppt": 6,
+  "grup": "Otot Jantung",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Pada otot **jantung**, tubulus T terletak di **garis Z**, dan **tanpa sisterna terminal yang besar**.",
+  "diskriminator": "Pembeda bersih: tubulus T di **garis Z** → jantung · tubulus T di **perbatasan A–I** → skelet."
  },
  {
   "n": 371,
@@ -5569,7 +8167,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Kurang berkembang",
-  "rationale": "Retikulum sarkoplasma otot jantung **kurang berkembang** dibanding otot skelet, dan tubulus T-nya **tanpa sisterna terminal besar**.  —  **Pola Ciri tetangga:** Alasannya: triad adalah perangkat pelepasan Ca²⁺ **besar dan sangat cepat** yang dibutuhkan otot skelet. Jantung berkontraksi **ritmis**, dan sebagian Ca²⁺-nya masuk dari **luar sel**."
+  "rationale": "Retikulum sarkoplasma otot jantung **kurang berkembang** dibanding otot skelet, dan tubulus T-nya **tanpa sisterna terminal besar**.  —  **Pola Ciri tetangga:** Alasannya: triad adalah perangkat pelepasan Ca²⁺ **besar dan sangat cepat** yang dibutuhkan otot skelet. Jantung berkontraksi **ritmis**, dan sebagian Ca²⁺-nya masuk dari **luar sel**.",
+  "ppt": 6,
+  "grup": "Otot Jantung",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Retikulum sarkoplasma otot jantung **kurang berkembang** dibanding otot skelet, dan tubulus T-nya **tanpa sisterna terminal besar**.",
+  "diskriminator": "Alasannya: triad adalah perangkat pelepasan Ca²⁺ **besar dan sangat cepat** yang dibutuhkan otot skelet. Jantung berkontraksi **ritmis**, dan sebagian Ca²⁺-nya masuk dari **luar sel**."
  },
  {
   "n": 372,
@@ -5584,7 +8189,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "±50 µm",
-  "rationale": "Serabut Purkinje berdiameter **±50 µm** — jauh lebih besar daripada sel otot jantung biasa yang hanya **±15 µm**.  —  **Pola Angka & daftar:** Perbandingan diameter adalah inti soal: Purkinje **≈3× lebih besar** daripada sel otot jantung biasa."
+  "rationale": "Serabut Purkinje berdiameter **±50 µm** — jauh lebih besar daripada sel otot jantung biasa yang hanya **±15 µm**.  —  **Pola Angka & daftar:** Perbandingan diameter adalah inti soal: Purkinje **≈3× lebih besar** daripada sel otot jantung biasa.",
+  "ppt": 6,
+  "grup": "Purkinje",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Serabut Purkinje berdiameter **±50 µm** — jauh lebih besar daripada sel otot jantung biasa yang hanya **±15 µm**.",
+  "diskriminator": "Perbandingan diameter adalah inti soal: Purkinje **≈3× lebih besar** daripada sel otot jantung biasa."
  },
  {
   "n": 373,
@@ -5599,7 +8211,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sarkoplasma di tengah, miofibril di tepi",
-  "rationale": "Serabut Purkinje: **sarkoplasma di TENGAH, miofibril di TEPI** — susunan yang **terbalik** dari sel otot jantung biasa yang miofibrilnya mengisi seluruh sel.  —  **Pola Ciri tetangga:** Justru keterbalikannya yang membuatnya mudah dikenali: **pusat sel kosong dari miofibril**."
+  "rationale": "Serabut Purkinje: **sarkoplasma di TENGAH, miofibril di TEPI** — susunan yang **terbalik** dari sel otot jantung biasa yang miofibrilnya mengisi seluruh sel.  —  **Pola Ciri tetangga:** Justru keterbalikannya yang membuatnya mudah dikenali: **pusat sel kosong dari miofibril**.",
+  "ppt": 6,
+  "grup": "Purkinje",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Serabut Purkinje: **sarkoplasma di TENGAH, miofibril di TEPI** — susunan yang **terbalik** dari sel otot jantung biasa yang miofibrilnya mengisi seluruh sel.",
+  "diskriminator": "Justru keterbalikannya yang membuatnya mudah dikenali: **pusat sel kosong dari miofibril**."
  },
  {
   "n": 374,
@@ -5614,7 +8233,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Purkinje adalah sel penghantar impuls, bukan sel kontraktil",
-  "rationale": "Karena **penghantar dan bukan kontraktil**: miofibril sedikit (tidak perlu berkontraksi) → pucat (sedikit zat warna terserap) → sarkoplasma banyak di tengah (ruang yang ditinggalkan) → diameter besar (serat besar menghantar lebih cepat) → glikogen banyak (cadangan energi).  —  **Pola Turunkan dari prinsip:** Hafal **satu kalimat**, bukan lima ciri. Dan perhatikan: Purkinje tetap **sel otot jantung** yang termodifikasi, bukan sel saraf."
+  "rationale": "Karena **penghantar dan bukan kontraktil**: miofibril sedikit (tidak perlu berkontraksi) → pucat (sedikit zat warna terserap) → sarkoplasma banyak di tengah (ruang yang ditinggalkan) → diameter besar (serat besar menghantar lebih cepat) → glikogen banyak (cadangan energi).  —  **Pola Turunkan dari prinsip:** Hafal **satu kalimat**, bukan lima ciri. Dan perhatikan: Purkinje tetap **sel otot jantung** yang termodifikasi, bukan sel saraf.",
+  "ppt": 6,
+  "grup": "Purkinje",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Karena **penghantar dan bukan kontraktil**: miofibril sedikit (tidak perlu berkontraksi) → pucat (sedikit zat warna terserap) → sarkoplasma banyak di tengah (ruang yang ditinggalkan) → diameter besar (serat besar menghantar lebih cepat) → glikogen banyak (cadangan energi).",
+  "diskriminator": "Hafal **satu kalimat**, bukan lima ciri. Dan perhatikan: Purkinje tetap **sel otot jantung** yang termodifikasi, bukan sel saraf."
  },
  {
   "n": 375,
@@ -5629,7 +8255,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Karena serat berdiameter besar menghantarkan impuls lebih cepat",
-  "rationale": "Diameter besar → **hantaran lebih cepat**. Ini prinsip yang sama dengan serat saraf: makin besar diameter (dan adanya mielin), makin cepat hantarannya.  —  **Pola Turunkan dari prinsip:** Prinsip yang sudah kamu pakai di PPT 3 soal reseptor dan serat saraf, dipakai ulang di sini. Satu prinsip, dua konteks."
+  "rationale": "Diameter besar → **hantaran lebih cepat**. Ini prinsip yang sama dengan serat saraf: makin besar diameter (dan adanya mielin), makin cepat hantarannya.  —  **Pola Turunkan dari prinsip:** Prinsip yang sudah kamu pakai di PPT 3 soal reseptor dan serat saraf, dipakai ulang di sini. Satu prinsip, dua konteks.",
+  "ppt": 6,
+  "grup": "Purkinje",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Diameter besar → **hantaran lebih cepat**. Ini prinsip yang sama dengan serat saraf: makin besar diameter (dan adanya mielin), makin cepat hantarannya.",
+  "diskriminator": "Prinsip yang sudah kamu pakai di PPT 3 soal reseptor dan serat saraf, dipakai ulang di sini. Satu prinsip, dua konteks."
  },
  {
   "n": 376,
@@ -5644,7 +8277,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Glikogen",
-  "rationale": "Serabut Purkinje banyak mengandung **GLIKOGEN** sebagai cadangan energi.  —  **Pola Ciri tetangga:** Konsekuensinya: Purkinje relatif **lebih tahan iskemia** daripada sel otot jantung biasa — itulah sebabnya pada infark, sistem konduksi sering masih berfungsi meski ototnya mati."
+  "rationale": "Serabut Purkinje banyak mengandung **GLIKOGEN** sebagai cadangan energi.  —  **Pola Ciri tetangga:** Konsekuensinya: Purkinje relatif **lebih tahan iskemia** daripada sel otot jantung biasa — itulah sebabnya pada infark, sistem konduksi sering masih berfungsi meski ototnya mati.",
+  "ppt": 6,
+  "grup": "Purkinje",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Serabut Purkinje banyak mengandung **GLIKOGEN** sebagai cadangan energi.",
+  "diskriminator": "Konsekuensinya: Purkinje relatif **lebih tahan iskemia** daripada sel otot jantung biasa — itulah sebabnya pada infark, sistem konduksi sering masih berfungsi meski ototnya mati."
  },
  {
   "n": 377,
@@ -5659,7 +8299,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Lebih pucat",
-  "rationale": "Serabut Purkinje tampak **lebih PUCAT**, karena miofibril (yang menyerap zat warna) jumlahnya sedikit dan terdorong ke tepi.  —  **Pola Ciri tetangga:** Warna pucat bukan sifat terpisah — dia **akibat** dari miofibril yang sedikit. Satu sebab, dua ciri."
+  "rationale": "Serabut Purkinje tampak **lebih PUCAT**, karena miofibril (yang menyerap zat warna) jumlahnya sedikit dan terdorong ke tepi.  —  **Pola Ciri tetangga:** Warna pucat bukan sifat terpisah — dia **akibat** dari miofibril yang sedikit. Satu sebab, dua ciri.",
+  "ppt": 6,
+  "grup": "Purkinje",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Serabut Purkinje tampak **lebih PUCAT**, karena miofibril (yang menyerap zat warna) jumlahnya sedikit dan terdorong ke tepi.",
+  "diskriminator": "Warna pucat bukan sifat terpisah — dia **akibat** dari miofibril yang sedikit. Satu sebab, dua ciri."
  },
  {
   "n": 378,
@@ -5674,7 +8321,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Serabut Purkinje",
-  "rationale": "Tidak ada struktur otot lain yang memiliki kombinasi **diameter besar + pucat + miofibril di tepi**. Itu khas **serabut Purkinje**.  —  **Pola Kategori jawaban:** Pola tiga-ciri-bersama seperti ini adalah cara soal mengunci jawaban. Satu ciri bisa ambigu; tiga ciri bersama biasanya hanya cocok untuk satu struktur."
+  "rationale": "Tidak ada struktur otot lain yang memiliki kombinasi **diameter besar + pucat + miofibril di tepi**. Itu khas **serabut Purkinje**.  —  **Pola Kategori jawaban:** Pola tiga-ciri-bersama seperti ini adalah cara soal mengunci jawaban. Satu ciri bisa ambigu; tiga ciri bersama biasanya hanya cocok untuk satu struktur.",
+  "ppt": 6,
+  "grup": "Purkinje",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Tidak ada struktur otot lain yang memiliki kombinasi **diameter besar + pucat + miofibril di tepi**. Itu khas **serabut Purkinje**.",
+  "diskriminator": "Pola tiga-ciri-bersama seperti ini adalah cara soal mengunci jawaban. Satu ciri bisa ambigu; tiga ciri bersama biasanya hanya cocok untuk satu struktur."
  },
  {
   "n": 379,
@@ -5689,7 +8343,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Endomisium",
-  "rationale": "**[UB asli · CO 66]** **ENDOMISIUM** membungkus **satu serat otot** (satu sel).  —  **Pola Kategori jawaban:** Awalan sudah memberi jawabannya: **ENDO-** = di dalam → paling dalam → satu serat. Dan **sarkolema** bukan jaringan ikat, melainkan membran selnya sendiri."
+  "rationale": "**[UB asli · CO 66]** **ENDOMISIUM** membungkus **satu serat otot** (satu sel).  —  **Pola Kategori jawaban:** Awalan sudah memberi jawabannya: **ENDO-** = di dalam → paling dalam → satu serat. Dan **sarkolema** bukan jaringan ikat, melainkan membran selnya sendiri.",
+  "ppt": 6,
+  "grup": "Selubung",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": "CO 66",
+  "bahas": "**ENDOMISIUM** membungkus **satu serat otot** (satu sel).",
+  "diskriminator": "Awalan sudah memberi jawabannya: **ENDO-** = di dalam → paling dalam → satu serat. Dan **sarkolema** bukan jaringan ikat, melainkan membran selnya sendiri."
  },
  {
   "n": 380,
@@ -5704,7 +8365,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Epimisium",
-  "rationale": "**[UB asli · SOAL 99]** **EPIMISIUM** membungkus **seluruh otot** sebagai satu organ.  —  **Pola Kategori jawaban:** Perhatikan bahwa CO 66 dan SOAL 99 adalah soal **berstruktur sama dengan kunci berbeda** — yang membedakan hanya frasa “satu serat” versus “seluruh otot”. Baca pokok soal sampai habis."
+  "rationale": "**[UB asli · SOAL 99]** **EPIMISIUM** membungkus **seluruh otot** sebagai satu organ.  —  **Pola Kategori jawaban:** Perhatikan bahwa CO 66 dan SOAL 99 adalah soal **berstruktur sama dengan kunci berbeda** — yang membedakan hanya frasa “satu serat” versus “seluruh otot”. Baca pokok soal sampai habis.",
+  "ppt": 6,
+  "grup": "Selubung",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": "SOAL 99",
+  "bahas": "**EPIMISIUM** membungkus **seluruh otot** sebagai satu organ.",
+  "diskriminator": "Perhatikan bahwa CO 66 dan SOAL 99 adalah soal **berstruktur sama dengan kunci berbeda** — yang membedakan hanya frasa “satu serat” versus “seluruh otot”. Baca pokok soal sampai habis."
  },
  {
   "n": 381,
@@ -5719,7 +8387,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Perimisium",
-  "rationale": "**PERIMISIUM** membungkus **berkas/fasikulus** otot, yaitu kumpulan serat — lapisan tengah di antara epimisium dan endomisium.  —  **Pola Kategori jawaban:** Tiga kata kunci untuk tiga selubung: **“seluruh otot”** → epimisium · **“berkas/fasikulus”** → perimisium · **“satu serat/satu sel”** → endomisium."
+  "rationale": "**PERIMISIUM** membungkus **berkas/fasikulus** otot, yaitu kumpulan serat — lapisan tengah di antara epimisium dan endomisium.  —  **Pola Kategori jawaban:** Tiga kata kunci untuk tiga selubung: **“seluruh otot”** → epimisium · **“berkas/fasikulus”** → perimisium · **“satu serat/satu sel”** → endomisium.",
+  "ppt": 6,
+  "grup": "Selubung",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**PERIMISIUM** membungkus **berkas/fasikulus** otot, yaitu kumpulan serat — lapisan tengah di antara epimisium dan endomisium.",
+  "diskriminator": "Tiga kata kunci untuk tiga selubung: **“seluruh otot”** → epimisium · **“berkas/fasikulus”** → perimisium · **“satu serat/satu sel”** → endomisium."
  },
  {
   "n": 382,
@@ -5734,7 +8409,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Epimisium → perimisium → endomisium",
-  "rationale": "**EPI- (di atas/luar) → PERI- (di sekeliling) → ENDO- (di dalam)**.  —  **Pola Nama = petunjuk:** Awalan yang sama kamu sudah pakai: **epi**dermis (luar kulit), **peri**osteum (selubung luar tulang), **endo**steum (selubung dalam tulang). Bukan hafalan baru — kaidah yang sudah kamu punya."
+  "rationale": "**EPI- (di atas/luar) → PERI- (di sekeliling) → ENDO- (di dalam)**.  —  **Pola Nama = petunjuk:** Awalan yang sama kamu sudah pakai: **epi**dermis (luar kulit), **peri**osteum (selubung luar tulang), **endo**steum (selubung dalam tulang). Bukan hafalan baru — kaidah yang sudah kamu punya.",
+  "ppt": 6,
+  "grup": "Selubung",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**EPI- (di atas/luar) → PERI- (di sekeliling) → ENDO- (di dalam)**.",
+  "diskriminator": "Awalan yang sama kamu sudah pakai: **epi**dermis (luar kulit), **peri**osteum (selubung luar tulang), **endo**steum (selubung dalam tulang). Bukan hafalan baru — kaidah yang sudah kamu punya."
  },
  {
   "n": 383,
@@ -5749,7 +8431,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Tarikan serat otot individual dapat diteruskan menjadi gerakan tulang",
-  "rationale": "Jaringan ikat ini adalah **jalur mekanik**: tarikan setiap serat otot diteruskan lewat endomisium → perimisium → epimisium → tendo → tulang.  —  **Pola Turunkan dari prinsip:** Hubungkan dengan PPT 5: inilah sebabnya **origo dan insersio** bermakna — tarikan serat mikroskopis bisa menjadi gerakan sendi."
+  "rationale": "Jaringan ikat ini adalah **jalur mekanik**: tarikan setiap serat otot diteruskan lewat endomisium → perimisium → epimisium → tendo → tulang.  —  **Pola Turunkan dari prinsip:** Hubungkan dengan PPT 5: inilah sebabnya **origo dan insersio** bermakna — tarikan serat mikroskopis bisa menjadi gerakan sendi.",
+  "ppt": 6,
+  "grup": "Selubung",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Jaringan ikat ini adalah **jalur mekanik**: tarikan setiap serat otot diteruskan lewat endomisium → perimisium → epimisium → tendo → tulang.",
+  "diskriminator": "Hubungkan dengan PPT 5: inilah sebabnya **origo dan insersio** bermakna — tarikan serat mikroskopis bisa menjadi gerakan sendi."
  },
  {
   "n": 384,
@@ -5764,7 +8453,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot skelet tidak memiliki hubungan sel-ke-sel seperti nexus atau gap junction",
-  "rationale": "Otot skelet **tidak memiliki hubungan sel-ke-sel** — setiap serat diperintah oleh **sarafnya sendiri** melalui motor end plate. Itu berbeda dari otot jantung (gap junction) dan otot polos unitary (nexus).  —  **Pola Ciri tetangga:** Konsekuensi praktisnya: pada otot skelet, kekuatan diatur dengan **jumlah serat yang diaktifkan**, karena tiap serat bisa dipilih sendiri-sendiri."
+  "rationale": "Otot skelet **tidak memiliki hubungan sel-ke-sel** — setiap serat diperintah oleh **sarafnya sendiri** melalui motor end plate. Itu berbeda dari otot jantung (gap junction) dan otot polos unitary (nexus).  —  **Pola Ciri tetangga:** Konsekuensi praktisnya: pada otot skelet, kekuatan diatur dengan **jumlah serat yang diaktifkan**, karena tiap serat bisa dipilih sendiri-sendiri.",
+  "ppt": 6,
+  "grup": "Selubung",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Otot skelet **tidak memiliki hubungan sel-ke-sel** — setiap serat diperintah oleh **sarafnya sendiri** melalui motor end plate. Itu berbeda dari otot jantung (gap junction) dan otot polos unitary (nexus).",
+  "diskriminator": "Konsekuensi praktisnya: pada otot skelet, kekuatan diatur dengan **jumlah serat yang diaktifkan**, karena tiap serat bisa dipilih sendiri-sendiri."
  },
  {
   "n": 385,
@@ -5779,7 +8475,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Pita anisotrop, tampak gelap",
-  "rationale": "**Pita A = ANISOTROP = GELAP**, berisi filamen **tebal**. An-iso-tropos = tidak sama ke segala arah → membelokkan cahaya terpolarisasi → tampak gelap.  —  **Pola Nama = petunjuk:** Mnemonik yang konsisten: pita **A** → **A**nisotrop → gel**A**p → filamen te**bA**l."
+  "rationale": "**Pita A = ANISOTROP = GELAP**, berisi filamen **tebal**. An-iso-tropos = tidak sama ke segala arah → membelokkan cahaya terpolarisasi → tampak gelap.  —  **Pola Nama = petunjuk:** Mnemonik yang konsisten: pita **A** → **A**nisotrop → gel**A**p → filamen te**bA**l.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Pita A = ANISOTROP = GELAP**, berisi filamen **tebal**. An-iso-tropos = tidak sama ke segala arah → membelokkan cahaya terpolarisasi → tampak gelap.",
+  "diskriminator": "Mnemonik yang konsisten: pita **A** → **A**nisotrop → gel**A**p → filamen te**bA**l."
  },
  {
   "n": 386,
@@ -5794,7 +8497,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Pita isotrop, tampak terang, berisi filamen tipis",
-  "rationale": "**Pita I = ISOTROP = TERANG**, berisi **hanya filamen TIPIS**. Iso-tropos = sama ke segala arah → tidak membelokkan cahaya → terang.  —  **Pola Nama = petunjuk:** Mnemonik: pita **I** → **I**sotrop → t**I**p**I**s. Distraktor paling sering untuk soal ini adalah menukar “tebal” dengan “tipis”."
+  "rationale": "**Pita I = ISOTROP = TERANG**, berisi **hanya filamen TIPIS**. Iso-tropos = sama ke segala arah → tidak membelokkan cahaya → terang.  —  **Pola Nama = petunjuk:** Mnemonik: pita **I** → **I**sotrop → t**I**p**I**s. Distraktor paling sering untuk soal ini adalah menukar “tebal” dengan “tipis”.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Pita I = ISOTROP = TERANG**, berisi **hanya filamen TIPIS**. Iso-tropos = sama ke segala arah → tidak membelokkan cahaya → terang.",
+  "diskriminator": "Mnemonik: pita **I** → **I**sotrop → t**I**p**I**s. Distraktor paling sering untuk soal ini adalah menukar “tebal” dengan “tipis”."
  },
  {
   "n": 387,
@@ -5809,7 +8519,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Garis Z adalah tempat aktin melekat, dan daerah yang hanya berisi filamen tipis adalah pita I; karena filamen tipis menjulur ke dua arah dari garis Z, daerah itu ada di kedua sisinya",
-  "rationale": "Garis Z = tempat **AKTIN (filamen tipis) melekat**. Daerah berisi hanya filamen tipis = **pita I**. Dari garis Z, filamen tipis menjulur **ke dua arah** → daerah “hanya tipis” ada di **kedua sisi** garis Z → garis Z di **tengah pita I**.  —  **Pola Turunkan dari prinsip:** **Turunkan, jangan hafal.** Tiga distraktor di soal UB adalah pertukaran letak Z dan H, dan hafalan paling mudah tertukar di bawah tekanan ujian."
+  "rationale": "Garis Z = tempat **AKTIN (filamen tipis) melekat**. Daerah berisi hanya filamen tipis = **pita I**. Dari garis Z, filamen tipis menjulur **ke dua arah** → daerah “hanya tipis” ada di **kedua sisi** garis Z → garis Z di **tengah pita I**.  —  **Pola Turunkan dari prinsip:** **Turunkan, jangan hafal.** Tiga distraktor di soal UB adalah pertukaran letak Z dan H, dan hafalan paling mudah tertukar di bawah tekanan ujian.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Garis Z = tempat **AKTIN (filamen tipis) melekat**. Daerah berisi hanya filamen tipis = **pita I**. Dari garis Z, filamen tipis menjulur **ke dua arah** → daerah “hanya tipis” ada di **kedua sisi** garis Z → garis Z di **tengah pita I**.",
+  "diskriminator": "**Turunkan, jangan hafal.** Tiga distraktor di soal UB adalah pertukaran letak Z dan H, dan hafalan paling mudah tertukar di bawah tekanan ujian."
  },
  {
   "n": 388,
@@ -5824,7 +8541,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Filamen tipis menyusup ke dalam pita A dari dua sisi tetapi tidak sampai ke pusatnya, sehingga di pusat pita A tersisa daerah berisi filamen tebal tanpa tumpang tindih",
-  "rationale": "Filamen **tebal** mengisi seluruh pita A. Filamen **tipis** menyusup dari dua sisi tetapi **tidak sampai pusat**. Maka di pusat pita A tersisa daerah **tebal saja tanpa tumpang tindih** = **pita H**.  —  **Pola Turunkan dari prinsip:** Pita H **bukan** daerah tanpa filamen — dia berisi filamen **tebal**, hanya tanpa filamen tipis. Dan penurunan ini sekaligus menjelaskan mengapa pita H **hilang** saat kontraksi maksimal."
+  "rationale": "Filamen **tebal** mengisi seluruh pita A. Filamen **tipis** menyusup dari dua sisi tetapi **tidak sampai pusat**. Maka di pusat pita A tersisa daerah **tebal saja tanpa tumpang tindih** = **pita H**.  —  **Pola Turunkan dari prinsip:** Pita H **bukan** daerah tanpa filamen — dia berisi filamen **tebal**, hanya tanpa filamen tipis. Dan penurunan ini sekaligus menjelaskan mengapa pita H **hilang** saat kontraksi maksimal.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Filamen **tebal** mengisi seluruh pita A. Filamen **tipis** menyusup dari dua sisi tetapi **tidak sampai pusat**. Maka di pusat pita A tersisa daerah **tebal saja tanpa tumpang tindih** = **pita H**.",
+  "diskriminator": "Pita H **bukan** daerah tanpa filamen — dia berisi filamen **tebal**, hanya tanpa filamen tipis. Dan penurunan ini sekaligus menjelaskan mengapa pita H **hilang** saat kontraksi maksimal."
  },
  {
   "n": 389,
@@ -5839,7 +8563,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Tengah pita I",
-  "rationale": "**Garis Z di TENGAH pita I.**  —  **Pola Ciri tetangga:** Satu kalimat pengunci: **Z melekatkan aktin, dan aktin saja = pita I.** Maka Z harus di dalam pita I."
+  "rationale": "**Garis Z di TENGAH pita I.**  —  **Pola Ciri tetangga:** Satu kalimat pengunci: **Z melekatkan aktin, dan aktin saja = pita I.** Maka Z harus di dalam pita I.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Garis Z di TENGAH pita I.**",
+  "diskriminator": "Satu kalimat pengunci: **Z melekatkan aktin, dan aktin saja = pita I.** Maka Z harus di dalam pita I."
  },
  {
   "n": 390,
@@ -5854,7 +8585,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Tengah pita A",
-  "rationale": "**Pita H di TENGAH pita A.**  —  **Pola Ciri tetangga:** Distraktor paling sering: **“H di antara pita A dan pita I”** — dan itu salah, karena H ada **di DALAM** pita A, bukan di perbatasannya."
+  "rationale": "**Pita H di TENGAH pita A.**  —  **Pola Ciri tetangga:** Distraktor paling sering: **“H di antara pita A dan pita I”** — dan itu salah, karena H ada **di DALAM** pita A, bukan di perbatasannya.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Pita H di TENGAH pita A.**",
+  "diskriminator": "Distraktor paling sering: **“H di antara pita A dan pita I”** — dan itu salah, karena H ada **di DALAM** pita A, bukan di perbatasannya."
  },
  {
   "n": 391,
@@ -5869,7 +8607,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Antara dua garis Z",
-  "rationale": "**SARKOMER = daerah antara DUA GARIS Z**, dan dia adalah **satuan kontraktil** otot skelet dan otot jantung.  —  **Pola Kategori jawaban:** Satuan kontraktil: **sarkomer** untuk skelet dan jantung · **sel** untuk otot polos."
+  "rationale": "**SARKOMER = daerah antara DUA GARIS Z**, dan dia adalah **satuan kontraktil** otot skelet dan otot jantung.  —  **Pola Kategori jawaban:** Satuan kontraktil: **sarkomer** untuk skelet dan jantung · **sel** untuk otot polos.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**SARKOMER = daerah antara DUA GARIS Z**, dan dia adalah **satuan kontraktil** otot skelet dan otot jantung.",
+  "diskriminator": "Satuan kontraktil: **sarkomer** untuk skelet dan jantung · **sel** untuk otot polos."
  },
  {
   "n": 392,
@@ -5884,7 +8629,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Separuh pita I – pita A (dengan pita H di tengahnya) – separuh pita I",
-  "rationale": "Satu sarkomer berisi: **separuh pita I → pita A utuh (dengan pita H di pusatnya) → separuh pita I**. Garis Z berada di tengah pita I, sehingga setiap sarkomer hanya memuat separuh pita I di masing-masing ujungnya.  —  **Pola Ciri tetangga:** Karena garis Z membelah pita I, pita I selalu **dibagi dua** oleh batas sarkomer, sedangkan pita A selalu **utuh** di dalam satu sarkomer."
+  "rationale": "Satu sarkomer berisi: **separuh pita I → pita A utuh (dengan pita H di pusatnya) → separuh pita I**. Garis Z berada di tengah pita I, sehingga setiap sarkomer hanya memuat separuh pita I di masing-masing ujungnya.  —  **Pola Ciri tetangga:** Karena garis Z membelah pita I, pita I selalu **dibagi dua** oleh batas sarkomer, sedangkan pita A selalu **utuh** di dalam satu sarkomer.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Satu sarkomer berisi: **separuh pita I → pita A utuh (dengan pita H di pusatnya) → separuh pita I**. Garis Z berada di tengah pita I, sehingga setiap sarkomer hanya memuat separuh pita I di masing-masing ujungnya.",
+  "diskriminator": "Karena garis Z membelah pita I, pita I selalu **dibagi dua** oleh batas sarkomer, sedangkan pita A selalu **utuh** di dalam satu sarkomer."
  },
  {
   "n": 393,
@@ -5899,7 +8651,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Berisi filamen tebal, dan di bagian tepinya juga terdapat filamen tipis yang tumpang tindih",
-  "rationale": "Pita A = panjang **filamen tebal**. Di bagian **tepi** pita A, filamen tipis dari dua sisi **tumpang tindih** dengan filamen tebal; hanya di **pusatnya (pita H)** yang murni filamen tebal.  —  **Pola Ciri tetangga:** Jadi pita A **tidak** murni filamen tebal di seluruh bagiannya — itu hanya benar untuk **pita H**. Membedakan keduanya adalah kunci memahami kontraksi."
+  "rationale": "Pita A = panjang **filamen tebal**. Di bagian **tepi** pita A, filamen tipis dari dua sisi **tumpang tindih** dengan filamen tebal; hanya di **pusatnya (pita H)** yang murni filamen tebal.  —  **Pola Ciri tetangga:** Jadi pita A **tidak** murni filamen tebal di seluruh bagiannya — itu hanya benar untuk **pita H**. Membedakan keduanya adalah kunci memahami kontraksi.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Pita A = panjang **filamen tebal**. Di bagian **tepi** pita A, filamen tipis dari dua sisi **tumpang tindih** dengan filamen tebal; hanya di **pusatnya (pita H)** yang murni filamen tebal.",
+  "diskriminator": "Jadi pita A **tidak** murni filamen tebal di seluruh bagiannya — itu hanya benar untuk **pita H**. Membedakan keduanya adalah kunci memahami kontraksi."
  },
  {
   "n": 394,
@@ -5914,7 +8673,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Pita H",
-  "rationale": "**Pita H** adalah daerah filamen **tebal tanpa tumpang tindih**, terletak di pusat pita A.  —  **Pola Ciri tetangga:** Pasangannya: **pita I** = filamen **tipis** tanpa tumpang tindih. Dua daerah “tanpa tumpang tindih”, satu untuk tiap jenis filamen."
+  "rationale": "**Pita H** adalah daerah filamen **tebal tanpa tumpang tindih**, terletak di pusat pita A.  —  **Pola Ciri tetangga:** Pasangannya: **pita I** = filamen **tipis** tanpa tumpang tindih. Dua daerah “tanpa tumpang tindih”, satu untuk tiap jenis filamen.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Pita H** adalah daerah filamen **tebal tanpa tumpang tindih**, terletak di pusat pita A.",
+  "diskriminator": "Pasangannya: **pita I** = filamen **tipis** tanpa tumpang tindih. Dua daerah “tanpa tumpang tindih”, satu untuk tiap jenis filamen."
  },
  {
   "n": 395,
@@ -5929,7 +8695,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Pita I",
-  "rationale": "**Pita I** adalah daerah filamen **tipis tanpa tumpang tindih**.  —  **Pola Ciri tetangga:** Cermin dari soal sebelumnya. Dan kedua daerah inilah yang **berubah** saat kontraksi, sementara pita A (yang mengikuti panjang filamen tebal) tidak."
+  "rationale": "**Pita I** adalah daerah filamen **tipis tanpa tumpang tindih**.  —  **Pola Ciri tetangga:** Cermin dari soal sebelumnya. Dan kedua daerah inilah yang **berubah** saat kontraksi, sementara pita A (yang mengikuti panjang filamen tebal) tidak.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Pita I** adalah daerah filamen **tipis tanpa tumpang tindih**.",
+  "diskriminator": "Cermin dari soal sebelumnya. Dan kedua daerah inilah yang **berubah** saat kontraksi, sementara pita A (yang mengikuti panjang filamen tebal) tidak."
  },
  {
   "n": 396,
@@ -5944,7 +8717,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Tengah pita H",
-  "rationale": "**Garis M** terletak di **tengah pita H**, dan merupakan tempat filamen tebal saling diikat satu sama lain.  —  **Pola Ciri tetangga:** Garis M nyaris tidak pernah ditanyakan di UB — prioritaskan Z dan H. Tapi kalau muncul, letaknya **paling dalam**: Z di tengah I, H di tengah A, M di tengah H."
+  "rationale": "**Garis M** terletak di **tengah pita H**, dan merupakan tempat filamen tebal saling diikat satu sama lain.  —  **Pola Ciri tetangga:** Garis M nyaris tidak pernah ditanyakan di UB — prioritaskan Z dan H. Tapi kalau muncul, letaknya **paling dalam**: Z di tengah I, H di tengah A, M di tengah H.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Garis M** terletak di **tengah pita H**, dan merupakan tempat filamen tebal saling diikat satu sama lain.",
+  "diskriminator": "Garis M nyaris tidak pernah ditanyakan di UB — prioritaskan Z dan H. Tapi kalau muncul, letaknya **paling dalam**: Z di tengah I, H di tengah A, M di tengah H."
  },
  {
   "n": 397,
@@ -5959,7 +8739,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Garis Z terletak di tengah pita A",
-  "rationale": "Garis Z terletak di tengah pita **I**, bukan pita A. Empat pernyataan lainnya benar.  —  **Pola Pasangan berlawanan:** “Garis Z di tengah pita A” adalah salah satu dari **tiga distraktor baku** di soal UB. Dua lainnya: “pita H di antara A dan I”, dan “diskus isotrop berisi filamen tebal”."
+  "rationale": "Garis Z terletak di tengah pita **I**, bukan pita A. Empat pernyataan lainnya benar.  —  **Pola Pasangan berlawanan:** “Garis Z di tengah pita A” adalah salah satu dari **tiga distraktor baku** di soal UB. Dua lainnya: “pita H di antara A dan I”, dan “diskus isotrop berisi filamen tebal”.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Garis Z terletak di tengah pita **I**, bukan pita A. Empat pernyataan lainnya benar.",
+  "diskriminator": "“Garis Z di tengah pita A” adalah salah satu dari **tiga distraktor baku** di soal UB. Dua lainnya: “pita H di antara A dan I”, dan “diskus isotrop berisi filamen tebal”."
  },
  {
   "n": 398,
@@ -5974,7 +8761,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Pita H terletak di antara pita A dan pita I",
-  "rationale": "Pita H terletak **DI DALAM** pita A, tepatnya di **pusatnya** — bukan di perbatasan antara pita A dan pita I.  —  **Pola Pasangan berlawanan:** Distraktor ini muncul di CO 45 dan Rangkuman 73. Kalau sebuah opsi menempatkan H di **perbatasan**, dia salah."
+  "rationale": "Pita H terletak **DI DALAM** pita A, tepatnya di **pusatnya** — bukan di perbatasan antara pita A dan pita I.  —  **Pola Pasangan berlawanan:** Distraktor ini muncul di CO 45 dan Rangkuman 73. Kalau sebuah opsi menempatkan H di **perbatasan**, dia salah.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Pita H terletak **DI DALAM** pita A, tepatnya di **pusatnya** — bukan di perbatasan antara pita A dan pita I.",
+  "diskriminator": "Distraktor ini muncul di CO 45 dan Rangkuman 73. Kalau sebuah opsi menempatkan H di **perbatasan**, dia salah."
  },
  {
   "n": 399,
@@ -5989,7 +8783,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Diskus isotrop terlihat sebagai filamen tebal",
-  "rationale": "Diskus **isotrop** = pita **I** = filamen **TIPIS**, bukan tebal.  —  **Pola Pasangan berlawanan:** Distraktor baku ketiga. Pengaman: **I**sotrop → t**I**p**I**s, **A**nisotrop → te**bA**l."
+  "rationale": "Diskus **isotrop** = pita **I** = filamen **TIPIS**, bukan tebal.  —  **Pola Pasangan berlawanan:** Distraktor baku ketiga. Pengaman: **I**sotrop → t**I**p**I**s, **A**nisotrop → te**bA**l.",
+  "ppt": 6,
+  "grup": "Pita & Sarkomer",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Diskus **isotrop** = pita **I** = filamen **TIPIS**, bukan tebal.",
+  "diskriminator": "Distraktor baku ketiga. Pengaman: **I**sotrop → t**I**p**I**s, **A**nisotrop → te**bA**l."
  },
  {
   "n": 400,
@@ -6004,7 +8805,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Pita H",
-  "rationale": "**[UB asli · SOAL 6]** Materi menyatakan eksplisit: pada kontraksi maksimal, **pita H MENGHILANG**.  —  **Pola Kategori jawaban:** Turunkan: pita H = daerah tebal **tanpa tumpang tindih** di pusat. Saat filamen tipis menyusup sampai pusat, daerah itu **habis**. Pita A tidak mungkin hilang karena dia mengikuti panjang filamen tebal yang tidak memendek."
+  "rationale": "**[UB asli · SOAL 6]** Materi menyatakan eksplisit: pada kontraksi maksimal, **pita H MENGHILANG**.  —  **Pola Kategori jawaban:** Turunkan: pita H = daerah tebal **tanpa tumpang tindih** di pusat. Saat filamen tipis menyusup sampai pusat, daerah itu **habis**. Pita A tidak mungkin hilang karena dia mengikuti panjang filamen tebal yang tidak memendek.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": "SOAL 6",
+  "bahas": "Materi menyatakan eksplisit: pada kontraksi maksimal, **pita H MENGHILANG**.",
+  "diskriminator": "Turunkan: pita H = daerah tebal **tanpa tumpang tindih** di pusat. Saat filamen tipis menyusup sampai pusat, daerah itu **habis**. Pita A tidak mungkin hilang karena dia mengikuti panjang filamen tebal yang tidak memendek."
  },
  {
   "n": 401,
@@ -6019,7 +8827,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Garis-garis Z saling mendekat",
-  "rationale": "**[UB asli · Rangkuman 32, Tentir 20]** **Garis Z saling MENDEKAT** karena filamen tipis menyusup lebih dalam, menarik kedua garis Z ke tengah.  —  **Pola Kategori jawaban:** Aturan penghapus opsi: **filamen tebal tidak pernah memendek**, maka **pita A tidak pernah berubah panjang**. Opsi mana pun yang mengatakan pita A memendek otomatis salah."
+  "rationale": "**[UB asli · Rangkuman 32, Tentir 20]** **Garis Z saling MENDEKAT** karena filamen tipis menyusup lebih dalam, menarik kedua garis Z ke tengah.  —  **Pola Kategori jawaban:** Aturan penghapus opsi: **filamen tebal tidak pernah memendek**, maka **pita A tidak pernah berubah panjang**. Opsi mana pun yang mengatakan pita A memendek otomatis salah.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": "Rangkuman 32, Tentir 20",
+  "bahas": "**Garis Z saling MENDEKAT** karena filamen tipis menyusup lebih dalam, menarik kedua garis Z ke tengah.",
+  "diskriminator": "Aturan penghapus opsi: **filamen tebal tidak pernah memendek**, maka **pita A tidak pernah berubah panjang**. Opsi mana pun yang mengatakan pita A memendek otomatis salah."
  },
  {
   "n": 402,
@@ -6034,7 +8849,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Pita A",
-  "rationale": "**Pita A SELALU TETAP (konstan)** karena dia mengikuti panjang **filamen tebal**, dan filamen tebal tidak memendek.  —  **Pola Ciri tetangga:** Satu kalimat untuk dibawa ke ujian: **yang TETAP adalah pita A · yang MEMENDEK adalah pita I dan jarak antar garis Z · yang HILANG adalah pita H.**"
+  "rationale": "**Pita A SELALU TETAP (konstan)** karena dia mengikuti panjang **filamen tebal**, dan filamen tebal tidak memendek.  —  **Pola Ciri tetangga:** Satu kalimat untuk dibawa ke ujian: **yang TETAP adalah pita A · yang MEMENDEK adalah pita I dan jarak antar garis Z · yang HILANG adalah pita H.**",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Pita A SELALU TETAP (konstan)** karena dia mengikuti panjang **filamen tebal**, dan filamen tebal tidak memendek.",
+  "diskriminator": "Satu kalimat untuk dibawa ke ujian: **yang TETAP adalah pita A · yang MEMENDEK adalah pita I dan jarak antar garis Z · yang HILANG adalah pita H.**"
  },
  {
   "n": 403,
@@ -6049,7 +8871,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Karena pita A mengikuti panjang filamen tebal yang tidak memendek, sedangkan pita I adalah daerah tipis tanpa tumpang tindih yang menyempit saat filamen tipis menyusup",
-  "rationale": "Tidak ada filamen yang memendek — yang berubah hanya **seberapa jauh mereka tumpang tindih**. Pita A = panjang filamen tebal → tetap. Pita I = daerah tipis **tanpa** tumpang tindih → menyempit saat tipis menyusup masuk.  —  **Pola Turunkan dari prinsip:** Inti sliding filament: **panjang filamen konstan, derajat tumpang tindih yang berubah.** Dari satu prinsip ini, keempat perubahan pita bisa diturunkan."
+  "rationale": "Tidak ada filamen yang memendek — yang berubah hanya **seberapa jauh mereka tumpang tindih**. Pita A = panjang filamen tebal → tetap. Pita I = daerah tipis **tanpa** tumpang tindih → menyempit saat tipis menyusup masuk.  —  **Pola Turunkan dari prinsip:** Inti sliding filament: **panjang filamen konstan, derajat tumpang tindih yang berubah.** Dari satu prinsip ini, keempat perubahan pita bisa diturunkan.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Tidak ada filamen yang memendek — yang berubah hanya **seberapa jauh mereka tumpang tindih**. Pita A = panjang filamen tebal → tetap. Pita I = daerah tipis **tanpa** tumpang tindih → menyempit saat tipis menyusup masuk.",
+  "diskriminator": "Inti sliding filament: **panjang filamen konstan, derajat tumpang tindih yang berubah.** Dari satu prinsip ini, keempat perubahan pita bisa diturunkan."
  },
  {
   "n": 404,
@@ -6064,7 +8893,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Memendek",
-  "rationale": "**Pita I MEMENDEK**, karena semakin banyak filamen tipis yang menyusup ke dalam pita A, semakin sempit daerah “tipis tanpa tumpang tindih”.  —  **Pola Ciri tetangga:** Perhatikan bedanya dengan pita H: pita I **memendek**; pita H **menghilang** pada kontraksi maksimal. Materi memakai kata yang berbeda untuk keduanya."
+  "rationale": "**Pita I MEMENDEK**, karena semakin banyak filamen tipis yang menyusup ke dalam pita A, semakin sempit daerah “tipis tanpa tumpang tindih”.  —  **Pola Ciri tetangga:** Perhatikan bedanya dengan pita H: pita I **memendek**; pita H **menghilang** pada kontraksi maksimal. Materi memakai kata yang berbeda untuk keduanya.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Pita I MEMENDEK**, karena semakin banyak filamen tipis yang menyusup ke dalam pita A, semakin sempit daerah “tipis tanpa tumpang tindih”.",
+  "diskriminator": "Perhatikan bedanya dengan pita H: pita I **memendek**; pita H **menghilang** pada kontraksi maksimal. Materi memakai kata yang berbeda untuk keduanya."
  },
  {
   "n": 405,
@@ -6079,7 +8915,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Pergeseran filamen (sliding filament)",
-  "rationale": "**Pergeseran filamen (sliding filament)**: filamen tipis bergeser masuk lebih dalam ke antara filamen tebal.  —  **Pola Ciri tetangga:** Mekanisme yang sama berlaku pada **otot polos**, bedanya hanya **keteraturan susunannya**."
+  "rationale": "**Pergeseran filamen (sliding filament)**: filamen tipis bergeser masuk lebih dalam ke antara filamen tebal.  —  **Pola Ciri tetangga:** Mekanisme yang sama berlaku pada **otot polos**, bedanya hanya **keteraturan susunannya**.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Pergeseran filamen (sliding filament)**: filamen tipis bergeser masuk lebih dalam ke antara filamen tebal.",
+  "diskriminator": "Mekanisme yang sama berlaku pada **otot polos**, bedanya hanya **keteraturan susunannya**."
  },
  {
   "n": 406,
@@ -6094,7 +8937,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Pita A tetap · pita I memendek · pita H hilang · garis Z mendekat",
-  "rationale": "Keempatnya adalah **satu peristiwa dilihat dari empat sudut**: pita A tetap, pita I memendek, pita H hilang, garis Z mendekat.  —  **Pola Angka & daftar:** Cara cepat menyaring: cari opsi yang mengatakan **pita A memendek** atau **garis Z menjauh** — keduanya otomatis salah."
+  "rationale": "Keempatnya adalah **satu peristiwa dilihat dari empat sudut**: pita A tetap, pita I memendek, pita H hilang, garis Z mendekat.  —  **Pola Angka & daftar:** Cara cepat menyaring: cari opsi yang mengatakan **pita A memendek** atau **garis Z menjauh** — keduanya otomatis salah.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Keempatnya adalah **satu peristiwa dilihat dari empat sudut**: pita A tetap, pita I memendek, pita H hilang, garis Z mendekat.",
+  "diskriminator": "Cara cepat menyaring: cari opsi yang mengatakan **pita A memendek** atau **garis Z menjauh** — keduanya otomatis salah."
  },
  {
   "n": 407,
@@ -6109,7 +8959,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Karena garis Z melekat pada ujung luar filamen tipis, sehingga saat filamen tipis menyusup ke dalam, kedua garis Z tertarik ke tengah",
-  "rationale": "Garis Z adalah **titik perlekatan ujung luar filamen tipis**. Ketika filamen tipis menyusup lebih dalam ke antara filamen tebal, ujung luarnya — beserta garis Z — tertarik **ke arah tengah sarkomer**.  —  **Pola Turunkan dari prinsip:** Garis Z tidak berkontraksi sendiri — dia **ditarik**. Bedakan antara struktur yang **bekerja** (miosin) dan struktur yang **ikut terbawa** (garis Z)."
+  "rationale": "Garis Z adalah **titik perlekatan ujung luar filamen tipis**. Ketika filamen tipis menyusup lebih dalam ke antara filamen tebal, ujung luarnya — beserta garis Z — tertarik **ke arah tengah sarkomer**.  —  **Pola Turunkan dari prinsip:** Garis Z tidak berkontraksi sendiri — dia **ditarik**. Bedakan antara struktur yang **bekerja** (miosin) dan struktur yang **ikut terbawa** (garis Z).",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Garis Z adalah **titik perlekatan ujung luar filamen tipis**. Ketika filamen tipis menyusup lebih dalam ke antara filamen tebal, ujung luarnya — beserta garis Z — tertarik **ke arah tengah sarkomer**.",
+  "diskriminator": "Garis Z tidak berkontraksi sendiri — dia **ditarik**. Bedakan antara struktur yang **bekerja** (miosin) dan struktur yang **ikut terbawa** (garis Z)."
  },
  {
   "n": 408,
@@ -6124,7 +8981,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Aktin, tropomiosin, troponin pada filamen tipis; miosin pada filamen tebal",
-  "rationale": "**TIGA** protein pada filamen **tipis** — aktin, tropomiosin, troponin — dan **SATU** pada filamen **tebal**, yaitu **miosin**.  —  **Pola Angka & daftar:** Pola angka yang menyederhanakan hafalan: **3 tipis, 1 tebal**, dan yang tebal itu **miosin**."
+  "rationale": "**TIGA** protein pada filamen **tipis** — aktin, tropomiosin, troponin — dan **SATU** pada filamen **tebal**, yaitu **miosin**.  —  **Pola Angka & daftar:** Pola angka yang menyederhanakan hafalan: **3 tipis, 1 tebal**, dan yang tebal itu **miosin**.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**TIGA** protein pada filamen **tipis** — aktin, tropomiosin, troponin — dan **SATU** pada filamen **tebal**, yaitu **miosin**.",
+  "diskriminator": "Pola angka yang menyederhanakan hafalan: **3 tipis, 1 tebal**, dan yang tebal itu **miosin**."
  },
  {
   "n": 409,
@@ -6139,7 +9003,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Troponin",
-  "rationale": "**TROPONIN** adalah protein yang **mengikat Ca²⁺**. Setelah mengikat kalsium, troponin menggeser tropomiosin.  —  **Pola Kategori jawaban:** Pembeda nama: tro**PONIN** = pengikat kalsium. Dan **kalmodulin** adalah pengikat Ca²⁺ pada **otot polos**, bukan otot skelet — itu materi Fisiologi."
+  "rationale": "**TROPONIN** adalah protein yang **mengikat Ca²⁺**. Setelah mengikat kalsium, troponin menggeser tropomiosin.  —  **Pola Kategori jawaban:** Pembeda nama: tro**PONIN** = pengikat kalsium. Dan **kalmodulin** adalah pengikat Ca²⁺ pada **otot polos**, bukan otot skelet — itu materi Fisiologi.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**TROPONIN** adalah protein yang **mengikat Ca²⁺**. Setelah mengikat kalsium, troponin menggeser tropomiosin.",
+  "diskriminator": "Pembeda nama: tro**PONIN** = pengikat kalsium. Dan **kalmodulin** adalah pengikat Ca²⁺ pada **otot polos**, bukan otot skelet — itu materi Fisiologi."
  },
  {
   "n": 410,
@@ -6154,7 +9025,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Tropomiosin",
-  "rationale": "**TROPOMIOSIN** menutupi tempat perlekatan miosin pada aktin saat istirahat. Ketika Ca²⁺ mengikat troponin, troponin **menggeser tropomiosin** sehingga tempat perlekatan terbuka.  —  **Pola Kategori jawaban:** Namanya memberi petunjuk: tropo**MIOSIN** mengandung kata “miosin” karena dia **menutupi tempat miosin melekat**."
+  "rationale": "**TROPOMIOSIN** menutupi tempat perlekatan miosin pada aktin saat istirahat. Ketika Ca²⁺ mengikat troponin, troponin **menggeser tropomiosin** sehingga tempat perlekatan terbuka.  —  **Pola Kategori jawaban:** Namanya memberi petunjuk: tropo**MIOSIN** mengandung kata “miosin” karena dia **menutupi tempat miosin melekat**.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**TROPOMIOSIN** menutupi tempat perlekatan miosin pada aktin saat istirahat. Ketika Ca²⁺ mengikat troponin, troponin **menggeser tropomiosin** sehingga tempat perlekatan terbuka.",
+  "diskriminator": "Namanya memberi petunjuk: tropo**MIOSIN** mengandung kata “miosin” karena dia **menutupi tempat miosin melekat**."
  },
  {
   "n": 411,
@@ -6169,7 +9047,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Ca²⁺ mengikat troponin → troponin menggeser tropomiosin → tempat perlekatan miosin terbuka",
-  "rationale": "Urutannya: **Ca²⁺ → troponin → tropomiosin bergeser → tempat perlekatan terbuka → miosin menarik aktin**.  —  **Pola Ciri tetangga:** Dua peran yang tidak boleh tertukar: **troponin = sensor kalsium**, **tropomiosin = penutup**. Soal sering membalik keduanya."
+  "rationale": "Urutannya: **Ca²⁺ → troponin → tropomiosin bergeser → tempat perlekatan terbuka → miosin menarik aktin**.  —  **Pola Ciri tetangga:** Dua peran yang tidak boleh tertukar: **troponin = sensor kalsium**, **tropomiosin = penutup**. Soal sering membalik keduanya.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Urutannya: **Ca²⁺ → troponin → tropomiosin bergeser → tempat perlekatan terbuka → miosin menarik aktin**.",
+  "diskriminator": "Dua peran yang tidak boleh tertukar: **troponin = sensor kalsium**, **tropomiosin = penutup**. Soal sering membalik keduanya."
  },
  {
   "n": 412,
@@ -6184,7 +9069,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Motor end plate",
-  "rationale": "**MOTOR END PLATE** adalah bangunan tempat cabang akhiran saraf motorik menempel pada **sarkolema** otot skelet.  —  **Pola Kategori jawaban:** Tiga pola persarafan: **motor end plate** → skelet · **sinaps sederhana** → polos · **tidak ada (miogenik)** → jantung."
+  "rationale": "**MOTOR END PLATE** adalah bangunan tempat cabang akhiran saraf motorik menempel pada **sarkolema** otot skelet.  —  **Pola Kategori jawaban:** Tiga pola persarafan: **motor end plate** → skelet · **sinaps sederhana** → polos · **tidak ada (miogenik)** → jantung.",
+  "ppt": 6,
+  "grup": "Motor End Plate",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**MOTOR END PLATE** adalah bangunan tempat cabang akhiran saraf motorik menempel pada **sarkolema** otot skelet.",
+  "diskriminator": "Tiga pola persarafan: **motor end plate** → skelet · **sinaps sederhana** → polos · **tidak ada (miogenik)** → jantung."
  },
  {
   "n": 413,
@@ -6199,7 +9091,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Mielinnya hilang, lalu seratnya bercabang-cabang",
-  "rationale": "Akhiran saraf motorik **kehilangan selubung mielinnya** lalu **bercabang-cabang** dan menempel pada sarkolema.  —  **Pola Ciri tetangga:** Distraktor yang sering: “akhiran bermielin menempel pada sarkolema”. Mielin mempercepat hantaran **sepanjang akson**, tetapi di titik pelepasan neurotransmiter dia justru harus **hilang** agar membran bisa bersentuhan."
+  "rationale": "Akhiran saraf motorik **kehilangan selubung mielinnya** lalu **bercabang-cabang** dan menempel pada sarkolema.  —  **Pola Ciri tetangga:** Distraktor yang sering: “akhiran bermielin menempel pada sarkolema”. Mielin mempercepat hantaran **sepanjang akson**, tetapi di titik pelepasan neurotransmiter dia justru harus **hilang** agar membran bisa bersentuhan.",
+  "ppt": 6,
+  "grup": "Motor End Plate",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Akhiran saraf motorik **kehilangan selubung mielinnya** lalu **bercabang-cabang** dan menempel pada sarkolema.",
+  "diskriminator": "Distraktor yang sering: “akhiran bermielin menempel pada sarkolema”. Mielin mempercepat hantaran **sepanjang akson**, tetapi di titik pelepasan neurotransmiter dia justru harus **hilang** agar membran bisa bersentuhan."
  },
  {
   "n": 414,
@@ -6214,7 +9113,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Asetilkolin",
-  "rationale": "**ASETILKOLIN** dilepaskan di motor end plate, dan menyebabkan **depolarisasi sarkolema**.  —  **Pola Kategori jawaban:** Kata **“asetilkolin”** pada konteks otot → otot **skelet**. Otot polos dipersarafi autonom dengan transmiter yang bergantung cabang simpatis/parasimpatisnya."
+  "rationale": "**ASETILKOLIN** dilepaskan di motor end plate, dan menyebabkan **depolarisasi sarkolema**.  —  **Pola Kategori jawaban:** Kata **“asetilkolin”** pada konteks otot → otot **skelet**. Otot polos dipersarafi autonom dengan transmiter yang bergantung cabang simpatis/parasimpatisnya.",
+  "ppt": 6,
+  "grup": "Motor End Plate",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**ASETILKOLIN** dilepaskan di motor end plate, dan menyebabkan **depolarisasi sarkolema**.",
+  "diskriminator": "Kata **“asetilkolin”** pada konteks otot → otot **skelet**. Otot polos dipersarafi autonom dengan transmiter yang bergantung cabang simpatis/parasimpatisnya."
  },
  {
   "n": 415,
@@ -6229,7 +9135,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Depolarisasi sarkolema",
-  "rationale": "Asetilkolin menyebabkan **depolarisasi sarkolema**. Tiga peristiwa lainnya terjadi **setelahnya** secara berurutan, dan pemendekan pita A tidak pernah terjadi.  —  **Pola Ciri tetangga:** Soal berantai seperti ini menguji apakah kamu tahu **urutannya**, bukan hanya daftarnya. Perhatikan kata **“langsung”** di pokok soal."
+  "rationale": "Asetilkolin menyebabkan **depolarisasi sarkolema**. Tiga peristiwa lainnya terjadi **setelahnya** secara berurutan, dan pemendekan pita A tidak pernah terjadi.  —  **Pola Ciri tetangga:** Soal berantai seperti ini menguji apakah kamu tahu **urutannya**, bukan hanya daftarnya. Perhatikan kata **“langsung”** di pokok soal.",
+  "ppt": 6,
+  "grup": "Motor End Plate",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Asetilkolin menyebabkan **depolarisasi sarkolema**. Tiga peristiwa lainnya terjadi **setelahnya** secara berurutan, dan pemendekan pita A tidak pernah terjadi.",
+  "diskriminator": "Soal berantai seperti ini menguji apakah kamu tahu **urutannya**, bukan hanya daftarnya. Perhatikan kata **“langsung”** di pokok soal."
  },
  {
   "n": 416,
@@ -6244,7 +9157,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Tubulus T",
-  "rationale": "**[UB asli · SOAL 63]** **TUBULUS T** adalah invaginasi sarkolema yang meneruskan depolarisasi dari permukaan ke bagian dalam serat, sehingga kontraksi terjadi **serentak**.  —  **Pola Kategori jawaban:** Perhatikan bahwa **triad** adalah kompleks yang **memuat** tubulus T, tetapi bangunan yang menghantarkan depolarisasi ke dalam sel adalah **tubulus T** itu sendiri."
+  "rationale": "**[UB asli · SOAL 63]** **TUBULUS T** adalah invaginasi sarkolema yang meneruskan depolarisasi dari permukaan ke bagian dalam serat, sehingga kontraksi terjadi **serentak**.  —  **Pola Kategori jawaban:** Perhatikan bahwa **triad** adalah kompleks yang **memuat** tubulus T, tetapi bangunan yang menghantarkan depolarisasi ke dalam sel adalah **tubulus T** itu sendiri.",
+  "ppt": 6,
+  "grup": "Motor End Plate",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": "SOAL 63",
+  "bahas": "**TUBULUS T** adalah invaginasi sarkolema yang meneruskan depolarisasi dari permukaan ke bagian dalam serat, sehingga kontraksi terjadi **serentak**.",
+  "diskriminator": "Perhatikan bahwa **triad** adalah kompleks yang **memuat** tubulus T, tetapi bangunan yang menghantarkan depolarisasi ke dalam sel adalah **tubulus T** itu sendiri."
  },
  {
   "n": 417,
@@ -6259,7 +9179,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Depolarisasi datang dari permukaan, sehingga tanpa tubulus T bagian dalam serat akan berkontraksi lebih lambat daripada bagian luarnya",
-  "rationale": "Serat otot skelet sangat besar. Kalau depolarisasi harus merambat lewat sitoplasma ke pusat serat, bagian **luar akan berkontraksi lebih dulu** daripada bagian dalam. Solusinya: **bawa permukaan itu masuk ke dalam** lewat invaginasi sarkolema.  —  **Pola Turunkan dari prinsip:** Prinsip umum yang akan kamu pakai berulang: kalau sebuah sel **terlalu besar** untuk difusi atau hantaran, solusi biologisnya adalah **melipat permukaan ke dalam**."
+  "rationale": "Serat otot skelet sangat besar. Kalau depolarisasi harus merambat lewat sitoplasma ke pusat serat, bagian **luar akan berkontraksi lebih dulu** daripada bagian dalam. Solusinya: **bawa permukaan itu masuk ke dalam** lewat invaginasi sarkolema.  —  **Pola Turunkan dari prinsip:** Prinsip umum yang akan kamu pakai berulang: kalau sebuah sel **terlalu besar** untuk difusi atau hantaran, solusi biologisnya adalah **melipat permukaan ke dalam**.",
+  "ppt": 6,
+  "grup": "Motor End Plate",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Serat otot skelet sangat besar. Kalau depolarisasi harus merambat lewat sitoplasma ke pusat serat, bagian **luar akan berkontraksi lebih dulu** daripada bagian dalam. Solusinya: **bawa permukaan itu masuk ke dalam** lewat invaginasi sarkolema.",
+  "diskriminator": "Prinsip umum yang akan kamu pakai berulang: kalau sebuah sel **terlalu besar** untuk difusi atau hantaran, solusi biologisnya adalah **melipat permukaan ke dalam**."
  },
  {
   "n": 418,
@@ -6274,7 +9201,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Perbatasan pita A dan pita I",
-  "rationale": "Pada otot **skelet**, tubulus T terletak di **perbatasan pita A dan pita I**.  —  **Pola Ciri tetangga:** Pembeda hafalan yang bersih dan pernah ditanyakan: **skelet** = perbatasan A–I · **jantung** = garis Z."
+  "rationale": "Pada otot **skelet**, tubulus T terletak di **perbatasan pita A dan pita I**.  —  **Pola Ciri tetangga:** Pembeda hafalan yang bersih dan pernah ditanyakan: **skelet** = perbatasan A–I · **jantung** = garis Z.",
+  "ppt": 6,
+  "grup": "Motor End Plate",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Pada otot **skelet**, tubulus T terletak di **perbatasan pita A dan pita I**.",
+  "diskriminator": "Pembeda hafalan yang bersih dan pernah ditanyakan: **skelet** = perbatasan A–I · **jantung** = garis Z."
  },
  {
   "n": 419,
@@ -6289,7 +9223,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Satu tubulus T diapit dua sisterna terminal retikulum sarkoplasma",
-  "rationale": "**TRIAD = 1 tubulus T + 2 sisterna terminal** retikulum sarkoplasma. Namanya sudah memberi jumlahnya: **tri = tiga** bangunan.  —  **Pola Angka & daftar:** Angka di dalam nama: **TRI**ad = 1 + 2 = **3**. Pada otot jantung hanya 1 + 1 = 2, karena **tanpa sisterna terminal besar**."
+  "rationale": "**TRIAD = 1 tubulus T + 2 sisterna terminal** retikulum sarkoplasma. Namanya sudah memberi jumlahnya: **tri = tiga** bangunan.  —  **Pola Angka & daftar:** Angka di dalam nama: **TRI**ad = 1 + 2 = **3**. Pada otot jantung hanya 1 + 1 = 2, karena **tanpa sisterna terminal besar**.",
+  "ppt": 6,
+  "grup": "Motor End Plate",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**TRIAD = 1 tubulus T + 2 sisterna terminal** retikulum sarkoplasma. Namanya sudah memberi jumlahnya: **tri = tiga** bangunan.",
+  "diskriminator": "Angka di dalam nama: **TRI**ad = 1 + 2 = **3**. Pada otot jantung hanya 1 + 1 = 2, karena **tanpa sisterna terminal besar**."
  },
  {
   "n": 420,
@@ -6304,7 +9245,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Menempelkan tubulus T pembawa depolarisasi langsung ke gudang kalsium, sehingga Ca²⁺ dilepaskan tanpa perantara yang lambat",
-  "rationale": "Triad **menempelkan tubulus T langsung ke sisterna terminal** (gudang Ca²⁺), sehingga depolarisasi yang datang lewat tubulus T langsung memicu pelepasan Ca²⁺ tanpa perantara yang lambat.  —  **Pola Turunkan dari prinsip:** Rantai penurunannya: otot skelet butuh kontraksi **paling cepat dan serentak** → tubulus T + triad **paling berkembang** → retikulum sarkoplasma **paling berkembang**. Tiga fakta, satu alasan."
+  "rationale": "Triad **menempelkan tubulus T langsung ke sisterna terminal** (gudang Ca²⁺), sehingga depolarisasi yang datang lewat tubulus T langsung memicu pelepasan Ca²⁺ tanpa perantara yang lambat.  —  **Pola Turunkan dari prinsip:** Rantai penurunannya: otot skelet butuh kontraksi **paling cepat dan serentak** → tubulus T + triad **paling berkembang** → retikulum sarkoplasma **paling berkembang**. Tiga fakta, satu alasan.",
+  "ppt": 6,
+  "grup": "Motor End Plate",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Triad **menempelkan tubulus T langsung ke sisterna terminal** (gudang Ca²⁺), sehingga depolarisasi yang datang lewat tubulus T langsung memicu pelepasan Ca²⁺ tanpa perantara yang lambat.",
+  "diskriminator": "Rantai penurunannya: otot skelet butuh kontraksi **paling cepat dan serentak** → tubulus T + triad **paling berkembang** → retikulum sarkoplasma **paling berkembang**. Tiga fakta, satu alasan."
  },
  {
   "n": 421,
@@ -6319,7 +9267,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Asetilkolin → depolarisasi sarkolema → tubulus T → pelepasan Ca²⁺ → troponin → tropomiosin bergeser → miosin menarik aktin",
-  "rationale": "Urutan lengkap: impuls → **asetilkolin** → **depolarisasi sarkolema** → masuk lewat **tubulus T** → di triad, retikulum sarkoplasma melepas **Ca²⁺** → Ca²⁺ mengikat **troponin** → **tropomiosin bergeser** → **miosin menarik aktin**.  —  **Pola Angka & daftar:** Dua titik yang paling sering dibalik soal: posisi **tubulus T sebelum pelepasan Ca²⁺**, dan **troponin sebelum tropomiosin**."
+  "rationale": "Urutan lengkap: impuls → **asetilkolin** → **depolarisasi sarkolema** → masuk lewat **tubulus T** → di triad, retikulum sarkoplasma melepas **Ca²⁺** → Ca²⁺ mengikat **troponin** → **tropomiosin bergeser** → **miosin menarik aktin**.  —  **Pola Angka & daftar:** Dua titik yang paling sering dibalik soal: posisi **tubulus T sebelum pelepasan Ca²⁺**, dan **troponin sebelum tropomiosin**.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Urutan lengkap: impuls → **asetilkolin** → **depolarisasi sarkolema** → masuk lewat **tubulus T** → di triad, retikulum sarkoplasma melepas **Ca²⁺** → Ca²⁺ mengikat **troponin** → **tropomiosin bergeser** → **miosin menarik aktin**.",
+  "diskriminator": "Dua titik yang paling sering dibalik soal: posisi **tubulus T sebelum pelepasan Ca²⁺**, dan **troponin sebelum tropomiosin**."
  },
  {
   "n": 422,
@@ -6334,7 +9289,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Retikulum sarkoplasma di dalam sel",
-  "rationale": "Pada otot skelet, Ca²⁺ berasal dari **retikulum sarkoplasma** di dalam sel, dilepaskan di **triad**.  —  **Pola Ciri tetangga:** Pembanding penting: pada **otot jantung** sebagian Ca²⁺ berasal dari **luar sel** — itulah sebabnya retikulum sarkoplasmanya kurang berkembang dan jantung sensitif terhadap kadar kalsium darah."
+  "rationale": "Pada otot skelet, Ca²⁺ berasal dari **retikulum sarkoplasma** di dalam sel, dilepaskan di **triad**.  —  **Pola Ciri tetangga:** Pembanding penting: pada **otot jantung** sebagian Ca²⁺ berasal dari **luar sel** — itulah sebabnya retikulum sarkoplasmanya kurang berkembang dan jantung sensitif terhadap kadar kalsium darah.",
+  "ppt": 6,
+  "grup": "Mekanisme Kontraksi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Pada otot skelet, Ca²⁺ berasal dari **retikulum sarkoplasma** di dalam sel, dilepaskan di **triad**.",
+  "diskriminator": "Pembanding penting: pada **otot jantung** sebagian Ca²⁺ berasal dari **luar sel** — itulah sebabnya retikulum sarkoplasmanya kurang berkembang dan jantung sensitif terhadap kadar kalsium darah."
  },
  {
   "n": 423,
@@ -6349,7 +9311,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Area Cohnheim",
-  "rationale": "**AREA COHNHEIM**: pada penampang **LINTANG** otot skelet, miofibril tampak berkelompok dalam daerah **poligonal seperti pulau** yang dipisahkan sarkoplasma.  —  **Pola Kategori jawaban:** Di soal UB, istilah ini sering muncul sebagai parafrasa **“area seperti pulau”**. Kenali parafrasanya, bukan hanya namanya."
+  "rationale": "**AREA COHNHEIM**: pada penampang **LINTANG** otot skelet, miofibril tampak berkelompok dalam daerah **poligonal seperti pulau** yang dipisahkan sarkoplasma.  —  **Pola Kategori jawaban:** Di soal UB, istilah ini sering muncul sebagai parafrasa **“area seperti pulau”**. Kenali parafrasanya, bukan hanya namanya.",
+  "ppt": 6,
+  "grup": "Penampang",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**AREA COHNHEIM**: pada penampang **LINTANG** otot skelet, miofibril tampak berkelompok dalam daerah **poligonal seperti pulau** yang dipisahkan sarkoplasma.",
+  "diskriminator": "Di soal UB, istilah ini sering muncul sebagai parafrasa **“area seperti pulau”**. Kenali parafrasanya, bukan hanya namanya."
  },
  {
   "n": 424,
@@ -6364,7 +9333,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Penampang lintang otot skelet",
-  "rationale": "Area Cohnheim **HANYA** terlihat pada **penampang LINTANG** otot **skelet**. Pada penampang bujur, yang terlihat adalah pita-pita melintang (A, I, Z, H).  —  **Pola Diskriminator konteks:** Kebiasaan yang harus kamu bangun: setiap kali soal histologi menyebut **“penampang”**, lingkari dulu kata **lintang** atau **bujur** sebelum membaca opsi."
+  "rationale": "Area Cohnheim **HANYA** terlihat pada **penampang LINTANG** otot **skelet**. Pada penampang bujur, yang terlihat adalah pita-pita melintang (A, I, Z, H).  —  **Pola Diskriminator konteks:** Kebiasaan yang harus kamu bangun: setiap kali soal histologi menyebut **“penampang”**, lingkari dulu kata **lintang** atau **bujur** sebelum membaca opsi.",
+  "ppt": 6,
+  "grup": "Penampang",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Area Cohnheim **HANYA** terlihat pada **penampang LINTANG** otot **skelet**. Pada penampang bujur, yang terlihat adalah pita-pita melintang (A, I, Z, H).",
+  "diskriminator": "Kebiasaan yang harus kamu bangun: setiap kali soal histologi menyebut **“penampang”**, lingkari dulu kata **lintang** atau **bujur** sebelum membaca opsi."
  },
  {
   "n": 425,
@@ -6379,7 +9355,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Diskus isotrop terlihat sebagai filamen tipis",
-  "rationale": "**[UB asli · Rangkuman 73]** Eliminasi: Area Cohnheim hanya pada penampang **LINTANG**; pita H ada **di dalam** pita A; garis Z di tengah pita **I**; inti otot skelet **lonjong dan di tepi**, bukan bulat di tengah. Yang tersisa dan benar: **diskus isotrop (pita I) berisi filamen tipis**, dan pita-pita ini terlihat pada potongan bujur.  —  **Pola Diskriminator konteks:** Satu kata **“bujur”** yang mematikan opsi Area Cohnheim. Kalau soal menulis **“lintang”**, jawabannya menjadi Area Cohnheim."
+  "rationale": "**[UB asli · Rangkuman 73]** Eliminasi: Area Cohnheim hanya pada penampang **LINTANG**; pita H ada **di dalam** pita A; garis Z di tengah pita **I**; inti otot skelet **lonjong dan di tepi**, bukan bulat di tengah. Yang tersisa dan benar: **diskus isotrop (pita I) berisi filamen tipis**, dan pita-pita ini terlihat pada potongan bujur.  —  **Pola Diskriminator konteks:** Satu kata **“bujur”** yang mematikan opsi Area Cohnheim. Kalau soal menulis **“lintang”**, jawabannya menjadi Area Cohnheim.",
+  "ppt": 6,
+  "grup": "Penampang",
+  "pola": "USI",
+  "ubAsli": true,
+  "kodeUB": "Rangkuman 73",
+  "bahas": "Eliminasi: Area Cohnheim hanya pada penampang **LINTANG**; pita H ada **di dalam** pita A; garis Z di tengah pita **I**; inti otot skelet **lonjong dan di tepi**, bukan bulat di tengah. Yang tersisa dan benar: **diskus isotrop (pita I) berisi filamen tipis**, dan pita-pita ini terlihat pada potongan bujur.",
+  "diskriminator": "Satu kata **“bujur”** yang mematikan opsi Area Cohnheim. Kalau soal menulis **“lintang”**, jawabannya menjadi Area Cohnheim."
  },
  {
   "n": 426,
@@ -6394,7 +9377,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Skelet–area Cohnheim · polos–bulatan diameter berbeda tidak semua berinti · jantung–bulatan dengan inti di tengah",
-  "rationale": "Penampang lintang: **skelet** = Area Cohnheim dengan inti di tepi lingkaran · **polos** = bulatan berdiameter berbeda, tidak semua berinti · **jantung** = bulatan dengan inti di tengah.  —  **Pola Angka & daftar:** Tiga baris ini menjawab CO 34, CO 86, Rangkuman 73, dan sebagian CO 45. Hafal sebagai **tabel**, bukan sebagai kalimat lepas."
+  "rationale": "Penampang lintang: **skelet** = Area Cohnheim dengan inti di tepi lingkaran · **polos** = bulatan berdiameter berbeda, tidak semua berinti · **jantung** = bulatan dengan inti di tengah.  —  **Pola Angka & daftar:** Tiga baris ini menjawab CO 34, CO 86, Rangkuman 73, dan sebagian CO 45. Hafal sebagai **tabel**, bukan sebagai kalimat lepas.",
+  "ppt": 6,
+  "grup": "Penampang",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Penampang lintang: **skelet** = Area Cohnheim dengan inti di tepi lingkaran · **polos** = bulatan berdiameter berbeda, tidak semua berinti · **jantung** = bulatan dengan inti di tengah.",
+  "diskriminator": "Tiga baris ini menjawab CO 34, CO 86, Rangkuman 73, dan sebagian CO 45. Hafal sebagai **tabel**, bukan sebagai kalimat lepas."
  },
  {
   "n": 427,
@@ -6409,7 +9399,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Skelet–pita A, I, garis Z dan H dengan inti lonjong di tepi · polos–sel fusiform dengan inti memanjang di tengah · jantung–serat bercabang dengan diskus interkalaris",
-  "rationale": "Penampang bujur: **skelet** = pita melintang + inti lonjong di tepi · **polos** = sel fusiform, inti memanjang di tengah · **jantung** = percabangan + diskus interkalaris + pita.  —  **Pola Angka & daftar:** Pasangan terbalik dari soal sebelumnya. Perhatikan bahwa **diskus interkalaris** dan **percabangan** adalah penanda otot jantung yang paling jelas pada potongan bujur."
+  "rationale": "Penampang bujur: **skelet** = pita melintang + inti lonjong di tepi · **polos** = sel fusiform, inti memanjang di tengah · **jantung** = percabangan + diskus interkalaris + pita.  —  **Pola Angka & daftar:** Pasangan terbalik dari soal sebelumnya. Perhatikan bahwa **diskus interkalaris** dan **percabangan** adalah penanda otot jantung yang paling jelas pada potongan bujur.",
+  "ppt": 6,
+  "grup": "Penampang",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Penampang bujur: **skelet** = pita melintang + inti lonjong di tepi · **polos** = sel fusiform, inti memanjang di tengah · **jantung** = percabangan + diskus interkalaris + pita.",
+  "diskriminator": "Pasangan terbalik dari soal sebelumnya. Perhatikan bahwa **diskus interkalaris** dan **percabangan** adalah penanda otot jantung yang paling jelas pada potongan bujur."
  },
  {
   "n": 428,
@@ -6424,7 +9421,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Banyak mioglobin, sitokrom, dan mitokondria; metabolisme fosforilasi oksidatif; kontraksi tahan lama",
-  "rationale": "**Serat merah**: banyak **mioglobin, sitokrom, mitokondria** → metabolisme **fosforilasi oksidatif** → kontraksi **kuat dan tahan lama**.  —  **Pola Ciri tetangga:** Turunkan dari satu hal: **mioglobin = warna merah = oksigen tersedia** → aerob → butuh mitokondria banyak → tahan lama. Lima baris dari satu akar."
+  "rationale": "**Serat merah**: banyak **mioglobin, sitokrom, mitokondria** → metabolisme **fosforilasi oksidatif** → kontraksi **kuat dan tahan lama**.  —  **Pola Ciri tetangga:** Turunkan dari satu hal: **mioglobin = warna merah = oksigen tersedia** → aerob → butuh mitokondria banyak → tahan lama. Lima baris dari satu akar.",
+  "ppt": 6,
+  "grup": "Serat Merah/Putih",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Serat merah**: banyak **mioglobin, sitokrom, mitokondria** → metabolisme **fosforilasi oksidatif** → kontraksi **kuat dan tahan lama**.",
+  "diskriminator": "Turunkan dari satu hal: **mioglobin = warna merah = oksigen tersedia** → aerob → butuh mitokondria banyak → tahan lama. Lima baris dari satu akar."
  },
  {
   "n": 429,
@@ -6439,7 +9443,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sedikit mioglobin dan mitokondria; metabolisme glikolisis anaerob; kontraksi cepat tetapi tidak tahan lama",
-  "rationale": "**Serat putih**: **sedikit** mioglobin, sitokrom, dan mitokondria → metabolisme **glikolisis anaerob** → kontraksi **cepat tetapi tidak tahan lama**.  —  **Pola Ciri tetangga:** Kenapa cepat lelah: glikolisis anaerob menghasilkan **sedikit ATP** dan menumpuk **laktat**."
+  "rationale": "**Serat putih**: **sedikit** mioglobin, sitokrom, dan mitokondria → metabolisme **glikolisis anaerob** → kontraksi **cepat tetapi tidak tahan lama**.  —  **Pola Ciri tetangga:** Kenapa cepat lelah: glikolisis anaerob menghasilkan **sedikit ATP** dan menumpuk **laktat**.",
+  "ppt": 6,
+  "grup": "Serat Merah/Putih",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Serat putih**: **sedikit** mioglobin, sitokrom, dan mitokondria → metabolisme **glikolisis anaerob** → kontraksi **cepat tetapi tidak tahan lama**.",
+  "diskriminator": "Kenapa cepat lelah: glikolisis anaerob menghasilkan **sedikit ATP** dan menumpuk **laktat**."
  },
  {
   "n": 430,
@@ -6454,7 +9465,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Kandungan mioglobin, yang menentukan ketersediaan oksigen dan karena itu menentukan jalur metabolisme serta daya tahan",
-  "rationale": "**Mioglobin** adalah protein pengikat oksigen di otot, dan dialah yang memberi **warna merah**. Banyak mioglobin → banyak oksigen tersedia → metabolisme **aerob** → butuh mitokondria banyak → **tahan lama**. Kebalikannya untuk serat putih.  —  **Pola Turunkan dari prinsip:** Ingat **satu hal** saja — mioglobin = merah = oksigen — dan seluruh tabel perbedaannya bisa kamu turunkan sendiri."
+  "rationale": "**Mioglobin** adalah protein pengikat oksigen di otot, dan dialah yang memberi **warna merah**. Banyak mioglobin → banyak oksigen tersedia → metabolisme **aerob** → butuh mitokondria banyak → **tahan lama**. Kebalikannya untuk serat putih.  —  **Pola Turunkan dari prinsip:** Ingat **satu hal** saja — mioglobin = merah = oksigen — dan seluruh tabel perbedaannya bisa kamu turunkan sendiri.",
+  "ppt": 6,
+  "grup": "Serat Merah/Putih",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Mioglobin** adalah protein pengikat oksigen di otot, dan dialah yang memberi **warna merah**. Banyak mioglobin → banyak oksigen tersedia → metabolisme **aerob** → butuh mitokondria banyak → **tahan lama**. Kebalikannya untuk serat putih.",
+  "diskriminator": "Ingat **satu hal** saja — mioglobin = merah = oksigen — dan seluruh tabel perbedaannya bisa kamu turunkan sendiri."
  },
  {
   "n": 431,
@@ -6469,7 +9487,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Banyak mitokondria dan mioglobin, metabolisme oksidatif, tahan lelah",
-  "rationale": "**[UB asli]** **Slow twitch (tipe I) = serat MERAH**: banyak mitokondria dan mioglobin, metabolisme **oksidatif**, **tahan lelah**. Fast twitch (tipe II) = serat putih.  —  **Pola Diskriminator konteks:** Dua kerangka, satu kenyataan: histologi menyebutnya **merah/putih**, fisiologi menyebutnya **slow/fast twitch**. Petakan keduanya supaya soal dari sisi mana pun bisa kamu jawab."
+  "rationale": "**[UB asli]** **Slow twitch (tipe I) = serat MERAH**: banyak mitokondria dan mioglobin, metabolisme **oksidatif**, **tahan lelah**. Fast twitch (tipe II) = serat putih.  —  **Pola Diskriminator konteks:** Dua kerangka, satu kenyataan: histologi menyebutnya **merah/putih**, fisiologi menyebutnya **slow/fast twitch**. Petakan keduanya supaya soal dari sisi mana pun bisa kamu jawab.",
+  "ppt": 6,
+  "grup": "Serat Merah/Putih",
+  "pola": "USI",
+  "ubAsli": true,
+  "kodeUB": null,
+  "bahas": "**Slow twitch (tipe I) = serat MERAH**: banyak mitokondria dan mioglobin, metabolisme **oksidatif**, **tahan lelah**. Fast twitch (tipe II) = serat putih.",
+  "diskriminator": "Dua kerangka, satu kenyataan: histologi menyebutnya **merah/putih**, fisiologi menyebutnya **slow/fast twitch**. Petakan keduanya supaya soal dari sisi mana pun bisa kamu jawab."
  },
  {
   "n": 432,
@@ -6484,7 +9509,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Otot polos → otot skelet → otot jantung",
-  "rationale": "**Otot polos** (bisa **mitosis**) → **otot skelet** (terbatas, lewat sel satelit) → **otot jantung** (buruk, diganti **jaringan parut**).  —  **Pola Angka & daftar:** Dan itu menjelaskan kenapa **infark miokard** meninggalkan parut permanen sementara cedera otot polos usus bisa pulih."
+  "rationale": "**Otot polos** (bisa **mitosis**) → **otot skelet** (terbatas, lewat sel satelit) → **otot jantung** (buruk, diganti **jaringan parut**).  —  **Pola Angka & daftar:** Dan itu menjelaskan kenapa **infark miokard** meninggalkan parut permanen sementara cedera otot polos usus bisa pulih.",
+  "ppt": 6,
+  "grup": "Regenerasi",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Otot polos** (bisa **mitosis**) → **otot skelet** (terbatas, lewat sel satelit) → **otot jantung** (buruk, diganti **jaringan parut**).",
+  "diskriminator": "Dan itu menjelaskan kenapa **infark miokard** meninggalkan parut permanen sementara cedera otot polos usus bisa pulih."
  },
  {
   "n": 433,
@@ -6499,7 +9531,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Sel satelit",
-  "rationale": "**Sel satelit** adalah sel punca di antara sarkolema dan lamina basalis. Karena serat otot skelet **multinukleat dan tidak bisa membelah**, semua perbaikan harus lewat sel satelit.  —  **Pola Ciri tetangga:** Catatan kejujuran: istilah **sel satelit** berasal dari buku histologi standar dan **tidak dibahas rinci di slide** kuliah ini — kemungkinan keluarnya rendah. Yang perlu kamu kuasai adalah **urutan** kemampuan regenerasinya."
+  "rationale": "**Sel satelit** adalah sel punca di antara sarkolema dan lamina basalis. Karena serat otot skelet **multinukleat dan tidak bisa membelah**, semua perbaikan harus lewat sel satelit.  —  **Pola Ciri tetangga:** Catatan kejujuran: istilah **sel satelit** berasal dari buku histologi standar dan **tidak dibahas rinci di slide** kuliah ini — kemungkinan keluarnya rendah. Yang perlu kamu kuasai adalah **urutan** kemampuan regenerasinya.",
+  "ppt": 6,
+  "grup": "Regenerasi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "**Sel satelit** adalah sel punca di antara sarkolema dan lamina basalis. Karena serat otot skelet **multinukleat dan tidak bisa membelah**, semua perbaikan harus lewat sel satelit.",
+  "diskriminator": "Catatan kejujuran: istilah **sel satelit** berasal dari buku histologi standar dan **tidak dibahas rinci di slide** kuliah ini — kemungkinan keluarnya rendah. Yang perlu kamu kuasai adalah **urutan** kemampuan regenerasinya."
  },
  {
   "n": 434,
@@ -6514,7 +9553,14 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Mitosis sel otot polos sendiri serta diferensiasi sel mesenkim atau sel mesenkim residual",
-  "rationale": "Otot polos dapat **bermitosis sendiri**, dan juga mendapat sel baru dari **diferensiasi sel mesenkim** atau **sel mesenkim residual**.  —  **Pola Ciri tetangga:** **Sel satelit** adalah mekanisme otot **skelet**, bukan otot polos. Jangan tukar sumber regenerasi antar jenis otot."
+  "rationale": "Otot polos dapat **bermitosis sendiri**, dan juga mendapat sel baru dari **diferensiasi sel mesenkim** atau **sel mesenkim residual**.  —  **Pola Ciri tetangga:** **Sel satelit** adalah mekanisme otot **skelet**, bukan otot polos. Jangan tukar sumber regenerasi antar jenis otot.",
+  "ppt": 6,
+  "grup": "Regenerasi",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": null,
+  "bahas": "Otot polos dapat **bermitosis sendiri**, dan juga mendapat sel baru dari **diferensiasi sel mesenkim** atau **sel mesenkim residual**.",
+  "diskriminator": "**Sel satelit** adalah mekanisme otot **skelet**, bukan otot polos. Jangan tukar sumber regenerasi antar jenis otot."
  },
  {
   "n": 435,
@@ -6529,6 +9575,13 @@ window.QUIZ_BANK["ub-1-2"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Keduanya berbentuk silindris dan bercorak (bergaris)",
-  "rationale": "**[UB asli · CO 85]** Keduanya **silindris dan bercorak**. Inti di tengah hanya milik kardiomiosit; diskus interkalaris dan kontraksi miogenik hanya milik kardiomiosit; keduanya tidak bisa bermitosis.  —  **Pola Ciri tetangga:** Perhatikan pemakaian kata **“miosit”** di soal ini untuk sel otot **skelet**. Kalau soal memakai “miosit” tanpa keterangan, **opsi jawabannya** yang menentukan maksudnya."
+  "rationale": "**[UB asli · CO 85]** Keduanya **silindris dan bercorak**. Inti di tengah hanya milik kardiomiosit; diskus interkalaris dan kontraksi miogenik hanya milik kardiomiosit; keduanya tidak bisa bermitosis.  —  **Pola Ciri tetangga:** Perhatikan pemakaian kata **“miosit”** di soal ini untuk sel otot **skelet**. Kalau soal memakai “miosit” tanpa keterangan, **opsi jawabannya** yang menentukan maksudnya.",
+  "ppt": 6,
+  "grup": "Otot Jantung",
+  "pola": "TTG",
+  "ubAsli": true,
+  "kodeUB": "CO 85",
+  "bahas": "Keduanya **silindris dan bercorak**. Inti di tengah hanya milik kardiomiosit; diskus interkalaris dan kontraksi miogenik hanya milik kardiomiosit; keduanya tidak bisa bermitosis.",
+  "diskriminator": "Perhatikan pemakaian kata **“miosit”** di soal ini untuk sel otot **skelet**. Kalau soal memakai “miosit” tanpa keterangan, **opsi jawabannya** yang menentukan maksudnya."
  }
 ];

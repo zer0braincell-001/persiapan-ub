@@ -161,6 +161,38 @@
   .barrow .bar{flex:1}
   .barrow .pct{font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600;
     color:var(--faint); font-variant-numeric:tabular-nums;}
+  /* ===== tab Blok 1.2 ===== */
+  .klist{display:flex; flex-direction:column; gap:8px;}
+  .krow{display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit;
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:12px 14px; box-shadow:var(--shadow);}
+  .krow:hover{border-color:var(--border-strong);}
+  .krow[aria-disabled="true"]{opacity:.55; box-shadow:none; background:var(--raise);}
+  .krow .kn{flex:0 0 34px; height:34px; display:grid; place-items:center; border-radius:9px;
+    background:var(--accent-soft); color:var(--accent-ink); font-weight:700; font-size:13px;
+    font-family:"IBM Plex Mono",monospace;}
+  .krow[aria-disabled="true"] .kn{background:var(--surface-2); color:var(--faint);}
+  .krow .kb{flex:1 1 auto; min-width:0;}
+  .krow .kt{font-weight:600; font-size:14px; line-height:1.3;}
+  .krow .km{font-size:12px; color:var(--muted); margin-top:2px;}
+  .krow .kp{flex:0 0 86px; text-align:right; font-size:12px; color:var(--muted);
+    font-family:"IBM Plex Mono",monospace;}
+  .krow .kbar{height:4px; background:var(--surface-2); border-radius:99px; overflow:hidden; margin-top:6px;}
+  .krow .kbar > i{display:block; height:100%; background:var(--accent); width:0;}
+  .chipwrap{display:flex; flex-wrap:wrap; gap:7px; align-items:flex-start;}
+  .pchip{display:inline-flex; align-items:center; gap:7px; text-decoration:none;
+    background:var(--surface); border:1px solid var(--border); border-radius:99px;
+    padding:6px 12px; font-size:13px; font-weight:500; color:var(--text); line-height:1.2;}
+  .pchip:hover{border-color:var(--accent); color:var(--accent-ink);}
+  .pchip b{font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:600;
+    color:var(--muted); font-variant-numeric:tabular-nums;}
+  .pchip:hover b{color:var(--accent);}
+  .qsgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px;}
+  .qsc{display:block; text-decoration:none; color:inherit; background:var(--surface);
+    border:1px solid var(--border); border-radius:var(--radius); padding:13px 14px; box-shadow:var(--shadow);}
+  .qsc:hover{border-color:var(--border-strong);}
+  .qsc .l{font-size:12px; color:var(--muted); font-weight:500;}
+  .qsc .v{font-size:22px; font-weight:700; font-family:"IBM Plex Mono",monospace; margin-top:3px;}
   .empty{color:var(--muted); font-size:14px; margin:0; padding:10px 0}
 
   /* ===== Engine quiz ===== */
@@ -288,6 +320,7 @@
     <div class="score" id="score" aria-live="polite" hidden></div>
     <a class="btn ghost" id="navHome" href="#/">Home</a>
     <a class="btn ghost" id="navQuiz" href="#/quiz">Daftar Quiz</a>
+    <a class="btn ghost" id="navB12" href="#/blok12">Blok 1.2</a>
     <button class="btn ghost" id="tTheme" title="Ganti tema">&#9681; Tema</button>
   </div>
   <div class="progress" id="topProgress" hidden><i id="bar"></i></div>
@@ -339,6 +372,30 @@
     </div>
   </div>
 
+  <!-- ===== BLOK 1.2 ===== -->
+  <div id="viewB12" hidden>
+    <div class="hero">
+      <h2>Blok 1.2 &mdash; Integumen &amp; Muskuloskeletal</h2>
+      <p id="b12sub"></p>
+    </div>
+
+    <div class="sec">
+      <p class="sec-ttl">Mulai cepat</p>
+      <div class="qsgrid" id="b12quick"></div>
+    </div>
+
+    <div class="sec">
+      <p class="sec-ttl">Per kuliah</p>
+      <div class="klist" id="b12kuliah"></div>
+    </div>
+
+    <div class="sec">
+      <p class="sec-ttl">Per pola soal</p>
+      <div class="chipwrap" id="b12pola"></div>
+      <p class="empty" style="margin-top:9px">Pola = kaidah pembeda yang dipakai ulang antar soal. Latih per pola kalau mau mengasah cara menyaring distraktor.</p>
+    </div>
+  </div>
+
   <!-- ===== ENGINE QUIZ ===== -->
   <div id="viewPlay" hidden>
     <div class="tools">
@@ -350,8 +407,12 @@
     </div>
 
     <div class="filterbar">
+      <span id="fPptWrap" hidden><label class="flab" for="fPpt">PPT</label>
+      <select id="fPpt"></select></span>
       <label class="flab" for="fModul">Modul</label>
       <select id="fModul"></select>
+      <span id="fPolaWrap" hidden><label class="flab" for="fPola">Pola</label>
+      <select id="fPola"></select></span>
       <span class="fcount" id="fCount"></span>
     </div>
 
@@ -407,8 +468,10 @@
    kind:"eksternal" -> buka href di tab baru
    =========================================================== */
 const QUIZZES = [
+  /* ub-1-2 punya tab sendiri (#/blok12), jadi disembunyikan dari Daftar Quiz
+     lewat sembunyi:true. Entri ini tetap wajib ada: startQuiz() mencarinya di sini. */
   { id:"ub-1-2", judul:"Bank Soal UB 1.2", topik:"Blok 1.2 Integumen & Muskuloskeletal \u00b7 PPT 1-6",
-    jumlahSoal:435, status:"siap", kind:"internal" },
+    jumlahSoal:435, status:"siap", kind:"internal", sembunyi:true },
   { id:"recall-blok-1-1", judul:"Recall Integratif Blok 1.1", topik:"Blok 1.1 · 10 modul",
     jumlahSoal:100, status:"siap", kind:"internal" },
   { id:"hemoglobinopati", judul:"Hemoglobinopati", topik:"Genetika Molekuler",
@@ -517,7 +580,7 @@ function progressOf(q){
 
 function renderHome(){
   const ready = QUIZZES.filter(q => q.status === "siap");
-  const soon  = QUIZZES.filter(q => q.status !== "siap");
+  const soon  = QUIZZES.filter(q => q.status !== "siap" && !q.sembunyi);
   $("#stReady").textContent = ready.length;
   $("#stSoon").textContent  = soon.length;
   $("#stSoal").textContent  = ready.reduce((n,q) => n + (q.jumlahSoal || 0), 0);
@@ -577,7 +640,8 @@ function card(q){
 
 function renderList(){
   const term = ($("#q").value || "").trim().toLowerCase();
-  const hits = term ? QUIZZES.filter(q => q.judul.toLowerCase().includes(term)) : QUIZZES;
+  const vis = QUIZZES.filter(q => !q.sembunyi);
+  const hits = term ? vis.filter(q => q.judul.toLowerCase().includes(term)) : vis;
   const grid = $("#qgrid");
   grid.innerHTML = "";
   hits.forEach(q => grid.appendChild(card(q)));
@@ -601,6 +665,9 @@ function loadQuizStore(id){
   if(st.mode !== "exam") st.mode = "study";
   st.submitted = !!st.submitted;
   if(typeof st.modul !== "string") st.modul = "*";
+  if(typeof st.ppt !== "string") st.ppt = "*";      // filter per-PPT (tab Blok 1.2)
+  if(typeof st.pola !== "string") st.pola = "*";    // filter per-pola soal
+  if(typeof st.only !== "string") st.only = "*";    // *|todo|wrong|flag
   return st;
 }
 function saveQuiz(){ if(P) writeLS(quizKey(P.id), P.st); }
@@ -613,7 +680,20 @@ function buildOptOrders(){
   });
 }
 function filteredIdx(){
-  return P.bank.map((_, i) => i).filter(i => P.st.modul === "*" || P.bank[i].modul === P.st.modul);
+  const st = P.st;
+  return P.bank.map((_, i) => i).filter(i => {
+    const it = P.bank[i];
+    if(st.modul !== "*" && it.modul !== st.modul) return false;
+    if(st.ppt   !== "*" && String(it.ppt)  !== st.ppt)  return false;
+    if(st.pola  !== "*" && String(it.pola) !== st.pola) return false;
+    if(st.only !== "*"){
+      const rec = st.answers[it.n];
+      if(st.only === "todo"  && rec) return false;
+      if(st.only === "flag"  && !st.flags[it.n]) return false;
+      if(st.only === "wrong" && !(rec && rec.mode !== "reveal" && rec.oi !== it.kunciIndex)) return false;
+    }
+    return true;
+  });
 }
 function buildOrder(keepBankIdx){
   const base = filteredIdx();
@@ -631,9 +711,11 @@ function buildModulFilter(){
   const sel = $("#fModul");
   sel.innerHTML = "";
   const counts = new Map();
-  P.bank.forEach(it => counts.set(it.modul, (counts.get(it.modul) || 0) + 1));
+  // Hanya tampilkan subtopik milik PPT yang sedang aktif, supaya daftarnya tidak membengkak.
+  const lingkup = P.bank.filter(it => P.st.ppt === "*" || String(it.ppt) === P.st.ppt);
+  lingkup.forEach(it => counts.set(it.modul, (counts.get(it.modul) || 0) + 1));
   const all = document.createElement("option");
-  all.value = "*"; all.textContent = "Semua modul (" + P.bank.length + ")";
+  all.value = "*"; all.textContent = "Semua modul (" + lingkup.length + ")";
   sel.appendChild(all);
   counts.forEach((c, m) => {
     const o = document.createElement("option");
@@ -642,6 +724,48 @@ function buildModulFilter(){
   });
   if(!counts.has(P.st.modul)) P.st.modul = "*";
   sel.value = P.st.modul;
+}
+
+/* Select PPT & Pola hanya muncul kalau bank soalnya punya field itu
+   (bank 1.1 tidak punya, jadi tampilannya tetap seperti semula). */
+function buildExtraFilters(){
+  const punyaPpt  = P.bank.some(it => it.ppt  != null);
+  const punyaPola = P.bank.some(it => it.pola != null);
+  $("#fPptWrap").hidden  = !punyaPpt;
+  $("#fPolaWrap").hidden = !punyaPola;
+
+  if(punyaPpt){
+    const sel = $("#fPpt"); sel.innerHTML = "";
+    const c = new Map();
+    P.bank.forEach(it => c.set(it.ppt, (c.get(it.ppt) || 0) + 1));
+    const all = document.createElement("option");
+    all.value = "*"; all.textContent = "Semua PPT (" + P.bank.length + ")";
+    sel.appendChild(all);
+    [...c.keys()].sort((a,b) => a-b).forEach(k => {
+      const o = document.createElement("option");
+      o.value = String(k);
+      o.textContent = "PPT " + k + " \u00b7 " + (B12.kuliah[k] || "") + " (" + c.get(k) + ")";
+      sel.appendChild(o);
+    });
+    if(!c.has(Number(P.st.ppt))) P.st.ppt = "*";
+    sel.value = P.st.ppt;
+  } else P.st.ppt = "*";
+
+  if(punyaPola){
+    const sel = $("#fPola"); sel.innerHTML = "";
+    const c = new Map();
+    P.bank.forEach(it => c.set(it.pola, (c.get(it.pola) || 0) + 1));
+    const all = document.createElement("option");
+    all.value = "*"; all.textContent = "Semua pola (" + P.bank.length + ")";
+    sel.appendChild(all);
+    [...c.entries()].sort((a,b) => b[1]-a[1]).forEach(([k,v]) => {
+      const o = document.createElement("option");
+      o.value = k; o.textContent = (B12.pola[k] || k) + " (" + v + ")";
+      sel.appendChild(o);
+    });
+    if(!c.has(P.st.pola)) P.st.pola = "*";
+    sel.value = P.st.pola;
+  } else P.st.pola = "*";
 }
 
 function buildGrid(){
@@ -855,6 +979,19 @@ $("#fModul").addEventListener("change", e => {
   P.current = 0; buildOrder(); renderAll();
 });
 
+function gantiFilter(key, val){
+  if(!P) return;
+  P.st[key] = val;
+  // Modul memuat nomor PPT di prefiksnya; kalau PPT diganti, modul lama bisa jadi mustahil.
+  if(key === "ppt" && val !== "*" && P.st.modul !== "*" && P.st.modul.indexOf("PPT " + val + ":") !== 0){
+    P.st.modul = "*"; $("#fModul").value = "*";
+  }
+  if(key === "ppt") buildModulFilter();
+  saveQuiz(); P.current = 0; buildOrder(); renderAll();
+}
+$("#fPpt").addEventListener("change", e => gantiFilter("ppt", e.target.value));
+$("#fPola").addEventListener("change", e => gantiFilter("pola", e.target.value));
+
 $("#tFlagFilter").addEventListener("click", e => {
   if(!P) return;
   P.flagFilter = !P.flagFilter;
@@ -911,7 +1048,7 @@ document.addEventListener("keydown", e => {
 });
 
 /* ---------- Mulai / hentikan sesi quiz ---------- */
-function startQuiz(id){
+function startQuiz(id, preset){
   const meta = QUIZZES.find(q => q.id === id && q.kind === "internal");
   const bank = meta ? bankOf(id) : null;
   if(!meta || !bank || !bank.length){
@@ -937,6 +1074,13 @@ function startQuiz(id){
   P = { id:id, meta:meta, bank:bank, st:loadQuizStore(id), order:[], optOrder:{}, current:0, flagFilter:false };
   markOpened(id);
 
+  if(preset){
+    ["ppt","pola","modul","only"].forEach(k => {
+      if(preset[k] != null){ P.st[k] = String(preset[k]); }
+    });
+    saveQuiz();
+  }
+
   $("#brandSub").textContent = meta.judul;
   $("#score").hidden = false;
   $("#topProgress").hidden = false;
@@ -945,6 +1089,7 @@ function startQuiz(id){
   $("#tExam").setAttribute("aria-pressed", P.st.mode === "exam" ? "true" : "false");
   $("#tFlagFilter").setAttribute("aria-pressed", "false");
 
+  buildExtraFilters();
   buildModulFilter();
   buildOptOrders();
   buildOrder();
@@ -963,20 +1108,163 @@ function setCur(el, on){
   if(on) el.setAttribute("aria-current", "page"); else el.removeAttribute("aria-current");
 }
 
+
+/* ===========================================================
+   TAB BLOK 1.2
+   Homescreen gaya artifact (per-kuliah + "semua PPT" + per-pola),
+   tapi memakai komponen & palet yang sama dengan app ini.
+   Semua tautan menuju engine yang sama (#/quiz/ub-1-2?filter),
+   jadi jawaban tercatat SEKALI di satu store yang dikunci per nomor soal.
+   =========================================================== */
+const B12 = {
+  id: "ub-1-2",
+  kuliah: {
+    1:"Histologi Integument", 2:"Terminologi & Pengantar Anatomi", 3:"Fisiologi Integument",
+    4:"Anatomi Cranium & Truncus 1", 5:"Anatomi Ekstremitas Superior 1", 6:"Histologi Jaringan Otot",
+    7:"Histologi Tulang & Pertumbuhan Tulang", 8:"Anatomi Cranium & Truncus 2",
+    9:"Anatomi Ekstremitas Superior 2", 10:"Anatomi Ekstremitas Inferior 1",
+    11:"Histologi Kartilago & Sendi", 12:"Biokimia Remodelling Tulang",
+    13:"Anatomi Ekstremitas Inferior 2", 14:"Fisiologi Otot Polos & Otot Jantung",
+    15:"Biokimia Mineral Tulang & Cairan Sendi",
+    16:"Fisiologi Kontraksi Otot Rangka, NMJ & Refleks", 17:"Kinesiologi Ekstremitas Superior"
+  },
+  pola: {
+    KAT:"Kategori jawaban", LAW:"Pasangan berlawanan", TTG:"Ciri tetangga",
+    PRO:"Penghasil vs produk", USI:"Diskriminator konteks", NAM:"Nama = petunjuk",
+    KER:"Dua kerangka", ANG:"Angka & daftar", TUR:"Turunkan dari prinsip"
+  }
+};
+
+function b12href(o){
+  const qs = Object.keys(o).map(k => k + "=" + encodeURIComponent(o[k])).join("&");
+  return "#/quiz/" + B12.id + (qs ? "?" + qs : "");
+}
+
+function b12stat(bank, st){
+  const ans = st.answers || {}, flags = st.flags || {};
+  let dikerjakan = 0, benar = 0, salah = 0, ditandai = 0;
+  bank.forEach(it => {
+    if(flags[it.n]) ditandai++;
+    const rec = ans[it.n];
+    if(!rec) return;
+    dikerjakan++;
+    if(rec.mode === "reveal") return;
+    rec.oi === it.kunciIndex ? benar++ : salah++;
+  });
+  return { dikerjakan, benar, salah, ditandai, belum: bank.length - dikerjakan };
+}
+
+function b12card(label, nilai, href, mati){
+  const el = document.createElement(mati ? "div" : "a");
+  el.className = "qsc";
+  if(mati) el.setAttribute("aria-disabled", "true");
+  else el.href = href;
+  const l = document.createElement("div"); l.className = "l"; l.textContent = label;
+  const v = document.createElement("div"); v.className = "v"; v.textContent = nilai;
+  el.append(l, v);
+  return el;
+}
+
+function renderB12(){
+  const bank = bankOf(B12.id) || [];
+  const st = readLS(quizKey(B12.id), {});
+  const s = b12stat(bank, st);
+
+  const adaPpt = [...new Set(bank.map(it => it.ppt))].sort((a,b) => a-b);
+  const asli = bank.filter(it => it.ubAsli).length;
+  const cakupan = adaPpt.length ? ("PPT " + adaPpt[0] + "–" + adaPpt[adaPpt.length-1]) : "belum ada soal";
+  $("#b12sub").textContent = bank.length + " soal · " + asli +
+    " dari bank soal UB asli · " + cakupan + " dari 17 kuliah";
+
+  /* ---- Mulai cepat ---- */
+  const qk = $("#b12quick"); qk.innerHTML = "";
+  qk.appendChild(b12card("Semua PPT", bank.length, b12href({ppt:"*", pola:"*", modul:"*", only:"*"}), !bank.length));
+  qk.appendChild(b12card("Belum dikerjakan", s.belum, b12href({ppt:"*", pola:"*", modul:"*", only:"todo"}), !s.belum));
+  qk.appendChild(b12card("Pernah salah", s.salah, b12href({ppt:"*", pola:"*", modul:"*", only:"wrong"}), !s.salah));
+  qk.appendChild(b12card("Ditandai", s.ditandai, b12href({ppt:"*", pola:"*", modul:"*", only:"flag"}), !s.ditandai));
+
+  /* ---- Per kuliah ---- */
+  const kl = $("#b12kuliah"); kl.innerHTML = "";
+  Object.keys(B12.kuliah).map(Number).sort((a,b) => a-b).forEach(k => {
+    const soal = bank.filter(it => it.ppt === k);
+    const ada = soal.length > 0;
+    const row = document.createElement(ada ? "a" : "div");
+    row.className = "krow";
+    if(ada) row.href = b12href({ppt:k, pola:"*", modul:"*", only:"*"});
+    else row.setAttribute("aria-disabled", "true");
+
+    const kn = document.createElement("div"); kn.className = "kn"; kn.textContent = k;
+    const kb = document.createElement("div"); kb.className = "kb";
+    const kt = document.createElement("div"); kt.className = "kt"; kt.textContent = B12.kuliah[k];
+    const km = document.createElement("div"); km.className = "km";
+    kb.append(kt, km);
+
+    const kp = document.createElement("div"); kp.className = "kp";
+    if(ada){
+      const sk = b12stat(soal, st);
+      const pct = Math.round(sk.dikerjakan / soal.length * 100);
+      const sub = [...new Set(soal.map(it => it.grup))].length;
+      km.textContent = soal.length + " soal · " + sub + " subtopik · " +
+        soal.filter(it => it.ubAsli).length + " dari UB asli";
+      kp.textContent = pct + "%";
+      const bar = document.createElement("div"); bar.className = "kbar";
+      const fill = document.createElement("i"); fill.style.width = pct + "%";
+      bar.appendChild(fill); kb.appendChild(bar);
+    } else {
+      km.textContent = "Belum ada soal — PPT belum dipelajari";
+      kp.textContent = "—";
+    }
+    row.append(kn, kb, kp);
+    kl.appendChild(row);
+  });
+
+  /* ---- Per pola ---- */
+  const pl = $("#b12pola"); pl.innerHTML = "";
+  const c = new Map();
+  bank.forEach(it => c.set(it.pola, (c.get(it.pola) || 0) + 1));
+  [...c.entries()].sort((a,b) => b[1]-a[1]).forEach(([k,v]) => {
+    const a = document.createElement("a");
+    a.className = "pchip";
+    a.href = b12href({ppt:"*", pola:k, modul:"*", only:"*"});
+    a.appendChild(document.createTextNode(B12.pola[k] || k));
+    const cnt = document.createElement("b"); cnt.textContent = v;
+    a.appendChild(cnt);
+    pl.appendChild(a);
+  });
+  if(!c.size) pl.textContent = "Belum ada soal.";
+}
+
+/* ---------- Routing: #/ , #/quiz , #/quiz/:id[?filter] , #/blok12 ---------- */
 function route(){
   if(!modal.hidden) closeModal(false);
   const h = location.hash || "#/";
   const m = h.match(/^#\/quiz\/([^/?]+)/);
-  const view = m ? "play" : (h.indexOf("#/quiz") === 0 ? "list" : "home");
+  const view = m ? "play"
+    : (h.indexOf("#/blok12") === 0 ? "b12"
+    : (h.indexOf("#/quiz") === 0 ? "list" : "home"));
 
   $("#viewHome").hidden = view !== "home";
   $("#viewQuiz").hidden = view !== "list";
+  $("#viewB12").hidden  = view !== "b12";
   $("#viewPlay").hidden = view !== "play";
   setCur($("#navHome"), view === "home");
-  setCur($("#navQuiz"), view !== "home");
+  setCur($("#navQuiz"), view === "list");
+  setCur($("#navB12"),  view === "b12");
 
-  if(view === "play") startQuiz(decodeURIComponent(m[1]));
-  else { stopQuiz(); if(view === "list") renderList(); else renderHome(); }
+  if(view === "play"){
+    const id = decodeURIComponent(m[1]);
+    let preset = null;
+    const qi = h.indexOf("?");
+    if(qi >= 0){
+      preset = {};
+      h.slice(qi+1).split("&").forEach(pair => {
+        const i = pair.indexOf("=");
+        if(i > 0) preset[pair.slice(0,i)] = decodeURIComponent(pair.slice(i+1));
+      });
+    }
+    startQuiz(id, preset);
+  }
+  else { stopQuiz(); if(view === "list") renderList(); else if(view === "b12") renderB12(); else renderHome(); }
 
   window.scrollTo(0,0);
 }
