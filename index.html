@@ -319,8 +319,8 @@
     </div>
     <div class="score" id="score" aria-live="polite" hidden></div>
     <a class="btn ghost" id="navHome" href="#/">Home</a>
-    <a class="btn ghost" id="navQuiz" href="#/quiz">Daftar Quiz</a>
-    <a class="btn ghost" id="navB12" href="#/blok12">Blok 1.2</a>
+    <a class="btn ghost" id="navQuiz" href="#/quiz">1.1</a>
+    <a class="btn ghost" id="navB12" href="#/blok12">1.2</a>
     <button class="btn ghost" id="tTheme" title="Ganti tema">&#9681; Tema</button>
   </div>
   <div class="progress" id="topProgress" hidden><i id="bar"></i></div>
@@ -355,9 +355,6 @@
       </div>
     </div>
 
-    <div class="cta">
-      <a class="btn big-btn btn-lg" href="#/quiz">Daftar Quiz &rarr;</a>
-    </div>
   </div>
 
   <!-- ===== DAFTAR QUIZ ===== -->
@@ -465,6 +462,8 @@
 <script src="data/ub-1-1-materi-4.js"></script>
 <script src="data/ub-1-2.js"></script>
 <script src="data/ub-1-2-soal.js"></script>
+<script src="data/ub-1-2-costraver.js"></script>
+<script src="data/ub-1-2-remed.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 <script>
@@ -481,6 +480,10 @@ const QUIZZES = [
     jumlahSoal:435, status:"siap", kind:"internal", sembunyi:true },
   { id:"ub-1-2-soal", judul:"SOAL UB 1.2 (naskah asli)", topik:"Bank soal kakak tingkat \u00b7 98 soal",
     jumlahSoal:98, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-2-costraver", judul:"COSTRAVER 2023 (naskah asli)", topik:"Bank soal kakak tingkat \u00b7 87 soal",
+    jumlahSoal:87, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-2-remed", judul:"REMED UB 1.2 (naskah asli)", topik:"Tentir + Rangkuman digabung \u00b7 130 soal",
+    jumlahSoal:130, status:"siap", kind:"internal", sembunyi:true },
   { id:"recall-blok-1-1", judul:"Recall Integratif Blok 1.1", topik:"Blok 1.1 · 10 modul",
     jumlahSoal:100, status:"siap", kind:"internal" },
   { id:"hemoglobinopati", judul:"Hemoglobinopati", topik:"Genetika Molekuler",
@@ -1177,7 +1180,9 @@ function b12card(label, nilai, href, mati){
 /* Bank naskah asli: quiz tersendiri, jadi progresnya TERPISAH dari bank per-PPT.
    Disengaja — ini dipakai sebagai try out, bukan latihan per kuliah. */
 const B12_ASLI = [
-  { id:"ub-1-2-soal", nama:"SOAL UB 1.2" }
+  { id:"ub-1-2-soal",      nama:"SOAL UB 1.2" },
+  { id:"ub-1-2-costraver", nama:"COSTRAVER 2023" },
+  { id:"ub-1-2-remed",     nama:"REMED (Tentir + Rangkuman)" }
 ];
 
 function renderAsli(){
