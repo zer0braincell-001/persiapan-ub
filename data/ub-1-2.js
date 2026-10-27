@@ -26152,7 +26152,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1189,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Shoulder complex menurut slide disusun oleh articulatio cinguli extremitas superioris dan",
   "opsi": [
    "articulatio humeri",
@@ -26164,7 +26164,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "articulatio humeri",
   "rationale": "Slide menuliskan shoulder complex terdiri atas articulatio cinguli extremitas superioris atau shoulder girdle, yang mencakup sendi sternoklavikular dan akromioklavikular, ditambah articulatio humeri atau glenohumeral joint.  —  **Pola Angka & daftar:** Shoulder complex bukan satu sendi melainkan tiga. Dua di antaranya menggerakkan GELANG BAHU, satu menggerakkan LENGAN pada gelang itu.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "ANG",
   "ubAsli": false,
@@ -26174,7 +26174,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1190,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Dua sendi yang menyusun shoulder girdle menurut slide adalah",
   "opsi": [
    "glenohumerale dan acromioclaviculare",
@@ -26186,7 +26186,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "sternoclaviculare dan acromioclaviculare",
   "rationale": "Articulatio cinguli extremitas superioris atau shoulder girdle terdiri atas sternoclaviculare joint dan acromioclaviculare joint. Articulatio humeri disebut terpisah.  —  **Pola Angka & daftar:** Clavicula adalah satu-satunya tautan tulang antara ekstremitas superior dan rangka aksial, dan kedua sendi gelang bahu berada di kedua ujungnya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "ANG",
   "ubAsli": false,
@@ -26196,7 +26196,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1191,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Istilah arthrodial joint yang dipakai slide ini setara dengan istilah Latin",
   "opsi": [
    "articulatio spheroidea",
@@ -26208,7 +26208,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "articulatio plana",
   "rationale": "Arthrodial berarti sendi datar yang bergerak dengan cara menggeser, yaitu articulatio plana dalam nomenklatur Latin. Slide memakai nama ini untuk sendi sternoklavikular, akromioklavikular, interkarpal, dan karpometakarpal 2 sampai 5.  —  **Pola Nama = petunjuk:** PPT ini memakai istilah Inggris lama sementara bank soal UB memakai istilah Latin. Hafalkan padanannya sekali: arthrodial sama dengan plana, enarthrodial sama dengan spheroidea, hinge sama dengan ginglymus, pivot sama dengan trochoidea, condyloid sama dengan ellipsoidea, saddle sama dengan sellaris.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "NAM",
   "ubAsli": false,
@@ -26218,7 +26218,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1192,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Istilah enarthrodial joint yang dipakai slide setara dengan",
   "opsi": [
    "articulatio spheroidea",
@@ -26230,7 +26230,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "articulatio spheroidea",
   "rationale": "Enarthrodial adalah sendi peluru atau ball and socket, yaitu articulatio spheroidea. Slide memakainya untuk articulatio humeri.  —  **Pola Nama = petunjuk:** Awalan EN- berarti ke dalam, menggambarkan kepala bulat yang masuk ke mangkuk. Tiga aksis gerak hanya dimiliki tipe ini.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "NAM",
   "ubAsli": false,
@@ -26240,7 +26240,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1193,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Istilah hinge joint yang dipakai slide setara dengan",
   "opsi": [
    "articulatio trochoidea",
@@ -26252,7 +26252,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "articulatio ginglymus",
   "rationale": "Hinge berarti engsel, yaitu articulatio ginglymus dengan satu aksis untuk fleksi dan ekstensi. Slide memakainya untuk articulatio cubiti dan midcarpal joint.  —  **Pola Nama = petunjuk:** Jangan tertukar dengan TROCHOIDEA yang juga satu aksis tetapi geraknya BERPUTAR, bukan menekuk. Ginglymus menekuk, trochoidea memutar.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "NAM",
   "ubAsli": false,
@@ -26262,7 +26262,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1194,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Istilah pivot joint yang dipakai slide setara dengan",
   "opsi": [
    "articulatio ginglymus",
@@ -26274,7 +26274,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 3,
   "kunci": "articulatio trochoidea",
   "rationale": "Pivot berarti sendi putar, yaitu articulatio trochoidea. Slide memakainya untuk articulatio radioulnaris proximalis.  —  **Pola Nama = petunjuk:** Satu aksis tetapi gerakannya rotasi pada poros panjang. Inilah sendi yang menghasilkan pronasi dan supinasi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "NAM",
   "ubAsli": false,
@@ -26284,7 +26284,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1195,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Istilah condyloid joint yang dipakai slide setara dengan",
   "opsi": [
    "articulatio ellipsoidea",
@@ -26296,7 +26296,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "articulatio ellipsoidea",
   "rationale": "Condyloid dan ellipsoid adalah dua nama untuk sendi yang sama: permukaan lonjong dengan dua aksis. Slide memakainya untuk articulatio radiocarpea dan articulatio metacarpophalangeales.  —  **Pola Nama = petunjuk:** Karena keduanya sinonim, sebuah soal tidak boleh memuat condyloid dan ellipsoid sebagai dua opsi berbeda. Bank soal UB sempat melakukannya, dan itu cacat soal.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "NAM",
   "ubAsli": false,
@@ -26306,7 +26306,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1196,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Istilah saddle joint yang dipakai slide setara dengan",
   "opsi": [
    "articulatio ellipsoidea",
@@ -26318,7 +26318,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "articulatio sellaris",
   "rationale": "Saddle berarti pelana, yaitu articulatio sellaris. Slide memakainya untuk sendi antara trapezium dan metacarpal 1.  —  **Pola Nama = petunjuk:** Sella dalam bahasa Latin berarti pelana, nama yang sama dipakai untuk sella turcica di cranium. Nama sudah berisi bentuknya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "NAM",
   "ubAsli": false,
@@ -26328,7 +26328,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1197,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Berapa jumlah aksis gerak pada articulatio humeri yang bertipe enarthrodial?",
   "opsi": [
    "satu aksis",
@@ -26340,7 +26340,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "tiga aksis",
   "rationale": "Sendi peluru memiliki tiga aksis sehingga dapat melakukan fleksi-ekstensi, abduksi-adduksi, dan rotasi internal-eksternal, ditambah sirkumduksi sebagai gabungannya.  —  **Pola Turunkan dari prinsip:** Jumlah aksis dapat diturunkan dari bentuk permukaan: bulat penuh berarti tiga aksis, lonjong berarti dua, silinder atau katrol berarti satu, datar berarti geseran tanpa aksis sejati.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "TUR",
   "ubAsli": false,
@@ -26350,7 +26350,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1198,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Mengapa articulatio radiocarpea tidak dapat melakukan rotasi aktif?",
   "opsi": [
    "karena ligamennya terlalu kuat",
@@ -26362,7 +26362,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 4,
   "kunci": "karena permukaan sendinya lonjong sehingga hanya memiliki dua aksis",
   "rationale": "Articulatio radiocarpea bertipe condyloid atau ellipsoid, yaitu dua aksis sehingga hanya memungkinkan fleksi-ekstensi serta abduksi-adduksi atau deviasi radial-ulnar.  —  **Pola Turunkan dari prinsip:** Apa yang tampak sebagai rotasi pergelangan tangan sebenarnya berasal dari pronasi dan supinasi di articulatio radioulnaris, bukan dari sendi pergelangan itu sendiri.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "TUR",
   "ubAsli": false,
@@ -26372,7 +26372,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1199,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Jenis articulatio pada metacarpophalangeal joint adalah",
   "opsi": [
    "Condyloidea",
@@ -26384,7 +26384,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "Condyloidea",
   "rationale": "**[UB asli · CO 9 / CO 27]** Slide menuliskan articulatio metacarpophalangeales bertipe CONDYLOID, yaitu dua aksis sehingga dapat fleksi-ekstensi dan abduksi-adduksi, tetapi tidak dapat rotasi.  **Catatan:** Naskah asli bank soal memuat Ellipsoid dan Condyloid sebagai dua opsi berbeda padahal keduanya nama untuk sendi yang sama.  —  **Pola Nama = petunjuk:** Dua aksis inilah yang membuat jari bisa dirapatkan dan direnggangkan di pangkalnya, sesuatu yang tidak bisa dilakukan sendi antarruas jari yang hanya engsel.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "NAM",
   "ubAsli": true,
@@ -26394,7 +26394,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1200,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Apa jenis persendian pada wrist joint atau articulatio radiocarpalis?",
   "opsi": [
    "Spheroidea",
@@ -26406,7 +26406,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "Ellipsoidea",
   "rationale": "**[UB asli · CO 32]** Slide menuliskan articulatio radiocarpea bertipe CONDYLOID, yang merupakan nama lain articulatio ellipsoidea: permukaan lonjong dengan dua aksis.  —  **Pola Nama = petunjuk:** Ini contoh langsung kenapa tabel padanan istilah penting. Slide menjawab condyloid, bank soal menjawab ellipsoidea, dan keduanya sama.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "NAM",
   "ubAsli": true,
@@ -26416,7 +26416,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1201,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Di antara sendi berikut, yang memiliki jumlah aksis gerak PALING BANYAK adalah",
   "opsi": [
    "articulatio cubiti",
@@ -26428,7 +26428,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "articulatio humeri",
   "rationale": "Articulatio humeri bertipe enarthrodial dengan tiga aksis. Cubiti dan radioulnaris proximalis hanya satu aksis, radiocarpea dua aksis, dan intercarpalis bertipe arthrodial yang hanya menggeser.  —  **Pola Dua kerangka:** Urutkan dari bentuknya: peluru tiga, lonjong dua, engsel dan putar satu, datar hanya geser. Dari satu prinsip ini, seluruh tabel tipe sendi dapat diturunkan.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "KER",
   "ubAsli": false,
@@ -26438,7 +26438,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1202,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Sendi di ekstremitas superior yang bertipe sellaris menurut slide adalah antara",
   "opsi": [
    "trapezium dan metacarpal 1",
@@ -26450,7 +26450,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "trapezium dan metacarpal 1",
   "rationale": "Slide articulatio carpometacarpales menuliskan trapezium dan metacarpal 1 sebagai sadle joint, sementara deretan distal ossa carpalia dengan metacarpal 2, 3, 4, dan 5 bertipe arthrodial.  —  **Pola Diskriminator konteks:** Hanya ibu jari yang punya sendi pelana, dan dari situlah kemampuan OPOSISI berasal. Empat jari lain hanya menggeser.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "USI",
   "ubAsli": false,
@@ -26460,7 +26460,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1203,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Gerakan yang dimungkinkan oleh sendi pelana antara trapezium dan metacarpal 1 menurut slide meliputi fleksi, ekstensi, abduksi, adduksi, dan",
   "opsi": [
    "rotasi penuh",
@@ -26472,7 +26472,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "oposisi",
   "rationale": "Slide menuliskan lima gerakan untuk sendi karpometakarpal ibu jari: flexi, extensi, abduksi, adduksi, dan oposisi.  —  **Pola Kategori jawaban:** Oposisi adalah gerakan gabungan yang membuat ibu jari menyentuh ujung jari lain, dan hanya ada pada ibu jari manusia. Inilah dasar genggaman presisi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "KAT",
   "ubAsli": false,
@@ -26482,7 +26482,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1204,
-  "modul": "PPT 17: Shoulder Complex & Padanan Istilah Sendi",
+  "modul": "PPT 9: Shoulder Complex & Padanan Istilah Sendi",
   "q": "Sendi antara deretan distal ossa carpalia dengan metacarpal 2 sampai 5 bertipe",
   "opsi": [
    "sadle",
@@ -26494,7 +26494,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 3,
   "kunci": "arthrodial",
   "rationale": "Slide menuliskan distal row ossa carpalia dan metacarpal 2, 3, 4, 5 sebagai arthrodial, berbeda dari metacarpal 1 yang bersendi pelana dengan trapezium.  —  **Pola Ciri tetangga:** Satu baris slide, dua tipe berbeda. Yang membedakan adalah nomor metakarpalnya, jadi baca angkanya dengan teliti.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Shoulder Complex & Padanan Istilah Sendi",
   "pola": "TTG",
   "ubAsli": false,
@@ -26504,7 +26504,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1205,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Apa tipe articulatio sternoclavicularis menurut slide?",
   "opsi": [
    "arthrodial joint",
@@ -26516,7 +26516,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "arthrodial joint",
   "rationale": "Slide menuliskan tipe articulatio sternoclavicularis adalah ARTHRODIAL JOINT, yaitu sendi datar dengan gerakan gliding.  —  **Pola Nama = petunjuk:** Kedua sendi gelang bahu, sternoklavikular dan akromioklavikular, sama-sama arthrodial dengan gerakan gliding. Satu aturan untuk dua sendi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "NAM",
   "ubAsli": false,
@@ -26526,7 +26526,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1206,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Tiga struktur tulang dan kartilago yang menyusun articulatio sternoclavicularis menurut slide adalah",
   "opsi": [
    "pars acromialis clavicula, processus acromialis, dan cartilago costa 1",
@@ -26538,7 +26538,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "pars sternalis clavicula, cartilago costa 1, dan incisura clavicularis sterni",
   "rationale": "Slide mencantumkan tiga komponen: PARS STERNALIS CLAVICULA, CARTILAGO COSTA 1, dan INCISURA CLAVICULARIS STERNI.  —  **Pola Angka & daftar:** Perhatikan bahwa kartilago kosta ikut membentuk sendi ini, bukan hanya dua tulang. Nomor kostanya 1, bukan 2.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "ANG",
   "ubAsli": false,
@@ -26548,7 +26548,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1207,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Ligamen yang menghubungkan kedua clavicula melintasi incisura jugularis pada articulatio sternoclavicularis disebut",
   "opsi": [
    "lig. costoclaviculare",
@@ -26560,7 +26560,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "lig. interclaviculare",
   "rationale": "Daftar ligamen articulatio sternoclavicularis di slide: capsula articularis, lig. sternoclaviculare anterior, lig. sternoclaviculare posterior, lig. interclaviculare, lig. costoclaviculare, dan discus articulare.  —  **Pola Nama = petunjuk:** Nama ligamen menyebutkan dua struktur yang dihubungkannya. INTER-claviculare berarti antara dua clavicula; COSTO-claviculare berarti antara costa dan clavicula.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "NAM",
   "ubAsli": false,
@@ -26570,7 +26570,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1208,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Ligamen yang menambatkan clavicula ke costa 1 pada articulatio sternoclavicularis adalah",
   "opsi": [
    "lig. interclaviculare",
@@ -26582,7 +26582,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 4,
   "kunci": "lig. costoclaviculare",
   "rationale": "Lig. costoclaviculare tercantum di daftar ligamen articulatio sternoclavicularis dan berfungsi membatasi elevasi clavicula.  —  **Pola Nama = petunjuk:** Jangan tertukar dengan lig. CORACOclaviculare, yang milik sendi akromioklavikular. Satu suku kata membedakan dua sendi yang berbeda.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "NAM",
   "ubAsli": false,
@@ -26592,7 +26592,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1209,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Struktur yang membagi rongga articulatio sternoclavicularis dan ikut tercantum di daftar ligamen slide adalah",
   "opsi": [
    "discus articulare",
@@ -26604,7 +26604,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "discus articulare",
   "rationale": "Slide mencantumkan DISCUS ARTICULARE pada daftar ligamen articulatio sternoclavicularis, dan DISCUS ARTICULARIS pada articulatio acromioclavicularis.  —  **Pola Nama = petunjuk:** Diskus muncul di tiga sendi yang dibahas slide ini: sternoklavikular, akromioklavikular, dan radiokarpea. Labrum berbeda, dan hanya ada di articulatio humeri.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "NAM",
   "ubAsli": false,
@@ -26614,7 +26614,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1210,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Jenis gerakan pada articulatio sternoclavicularis menurut slide adalah",
   "opsi": [
    "rotasi aksial",
@@ -26626,7 +26626,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "gliding",
   "rationale": "Slide menuliskan GERAKAN dengan satu kata besar, yaitu GLIDING, lalu merinci empat arahnya: anterior, posterior, superior, dan inferior.  —  **Pola Kategori jawaban:** Sendi datar hanya bisa menggeser. Empat arah yang disebut slide adalah arah geseran, bukan empat jenis gerakan yang berbeda.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "KAT",
   "ubAsli": false,
@@ -26636,7 +26636,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1211,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Gerakan gliding ke ANTERIOR pada articulatio sternoclavicularis disebut",
   "opsi": [
    "retraksi",
@@ -26648,7 +26648,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "protraksi",
   "rationale": "Slide memasangkan anterior dengan protraction dan posterior dengan retraction, keduanya berporos pada vertical axis dengan besar gerakan 15 derajat.  —  **Pola Pasangan berlawanan:** Protraksi berarti menjulurkan ke depan, retraksi menarik ke belakang. Pada gambar scapula, protraksi juga disebut abduksi dan retraksi disebut adduksi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "LAW",
   "ubAsli": false,
@@ -26658,7 +26658,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1212,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Aksis gerakan protraksi dan retraksi pada articulatio sternoclavicularis menurut slide adalah",
   "opsi": [
    "vertical axis",
@@ -26670,7 +26670,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "vertical axis",
   "rationale": "Slide menuliskan vertical axis untuk anterior protraction dan posterior retraction, sedangkan oblique-anteroposterior axis untuk superior elevasi dan inferior depresi.  —  **Pola Pasangan berlawanan:** Dua aksis untuk dua pasang gerakan. Pasangkan sekali: maju-mundur memakai aksis VERTIKAL, naik-turun memakai aksis OBLIK ANTEROPOSTERIOR.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "LAW",
   "ubAsli": false,
@@ -26680,7 +26680,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1213,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Aksis gerakan elevasi dan depresi pada articulatio sternoclavicularis menurut slide adalah",
   "opsi": [
    "vertical axis",
@@ -26692,7 +26692,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "oblique-anteroposterior axis",
   "rationale": "Slide menuliskan AXIS OBLIQUE-ANTEROPOSTERIOR untuk superior elevasi dan inferior depresi.  —  **Pola Pasangan berlawanan:** Pasangan terbalik dari protraksi dan retraksi. Kalau satu pasang memakai aksis vertikal, pasangan satunya memakai aksis oblik.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "LAW",
   "ubAsli": false,
@@ -26702,7 +26702,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1214,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Berapa besar gerakan protraksi pada articulatio sternoclavicularis menurut slide?",
   "opsi": [
    "30 derajat",
@@ -26714,7 +26714,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 3,
   "kunci": "15 derajat",
   "rationale": "Slide menuliskan GERAKAN 15 derajat untuk anterior protraction maupun posterior retraction, sementara elevasi tertulis 30 sampai 45 derajat.  —  **Pola Angka & daftar:** Tiga angka di slide ini: 15 derajat untuk maju, 15 derajat untuk mundur, dan 30 sampai 45 derajat untuk naik. Naik punya jangkauan paling besar.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "ANG",
   "ubAsli": false,
@@ -26724,7 +26724,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1215,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Berapa besar gerakan elevasi pada articulatio sternoclavicularis menurut slide?",
   "opsi": [
    "30 sampai 45 derajat",
@@ -26736,7 +26736,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "30 sampai 45 derajat",
   "rationale": "Slide menuliskan GERAKAN SUPERIOR POSTERIOR dengan besar 30 sampai 45 derajat untuk elevasi.  —  **Pola Angka & daftar:** Angka elevasi dua sampai tiga kali lebih besar daripada protraksi. Ini konsisten dengan pengalaman sehari-hari: bahu bisa diangkat jauh lebih luas daripada dimajukan.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "ANG",
   "ubAsli": false,
@@ -26746,7 +26746,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1216,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Arah gerakan clavicula saat ELEVASI menurut slide adalah",
   "opsi": [
    "superior anterior",
@@ -26758,7 +26758,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "superior posterior",
   "rationale": "Slide menuliskan elevasi bergerak SUPERIOR POSTERIOR dan depresi bergerak INFERIOR ANTERIOR, karena aksisnya oblik.  —  **Pola Pasangan berlawanan:** Karena aksisnya oblik, gerakannya tidak pernah lurus ke atas atau ke bawah. Naik berarti juga ke belakang, turun berarti juga ke depan.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "LAW",
   "ubAsli": false,
@@ -26768,7 +26768,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1217,
-  "modul": "PPT 17: Articulatio Sternoclavicularis",
+  "modul": "PPT 9: Articulatio Sternoclavicularis",
   "q": "Arah gerakan clavicula saat DEPRESI menurut slide adalah",
   "opsi": [
    "inferior posterior",
@@ -26780,7 +26780,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "inferior anterior",
   "rationale": "Slide menuliskan GERAKAN INFERIOR ANTERIOR untuk depresi, kebalikan arah dari elevasi yang superior posterior.  —  **Pola Pasangan berlawanan:** Pasangan arah ini saling berkebalikan secara sempurna. Kalau satu diingat, satunya tinggal dibalik.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Sternoclavicularis",
   "pola": "LAW",
   "ubAsli": false,
@@ -26790,7 +26790,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1218,
-  "modul": "PPT 17: Articulatio Acromioclavicularis",
+  "modul": "PPT 9: Articulatio Acromioclavicularis",
   "q": "Apa tipe articulatio acromioclavicularis menurut slide?",
   "opsi": [
    "enarthrodial",
@@ -26802,7 +26802,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 4,
   "kunci": "arthrodial",
   "rationale": "Slide menuliskan TIPE ARTHRODIAL untuk articulatio acromioclavicularis, dengan GERAKAN GLIDING.  —  **Pola Nama = petunjuk:** Sama dengan sendi sternoklavikular. Dua sendi di dua ujung clavicula, satu tipe dan satu jenis gerakan.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Acromioclavicularis",
   "pola": "NAM",
   "ubAsli": false,
@@ -26812,7 +26812,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1219,
-  "modul": "PPT 17: Articulatio Acromioclavicularis",
+  "modul": "PPT 9: Articulatio Acromioclavicularis",
   "q": "Dua komponen tulang yang membentuk articulatio acromioclavicularis menurut slide adalah",
   "opsi": [
    "pars acromialis clavicula dan processus acromialis scapulae",
@@ -26824,7 +26824,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "pars acromialis clavicula dan processus acromialis scapulae",
   "rationale": "Slide menuliskan CLAVICULA dengan PARS ACROMIALIS dan SCAPULA dengan PROCESSUS ACROMIALIS.  —  **Pola Angka & daftar:** Ujung LATERAL clavicula disebut pars acromialis, ujung MEDIALNYA pars sternalis. Nama bagian clavicula mengikuti tulang yang disendikannya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Acromioclavicularis",
   "pola": "ANG",
   "ubAsli": false,
@@ -26834,7 +26834,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1220,
-  "modul": "PPT 17: Articulatio Acromioclavicularis",
+  "modul": "PPT 9: Articulatio Acromioclavicularis",
   "q": "Ligamentum coracoclaviculare menurut slide terdiri atas dua bagian, yaitu",
   "opsi": [
    "lig. acromioclaviculare superior dan inferior",
@@ -26846,7 +26846,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "lig. trapezoideum dan lig. conoideum",
   "rationale": "Slide menuliskan LIG CORACOCLAVICULARE dengan dua anak bagian: LIG. TRAPEZOIEUM dan LIG. CONOIDEUM.  —  **Pola Angka & daftar:** Nama keduanya menggambarkan bentuknya: TRAPEZOID berbentuk trapesium, CONOID berbentuk kerucut. Jangan tertukar dengan otot trapezius, yang sama sekali berbeda.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Acromioclavicularis",
   "pola": "ANG",
   "ubAsli": false,
@@ -26856,7 +26856,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1221,
-  "modul": "PPT 17: Articulatio Acromioclavicularis",
+  "modul": "PPT 9: Articulatio Acromioclavicularis",
   "q": "Ligamen pada articulatio acromioclavicularis yang berbentuk kerucut adalah",
   "opsi": [
    "lig. trapezoideum",
@@ -26868,7 +26868,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "lig. conoideum",
   "rationale": "Lig. conoideum adalah bagian medial lig. coracoclaviculare dan berbentuk kerucut; lig. trapezoideum adalah bagian lateral yang berbentuk trapesium.  —  **Pola Nama = petunjuk:** Akhiran -OID berarti menyerupai. CONO-ideum menyerupai kerucut, TRAPEZO-ideum menyerupai trapesium. Namanya berisi jawabannya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Acromioclavicularis",
   "pola": "NAM",
   "ubAsli": false,
@@ -26878,7 +26878,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1222,
-  "modul": "PPT 17: Articulatio Acromioclavicularis",
+  "modul": "PPT 9: Articulatio Acromioclavicularis",
   "q": "Berikut termasuk ligamen articulatio acromioclavicularis menurut slide, KECUALI",
   "opsi": [
    "lig. costoclaviculare",
@@ -26890,7 +26890,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "lig. costoclaviculare",
   "rationale": "Daftar slide untuk sendi akromioklavikular: capsula articularis, lig. acromioclaviculare superior, lig. acromioclaviculare inferior, discus articularis, dan lig. coracoclaviculare dengan dua bagiannya. Lig. costoclaviculare milik sendi sternoklavikular.  —  **Pola Kategori jawaban:** Dua daftar ligamen yang mirip untuk dua sendi di dua ujung clavicula. Pembedanya adalah tulang kedua yang disebut dalam nama ligamen.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Acromioclavicularis",
   "pola": "KAT",
   "ubAsli": false,
@@ -26900,7 +26900,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1223,
-  "modul": "PPT 17: Articulatio Acromioclavicularis",
+  "modul": "PPT 9: Articulatio Acromioclavicularis",
   "q": "Jenis gerakan pada articulatio acromioclavicularis menurut slide adalah",
   "opsi": [
    "fleksi dan ekstensi",
@@ -26912,7 +26912,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "gliding",
   "rationale": "Slide menutup bagian ligamen akromioklavikular dengan kalimat GERAKAN: GLIDING.  —  **Pola Kategori jawaban:** Sendi arthrodial selalu bergerak gliding. Tipe sendi sudah menentukan jenis gerakannya, jadi tidak perlu dihafal terpisah.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Acromioclavicularis",
   "pola": "KAT",
   "ubAsli": false,
@@ -26922,7 +26922,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1224,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Pada gambar gerakan scapula, protraksi juga disebut",
   "opsi": [
    "adduksi scapula",
@@ -26934,7 +26934,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 3,
   "kunci": "abduksi scapula",
   "rationale": "Gambar menandai PROTRACTION dengan kurung ABDUCTION dan RETRACTION dengan kurung ADDUCTION, diukur terhadap garis tengah vertebra.  —  **Pola Pasangan berlawanan:** Istilah abduksi dan adduksi di sini mengacu pada menjauh atau mendekat terhadap GARIS TENGAH TUBUH, bukan terhadap aksis anggota gerak. Konteksnya scapula, bukan lengan.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "LAW",
   "ubAsli": false,
@@ -26944,7 +26944,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1225,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Pada gambar resting posture scapula, batas vertikal yang dipakai sebagai acuan membentang dari",
   "opsi": [
    "T2 sampai T7",
@@ -26956,7 +26956,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "T2 sampai T7",
   "rationale": "Gambar resting posture menandai batas atas pada T2 dan batas bawah pada T7 di sepanjang garis processus spinosus.  —  **Pola Angka & daftar:** Angka ini berguna klinis: pada posisi istirahat, angulus superior scapula sejajar T2 dan angulus inferior sejajar T7. Ini dipakai untuk menilai posisi scapula pada pemeriksaan.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "ANG",
   "ubAsli": false,
@@ -26966,7 +26966,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1226,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Otot berikut tercantum sebagai penggerak ELEVASI shoulder girdle, KECUALI",
   "opsi": [
    "upper trapezius",
@@ -26978,7 +26978,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "subclavius",
   "rationale": "Tabel gerakan shoulder girdle mencantumkan elevasi: upper trapezius, levator scapulae, sternocleidomastoideus, dan rhomboideus. Subclavius justru tercantum pada depresi.  —  **Pola Kategori jawaban:** Semua elevator melekat di leher atau vertebra servikal-torakal atas, sehingga tarikannya ke atas. Subclavius berada di bawah clavicula, jadi arah tarikannya ke bawah.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "KAT",
   "ubAsli": false,
@@ -26988,7 +26988,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1227,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Tiga otot yang melakukan DEPRESI shoulder girdle menurut tabel slide adalah",
   "opsi": [
    "upper trapezius, levator scapulae, dan rhomboideus",
@@ -27000,7 +27000,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "subclavius, pectoralis minor, dan lower trapezius",
   "rationale": "Tabel mencantumkan kolom DEPRESSI dengan tiga otot: subclavius, pectoralis minor, dan lower trapezius.  —  **Pola Angka & daftar:** Perhatikan bahwa TRAPEZIUS muncul di banyak kolom dengan bagian berbeda. UPPER mengangkat, LOWER menurunkan, MIDDLE menarik ke belakang. Satu otot, tiga arah.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "ANG",
   "ubAsli": false,
@@ -27010,7 +27010,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1228,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Dua otot yang melakukan PROTRAKSI shoulder girdle menurut tabel slide adalah",
   "opsi": [
    "rhomboideus dan middle trapezius",
@@ -27022,7 +27022,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 4,
   "kunci": "serratus anterior dan pectoralis minor",
   "rationale": "Tabel mencantumkan kolom PROTRAKSI hanya dengan dua otot: serratus anterior dan pectoralis minor.  —  **Pola Angka & daftar:** Keduanya berada di sisi DEPAN atau samping thorax dan menarik scapula ke depan. Protraksi adalah gerakan mendorong, seperti saat meninju.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "ANG",
   "ubAsli": false,
@@ -27032,7 +27032,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1229,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Otot yang menurut tabel melakukan RETRAKSI shoulder girdle adalah",
   "opsi": [
    "rhomboideus serta middle dan lower trapezius",
@@ -27044,7 +27044,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "rhomboideus serta middle dan lower trapezius",
   "rationale": "Tabel mencantumkan kolom RETRAKSI dengan rhomboideus serta middle dan lower trapezius.  —  **Pola Angka & daftar:** Semua retraktor berada di PUNGGUNG dan menarik scapula ke arah vertebra. Retraksi adalah gerakan membusungkan dada.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "ANG",
   "ubAsli": false,
@@ -27054,7 +27054,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1230,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Otot yang menurut tabel melakukan ROTASI UP scapula adalah",
   "opsi": [
    "levator scapulae dan rhomboideus",
@@ -27066,7 +27066,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "upper dan lower trapezius serta serratus anterior",
   "rationale": "Tabel mencantumkan ROTASI UP dengan upper dan lower trapezius serta serratus anterior.  —  **Pola Angka & daftar:** Rotasi ke atas memutar cavitas glenoidalis menghadap ke atas, dan itu wajib terjadi agar lengan dapat diangkat di atas kepala. Tanpa rotasi ini, abduksi bahu macet di sekitar 90 derajat.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "ANG",
   "ubAsli": false,
@@ -27076,7 +27076,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1231,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Otot berikut tercantum sebagai penggerak ROTASI DOWN scapula menurut tabel, KECUALI",
   "opsi": [
    "levator scapulae",
@@ -27088,7 +27088,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "serratus anterior",
   "rationale": "Tabel mencantumkan ROTASI DOWN dengan levator scapulae, rhomboideus, pectoralis major dan minor, serta latissimus dorsi. Serratus anterior justru tercantum pada rotasi UP.  —  **Pola Kategori jawaban:** Serratus anterior muncul hanya di dua kolom: protraksi dan rotasi up. Kalau sebuah opsi menaruhnya di rotasi down, opsi itu salah.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "KAT",
   "ubAsli": false,
@@ -27098,7 +27098,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1232,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Otot yang muncul di kolom ELEVASI sekaligus kolom ROTASI DOWN pada tabel shoulder girdle adalah",
   "opsi": [
    "rhomboideus",
@@ -27110,7 +27110,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "rhomboideus",
   "rationale": "Rhomboideus tercantum di tiga kolom: elevasi, retraksi, dan rotasi down. Levator scapulae juga muncul di elevasi dan rotasi down.  —  **Pola Kategori jawaban:** Otot yang berjalan miring ke bawah-lateral dari vertebra akan sekaligus mengangkat, menarik ke dalam, dan memutar scapula ke bawah. Satu arah serabut, tiga efek.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "KAT",
   "ubAsli": false,
@@ -27120,7 +27120,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1233,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Otot yang menurut tabel melakukan PROTRAKSI sekaligus DEPRESI shoulder girdle adalah",
   "opsi": [
    "serratus anterior",
@@ -27132,7 +27132,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "pectoralis minor",
   "rationale": "Pectoralis minor tercantum di tiga kolom: depresi, protraksi, dan rotasi down.  —  **Pola Kategori jawaban:** Pectoralis minor berorigo di costa dan berinsersio di processus coracoideus, sehingga menarik scapula ke depan dan ke bawah sekaligus.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "KAT",
   "ubAsli": false,
@@ -27142,7 +27142,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1234,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Jika serratus anterior lumpuh, gerakan shoulder girdle yang paling terganggu adalah",
   "opsi": [
    "retraksi dan rotasi down scapula",
@@ -27154,7 +27154,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 3,
   "kunci": "protraksi dan rotasi up scapula",
   "rationale": "Tabel mencantumkan serratus anterior hanya pada kolom protraksi dan rotasi up. Kelumpuhannya membuat scapula tidak dapat didorong ke depan maupun diputar ke atas.  —  **Pola Turunkan dari prinsip:** Dari dua kolom itu dapat diturunkan gambaran klinis winged scapula: margo medialis terangkat dari dinding dada dan lengan sulit diangkat melewati kepala.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "TUR",
   "ubAsli": false,
@@ -27164,7 +27164,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1235,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Pasangan gerakan shoulder girdle yang saling berlawanan menurut tabel adalah",
   "opsi": [
    "elevasi dengan depresi dan protraksi dengan retraksi",
@@ -27176,7 +27176,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "elevasi dengan depresi dan protraksi dengan retraksi",
   "rationale": "Tabel menyusun enam gerakan dalam tiga pasangan berlawanan: elevasi lawan depresi, protraksi lawan retraksi, dan rotasi up lawan rotasi down.  —  **Pola Pasangan berlawanan:** Enam kolom tabel sebenarnya tiga pasang. Mengingatnya sebagai pasangan memangkas hafalan menjadi separuh.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "LAW",
   "ubAsli": false,
@@ -27186,7 +27186,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1236,
-  "modul": "PPT 17: Gerakan Shoulder Girdle",
+  "modul": "PPT 9: Gerakan Shoulder Girdle",
   "q": "Otot yang muncul paling sering di tabel gerakan shoulder girdle, pada empat kolom berbeda melalui bagian-bagiannya, adalah",
   "opsi": [
    "rhomboideus",
@@ -27198,7 +27198,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "trapezius",
   "rationale": "Trapezius muncul pada elevasi sebagai upper, depresi sebagai lower, retraksi sebagai middle dan lower, serta rotasi up sebagai upper dan lower.  —  **Pola Kategori jawaban:** Trapezius berbentuk kipas lebar dengan arah serabut yang berbeda di tiap bagiannya, sehingga satu otot dapat menghasilkan gerakan yang berlawanan tergantung bagian mana yang berkontraksi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Gerakan Shoulder Girdle",
   "pola": "KAT",
   "ubAsli": false,
@@ -27208,7 +27208,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1237,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Apa tipe articulatio humeri menurut slide?",
   "opsi": [
    "arthrodial",
@@ -27220,7 +27220,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "enarthrodial",
   "rationale": "Slide menuliskan TIPE ENARTHRODIAL untuk articulatio humeri atau shoulder joint, yaitu sendi peluru dengan tiga aksis.  —  **Pola Nama = petunjuk:** Di antara seluruh sendi yang dibahas slide ini, hanya articulatio humeri yang enarthrodial. Inilah sendi dengan jangkauan gerak terluas di tubuh.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "NAM",
   "ubAsli": false,
@@ -27230,7 +27230,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1238,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Dua permukaan tulang yang membentuk articulatio humeri menurut slide adalah",
   "opsi": [
    "trochlea humeri dan incisura semilunaris ulnae",
@@ -27242,7 +27242,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 4,
   "kunci": "caput humeri dan cavitas glenoidale scapulae",
   "rationale": "Slide menuliskan HUMERUS dengan CAPUT HUMERI dan SCAPULA dengan CAVITAS GLENOIDALE.  —  **Pola Angka & daftar:** Cavitas glenoidale jauh lebih kecil daripada caput humeri, dan ketidakseimbangan ukuran inilah yang membuat bahu paling lentur sekaligus paling mudah dislokasi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "ANG",
   "ubAsli": false,
@@ -27252,7 +27252,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1239,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Struktur fibrokartilago yang memperdalam cavitas glenoidale menurut daftar ligamen slide adalah",
   "opsi": [
    "labrum glenoidale",
@@ -27264,7 +27264,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "labrum glenoidale",
   "rationale": "Daftar ligamen articulatio humeri di slide dibuka dengan LABRUM GLENOIDALE, diikuti capsula articulare, lig. coracohumerale, lig. glenohumerale, lig. humeri transversus, dan arcus coracoacromialis.  —  **Pola Nama = petunjuk:** LABRUM berarti bibir, yaitu cincin yang menambah kedalaman mangkuk sendi. Bedakan dari DISCUS yang membelah rongga sendi menjadi dua, seperti di sendi sternoklavikular.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "NAM",
   "ubAsli": false,
@@ -27274,7 +27274,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1240,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Berikut termasuk ligamen articulatio humeri menurut slide, KECUALI",
   "opsi": [
    "lig. coracohumerale",
@@ -27286,7 +27286,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "lig. coracoclaviculare",
   "rationale": "Daftar slide untuk articulatio humeri: labrum glenoidale, capsula articulare, lig. coracohumerale, lig. glenohumerale, lig. humeri transversus, dan arcus coracoacromialis. Lig. coracoclaviculare milik sendi akromioklavikular.  —  **Pola Kategori jawaban:** Kata kedua pada nama ligamen menunjuk tulang tujuannya. Yang berakhiran -HUMERALE atau -ACROMIALIS milik sendi bahu; yang berakhiran -CLAVICULARE milik sendi gelang bahu.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "KAT",
   "ubAsli": false,
@@ -27296,7 +27296,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1241,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Struktur yang menahan tendo caput longum m. biceps brachii pada sulcus intertubercularis adalah",
   "opsi": [
    "lig. coracohumerale",
@@ -27308,7 +27308,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "lig. humeri transversus",
   "rationale": "Lig. humeri transversus tercantum di daftar ligamen articulatio humeri dan membentang melintang antara kedua tuberculum, menahan tendo biceps caput longum di dalam sulkusnya.  —  **Pola Nama = petunjuk:** TRANSVERSUS berarti melintang. Satu-satunya ligamen bahu yang namanya menyebut arah melintang, dan itu sesuai fungsinya sebagai pengikat tendo.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "NAM",
   "ubAsli": false,
@@ -27318,7 +27318,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1242,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Arcus coracoacromialis dibentuk oleh processus coracoideus, acromion, dan",
   "opsi": [
    "ligamentum coracoacromiale",
@@ -27330,7 +27330,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "ligamentum coracoacromiale",
   "rationale": "Arcus coracoacromialis tercantum di daftar ligamen articulatio humeri; ia adalah atap sendi bahu yang dibentuk kedua tonjolan scapula beserta ligamen yang menghubungkannya.  —  **Pola Turunkan dari prinsip:** Atap ini membatasi ruang di atas caput humeri. Penyempitannya menekan tendo supraspinatus dan bursa di bawahnya, dasar dari sindrom impingement bahu.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "TUR",
   "ubAsli": false,
@@ -27340,7 +27340,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1243,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Empat otot rotator cuff menurut slide adalah",
   "opsi": [
    "subscapularis, supraspinatus, infraspinatus, dan teres major",
@@ -27352,7 +27352,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "subscapularis, supraspinatus, infraspinatus, dan teres minor",
   "rationale": "Slide menuliskan empat otot: M. SUBSCAPULARIS, M. SUPRASPINAM, M. INFRASPINAM, dan M. TERES MINOR.  —  **Pola Angka & daftar:** TERES MAJOR bukan anggota rotator cuff meskipun namanya mirip dan letaknya berdekatan. Ini jebakan yang dipakai bank soal UB.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "ANG",
   "ubAsli": false,
@@ -27362,7 +27362,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1244,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Otot rotator cuff yang berorigo pada facies costalis os scapula adalah",
   "opsi": [
    "M. teres major",
@@ -27374,7 +27374,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 3,
   "kunci": "M. subscapularis",
   "rationale": "**[UB asli · CO 3]** Facies costalis adalah sisi scapula yang menghadap costae, yaitu sisi ventral, dan di situlah fossa subscapularis berada sebagai origo M. subscapularis. Tiga anggota cuff lainnya berorigo di sisi dorsal, dan M. teres major bahkan bukan anggota cuff.  —  **Pola Diskriminator konteks:** Awalan SUB- pada subscapularis berarti di bawah scapula, yaitu sisi yang menghadap iga. Hanya ia satu-satunya anggota cuff di sisi depan.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "USI",
   "ubAsli": true,
@@ -27384,7 +27384,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1245,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Satu-satunya otot rotator cuff yang melakukan rotasi INTERNAL humerus menurut tabel slide adalah",
   "opsi": [
    "M. subscapularis",
@@ -27396,7 +27396,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "M. subscapularis",
   "rationale": "Tabel 10-2 menuliskan subscapularis sebagai prime mover inward rotation, sedangkan infraspinatus dan teres minor sebagai prime mover outward rotation, dan supraspinatus sebagai prime mover abduksi.  —  **Pola Dua kerangka:** Letak menentukan fungsi: yang di DEPAN scapula memutar ke dalam, yang di BELAKANG memutar ke luar. Satu-satunya anggota cuff di sisi depan adalah subscapularis.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "KER",
   "ubAsli": false,
@@ -27406,7 +27406,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1246,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Dua otot rotator cuff yang menjadi prime mover rotasi EKSTERNAL humerus menurut tabel adalah",
   "opsi": [
    "M. supraspinatus dan M. infraspinatus",
@@ -27418,7 +27418,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "M. infraspinatus dan M. teres minor",
   "rationale": "Tabel 10-2 menuliskan P.M. pada kolom outward rotation untuk infraspinatus dan teres minor. Keduanya juga P.M. untuk horizontal extension.  —  **Pola Angka & daftar:** Dua otot ini selalu muncul bersama di tabel dengan pola kolom yang identik, karena arah serabut dan insersionya nyaris sejajar.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "ANG",
   "ubAsli": false,
@@ -27428,7 +27428,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1247,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Otot rotator cuff yang menjadi prime mover ABDUKSI articulatio humeri menurut tabel adalah",
   "opsi": [
    "M. subscapularis",
@@ -27440,7 +27440,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "M. supraspinatus",
   "rationale": "Tabel 10-2 menuliskan supraspinatus dengan P.M. pada kolom abduksi dan tanda tanya pada outward rotation. Ia satu-satunya anggota cuff yang menjadi prime mover abduksi.  —  **Pola Diskriminator konteks:** Supraspinatus berjalan di atas sendi dari fossa supraspinata ke tuberculum majus, sehingga tarikannya mengangkat lengan. Tiga anggota cuff lain berjalan lebih horizontal dan hanya memutar.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "USI",
   "ubAsli": false,
@@ -27450,7 +27450,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1248,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Selain M. supraspinatus, otot yang tercantum sebagai prime mover abduksi articulatio humeri pada tabel adalah",
   "opsi": [
    "anterior deltoid",
@@ -27462,7 +27462,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 4,
   "kunci": "middle deltoid",
   "rationale": "Tabel 10-2 menuliskan P.M. pada kolom abduksi hanya untuk middle deltoid dan supraspinatus. Anterior deltoid, pect. major clavicular, subscapularis, dan biceps long head hanya tercatat sebagai assistant.  —  **Pola Angka & daftar:** Dua prime mover abduksi inilah yang diperiksa pada cedera bahu. Supraspinatus memulai abduksi, middle deltoid melanjutkannya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "ANG",
   "ubAsli": false,
@@ -27472,7 +27472,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1249,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Pada tabel slide, tanda bintang yang menyertai sebuah aksi berarti aksi itu",
   "opsi": [
    "hanya terjadi bila lengan berada di atas horizontal",
@@ -27484,7 +27484,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "hanya terjadi bila lengan berada di atas horizontal",
   "rationale": "Catatan kaki tabel 10-2 menuliskan tiga simbol: bintang berarti aksi terjadi hanya bila lengan di atas horizontal; dagger berarti hanya dari posisi rotasi ke titik netral; dan dagger ganda berarti aksi asisten bervariasi menurut posisi sendi dan aktivitas otot sinergis.  —  **Pola Diskriminator konteks:** Tiga catatan kaki itu menegaskan satu hal penting: fungsi otot TIDAK TETAP, melainkan bergantung pada posisi sendi saat itu. Soal yang menyebut posisi lengan sedang menguji hal ini.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "USI",
   "ubAsli": false,
@@ -27494,7 +27494,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1250,
-  "modul": "PPT 17: Articulatio Humeri & Rotator Cuff",
+  "modul": "PPT 9: Articulatio Humeri & Rotator Cuff",
   "q": "Tanda dagger ganda pada tabel 10-2 menandai bahwa aksi asisten tersebut",
   "opsi": [
    "hanya terjadi di atas horizontal",
@@ -27506,7 +27506,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "bervariasi menurut posisi sendi dan aktivitas otot sinergis",
   "rationale": "Catatan kaki ketiga tabel 10-2 berbunyi assistant actions vary with joint position and activity of synergic muscles, dan tanda itu melekat pada aksi-aksi M. subscapularis.  —  **Pola Diskriminator konteks:** Subscapularis adalah otot dengan paling banyak tanda dagger ganda di tabel, yang berarti perannya paling bergantung konteks. Hanya rotasi internalnya yang pasti sebagai prime mover.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Humeri & Rotator Cuff",
   "pola": "USI",
   "ubAsli": false,
@@ -27516,7 +27516,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1251,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Menurut tabel slide, bagian deltoid yang menjadi prime mover FLEKSI articulatio humeri adalah",
   "opsi": [
    "middle deltoid",
@@ -27528,7 +27528,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "anterior deltoid",
   "rationale": "Tabel 10-2 menuliskan anterior deltoid dengan P.M. pada kolom flexion dan horizontal flexion; middle deltoid P.M. pada abduksi dan horizontal extension; posterior deltoid assistant pada ekstensi dan P.M. pada horizontal extension.  —  **Pola Ciri tetangga:** Tiga bagian deltoid, tiga fungsi berbeda, dan arahnya mengikuti letaknya: DEPAN menekuk ke depan, TENGAH mengangkat ke samping, BELAKANG menarik ke belakang.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "TTG",
   "ubAsli": false,
@@ -27538,7 +27538,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1252,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Menurut tabel slide, bagian deltoid yang menjadi prime mover HORIZONTAL EXTENSION adalah",
   "opsi": [
    "middle dan posterior deltoid",
@@ -27550,7 +27550,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "middle dan posterior deltoid",
   "rationale": "Tabel 10-2 menuliskan P.M. pada kolom horizontal extension untuk middle deltoid dan posterior deltoid, sementara anterior deltoid justru P.M. pada horizontal flexion.  —  **Pola Angka & daftar:** Horizontal extension adalah gerakan merentangkan lengan ke samping-belakang dari posisi lurus ke depan. Otot di sisi belakang bahu yang melakukannya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "ANG",
   "ubAsli": false,
@@ -27560,7 +27560,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1253,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Otot yang bergerak agonis dengan M. deltoideus pada gerakan fleksi articulatio humeri adalah",
   "opsi": [
    "M. latissimus dorsi",
@@ -27572,7 +27572,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "M. pectoralis major",
   "rationale": "**[UB asli · CO 31]** Tabel 10-2 menuliskan P.M. pada kolom flexion untuk anterior deltoid dan pect. major pars clavicular. Latissimus dorsi dan teres major justru P.M. pada kolom extension, yaitu antagonisnya.  —  **Pola Pasangan berlawanan:** Agonis berarti sama-sama prime mover. Kalau dua otot ditulis P.M. di kolom yang sama, keduanya agonis; kalau di kolom berlawanan, keduanya antagonis.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "LAW",
   "ubAsli": true,
@@ -27582,7 +27582,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1254,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Otot yang beragonis bersama M. deltoideus saat fleksi horizontal articulatio humeri adalah",
   "opsi": [
    "M. latissimus dorsi",
@@ -27594,7 +27594,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 3,
   "kunci": "M. pectoralis major",
   "rationale": "**[UB asli · SOAL 69]** Tabel 10-2 menuliskan P.M. pada kolom horizontal flexion untuk anterior deltoid, pect. major clavicular, pect. major sternal, dan coracobrachialis. Latissimus dorsi, infraspinatus, dan teres minor justru di kolom horizontal extension.  —  **Pola Pasangan berlawanan:** Pectoralis major adalah satu-satunya otot yang tercatat P.M. horizontal flexion pada kedua bagiannya, klavikular maupun sternal. Gerakan ini adalah gerakan memeluk.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "LAW",
   "ubAsli": true,
@@ -27604,7 +27604,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1255,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Menurut tabel slide, bagian pectoralis major yang menjadi prime mover EKSTENSI dan ADDUKSI articulatio humeri adalah",
   "opsi": [
    "pars sternalis",
@@ -27616,7 +27616,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "pars sternalis",
   "rationale": "Tabel 10-2 memisahkan pect. major clavicular, yang P.M. flexion, dari pect. major sternal, yang P.M. extension dan adduction. Keduanya sama-sama P.M. horizontal flexion.  —  **Pola Ciri tetangga:** Dua bagian satu otot dengan fungsi berlawanan pada fleksi dan ekstensi, tetapi SEARAH pada fleksi horizontal. Ini contoh paling jelas bahwa arah serabut menentukan fungsi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "TTG",
   "ubAsli": false,
@@ -27626,7 +27626,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1256,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Tiga otot yang menurut tabel menjadi prime mover EKSTENSI articulatio humeri adalah",
   "opsi": [
    "anterior deltoid, pect. major clavicular, dan coracobrachialis",
@@ -27638,7 +27638,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "pect. major sternal, latissimus dorsi, dan teres major",
   "rationale": "Tabel 10-2 menuliskan P.M. pada kolom extension untuk pect. major sternal, latissimus dorsi, dan teres major. Posterior deltoid dan triceps long head hanya assistant.  —  **Pola Angka & daftar:** Ketiganya menarik lengan ke belakang dan ke bawah, gerakan menarik seperti pada mendayung atau pull-up. Latissimus dorsi dan teres major bahkan sering disebut kembar fungsional.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "ANG",
   "ubAsli": false,
@@ -27648,7 +27648,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1257,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Otot yang melakukan ekstensi articulatio humeri adalah",
   "opsi": [
    "M. biceps brachii dan M. brachialis",
@@ -27660,7 +27660,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "M. triceps brachii caput longum dan M. latissimus dorsi",
   "rationale": "**[UB asli · Rangkuman 126]** Ekstensi bahu menarik lengan ke belakang. Tabel mencantumkan latissimus dorsi, teres major, dan pect. major sternal sebagai prime mover, serta posterior deltoid dan triceps caput longum sebagai assistant. Triceps caput longum ikut bekerja karena berorigo di scapula sehingga melewati sendi bahu.  —  **Pola Dua kerangka:** Bedakan dua kerangka: otot yang melewati SATU sendi hanya bekerja di sendi itu, otot yang melewati DUA sendi bekerja di keduanya. Caput longum triceps dan biceps adalah contohnya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "KER",
   "ubAsli": true,
@@ -27670,7 +27670,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1258,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Tiga otot yang menurut tabel menjadi prime mover ADDUKSI articulatio humeri adalah",
   "opsi": [
    "supraspinatus, middle deltoid, dan biceps caput longum",
@@ -27682,7 +27682,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 4,
   "kunci": "pect. major sternal, latissimus dorsi, dan teres major",
   "rationale": "Tabel 10-2 menuliskan P.M. pada kolom adduction untuk pect. major sternal, latissimus dorsi, dan teres major, yaitu tiga otot yang sama dengan prime mover ekstensi.  —  **Pola Angka & daftar:** Tiga otot ini memegang kolom ekstensi DAN adduksi sekaligus. Satu daftar untuk dua gerakan, karena arah tarikannya memang ke bawah-belakang.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "ANG",
   "ubAsli": false,
@@ -27692,7 +27692,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1259,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Menurut tabel slide, otot yang menjadi prime mover ROTASI INTERNAL articulatio humeri adalah",
   "opsi": [
    "M. subscapularis dan M. teres major",
@@ -27704,7 +27704,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "M. subscapularis dan M. teres major",
   "rationale": "Tabel 10-2 menuliskan P.M. pada kolom inward rotation hanya untuk subscapularis dan teres major. Latissimus dorsi, pect. major, coracobrachialis, dan biceps short head hanya assistant.  —  **Pola Angka & daftar:** Perhatikan perbedaan P.M. dan Asst. Banyak otot membantu rotasi internal, tetapi hanya dua yang menjadi penggerak utamanya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "ANG",
   "ubAsli": false,
@@ -27714,7 +27714,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1260,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Menurut tabel slide, otot yang tercantum membantu ABDUKSI articulatio humeri melalui caput longumnya adalah",
   "opsi": [
    "M. triceps brachii",
@@ -27726,7 +27726,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "M. biceps brachii",
   "rationale": "Tabel 10-2 baris 13 menuliskan biceps long head dengan Asst. pada kolom abduksi, karena tendonya berjalan melintasi caput humeri di dalam sendi bahu.  —  **Pola Dua kerangka:** Caput LONGUM biceps berorigo di tuberculum supraglenoidale sehingga melewati sendi bahu; caput BREVE berorigo di processus coracoideus dan tercatat membantu fleksi serta adduksi. Dua kepala, dua kolom berbeda.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "KER",
   "ubAsli": false,
@@ -27736,7 +27736,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1261,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Menurut tabel slide, caput longum M. triceps brachii membantu gerakan",
   "opsi": [
    "fleksi dan abduksi articulatio humeri",
@@ -27748,7 +27748,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "ekstensi dan adduksi articulatio humeri",
   "rationale": "Tabel 10-2 baris 15 menuliskan triceps long head dengan Asst. pada kolom extension dan adduction.  —  **Pola Dua kerangka:** Triceps dikenal sebagai ekstensor SIKU, tetapi caput longumnya juga melewati sendi BAHU. Itulah sebabnya ia muncul di tabel otot bahu.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "KER",
   "ubAsli": false,
@@ -27758,7 +27758,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1262,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Otot yang menurut tabel menjadi prime mover HORIZONTAL FLEXION tetapi hanya assistant pada fleksi biasa adalah",
   "opsi": [
    "M. coracobrachialis",
@@ -27770,7 +27770,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "M. coracobrachialis",
   "rationale": "Tabel 10-2 baris 7 menuliskan coracobrachialis dengan Asst. pada flexion tetapi P.M. pada horizontal flexion, ditambah beberapa aksi bertanda bintang dan dagger.  —  **Pola Diskriminator konteks:** Perhatikan kolomnya, bukan hanya namanya. Satu otot bisa menjadi pembantu di satu gerakan dan penggerak utama di gerakan lain yang mirip.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "USI",
   "ubAsli": false,
@@ -27780,7 +27780,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1263,
-  "modul": "PPT 17: Otot Penggerak Articulatio Humeri",
+  "modul": "PPT 9: Otot Penggerak Articulatio Humeri",
   "q": "Pasien tidak dapat mengangkat lengan ke samping sejak cedera bahu. Berdasarkan tabel, dua otot yang paling mungkin terganggu adalah",
   "opsi": [
    "M. subscapularis dan teres major",
@@ -27792,7 +27792,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "M. supraspinatus dan middle deltoid",
   "rationale": "Mengangkat lengan ke samping adalah abduksi, dan tabel 10-2 hanya mencantumkan dua prime mover untuk abduksi: supraspinatus dan middle deltoid.  —  **Pola Turunkan dari prinsip:** Prinsip pemeriksaan: gerakan yang TERGANGGU menunjuk otot yang melakukan gerakan itu. Cari kolomnya di tabel, lalu baca baris yang bertanda P.M.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Penggerak Articulatio Humeri",
   "pola": "TUR",
   "ubAsli": false,
@@ -27802,7 +27802,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1264,
-  "modul": "PPT 17: Articulatio Cubiti & Radioulnaris",
+  "modul": "PPT 9: Articulatio Cubiti & Radioulnaris",
   "q": "Apa tipe articulatio cubiti menurut slide?",
   "opsi": [
    "pivot joint",
@@ -27814,7 +27814,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 3,
   "kunci": "hinge joint",
   "rationale": "Slide menuliskan TIPE HINGE JOINT untuk articulatio cubiti atau elbow joint, yaitu engsel dengan satu aksis.  —  **Pola Nama = petunjuk:** Satu aksis berarti hanya fleksi dan ekstensi. Pronasi dan supinasi yang juga terjadi di daerah siku berasal dari sendi LAIN, yaitu radioulnaris proximalis.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Cubiti & Radioulnaris",
   "pola": "NAM",
   "ubAsli": false,
@@ -27824,7 +27824,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1265,
-  "modul": "PPT 17: Articulatio Cubiti & Radioulnaris",
+  "modul": "PPT 9: Articulatio Cubiti & Radioulnaris",
   "q": "Pasangan permukaan sendi pada articulatio cubiti menurut slide adalah trochlea humeri dengan incisura semilunaris ulnae, serta",
   "opsi": [
    "capitulum humeri dengan fovea capituli radii",
@@ -27836,7 +27836,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "capitulum humeri dengan fovea capituli radii",
   "rationale": "Slide mencantumkan dua pasangan: HUMERUS trochlea humeri dengan ULNA incisura semilunaris ulnae, dan HUMERUS capitulum humeri dengan RADIUS fovea capituli radii.  —  **Pola Angka & daftar:** Pasangkan dengan bentuknya: TROCHLEA berbentuk katrol dan bertemu takik ulna; CAPITULUM berbentuk bulat kecil dan bertemu cekungan kepala radius. Katrol dengan takik, bola dengan cawan.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Cubiti & Radioulnaris",
   "pola": "ANG",
   "ubAsli": false,
@@ -27846,7 +27846,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1266,
-  "modul": "PPT 17: Articulatio Cubiti & Radioulnaris",
+  "modul": "PPT 9: Articulatio Cubiti & Radioulnaris",
   "q": "Tiga struktur yang tercantum sebagai ligamen articulatio cubiti menurut slide adalah",
   "opsi": [
    "capsula articulare, lig. annulare, dan lig. quadratum",
@@ -27858,7 +27858,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "capsula articulare, lig. collaterale ulnare, dan lig. collaterale radiale",
   "rationale": "Slide ligamen articulatio cubiti hanya memuat tiga butir: CAPSULA ARTICULARE, LIG. COLLATERALE ULNARE, dan LIG. COLLATERALE RADIALE. Lig. annulare dan lig. quadratum tercantum pada articulatio radioulnaris proximalis.  —  **Pola Angka & daftar:** Dua sendi yang bertetangga dengan dua daftar ligamen berbeda. Yang KOLATERAL milik siku, yang MELINGKARI kepala radius milik sendi radioulnar.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Cubiti & Radioulnaris",
   "pola": "ANG",
   "ubAsli": false,
@@ -27868,7 +27868,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1267,
-  "modul": "PPT 17: Articulatio Cubiti & Radioulnaris",
+  "modul": "PPT 9: Articulatio Cubiti & Radioulnaris",
   "q": "Apa tipe articulatio radioulnaris proximalis menurut slide?",
   "opsi": [
    "hinge joint",
@@ -27880,7 +27880,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "pivot joint",
   "rationale": "Slide menuliskan TIPE PIVOT JOINT, yaitu articulatio trochoidea dalam istilah Latin.  —  **Pola Nama = petunjuk:** Pivot berarti berputar pada poros. Inilah satu-satunya sendi di daftar slide yang menghasilkan pronasi dan supinasi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Cubiti & Radioulnaris",
   "pola": "NAM",
   "ubAsli": false,
@@ -27890,7 +27890,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1268,
-  "modul": "PPT 17: Articulatio Cubiti & Radioulnaris",
+  "modul": "PPT 9: Articulatio Cubiti & Radioulnaris",
   "q": "Dua permukaan tulang yang membentuk articulatio radioulnaris proximalis menurut slide adalah",
   "opsi": [
    "fovea capituli radii dan capitulum humeri",
@@ -27902,7 +27902,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 4,
   "kunci": "circumferentia articularis capituli radii dan incisura radialis ulnae",
   "rationale": "Slide menuliskan RADIUS dengan CIRCUMFERENTIA ARTIC. CAPITULI RADII dan ULNA dengan INCISURA RADIALIS ULNAE.  —  **Pola Angka & daftar:** Perhatikan arah penamaan takik: INCISURA RADIALIS ULNAE adalah takik PADA ULNA yang menerima RADIUS. Nama bagian pertama menyebut tulang tetangganya, nama kedua menyebut pemiliknya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Cubiti & Radioulnaris",
   "pola": "ANG",
   "ubAsli": false,
@@ -27912,7 +27912,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1269,
-  "modul": "PPT 17: Articulatio Cubiti & Radioulnaris",
+  "modul": "PPT 9: Articulatio Cubiti & Radioulnaris",
   "q": "Ligamen yang melingkari circumferentia articularis capituli radii dan menahannya pada ulna disebut",
   "opsi": [
    "lig. annulare atau orbiculare",
@@ -27924,7 +27924,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "lig. annulare atau orbiculare",
   "rationale": "Slide mencantumkan dua ligamen pada articulatio radioulnaris proximalis: LIG. ANNULARE dengan nama lain ORBICULARE, dan LIG. QUADRATUM.  —  **Pola Nama = petunjuk:** ANNULUS berarti cincin dan ORBIS berarti lingkaran, dua nama untuk benda yang sama. Cincin inilah yang memungkinkan kepala radius berputar sambil tetap tertambat.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Cubiti & Radioulnaris",
   "pola": "NAM",
   "ubAsli": false,
@@ -27934,7 +27934,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1270,
-  "modul": "PPT 17: Articulatio Cubiti & Radioulnaris",
+  "modul": "PPT 9: Articulatio Cubiti & Radioulnaris",
   "q": "Sendi yang menyebabkan gerakan pronasi dan supinasi adalah",
   "opsi": [
    "Articulatio humeroradialis",
@@ -27946,7 +27946,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "Articulatio radioulnaris proximalis",
   "rationale": "**[UB asli · Rangkuman 65]** Pronasi dan supinasi adalah rotasi radius terhadap ulna, dan sendi yang memungkinkannya adalah articulatio radioulnaris yang bertipe pivot. Articulatio humeroradialis dan humeroulnaris hanya fleksi-ekstensi karena bertipe hinge, sementara radiocarpalis bertipe condyloid sehingga tidak berotasi.  —  **Pola Turunkan dari prinsip:** Tipe sendi menentukan gerakan. Hanya PIVOT yang berputar pada poros panjang, jadi carilah sendi yang bertipe pivot dalam daftar opsi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Cubiti & Radioulnaris",
   "pola": "TUR",
   "ubAsli": true,
@@ -27956,7 +27956,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1271,
-  "modul": "PPT 17: Articulatio Cubiti & Radioulnaris",
+  "modul": "PPT 9: Articulatio Cubiti & Radioulnaris",
   "q": "Mengapa articulatio cubiti sendiri tidak dapat menghasilkan pronasi dan supinasi?",
   "opsi": [
    "karena ligamen kolateralnya terlalu longgar",
@@ -27968,7 +27968,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "karena bertipe hinge yang hanya memiliki satu aksis untuk fleksi dan ekstensi",
   "rationale": "Slide menetapkan articulatio cubiti sebagai hinge joint dan articulatio radioulnaris proximalis sebagai pivot joint. Keduanya berbeda sendi meskipun berdekatan dan berbagi satu rongga sendi.  —  **Pola Turunkan dari prinsip:** Dua sendi yang bertetangga sering dianggap satu. Memisahkannya sejak awal mencegah salah menjawab soal yang menanyakan sendi mana yang melakukan gerakan apa.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Cubiti & Radioulnaris",
   "pola": "TUR",
   "ubAsli": false,
@@ -27978,7 +27978,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1272,
-  "modul": "PPT 17: Articulatio Cubiti & Radioulnaris",
+  "modul": "PPT 9: Articulatio Cubiti & Radioulnaris",
   "q": "Pada gambar potongan sagital siku di slide, struktur yang menampung olecranon saat ekstensi penuh adalah",
   "opsi": [
    "fossa olecrani",
@@ -27990,7 +27990,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "fossa olecrani",
   "rationale": "Gambar potongan sagital menandai olecranon fossa di sisi posterior humerus dan coronoid fossa di sisi anterior, masing-masing menampung olecranon saat ekstensi dan processus coronoideus saat fleksi.  —  **Pola Nama = petunjuk:** Dua cekungan di dua sisi humerus untuk dua tonjolan ulna pada dua posisi berlawanan. Posterior untuk ekstensi, anterior untuk fleksi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Cubiti & Radioulnaris",
   "pola": "NAM",
   "ubAsli": false,
@@ -28000,7 +28000,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1273,
-  "modul": "PPT 17: Articulatio Cubiti & Radioulnaris",
+  "modul": "PPT 9: Articulatio Cubiti & Radioulnaris",
   "q": "Pada gambar potongan sagital siku, massa jaringan yang mengisi fossa olecrani dan fossa coronoidea ditandai sebagai",
   "opsi": [
    "jaringan fibrokartilago",
@@ -28012,7 +28012,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "masses of fat",
   "rationale": "Gambar menandai masses of fat di dalam kedua fossa, di bawah kapsul sendi.  —  **Pola Nama = petunjuk:** Bantalan lemak di dalam sendi bergeser saat sendi bergerak. Pada foto polos, terangkatnya bantalan lemak ini menjadi tanda tidak langsung adanya efusi atau fraktur okulta.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Articulatio Cubiti & Radioulnaris",
   "pola": "NAM",
   "ubAsli": false,
@@ -28022,7 +28022,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1274,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Tiga otot yang menurut tabel 11-2 menjadi prime mover FLEKSI articulatio cubiti adalah",
   "opsi": [
    "biceps brachii, brachialis, dan pronator teres",
@@ -28034,7 +28034,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 3,
   "kunci": "biceps brachii, brachialis, dan brachioradialis",
   "rationale": "Tabel 11-2 menuliskan P.M. pada kolom flexion untuk biceps brachii, brachialis, dan brachioradialis. Pronator teres, flexor carpi radialis, flexor carpi ulnaris, palmaris longus, dan flexor digitorum superficialis hanya assistant.  —  **Pola Angka & daftar:** Tiga prime mover fleksi siku ini wajib hafal karena paling sering ditanyakan. Sisanya hanya membantu, dan opsi yang memasukkan pembantu sebagai prime mover selalu salah.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "ANG",
   "ubAsli": false,
@@ -28044,7 +28044,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1275,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Otot yang bekerja agonis dengan M. biceps brachii pada fleksi articulatio cubiti adalah",
   "opsi": [
    "M. brachialis",
@@ -28056,7 +28056,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "M. brachialis",
   "rationale": "**[UB asli · SOAL 68 / Rangkuman 29]** Tabel 11-2 menuliskan brachialis sebagai P.M. flexion bersama biceps brachii. Triceps brachii dan anconeus justru di kolom extension sebagai antagonis, sementara coracobrachialis bekerja di bahu dan tidak muncul di tabel siku.  —  **Pola Pasangan berlawanan:** Agonis dicari di kolom yang SAMA, antagonis di kolom yang BERLAWANAN. Nama otot yang tidak ada di tabel siku sama sekali otomatis bukan jawabannya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "LAW",
   "ubAsli": true,
@@ -28066,7 +28066,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1276,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Menurut tabel 11-2, otot yang menjadi prime mover EKSTENSI articulatio cubiti adalah",
   "opsi": [
    "M. anconeus",
@@ -28078,7 +28078,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "M. triceps brachii",
   "rationale": "Tabel 11-2 menuliskan P.M. pada kolom extension hanya untuk triceps brachii. Anconeus, extensor carpi radialis longus dan brevis, extensor carpi ulnaris, extensor digitorum, serta extensor digiti minimi semuanya hanya assistant.  —  **Pola Ciri tetangga:** Satu prime mover, banyak pembantu. Bedanya triceps dan anconeus inilah yang dipakai bank soal UB untuk menguji pemahaman istilah agonis dan sinergis.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "TTG",
   "ubAsli": false,
@@ -28088,7 +28088,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1277,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Otot yang bekerja sinergis dengan M. triceps brachii saat ekstensi articulatio cubiti adalah",
   "opsi": [
    "M. pronator teres",
@@ -28100,7 +28100,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "M. anconeus",
   "rationale": "**[UB asli · SOAL 9 / SOAL 74 / CO 72]** Pada tabel gerak ekstensi cubiti, triceps brachii tercatat sebagai prime mover dan anconeus sebagai assistant. Brachialis dan biceps brachii justru antagonisnya, sedangkan pronator teres dan quadratus bekerja pada pronasi.  —  **Pola Ciri tetangga:** SINERGIS berarti membantu, ditandai Asst.; AGONIS berarti sama-sama penggerak utama, ditandai P.M. Soal ini menanyakan yang bertanda Asst.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "TTG",
   "ubAsli": true,
@@ -28110,7 +28110,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1278,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Otot yang berperan pada ekstensi articulatio cubiti adalah",
   "opsi": [
    "M. biceps brachii dan M. brachialis",
@@ -28122,7 +28122,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 4,
   "kunci": "M. triceps brachii dan M. anconeus",
   "rationale": "**[UB asli · Rangkuman 75]** Prinsip kompartemen: di lengan atas, kompartemen POSTERIOR melakukan EKSTENSI siku dengan triceps sebagai prime mover dan anconeus sebagai assistant; kompartemen ANTERIOR melakukan FLEKSI.  —  **Pola Dua kerangka:** Kalau lupa tabelnya, pakai letak. Otot di belakang meluruskan, otot di depan menekuk. Aturan ini berlaku untuk lengan atas maupun paha.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "KER",
   "ubAsli": true,
@@ -28132,7 +28132,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1279,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Pria 20 tahun nyeri pada siku kiri. Pemeriksaan ROM elbow joint menemukan penurunan ROM pada gerakan ekstensi. Otot apa yang kemungkinan cedera?",
   "opsi": [
    "M. triceps brachii",
@@ -28144,7 +28144,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "M. triceps brachii",
   "rationale": "**[UB asli · CO 47]** Gerakan yang terganggu menunjuk otot yang melakukan gerakan itu. Ekstensi siku dikerjakan M. triceps brachii sebagai prime mover. Biceps, brachialis, dan brachioradialis semuanya fleksor siku.  —  **Pola Turunkan dari prinsip:** Jangan terbalik membaca kasus ROM. Yang dicari adalah otot PENGGERAK gerakan yang terganggu, bukan otot yang berlawanan dengannya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "TUR",
   "ubAsli": true,
@@ -28154,7 +28154,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1280,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Menurut tabel 11-2, otot yang menjadi prime mover PRONASI adalah",
   "opsi": [
    "M. pronator teres",
@@ -28166,7 +28166,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "M. pronator quadratus",
   "rationale": "Tabel 11-2 menuliskan P.M. pada kolom pronation hanya untuk pronator quadratus. Pronator teres, brachioradialis, dan flexor carpi radialis hanya assistant.  —  **Pola Ciri tetangga:** Yang namanya PRONATOR ada dua, tetapi hanya QUADRATUS yang prime mover. Nama yang mirip bukan jaminan peran yang sama.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "TTG",
   "ubAsli": false,
@@ -28176,7 +28176,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1281,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Menurut tabel 11-2, otot yang menjadi prime mover SUPINASI adalah",
   "opsi": [
    "M. biceps brachii",
@@ -28188,7 +28188,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "M. supinator",
   "rationale": "Tabel 11-2 menuliskan P.M. pada kolom supination hanya untuk supinator. Biceps brachii, brachioradialis, extensor carpi radialis longus, extensor pollicis longus, dan abductor pollicis longus semuanya assistant.  —  **Pola Ciri tetangga:** Biceps brachii memang supinator kuat secara klinis, tetapi tabel ini menempatkannya sebagai Asst. Ikuti tabel slide untuk UB.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "TTG",
   "ubAsli": false,
@@ -28198,7 +28198,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1282,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Menurut tabel 11-2, M. biceps brachii tercantum sebagai prime mover fleksi siku dan sebagai",
   "opsi": [
    "assistant pada supinasi",
@@ -28210,7 +28210,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "assistant pada supinasi",
   "rationale": "Tabel 11-2 baris pertama menuliskan biceps brachii dengan P.M. pada flexion dan Asst. pada supination.  —  **Pola Kategori jawaban:** Biceps bekerja di dua gerakan sekaligus karena tendonya berinsersio di tuberositas radii, sehingga menekuk siku sekaligus memutar radius.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "KAT",
   "ubAsli": false,
@@ -28220,7 +28220,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1283,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Menurut tabel 11-2, otot yang tercantum membantu pronasi DAN supinasi sekaligus dengan tanda tanya adalah",
   "opsi": [
    "M. pronator teres",
@@ -28232,7 +28232,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "M. brachioradialis",
   "rationale": "Tabel 11-2 menuliskan brachioradialis dengan Asst. bertanda tanya pada kolom pronation maupun supination, dengan catatan kaki bahwa aksinya hanya sampai ke posisi tengah.  —  **Pola Diskriminator konteks:** Satu otot bisa pronator dari posisi supinasi dan supinator dari posisi pronasi, karena selalu menarik ke arah POSISI NETRAL. Arahnya bergantung posisi awal, dan itulah arti catatan kakinya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "USI",
   "ubAsli": false,
@@ -28242,7 +28242,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1284,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Catatan kaki tabel 11-2 untuk brachioradialis berbunyi to the mid-position, yang berarti aksinya",
   "opsi": [
    "hanya terjadi saat siku terekstensi penuh",
@@ -28254,7 +28254,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 3,
   "kunci": "hanya berlangsung sampai lengan bawah mencapai posisi tengah",
   "rationale": "Brachioradialis berjalan dari humerus ke processus styloideus radii, sehingga menarik lengan bawah ke posisi netral dari arah mana pun. Setelah posisi tengah tercapai, ia tidak dapat memutar lebih jauh.  —  **Pola Turunkan dari prinsip:** Fungsi sebuah otot ditentukan oleh posisi garis tariknya terhadap aksis sendi. Begitu garis tarik melewati aksis, arah momennya berbalik atau berhenti.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "TUR",
   "ubAsli": false,
@@ -28264,7 +28264,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1285,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Menurut tabel 11-2, otot fleksor pergelangan tangan yang juga tercantum membantu PRONASI adalah",
   "opsi": [
    "M. flexor carpi radialis",
@@ -28276,7 +28276,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "M. flexor carpi radialis",
   "rationale": "Tabel 11-2 menuliskan flexor carpi radialis dengan Asst. pada kolom flexion dan Asst. pada kolom pronation. Flexor carpi ulnaris dan palmaris longus hanya di kolom flexion.  —  **Pola Diskriminator konteks:** Hanya otot di sisi RADIAL yang membantu pronasi, karena tarikannya melintasi radius. Nama otot yang memuat kata radialis adalah petunjuk pertamanya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "USI",
   "ubAsli": false,
@@ -28286,7 +28286,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1286,
-  "modul": "PPT 17: Otot Siku, Pronasi & Supinasi",
+  "modul": "PPT 9: Otot Siku, Pronasi & Supinasi",
   "q": "Menurut tabel 11-2, dua otot ibu jari yang tercantum membantu SUPINASI adalah",
   "opsi": [
    "flexor pollicis longus dan opponens pollicis",
@@ -28298,7 +28298,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "extensor pollicis longus dan abductor pollicis longus",
   "rationale": "Dua baris terakhir tabel 11-2 adalah extensor pollicis longus dan abductor pollicis longus, keduanya dengan Asst. pada kolom supination.  —  **Pola Angka & daftar:** Keduanya berjalan di sisi dorsolateral lengan bawah dan membungkus radius, sehingga tarikannya ikut memutar radius ke arah supinasi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Siku, Pronasi & Supinasi",
   "pola": "ANG",
   "ubAsli": false,
@@ -28308,7 +28308,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1287,
-  "modul": "PPT 17: Wrist, Intercarpal & Carpometacarpal",
+  "modul": "PPT 9: Wrist, Intercarpal & Carpometacarpal",
   "q": "Apa tipe articulatio radiocarpea menurut slide?",
   "opsi": [
    "arthrodial",
@@ -28320,7 +28320,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "condyloid",
   "rationale": "Slide menuliskan TIPE CONDYLOID untuk articulatio radiocarpea atau wrist joint.  —  **Pola Nama = petunjuk:** Condyloid berarti dua aksis, sehingga pergelangan tangan bisa menekuk-meluruskan dan miring ke radial-ulnar, tetapi tidak berotasi sendiri.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Wrist, Intercarpal & Carpometacarpal",
   "pola": "NAM",
   "ubAsli": false,
@@ -28330,7 +28330,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1288,
-  "modul": "PPT 17: Wrist, Intercarpal & Carpometacarpal",
+  "modul": "PPT 9: Wrist, Intercarpal & Carpometacarpal",
   "q": "Tiga komponen yang menyusun articulatio radiocarpea menurut slide adalah",
   "opsi": [
    "facies articularis inferior radii, deretan distal ossa carpalia, dan lig. annulare",
@@ -28342,7 +28342,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 4,
   "kunci": "facies articularis inferior radii, deretan proximal ossa carpalia, dan discus articularis",
   "rationale": "Slide menuliskan RADIUS dengan facies articularis inferior, OSSA CARPALIA deretan PROXIMAL, dan DISCUS ARTICULARIS.  —  **Pola Angka & daftar:** Perhatikan bahwa yang bersendi adalah RADIUS, bukan ulna. Ulna dipisahkan dari ossa carpalia oleh discus articularis, dan itulah sebabnya sendinya disebut radiocarpea.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Wrist, Intercarpal & Carpometacarpal",
   "pola": "ANG",
   "ubAsli": false,
@@ -28352,7 +28352,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1289,
-  "modul": "PPT 17: Wrist, Intercarpal & Carpometacarpal",
+  "modul": "PPT 9: Wrist, Intercarpal & Carpometacarpal",
   "q": "Mengapa sendi pergelangan tangan disebut articulatio RADIOcarpea dan bukan ulnocarpea?",
   "opsi": [
    "karena ulna dipisahkan dari ossa carpalia oleh discus articularis",
@@ -28364,7 +28364,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "karena ulna dipisahkan dari ossa carpalia oleh discus articularis",
   "rationale": "Slide mencantumkan DISCUS ARTICULARIS sebagai komponen sendi ini. Diskus itulah yang menyekat caput ulnae dari deretan proksimal ossa carpalia, sehingga hanya radius yang bersentuhan langsung.  —  **Pola Turunkan dari prinsip:** Nama sendi hampir selalu menyebut tulang yang benar-benar bersentuhan. Kalau sebuah tulang tidak masuk namanya, biasanya ada struktur yang menyekatnya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Wrist, Intercarpal & Carpometacarpal",
   "pola": "TUR",
   "ubAsli": false,
@@ -28374,7 +28374,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1290,
-  "modul": "PPT 17: Wrist, Intercarpal & Carpometacarpal",
+  "modul": "PPT 9: Wrist, Intercarpal & Carpometacarpal",
   "q": "Berikut termasuk ligamen articulatio radiocarpea menurut slide, KECUALI",
   "opsi": [
    "capsula articularis",
@@ -28386,7 +28386,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "lig. annulare",
   "rationale": "Daftar slide untuk articulatio radiocarpea: capsula articularis, lig. radiocarpeum dorsale, lig. collaterale carpi ulnare, dan lig. collaterale carpi radiale. Lig. annulare milik articulatio radioulnaris proximalis.  —  **Pola Kategori jawaban:** Ligamen KOLATERAL muncul di sendi siku maupun pergelangan tangan. Yang membedakan adalah kata CARPI pada nama ligamen pergelangan tangan.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Wrist, Intercarpal & Carpometacarpal",
   "pola": "KAT",
   "ubAsli": false,
@@ -28396,7 +28396,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1291,
-  "modul": "PPT 17: Wrist, Intercarpal & Carpometacarpal",
+  "modul": "PPT 9: Wrist, Intercarpal & Carpometacarpal",
   "q": "Menurut slide intercarpal articulation, MIDCARPAL JOINT bertipe",
   "opsi": [
    "arthrodial",
@@ -28408,7 +28408,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "hinge joint",
   "rationale": "Slide memisahkan dua hal dengan tegas: midcarpal joint bertipe HINGE JOINT, sedangkan intercarpal joint bertipe ARTHRODIAL.  —  **Pola Ciri tetangga:** Dua baris berurutan dengan dua tipe berbeda, dan namanya hampir sama. MID-carpal adalah sendi ANTARA dua deret; INTER-carpal adalah sendi antartulang DI DALAM satu deret.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Wrist, Intercarpal & Carpometacarpal",
   "pola": "TTG",
   "ubAsli": false,
@@ -28418,7 +28418,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1292,
-  "modul": "PPT 17: Wrist, Intercarpal & Carpometacarpal",
+  "modul": "PPT 9: Wrist, Intercarpal & Carpometacarpal",
   "q": "Menurut slide intercarpal articulation, INTERCARPAL JOINT bertipe",
   "opsi": [
    "arthrodial",
@@ -28430,7 +28430,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "arthrodial",
   "rationale": "Slide menuliskan intercarpal joint sebagai ARTHRODIAL, yaitu sendi datar yang hanya menggeser, berbeda dari midcarpal yang hinge.  —  **Pola Ciri tetangga:** Tulang-tulang dalam satu deret hanya saling menggeser sedikit. Gerakan menekuk yang berarti terjadi di antara dua deret, yaitu di midcarpal.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Wrist, Intercarpal & Carpometacarpal",
   "pola": "TTG",
   "ubAsli": false,
@@ -28440,7 +28440,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1293,
-  "modul": "PPT 17: Wrist, Intercarpal & Carpometacarpal",
+  "modul": "PPT 9: Wrist, Intercarpal & Carpometacarpal",
   "q": "Sendi antara trapezium dan metacarpal 1 bertipe",
   "opsi": [
    "arthrodial",
@@ -28452,7 +28452,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "sadle joint",
   "rationale": "Slide articulatio carpometacarpales menuliskan trapezium dan metacarpal 1 sebagai SADLE JOINT dengan gerakan flexi, extensi, abduksi, adduksi, dan oposisi.  —  **Pola Diskriminator konteks:** Satu-satunya sendi pelana di ekstremitas superior, dan satu-satunya yang bisa oposisi. Angka 1 pada metacarpal adalah penandanya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Wrist, Intercarpal & Carpometacarpal",
   "pola": "USI",
   "ubAsli": false,
@@ -28462,7 +28462,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1294,
-  "modul": "PPT 17: Wrist, Intercarpal & Carpometacarpal",
+  "modul": "PPT 9: Wrist, Intercarpal & Carpometacarpal",
   "q": "Articulatio intermetacarpales menurut slide terbentuk antara",
   "opsi": [
    "caput ossa metacarpalia",
@@ -28474,7 +28474,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 3,
   "kunci": "basis ossa metacarpalia",
   "rationale": "Slide menuliskan ANTARA BASIS METACARPAL, dengan LIG. METACARPAL TRANSVERSUS PROFUNDUS sebagai ligamennya.  —  **Pola Nama = petunjuk:** BASIS adalah ujung proksimal yang dekat pergelangan, CAPUT adalah ujung distal yang membentuk buku jari. Sendi antarmetakarpal berada di ujung proksimal.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Wrist, Intercarpal & Carpometacarpal",
   "pola": "NAM",
   "ubAsli": false,
@@ -28484,7 +28484,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1295,
-  "modul": "PPT 17: Wrist, Intercarpal & Carpometacarpal",
+  "modul": "PPT 9: Wrist, Intercarpal & Carpometacarpal",
   "q": "Ligamen yang tercantum pada articulatio intermetacarpales menurut slide adalah",
   "opsi": [
    "lig. metacarpal transversus profundus",
@@ -28496,7 +28496,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "lig. metacarpal transversus profundus",
   "rationale": "Slide articulatio intermetacarpales hanya memuat dua butir: antara basis metacarpal, dan LIG. METACARPAL TRANSVERSUS PROFUNDUS.  —  **Pola Nama = petunjuk:** PROFUNDUS berarti dalam, menandai letaknya di bawah struktur superfisial telapak tangan. Ligamen inilah yang mengikat kepala-kepala metakarpal agar telapak tidak melebar.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Wrist, Intercarpal & Carpometacarpal",
   "pola": "NAM",
   "ubAsli": false,
@@ -28506,7 +28506,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1296,
-  "modul": "PPT 17: Wrist, Intercarpal & Carpometacarpal",
+  "modul": "PPT 9: Wrist, Intercarpal & Carpometacarpal",
   "q": "Dari urutan sendi berikut, yang bertipe condyloid menurut slide adalah",
   "opsi": [
    "articulatio intercarpalis",
@@ -28518,7 +28518,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "articulatio metacarpophalangeales",
   "rationale": "Slide menetapkan metacarpophalangeales sebagai CONDYLOID, intercarpalis sebagai arthrodial, karpometakarpal ibu jari sebagai sadle, radioulnaris proximalis sebagai pivot, dan midcarpal sebagai hinge.  —  **Pola Dua kerangka:** Lima sendi, lima tipe berbeda, semuanya di satu ekstremitas. Menyusunnya sebagai daftar sekali jauh lebih hemat daripada menghafal satu per satu.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Wrist, Intercarpal & Carpometacarpal",
   "pola": "KER",
   "ubAsli": false,
@@ -28528,7 +28528,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1297,
-  "modul": "PPT 17: Wrist, Intercarpal & Carpometacarpal",
+  "modul": "PPT 9: Wrist, Intercarpal & Carpometacarpal",
   "q": "Gerakan yang TIDAK dapat dilakukan articulatio metacarpophalangeales karena tipenya condyloid adalah",
   "opsi": [
    "fleksi",
@@ -28540,7 +28540,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "rotasi aksial aktif",
   "rationale": "Condyloid memiliki dua aksis, yang menghasilkan fleksi-ekstensi serta abduksi-adduksi. Rotasi pada poros panjang memerlukan aksis ketiga yang hanya dimiliki sendi peluru.  —  **Pola Turunkan dari prinsip:** Jumlah aksis menentukan daftar gerakan. Dua aksis berarti empat gerakan dalam dua pasangan, tanpa rotasi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Wrist, Intercarpal & Carpometacarpal",
   "pola": "TUR",
   "ubAsli": false,
@@ -28550,7 +28550,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1298,
-  "modul": "PPT 17: Wrist, Intercarpal & Carpometacarpal",
+  "modul": "PPT 9: Wrist, Intercarpal & Carpometacarpal",
   "q": "Sendi antarruas jari atau interphalangeal joint, berdasarkan gerakan yang tercantum di tabel 12-1, hanya mampu melakukan",
   "opsi": [
    "fleksi, ekstensi, abduksi, dan adduksi",
@@ -28562,7 +28562,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 4,
   "kunci": "fleksi dan ekstensi",
   "rationale": "Tabel 12-1 memberi kolom fleksi dan ekstensi saja untuk interphalangeal joints pertama dan kedua, sedangkan metacarpophalangeal joints mendapat empat kolom: fleksi, ekstensi, abduksi, dan adduksi.  —  **Pola Turunkan dari prinsip:** Struktur tabel sendiri menunjukkan tipe sendinya. Dua kolom berarti satu aksis atau engsel; empat kolom berarti dua aksis atau condyloid.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Wrist, Intercarpal & Carpometacarpal",
   "pola": "TUR",
   "ubAsli": false,
@@ -28572,7 +28572,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1299,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Menurut tabel 12-1, otot yang menjadi prime mover FLEKSI sekaligus ABDUKSI pergelangan tangan adalah",
   "opsi": [
    "M. flexor carpi radialis",
@@ -28584,7 +28584,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "M. flexor carpi radialis",
   "rationale": "Tabel 12-1 menuliskan flexor carpi radialis dengan P.M. pada wrist flexion dan P.M. pada wrist abduction. Flexor carpi ulnaris justru P.M. pada flexion dan ADDUCTION.  —  **Pola Dua kerangka:** Nama otot menyebut dua hal sekaligus: FLEXOR menunjuk kolom fleksi, RADIALIS menunjuk sisi ibu jari yaitu abduksi. Dari nama saja dua kolomnya bisa diturunkan.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "KER",
   "ubAsli": false,
@@ -28594,7 +28594,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1300,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Menurut tabel 12-1, otot yang menjadi prime mover FLEKSI sekaligus ADDUKSI pergelangan tangan adalah",
   "opsi": [
    "M. flexor carpi radialis",
@@ -28606,7 +28606,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "M. flexor carpi ulnaris",
   "rationale": "Tabel 12-1 menuliskan flexor carpi ulnaris dengan P.M. pada wrist flexion dan P.M. pada wrist adduction.  —  **Pola Dua kerangka:** Terapkan aturan nama: RADIALIS berarti abduksi, ULNARIS berarti adduksi, FLEXOR berarti fleksi, EXTENSOR berarti ekstensi. Empat otot carpi mengikuti aturan ini tanpa kecuali.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "KER",
   "ubAsli": false,
@@ -28616,7 +28616,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1301,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Menurut tabel 12-1, otot yang menjadi prime mover EKSTENSI sekaligus ADDUKSI pergelangan tangan adalah",
   "opsi": [
    "M. extensor carpi radialis longus",
@@ -28628,7 +28628,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "M. extensor carpi ulnaris",
   "rationale": "Tabel 12-1 menuliskan extensor carpi ulnaris dengan P.M. pada wrist extension dan P.M. pada wrist adduction, sementara kedua extensor carpi radialis P.M. pada extension dan abduction.  —  **Pola Dua kerangka:** Aturan nama berlaku konsisten. Kata pertama menentukan kolom fleksi atau ekstensi, kata kedua menentukan kolom abduksi atau adduksi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "KER",
   "ubAsli": false,
@@ -28638,7 +28638,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1302,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Menurut tabel 12-1, M. palmaris longus tercatat sebagai",
   "opsi": [
    "assistant pada fleksi pergelangan tangan",
@@ -28650,7 +28650,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "assistant pada fleksi pergelangan tangan",
   "rationale": "Tabel 12-1 menuliskan palmaris longus hanya dengan Asst. pada kolom wrist flexion, tanpa entri di kolom lain.  —  **Pola Ciri tetangga:** Palmaris longus adalah otot paling lemah di barisan fleksor dan bahkan tidak dimiliki semua orang. Konsisten dengan itu, tabel hanya memberinya satu tanda Asst.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "TTG",
   "ubAsli": false,
@@ -28660,7 +28660,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1303,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Menurut tabel 12-1, otot yang menjadi prime mover fleksi sendi interphalangeal KEDUA adalah",
   "opsi": [
    "M. flexor digitorum superficialis",
@@ -28672,7 +28672,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "M. flexor digitorum profundus",
   "rationale": "Tabel 12-1 menuliskan flexor digitorum profundus dengan P.M. pada interphalangeal pertama maupun KEDUA, sedangkan flexor digitorum superficialis hanya P.M. pada interphalangeal pertama.  —  **Pola Ciri tetangga:** Yang PROFUNDUS berjalan lebih jauh dan menyeberangi lebih banyak sendi, sehingga mencapai ruas terakhir. Yang SUPERFICIALIS berhenti di ruas tengah. Letak menentukan jangkauan.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "TTG",
   "ubAsli": false,
@@ -28682,7 +28682,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1304,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Menurut tabel 12-1, M. flexor digitorum superficialis menjadi prime mover pada sendi",
   "opsi": [
    "interphalangeal pertama dan kedua",
@@ -28694,7 +28694,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 3,
   "kunci": "metacarpophalangeal dan interphalangeal pertama",
   "rationale": "Tabel 12-1 menuliskan flexor digitorum superficialis dengan Asst. pada wrist flexion, P.M. pada MP flexion, dan P.M. pada interphalangeal pertama.  —  **Pola Ciri tetangga:** Satu otot melintasi tiga sendi dengan tiga tingkat peran berbeda. Semakin jauh dari insersionya, semakin kecil perannya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "TTG",
   "ubAsli": false,
@@ -28704,7 +28704,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1305,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Menurut tabel 12-1, otot yang menjadi prime mover ABDUKSI sendi metacarpophalangeal adalah",
   "opsi": [
    "M. dorsal interossei",
@@ -28716,7 +28716,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "M. dorsal interossei",
   "rationale": "Tabel 12-1 menuliskan dorsal interossei dengan P.M. bertanda dagger pada MP abduction, sedangkan palmar interossei P.M. pada MP adduction.  —  **Pola Pasangan berlawanan:** Jangkar hafalan klasik: DORSAL untuk ABDUKSI dan PALMAR untuk ADDUKSI. Huruf awalnya bisa dipakai sebagai pengingat, DAB dan PAD.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "LAW",
   "ubAsli": false,
@@ -28726,7 +28726,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1306,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Menurut tabel 12-1, otot yang menjadi prime mover ADDUKSI sendi metacarpophalangeal adalah",
   "opsi": [
    "M. dorsal interossei",
@@ -28738,7 +28738,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "M. palmar interossei",
   "rationale": "Tabel 12-1 menuliskan palmar interossei dengan P.M. pada MP adduction dan Asst. pada MP flexion serta ekstensi interphalangeal.  —  **Pola Pasangan berlawanan:** Pasangan terbalik dari dorsal interossei. Keduanya sama-sama membantu fleksi MP dan ekstensi IP, hanya berbeda pada kolom abduksi-adduksi.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "LAW",
   "ubAsli": false,
@@ -28748,7 +28748,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1307,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Pasien 30 tahun nyeri saat menggenggam, pada pemeriksaan ditemukan penurunan ROM adduksi jari. Otot apa yang paling mungkin terkena?",
   "opsi": [
    "M. dorsal interossei",
@@ -28760,7 +28760,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "M. palmar interossei",
   "rationale": "Tabel 12-1 menetapkan palmar interossei sebagai prime mover adduksi metacarpophalangeal, yaitu gerakan merapatkan jari.  —  **Pola Turunkan dari prinsip:** Gerakan yang terganggu menunjuk prime movernya. Untuk merapatkan jari, carilah baris PALMAR interossei, bukan dorsal.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "TUR",
   "ubAsli": false,
@@ -28770,7 +28770,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1308,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Menurut tabel 12-1, M. lumbricales tercatat sebagai prime mover pada",
   "opsi": [
    "ekstensi metacarpophalangeal serta fleksi interphalangeal",
@@ -28782,7 +28782,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 4,
   "kunci": "fleksi metacarpophalangeal serta ekstensi kedua sendi interphalangeal",
   "rationale": "Tabel 12-1 menuliskan lumbricales dengan P.M. pada MP flexion, tanda bintang pada MP abduction, serta P.M. pada ekstensi interphalangeal pertama dan kedua.  —  **Pola Pasangan berlawanan:** Kombinasi yang tampak aneh ini menghasilkan posisi tangan menulis: buku jari menekuk sementara ruas jari lurus. Satu otot, dua arah berlawanan di dua sendi berbeda.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "LAW",
   "ubAsli": false,
@@ -28792,7 +28792,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1309,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Menurut tabel 12-1, otot yang menjadi prime mover ekstensi metacarpophalangeal dan kedua sendi interphalangeal jari telunjuk hingga kelingking adalah",
   "opsi": [
    "M. extensor digitorum",
@@ -28804,7 +28804,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "M. extensor digitorum",
   "rationale": "Tabel 12-1 menuliskan extensor digitorum dengan Asst. pada wrist extension dan P.M. pada MP extension serta ekstensi interphalangeal pertama dan kedua. Extensor indicis dan extensor digiti minimi punya pola sama tetapi hanya untuk satu jari masing-masing.  —  **Pola Angka & daftar:** DIGITORUM berarti untuk jari-jari secara umum; INDICIS hanya telunjuk; DIGITI MINIMI hanya kelingking. Nama otot menyebutkan jangkauannya.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "ANG",
   "ubAsli": false,
@@ -28814,7 +28814,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1310,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Menurut tabel 12-1, selain ekstensi, M. extensor indicis juga tercatat membantu",
   "opsi": [
    "adduksi metacarpophalangeal",
@@ -28826,7 +28826,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "abduksi metacarpophalangeal",
   "rationale": "Tabel 12-1 memberi extensor indicis entri Asst. pada kolom MP abduction, sebuah entri yang tidak dimiliki extensor digitorum maupun extensor digiti minimi.  —  **Pola Diskriminator konteks:** Satu kolom tambahan membedakan tiga otot yang pola barisnya nyaris identik. Baca kolom, bukan hanya nama.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "USI",
   "ubAsli": false,
@@ -28836,7 +28836,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1311,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Tiga otot hipotenar yang tercantum di baris terakhir tabel 12-1 adalah",
   "opsi": [
    "abductor pollicis brevis, flexor pollicis brevis, dan opponens pollicis",
@@ -28848,7 +28848,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 2,
   "kunci": "abductor digiti minimi, flexor digiti minimi brevis, dan opponens digiti minimi",
   "rationale": "Tiga baris terakhir tabel 12-1 adalah abductor digiti minimi, flexor digiti minimi brevis, dan opponens digiti minimi, semuanya dengan entri pada kolom metacarpophalangeal.  —  **Pola Angka & daftar:** Ketiganya bernama DIGITI MINIMI, yaitu kelompok hipotenar di sisi kelingking. Tabel ini tidak memuat kelompok tenar untuk ibu jari.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "ANG",
   "ubAsli": false,
@@ -28858,7 +28858,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1312,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Menurut tabel 12-1, M. abductor digiti minimi tercatat sebagai prime mover pada",
   "opsi": [
    "abduksi metacarpophalangeal",
@@ -28870,7 +28870,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 0,
   "kunci": "abduksi metacarpophalangeal",
   "rationale": "Tabel 12-1 menuliskan abductor digiti minimi dengan Asst. pada MP flexion dan P.M. pada MP abduction.  —  **Pola Nama = petunjuk:** Nama otot menyebut fungsi utamanya. Kalau namanya ABDUCTOR, carilah P.M. di kolom abduksi dan tanda Asst. di kolom lain.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "NAM",
   "ubAsli": false,
@@ -28880,7 +28880,7 @@ window.QUIZ_BANK["ub-1-2"] = [
  },
  {
   "n": 1313,
-  "modul": "PPT 17: Otot Pergelangan Tangan & Jari",
+  "modul": "PPT 9: Otot Pergelangan Tangan & Jari",
   "q": "Jika seluruh otot interossei lumpuh, gerakan jari yang paling terganggu menurut tabel 12-1 adalah",
   "opsi": [
    "menekuk ruas ujung jari",
@@ -28892,7 +28892,7 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kunciIndex": 1,
   "kunci": "merapatkan dan merenggangkan jari pada sendi metacarpophalangeal",
   "rationale": "Dorsal interossei adalah prime mover abduksi MP dan palmar interossei prime mover adduksi MP. Tidak ada otot lain yang tercatat P.M. pada kedua kolom itu selain abductor digiti minimi untuk kelingking.  —  **Pola Turunkan dari prinsip:** Kalau satu kelompok otot memegang monopoli pada sebuah kolom, kelumpuhannya langsung menghapus gerakan itu. Cari kolom yang hanya diisi kelompok tersebut.",
-  "ppt": 17,
+  "ppt": 9,
   "grup": "Otot Pergelangan Tangan & Jari",
   "pola": "TUR",
   "ubAsli": false,
@@ -35829,5 +35829,1611 @@ window.QUIZ_BANK["ub-1-2"] = [
   "kodeUB": "",
   "bahas": "Hanya sekitar 2 persen kalium tubuh berada di cairan ekstrasel, sehingga perpindahan sedikit kalium dari dalam sel sudah mengubah kadar ekstraselnya secara bermakna, dan kadar itulah yang menentukan potensial istirahat.",
   "diskriminator": "Kolam kecil mudah berubah kadarnya. Prinsip yang sama menjelaskan mengapa kalium darah berbahaya diperiksa pada gagal ginjal dan luka remuk."
+ },
+ {
+  "n": 1629,
+  "modul": "PPT 12: Sitoskeleton: Pengantar & Tiga Elemen",
+  "q": "Menurut slide, sitoskeleton paling tepat digambarkan sebagai",
+  "opsi": [
+   "jaringan protein dinamis yang terus dibentuk dan dibongkar sesuai kebutuhan sel",
+   "kerangka protein kaku yang menetap seumur hidup sel",
+   "lapisan lipid yang membungkus organel",
+   "anyaman karbohidrat di permukaan sel",
+   "cadangan energi berbentuk serat protein"
+  ],
+  "kunciIndex": 0,
+  "kunci": "jaringan protein dinamis yang terus dibentuk dan dibongkar sesuai kebutuhan sel",
+  "rationale": "Slide menekankan bahwa walaupun disebut kerangka, sitoskeleton bukan struktur kaku: ia fleksibel, adaptif, dan terus mengalami pembentukan serta pembongkaran sesuai kebutuhan sel.  —  **Pola Turunkan dari prinsip:** Kata KERANGKA menyesatkan. Yang diuji justru lawannya, yaitu sifat DINAMIS. Opsi yang menyebut kaku atau menetap selalu salah di topik ini.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Pengantar & Tiga Elemen",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menekankan bahwa walaupun disebut kerangka, sitoskeleton bukan struktur kaku: ia fleksibel, adaptif, dan terus mengalami pembentukan serta pembongkaran sesuai kebutuhan sel.",
+  "diskriminator": "Kata KERANGKA menyesatkan. Yang diuji justru lawannya, yaitu sifat DINAMIS. Opsi yang menyebut kaku atau menetap selalu salah di topik ini."
+ },
+ {
+  "n": 1630,
+  "modul": "PPT 12: Sitoskeleton: Pengantar & Tiga Elemen",
+  "q": "Berikut termasuk fungsi sitoskeleton menurut slide, KECUALI",
+  "opsi": [
+   "menopang struktur dan mempertahankan bentuk sel",
+   "menyimpan cadangan energi sel",
+   "mengatur pergerakan sel",
+   "mengontrol transportasi intraseluler",
+   "mengatur pemisahan kromosom saat mitosis"
+  ],
+  "kunciIndex": 1,
+  "kunci": "menyimpan cadangan energi sel",
+  "rationale": "Slide mendaftar lima fungsi: menopang struktur dan bentuk sel, mengatur pergerakan sel, mengontrol transportasi intraseluler, mengatur pembelahan sel dan pemisahan kromosom, serta memediasi interaksi antarsel termasuk adhesi dan komunikasi. Penyimpanan energi tidak termasuk.  —  **Pola Kategori jawaban:** Semua fungsi sitoskeleton bersifat MEKANIK atau LOGISTIK: menahan, memindahkan, membagi, menempelkan. Fungsi metabolik bukan urusannya.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Pengantar & Tiga Elemen",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide mendaftar lima fungsi: menopang struktur dan bentuk sel, mengatur pergerakan sel, mengontrol transportasi intraseluler, mengatur pembelahan sel dan pemisahan kromosom, serta memediasi interaksi antarsel termasuk adhesi dan komunikasi. Penyimpanan energi tidak termasuk.",
+  "diskriminator": "Semua fungsi sitoskeleton bersifat MEKANIK atau LOGISTIK: menahan, memindahkan, membagi, menempelkan. Fungsi metabolik bukan urusannya."
+ },
+ {
+  "n": 1631,
+  "modul": "PPT 12: Sitoskeleton: Pengantar & Tiga Elemen",
+  "q": "Contoh pergerakan sel yang disebut slide sebagai diatur oleh sitoskeleton adalah",
+  "opsi": [
+   "aliran darah dalam kapiler",
+   "peristaltik usus",
+   "migrasi sel imun dan pergerakan sperma",
+   "denyut jantung",
+   "aliran limfe"
+  ],
+  "kunciIndex": 2,
+  "kunci": "migrasi sel imun dan pergerakan sperma",
+  "rationale": "Slide menuliskan contoh mengatur pergerakan sel berupa migrasi sel imun dan pergerakan sperma.  —  **Pola Kategori jawaban:** Yang dimaksud adalah pergerakan SATU SEL, bukan pergerakan organ atau cairan. Peristaltik dan denyut jantung adalah kerja jaringan otot, bukan motilitas sel tunggal.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Pengantar & Tiga Elemen",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan contoh mengatur pergerakan sel berupa migrasi sel imun dan pergerakan sperma.",
+  "diskriminator": "Yang dimaksud adalah pergerakan SATU SEL, bukan pergerakan organ atau cairan. Peristaltik dan denyut jantung adalah kerja jaringan otot, bukan motilitas sel tunggal."
+ },
+ {
+  "n": 1632,
+  "modul": "PPT 12: Sitoskeleton: Pengantar & Tiga Elemen",
+  "q": "Obat kemoterapi yang disebut slide bekerja dengan menargetkan mikrotubulus adalah",
+  "opsi": [
+   "taksol",
+   "metotreksat",
+   "siklofosfamid",
+   "doksorubisin",
+   "sisplatin"
+  ],
+  "kunciIndex": 0,
+  "kunci": "taksol",
+  "rationale": "Slide menyebut taksol sebagai contoh obat kemoterapi yang bekerja dengan menargetkan mikrotubulus, pada bagian alasan mengapa sitoskeleton penting dipahami.  —  **Pola Nama = petunjuk:** Taksol mengunci mikrotubulus sehingga gelendong mitosis tidak bisa dibongkar, dan sel kanker gagal membelah. Dari situ terlihat kenapa pemahaman sitoskeleton berguna secara terapeutik.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Pengantar & Tiga Elemen",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menyebut taksol sebagai contoh obat kemoterapi yang bekerja dengan menargetkan mikrotubulus, pada bagian alasan mengapa sitoskeleton penting dipahami.",
+  "diskriminator": "Taksol mengunci mikrotubulus sehingga gelendong mitosis tidak bisa dibongkar, dan sel kanker gagal membelah. Dari situ terlihat kenapa pemahaman sitoskeleton berguna secara terapeutik."
+ },
+ {
+  "n": 1633,
+  "modul": "PPT 12: Sitoskeleton: Pengantar & Tiga Elemen",
+  "q": "Tiga jenis elemen sitoskeletal menurut slide adalah",
+  "opsi": [
+   "mikrotubulus, mikrofilamen, dan miofibril",
+   "mikrotubulus, mikrofilamen, dan filamen perantara",
+   "aktin, miosin, dan tubulin",
+   "mikrotubulus, sentrosom, dan silia",
+   "keratin, vimentin, dan desmin"
+  ],
+  "kunciIndex": 1,
+  "kunci": "mikrotubulus, mikrofilamen, dan filamen perantara",
+  "rationale": "Slide menuliskan tiga jenis elemen sitoskeletal: mikrotubulus, mikrofilamen, dan filamen perantara atau intermediate filaments.  —  **Pola Angka & daftar:** Jangan tertukar antara ELEMEN dan PROTEIN PENYUSUNNYA. Aktin, tubulin, keratin, dan vimentin adalah proteinnya; mikrofilamen, mikrotubulus, dan filamen intermediet adalah strukturnya.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Pengantar & Tiga Elemen",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan tiga jenis elemen sitoskeletal: mikrotubulus, mikrofilamen, dan filamen perantara atau intermediate filaments.",
+  "diskriminator": "Jangan tertukar antara ELEMEN dan PROTEIN PENYUSUNNYA. Aktin, tubulin, keratin, dan vimentin adalah proteinnya; mikrofilamen, mikrotubulus, dan filamen intermediet adalah strukturnya."
+ },
+ {
+  "n": 1634,
+  "modul": "PPT 12: Sitoskeleton: Pengantar & Tiga Elemen",
+  "q": "Urutan ketiga elemen sitoskeletal dari diameter TERKECIL ke TERBESAR adalah",
+  "opsi": [
+   "mikrotubulus, filamen intermediet, mikrofilamen",
+   "filamen intermediet, mikrofilamen, mikrotubulus",
+   "mikrofilamen, mikrotubulus, filamen intermediet",
+   "mikrofilamen, filamen intermediet, mikrotubulus",
+   "ketiganya berdiameter sama"
+  ],
+  "kunciIndex": 3,
+  "kunci": "mikrofilamen, filamen intermediet, mikrotubulus",
+  "rationale": "Tabel ringkasan slide mencantumkan mikrofilamen sekitar 7 nm, filamen intermediet sekitar 10 nm, dan mikrotubulus sekitar 25 nm.  —  **Pola Angka & daftar:** Nama ketiganya sudah menyusun urutannya: MIKRO-filamen paling kecil, INTERMEDIET berada di tengah, dan mikroTUBULUS paling besar karena berbentuk tabung.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Pengantar & Tiga Elemen",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Tabel ringkasan slide mencantumkan mikrofilamen sekitar 7 nm, filamen intermediet sekitar 10 nm, dan mikrotubulus sekitar 25 nm.",
+  "diskriminator": "Nama ketiganya sudah menyusun urutannya: MIKRO-filamen paling kecil, INTERMEDIET berada di tengah, dan mikroTUBULUS paling besar karena berbentuk tabung."
+ },
+ {
+  "n": 1635,
+  "modul": "PPT 12: Sitoskeleton: Pengantar & Tiga Elemen",
+  "q": "Berapa diameter mikrotubulus menurut tabel ringkasan slide?",
+  "opsi": [
+   "sekitar 25 nm",
+   "sekitar 10 nm",
+   "sekitar 7 nm",
+   "sekitar 50 nm",
+   "sekitar 100 nm"
+  ],
+  "kunciIndex": 0,
+  "kunci": "sekitar 25 nm",
+  "rationale": "Tabel menuliskan mikrotubulus dengan diameter terbesar sekitar 25 nm, filamen intermediet menengah sekitar 10 nm, dan mikrofilamen paling kecil sekitar 7 nm.  —  **Pola Angka & daftar:** Tiga angka yang harus dipasangkan benar: 7, 10, 25. Yang 10 adalah filamen intermediet, dan angka itulah yang justru dipakai untuk MENDEFINISIKAN kelompoknya.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Pengantar & Tiga Elemen",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Tabel menuliskan mikrotubulus dengan diameter terbesar sekitar 25 nm, filamen intermediet menengah sekitar 10 nm, dan mikrofilamen paling kecil sekitar 7 nm.",
+  "diskriminator": "Tiga angka yang harus dipasangkan benar: 7, 10, 25. Yang 10 adalah filamen intermediet, dan angka itulah yang justru dipakai untuk MENDEFINISIKAN kelompoknya."
+ },
+ {
+  "n": 1636,
+  "modul": "PPT 12: Sitoskeleton: Pengantar & Tiga Elemen",
+  "q": "Berapa diameter mikrofilamen menurut tabel ringkasan slide?",
+  "opsi": [
+   "sekitar 10 nm",
+   "sekitar 25 nm",
+   "sekitar 7 nm",
+   "sekitar 15 nm",
+   "sekitar 2 nm"
+  ],
+  "kunciIndex": 2,
+  "kunci": "sekitar 7 nm",
+  "rationale": "Tabel menuliskan mikrofilamen dengan diameter paling kecil, sekitar 7 nm, banyak terdapat di korteks sel, dan penting dalam endositosis serta eksositosis.  —  **Pola Angka & daftar:** Mikrofilamen terkecil tetapi paling banyak di tepi sel. Ukuran kecil memudahkannya membentuk anyaman rapat tepat di bawah membran.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Pengantar & Tiga Elemen",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Tabel menuliskan mikrofilamen dengan diameter paling kecil, sekitar 7 nm, banyak terdapat di korteks sel, dan penting dalam endositosis serta eksositosis.",
+  "diskriminator": "Mikrofilamen terkecil tetapi paling banyak di tepi sel. Ukuran kecil memudahkannya membentuk anyaman rapat tepat di bawah membran."
+ },
+ {
+  "n": 1637,
+  "modul": "PPT 12: Sitoskeleton: Pengantar & Tiga Elemen",
+  "q": "Menurut tabel ringkasan, elemen sitoskeletal yang banyak terdapat di korteks sel dan penting dalam endositosis serta eksositosis adalah",
+  "opsi": [
+   "mikrotubulus",
+   "mikrofilamen",
+   "filamen intermediet",
+   "lamin inti",
+   "sentrosom"
+  ],
+  "kunciIndex": 1,
+  "kunci": "mikrofilamen",
+  "rationale": "Tabel menuliskan ciri khas mikrofilamen: diameter paling kecil sekitar 7 nm, banyak di korteks sel, penting dalam endositosis dan eksositosis.  —  **Pola Diskriminator konteks:** KORTEKS berarti lapisan tepat di bawah membran sel. Proses yang menelan atau melepas membran tentu memerlukan filamen yang ada di sana.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Pengantar & Tiga Elemen",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Tabel menuliskan ciri khas mikrofilamen: diameter paling kecil sekitar 7 nm, banyak di korteks sel, penting dalam endositosis dan eksositosis.",
+  "diskriminator": "KORTEKS berarti lapisan tepat di bawah membran sel. Proses yang menelan atau melepas membran tentu memerlukan filamen yang ada di sana."
+ },
+ {
+  "n": 1638,
+  "modul": "PPT 12: Sitoskeleton: Pengantar & Tiga Elemen",
+  "q": "Menurut tabel ringkasan, elemen sitoskeletal yang memiliki polaritas dan tumbuh dari sentrosom adalah",
+  "opsi": [
+   "mikrofilamen",
+   "filamen intermediet",
+   "lamin",
+   "keratin",
+   "mikrotubulus"
+  ],
+  "kunciIndex": 4,
+  "kunci": "mikrotubulus",
+  "rationale": "Tabel menuliskan ciri khas mikrotubulus: diameter terbesar sekitar 25 nm, struktur seperti tabung, memiliki polaritas dan tumbuh dari sentrosom.  —  **Pola Diskriminator konteks:** Polaritas inilah yang memungkinkan protein motor tahu arah mana yang menuju pusat sel dan mana yang menuju tepi. Tanpa polaritas, transportasi berarah mustahil.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Pengantar & Tiga Elemen",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Tabel menuliskan ciri khas mikrotubulus: diameter terbesar sekitar 25 nm, struktur seperti tabung, memiliki polaritas dan tumbuh dari sentrosom.",
+  "diskriminator": "Polaritas inilah yang memungkinkan protein motor tahu arah mana yang menuju pusat sel dan mana yang menuju tepi. Tanpa polaritas, transportasi berarah mustahil."
+ },
+ {
+  "n": 1639,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Mikrotubulus tersusun dari pasangan protein",
+  "opsi": [
+   "alfa-tubulin dan beta-tubulin",
+   "aktin G dan aktin F",
+   "keratin dan vimentin",
+   "aktin dan miosin",
+   "talin dan vinculin"
+  ],
+  "kunciIndex": 0,
+  "kunci": "alfa-tubulin dan beta-tubulin",
+  "rationale": "Slide menuliskan mikrotubulus terdiri dari pasangan molekul protein tubulin, yaitu alfa-tubulin dan beta-tubulin, yang tersusun sebagai dimer.  —  **Pola Nama = petunjuk:** Satuan pembangunnya adalah DIMER, yaitu pasangan alfa dan beta, bukan monomer tunggal. Inilah yang membedakan mikrotubulus dari mikrofilamen yang dibangun dari monomer aktin.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan mikrotubulus terdiri dari pasangan molekul protein tubulin, yaitu alfa-tubulin dan beta-tubulin, yang tersusun sebagai dimer.",
+  "diskriminator": "Satuan pembangunnya adalah DIMER, yaitu pasangan alfa dan beta, bukan monomer tunggal. Inilah yang membedakan mikrotubulus dari mikrofilamen yang dibangun dari monomer aktin."
+ },
+ {
+  "n": 1640,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Satuan berulang yang menyusun rantai panjang mikrotubulus disebut",
+  "opsi": [
+   "monomer aktin",
+   "dimer tubulin",
+   "oktamer histon",
+   "trimer kolagen",
+   "heksamer miosin"
+  ],
+  "kunciIndex": 1,
+  "kunci": "dimer tubulin",
+  "rationale": "Slide menuliskan rantai panjang pasangan tubulin, atau dimer, tersusun menjadi bentuk tabung berongga.  —  **Pola Nama = petunjuk:** DI- berarti dua. Satu dimer sama dengan satu alfa ditambah satu beta, dan rangkaian dimer inilah yang melingkar menjadi dinding tabung.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan rantai panjang pasangan tubulin, atau dimer, tersusun menjadi bentuk tabung berongga.",
+  "diskriminator": "DI- berarti dua. Satu dimer sama dengan satu alfa ditambah satu beta, dan rangkaian dimer inilah yang melingkar menjadi dinding tabung."
+ },
+ {
+  "n": 1641,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Bentuk mikrotubulus menurut slide adalah",
+  "opsi": [
+   "pita pipih berpilin",
+   "dua untai saling terkait",
+   "tabung berongga",
+   "jaring tak beraturan",
+   "bola berlapis"
+  ],
+  "kunciIndex": 2,
+  "kunci": "tabung berongga",
+  "rationale": "Slide menuliskan rantai dimer tubulin tersusun menjadi bentuk tabung berongga, dan bentuk tabung inilah yang memberi mikrotubulus kekuatan.  —  **Pola Turunkan dari prinsip:** Bentuk menentukan sifat mekanik. Tabung berongga menahan tekanan jauh lebih baik daripada batang padat dengan massa yang sama, dan itu prinsip teknik, bukan hafalan biologi.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan rantai dimer tubulin tersusun menjadi bentuk tabung berongga, dan bentuk tabung inilah yang memberi mikrotubulus kekuatan.",
+  "diskriminator": "Bentuk menentukan sifat mekanik. Tabung berongga menahan tekanan jauh lebih baik daripada batang padat dengan massa yang sama, dan itu prinsip teknik, bukan hafalan biologi."
+ },
+ {
+  "n": 1642,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Jenis gaya yang menurut slide dapat ditahan oleh mikrotubulus adalah",
+  "opsi": [
+   "gaya kompresi",
+   "gaya tarik saja",
+   "gaya puntir saja",
+   "gaya gesek saja",
+   "mikrotubulus tidak menahan gaya apa pun"
+  ],
+  "kunciIndex": 0,
+  "kunci": "gaya kompresi",
+  "rationale": "Slide menuliskan mikrotubulus dapat menahan banyak gaya kompresi dan tetap mempertahankan bentuknya yang berongga, sehingga mampu mempertahankan bentuk sel secara keseluruhan.  —  **Pola Pasangan berlawanan:** Perumpamaan slide menjelaskannya: mikrotubulus ibarat balok baja penopang di gedung tinggi yang melindungi sel dari keruntuhan. Balok penopang menahan tekanan, bukan tarikan.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan mikrotubulus dapat menahan banyak gaya kompresi dan tetap mempertahankan bentuknya yang berongga, sehingga mampu mempertahankan bentuk sel secara keseluruhan.",
+  "diskriminator": "Perumpamaan slide menjelaskannya: mikrotubulus ibarat balok baja penopang di gedung tinggi yang melindungi sel dari keruntuhan. Balok penopang menahan tekanan, bukan tarikan."
+ },
+ {
+  "n": 1643,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Selain menyediakan struktur bagi sel, fungsi kedua mikrotubulus menurut slide adalah",
+  "opsi": [
+   "sebagai cadangan asam amino",
+   "sebagai sistem transportasi",
+   "sebagai penghasil ATP",
+   "sebagai tempat sintesis protein",
+   "sebagai penyimpan kalsium"
+  ],
+  "kunciIndex": 1,
+  "kunci": "sebagai sistem transportasi",
+  "rationale": "Slide menegaskan dengan sorotan bahwa mikrotubulus tidak hanya menyediakan struktur bagi sel, tetapi juga berfungsi sebagai sistem transportasi.  —  **Pola Kategori jawaban:** Dua fungsi yang sama pentingnya. Soal yang hanya menyebut salah satunya biasanya sedang menguji apakah kamu ingat yang kedua.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menegaskan dengan sorotan bahwa mikrotubulus tidak hanya menyediakan struktur bagi sel, tetapi juga berfungsi sebagai sistem transportasi.",
+  "diskriminator": "Dua fungsi yang sama pentingnya. Soal yang hanya menyebut salah satunya biasanya sedang menguji apakah kamu ingat yang kedua."
+ },
+ {
+  "n": 1644,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Protein dari badan Golgi diangkut dalam vesikel yang bergerak di sepanjang filamen sitoskeleton. Struktur manakah yang menjadi jalurnya?",
+  "opsi": [
+   "mikrofilamen",
+   "filamen intermediet",
+   "lamina nuklear",
+   "mikrotubulus",
+   "gap junction"
+  ],
+  "kunciIndex": 3,
+  "kunci": "mikrotubulus",
+  "rationale": "Slide menggambarkan vesikel yang keluar dari Golgi menumpang protein motorik khusus yang berjalan sepanjang mikrotubulus ke seluruh sel, seperti rel kereta api.  —  **Pola Diskriminator konteks:** Perumpamaan REL KERETA API di slide adalah kuncinya. Mikrotubulus adalah relnya, protein motorik adalah lokomotifnya, vesikel adalah muatannya.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menggambarkan vesikel yang keluar dari Golgi menumpang protein motorik khusus yang berjalan sepanjang mikrotubulus ke seluruh sel, seperti rel kereta api.",
+  "diskriminator": "Perumpamaan REL KERETA API di slide adalah kuncinya. Mikrotubulus adalah relnya, protein motorik adalah lokomotifnya, vesikel adalah muatannya."
+ },
+ {
+  "n": 1645,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Dalam perumpamaan slide tentang transportasi intraseluler, yang berperan menarik muatan di sepanjang mikrotubulus adalah",
+  "opsi": [
+   "protein motorik",
+   "tubulin bebas",
+   "ion kalsium",
+   "aktin kortikal",
+   "lamin inti"
+  ],
+  "kunciIndex": 0,
+  "kunci": "protein motorik",
+  "rationale": "Slide menuliskan protein motorik berjalan di sepanjang mikrotubulus sambil menarik muatannya, dan vesikel Golgi adalah muatan yang ditarik menuju membran sel.  —  **Pola Penghasil vs produk:** Bedakan JALUR dari KENDARAAN. Mikrotubulus hanya rel yang diam; yang bergerak dan menarik adalah protein motoriknya.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "PRO",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan protein motorik berjalan di sepanjang mikrotubulus sambil menarik muatannya, dan vesikel Golgi adalah muatan yang ditarik menuju membran sel.",
+  "diskriminator": "Bedakan JALUR dari KENDARAAN. Mikrotubulus hanya rel yang diam; yang bergerak dan menarik adalah protein motoriknya."
+ },
+ {
+  "n": 1646,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Pada gambar transportasi intraseluler, mikrotubulus yang memancar dari satu titik pusat disebut",
+  "opsi": [
+   "mikrotubulus aksonemal",
+   "mikrotubulus kortikal",
+   "mikrotubulus sentrosomal",
+   "mikrotubulus interfase bebas",
+   "mikrotubulus perinuklear"
+  ],
+  "kunciIndex": 2,
+  "kunci": "mikrotubulus sentrosomal",
+  "rationale": "Gambar memberi keterangan centrosomal microtubules untuk serat yang memancar dari satu titik, dan microtubules derived from Golgi complex untuk kelompok lain, masing-masing membawa carrier vesicles dan secretory vesicles.  —  **Pola Nama = petunjuk:** Mikrotubulus tidak hanya berasal dari sentrosom. Gambar ini sengaja menunjukkan ada populasi kedua yang berasal dari kompleks Golgi.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Gambar memberi keterangan centrosomal microtubules untuk serat yang memancar dari satu titik, dan microtubules derived from Golgi complex untuk kelompok lain, masing-masing membawa carrier vesicles dan secretory vesicles.",
+  "diskriminator": "Mikrotubulus tidak hanya berasal dari sentrosom. Gambar ini sengaja menunjukkan ada populasi kedua yang berasal dari kompleks Golgi."
+ },
+ {
+  "n": 1647,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Menurut slide, SILIA adalah",
+  "opsi": [
+   "kumpulan mikrotubulus panjang yang mendorong sel ke satu arah",
+   "kumpulan mikrotubulus pendek yang bergerak seperti gelombang",
+   "tonjolan membran berisi aktin",
+   "untaian filamen intermediet di permukaan sel",
+   "lipatan membran tanpa rangka"
+  ],
+  "kunciIndex": 1,
+  "kunci": "kumpulan mikrotubulus pendek yang bergerak seperti gelombang",
+  "rationale": "Slide memisahkan keduanya dengan tegas: SILIA adalah kumpulan mikrotubulus PENDEK yang bergerak seperti gelombang untuk menggerakkan sel atau memindahkan cairan di sekitar sel; FLAGELA adalah kumpulan mikrotubulus PANJANG yang mendorong atau menarik sel ke satu arah.  —  **Pola Ciri tetangga:** Dua pembeda sekaligus: PANJANGNYA dan POLA GERAKNYA. Silia pendek dan bergelombang; flagela panjang dan mendorong satu arah.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide memisahkan keduanya dengan tegas: SILIA adalah kumpulan mikrotubulus PENDEK yang bergerak seperti gelombang untuk menggerakkan sel atau memindahkan cairan di sekitar sel; FLAGELA adalah kumpulan mikrotubulus PANJANG yang mendorong atau menarik sel ke satu arah.",
+  "diskriminator": "Dua pembeda sekaligus: PANJANGNYA dan POLA GERAKNYA. Silia pendek dan bergelombang; flagela panjang dan mendorong satu arah."
+ },
+ {
+  "n": 1648,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Menurut slide, FLAGELA adalah",
+  "opsi": [
+   "kumpulan mikrotubulus pendek yang bergerak seperti gelombang",
+   "jalinan aktin yang membentuk pseudopodia",
+   "cincin kontraktil aktin-miosin",
+   "lapisan lamin di bawah membran inti",
+   "kumpulan mikrotubulus panjang yang mendorong atau menarik sel ke satu arah"
+  ],
+  "kunciIndex": 4,
+  "kunci": "kumpulan mikrotubulus panjang yang mendorong atau menarik sel ke satu arah",
+  "rationale": "Slide menuliskan flagela sebagai kumpulan mikrotubulus panjang yang dapat mendorong atau menarik sel ke satu arah.  —  **Pola Ciri tetangga:** Pasangan terbalik dari silia. Kalau soal menyebut SATU ARAH, jawabannya flagela; kalau menyebut GELOMBANG atau memindahkan cairan, jawabannya silia.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan flagela sebagai kumpulan mikrotubulus panjang yang dapat mendorong atau menarik sel ke satu arah.",
+  "diskriminator": "Pasangan terbalik dari silia. Kalau soal menyebut SATU ARAH, jawabannya flagela; kalau menyebut GELOMBANG atau memindahkan cairan, jawabannya silia."
+ },
+ {
+  "n": 1649,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Selain motilitas, peran silia yang disebut slide adalah",
+  "opsi": [
+   "fungsi sensorik",
+   "penyimpanan kalsium",
+   "sintesis protein",
+   "produksi ATP",
+   "fagositosis"
+  ],
+  "kunciIndex": 0,
+  "kunci": "fungsi sensorik",
+  "rationale": "Slide menuliskan silia terdapat di banyak organ tubuh dan berperan dalam motilitas serta fungsi sensorik.  —  **Pola Kategori jawaban:** Silia tidak selalu bergerak. Silia primer pada banyak sel justru tidak bergerak dan hanya bertugas merasakan lingkungan, dan itulah fungsi sensorik yang dimaksud.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan silia terdapat di banyak organ tubuh dan berperan dalam motilitas serta fungsi sensorik.",
+  "diskriminator": "Silia tidak selalu bergerak. Silia primer pada banyak sel justru tidak bergerak dan hanya bertugas merasakan lingkungan, dan itulah fungsi sensorik yang dimaksud."
+ },
+ {
+  "n": 1650,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Flagela dan silia tersusun dari protein",
+  "opsi": [
+   "Laminin",
+   "Tubulin",
+   "Keratin",
+   "Desmin",
+   "Mikrofilamen"
+  ],
+  "kunciIndex": 1,
+  "kunci": "Tubulin",
+  "rationale": "**[UB asli · CO 49]** Silia dan flagela berinti mikrotubulus, dan mikrotubulus tersusun dari tubulin. Keratin dan desmin adalah protein filamen intermediet; laminin adalah protein lamina basalis; mikrofilamen bukan nama protein melainkan nama struktur.  —  **Pola Kategori jawaban:** Perhatikan satu opsi yang bukan protein sama sekali: MIKROFILAMEN adalah struktur, bukan protein. Soal menanyakan PROTEIN, jadi opsi itu gugur karena salah kategori.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": "CO 49",
+  "bahas": "Silia dan flagela berinti mikrotubulus, dan mikrotubulus tersusun dari tubulin. Keratin dan desmin adalah protein filamen intermediet; laminin adalah protein lamina basalis; mikrofilamen bukan nama protein melainkan nama struktur.",
+  "diskriminator": "Perhatikan satu opsi yang bukan protein sama sekali: MIKROFILAMEN adalah struktur, bukan protein. Soal menanyakan PROTEIN, jadi opsi itu gugur karena salah kategori."
+ },
+ {
+  "n": 1651,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Pada gambar potongan melintang silia, lengan yang membawa protein motorik disebut",
+  "opsi": [
+   "lengan kinesin",
+   "lengan miosin",
+   "lengan dinein",
+   "lengan vinculin",
+   "lengan talin"
+  ],
+  "kunciIndex": 2,
+  "kunci": "lengan dinein",
+  "rationale": "Gambar silia pada slide memberi keterangan dynein arms with motor proteins, di samping microtubule doublet, central microtubule, dan plasma membrane.  —  **Pola Nama = petunjuk:** Dinein pada silia bekerja menggeser doublet satu terhadap yang lain, dan geseran itulah yang diterjemahkan menjadi lengkungan. Lengkungan berulang menghasilkan gerakan gelombang.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Gambar silia pada slide memberi keterangan dynein arms with motor proteins, di samping microtubule doublet, central microtubule, dan plasma membrane.",
+  "diskriminator": "Dinein pada silia bekerja menggeser doublet satu terhadap yang lain, dan geseran itulah yang diterjemahkan menjadi lengkungan. Lengkungan berulang menghasilkan gerakan gelombang."
+ },
+ {
+  "n": 1652,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Menurut gambar silia pada slide, susunan mikrotubulus di dalamnya terdiri atas",
+  "opsi": [
+   "doublet di tepi dan mikrotubulus sentral",
+   "triplet di tepi tanpa mikrotubulus sentral",
+   "satu tabung tunggal",
+   "jalinan acak tanpa pola",
+   "sembilan triplet dan dua sentral"
+  ],
+  "kunciIndex": 0,
+  "kunci": "doublet di tepi dan mikrotubulus sentral",
+  "rationale": "Gambar memberi keterangan microtubule doublet pada bagian tepi dan central microtubule di bagian tengah, sesuai susunan aksonema yang dikenal sebagai pola sembilan ditambah dua.  —  **Pola Angka & daftar:** Pola DOUBLET di tepi plus SENTRAL di tengah adalah ciri silia dan flagela yang motil. Sentriol dan badan basal justru memakai pola triplet tanpa pasangan sentral.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Gambar memberi keterangan microtubule doublet pada bagian tepi dan central microtubule di bagian tengah, sesuai susunan aksonema yang dikenal sebagai pola sembilan ditambah dua.",
+  "diskriminator": "Pola DOUBLET di tepi plus SENTRAL di tengah adalah ciri silia dan flagela yang motil. Sentriol dan badan basal justru memakai pola triplet tanpa pasangan sentral."
+ },
+ {
+  "n": 1653,
+  "modul": "PPT 12: Sitoskeleton: Mikrotubulus",
+  "q": "Proses dinamika yang khas pada mikrotubulus menurut slide disebut",
+  "opsi": [
+   "treadmilling",
+   "ketidakstabilan dinamis",
+   "polimerisasi terminal",
+   "fosforilasi berantai",
+   "kondensasi aktin"
+  ],
+  "kunciIndex": 1,
+  "kunci": "ketidakstabilan dinamis",
+  "rationale": "Slide memisahkan dua istilah: perakitan filamen aktin atau mikrofilamen disebut treadmilling, sedangkan mikrotubulus mengalami proses yang dikenal sebagai ketidakstabilan dinamis.  —  **Pola Ciri tetangga:** Dua nama untuk dua filamen berbeda, dan slide sengaja menyandingkannya. TREADMILLING untuk aktin, KETIDAKSTABILAN DINAMIS untuk mikrotubulus.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrotubulus",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide memisahkan dua istilah: perakitan filamen aktin atau mikrofilamen disebut treadmilling, sedangkan mikrotubulus mengalami proses yang dikenal sebagai ketidakstabilan dinamis.",
+  "diskriminator": "Dua nama untuk dua filamen berbeda, dan slide sengaja menyandingkannya. TREADMILLING untuk aktin, KETIDAKSTABILAN DINAMIS untuk mikrotubulus."
+ },
+ {
+  "n": 1654,
+  "modul": "PPT 12: Sitoskeleton: Mikrofilamen",
+  "q": "Mikrofilamen tersusun dari",
+  "opsi": [
+   "dimer alfa dan beta tubulin",
+   "berbagai protein seperti keratin dan vimentin",
+   "rantai lamin di bawah membran inti",
+   "dua untaian polimer aktin yang saling terkait",
+   "untaian kolagen tipe I"
+  ],
+  "kunciIndex": 3,
+  "kunci": "dua untaian polimer aktin yang saling terkait",
+  "rationale": "Slide menuliskan mikrofilamen terdiri dari dua untaian polimer aktin yang saling terkait, masing-masing terdiri dari banyak monomer aktin individu.  —  **Pola Nama = petunjuk:** Perhatikan satuan pembangunnya: aktin dirakit dari MONOMER tunggal, sementara mikrotubulus dari DIMER. Beda satuan, beda nama prosesnya.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrofilamen",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan mikrofilamen terdiri dari dua untaian polimer aktin yang saling terkait, masing-masing terdiri dari banyak monomer aktin individu.",
+  "diskriminator": "Perhatikan satuan pembangunnya: aktin dirakit dari MONOMER tunggal, sementara mikrotubulus dari DIMER. Beda satuan, beda nama prosesnya."
+ },
+ {
+  "n": 1655,
+  "modul": "PPT 12: Sitoskeleton: Mikrofilamen",
+  "q": "Bentuk aktin sebagai monomer bebas dan sebagai polimer berturut-turut disebut",
+  "opsi": [
+   "G-aktin dan F-aktin",
+   "F-aktin dan G-aktin",
+   "alfa-aktin dan beta-aktin",
+   "aktin ringan dan aktin berat",
+   "pro-aktin dan aktin matang"
+  ],
+  "kunciIndex": 0,
+  "kunci": "G-aktin dan F-aktin",
+  "rationale": "Gambar mikrofilamen pada slide memberi keterangan G-actin sebagai monomer dan F-actin sebagai polimer.  —  **Pola Nama = petunjuk:** Huruf awalnya menyimpan artinya: G untuk GLOBULAR yaitu bentuk bulat bebas, F untuk FILAMENTOUS yaitu bentuk benang yang sudah dirakit.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrofilamen",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Gambar mikrofilamen pada slide memberi keterangan G-actin sebagai monomer dan F-actin sebagai polimer.",
+  "diskriminator": "Huruf awalnya menyimpan artinya: G untuk GLOBULAR yaitu bentuk bulat bebas, F untuk FILAMENTOUS yaitu bentuk benang yang sudah dirakit."
+ },
+ {
+  "n": 1656,
+  "modul": "PPT 12: Sitoskeleton: Mikrofilamen",
+  "q": "Selain membantu mempertahankan bentuk sel, peran khas mikrofilamen menurut slide adalah",
+  "opsi": [
+   "menjadi jangkar bagi nukleus",
+   "menjadi rel transportasi vesikel",
+   "menjadi kunci untuk mengubah bentuk sel",
+   "menahan gaya kompresi",
+   "menyusun lamina inti"
+  ],
+  "kunciIndex": 2,
+  "kunci": "menjadi kunci untuk mengubah bentuk sel",
+  "rationale": "Slide menuliskan bahwa seperti semua elemen sitoskeletal, mikrofilamen membantu mempertahankan bentuk sel, namun mikrofilamen juga merupakan kunci untuk MENGUBAH bentuk sel.  —  **Pola Pasangan berlawanan:** Mempertahankan dan mengubah terdengar berlawanan, tetapi keduanya ditulis di slide yang sama. Yang khas mikrofilamen adalah kemampuan MENGUBAH, dan itulah yang diuji.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrofilamen",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan bahwa seperti semua elemen sitoskeletal, mikrofilamen membantu mempertahankan bentuk sel, namun mikrofilamen juga merupakan kunci untuk MENGUBAH bentuk sel.",
+  "diskriminator": "Mempertahankan dan mengubah terdengar berlawanan, tetapi keduanya ditulis di slide yang sama. Yang khas mikrofilamen adalah kemampuan MENGUBAH, dan itulah yang diuji."
+ },
+ {
+  "n": 1657,
+  "modul": "PPT 12: Sitoskeleton: Mikrofilamen",
+  "q": "Dua komponen kunci sel otot yang disebut slide berinteraksi pada mikrofilamen adalah",
+  "opsi": [
+   "aktin dan tubulin",
+   "aktin dan miosin",
+   "miosin dan keratin",
+   "tubulin dan dinein",
+   "vimentin dan desmin"
+  ],
+  "kunciIndex": 1,
+  "kunci": "aktin dan miosin",
+  "rationale": "Slide menuliskan filamen aktin berinteraksi dengan filamen lain yang terdiri dari miosin, dua komponen kunci sel otot.  —  **Pola Angka & daftar:** Pasangan aktin dan miosin muncul di hampir setiap topik otot. Di konteks sitoskeleton, yang ditekankan adalah bahwa keduanya juga ada di sel NON-otot.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrofilamen",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan filamen aktin berinteraksi dengan filamen lain yang terdiri dari miosin, dua komponen kunci sel otot.",
+  "diskriminator": "Pasangan aktin dan miosin muncul di hampir setiap topik otot. Di konteks sitoskeleton, yang ditekankan adalah bahwa keduanya juga ada di sel NON-otot."
+ },
+ {
+  "n": 1658,
+  "modul": "PPT 12: Sitoskeleton: Mikrofilamen",
+  "q": "Mekanisme yang memungkinkan sel otot meregang dan menyusut menurut slide adalah",
+  "opsi": [
+   "filamen aktin memendek dengan memutus ikatan peptida",
+   "filamen miosin menggulung seperti per",
+   "mikrotubulus memendek dengan depolimerisasi",
+   "filamen intermediet berkontraksi",
+   "filamen aktin dan miosin meluncur melewati satu sama lain"
+  ],
+  "kunciIndex": 4,
+  "kunci": "filamen aktin dan miosin meluncur melewati satu sama lain",
+  "rationale": "Slide menuliskan filamen miosin memiliki struktur yang dapat memanjang dan berikatan dengan filamen aktin, sehingga kedua filamen tersebut meluncur melewati satu sama lain.  —  **Pola Turunkan dari prinsip:** Filamennya sendiri TIDAK memendek. Yang terjadi adalah pergeseran relatif, dan inilah inti teori sliding filament yang juga dipakai di PPT fisiologi otot.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrofilamen",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan filamen miosin memiliki struktur yang dapat memanjang dan berikatan dengan filamen aktin, sehingga kedua filamen tersebut meluncur melewati satu sama lain.",
+  "diskriminator": "Filamennya sendiri TIDAK memendek. Yang terjadi adalah pergeseran relatif, dan inilah inti teori sliding filament yang juga dipakai di PPT fisiologi otot."
+ },
+ {
+  "n": 1659,
+  "modul": "PPT 12: Sitoskeleton: Mikrofilamen",
+  "q": "Perbedaan cara mikrofilamen memberikan motilitas sel dibandingkan mikrotubulus adalah",
+  "opsi": [
+   "mikrofilamen tidak membentuk struktur eksternal, melainkan menggerakkan sel dengan mengubah bentuknya",
+   "mikrofilamen membentuk silia, mikrotubulus membentuk pseudopodia",
+   "mikrofilamen hanya bekerja pada sel otot",
+   "mikrofilamen menggerakkan sel dengan memutar seperti baling-baling",
+   "tidak ada perbedaan, keduanya sama"
+  ],
+  "kunciIndex": 0,
+  "kunci": "mikrofilamen tidak membentuk struktur eksternal, melainkan menggerakkan sel dengan mengubah bentuknya",
+  "rationale": "Slide menuliskan bahwa seperti mikrotubulus, mikrofilamen juga dapat memberikan motilitas sel, meskipun melalui mekanisme yang berbeda: mereka tidak membentuk struktur eksternal seperti flagela dan silia, namun dapat membantu sel bergerak dengan mengubah bentuknya.  —  **Pola Ciri tetangga:** Mikrotubulus bergerak dengan MENUMBUHKAN JULURAN tetap seperti silia; mikrofilamen bergerak dengan MENGUBAH BENTUK seluruh sel. Struktur luar lawan perubahan bentuk.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrofilamen",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan bahwa seperti mikrotubulus, mikrofilamen juga dapat memberikan motilitas sel, meskipun melalui mekanisme yang berbeda: mereka tidak membentuk struktur eksternal seperti flagela dan silia, namun dapat membantu sel bergerak dengan mengubah bentuknya.",
+  "diskriminator": "Mikrotubulus bergerak dengan MENUMBUHKAN JULURAN tetap seperti silia; mikrofilamen bergerak dengan MENGUBAH BENTUK seluruh sel. Struktur luar lawan perubahan bentuk."
+ },
+ {
+  "n": 1660,
+  "modul": "PPT 12: Sitoskeleton: Mikrofilamen",
+  "q": "Juluran yang dipakai amoeba untuk merangkak melintasi permukaan menurut slide disebut",
+  "opsi": [
+   "silia",
+   "pseudopodia",
+   "flagela",
+   "mikrovili",
+   "stereosilia"
+  ],
+  "kunciIndex": 1,
+  "kunci": "pseudopodia",
+  "rationale": "Slide memberi contoh amoeba yang menggunakan gerakan perubahan bentuk untuk merangkak melintasi permukaan menggunakan ekstensi yang disebut pseudopodia, atau kaki palsu.  —  **Pola Nama = petunjuk:** PSEUDO berarti palsu dan PODIA berarti kaki. Namanya sudah menyebut bahwa itu bukan organel tetap, melainkan tonjolan sementara dari sitoplasma berisi aktin.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrofilamen",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide memberi contoh amoeba yang menggunakan gerakan perubahan bentuk untuk merangkak melintasi permukaan menggunakan ekstensi yang disebut pseudopodia, atau kaki palsu.",
+  "diskriminator": "PSEUDO berarti palsu dan PODIA berarti kaki. Namanya sudah menyebut bahwa itu bukan organel tetap, melainkan tonjolan sementara dari sitoplasma berisi aktin."
+ },
+ {
+  "n": 1661,
+  "modul": "PPT 12: Sitoskeleton: Mikrofilamen",
+  "q": "Kelainan pada komponen sitoskeleton yang menyebabkan ketidakmampuan otot berkontraksi adalah",
+  "opsi": [
+   "Filamen intermediet",
+   "Mikrotubulus",
+   "Mikrofilamen",
+   "cAMP",
+   "Sitosol"
+  ],
+  "kunciIndex": 2,
+  "kunci": "Mikrofilamen",
+  "rationale": "**[UB asli · CO 39 / CO 60]** Mikrofilamen tersusun dari aktin, dan aktin adalah filamen tipis yang ditarik miosin saat kontraksi. Dua opsi terakhir bahkan bukan komponen sitoskeleton: cAMP adalah molekul sinyal dan sitosol adalah cairan sel.  —  **Pola Kategori jawaban:** Buang dulu opsi yang salah KATEGORI sebelum menimbang isinya. Sitoskeleton hanya tiga; apa pun di luar ketiganya gugur tanpa perlu dipikir.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrofilamen",
+  "pola": "KAT",
+  "ubAsli": true,
+  "kodeUB": "CO 39 / CO 60",
+  "bahas": "Mikrofilamen tersusun dari aktin, dan aktin adalah filamen tipis yang ditarik miosin saat kontraksi. Dua opsi terakhir bahkan bukan komponen sitoskeleton: cAMP adalah molekul sinyal dan sitosol adalah cairan sel.",
+  "diskriminator": "Buang dulu opsi yang salah KATEGORI sebelum menimbang isinya. Sitoskeleton hanya tiga; apa pun di luar ketiganya gugur tanpa perlu dipikir."
+ },
+ {
+  "n": 1662,
+  "modul": "PPT 12: Sitoskeleton: Mikrofilamen",
+  "q": "Setelah mitosis selesai, struktur aktin yang menjepit sel menjadi dua disebut",
+  "opsi": [
+   "cincin kontraktil",
+   "gelendong mitosis",
+   "lamina inti",
+   "aksonema",
+   "sentrosom"
+  ],
+  "kunciIndex": 0,
+  "kunci": "cincin kontraktil",
+  "rationale": "Slide menuliskan filamen aktin membentuk cincin di sekeliling pusat sel di antara kedua inti baru; cincin ini menggunakan gerakan aktin-miosin untuk menyempit, menekan sel di tengah dan menjepitnya menjadi dua sel baru. Gambar memberi keterangan contractile ring of microfilaments.  —  **Pola Nama = petunjuk:** Bagi tugasnya: MIKROTUBULUS menarik kromosom lewat gelendong, MIKROFILAMEN memotong selnya lewat cincin. Dua elemen, dua tahap berbeda pada pembelahan yang sama.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrofilamen",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan filamen aktin membentuk cincin di sekeliling pusat sel di antara kedua inti baru; cincin ini menggunakan gerakan aktin-miosin untuk menyempit, menekan sel di tengah dan menjepitnya menjadi dua sel baru. Gambar memberi keterangan contractile ring of microfilaments.",
+  "diskriminator": "Bagi tugasnya: MIKROTUBULUS menarik kromosom lewat gelendong, MIKROFILAMEN memotong selnya lewat cincin. Dua elemen, dua tahap berbeda pada pembelahan yang sama."
+ },
+ {
+  "n": 1663,
+  "modul": "PPT 12: Sitoskeleton: Mikrofilamen",
+  "q": "Lekukan pada permukaan sel yang menandai tempat pembelahan sitoplasma disebut",
+  "opsi": [
+   "cement line",
+   "cleavage furrow",
+   "sealing zone",
+   "ruffled border",
+   "zona pelusida"
+  ],
+  "kunciIndex": 1,
+  "kunci": "cleavage furrow",
+  "rationale": "Gambar sitokinesis pada slide memberi keterangan cleavage furrow pada tahap telofase, yang kemudian menyempit oleh cincin kontraktil mikrofilamen.  —  **Pola Nama = petunjuk:** Lekukan itu adalah tampak LUAR dari cincin aktin yang mengetat di dalam. Satu peristiwa, dua nama, tergantung dilihat dari luar atau dari dalam.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrofilamen",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Gambar sitokinesis pada slide memberi keterangan cleavage furrow pada tahap telofase, yang kemudian menyempit oleh cincin kontraktil mikrofilamen.",
+  "diskriminator": "Lekukan itu adalah tampak LUAR dari cincin aktin yang mengetat di dalam. Satu peristiwa, dua nama, tergantung dilihat dari luar atau dari dalam."
+ },
+ {
+  "n": 1664,
+  "modul": "PPT 12: Sitoskeleton: Mikrofilamen",
+  "q": "Proses dinamika yang khas pada perakitan filamen aktin menurut slide disebut",
+  "opsi": [
+   "ketidakstabilan dinamis",
+   "mekanotransduksi",
+   "mekanosensing",
+   "treadmilling",
+   "remodeling lamin"
+  ],
+  "kunciIndex": 3,
+  "kunci": "treadmilling",
+  "rationale": "Slide menuliskan saat perakitan filamen aktin atau mikrofilamen, proses ini disebut sebagai treadmilling, sedangkan mikrotubulus mengalami ketidakstabilan dinamis.  —  **Pola Ciri tetangga:** Treadmilling berarti satu ujung bertambah sementara ujung lain berkurang, sehingga panjang filamen tetap tetapi posisinya bergeser, persis seperti orang berjalan di atas treadmill.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrofilamen",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan saat perakitan filamen aktin atau mikrofilamen, proses ini disebut sebagai treadmilling, sedangkan mikrotubulus mengalami ketidakstabilan dinamis.",
+  "diskriminator": "Treadmilling berarti satu ujung bertambah sementara ujung lain berkurang, sehingga panjang filamen tetap tetapi posisinya bergeser, persis seperti orang berjalan di atas treadmill."
+ },
+ {
+  "n": 1665,
+  "modul": "PPT 12: Sitoskeleton: Mikrofilamen",
+  "q": "Pada gambar mikrofilamen, dua protein pengatur yang tampak melekat pada untaian aktin adalah",
+  "opsi": [
+   "tropomiosin dan troponin",
+   "talin dan vinculin",
+   "keratin dan vimentin",
+   "dinein dan kinesin",
+   "integrin dan cadherin"
+  ],
+  "kunciIndex": 0,
+  "kunci": "tropomiosin dan troponin",
+  "rationale": "Gambar microfilaments pada slide memberi keterangan TROPOMYOSIN dan TROPONIN pada untaian F-actin, di samping myosin filament.  —  **Pola Nama = petunjuk:** Dua nama ini kembali muncul di PPT fisiologi otot sebagai penjaga tempat ikatan miosin. Di sini mereka diperkenalkan sebagai bagian struktur mikrofilamen.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mikrofilamen",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Gambar microfilaments pada slide memberi keterangan TROPOMYOSIN dan TROPONIN pada untaian F-actin, di samping myosin filament.",
+  "diskriminator": "Dua nama ini kembali muncul di PPT fisiologi otot sebagai penjaga tempat ikatan miosin. Di sini mereka diperkenalkan sebagai bagian struktur mikrofilamen."
+ },
+ {
+  "n": 1666,
+  "modul": "PPT 12: Sitoskeleton: Filamen Intermediet",
+  "q": "Berbeda dari dua elemen sitoskeletal lain, filamen intermediet ditentukan oleh",
+  "opsi": [
+   "komposisi monomer tunggalnya",
+   "kecepatan polimerisasinya",
+   "ukurannya",
+   "letaknya di dalam sel",
+   "muatan listriknya"
+  ],
+  "kunciIndex": 2,
+  "kunci": "ukurannya",
+  "rationale": "Slide menuliskan intermediate filamen tidak ditentukan oleh komposisi monomer tunggalnya karena terdapat banyak jenis protein filamen perantara; filamen perantara ditentukan oleh UKURANNYA.  —  **Pola Pasangan berlawanan:** Mikrotubulus dan mikrofilamen didefinisikan oleh PROTEINNYA, yaitu tubulin dan aktin. Filamen intermediet adalah pengecualian karena didefinisikan oleh DIAMETERNYA.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Filamen Intermediet",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan intermediate filamen tidak ditentukan oleh komposisi monomer tunggalnya karena terdapat banyak jenis protein filamen perantara; filamen perantara ditentukan oleh UKURANNYA.",
+  "diskriminator": "Mikrotubulus dan mikrofilamen didefinisikan oleh PROTEINNYA, yaitu tubulin dan aktin. Filamen intermediet adalah pengecualian karena didefinisikan oleh DIAMETERNYA."
+ },
+ {
+  "n": 1667,
+  "modul": "PPT 12: Sitoskeleton: Filamen Intermediet",
+  "q": "Berapa diameter rata-rata filamen perantara menurut slide?",
+  "opsi": [
+   "7 nm",
+   "10 nm",
+   "25 nm",
+   "50 nm",
+   "2 nm"
+  ],
+  "kunciIndex": 1,
+  "kunci": "10 nm",
+  "rationale": "Slide menuliskan diameter rata-rata filamen perantara adalah 10 nm, tetapi diameternya bervariasi berdasarkan jenis protein penyusunnya.  —  **Pola Angka & daftar:** Angka 10 nm inilah yang menjadi definisinya, dan letaknya persis di tengah antara 7 nm mikrofilamen dan 25 nm mikrotubulus. Dari situlah kata INTERMEDIET berasal.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Filamen Intermediet",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan diameter rata-rata filamen perantara adalah 10 nm, tetapi diameternya bervariasi berdasarkan jenis protein penyusunnya.",
+  "diskriminator": "Angka 10 nm inilah yang menjadi definisinya, dan letaknya persis di tengah antara 7 nm mikrofilamen dan 25 nm mikrotubulus. Dari situlah kata INTERMEDIET berasal."
+ },
+ {
+  "n": 1668,
+  "modul": "PPT 12: Sitoskeleton: Filamen Intermediet",
+  "q": "Sifat yang membedakan filamen perantara dari elemen sitoskeletal lain menurut slide adalah",
+  "opsi": [
+   "paling dinamis sehingga cepat berubah bentuk",
+   "hanya ditemukan pada sel otot",
+   "tidak pernah mengalami perubahan sama sekali",
+   "hanya terdapat di dalam inti sel",
+   "kurang dinamis sehingga memberi stabilitas lebih pada sel"
+  ],
+  "kunciIndex": 4,
+  "kunci": "kurang dinamis sehingga memberi stabilitas lebih pada sel",
+  "rationale": "Slide menuliskan filamen perantara kurang dinamis dibandingkan elemen sitoskeletal lainnya, berubah bentuk lebih jarang sehingga bisa memberikan stabilitas lebih pada sel.  —  **Pola Pasangan berlawanan:** Pembagian peran yang rapi: dua elemen lain untuk BERUBAH, filamen intermediet untuk BERTAHAN. Sel butuh keduanya sekaligus.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Filamen Intermediet",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan filamen perantara kurang dinamis dibandingkan elemen sitoskeletal lainnya, berubah bentuk lebih jarang sehingga bisa memberikan stabilitas lebih pada sel.",
+  "diskriminator": "Pembagian peran yang rapi: dua elemen lain untuk BERUBAH, filamen intermediet untuk BERTAHAN. Sel butuh keduanya sekaligus."
+ },
+ {
+  "n": 1669,
+  "modul": "PPT 12: Sitoskeleton: Filamen Intermediet",
+  "q": "Menurut slide, stabilitas filamen perantara menjadikannya cocok sebagai",
+  "opsi": [
+   "jangkar bagi organel yang tidak perlu bergerak seperti nukleus",
+   "rel transportasi vesikel sekretorik",
+   "mesin kontraksi sel otot",
+   "pembentuk silia dan flagela",
+   "pembentuk cincin pembelahan sel"
+  ],
+  "kunciIndex": 0,
+  "kunci": "jangkar bagi organel yang tidak perlu bergerak seperti nukleus",
+  "rationale": "Slide menuliskan stabilitas filamen perantara menjadikannya sangat baik sebagai jangkar bagi organel yang tidak perlu bergerak, seperti nukleus, dan gambar menunjukkannya mengelilingi nukleus untuk menjaga posisinya tetap stabil.  —  **Pola Turunkan dari prinsip:** Sifat dan fungsi saling menurunkan: yang jarang berubah cocok untuk MENAMBATKAN, yang sering berubah cocok untuk MEMINDAHKAN.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Filamen Intermediet",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan stabilitas filamen perantara menjadikannya sangat baik sebagai jangkar bagi organel yang tidak perlu bergerak, seperti nukleus, dan gambar menunjukkannya mengelilingi nukleus untuk menjaga posisinya tetap stabil.",
+  "diskriminator": "Sifat dan fungsi saling menurunkan: yang jarang berubah cocok untuk MENAMBATKAN, yang sering berubah cocok untuk MEMINDAHKAN."
+ },
+ {
+  "n": 1670,
+  "modul": "PPT 12: Sitoskeleton: Filamen Intermediet",
+  "q": "Filamen perantara yang menyusun lamina inti disebut",
+  "opsi": [
+   "laminin",
+   "lamin",
+   "vimentin",
+   "desmin",
+   "keratin"
+  ],
+  "kunciIndex": 1,
+  "kunci": "lamin",
+  "rationale": "Slide menuliskan filamen perantara yang disebut lamin menyusun lamina inti, yaitu lapisan filamen tepat di dalam membran inti yang memberikan dukungan struktural dan mengatur beberapa aktivitas di dalam inti.  —  **Pola Nama = petunjuk:** Hati-hati dengan LAMININ yang berbeda satu huruf: laminin adalah protein LAMINA BASALIS di luar sel, sedangkan LAMIN ada di dalam inti sel.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Filamen Intermediet",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan filamen perantara yang disebut lamin menyusun lamina inti, yaitu lapisan filamen tepat di dalam membran inti yang memberikan dukungan struktural dan mengatur beberapa aktivitas di dalam inti.",
+  "diskriminator": "Hati-hati dengan LAMININ yang berbeda satu huruf: laminin adalah protein LAMINA BASALIS di luar sel, sedangkan LAMIN ada di dalam inti sel."
+ },
+ {
+  "n": 1671,
+  "modul": "PPT 12: Sitoskeleton: Filamen Intermediet",
+  "q": "Lamina inti menurut slide terletak",
+  "opsi": [
+   "tepat di luar membran inti",
+   "di dalam nukleolus",
+   "tepat di dalam membran inti",
+   "di sepanjang retikulum endoplasma",
+   "di bawah membran plasma"
+  ],
+  "kunciIndex": 2,
+  "kunci": "tepat di dalam membran inti",
+  "rationale": "Slide menuliskan lamina inti adalah lapisan filamen tepat di dalam membran inti yang memberikan dukungan struktural dan mengatur beberapa aktivitas di dalam inti.  —  **Pola Diskriminator konteks:** Kata DI DALAM menentukan. Lamina inti melapisi sisi nukleoplasma dari membran inti, bukan sisi sitoplasma.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Filamen Intermediet",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan lamina inti adalah lapisan filamen tepat di dalam membran inti yang memberikan dukungan struktural dan mengatur beberapa aktivitas di dalam inti.",
+  "diskriminator": "Kata DI DALAM menentukan. Lamina inti melapisi sisi nukleoplasma dari membran inti, bukan sisi sitoplasma."
+ },
+ {
+  "n": 1672,
+  "modul": "PPT 12: Sitoskeleton: Filamen Intermediet",
+  "q": "Pada gambar filamen intermediet, peristiwa yang memicu pembongkaran dan reorganisasinya adalah",
+  "opsi": [
+   "fosforilasi dan modifikasi pascatranslasi lain saat mitosis, stres sel, atau mutasi",
+   "penurunan suhu tubuh",
+   "peningkatan kadar kalsium darah",
+   "pelepasan ATP dari mitokondria",
+   "pengikatan oleh integrin"
+  ],
+  "kunciIndex": 0,
+  "kunci": "fosforilasi dan modifikasi pascatranslasi lain saat mitosis, stres sel, atau mutasi",
+  "rationale": "Gambar menuliskan IF phosphorylation and/or other PTMs dengan tiga pemicu: mitosis, cell stress, dan mutation, yang menghasilkan disassembly dan reorganization.  —  **Pola Turunkan dari prinsip:** Walaupun disebut kurang dinamis, filamen intermediet tetap bisa dibongkar, hanya saja butuh sinyal khusus berupa modifikasi kimia. Kurang dinamis bukan berarti tidak pernah berubah.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Filamen Intermediet",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Gambar menuliskan IF phosphorylation and/or other PTMs dengan tiga pemicu: mitosis, cell stress, dan mutation, yang menghasilkan disassembly dan reorganization.",
+  "diskriminator": "Walaupun disebut kurang dinamis, filamen intermediet tetap bisa dibongkar, hanya saja butuh sinyal khusus berupa modifikasi kimia. Kurang dinamis bukan berarti tidak pernah berubah."
+ },
+ {
+  "n": 1673,
+  "modul": "PPT 12: Sitoskeleton: Filamen Intermediet",
+  "q": "Contoh protein penyusun filamen intermediet menurut tabel ringkasan slide adalah",
+  "opsi": [
+   "aktin dan miosin",
+   "keratin dan vimentin",
+   "alfa-tubulin dan beta-tubulin",
+   "talin dan vinculin",
+   "kinesin dan dinein"
+  ],
+  "kunciIndex": 1,
+  "kunci": "keratin dan vimentin",
+  "rationale": "Tabel menuliskan filamen intermediet disusun oleh berbagai protein, misalnya keratin dan vimentin, dengan catatan tipe berbeda tergantung jenis sel.  —  **Pola Angka & daftar:** Justru keragaman inilah yang menjadi ciri khasnya. Jenis protein filamen intermediet dapat dipakai untuk menebak ASAL SEL, dan itu dipakai dalam patologi tumor.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Filamen Intermediet",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Tabel menuliskan filamen intermediet disusun oleh berbagai protein, misalnya keratin dan vimentin, dengan catatan tipe berbeda tergantung jenis sel.",
+  "diskriminator": "Justru keragaman inilah yang menjadi ciri khasnya. Jenis protein filamen intermediet dapat dipakai untuk menebak ASAL SEL, dan itu dipakai dalam patologi tumor."
+ },
+ {
+  "n": 1674,
+  "modul": "PPT 12: Sitoskeleton: Filamen Intermediet",
+  "q": "Menurut tabel ringkasan slide, fungsi utama filamen intermediet adalah",
+  "opsi": [
+   "transportasi intraseluler dan pembelahan sel",
+   "kontraksi sel dan perubahan bentuk sel",
+   "menyusun silia dan flagela",
+   "menjaga stabilitas dan integritas sel serta menahan stres mekanik",
+   "endositosis dan eksositosis"
+  ],
+  "kunciIndex": 3,
+  "kunci": "menjaga stabilitas dan integritas sel serta menahan stres mekanik",
+  "rationale": "Tabel menuliskan fungsi utama filamen intermediet adalah menjaga stabilitas dan integritas sel serta menahan stres mekanik; transportasi dan pembelahan adalah urusan mikrotubulus, sementara kontraksi dan perubahan bentuk urusan mikrofilamen.  —  **Pola Kategori jawaban:** Baca tabel ini per KOLOM FUNGSI, bukan per baris. Setiap fungsi hampir selalu dipegang satu elemen saja, dan itulah yang membuat distraktornya mudah dipatahkan.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Filamen Intermediet",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Tabel menuliskan fungsi utama filamen intermediet adalah menjaga stabilitas dan integritas sel serta menahan stres mekanik; transportasi dan pembelahan adalah urusan mikrotubulus, sementara kontraksi dan perubahan bentuk urusan mikrofilamen.",
+  "diskriminator": "Baca tabel ini per KOLOM FUNGSI, bukan per baris. Setiap fungsi hampir selalu dipegang satu elemen saja, dan itulah yang membuat distraktornya mudah dipatahkan."
+ },
+ {
+  "n": 1675,
+  "modul": "PPT 12: Sitoskeleton: Filamen Intermediet",
+  "q": "Pernyataan yang BENAR mengenai dinamika filamen sitoskeletal menurut slide adalah",
+  "opsi": [
+   "semua filamen sitoskeletal terus berpolimerisasi dan berdepolimerisasi, kecuali filamen perantara",
+   "semua filamen sitoskeletal bersifat statis",
+   "hanya mikrotubulus yang dinamis",
+   "hanya mikrofilamen yang dinamis",
+   "filamen perantara paling dinamis di antara ketiganya"
+  ],
+  "kunciIndex": 0,
+  "kunci": "semua filamen sitoskeletal terus berpolimerisasi dan berdepolimerisasi, kecuali filamen perantara",
+  "rationale": "Slide menuliskan kecuali filamen perantara, filamen sitoskeletal terus-menerus mengalami siklus polimerisasi dan depolimerisasi.  —  **Pola Dua kerangka:** Satu kata KECUALI membagi tiga elemen menjadi dua kubu. Dua yang dinamis punya nama prosesnya sendiri; satu yang stabil tidak.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Filamen Intermediet",
+  "pola": "KER",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan kecuali filamen perantara, filamen sitoskeletal terus-menerus mengalami siklus polimerisasi dan depolimerisasi.",
+  "diskriminator": "Satu kata KECUALI membagi tiga elemen menjadi dua kubu. Dua yang dinamis punya nama prosesnya sendiri; satu yang stabil tidak."
+ },
+ {
+  "n": 1676,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Mekanobiologi menurut slide adalah cabang ilmu yang mempelajari",
+  "opsi": [
+   "bagaimana sel menghasilkan energi mekanik",
+   "bagaimana tulang menahan beban tubuh",
+   "bagaimana gaya mekanik memengaruhi perilaku sel dan jaringan",
+   "bagaimana otot menghasilkan gerakan sendi",
+   "bagaimana obat memengaruhi reseptor sel"
+  ],
+  "kunciIndex": 2,
+  "kunci": "bagaimana gaya mekanik memengaruhi perilaku sel dan jaringan",
+  "rationale": "Slide mendefinisikan mekanobiologi sebagai cabang ilmu yang mempelajari bagaimana gaya mekanik memengaruhi perilaku sel dan jaringan, dengan contoh gaya berupa tekanan, regangan, kekakuan substrat, dan gaya gesek.  —  **Pola Nama = petunjuk:** Arah pengaruhnya penting: dari GAYA menuju PERILAKU SEL, bukan sebaliknya. Sel menjadi pembaca gaya, bukan penghasilnya.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide mendefinisikan mekanobiologi sebagai cabang ilmu yang mempelajari bagaimana gaya mekanik memengaruhi perilaku sel dan jaringan, dengan contoh gaya berupa tekanan, regangan, kekakuan substrat, dan gaya gesek.",
+  "diskriminator": "Arah pengaruhnya penting: dari GAYA menuju PERILAKU SEL, bukan sebaliknya. Sel menjadi pembaca gaya, bukan penghasilnya."
+ },
+ {
+  "n": 1677,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Berikut termasuk contoh gaya mekanik yang disebut slide, KECUALI",
+  "opsi": [
+   "tekanan",
+   "gradien pH",
+   "regangan",
+   "kekakuan substrat",
+   "gaya gesek"
+  ],
+  "kunciIndex": 1,
+  "kunci": "gradien pH",
+  "rationale": "Slide menuliskan contoh gaya mekanik: tekanan, regangan, kekakuan substrat, dan gaya gesek. Gradien pH adalah rangsangan kimia, bukan mekanik.  —  **Pola Kategori jawaban:** Semua gaya mekanik bisa diukur dalam satuan gaya atau tekanan. Rangsangan kimia tidak bisa, dan itulah penyaringnya.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan contoh gaya mekanik: tekanan, regangan, kekakuan substrat, dan gaya gesek. Gradien pH adalah rangsangan kimia, bukan mekanik.",
+  "diskriminator": "Semua gaya mekanik bisa diukur dalam satuan gaya atau tekanan. Rangsangan kimia tidak bisa, dan itulah penyaringnya."
+ },
+ {
+  "n": 1678,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Mekanosensing menurut slide adalah proses ketika",
+  "opsi": [
+   "sel mengubah rangsangan mekanik menjadi sinyal biokimia",
+   "sel menghasilkan gaya untuk bergerak",
+   "sel menyimpan energi mekanik dalam sitoskeleton",
+   "sel mengubah bentuk nukleusnya",
+   "sel merasakan gaya mekanik melalui adhesi sel-matriks atau sel-sel"
+  ],
+  "kunciIndex": 4,
+  "kunci": "sel merasakan gaya mekanik melalui adhesi sel-matriks atau sel-sel",
+  "rationale": "Slide memisahkan dua istilah: MEKANOSENSING adalah sel merasakan gaya mekanik melalui adhesi sel-matriks lewat integrin atau sel-sel lewat cadherin; MEKANOTRANSDUKSI adalah gaya yang dirasakan diteruskan ke dalam sel melalui sitoskeleton sehingga memicu respons biologis.  —  **Pola Ciri tetangga:** Urutannya: MERASAKAN dulu, baru MENERUSKAN. Mekanosensing di pintu masuk, mekanotransduksi di jalur dalam.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide memisahkan dua istilah: MEKANOSENSING adalah sel merasakan gaya mekanik melalui adhesi sel-matriks lewat integrin atau sel-sel lewat cadherin; MEKANOTRANSDUKSI adalah gaya yang dirasakan diteruskan ke dalam sel melalui sitoskeleton sehingga memicu respons biologis.",
+  "diskriminator": "Urutannya: MERASAKAN dulu, baru MENERUSKAN. Mekanosensing di pintu masuk, mekanotransduksi di jalur dalam."
+ },
+ {
+  "n": 1679,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Mekanotransduksi menurut slide adalah proses ketika",
+  "opsi": [
+   "sel mengubah rangsangan mekanik menjadi sinyal biokimia",
+   "sel merasakan gaya lewat integrin dan cadherin",
+   "sel menghasilkan gaya tarik pada matriks",
+   "sel memindahkan vesikel sepanjang mikrotubulus",
+   "sel membelah diri menjadi dua"
+  ],
+  "kunciIndex": 0,
+  "kunci": "sel mengubah rangsangan mekanik menjadi sinyal biokimia",
+  "rationale": "Slide mendefinisikan mekanotransduksi sebagai proses di mana sel mengubah rangsangan mekanik menjadi sinyal biokimia di dalam sel, dengan contoh rangsangan berupa tekanan, regangan, kekakuan substrat, tarikan antar sel, atau aliran cairan.  —  **Pola Ciri tetangga:** Kata kuncinya adalah PENGUBAHAN BENTUK SINYAL: dari mekanik menjadi biokimia. Kalau tidak ada perubahan jenis sinyal, itu bukan transduksi.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "TTG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide mendefinisikan mekanotransduksi sebagai proses di mana sel mengubah rangsangan mekanik menjadi sinyal biokimia di dalam sel, dengan contoh rangsangan berupa tekanan, regangan, kekakuan substrat, tarikan antar sel, atau aliran cairan.",
+  "diskriminator": "Kata kuncinya adalah PENGUBAHAN BENTUK SINYAL: dari mekanik menjadi biokimia. Kalau tidak ada perubahan jenis sinyal, itu bukan transduksi."
+ },
+ {
+  "n": 1680,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Protein yang menurut slide menempelkan sel ke matriks ekstraseluler adalah",
+  "opsi": [
+   "cadherin",
+   "integrin",
+   "laminin",
+   "vinculin",
+   "lamin"
+  ],
+  "kunciIndex": 1,
+  "kunci": "integrin",
+  "rationale": "Slide memisahkan dua jalur adhesi: ADHESI SEL-MATRIKS menggunakan INTEGRIN, dan ADHESI ANTARSEL menggunakan CADHERIN. Keduanya terhubung ke sitoskeleton, terutama mikrofilamen.  —  **Pola Pasangan berlawanan:** Pasangkan sekali: INTEGRIN menghubungkan sel ke MATRIKS, CADHERIN menghubungkan sel ke SEL. Soal yang menyebut matriks atau ECM selalu menunjuk integrin.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide memisahkan dua jalur adhesi: ADHESI SEL-MATRIKS menggunakan INTEGRIN, dan ADHESI ANTARSEL menggunakan CADHERIN. Keduanya terhubung ke sitoskeleton, terutama mikrofilamen.",
+  "diskriminator": "Pasangkan sekali: INTEGRIN menghubungkan sel ke MATRIKS, CADHERIN menghubungkan sel ke SEL. Soal yang menyebut matriks atau ECM selalu menunjuk integrin."
+ },
+ {
+  "n": 1681,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Protein yang menurut slide mengikat sel satu dengan sel lainnya dalam jaringan adalah",
+  "opsi": [
+   "integrin",
+   "laminin",
+   "cadherin",
+   "talin",
+   "tubulin"
+  ],
+  "kunciIndex": 2,
+  "kunci": "cadherin",
+  "rationale": "Slide menuliskan adhesi antar sel menggunakan cadherin, yaitu protein yang mengikat sel satu dengan sel lainnya dalam jaringan, dan cadherin juga terhubung ke sitoskeleton khususnya mikrofilamen.  —  **Pola Pasangan berlawanan:** Pasangan terbalik dari integrin. Kedua jalur bermuara ke tempat yang sama, yaitu mikrofilamen, hanya berbeda dari mana gaya datang.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan adhesi antar sel menggunakan cadherin, yaitu protein yang mengikat sel satu dengan sel lainnya dalam jaringan, dan cadherin juga terhubung ke sitoskeleton khususnya mikrofilamen.",
+  "diskriminator": "Pasangan terbalik dari integrin. Kedua jalur bermuara ke tempat yang sama, yaitu mikrofilamen, hanya berbeda dari mana gaya datang."
+ },
+ {
+  "n": 1682,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Elemen sitoskeletal yang menurut slide terhubung langsung ke integrin maupun cadherin adalah",
+  "opsi": [
+   "mikrofilamen",
+   "mikrotubulus",
+   "filamen intermediet",
+   "lamin inti",
+   "sentrosom"
+  ],
+  "kunciIndex": 0,
+  "kunci": "mikrofilamen",
+  "rationale": "Slide menuliskan integrin terhubung langsung ke sitoskeleton terutama mikrofilamen atau aktin, dan cadherin juga terhubung ke sitoskeleton khususnya mikrofilamen.  —  **Pola Dua kerangka:** Dua jalur adhesi yang berbeda, satu titik temu yang sama. Itu sebabnya aktin menjadi pusat semua pembicaraan mekanotransduksi.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "KER",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan integrin terhubung langsung ke sitoskeleton terutama mikrofilamen atau aktin, dan cadherin juga terhubung ke sitoskeleton khususnya mikrofilamen.",
+  "diskriminator": "Dua jalur adhesi yang berbeda, satu titik temu yang sama. Itu sebabnya aktin menjadi pusat semua pembicaraan mekanotransduksi."
+ },
+ {
+  "n": 1683,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Menurut slide, sitoskeleton berperan sebagai",
+  "opsi": [
+   "sumber energi bagi reaksi biokimia sel",
+   "jembatan penghubung antara gaya mekanik di luar dan sistem sinyal di dalam sel",
+   "penyimpan informasi genetik cadangan",
+   "penghalang masuknya zat asing ke dalam sel",
+   "pengganti membran sel saat rusak"
+  ],
+  "kunciIndex": 1,
+  "kunci": "jembatan penghubung antara gaya mekanik di luar dan sistem sinyal di dalam sel",
+  "rationale": "Slide menyimpulkan bahwa sitoskeleton adalah jembatan penghubung antara lingkungan luar berupa gaya mekanik dan sistem sinyal di dalam sel, bekerja sama dengan integrin dan cadherin.  —  **Pola Turunkan dari prinsip:** Kata JEMBATAN merangkum seluruh bab mekanobiologi. Tanpa jembatan itu, gaya dari luar berhenti di membran dan tidak pernah sampai ke inti.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menyimpulkan bahwa sitoskeleton adalah jembatan penghubung antara lingkungan luar berupa gaya mekanik dan sistem sinyal di dalam sel, bekerja sama dengan integrin dan cadherin.",
+  "diskriminator": "Kata JEMBATAN merangkum seluruh bab mekanobiologi. Tanpa jembatan itu, gaya dari luar berhenti di membran dan tidak pernah sampai ke inti."
+ },
+ {
+  "n": 1684,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Jalur pensinyalan yang menurut slide diaktifkan oleh tegangan dalam sitoskeleton adalah",
+  "opsi": [
+   "RANK/RANKL/OPG",
+   "cAMP dan protein kinase A saja",
+   "jalur komplemen",
+   "YAP/TAZ, MAPK, dan PI3K/AKT",
+   "jalur koagulasi intrinsik"
+  ],
+  "kunciIndex": 3,
+  "kunci": "YAP/TAZ, MAPK, dan PI3K/AKT",
+  "rationale": "Slide menuliskan tegangan dalam sitoskeleton bisa mengaktifkan jalur pensinyalan seperti YAP/TAZ, MAPK, atau PI3K/AKT, yang mengatur pertumbuhan, diferensiasi, hingga apoptosis.  —  **Pola Angka & daftar:** Ketiganya adalah jalur pertumbuhan dan kelangsungan hidup sel. Dari situ masuk akal kenapa gangguan mekanik dapat berujung pada kanker.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan tegangan dalam sitoskeleton bisa mengaktifkan jalur pensinyalan seperti YAP/TAZ, MAPK, atau PI3K/AKT, yang mengatur pertumbuhan, diferensiasi, hingga apoptosis.",
+  "diskriminator": "Ketiganya adalah jalur pertumbuhan dan kelangsungan hidup sel. Dari situ masuk akal kenapa gangguan mekanik dapat berujung pada kanker."
+ },
+ {
+  "n": 1685,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Menurut tabel contoh mekanotransduksi, osteosit merespons tekanan dari aktivitas fisik melalui",
+  "opsi": [
+   "aktin yang mentransmisikan sinyal ke inti untuk memicu pembentukan tulang",
+   "mikrotubulus yang memindahkan kalsium ke matriks",
+   "filamen intermediet yang memadatkan matriks",
+   "cadherin yang mengikat osteosit ke osteoklas",
+   "lamin yang mengeraskan membran inti"
+  ],
+  "kunciIndex": 0,
+  "kunci": "aktin yang mentransmisikan sinyal ke inti untuk memicu pembentukan tulang",
+  "rationale": "Tabel contoh mekanotransduksi menuliskan sel tulang osteosit merespons tekanan dari aktivitas fisik, dengan peran sitoskeleton berupa aktin yang mentransmisikan sinyal ke inti untuk memicu pembentukan tulang.  —  **Pola Turunkan dari prinsip:** Inilah penjelasan molekuler dari fungsi MECHANOSENSOR osteosit yang sudah dibahas di PPT Biokimia Tulang. Dua slide, satu mekanisme, dan sekarang lengkap sampai ke tingkat filamennya.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Tabel contoh mekanotransduksi menuliskan sel tulang osteosit merespons tekanan dari aktivitas fisik, dengan peran sitoskeleton berupa aktin yang mentransmisikan sinyal ke inti untuk memicu pembentukan tulang.",
+  "diskriminator": "Inilah penjelasan molekuler dari fungsi MECHANOSENSOR osteosit yang sudah dibahas di PPT Biokimia Tulang. Dua slide, satu mekanisme, dan sekarang lengkap sampai ke tingkat filamennya."
+ },
+ {
+  "n": 1686,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Menurut tabel contoh mekanotransduksi, sel endotel merespons aliran darah melalui rangsangan berupa",
+  "opsi": [
+   "tekanan osmotik",
+   "regangan isometrik",
+   "shear stress",
+   "gaya kompresi",
+   "perubahan suhu"
+  ],
+  "kunciIndex": 2,
+  "kunci": "shear stress",
+  "rationale": "Tabel menuliskan sel endotel merespons aliran darah lewat shear stress, dengan mikrotubulus dan aktin yang menyampaikan sinyal ke jalur NO dan inflamasi.  —  **Pola Nama = petunjuk:** SHEAR STRESS adalah gaya gesek sejajar permukaan, persis yang dirasakan dinding pembuluh saat darah mengalir melewatinya. Inilah dasar mengapa olahraga memperbaiki fungsi endotel.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Tabel menuliskan sel endotel merespons aliran darah lewat shear stress, dengan mikrotubulus dan aktin yang menyampaikan sinyal ke jalur NO dan inflamasi.",
+  "diskriminator": "SHEAR STRESS adalah gaya gesek sejajar permukaan, persis yang dirasakan dinding pembuluh saat darah mengalir melewatinya. Inilah dasar mengapa olahraga memperbaiki fungsi endotel."
+ },
+ {
+  "n": 1687,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Menurut tabel contoh mekanotransduksi, respons tumor terhadap kekakuan jaringan terjadi melalui",
+  "opsi": [
+   "aktivasi komplemen melalui integrin",
+   "aktivasi YAP/TAZ melalui tegangan aktin",
+   "pelepasan NO oleh mikrotubulus",
+   "pembentukan cincin kontraktil",
+   "fosforilasi lamin inti"
+  ],
+  "kunciIndex": 1,
+  "kunci": "aktivasi YAP/TAZ melalui tegangan aktin",
+  "rationale": "Tabel menuliskan tumor merespons kekakuan jaringan karena lingkungan tumor yang kaku mengubah gaya, dengan peran sitoskeleton berupa aktivasi YAP/TAZ melalui tegangan aktin.  —  **Pola Turunkan dari prinsip:** Lingkungan yang kaku menarik aktin lebih kuat, tegangan naik, dan YAP/TAZ masuk ke inti menyalakan gen pertumbuhan. Kekakuan jaringan menjadi sinyal tumbuh, bukan sekadar sifat fisik.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Tabel menuliskan tumor merespons kekakuan jaringan karena lingkungan tumor yang kaku mengubah gaya, dengan peran sitoskeleton berupa aktivasi YAP/TAZ melalui tegangan aktin.",
+  "diskriminator": "Lingkungan yang kaku menarik aktin lebih kuat, tegangan naik, dan YAP/TAZ masuk ke inti menyalakan gen pertumbuhan. Kekakuan jaringan menjadi sinyal tumbuh, bukan sekadar sifat fisik."
+ },
+ {
+  "n": 1688,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Menurut tabel contoh mekanotransduksi, fibrosis jaringan terjadi melalui",
+  "opsi": [
+   "aktivasi osteoklas melalui RANKL",
+   "pelepasan histamin oleh sel mast",
+   "penurunan tegangan aktin di sel epitel",
+   "depolimerisasi mikrotubulus di sel endotel",
+   "aktivasi fibroblas melalui integrin dan sitoskeleton akibat gaya tarik di jaringan luka"
+  ],
+  "kunciIndex": 4,
+  "kunci": "aktivasi fibroblas melalui integrin dan sitoskeleton akibat gaya tarik di jaringan luka",
+  "rationale": "Tabel menuliskan fibrosis jaringan dipicu gaya tarik yang meningkat di jaringan luka, dengan peran sitoskeleton berupa aktivasi fibroblas melalui integrin-sitoskeleton.  —  **Pola Turunkan dari prinsip:** Keempat contoh di tabel mengikuti pola yang sama: ada GAYA, ada JALUR SITOSKELETON, ada RESPONS BIOLOGIS. Hafalkan polanya, bukan keempat barisnya.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Tabel menuliskan fibrosis jaringan dipicu gaya tarik yang meningkat di jaringan luka, dengan peran sitoskeleton berupa aktivasi fibroblas melalui integrin-sitoskeleton.",
+  "diskriminator": "Keempat contoh di tabel mengikuti pola yang sama: ada GAYA, ada JALUR SITOSKELETON, ada RESPONS BIOLOGIS. Hafalkan polanya, bukan keempat barisnya."
+ },
+ {
+  "n": 1689,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Protein adaptor yang disebut slide sebagai tempat berikatan protein sinyal pada sitoskeleton adalah",
+  "opsi": [
+   "talin dan vinculin",
+   "keratin dan vimentin",
+   "kinesin dan dinein",
+   "troponin dan tropomiosin",
+   "lamin A dan lamin B"
+  ],
+  "kunciIndex": 0,
+  "kunci": "talin dan vinculin",
+  "rationale": "Slide menuliskan protein sinyal bisa berikatan dengan aktin, mikrotubulus, atau protein adaptor misalnya talin dan vinculin, karena sitoskeleton bukan hanya jalur lalu lintas tetapi juga tempat terjadinya interaksi protein pensinyalan.  —  **Pola Nama = petunjuk:** Protein ADAPTOR tidak meneruskan gaya maupun sinyal sendiri; ia menyediakan tempat menempel. Perannya seperti papan sambungan, bukan kabel.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan protein sinyal bisa berikatan dengan aktin, mikrotubulus, atau protein adaptor misalnya talin dan vinculin, karena sitoskeleton bukan hanya jalur lalu lintas tetapi juga tempat terjadinya interaksi protein pensinyalan.",
+  "diskriminator": "Protein ADAPTOR tidak meneruskan gaya maupun sinyal sendiri; ia menyediakan tempat menempel. Perannya seperti papan sambungan, bukan kabel."
+ },
+ {
+  "n": 1690,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Keluarga protein yang menurut slide mengatur polimerisasi aktin dan reorganisasi sitoskeleton adalah",
+  "opsi": [
+   "YAP, TAZ, dan MAPK",
+   "Rho GTPase, Rac, dan Cdc42",
+   "integrin, cadherin, dan laminin",
+   "kinesin, dinein, dan miosin",
+   "lamin A, lamin B, dan progerin"
+  ],
+  "kunciIndex": 1,
+  "kunci": "Rho GTPase, Rac, dan Cdc42",
+  "rationale": "Slide menuliskan jalur sinyal seperti Rho GTPase, Rac, dan Cdc42 mengatur polimerisasi aktin dan reorganisasi sitoskeleton, dan menyebutnya sebagai sistem umpan balik dua arah.  —  **Pola Angka & daftar:** Perhatikan arahnya: di sini SINYAL yang mengubah SITOSKELETON, kebalikan dari mekanotransduksi. Slide menyebut keduanya sebagai umpan balik dua arah.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "ANG",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan jalur sinyal seperti Rho GTPase, Rac, dan Cdc42 mengatur polimerisasi aktin dan reorganisasi sitoskeleton, dan menyebutnya sebagai sistem umpan balik dua arah.",
+  "diskriminator": "Perhatikan arahnya: di sini SINYAL yang mengubah SITOSKELETON, kebalikan dari mekanotransduksi. Slide menyebut keduanya sebagai umpan balik dua arah."
+ },
+ {
+  "n": 1691,
+  "modul": "PPT 12: Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "q": "Hubungan antara sinyal sel dan sitoskeleton menurut slide bersifat",
+  "opsi": [
+   "satu arah dari sitoskeleton ke sinyal",
+   "satu arah dari sinyal ke sitoskeleton",
+   "umpan balik dua arah",
+   "tidak saling berhubungan",
+   "hanya terjadi saat pembelahan sel"
+  ],
+  "kunciIndex": 2,
+  "kunci": "umpan balik dua arah",
+  "rationale": "Slide menuliskan merupakan sistem umpan balik dua arah: sinyal mengubah sitoskeleton, lalu sitoskeleton yang berubah menghasilkan sinyal baru.  —  **Pola Turunkan dari prinsip:** Dua arah berarti tidak ada yang lebih dulu secara mutlak. Ini membedakannya dari jalur hormon klasik yang searah dari reseptor ke efektor.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Mekanobiologi & Pensinyalan",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan merupakan sistem umpan balik dua arah: sinyal mengubah sitoskeleton, lalu sitoskeleton yang berubah menghasilkan sinyal baru.",
+  "diskriminator": "Dua arah berarti tidak ada yang lebih dulu secara mutlak. Ini membedakannya dari jalur hormon klasik yang searah dari reseptor ke efektor."
+ },
+ {
+  "n": 1692,
+  "modul": "PPT 12: Sitoskeleton: Peran dalam Penyakit",
+  "q": "Mutasi pada protein inti lamin A menurut slide menghasilkan protein terpotong yang disebut",
+  "opsi": [
+   "progerin",
+   "vimentin",
+   "desmin",
+   "laminin",
+   "talin"
+  ],
+  "kunciIndex": 0,
+  "kunci": "progerin",
+  "rationale": "Slide menuliskan mutasi pada protein inti lamin A menyebabkan terbentuknya protein progerin terpotong yang berhubungan dengan penyakit progeria; pada penyakit ini sel memiliki inti yang lemah akibat cacat pada nukleoskeleton.  —  **Pola Nama = petunjuk:** Nama penyakit dan nama proteinnya seakar: PROGERIA dan PROGERIN. Keduanya dari kata yang berarti menua dini.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Peran dalam Penyakit",
+  "pola": "NAM",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan mutasi pada protein inti lamin A menyebabkan terbentuknya protein progerin terpotong yang berhubungan dengan penyakit progeria; pada penyakit ini sel memiliki inti yang lemah akibat cacat pada nukleoskeleton.",
+  "diskriminator": "Nama penyakit dan nama proteinnya seakar: PROGERIA dan PROGERIN. Keduanya dari kata yang berarti menua dini."
+ },
+ {
+  "n": 1693,
+  "modul": "PPT 12: Sitoskeleton: Peran dalam Penyakit",
+  "q": "Penyakit yang menurut slide berhubungan dengan mutasi lamin A dan inti sel yang lemah adalah",
+  "opsi": [
+   "Alzheimer",
+   "progeria",
+   "sklerosis multipel",
+   "miopati mitokondria",
+   "fibrosis kistik"
+  ],
+  "kunciIndex": 1,
+  "kunci": "progeria",
+  "rationale": "Slide menuliskan progeria sebagai penyakit yang berhubungan dengan protein progerin hasil mutasi lamin A, dengan sel yang memiliki inti lemah akibat cacat pada nukleoskeleton.  —  **Pola Diskriminator konteks:** Kata NUKLEOSKELETON adalah petunjuknya. Penyakit yang menyangkut rangka INTI menunjuk lamin, sedangkan penyakit yang menyangkut rangka SITOPLASMA menunjuk tiga elemen lain.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Peran dalam Penyakit",
+  "pola": "USI",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan progeria sebagai penyakit yang berhubungan dengan protein progerin hasil mutasi lamin A, dengan sel yang memiliki inti lemah akibat cacat pada nukleoskeleton.",
+  "diskriminator": "Kata NUKLEOSKELETON adalah petunjuknya. Penyakit yang menyangkut rangka INTI menunjuk lamin, sedangkan penyakit yang menyangkut rangka SITOPLASMA menunjuk tiga elemen lain."
+ },
+ {
+  "n": 1694,
+  "modul": "PPT 12: Sitoskeleton: Peran dalam Penyakit",
+  "q": "Cacat pada gelendong mitosis menurut slide dikaitkan dengan",
+  "opsi": [
+   "penyakit neurodegeneratif",
+   "kelemahan otot jantung",
+   "fibrosis jaringan",
+   "ketidakstabilan kromosom dan tumor",
+   "progeria"
+  ],
+  "kunciIndex": 3,
+  "kunci": "ketidakstabilan kromosom dan tumor",
+  "rationale": "Slide menuliskan cacat pada gelendong mitosis terkait dengan ketidakstabilan kromosom dan kemudian dikaitkan dengan tumor; remodeling sitoskeleton aktin juga terkait erat dengan kanker.  —  **Pola Kategori jawaban:** Gelendong mitosis dibangun dari mikrotubulus. Kalau pembagian kromosom meleset, sel anak membawa jumlah kromosom yang salah, dan itulah ketidakstabilan kromosom.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Peran dalam Penyakit",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan cacat pada gelendong mitosis terkait dengan ketidakstabilan kromosom dan kemudian dikaitkan dengan tumor; remodeling sitoskeleton aktin juga terkait erat dengan kanker.",
+  "diskriminator": "Gelendong mitosis dibangun dari mikrotubulus. Kalau pembagian kromosom meleset, sel anak membawa jumlah kromosom yang salah, dan itulah ketidakstabilan kromosom."
+ },
+ {
+  "n": 1695,
+  "modul": "PPT 12: Sitoskeleton: Peran dalam Penyakit",
+  "q": "Mengapa proses aksonal pada neuron sangat bergantung pada mikrotubulus menurut slide?",
+  "opsi": [
+   "karena akson bisa sangat panjang sehingga fungsinya bergantung pada transportasi berbasis mikrotubulus",
+   "karena akson tidak memiliki mitokondria",
+   "karena akson tidak memiliki membran sel",
+   "karena akson menghasilkan sendiri neurotransmiter di ujungnya",
+   "karena akson dibentuk dari filamen intermediet saja"
+  ],
+  "kunciIndex": 0,
+  "kunci": "karena akson bisa sangat panjang sehingga fungsinya bergantung pada transportasi berbasis mikrotubulus",
+  "rationale": "Slide menuliskan proses aksonal di neuron adalah contoh utama, karena proses aksonal bisa sangat panjang sehingga fungsinya sangat bergantung pada transportasi berbasis mikrotubulus.  —  **Pola Turunkan dari prinsip:** Panjang adalah masalah logistik. Semakin jauh ujung dari badan sel, semakin mustahil mengandalkan difusi, dan semakin penting sistem rel.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Peran dalam Penyakit",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan proses aksonal di neuron adalah contoh utama, karena proses aksonal bisa sangat panjang sehingga fungsinya sangat bergantung pada transportasi berbasis mikrotubulus.",
+  "diskriminator": "Panjang adalah masalah logistik. Semakin jauh ujung dari badan sel, semakin mustahil mengandalkan difusi, dan semakin penting sistem rel."
+ },
+ {
+  "n": 1696,
+  "modul": "PPT 12: Sitoskeleton: Peran dalam Penyakit",
+  "q": "Gangguan fungsi mikrotubulus menurut slide dikaitkan dengan",
+  "opsi": [
+   "osteoporosis dan rakitis",
+   "anemia dan leukemia",
+   "penyakit neurodegeneratif dan miopati",
+   "hipertensi dan aterosklerosis",
+   "diabetes dan obesitas"
+  ],
+  "kunciIndex": 2,
+  "kunci": "penyakit neurodegeneratif dan miopati",
+  "rationale": "Slide menuliskan gangguan fungsi mikrotubulus dikaitkan dengan penyakit neurodegeneratif dan miopati, yang disebabkan oleh buruknya pengiriman komponen ke persimpangan sinaptik.  —  **Pola Pasangan berlawanan:** Pasangkan dengan kalimat berikutnya di slide: gangguan MIKROTUBULUS mengenai saraf, gangguan AKTIN mengenai otot. Dua filamen, dua kelompok penyakit.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Peran dalam Penyakit",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan gangguan fungsi mikrotubulus dikaitkan dengan penyakit neurodegeneratif dan miopati, yang disebabkan oleh buruknya pengiriman komponen ke persimpangan sinaptik.",
+  "diskriminator": "Pasangkan dengan kalimat berikutnya di slide: gangguan MIKROTUBULUS mengenai saraf, gangguan AKTIN mengenai otot. Dua filamen, dua kelompok penyakit."
+ },
+ {
+  "n": 1697,
+  "modul": "PPT 12: Sitoskeleton: Peran dalam Penyakit",
+  "q": "Sitoskeleton aktin yang tidak berfungsi menurut slide sering dikaitkan dengan",
+  "opsi": [
+   "penyakit neurodegeneratif",
+   "kerusakan otot",
+   "gangguan penglihatan",
+   "gagal ginjal",
+   "gangguan pendengaran"
+  ],
+  "kunciIndex": 1,
+  "kunci": "kerusakan otot",
+  "rationale": "Slide menuliskan sebaliknya, sitoskeleton aktin yang tidak berfungsi sering dikaitkan dengan kerusakan otot, dan otot jantung sangat rentan karena aktivitasnya sebagian besar didasarkan pada kontraktilitas yang didorong aktomiosin.  —  **Pola Pasangan berlawanan:** Kata SEBALIKNYA di slide menandai bahwa ini pasangan kontras dari gangguan mikrotubulus. Saraf untuk mikrotubulus, otot untuk aktin.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Peran dalam Penyakit",
+  "pola": "LAW",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan sebaliknya, sitoskeleton aktin yang tidak berfungsi sering dikaitkan dengan kerusakan otot, dan otot jantung sangat rentan karena aktivitasnya sebagian besar didasarkan pada kontraktilitas yang didorong aktomiosin.",
+  "diskriminator": "Kata SEBALIKNYA di slide menandai bahwa ini pasangan kontras dari gangguan mikrotubulus. Saraf untuk mikrotubulus, otot untuk aktin."
+ },
+ {
+  "n": 1698,
+  "modul": "PPT 12: Sitoskeleton: Peran dalam Penyakit",
+  "q": "Mengapa otot jantung disebut slide sangat rentan terhadap gangguan sitoskeleton aktin?",
+  "opsi": [
+   "karena otot jantung tidak memiliki mikrotubulus",
+   "karena otot jantung tidak dapat beregenerasi",
+   "karena otot jantung tidak memiliki filamen intermediet",
+   "karena otot jantung bekerja tanpa persarafan",
+   "karena aktivitasnya sebagian besar didasarkan pada kontraktilitas yang didorong aktomiosin"
+  ],
+  "kunciIndex": 4,
+  "kunci": "karena aktivitasnya sebagian besar didasarkan pada kontraktilitas yang didorong aktomiosin",
+  "rationale": "Slide menuliskan otot jantung sangat rentan karena aktivitasnya sebagian besar didasarkan pada kontraktilitas yang didorong aktomiosin.  —  **Pola Turunkan dari prinsip:** Alasannya beban kerja, bukan sifat khusus. Organ yang memakai satu sistem tanpa henti akan paling cepat menunjukkan akibat bila sistem itu cacat.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Peran dalam Penyakit",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan otot jantung sangat rentan karena aktivitasnya sebagian besar didasarkan pada kontraktilitas yang didorong aktomiosin.",
+  "diskriminator": "Alasannya beban kerja, bukan sifat khusus. Organ yang memakai satu sistem tanpa henti akan paling cepat menunjukkan akibat bila sistem itu cacat."
+ },
+ {
+  "n": 1699,
+  "modul": "PPT 12: Sitoskeleton: Peran dalam Penyakit",
+  "q": "Berikut termasuk kelompok penyakit yang menurut slide berkaitan dengan perubahan pensinyalan dan sitoskeleton, KECUALI",
+  "opsi": [
+   "penyakit autoimun tiroid",
+   "kanker berupa invasi dan metastasis",
+   "peradangan kronis",
+   "penyakit Alzheimer",
+   "sklerosis multipel"
+  ],
+  "kunciIndex": 0,
+  "kunci": "penyakit autoimun tiroid",
+  "rationale": "Slide menuliskan implikasi klinis berupa kanker dengan invasi dan metastasis, peradangan kronis, serta gangguan neurologis misalnya Alzheimer dan sklerosis multipel.  —  **Pola Kategori jawaban:** Tiga kelompok yang disebut slide: KEGANASAN, PERADANGAN, dan SARAF. Penyakit di luar ketiganya tidak masuk daftar.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Peran dalam Penyakit",
+  "pola": "KAT",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan implikasi klinis berupa kanker dengan invasi dan metastasis, peradangan kronis, serta gangguan neurologis misalnya Alzheimer dan sklerosis multipel.",
+  "diskriminator": "Tiga kelompok yang disebut slide: KEGANASAN, PERADANGAN, dan SARAF. Penyakit di luar ketiganya tidak masuk daftar."
+ },
+ {
+  "n": 1700,
+  "modul": "PPT 12: Sitoskeleton: Peran dalam Penyakit",
+  "q": "Remodeling sitoskeleton aktin menurut slide terkait erat dengan kanker karena",
+  "opsi": [
+   "aktin menghasilkan mutasi pada DNA",
+   "sel tumbuh di lingkungan padat dengan pasokan nutrisi terbatas",
+   "aktin menghambat kerja sistem imun",
+   "aktin membentuk pembuluh darah baru",
+   "aktin mengubah pH jaringan"
+  ],
+  "kunciIndex": 1,
+  "kunci": "sel tumbuh di lingkungan padat dengan pasokan nutrisi terbatas",
+  "rationale": "Slide menuliskan remodeling sitoskeleton aktin juga terkait erat dengan kanker karena sel tumbuh di lingkungan padat dengan pasokan nutrisi terbatas.  —  **Pola Turunkan dari prinsip:** Sel yang terjepit harus mengubah bentuk untuk menyelinap dan mencari nutrisi, dan mengubah bentuk adalah pekerjaan aktin. Dari situ kemampuan invasi lahir.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Peran dalam Penyakit",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide menuliskan remodeling sitoskeleton aktin juga terkait erat dengan kanker karena sel tumbuh di lingkungan padat dengan pasokan nutrisi terbatas.",
+  "diskriminator": "Sel yang terjepit harus mengubah bentuk untuk menyelinap dan mencari nutrisi, dan mengubah bentuk adalah pekerjaan aktin. Dari situ kemampuan invasi lahir."
+ },
+ {
+  "n": 1701,
+  "modul": "PPT 12: Sitoskeleton: Peran dalam Penyakit",
+  "q": "Pernyataan yang paling tepat merangkum peran sitoskeleton menurut slide penutup adalah",
+  "opsi": [
+   "tanpa sitoskeleton sel tidak bisa menghasilkan energi",
+   "tanpa sitoskeleton sel tidak bisa mensintesis protein",
+   "tanpa sitoskeleton sel tidak bisa merasakan dunia di sekitarnya",
+   "tanpa sitoskeleton sel tidak bisa menyimpan informasi genetik",
+   "tanpa sitoskeleton sel tidak bisa membentuk membran"
+  ],
+  "kunciIndex": 2,
+  "kunci": "tanpa sitoskeleton sel tidak bisa merasakan dunia di sekitarnya",
+  "rationale": "Slide penutup menuliskan tanpa sitoskeleton, sel tidak bisa merasakan dunia di sekitarnya; sitoskeleton adalah alat utama sel untuk merespons tekanan, regangan, dan gaya, lalu mengubahnya menjadi respons biologis yang nyata.  —  **Pola Turunkan dari prinsip:** Kalimat penutup slide memilih kata MERASAKAN, bukan menopang atau memindahkan. Penekanan akhir kuliah ini ada pada peran sensorik, bukan peran struktural.",
+  "ppt": 12,
+  "grup": "Sitoskeleton: Peran dalam Penyakit",
+  "pola": "TUR",
+  "ubAsli": false,
+  "kodeUB": "",
+  "bahas": "Slide penutup menuliskan tanpa sitoskeleton, sel tidak bisa merasakan dunia di sekitarnya; sitoskeleton adalah alat utama sel untuk merespons tekanan, regangan, dan gaya, lalu mengubahnya menjadi respons biologis yang nyata.",
+  "diskriminator": "Kalimat penutup slide memilih kata MERASAKAN, bukan menopang atau memindahkan. Penekanan akhir kuliah ini ada pada peran sensorik, bukan peran struktural."
  }
 ];
