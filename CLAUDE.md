@@ -140,7 +140,7 @@ Bahasa Indonesia. User meminta **sparring partner, bukan asisten yang menyetujui
 - **Verifikasi angka dari data, bukan dari ingatan**, sebelum menuliskannya.
 
 ## Quiz `ub-1-2` — Bank Soal UB Blok 1.2
-`data/ub-1-2.js`, 733 soal, mencakup **PPT 1–8**. Akan terus bertambah sampai PPT 17.
+`data/ub-1-2.js`, 1313 soal, mencakup **PPT 1–8, 10–12, dan 17**. Belum ada: PPT 9, 13, 14, 15, 16.
 
 Urutan kuliah Blok 1.2 (angka ini dipakai sebagai prefix `modul`):
 1 Histologi Integument · 2 Terminologi & Pengantar Anatomi · 3 Fisiologi Integument ·
@@ -158,7 +158,7 @@ Urutan kuliah Blok 1.2 (angka ini dipakai sebagai prefix `modul`):
   1. penjelasan jawaban;
   2. `**Pola <Nama Pola>:** <diskriminator>` — kaidah pembeda yang bisa dipakai ulang di soal lain.
 - Soal yang berasal dari bank soal UB asli ditandai di awal `rationale`:
-  `**[UB asli · <kode soal>]** ` (mis. `**[UB asli · SOAL 6]**`). Saat ini **161 dari 733** soal.
+  `**[UB asli · <kode soal>]** ` (mis. `**[UB asli · SOAL 6]**`). Saat ini **241 dari 1313** soal.
 - Selain field skema engine, tiap soal punya field terstruktur yang dipakai tab Blok 1.2:
   `ppt` (angka kuliah) · `grup` (subtopik) · `pola` (kode 3 huruf) · `ubAsli` (bool) ·
   `kodeUB` · `bahas` · `diskriminator`. `rationale` adalah gabungan ketiganya dan sengaja
