@@ -37,6 +37,17 @@ jadi satu `id` = satu catatan jawaban. Dengan filter, soal yang dijawab di view 
 terhitung juga di "Semua PPT". Kalau tiap PPT dibuat quiz terpisah, user harus mengerjakan ulang.
 
 Dimensi filter di `P.st` (semua ikut `filteredIdx()`): `modul` · `ppt` · `pola` · `only` (`*|todo|wrong|flag`).
+## Ulangi bercakupan & Pulihkan
+Tombol **Ulangi** (`#tReset`) TIDAK menghapus seluruh bank. Ia hanya menghapus soal yang
+sedang tampil, yaitu hasil `filteredIdx()` — jadi "Ulangi" saat filter PPT 16 aktif hanya
+menghapus PPT 16, progres PPT lain utuh. `scopeLabel()` menyusun nama cakupan untuk dialog.
+Sebelum menghapus, `snapshot(label)` menyimpan salinan `answers`, `flags`, dan `submitted`
+ke `st.undo` (array, maks `UNDO_MAX` = 3, yang terlama dibuang lebih dulu).
+Tombol **Pulihkan** (`#tUndo`) mengembalikan snapshot terakhir lalu membuangnya dari riwayat;
+tombolnya tersembunyi saat `st.undo` kosong, diperbarui lewat `updateUndoBtn()` di `renderAll()`.
+Masuk/keluar Mode Ujian dan "Ulangi ujian" juga memanggil `snapshot()` sehingga ikut bisa dipulihkan.
+Jangan kembalikan `tReset` ke penghapusan menyeluruh — user secara eksplisit memintanya per-PPT.
+
 Select `#fPpt` dan `#fPola` **otomatis tersembunyi** kalau bank soalnya tidak punya field itu,
 jadi quiz Blok 1.1 tampil persis seperti semula. Dropdown `#fModul` menyusut mengikuti `st.ppt`.
 

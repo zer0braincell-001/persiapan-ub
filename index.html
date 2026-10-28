@@ -406,7 +406,8 @@
       <button class="btn" id="tQord" title="Acak urutan soal">&#8646; Acak urutan soal</button>
       <button class="btn" id="tExam" title="Mode ujian: kunci disembunyikan sampai selesai">&#9998; Mode ujian</button>
       <button class="btn" id="tFlagFilter" aria-pressed="false" title="Tampilkan hanya soal bertanda">&#9873; Hanya bertanda</button>
-      <button class="btn ghost" id="tReset" title="Hapus jawaban &amp; ulangi">&#8635; Ulangi</button>
+      <button class="btn ghost" id="tReset" title="Hapus jawaban pada tampilan yang sedang aktif">&#8635; Ulangi</button>
+      <button class="btn ghost" id="tUndo" hidden title="Batalkan Ulangi terakhir">&#8630; Pulihkan</button>
     </div>
 
     <div class="filterbar">
@@ -680,9 +681,45 @@ function loadQuizStore(id){
   if(typeof st.ppt !== "string") st.ppt = "*";      // filter per-PPT (tab Blok 1.2)
   if(typeof st.pola !== "string") st.pola = "*";    // filter per-pola soal
   if(typeof st.only !== "string") st.only = "*";    // *|todo|wrong|flag
+  if(!Array.isArray(st.undo)) st.undo = [];        // riwayat utk tombol Pulihkan (maks 3)
   return st;
 }
 function saveQuiz(){ if(P) writeLS(quizKey(P.id), P.st); }
+
+/* ---------- Ulangi bercakupan + Pulihkan ----------
+   "Ulangi" hanya menghapus soal yang SEDANG tampil (ikut filter PPT/modul/pola),
+   bukan seluruh bank. Sebelum menghapus, keadaan lama disimpan ke st.undo
+   sehingga tombol Pulihkan bisa mengembalikannya. */
+const UNDO_MAX = 3;
+function scopeLabel(){
+  const st = P.st, b = [];
+  if(st.ppt   !== "*") b.push("PPT " + st.ppt);
+  if(st.modul !== "*") b.push(st.modul);
+  if(st.pola  !== "*") b.push("pola " + st.pola);
+  if(st.only  !== "*") b.push({todo:"belum dikerjakan", wrong:"pernah salah", flag:"ditandai"}[st.only] || st.only);
+  return b.length ? b.join(" \u00b7 ") : "SEMUA PPT";
+}
+function snapshot(label){
+  if(!Array.isArray(P.st.undo)) P.st.undo = [];
+  P.st.undo.push({
+    answers: Object.assign({}, P.st.answers),
+    flags: Object.assign({}, P.st.flags),
+    submitted: !!P.st.submitted,
+    label: label, ts: Date.now()
+  });
+  while(P.st.undo.length > UNDO_MAX) P.st.undo.shift();
+}
+function clearScope(){
+  const ns = filteredIdx().map(i => P.bank[i].n);
+  ns.forEach(n => { delete P.st.answers[n]; delete P.st.flags[n]; });
+  return ns.length;
+}
+function updateUndoBtn(){
+  const b = $("#tUndo"); if(!b) return;
+  const u = (P && Array.isArray(P.st.undo)) ? P.st.undo : [];
+  b.hidden = !u.length;
+  if(u.length) b.title = "Pulihkan jawaban sebelum: " + u[u.length - 1].label;
+}
 
 function buildOptOrders(){
   P.optOrder = {};
@@ -971,7 +1008,8 @@ function updateExamBar(){
     examBar.appendChild(info);
     const b = document.createElement("button"); b.className = "btn"; b.textContent = "Ulangi ujian";
     b.addEventListener("click", () => {
-      P.st.answers = {}; P.st.submitted = false; saveQuiz();
+      snapshot("Ulangi ujian " + scopeLabel());
+      clearScope(); P.st.submitted = false; saveQuiz();
       buildOptOrders(); buildOrder(); P.current = 0; renderAll();
       window.scrollTo({top:0, behavior:"smooth"});
     });
@@ -979,7 +1017,7 @@ function updateExamBar(){
   }
 }
 
-function renderAll(){ buildGrid(); renderStage(); updateScore(); updateExamBar(); }
+function renderAll(){ buildGrid(); renderStage(); updateScore(); updateExamBar(); updateUndoBtn(); }
 
 /* ---------- Kontrol engine ---------- */
 $("#pPrev").addEventListener("click", () => { if(P && P.current > 0){ P.current--; renderAll(); } });
@@ -1030,16 +1068,31 @@ $("#tExam").addEventListener("click", async () => {
       " akan menghapus jawaban saat ini. Lanjut?"))) return;
   P.st.mode = turningOn ? "exam" : "study";
   P.st.submitted = false;
-  if(has) P.st.answers = {};
+  if(has){ snapshot(turningOn ? "Masuk Mode Ujian" : "Keluar Mode Ujian"); P.st.answers = {}; }
   saveQuiz();
   $("#tExam").setAttribute("aria-pressed", turningOn ? "true" : "false");
   P.current = 0; renderAll(); window.scrollTo({top:0, behavior:"smooth"});
 });
 $("#tReset").addEventListener("click", async () => {
   if(!P) return;
-  if(!(await ask("Hapus semua jawaban & tanda, lalu mulai ulang?"))) return;
-  P.st.answers = {}; P.st.flags = {}; P.st.submitted = false; saveQuiz();
+  const lab = scopeLabel(), jml = filteredIdx().length;
+  const dijawab = filteredIdx().filter(i => P.st.answers[P.bank[i].n] != null).length;
+  if(!dijawab){ await ask("Belum ada jawaban pada " + lab + " untuk dihapus."); return; }
+  if(!(await ask("Hapus " + dijawab + " jawaban pada " + lab + " (" + jml +
+      " soal tampil)? Progres PPT lain tidak tersentuh, dan bisa dibatalkan lewat tombol Pulihkan."))) return;
+  snapshot("Ulangi " + lab);
+  clearScope(); P.st.submitted = false; saveQuiz();
   buildOptOrders(); buildOrder(); P.current = 0; renderAll();
+  window.scrollTo({top:0, behavior:"smooth"});
+});
+
+$("#tUndo").addEventListener("click", async () => {
+  if(!P || !Array.isArray(P.st.undo) || !P.st.undo.length) return;
+  const s = P.st.undo[P.st.undo.length - 1];
+  if(!(await ask("Pulihkan keadaan sebelum \"" + s.label + "\"? Jawaban yang dibuat setelah itu akan hilang."))) return;
+  P.st.undo.pop();
+  P.st.answers = s.answers || {}; P.st.flags = s.flags || {}; P.st.submitted = !!s.submitted;
+  saveQuiz(); buildOptOrders(); buildOrder(); P.current = 0; renderAll();
   window.scrollTo({top:0, behavior:"smooth"});
 });
 
