@@ -140,7 +140,7 @@ Bahasa Indonesia. User meminta **sparring partner, bukan asisten yang menyetujui
 - **Verifikasi angka dari data, bukan dari ingatan**, sebelum menuliskannya.
 
 ## Quiz `ub-1-2` — Bank Soal UB Blok 1.2
-`data/ub-1-2.js`, 1971 soal, mencakup **PPT 1–16 lengkap**.
+`data/ub-1-2.js`, 1213 soal, mencakup **PPT 1–16 lengkap**. Tiap PPT dibatasi maksimal 85 soal — sengaja dirampingkan agar bisa dikerjakan tuntas; soal UB asli tidak pernah dibuang saat perampingan.
 
 **Koreksi penomoran (27 Okt 2026):** kuliah "Kinesiologi Ekstremitas Superior" ternyata adalah
 kuliah **Ekstremitas Superior 2**, jadi 125 soalnya dipindah dari `ppt:17` ke `ppt:9`.
@@ -163,7 +163,7 @@ Urutan kuliah Blok 1.2 (angka ini dipakai sebagai prefix `modul`):
   1. penjelasan jawaban;
   2. `**Pola <Nama Pola>:** <diskriminator>` — kaidah pembeda yang bisa dipakai ulang di soal lain.
 - Soal yang berasal dari bank soal UB asli ditandai di awal `rationale`:
-  `**[UB asli · <kode soal>]** ` (mis. `**[UB asli · SOAL 6]**`). Saat ini **289 dari 1971** soal.
+  `**[UB asli · <kode soal>]** ` (mis. `**[UB asli · SOAL 6]**`). Saat ini **350 dari 1213** soal.
 - Selain field skema engine, tiap soal punya field terstruktur yang dipakai tab Blok 1.2:
   `ppt` (angka kuliah) · `grup` (subtopik) · `pola` (kode 3 huruf) · `ubAsli` (bool) ·
   `kodeUB` · `bahas` · `diskriminator`. `rationale` adalah gabungan ketiganya dan sengaja
