@@ -24,7 +24,7 @@ Semua sisanya dijadikan **text node**. Jadi `<b>`, `<i>`, `<br>`, `<span>` akan 
 - **Bug yang masih ada:** `data/hemoglobinopati.js` memuat ~74 tag `<b>`/`<i>` yang tampil mentah. Belum dibersihkan.
 
 ## Nav
-Tab topbar: **Home · 1.1 · 1.2 · Tema**. Label sengaja dipendekkan jadi angka blok saja.
+Tab topbar: **Home · 1.1 · 1.2 · 1.3 · Tema**. Label sengaja dipendekkan jadi angka blok saja.
 Tombol shortcut "Daftar Quiz" di halaman Home sudah dihapus (kelas `.cta` kini tidak terpakai).
 
 ## Tab Blok 1.2 (`#/blok12`)
@@ -53,6 +53,26 @@ jadi quiz Blok 1.1 tampil persis seperti semula. Dropdown `#fModul` menyusut men
 
 Kelas CSS: `.krow` (baris kuliah), `.qsc` (kartu mulai cepat), `.pchip` (chip pola).
 **Jangan pakai `.chip` untuk chip pola** — `.chip` adalah tombol palet nomor dan punya `aspect-ratio:1/1`.
+
+## Tab Blok 1.3 (`#/blok13`) — Sistem Digestif & Metabolisme
+View `#viewB13`, dirender `renderB13()`, konfigurasi di array `B13`. **Masih cangkang: belum ada satu soal pun.**
+
+Dua kartu, dua bank **TERPISAH** (keputusan user, 1 Nov 2026):
+| kartu | quiz id | berkas |
+|---|---|---|
+| PPT Aslab | `ub-1-3-aslab` | `data/ub-1-3-aslab.js` (belum ada) |
+| PPT Dosen | `ub-1-3-dosen` | `data/ub-1-3-dosen.js` (belum ada) |
+
+Beda dari Blok 1.2 yang sengaja memakai **satu** id berfilter: di 1.2 satu soal bisa muncul di
+beberapa view (PPT 6 dan "Semua PPT"), jadi id tunggal mencegah user mengerjakan ulang.
+Materi aslab dan dosen tidak beririsan, jadi alasan itu tidak berlaku dan progres tiap bank
+boleh berdiri sendiri.
+
+Kartu memakai pola `renderAsli()`: elemen `<div aria-disabled>` selama `bankOf(id)` kosong,
+berubah jadi `<a href="#/quiz/<id>">` otomatis begitu datanya dimuat. **Belum ada entri di
+`QUIZZES` dan belum ada `<script src>`** — sengaja, supaya tidak ada rujukan ke berkas yang
+tidak ada. Saat soal pertama masuk, kerjakan tiga hal sekaligus: buat `data/<id>.js`, tambah
+`<script src>`, tambah entri `QUIZZES` (`sembunyi:true`, karena tab ini punya halaman sendiri).
 
 ## Bank naskah asli kakak tingkat (`ub-1-2-soal`, dst.)
 Selain bank soal tersusun (`ub-1-2`), ada bank **naskah asli** UB tahun sebelumnya yang disajikan apa adanya.
