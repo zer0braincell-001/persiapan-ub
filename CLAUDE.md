@@ -65,6 +65,7 @@ kartu nonaktif (`<div aria-disabled>`) selama `bankOf(id)` kosong dan otomatis j
 | seksi | kartu | quiz id | soal |
 |---|---|---|---|
 | PPT Aslab | Responsi Fisiologi · Termoregulasi | `ub-1-3-responsi-fisio` | 179 |
+| PPT Aslab | Responsi Biokimia · Lipid & Karbohidrat | `ub-1-3-responsi-biokim` | 209 |
 | PPT Dosen | (kosong) | — | — |
 
 Menambah kartu = tambah satu entri ke `B13.aslab` atau `B13.dosen`, plus `data/<id>.js`,
@@ -109,9 +110,41 @@ ada di berkas sumber**. Celah pada `kodeResponsi` itu benar; jangan dirapatkan.
 - **Responsi #14 (edukasi banyak minum)** tidak ada di ketiga PPT, hanya di dokumen responsi.
 
 **PPT aslab tidak disimpan di repo** — sama seperti PPT Blok 1.2, user melampirkannya
-tiap sesi. Seluruh slide berupa **gambar polos tanpa teks**; isi tertulisnya ada di
-**speaker notes**. Untuk membacanya, ekstrak notes dengan python-pptx dan render slide
-jadi gambar (LibreOffice ke PDF lalu pdftoppm) — membaca teks shape saja akan kosong.
+tiap sesi. Berlaku untuk SELURUH PPT aslab Blok 1.3 (fisiologi maupun biokimia):
+slide berupa **gambar polos tanpa teks sama sekali** (`slideTextChar` = 0), dan isi
+tertulisnya hanya sebagian ada di **speaker notes** — pada PPT biokimia bahkan hanya
+3 dari 42 slide yang ber-notes. **Wajib dua langkah:** ekstrak notes dengan python-pptx,
+DAN render tiap slide jadi gambar (LibreOffice ke PDF lalu `pdftoppm`) lalu dibaca.
+Membaca teks shape saja menghasilkan berkas kosong dan akan menyesatkan.
+Berkas PPT biokimia besar (sampai 110 MB), konversi butuh timeout longgar.
+
+### Quiz `ub-1-3-responsi-biokim` — Responsi Biokimia 1.3 (Lipid & Karbohidrat)
+`data/ub-1-3-responsi-biokim.js`, **209 soal**, 30 modul. Disusun dari empat PPT aslab
+(Teori Lipid, Praktikum Lipid, Praktikum Karbohidrat, Teori Karbohidrat) ditambah dokumen
+Responsi Biokimia 1.3. Field `ppt` tidak dipakai, alasannya sama seperti bank fisiologi.
+
+**Dokumen responsi memuat 30 soal dan semuanya tercakup** (`kodeResponsi` 1–30, tanpa celah).
+
+**Yang TIDAK ada di PPT aslab mana pun — sudah ditandai `**Catatan:**`:**
+- **Responsi #2** menanyakan nama enzim pada strip hijau GCU (glukosa oksidase). Slide hanya
+  menyebut strip hijau untuk glukosa, biru kolesterol, kuning asam urat; nama enzim tidak ada.
+- **Responsi #19** fungsi kolesterol sebagai prekursor garam empedu, vitamin D, dan hormon
+  steroid. Tidak dibahas di Teori Lipid maupun PPT lain. Kunci dari biokimia standar.
+- **Responsi #6** nama asam amino glukogenik (alanin, glutamin). Slide glukoneogenesis hanya
+  menyebut "protein dan lemak" tanpa nama asam amino.
+- **Responsi #16** istilah "dekarboksilasi oksidatif". Bagan Krebs menampilkan piruvat 3C →
+  asetil-KoA 2C, tetapi tidak menyebut istilahnya.
+- **Responsi #26** angka 120 hari masa hidup eritrosit. Tabel slide menyebut "2–3 bulan".
+- **Responsi #13** di dokumen sumber terpotong: tertulis "Butirat diberi H2SO4: ??" tanpa opsi
+  dan tanpa jawaban. Soal disusun ulang dari slide hidrolisis mentega (atas keputusan user).
+- **Nilai HDL** pada slide GCU: wanita >40, pria >50 mg/dL. Banyak rujukan klinis justru
+  menetapkan ambang lebih tinggi pada wanita. Dipakai versi slide, perbedaannya ditandai.
+- **Responsi #17** memuat dua opsi yang sama-sama benar sebagian (menurunkan tegangan
+  permukaan, dan penjelasan dua gugus). Slide menempatkan tegangan permukaan sebagai mekanisme utama.
+
+**Catatan berkas:** user sempat mengunggah `Praktikum_Lipid_Bella.pptx` dua kali. Berkas
+`..._(1).pptx` BUKAN duplikat identik — ia versi lebih kotor (salah ketik "d!an" pada notes
+slide 5, dan catatan nyasar berisi huruf "a" di slide 20). Dipakai berkas yang asli.
 
 ## Bank naskah asli kakak tingkat (`ub-1-2-soal`, dst.)
 Selain bank soal tersusun (`ub-1-2`), ada bank **naskah asli** UB tahun sebelumnya yang disajikan apa adanya.

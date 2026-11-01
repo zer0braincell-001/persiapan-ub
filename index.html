@@ -487,6 +487,7 @@
 <script src="data/ub-1-2-costraver.js"></script>
 <script src="data/ub-1-2-remed.js"></script>
 <script src="data/ub-1-3-responsi-fisio.js"></script>
+<script src="data/ub-1-3-responsi-biokim.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 <script>
@@ -510,6 +511,8 @@ const QUIZZES = [
   /* Blok 1.3 punya tab sendiri (#/blok13), jadi disembunyikan dari Daftar Quiz. */
   { id:"ub-1-3-responsi-fisio", judul:"Responsi Fisiologi 1.3", topik:"Blok 1.3 Termoregulasi \u00b7 PPT aslab + responsi",
     jumlahSoal:179, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-responsi-biokim", judul:"Responsi Biokimia 1.3", topik:"Blok 1.3 Lipid & Karbohidrat \u00b7 PPT aslab + responsi",
+    jumlahSoal:209, status:"siap", kind:"internal", sembunyi:true },
   { id:"recall-blok-1-1", judul:"Recall Integratif Blok 1.1", topik:"Blok 1.1 · 10 modul",
     jumlahSoal:100, status:"siap", kind:"internal" },
   { id:"hemoglobinopati", judul:"Hemoglobinopati", topik:"Genetika Molekuler",
@@ -1363,7 +1366,8 @@ function renderB12(){
    =========================================================== */
 const B13 = {
   aslab: [
-    { id:"ub-1-3-responsi-fisio", nama:"Responsi Fisiologi", ket:"Termoregulasi" }
+    { id:"ub-1-3-responsi-fisio",  nama:"Responsi Fisiologi", ket:"Termoregulasi" },
+    { id:"ub-1-3-responsi-biokim", nama:"Responsi Biokimia",  ket:"Lipid & Karbohidrat" }
   ],
   dosen: []
 };
