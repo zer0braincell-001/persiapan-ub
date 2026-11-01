@@ -55,24 +55,63 @@ Kelas CSS: `.krow` (baris kuliah), `.qsc` (kartu mulai cepat), `.pchip` (chip po
 **Jangan pakai `.chip` untuk chip pola** — `.chip` adalah tombol palet nomor dan punya `aspect-ratio:1/1`.
 
 ## Tab Blok 1.3 (`#/blok13`) — Sistem Digestif & Metabolisme
-View `#viewB13`, dirender `renderB13()`, konfigurasi di array `B13`. **Masih cangkang: belum ada satu soal pun.**
+View `#viewB13`, dirender `renderB13()`. Konfigurasi di objek `B13`, yang berisi **dua seksi**
+berisi daftar kartu: `B13.aslab` dan `B13.dosen`. Tiap kartu `{ id, nama, ket }` adalah quiz
+tersendiri dengan progres localStorage sendiri. Helper `b13kartu()` membangun satu kartu;
+kartu nonaktif (`<div aria-disabled>`) selama `bankOf(id)` kosong dan otomatis jadi
+`<a href="#/quiz/<id>">` begitu datanya dimuat. Seksi tanpa kartu menampilkan baris
+"Belum ada bank soal..." lewat `#b13aslabKosong` / `#b13dosenKosong`.
 
-Dua kartu, dua bank **TERPISAH** (keputusan user, 1 Nov 2026):
-| kartu | quiz id | berkas |
-|---|---|---|
-| PPT Aslab | `ub-1-3-aslab` | `data/ub-1-3-aslab.js` (belum ada) |
-| PPT Dosen | `ub-1-3-dosen` | `data/ub-1-3-dosen.js` (belum ada) |
+| seksi | kartu | quiz id | soal |
+|---|---|---|---|
+| PPT Aslab | Responsi Fisiologi · Termoregulasi | `ub-1-3-responsi-fisio` | 179 |
+| PPT Dosen | (kosong) | — | — |
 
-Beda dari Blok 1.2 yang sengaja memakai **satu** id berfilter: di 1.2 satu soal bisa muncul di
-beberapa view (PPT 6 dan "Semua PPT"), jadi id tunggal mencegah user mengerjakan ulang.
-Materi aslab dan dosen tidak beririsan, jadi alasan itu tidak berlaku dan progres tiap bank
-boleh berdiri sendiri.
+Menambah kartu = tambah satu entri ke `B13.aslab` atau `B13.dosen`, plus `data/<id>.js`,
+`<script src>`, dan entri `QUIZZES` (`sembunyi:true`). Tidak ada tempat lain yang disentuh.
 
-Kartu memakai pola `renderAsli()`: elemen `<div aria-disabled>` selama `bankOf(id)` kosong,
-berubah jadi `<a href="#/quiz/<id>">` otomatis begitu datanya dimuat. **Belum ada entri di
-`QUIZZES` dan belum ada `<script src>`** — sengaja, supaya tidak ada rujukan ke berkas yang
-tidak ada. Saat soal pertama masuk, kerjakan tiga hal sekaligus: buat `data/<id>.js`, tambah
-`<script src>`, tambah entri `QUIZZES` (`sembunyi:true`, karena tab ini punya halaman sendiri).
+### Quiz `ub-1-3-responsi-fisio` — Responsi Fisiologi 1.3 (Termoregulasi)
+`data/ub-1-3-responsi-fisio.js`, **179 soal**, 18 modul. Disusun dari tiga PPT aslab
+(Termoregulasi, Praktikum Termoregulasi, Kelainan Termoregulasi) ditambah dokumen
+Pembahasan Responsi Fisiologi 1.3.
+
+**Field `ppt` SENGAJA tidak dipakai di bank ini.** `buildExtraFilters()` melabeli dropdown
+`#fPpt` dengan `B12.kuliah[k]`, yaitu nama kuliah **Blok 1.2**. Memberi bank 1.3 field `ppt`
+akan menghasilkan label seperti "PPT 1 · Histologi Integument" — salah blok. Field `pola`
+aman karena `B12.pola[k] || k` punya fallback ke kodenya, jadi filter pola tetap aktif.
+
+**Penanda soal responsi.** Soal yang berasal dari dokumen responsi ditandai di awal
+`rationale` dengan `**[Responsi asli · SOAL n]**`, plus `asliResponsi:true` dan
+`kodeResponsi` berisi **nomor asli dokumen**. Saat ini 19 dari 179 soal.
+
+**Dokumen responsi memuat 19 soal, bukan 20:** bernomor 1–12 dan 14–20 — **nomor 13 tidak
+ada di berkas sumber**. Celah pada `kodeResponsi` itu benar; jangan dirapatkan.
+
+**Konflik sumber yang sudah ditandai `**Catatan:**` di bank dan sebaiknya dibiarkan:**
+- **Suhu aksila.** Slide Termoregulasi memuat dua versi dalam satu slide: setara oral
+  (Sherwood) dan lebih rendah ±0,5–1°C (Modul Skillslab). Soal responsi memakai versi
+  Modul Skillslab, dan itu yang dipakai sebagai kunci.
+- **Persentase perpindahan panas.** Gambar Guyton pada slide: radiasi 60%, evaporasi 22%,
+  konduksi ke udara 15%, konduksi ke benda 3% (total 100%). Catatan slide yang sama
+  menambahkan "konveksi 12%", yang tidak muat dalam total itu.
+- **Penyebab kenaikan suhu pasca-ovulasi.** Catatan PPT Termoregulasi mengutip Sherwood
+  bahwa penjelasan progesteron sudah tidak dipakai dan penyebabnya belum diketahui;
+  catatan PPT Kelainan Termoregulasi justru menjelaskannya lewat progesteron termogenik.
+  Dua PPT aslab bertentangan.
+- **Lokasi paling representatif terhadap suhu inti.** Satu catatan slide menyebut temporal
+  sebagai penentu terbaik menurut Sherwood, lalu menyimpulkan per rektal tetap yang paling
+  representatif. Kunci memakai per rektal, sesuai soal responsi.
+- **Soal katak (responsi #7).** Opsi sumber berbunyi pengaruh lingkungan "tidak dapat
+  ditoleransi" oleh suhu inti, berlawanan dengan definisi poikiloterm di slide praktikum.
+  Opsi sumber cacat dan tidak dipakai sebagai kunci.
+- **Responsi #5 dan #8 cacat di sumber** (dua opsi berisi titik; satu soal punya enam opsi
+  plus coretan). Sudah dilengkapi dan dirapikan, ditandai di `rationale`.
+- **Responsi #14 (edukasi banyak minum)** tidak ada di ketiga PPT, hanya di dokumen responsi.
+
+**PPT aslab tidak disimpan di repo** — sama seperti PPT Blok 1.2, user melampirkannya
+tiap sesi. Seluruh slide berupa **gambar polos tanpa teks**; isi tertulisnya ada di
+**speaker notes**. Untuk membacanya, ekstrak notes dengan python-pptx dan render slide
+jadi gambar (LibreOffice ke PDF lalu pdftoppm) — membaca teks shape saja akan kosong.
 
 ## Bank naskah asli kakak tingkat (`ub-1-2-soal`, dst.)
 Selain bank soal tersusun (`ub-1-2`), ada bank **naskah asli** UB tahun sebelumnya yang disajikan apa adanya.

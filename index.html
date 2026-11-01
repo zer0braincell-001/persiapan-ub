@@ -409,9 +409,15 @@
     </div>
 
     <div class="sec">
-      <p class="sec-ttl">Bank soal</p>
-      <div class="qsgrid" id="b13bank"></div>
-      <p class="empty" style="margin-top:9px">Dua bank terpisah sesuai asal materinya: PPT yang dibawakan aslab dan PPT yang dibawakan dosen. Progres keduanya dicatat sendiri-sendiri.</p>
+      <p class="sec-ttl">PPT Aslab</p>
+      <div class="qsgrid" id="b13aslab"></div>
+      <p class="empty" id="b13aslabKosong" hidden style="margin-top:9px">Belum ada bank soal dari materi aslab.</p>
+    </div>
+
+    <div class="sec">
+      <p class="sec-ttl">PPT Dosen</p>
+      <div class="qsgrid" id="b13dosen"></div>
+      <p class="empty" id="b13dosenKosong" hidden style="margin-top:9px">Belum ada bank soal dari materi dosen.</p>
     </div>
   </div>
 
@@ -480,6 +486,7 @@
 <script src="data/ub-1-2-soal.js"></script>
 <script src="data/ub-1-2-costraver.js"></script>
 <script src="data/ub-1-2-remed.js"></script>
+<script src="data/ub-1-3-responsi-fisio.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 <script>
@@ -500,6 +507,9 @@ const QUIZZES = [
     jumlahSoal:87, status:"siap", kind:"internal", sembunyi:true },
   { id:"ub-1-2-remed", judul:"REMED UB 1.2 (naskah asli)", topik:"Tentir + Rangkuman digabung \u00b7 130 soal",
     jumlahSoal:130, status:"siap", kind:"internal", sembunyi:true },
+  /* Blok 1.3 punya tab sendiri (#/blok13), jadi disembunyikan dari Daftar Quiz. */
+  { id:"ub-1-3-responsi-fisio", judul:"Responsi Fisiologi 1.3", topik:"Blok 1.3 Termoregulasi \u00b7 PPT aslab + responsi",
+    jumlahSoal:179, status:"siap", kind:"internal", sembunyi:true },
   { id:"recall-blok-1-1", judul:"Recall Integratif Blok 1.1", topik:"Blok 1.1 · 10 modul",
     jumlahSoal:100, status:"siap", kind:"internal" },
   { id:"hemoglobinopati", judul:"Hemoglobinopati", topik:"Genetika Molekuler",
@@ -1351,40 +1361,49 @@ function renderB12(){
    risiko satu soal terhitung dua kali, dan progres tiap bank
    berdiri sendiri. Kartu otomatis aktif begitu data/<id>.js dimuat.
    =========================================================== */
-const B13 = [
-  { id:"ub-1-3-aslab", nama:"PPT Aslab" },
-  { id:"ub-1-3-dosen", nama:"PPT Dosen" }
-];
+const B13 = {
+  aslab: [
+    { id:"ub-1-3-responsi-fisio", nama:"Responsi Fisiologi", ket:"Termoregulasi" }
+  ],
+  dosen: []
+};
+
+function b13kartu(b){
+  const bank = bankOf(b.id) || [];
+  const st = readLS(quizKey(b.id), {});
+  const dik = st.answers ? Object.keys(st.answers).length : 0;
+  const pct = bank.length ? Math.round(dik / bank.length * 100) : 0;
+
+  const el = document.createElement(bank.length ? "a" : "div");
+  el.className = "qsc";
+  if(bank.length) el.href = "#/quiz/" + b.id;
+  else el.setAttribute("aria-disabled", "true");
+
+  const l = document.createElement("div"); l.className = "l";
+  l.textContent = b.nama + (b.ket ? " \u00b7 " + b.ket : "");
+  const v = document.createElement("div"); v.className = "v";
+  v.textContent = bank.length ? bank.length + " soal" : "\u2014";
+  const m = document.createElement("div"); m.className = "l"; m.style.marginTop = "4px";
+  m.textContent = bank.length ? pct + "% dikerjakan" : "belum ada soal";
+  el.append(l, v, m);
+  return { el, jumlah: bank.length };
+}
 
 function renderB13(){
-  const wrap = $("#b13bank"); wrap.innerHTML = "";
-  let total = 0, siap = 0;
-  B13.forEach(b => {
-    const bank = bankOf(b.id) || [];
-    const st = readLS(quizKey(b.id), {});
-    const dik = st.answers ? Object.keys(st.answers).length : 0;
-    const pct = bank.length ? Math.round(dik / bank.length * 100) : 0;
-    total += bank.length;
-    if(bank.length) siap++;
-
-    const el = document.createElement(bank.length ? "a" : "div");
-    el.className = "qsc";
-    if(bank.length) el.href = "#/quiz/" + b.id;
-    else el.setAttribute("aria-disabled", "true");
-
-    const l = document.createElement("div"); l.className = "l";
-    l.textContent = b.nama;
-    const v = document.createElement("div"); v.className = "v";
-    v.textContent = bank.length ? bank.length + " soal" : "\u2014";
-    const m = document.createElement("div"); m.className = "l"; m.style.marginTop = "4px";
-    m.textContent = bank.length ? pct + "% dikerjakan" : "belum ada soal";
-    el.append(l, v, m);
-    wrap.appendChild(el);
+  let total = 0;
+  [["aslab","#b13aslab","#b13aslabKosong"],["dosen","#b13dosen","#b13dosenKosong"]]
+  .forEach(([key, gridSel, kosongSel]) => {
+    const grid = $(gridSel); grid.innerHTML = "";
+    const daftar = B13[key] || [];
+    daftar.forEach(b => { const k = b13kartu(b); total += k.jumlah; grid.appendChild(k.el); });
+    $(kosongSel).hidden = daftar.length > 0;
   });
+  const bank = (B13.aslab || []).length + (B13.dosen || []).length;
   $("#b13sub").textContent = total
-    ? total + " soal \u00b7 " + siap + " dari " + B13.length + " bank sudah terisi"
+    ? total + " soal \u00b7 " + bank + " bank"
     : "Belum ada soal. Bank akan muncul setelah PPT-nya diolah.";
 }
+
 
 /* ---------- Routing: #/ , #/quiz , #/quiz/:id[?filter] , #/blok12 , #/blok13 ---------- */
 function route(){
