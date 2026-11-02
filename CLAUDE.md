@@ -67,6 +67,11 @@ kartu nonaktif (`<div aria-disabled>`) selama `bankOf(id)` kosong dan otomatis j
 | PPT Aslab | Responsi Fisiologi · Termoregulasi | `ub-1-3-responsi-fisio` | 179 |
 | PPT Aslab | Responsi Biokimia · Lipid & Karbohidrat | `ub-1-3-responsi-biokim` | 209 |
 | PPT Dosen | (kosong) | — | — |
+| Naskah asli | Responsi Biokimia 1.3 | `ub-1-3-resp-asli` | 30 |
+| Naskah asli | AZYTRALIS 2022 | `ub-1-3-azytralis` | 29 |
+| Naskah asli | LATSOL Pre-Test 2026 | `ub-1-3-latsol` | 25 |
+
+`B13` punya **tiga** seksi: `aslab`, `dosen`, `asli`. Total tab 1.3 = **472 soal**.
 
 Menambah kartu = tambah satu entri ke `B13.aslab` atau `B13.dosen`, plus `data/<id>.js`,
 `<script src>`, dan entri `QUIZZES` (`sembunyi:true`). Tidak ada tempat lain yang disentuh.
@@ -128,8 +133,9 @@ Responsi Biokimia 1.3. Field `ppt` tidak dipakai, alasannya sama seperti bank fi
 **Yang TIDAK ada di PPT aslab mana pun — sudah ditandai `**Catatan:**`:**
 - **Responsi #2** menanyakan nama enzim pada strip hijau GCU (glukosa oksidase). Slide hanya
   menyebut strip hijau untuk glukosa, biru kolesterol, kuning asam urat; nama enzim tidak ada.
-- **Responsi #19** fungsi kolesterol sebagai prekursor garam empedu, vitamin D, dan hormon
-  steroid. Tidak dibahas di Teori Lipid maupun PPT lain. Kunci dari biokimia standar.
+- **Responsi #19** fungsi kolesterol (garam empedu, vitamin D, hormon steroid). **SUDAH TIDAK
+  BERLAKU** sejak revisi Teori Lipid 2 Nov 2026, yang menambahkan slide Kolesterol dan
+  membahas keempat fungsinya. Catatan di bank soal sudah diperbarui.
 - **Responsi #6** nama asam amino glukogenik (alanin, glutamin). Slide glukoneogenesis hanya
   menyebut "protein dan lemak" tanpa nama asam amino.
 - **Responsi #16** istilah "dekarboksilasi oksidatif". Bagan Krebs menampilkan piruvat 3C →
@@ -145,6 +151,48 @@ Responsi Biokimia 1.3. Field `ppt` tidak dipakai, alasannya sama seperti bank fi
 **Catatan berkas:** user sempat mengunggah `Praktikum_Lipid_Bella.pptx` dua kali. Berkas
 `..._(1).pptx` BUKAN duplikat identik — ia versi lebih kotor (salah ketik "d!an" pada notes
 slide 5, dan catatan nyasar berisi huruf "a" di slide 20). Dipakai berkas yang asli.
+
+### Naskah asli Blok 1.3 (`ub-1-3-resp-asli`, `ub-1-3-azytralis`, `ub-1-3-latsol`)
+Tiga naskah soal kakak tingkat, disajikan **apa adanya** di seksi "Naskah asli kakak tingkat"
+pada tab 1.3. Dibangun dengan konvensi yang sama seperti `B12_ASLI`: tiap soal membawa
+`asliPenuh` dan `kunciDari`, yang ikut dicetak di akhir `rationale`. Quiz-nya terpisah dari
+bank turunan, jadi progresnya sendiri — disengaja, dipakai sebagai try out.
+
+| id | asal | soal | opsi utuh | kunci dari pembahasan | bergambar |
+|---|---|---|---|---|---|
+| `ub-1-3-resp-asli` | Responsi Biokimia 1.3 | 30 | 6 | 21 | 0 |
+| `ub-1-3-azytralis` | AZYTRALIS 2022 | 29 | 12 | 29 | 2 |
+| `ub-1-3-latsol` | LATSOL Pre-Test 2026 | 25 | 21 | 21 | 3 |
+
+Total **84 soal**; hanya **39 yang opsinya utuh dari sumber**, 45 sisanya dilengkapi.
+
+**AZYTRALIS memuat 29 soal, bukan 30:** bernomor 1–11 dan 13–30 — **nomor 12 tidak ada di
+berkas sumber**. Celah pada `kodeAsli` itu benar; jangan dirapatkan.
+
+**LATSOL membawa data frekuensi** yang tidak ada di sumber lain: beberapa butir ditandai
+pernah muncul di pre-test astroxon 2020 dan anconeus 2021, dan dua butir mencatat aslab
+menyebut tabelnya wajib dihafal. Ini dipakai sebagai peta bobot dan dikutip di `rationale`.
+
+**Kunci yang BERTENTANGAN dengan PPT — ditandai, jangan didamaikan:**
+- **Enzim strip hijau GCU.** Tiga sumber, tiga jawaban: Responsi menulis glukosa oksidase,
+  AZYTRALIS nomor 6 menulis GDH FAH tetapi nomor 22 menulis glukosa oksidase (bertentangan
+  di dalam dokumen yang sama), LATSOL menulis GDH FAH. **PPT aslab tidak menyebut enzim
+  sama sekali**, hanya warna strip. Tidak ada rujukan yang dapat memutuskan.
+- **AZYTRALIS #30 (jari tengah/manis).** Kuncinya "kulitnya lebih tipis" — berlawanan dengan
+  catatan slide yang menyebut jari kelingking TIDAK disarankan justru karena kulitnya lebih
+  tipis. Dengan kaidah PPT, kulit tipis adalah alasan menghindari, bukan memilih. Soal cacat.
+- **AZYTRALIS #11 (bau akrolein).** Kuncinya sulfur dioksida, padahal slide menyebut bau itu
+  berasal dari akrolein hasil dehidrasi gliserol. Sulfur dioksida tidak disebut di PPT mana pun.
+- **AZYTRALIS #27 (kelarutan gliserol).** Penulis sumber menyatakan jawabannya diperoleh dari
+  percobaan di YouTube, bukan dari PPT maupun praktikum. Tidak dapat diverifikasi.
+- **AZYTRALIS #14 dan #26.** Penulis sendiri menyatakan ragu (#14) dan mengaku sempat menjawab
+  keliru (#26).
+- **AZYTRALIS #23 (residu kertas saring).** Slide hanya membahas bercak lemak, tidak membahas
+  penghitungan residu.
+- **LATSOL #6.** Sukrosa dan stachyosa sama-sama tersusun ikatan glikosidik, sehingga soal ini
+  punya dua opsi yang dapat dibenarkan.
+- **LATSOL #8.** Batang soal menanyakan "enzim", padahal jawabannya insulin yang merupakan
+  hormon. Kata enzim diganti zat agar tidak menyesatkan.
 
 ## Bank naskah asli kakak tingkat (`ub-1-2-soal`, dst.)
 Selain bank soal tersusun (`ub-1-2`), ada bank **naskah asli** UB tahun sebelumnya yang disajikan apa adanya.

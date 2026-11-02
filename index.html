@@ -419,6 +419,13 @@
       <div class="qsgrid" id="b13dosen"></div>
       <p class="empty" id="b13dosenKosong" hidden style="margin-top:9px">Belum ada bank soal dari materi dosen.</p>
     </div>
+
+    <div class="sec">
+      <p class="sec-ttl">Naskah asli kakak tingkat</p>
+      <div class="qsgrid" id="b13asli"></div>
+      <p class="empty" id="b13asliKosong" hidden style="margin-top:9px">Belum ada naskah asli.</p>
+      <p class="empty" style="margin-top:9px">Soal responsi dan pre-test tahun-tahun sebelumnya, disajikan apa adanya. Banyak butir di sumber tidak memuat opsi lengkap, dan beberapa kuncinya bertentangan dengan PPT aslab &mdash; tiap soal membawa keterangan apakah opsinya utuh dari sumber dan dari mana kuncinya berasal.</p>
+    </div>
   </div>
 
   <div id="viewPlay" hidden>
@@ -488,6 +495,9 @@
 <script src="data/ub-1-2-remed.js"></script>
 <script src="data/ub-1-3-responsi-fisio.js"></script>
 <script src="data/ub-1-3-responsi-biokim.js"></script>
+<script src="data/ub-1-3-resp-asli.js"></script>
+<script src="data/ub-1-3-azytralis.js"></script>
+<script src="data/ub-1-3-latsol.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 <script>
@@ -513,6 +523,12 @@ const QUIZZES = [
     jumlahSoal:179, status:"siap", kind:"internal", sembunyi:true },
   { id:"ub-1-3-responsi-biokim", judul:"Responsi Biokimia 1.3", topik:"Blok 1.3 Lipid & Karbohidrat \u00b7 PPT aslab + responsi",
     jumlahSoal:209, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-resp-asli", judul:"Responsi Biokimia 1.3 (naskah asli)", topik:"Naskah asli \u00b7 30 soal",
+    jumlahSoal:30, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-azytralis", judul:"AZYTRALIS 2022 (naskah asli)", topik:"Responsi + pembahasan \u00b7 29 soal",
+    jumlahSoal:29, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-latsol", judul:"LATSOL Pre-Test Biokimia 1.3 (naskah asli)", topik:"Latihan soal 2026 \u00b7 25 soal",
+    jumlahSoal:25, status:"siap", kind:"internal", sembunyi:true },
   { id:"recall-blok-1-1", judul:"Recall Integratif Blok 1.1", topik:"Blok 1.1 · 10 modul",
     jumlahSoal:100, status:"siap", kind:"internal" },
   { id:"hemoglobinopati", judul:"Hemoglobinopati", topik:"Genetika Molekuler",
@@ -1369,7 +1385,12 @@ const B13 = {
     { id:"ub-1-3-responsi-fisio",  nama:"Responsi Fisiologi", ket:"Termoregulasi" },
     { id:"ub-1-3-responsi-biokim", nama:"Responsi Biokimia",  ket:"Lipid & Karbohidrat" }
   ],
-  dosen: []
+  dosen: [],
+  asli: [
+    { id:"ub-1-3-resp-asli", nama:"Responsi Biokimia 1.3", ket:"naskah asli" },
+    { id:"ub-1-3-azytralis", nama:"AZYTRALIS 2022",        ket:"responsi + pembahasan" },
+    { id:"ub-1-3-latsol",    nama:"LATSOL Pre-Test 2026",  ket:"latihan soal" }
+  ]
 };
 
 function b13kartu(b){
@@ -1395,14 +1416,15 @@ function b13kartu(b){
 
 function renderB13(){
   let total = 0;
-  [["aslab","#b13aslab","#b13aslabKosong"],["dosen","#b13dosen","#b13dosenKosong"]]
+  [["aslab","#b13aslab","#b13aslabKosong"],["dosen","#b13dosen","#b13dosenKosong"],
+   ["asli","#b13asli","#b13asliKosong"]]
   .forEach(([key, gridSel, kosongSel]) => {
     const grid = $(gridSel); grid.innerHTML = "";
     const daftar = B13[key] || [];
     daftar.forEach(b => { const k = b13kartu(b); total += k.jumlah; grid.appendChild(k.el); });
     $(kosongSel).hidden = daftar.length > 0;
   });
-  const bank = (B13.aslab || []).length + (B13.dosen || []).length;
+  const bank = (B13.aslab || []).length + (B13.dosen || []).length + (B13.asli || []).length;
   $("#b13sub").textContent = total
     ? total + " soal \u00b7 " + bank + " bank"
     : "Belum ada soal. Bank akan muncul setelah PPT-nya diolah.";
