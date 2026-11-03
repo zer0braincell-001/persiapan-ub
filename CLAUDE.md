@@ -70,8 +70,12 @@ kartu nonaktif (`<div aria-disabled>`) selama `bankOf(id)` kosong dan otomatis j
 | Naskah asli | Responsi Biokimia 1.3 | `ub-1-3-resp-asli` | 30 |
 | Naskah asli | AZYTRALIS 2022 | `ub-1-3-azytralis` | 29 |
 | Naskah asli | LATSOL Pre-Test 2026 | `ub-1-3-latsol` | 25 |
+| Pretest Fisiologi | Pretest Termoregulasi | `ub-1-3-pre-termo` | 19 |
+| Pretest Fisiologi | Pretest Anconeus 2021 | `ub-1-3-pre-2021` | 20 |
+| Pretest Fisiologi | Pretest Fisiologi 2023 | `ub-1-3-pre-2023` | 20 |
+| Pretest Fisiologi | Pretest Termoregulasi 2018 | `ub-1-3-pre-2018` | 14 |
 
-`B13` punya **tiga** seksi: `aslab`, `dosen`, `asli`. Total tab 1.3 = **472 soal**.
+`B13` punya **empat** seksi: `aslab`, `dosen`, `asli`, `pretest`. Total tab 1.3 = **545 soal**.
 
 Menambah kartu = tambah satu entri ke `B13.aslab` atau `B13.dosen`, plus `data/<id>.js`,
 `<script src>`, dan entri `QUIZZES` (`sembunyi:true`). Tidak ada tempat lain yang disentuh.
@@ -193,6 +197,65 @@ menyebut tabelnya wajib dihafal. Ini dipakai sebagai peta bobot dan dikutip di `
   punya dua opsi yang dapat dibenarkan.
 - **LATSOL #8.** Batang soal menanyakan "enzim", padahal jawabannya insulin yang merupakan
   hormon. Kata enzim diganti zat agar tidak menyesatkan.
+
+### Pretest Fisiologi Blok 1.3 (`ub-1-3-pre-*`) — naskah asli termoregulasi
+Empat naskah pretest termoregulasi dari angkatan berbeda, disajikan **apa adanya** di seksi
+"Pretest Fisiologi (naskah asli)" pada tab 1.3 (`B13.pretest`). Konvensi sama seperti `B12_ASLI`:
+tiap soal membawa `asliPenuh` dan `kunciDari`, yang ikut dicetak di akhir `rationale`.
+
+| id | asal | soal | opsi utuh | penanda kunci di sumber |
+|---|---|---|---|---|
+| `ub-1-3-pre-termo` | Pretest Fisiologi 1.3 Sistem Termoregulasi | 19 | 19 | **highlight kuning**, lengkap |
+| `ub-1-3-pre-2021` | Pretest Anconeus 2021 | 20 | 20 | highlight kuning pada 11 soal, sisanya dari Pembahasan |
+| `ub-1-3-pre-2023` | Pretest Fisiologi 1.3 Tahun 2023 | 20 | 20 | **bold**, lengkap 20 soal |
+| `ub-1-3-pre-2018` | Pretest Termoregulasi, Kedokteran 2018 | 14 | 11 | **tidak ada sama sekali** |
+
+Total **73 soal**; 70 opsinya utuh dari sumber. Kunci: 59 dari pembahasan/penanda sumber, 14 dari analisis.
+
+**Keempat berkas adalah naskah BERBEDA, bukan duplikat** — md5 berbeda dan isinya berlainan.
+Jangan digabung.
+
+**Dua soal dikecualikan karena bukan soal akademik:** nomor 20 pada naskah Termoregulasi
+(teka-teki detektif tentang pembunuhan) dan nomor 15 pada naskah 2018 ("Sebutkan seluruh
+asisten fisiologi angkatan 2016 dan 2017"). Celah penomoran `kodeAsli` itu benar.
+
+**Cara penanda kunci diekstrak** (berbeda tiap berkas, jangan pakai satu metode untuk semua):
+- `.docx` Anconeus → `python-docx`, cek `run.font.highlight_color`.
+- PDF 2023 → `pymupdf`, cek `'Bold' in span['font']` atau bit flag 4.
+- PDF Termoregulasi → `pymupdf` **`page.get_drawings()`** dengan fill kuning (R>0.85, G>0.85, B<0.4).
+  Highlight-nya BUKAN anotasi dan BUKAN bold — `page.annots()` mengembalikan kosong.
+- `.pptx` 2018 → tidak ada penanda apa pun, seluruh kunci lewat analisis.
+
+**Jebakan parser yang sudah menelan waktu:** batang soal sering memuat daftar bernomor
+(`1.` `2.` `3.` `4.`) dan cara kerja praktikum bernomor sampai `16)`. Regex nomor soal polos
+akan membacanya sebagai soal baru. Yang bekerja: **syarat nomor berurutan** (`n == cur+1`),
+bukan filter koordinat x.
+
+**Konflik dan cacat sumber yang sudah ditandai `**Catatan:**` — jangan didamaikan:**
+- **Termoregulasi #14 (baju renang basah)** — sumber menyorot **DUA opsi sekaligus**, evaporasi
+  dan konduksi kepada objek. Batang soal menyebut kondisi memakai baju basah, sehingga kunci
+  yang dipakai konduksi kepada objek, sesuai isi pembahasannya sendiri.
+- **Anconeus #2 (faktor termogenesis)** — pembahasan sumber menyimpulkan nomor 1, 3, dan 4 benar,
+  tetapi **tidak ada opsi yang memuat ketiganya**. Dipakai opsi yang seluruh unsurnya benar
+  meski tidak lengkap. Soal cacat di sumber.
+- **2023 #16 vs Termoregulasi #7 (fever fisiologis atau patologis)** — naskah 2023 memasukkan
+  fever ke dalam sistem fisiologis yang berhubungan dengan suhu tubuh; naskah Termoregulasi
+  justru memisahkan variasi fisiologis dari patologis dan menempatkan demam di sisi patologis.
+  **Dua naskah bertentangan**, dibiarkan apa adanya.
+- **2023 #6 (persentase perpindahan panas)** — pembahasan mencantumkan konveksi 12 % di samping
+  radiasi 60 %, konduksi udara 15 %, konduksi benda 3 %, evaporasi 22 %. Empat angka terakhir
+  sudah 100 %, jadi angka konveksi itu tidak muat. Konflik yang sama dengan PPT aslab.
+- **2023 #20 (aksila vs oral)** — memakai versi Modul Skillslab (aksila lebih rendah), bukan
+  versi Sherwood (setara oral). Konsisten dengan kunci bank `ub-1-3-responsi-fisio`.
+- **2018 #2 (yang meningkatkan suhu tubuh)** — olahraga dan asupan makan sama-sama tercantum
+  sebagai faktor termogenesis di slide, jadi dua opsi dapat dibenarkan. Sumber hanya memuat
+  empat opsi, satu ditambahkan.
+- **2018 #3 (suhu sentral)** — organ thorax, abdomen, dan SSP sama-sama tergolong suhu inti.
+  Pemilihan organ thorax bersandar pada naskah Termoregulasi #19, bukan pada sumber 2018 sendiri.
+- **2018 #4** — slide sumber **tidak memuat opsi sama sekali**; kelima opsi baku sebab-akibat ditambahkan.
+
+**Berkas pretest tidak disimpan di repo**, sama seperti PPT aslab — user melampirkannya tiap sesi.
+
 
 ## Bank naskah asli kakak tingkat (`ub-1-2-soal`, dst.)
 Selain bank soal tersusun (`ub-1-2`), ada bank **naskah asli** UB tahun sebelumnya yang disajikan apa adanya.

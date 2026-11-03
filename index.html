@@ -426,6 +426,13 @@
       <p class="empty" id="b13asliKosong" hidden style="margin-top:9px">Belum ada naskah asli.</p>
       <p class="empty" style="margin-top:9px">Soal responsi dan pre-test tahun-tahun sebelumnya, disajikan apa adanya. Banyak butir di sumber tidak memuat opsi lengkap, dan beberapa kuncinya bertentangan dengan PPT aslab &mdash; tiap soal membawa keterangan apakah opsinya utuh dari sumber dan dari mana kuncinya berasal.</p>
     </div>
+
+    <div class="sec">
+      <p class="sec-ttl">Pretest Fisiologi (naskah asli)</p>
+      <div class="qsgrid" id="b13pre"></div>
+      <p class="empty" id="b13preKosong" hidden style="margin-top:9px">Belum ada naskah pretest.</p>
+      <p class="empty" style="margin-top:9px">Empat naskah pretest termoregulasi dari angkatan berbeda, disajikan apa adanya. Penanda kunci berbeda-beda tiap berkas: ada yang menyorot kuncinya, ada yang hanya memuat pembahasan, dan naskah 2018 tidak memuat keduanya sehingga seluruh kuncinya ditentukan lewat analisis.</p>
+    </div>
   </div>
 
   <div id="viewPlay" hidden>
@@ -498,6 +505,10 @@
 <script src="data/ub-1-3-resp-asli.js"></script>
 <script src="data/ub-1-3-azytralis.js"></script>
 <script src="data/ub-1-3-latsol.js"></script>
+<script src="data/ub-1-3-pre-termo.js"></script>
+<script src="data/ub-1-3-pre-2021.js"></script>
+<script src="data/ub-1-3-pre-2023.js"></script>
+<script src="data/ub-1-3-pre-2018.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 <script>
@@ -529,6 +540,14 @@ const QUIZZES = [
     jumlahSoal:29, status:"siap", kind:"internal", sembunyi:true },
   { id:"ub-1-3-latsol", judul:"LATSOL Pre-Test Biokimia 1.3 (naskah asli)", topik:"Latihan soal 2026 \u00b7 25 soal",
     jumlahSoal:25, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-pre-termo", judul:"Pretest Fisiologi Termoregulasi (naskah asli)", topik:"Termoregulasi \u00b7 19 soal",
+    jumlahSoal:19, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-pre-2021", judul:"Pretest Anconeus 2021 (naskah asli)", topik:"Termoregulasi \u00b7 20 soal",
+    jumlahSoal:20, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-pre-2023", judul:"Pretest Fisiologi 2023 (naskah asli)", topik:"Termoregulasi \u00b7 20 soal",
+    jumlahSoal:20, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-pre-2018", judul:"Pretest Termoregulasi 2018 (naskah asli)", topik:"Termoregulasi \u00b7 14 soal",
+    jumlahSoal:14, status:"siap", kind:"internal", sembunyi:true },
   { id:"recall-blok-1-1", judul:"Recall Integratif Blok 1.1", topik:"Blok 1.1 · 10 modul",
     jumlahSoal:100, status:"siap", kind:"internal" },
   { id:"hemoglobinopati", judul:"Hemoglobinopati", topik:"Genetika Molekuler",
@@ -1390,6 +1409,12 @@ const B13 = {
     { id:"ub-1-3-resp-asli", nama:"Responsi Biokimia 1.3", ket:"naskah asli" },
     { id:"ub-1-3-azytralis", nama:"AZYTRALIS 2022",        ket:"responsi + pembahasan" },
     { id:"ub-1-3-latsol",    nama:"LATSOL Pre-Test 2026",  ket:"latihan soal" }
+  ],
+  pretest: [
+    { id:"ub-1-3-pre-termo", nama:"Pretest Termoregulasi", ket:"kunci disorot di sumber" },
+    { id:"ub-1-3-pre-2021",  nama:"Pretest Anconeus 2021", ket:"kunci + pembahasan" },
+    { id:"ub-1-3-pre-2023",  nama:"Pretest Fisiologi 2023", ket:"kunci + pembahasan" },
+    { id:"ub-1-3-pre-2018",  nama:"Pretest Termoregulasi 2018", ket:"tanpa kunci, hasil analisis" }
   ]
 };
 
@@ -1417,14 +1442,14 @@ function b13kartu(b){
 function renderB13(){
   let total = 0;
   [["aslab","#b13aslab","#b13aslabKosong"],["dosen","#b13dosen","#b13dosenKosong"],
-   ["asli","#b13asli","#b13asliKosong"]]
+   ["asli","#b13asli","#b13asliKosong"],["pretest","#b13pre","#b13preKosong"]]
   .forEach(([key, gridSel, kosongSel]) => {
     const grid = $(gridSel); grid.innerHTML = "";
     const daftar = B13[key] || [];
     daftar.forEach(b => { const k = b13kartu(b); total += k.jumlah; grid.appendChild(k.el); });
     $(kosongSel).hidden = daftar.length > 0;
   });
-  const bank = (B13.aslab || []).length + (B13.dosen || []).length + (B13.asli || []).length;
+  const bank = (B13.aslab || []).length + (B13.dosen || []).length + (B13.asli || []).length + (B13.pretest || []).length;
   $("#b13sub").textContent = total
     ? total + " soal \u00b7 " + bank + " bank"
     : "Belum ada soal. Bank akan muncul setelah PPT-nya diolah.";
