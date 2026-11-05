@@ -1,0 +1,1201 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<title>Panduan Anatomi 1.3</title>
+<!--
+  Panduan belajar anatomi Blok 1.3 (dinding abdomen, peritoneum, tractus digestivus, organa accessoria).
+  Halaman mandiri: TIDAK memakai engine quiz di index.html. Soal latihannya ada di bank
+  ub-1-3-responsi-anat dan ub-1-3-anat-dosen, ditautkan dari bagian "Latihan".
+  Tidak ada gambar atlas di sini (repo public); semua skema digambar sendiri sebagai SVG/HTML.
+  localStorage: tema dibaca dari "persiapan-ub.v1" (sama dengan index.html),
+  checklist disimpan di "persiapan-ub.anatomi13.v1". Semua akses dibungkus try/catch.
+-->
+<style>
+  :root{
+    --bg:#F3F5F7; --surface:#FFFFFF; --surface-2:#EAEEF2; --raise:#F6F8FA;
+    --text:#1A2230; --muted:#5A6675; --faint:#8A94A2;
+    --border:#DDE3EA; --border-strong:#C6D0DA;
+    --accent:#33698F; --accent-ink:#244F6B; --accent-soft:#DEEAF1;
+    --good:#2A8A5E; --good-soft:#DEF0E8; --good-ink:#1E6B47;
+    --bad:#B4534A; --bad-soft:#F3E3E0; --bad-ink:#8C3B34;
+    --flag:#B5811C; --flag-soft:#F5EBD3; --flag-ink:#8A6210;
+    --fg:#3F6FB0; --fg-soft:#E1EAF6;   /* foregut  */
+    --mg:#C9712E; --mg-soft:#F7E6D8;   /* midgut   */
+    --hg:#2F8C7A; --hg-soft:#DDF0EB;   /* hindgut  */
+    --shadow:0 1px 2px rgba(26,34,48,.05), 0 4px 16px -8px rgba(26,34,48,.16);
+    --radius:14px; --maxw:860px;
+  }
+  :root:not([data-theme="light"]){
+    @media (prefers-color-scheme: dark){
+      --bg:#12171C; --surface:#1A2027; --surface-2:#222A32; --raise:#252E37;
+      --text:#E7ECF1; --muted:#9AA6B2; --faint:#6E7A86;
+      --border:#2C353F; --border-strong:#3A4550;
+      --accent:#6BA8CC; --accent-ink:#8FC0DD; --accent-soft:#1E2E3A;
+      --good:#54B98A; --good-soft:#183227; --good-ink:#84D7B0;
+      --bad:#D38177; --bad-soft:#33211E; --bad-ink:#E7A79F;
+      --flag:#D6A945; --flag-soft:#302710; --flag-ink:#E7C877;
+      --fg:#7FA6E0; --fg-soft:#1C2940; --mg:#E59A5E; --mg-soft:#3A2618; --hg:#5CC2AD; --hg-soft:#16302B;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 20px -10px rgba(0,0,0,.55);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12171C; --surface:#1A2027; --surface-2:#222A32; --raise:#252E37;
+    --text:#E7ECF1; --muted:#9AA6B2; --faint:#6E7A86;
+    --border:#2C353F; --border-strong:#3A4550;
+    --accent:#6BA8CC; --accent-ink:#8FC0DD; --accent-soft:#1E2E3A;
+    --good:#54B98A; --good-soft:#183227; --good-ink:#84D7B0;
+    --bad:#D38177; --bad-soft:#33211E; --bad-ink:#E7A79F;
+    --flag:#D6A945; --flag-soft:#302710; --flag-ink:#E7C877;
+    --fg:#7FA6E0; --fg-soft:#1C2940; --mg:#E59A5E; --mg-soft:#3A2618; --hg:#5CC2AD; --hg-soft:#16302B;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 20px -10px rgba(0,0,0,.55);
+  }
+  *{box-sizing:border-box}
+  [hidden]{display:none!important}
+  body{margin:0; background:var(--bg); color:var(--text);
+    font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; font-size:15px;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 16px 64px;}
+  a{color:var(--accent-ink)}
+
+  .topbar{position:sticky; top:0; z-index:30;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:saturate(1.3) blur(10px); border-bottom:1px solid var(--border);}
+  .topbar-in{max-width:var(--maxw); margin:0 auto; padding:10px 16px; display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+  .brand{margin-right:auto; display:flex; align-items:baseline; gap:10px; min-width:0}
+  .brand h1{font-family:"Spectral",Georgia,serif; font-weight:700; font-size:18px; margin:0}
+  .brand .sub{font-size:12px; color:var(--muted); white-space:nowrap}
+  .btn{appearance:none; border:1px solid var(--border-strong); background:var(--surface); color:var(--text);
+    font:600 13px/1 "IBM Plex Sans",sans-serif; border-radius:10px; padding:8px 11px; cursor:pointer;
+    text-decoration:none; display:inline-flex; align-items:center; gap:6px}
+  .btn:hover{background:var(--surface-2)}
+  .btn.ghost{border-color:transparent; background:transparent; color:var(--muted)}
+  .btn[aria-pressed="true"]{background:var(--accent); border-color:var(--accent); color:#fff}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:6px}
+
+  .hero{padding:30px 0 6px}
+  .hero h2{font-family:"Spectral",Georgia,serif; font-size:32px; line-height:1.15; letter-spacing:-.02em; margin:0 0 8px; text-wrap:balance}
+  .hero p{margin:0; color:var(--muted)}
+  .toc{display:flex; flex-wrap:wrap; gap:7px; margin:18px 0 0}
+  .toc a{font-size:12.5px; font-weight:600; text-decoration:none; color:var(--text); background:var(--surface);
+    border:1px solid var(--border); border-radius:999px; padding:5px 11px}
+  .toc a:hover{border-color:var(--accent)}
+
+  section.mod{margin-top:38px; scroll-margin-top:64px}
+  .mod > h3{font-family:"Spectral",Georgia,serif; font-size:25px; margin:0 0 4px; letter-spacing:-.01em; display:flex; gap:10px; align-items:baseline; flex-wrap:wrap}
+  .mod > h3 .no{font-family:"IBM Plex Mono",monospace; font-size:13px; color:var(--muted); font-weight:600}
+  .mod > .lead{color:var(--muted); margin:0 0 14px}
+  h4{font-size:15.5px; margin:22px 0 8px}
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:15px 16px; box-shadow:var(--shadow); margin:12px 0}
+  .card > :first-child{margin-top:0} .card > :last-child{margin-bottom:0}
+  .sec-ttl{font:600 11.5px/1.2 "IBM Plex Mono",monospace; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); margin:0 0 9px}
+  ul,ol{padding-left:20px; margin:6px 0} li{margin:3px 0}
+  .muted{color:var(--muted)} .small{font-size:13px}
+
+  /* badges */
+  .b{display:inline-block; font:600 10.5px/1 "IBM Plex Mono",monospace; padding:3px 6px; border-radius:5px; vertical-align:2px; letter-spacing:.02em}
+  .bA{background:var(--accent-soft); color:var(--accent-ink)}
+  .bD{background:var(--good-soft); color:var(--good-ink)}
+  .bT{background:var(--surface-2); color:var(--muted)}
+  .bP{background:var(--flag-soft); color:var(--flag-ink)}
+
+  /* callouts */
+  .co{border-left:3px solid var(--accent); background:var(--accent-soft); border-radius:10px; padding:10px 13px; margin:12px 0; font-size:14px}
+  .co.flag{border-color:var(--flag); background:var(--flag-soft)}
+  .co.bad{border-color:var(--bad); background:var(--bad-soft)}
+  .co.good{border-color:var(--good); background:var(--good-soft)}
+  .co b.t{display:block; margin-bottom:2px}
+
+  /* tabel */
+  .tw{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:10px 0; border:1px solid var(--border); border-radius:12px; background:var(--surface)}
+  table{border-collapse:collapse; width:100%; font-size:13.5px; min-width:520px}
+  th,td{padding:8px 10px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top}
+  th{background:var(--raise); font-weight:600; font-size:12.5px; color:var(--muted)}
+  tr:last-child td{border-bottom:0}
+  td:first-child{font-weight:600}
+  .tbl-sm table{min-width:0}
+  .key{background:var(--flag-soft); color:var(--flag-ink); font-weight:700; padding:0 3px; border-radius:3px}
+
+  /* reveal (mode tutup jawaban) */
+  body.tutup .rv:not(.shown){filter:blur(5px); cursor:pointer; user-select:none; transition:filter .15s}
+  body.tutup .rv:not(.shown):hover{filter:blur(3.5px)}
+  body.tutup svg .rv:not(.shown){filter:none; opacity:0}
+
+  /* rencana harian */
+  .plan{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px}
+  .day{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:14px 15px; box-shadow:var(--shadow)}
+  .day .dh{font:600 11.5px "IBM Plex Mono",monospace; color:var(--accent-ink); text-transform:uppercase; letter-spacing:.05em}
+  .day h5{font-family:"Spectral",Georgia,serif; font-size:18px; margin:3px 0 8px}
+  .day ol{margin:0; padding-left:18px; font-size:14px}
+  .day .why{font-size:12.5px; color:var(--muted); margin-top:9px; border-top:1px dashed var(--border); padding-top:8px}
+
+  /* langkah urutan */
+  .steps{counter-reset:st; display:grid; gap:8px; margin:10px 0}
+  .step{display:grid; grid-template-columns:34px 1fr; gap:10px; align-items:start; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:10px 12px}
+  .step::before{counter-increment:st; content:counter(st); font:600 14px "IBM Plex Mono",monospace; background:var(--accent-soft); color:var(--accent-ink); border-radius:8px; height:30px; display:grid; place-items:center}
+  .step b{display:block}
+  .step span{font-size:13.5px; color:var(--muted)}
+
+  /* checklist */
+  .ck{display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:4px 14px; margin:6px 0}
+  .ck label{display:flex; gap:8px; align-items:flex-start; font-size:13.5px; padding:3px 0; cursor:pointer}
+  .ck input{margin-top:3px; accent-color:var(--good)}
+  .ck input:checked + span{color:var(--muted); text-decoration:line-through; text-decoration-color:var(--faint)}
+  .ckhead{display:flex; justify-content:space-between; align-items:baseline; gap:10px}
+  .ckhead .cnt{font:600 12px "IBM Plex Mono",monospace; color:var(--good-ink)}
+
+  /* lapisan dinding */
+  .layers{display:grid; gap:4px; margin:10px 0}
+  .ly{display:grid; grid-template-columns:28px 1fr; gap:10px; align-items:center; border-radius:8px; padding:7px 10px; font-size:13.5px; border:1px solid var(--border); background:var(--surface)}
+  .ly .n{font:600 12px "IBM Plex Mono",monospace; color:var(--muted)}
+  .ly small{display:block; color:var(--muted); font-size:12.5px}
+  .ly.skin{background:var(--flag-soft)} .ly.fat{background:color-mix(in srgb,var(--flag-soft) 55%, var(--surface))}
+  .ly.mus{background:var(--bad-soft)} .ly.fas{background:var(--accent-soft)} .ly.per{background:var(--good-soft)}
+  .ly.sub{margin-left:38px}
+
+  /* grid 9 regio */
+  .reg9{display:grid; grid-template-columns:repeat(3,1fr); gap:3px; background:var(--border-strong); border:3px solid var(--border-strong); border-radius:12px; overflow:hidden; margin:10px 0}
+  .reg9 > div{background:var(--surface); padding:8px 9px; font-size:12.5px; min-height:92px}
+  .reg9 b{display:block; font-size:12px; color:var(--accent-ink); margin-bottom:3px}
+  .reg9 .mid{background:var(--raise)}
+
+  /* pohon arteri */
+  .tree, .tree ul{list-style:none; margin:0; padding:0}
+  .tree ul{margin-left:16px; border-left:1.5px solid var(--border-strong); padding-left:12px}
+  .tree li{margin:4px 0; font-size:13.5px; position:relative}
+  .tree ul > li::before{content:""; position:absolute; left:-12px; top:.8em; width:9px; border-top:1.5px solid var(--border-strong)}
+  .tree .root{font-weight:700}
+  .tree .to{color:var(--muted); font-size:12.5px}
+  .trees{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:12px}
+  .trees .card{margin:0}
+  .gut-f{border-top:4px solid var(--fg)!important} .gut-m{border-top:4px solid var(--mg)!important} .gut-h{border-top:4px solid var(--hg)!important}
+  .pill{display:inline-block; font:600 11px "IBM Plex Mono",monospace; padding:2px 7px; border-radius:999px}
+  .pf{background:var(--fg-soft); color:var(--fg)} .pm{background:var(--mg-soft); color:var(--mg)} .ph{background:var(--hg-soft); color:var(--hg)}
+
+  /* flow */
+  .flow{display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin:10px 0; font-size:13px}
+  .flow .bx{background:var(--surface); border:1px solid var(--border-strong); border-radius:8px; padding:5px 9px; font-weight:600}
+  .flow .bx.hi{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink)}
+  .flow .ar{color:var(--faint); font-weight:700}
+
+  /* svg */
+  figure{margin:12px 0}
+  figure svg{width:100%; max-width:600px; margin:0 auto; height:auto; display:block; background:var(--surface); border:1px solid var(--border); border-radius:12px}
+  figcaption{font-size:12.5px; color:var(--muted); margin-top:6px}
+  svg text{font-family:"IBM Plex Sans",sans-serif; fill:var(--text)}
+  svg .lbl{font-size:11px} svg .lbs{font-size:9.5px; fill:var(--muted)} svg .ttl{font-size:12px; font-weight:700}
+  svg .ln{stroke:var(--text); fill:none} svg .mut{stroke:var(--faint); fill:none}
+  .two{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px}
+
+  .foot{margin-top:46px; font-size:12.5px; color:var(--muted); border-top:1px solid var(--border); padding-top:14px}
+  @media (max-width:520px){
+    .hero h2{font-size:26px}
+    .brand .sub{display:none}
+    .reg9 > div{font-size:11px; padding:6px; min-height:84px}
+    .ly.sub{margin-left:18px}
+  }
+  @media print{ .topbar,.toc{display:none} body.tutup .rv{filter:none!important} }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand"><h1>Panduan Anatomi 1.3</h1><span class="sub">Abdomen &amp; digestif &middot; responsi</span></div>
+    <button class="btn" id="tTutup" aria-pressed="false" title="Kaburkan jawaban; ketuk untuk membuka satu per satu">&#9673; Tutup jawaban</button>
+    <a class="btn ghost" href="index.html#/blok13">&larr; Tab 1.3</a>
+    <button class="btn ghost" id="tTheme" title="Ganti tema">&#9681;</button>
+  </div>
+</div>
+
+<div class="wrap">
+
+<div class="hero">
+  <h2>Anatomi Dinding Abdomen, Tractus Digestivus &amp; Organa Accessoria</h2>
+  <p>Disusun dari tiga PPT asistensi (Zydane, Khai, Fatih) sebagai inti dan tiga PDF kuliah dosen sebagai pengayaan. Fokus: <b>responsi/OSPE</b>, dengan beberapa kasus klinis.</p>
+  <nav class="toc" aria-label="Daftar isi">
+    <a href="#urutan">0 · Urutan belajar</a>
+    <a href="#kerangka">1 · Regio &amp; dinding</a>
+    <a href="#inguinal">2 · Regio inguinalis</a>
+    <a href="#peritoneum">3 · Peritoneum</a>
+    <a href="#pembuluh">4 · Peta pembuluh &amp; saraf</a>
+    <a href="#tenue">5 · Jejunum–ileum</a>
+    <a href="#crassum">6 · Intestinum crassum</a>
+    <a href="#rectum">7 · Rectum &amp; canalis analis</a>
+    <a href="#hepar">8 · Hepar</a>
+    <a href="#bilier">9 · VF &amp; pancreas</a>
+    <a href="#lien">10 · Lien</a>
+    <a href="#porta">11 · Vena porta</a>
+    <a href="#superior">12 · Tractus superior (dosen)</a>
+    <a href="#klinis">13 · Kasus</a>
+    <a href="#koreksi">Koreksi sumber</a>
+    <a href="#latihan">Latihan soal</a>
+  </nav>
+</div>
+
+<div class="co">
+  <b class="t">Cara memakai halaman ini</b>
+  Label <span class="b bA">ASLAB</span> berarti materinya ada di PPT asistensi; ini inti untuk responsi. <span class="b bD">DOSEN</span> berarti tambahan dari PDF kuliah. <span class="b bT">LIT</span> berarti aku tambahkan dari literatur standar (Moore/Netter) untuk menutup lubang, dan tidak tertulis di kedua sumber. <span class="b bP">PRIORITAS 2</span> berarti dipelajari setelah inti selesai.
+  Tombol <b>Tutup jawaban</b> di atas mengaburkan isi tabel dan label skema. Ketuk satu per satu untuk mengecek hafalanmu. Begitulah responsi menguji: kamu melihat struktur, lalu harus menyebut namanya.
+</div>
+
+<!-- ===================================================== 0 -->
+<section class="mod" id="urutan">
+  <h3><span class="no">00</span> Urutan belajar</h3>
+  <p class="lead">Polanya: kerangka dulu, isi belakangan. Dinding, regio, dan peritoneum menjadi "peta"-nya. Tiga cabang aorta menjadi "jalan"-nya. Setelah itu baru tiap organ diletakkan ke peta tersebut.</p>
+
+  <div class="steps">
+    <div class="step"><div><b>Regio + lapisan dinding abdomen</b><span>Semua soal letak ("organ X di regio apa") dan soal sayatan bertumpu di sini. Ini paling cepat dikuasai, jadi kerjakan dulu supaya kepercayaan dirimu naik.</span></div></div>
+    <div class="step"><div><b>Regio inguinalis</b><span>Hanya ada empat dinding dan satu segitiga, tapi ini favorit responsi dan soal hernia. Butuh lapisan otot dari langkah 1.</span></div></div>
+    <div class="step"><div><b>Peritoneum: intra vs retro, omentum, mesenterium, ligamenta</b><span>Kalau sudah paham ini, setiap organ berikutnya langsung punya satu jawaban gratis: intraperitoneal atau retroperitoneal.</span></div></div>
+    <div class="step"><div><b>Peta pembuluh dan saraf: foregut, midgut, hindgut</b><span>Satu tabel ini menjawab arteri, persarafan otonom, dan letak nyeri alih untuk SEMUA organ. Hafalkan sekali, lalu pakai berulang kali.</span></div></div>
+    <div class="step"><div><b>Tractus inferior: jejunum–ileum, caecum–appendix, colon, rectum–canalis analis</b><span>Organ tinggal "diisi" ke dalam peta dari langkah 4. Pembedanya: ciri morfologi, taenia, dan linea pectinata.</span></div></div>
+    <div class="step"><div><b>Organa accessoria: hepar, vesica fellea + pancreas, lien</b><span>Ini paling banyak struktur yang harus ditunjuk (facies visceralis hepar). Pakai skema "huruf H".</span></div></div>
+    <div class="step"><div><b>Vena porta + anastomosis portosistemik</b><span>Ini penyatu seluruh materi: hepar, oesophagus, rectum, dan dinding abdomen bertemu di satu konsep.</span></div></div>
+    <div class="step"><div><b>Tractus superior (oesophagus, gaster, duodenum, cavum oris)</b> <span class="b bP">PRIORITAS 2</span><span>Hanya ada di PDF dosen. Sebagian besar arterinya sudah kamu pelajari di langkah 4.</span></div></div>
+  </div>
+
+  <h4>Jadwal sesuai sisa waktu</h4>
+  <div class="plan">
+    <div class="day">
+      <div class="dh">Kalau 3 hari</div>
+      <h5>Hari 1: Kerangka</h5>
+      <ol><li><a href="#kerangka">Regio &amp; lapisan dinding</a></li><li><a href="#inguinal">Regio inguinalis</a></li><li><a href="#peritoneum">Peritoneum</a></li><li><a href="#pembuluh">Peta pembuluh</a> (cukup baca satu kali)</li><li>Latihan soal modul Dinding &amp; Peritoneum</li></ol>
+      <div class="why">Kalau besok responsi dinding abdomen, hari ini sudah aman.</div>
+    </div>
+    <div class="day">
+      <div class="dh">Kalau 3 hari</div>
+      <h5>Hari 2: Saluran</h5>
+      <ol><li>Ulang <a href="#pembuluh">peta pembuluh</a> sampai bisa digambar ulang</li><li><a href="#tenue">Jejunum–ileum</a></li><li><a href="#crassum">Intestinum crassum</a></li><li><a href="#rectum">Rectum &amp; canalis analis</a></li><li>Latihan soal modul Tractus inferior</li></ol>
+      <div class="why">Pembuluh diulang di awal hari 2 karena colon tidak bisa dipelajari tanpanya.</div>
+    </div>
+    <div class="day">
+      <div class="dh">Kalau 3 hari</div>
+      <h5>Hari 3: Organ tambahan + integrasi</h5>
+      <ol><li><a href="#hepar">Hepar</a> → <a href="#bilier">VF &amp; pancreas</a> → <a href="#lien">Lien</a></li><li><a href="#porta">Vena porta</a></li><li><a href="#superior">Tractus superior</a> (kalau masih ada waktu)</li><li><a href="#klinis">Kasus</a> + semua checklist dengan mode Tutup jawaban</li></ol>
+      <div class="why">Vena porta sengaja ditaruh terakhir karena ia menyatukan semua organ sebelumnya.</div>
+    </div>
+    <div class="day" style="border-color:var(--flag)">
+      <div class="dh" style="color:var(--flag-ink)">Kalau tinggal 1 hari</div>
+      <h5>Mode kebut (±6 jam)</h5>
+      <ol><li>Lapisan dinding + vagina recti + MALT + Hesselbach (1 jam)</li><li>Intra/retro + omentum (40 mnt)</li><li>Tabel foregut/midgut/hindgut + pohon arteri (1 jam)</li><li>Jejunum vs ileum, taenia, bingkai colon, linea pectinata (1,5 jam)</li><li>Hepar huruf H, porta hepatis, saluran empedu, Calot (1,5 jam)</li><li>Anastomosis porta (20 mnt)</li></ol>
+      <div class="why">Yang dikorbankan: tractus superior, segmen Couinaud, dinding posterior, detail limfe.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== 1 -->
+<section class="mod" id="kerangka">
+  <h3><span class="no">01</span> Regio abdomen &amp; dinding <span class="b bA">ASLAB</span></h3>
+  <p class="lead">Batas cavitas abdominis: atas <b>diafragma</b>, bawah <b>apertura pelvis superior</b>, belakang <b>VL I–V + discus</b>, lateral <b>costae, os coxae, m. psoas major, m. quadratus lumborum</b>.</p>
+
+  <h4>Pola 4 kuadran vs 9 regio</h4>
+  <div class="two">
+    <div class="card">
+      <p class="sec-ttl">4 kuadran</p>
+      Dibagi oleh <b>linea transumbilicalis</b> (setinggi discus L3–L4) dan <b>linea mediana</b>.
+      <ul class="small">
+        <li><b>RUQ</b>: <span class="rv">hepar lobus dexter, VF, pylorus, duodenum 1–3, caput pancreas, ren &amp; suprarenal dex, flexura coli dextra</span></li>
+        <li><b>LUQ</b>: <span class="rv">hepar lobus sinister, lien, gaster, jejunum, corpus–cauda pancreas, ren sin, flexura coli sinistra</span></li>
+        <li><b>RLQ</b>: <span class="rv">caecum, appendix, sebagian besar ileum, colon ascendens bawah, ovarium/tuba dex</span></li>
+        <li><b>LLQ</b>: <span class="rv">colon sigmoideum, colon descendens bawah, ovarium/tuba sin</span></li>
+      </ul>
+    </div>
+    <div class="card">
+      <p class="sec-ttl">Garis 9 regio</p>
+      <ul class="small">
+        <li>Horizontal atas: <b>bidang subcostalis</b> (tepi bawah costa X, ±L3) <i>atau</i> <b>transpylorica</b> (±L1). Ini dua bidang yang berbeda; sumber memakai salah satunya.</li>
+        <li>Horizontal bawah: <b>bidang intertubercularis</b> (tuberculum iliacum, ±L5) <i>atau</i> <b>interspinosa</b> (SIAS).</li>
+        <li>Vertikal: <b>linea medioclavicularis dextra et sinistra</b>.</li>
+      </ul>
+      <p class="small muted">Diskriminator: kata <b>"atau"</b> di PPT tidak berarti keduanya sama. Kalau ditanya "bidang setinggi pylorus", jawabannya transpylorica.</p>
+    </div>
+  </div>
+
+  <div class="reg9" aria-label="Grid 9 regio">
+    <div><b>Hypochondriaca dextra</b><span class="rv">hepar lobus dexter, VF, flexura coli dextra, suprarenal dex</span></div>
+    <div class="mid"><b>Epigastrica</b><span class="rv">gaster, pancreas, duodenum pars superior, hepar lobus sinister</span></div>
+    <div><b>Hypochondriaca sinistra</b><span class="rv">lien, cauda pancreas, gaster, flexura coli sinistra, suprarenal sin</span></div>
+    <div><b>Lumbalis (lateralis) dextra</b><span class="rv">ren dex, ureter dex, colon ascendens</span></div>
+    <div class="mid"><b>Umbilicalis</b><span class="rv">jejunum, ileum, duodenum, colon transversum</span></div>
+    <div><b>Lumbalis (lateralis) sinistra</b><span class="rv">colon descendens, ren sin, ureter sin</span></div>
+    <div><b>Inguinalis dextra</b><span class="rv">caecum, appendix vermiformis</span></div>
+    <div class="mid"><b>Hypogastrica (pubica)</b><span class="rv">vesica urinaria (penuh), uterus, rectum</span></div>
+    <div><b>Inguinalis sinistra</b><span class="rv">colon sigmoideum</span></div>
+  </div>
+  <p class="small muted">Kiri grid = kanan pasien (pasien menghadap kamu). Kesalahan orientasi ini sering terjadi saat responsi.</p>
+
+  <h4>Lapisan dinding anterolateral (luar → dalam)</h4>
+  <div class="layers">
+    <div class="ly skin"><span class="n">1</span><div><b>Kulit</b><small>Melekat longgar, kecuali di umbilicus (melekat erat)</small></div></div>
+    <div class="ly fat"><span class="n">2</span><div><b>Fascia superficialis</b> (tela subcutanea)<small>Di <b>atas</b> umbilicus hanya satu lapis; di <b>bawah</b> umbilicus terpisah jelas menjadi dua lapis:</small></div></div>
+    <div class="ly fat sub"><span class="n">2a</span><div><b>Fascia Camper</b> = lamina superficialis = panniculus adiposus<small>Lapisan <b>lemak</b>, tebalnya bervariasi</small></div></div>
+    <div class="ly fat sub"><span class="n">2b</span><div><b>Fascia Scarpa</b> = lamina profunda = stratum membranosum<small>Lapisan <b>membranosa</b>, hampir tanpa lemak. Lanjutannya ada di tabel di bawah.</small></div></div>
+    <div class="ly fas"><span class="n">3</span><div><b>Fascia profunda</b> (investing fascia)<small>Tipis, membungkus tiap otot pipih, dan sulit dipisahkan dari m. obliquus externus</small></div></div>
+    <div class="ly mus"><span class="n">4</span><div><b>Musculi et aponeurosis</b><small>Lateral: m. obliquus externus → m. obliquus internus → m. transversus abdominis. Anterior: m. rectus abdominis, m. pyramidalis</small></div></div>
+    <div class="ly fas"><span class="n">5</span><div><b>Fascia transversalis</b><small>Lapisan fascia dalam yang paling berkembang; membentuk dinding posterior canalis inguinalis</small></div></div>
+    <div class="ly fat"><span class="n">6</span><div><b>Fascia extraperitonealis</b> (endoabdominalis)<small>Jaringan lemak; paling tebal di dinding posterior, sekitar ren</small></div></div>
+    <div class="ly per"><span class="n">7</span><div><b>Peritoneum parietale</b></div></div>
+  </div>
+
+  <div class="tw tbl-sm"><table>
+    <tr><th>Fascia Scarpa berlanjut ke…</th><th>menjadi</th></tr>
+    <tr><td>Paha, tepat di bawah lig. inguinale</td><td class="rv">menyatu dengan <b>fascia lata</b></td></tr>
+    <tr><td>Scrotum</td><td class="rv"><b>fascia (tunica) dartos</b>, berisi otot polos</td></tr>
+    <tr><td>Perineum</td><td class="rv"><b>fascia Colles</b> (fascia perinealis superficialis)</td></tr>
+    <tr><td>Penis</td><td class="rv"><b>lig. fundiforme penis</b> <span class="b bD">DOSEN</span></td></tr>
+    <tr><td>Garis tengah</td><td class="rv">melekat ke <b>linea alba</b> &amp; symphysis pubica</td></tr>
+  </table></div>
+
+  <h4>Otot anterolateral: bedakan dari arah serabutnya</h4>
+  <div class="tw"><table>
+    <tr><th>Otot</th><th>Arah serabut</th><th>Ciri pembeda</th></tr>
+    <tr><td>M. obliquus externus</td><td class="rv">ke <b>infero</b>medial ("tangan masuk saku")</td><td class="rv">Paling superfisial. Tepi bawah aponeurosisnya = <b>lig. inguinale</b> (SIAS → tuberculum pubicum)</td></tr>
+    <tr><td>M. obliquus internus</td><td class="rv">ke <b>supero</b>medial, tegak lurus externus</td><td class="rv">Aponeurosisnya <b>membelah</b> di sekitar rectus (di atas linea arcuata)</td></tr>
+    <tr><td>M. transversus abdominis</td><td class="rv">transversal (horizontal)</td><td class="rv">Paling dalam; di bawahnya fascia transversalis</td></tr>
+    <tr><td>M. rectus abdominis</td><td class="rv">vertikal</td><td class="rv"><b>3 intersectiones tendineae</b>: setinggi proc. xiphoideus, umbilicus, dan di antara keduanya</td></tr>
+    <tr><td>M. pyramidalis</td><td class="rv">segitiga kecil di depan rectus bawah</td><td class="rv">Tidak ada pada ±20% orang; ikut di dalam vagina recti</td></tr>
+  </table></div>
+  <p class="small"><b>Linea alba</b>: dari proc. xiphoideus ke symphysis pubica, dibentuk oleh perpaduan aponeurosis ketiga otot pipih; umbilicus terletak di linea alba.</p>
+
+  <h4>Vagina musculi recti abdominis: kunci di <span class="key">linea arcuata</span></h4>
+  <figure>
+    <svg viewBox="0 0 640 212" style="max-width:760px" role="img" aria-label="Potongan melintang vagina musculi recti di atas dan di bawah linea arcuata">
+      <text x="160" y="20" text-anchor="middle" class="ttl">DI ATAS linea arcuata</text>
+      <text x="480" y="20" text-anchor="middle" class="ttl">DI BAWAH linea arcuata</text>
+      <line x1="320" y1="10" x2="320" y2="200" class="mut" stroke-dasharray="3 4"/>
+      <!-- panel kiri -->
+      <g>
+        <line x1="30" y1="35" x2="30" y2="175" class="mut" stroke-dasharray="2 3"/><text x="30" y="202" text-anchor="middle" class="lbs">linea alba</text>
+        <ellipse cx="110" cy="100" rx="58" ry="24" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5"/><text x="110" y="104" text-anchor="middle" class="lbl">m. rectus</text>
+        <!-- EO -->
+        <path d="M300 52 H215" stroke="var(--accent)" stroke-width="7" fill="none"/>
+        <path d="M215 52 H30" stroke="var(--accent)" stroke-width="2" fill="none"/>
+        <!-- IO -->
+        <path d="M300 100 H205" stroke="var(--flag)" stroke-width="7" fill="none"/>
+        <path d="M205 100 C185 100 182 66 165 66 H30" stroke="var(--flag)" stroke-width="2" fill="none"/>
+        <path d="M205 100 C185 100 182 134 165 134 H30" stroke="var(--flag)" stroke-width="2" fill="none"/>
+        <!-- TA -->
+        <path d="M300 146 H215" stroke="var(--good)" stroke-width="7" fill="none"/>
+        <path d="M215 146 C195 146 190 140 170 140 H30" stroke="var(--good)" stroke-width="2" fill="none"/>
+        <!-- FT -->
+        <path d="M300 160 H30" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="5 3" fill="none"/>
+        <text x="300" y="45" text-anchor="end" class="lbs">EO</text><text x="300" y="93" text-anchor="end" class="lbs">IO</text><text x="300" y="139" text-anchor="end" class="lbs">TA</text><text x="300" y="173" text-anchor="end" class="lbs">fascia transversalis</text>
+        <text x="40" y="44" class="lbs rv">lamina anterior = EO + IO (daun depan)</text>
+        <text x="40" y="186" class="lbs rv">lamina posterior = IO (daun belakang) + TA</text>
+      </g>
+      <!-- panel kanan -->
+      <g transform="translate(320,0)">
+        <line x1="30" y1="35" x2="30" y2="175" class="mut" stroke-dasharray="2 3"/><text x="30" y="202" text-anchor="middle" class="lbs">linea alba</text>
+        <ellipse cx="110" cy="105" rx="58" ry="24" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5"/><text x="110" y="109" text-anchor="middle" class="lbl">m. rectus</text>
+        <path d="M300 52 H215" stroke="var(--accent)" stroke-width="7" fill="none"/>
+        <path d="M215 52 H30" stroke="var(--accent)" stroke-width="2" fill="none"/>
+        <path d="M300 100 H215" stroke="var(--flag)" stroke-width="7" fill="none"/>
+        <path d="M215 100 C195 100 192 60 170 60 H30" stroke="var(--flag)" stroke-width="2" fill="none"/>
+        <path d="M300 146 H215" stroke="var(--good)" stroke-width="7" fill="none"/>
+        <path d="M215 146 C190 146 195 70 170 70 H30" stroke="var(--good)" stroke-width="2" fill="none"/>
+        <path d="M300 132 H200 C180 132 175 129 165 129 H30" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="5 3" fill="none"/>
+        <text x="300" y="45" text-anchor="end" class="lbs">EO</text><text x="300" y="93" text-anchor="end" class="lbs">IO</text><text x="300" y="139" text-anchor="end" class="lbs">TA</text>
+        <text x="40" y="44" class="lbs rv">ketiga aponeurosis lewat DEPAN</text>
+        <text x="40" y="186" class="lbs rv">belakang rectus: hanya fascia transversalis</text>
+      </g>
+    </svg>
+    <figcaption>Potongan melintang skematik. Atas gambar = anterior. EO biru, IO kuning, TA hijau, fascia transversalis garis putus-putus.</figcaption>
+  </figure>
+  <div class="co">
+    <b class="t">Jangan hafalkan, turunkan</b>
+    Ingat satu fakta saja: <b>di bawah linea arcuata semua aponeurosis pindah ke depan</b>. Akibatnya, di bawah garis itu permukaan posterior rectus langsung menempel ke fascia transversalis, dan lamina posterior berakhir sebagai tepi melengkung, yaitu linea arcuata itu sendiri. Letaknya kira-kira sepertiga jarak dari umbilicus ke crista pubica.
+  </div>
+
+  <h4>Dinding posterior <span class="b bA">ASLAB</span> <span class="b bD">DOSEN</span></h4>
+  <p class="small">Versi dosen yang lebih mudah dipakai: tulang <b>VL + sacrum, os ilium, costa XI–XII</b>; otot <b>psoas major/minor</b> (paling medial), <b>quadratus lumborum</b> (lateral), <b>iliacus</b> (inferior). PPT aslab membaginya menjadi 4 lapis otot dari latissimus dorsi sampai quadratus lumborum/iliopsoas/transversus.</p>
+
+  <h4>Neurovaskularisasi dinding</h4>
+  <div class="two">
+    <div class="card">
+      <p class="sec-ttl">Persarafan kulit (dermatom)</p>
+      <figure style="margin:0">
+        <svg viewBox="0 0 260 250" role="img" aria-label="Dermatom dinding abdomen">
+          <path d="M60 20 Q50 120 70 200 L95 240 H165 L190 200 Q210 120 200 20 Z" fill="var(--raise)" stroke="var(--border-strong)"/>
+          <path d="M130 20 V240" class="mut" stroke-dasharray="2 3"/>
+          <path d="M112 30 L130 52 L148 30" class="ln" stroke-width="1"/><text x="155" y="40" class="lbs">proc. xiphoideus</text>
+          <g stroke="var(--accent)" stroke-width="1" fill="none" opacity=".75">
+            <path d="M58 55 Q130 70 202 55"/><path d="M57 80 Q130 95 203 80"/><path d="M58 105 Q130 120 202 105"/>
+            <path d="M60 135 Q130 150 200 135"/><path d="M63 162 Q130 177 197 162"/><path d="M68 188 Q130 203 192 188"/>
+          </g>
+          <circle cx="130" cy="128" r="4" fill="var(--bad)"/>
+          <text x="210" y="70" class="lbl rv">T7</text><text x="210" y="94" class="lbl rv">T8</text><text x="210" y="118" class="lbl rv">T9</text>
+          <text x="210" y="140" class="lbl rv" font-weight="700">T10 ← umbilicus</text>
+          <text x="210" y="166" class="lbl rv">T11</text><text x="210" y="191" class="lbl rv">T12</text>
+          <path d="M80 205 L120 232 M180 205 L140 232" stroke="var(--good)" stroke-width="2"/>
+          <text x="12" y="225" class="lbl rv">L1 (inguinal, pubis)</text>
+        </svg>
+      </figure>
+      <p class="small">Patokannya: <b>xiphoid ≈ T7</b>, <b>umbilicus = T10</b>, <b>regio pubica/inguinal = L1</b>. N. ilioinguinalis (L1) mempersarafi kulit anterior scrotum/labium majus.</p>
+    </div>
+    <div class="card">
+      <p class="sec-ttl">Vena &amp; limfe</p>
+      <ul class="small">
+        <li>Plexus venosus subcutaneus: superomedial → <b>v. thoracica interna</b>; superolateral → <b>v. thoracica lateralis</b>; inferior → <b>v. epigastrica superficialis &amp; inferior</b>.</li>
+        <li><b>V. thoracoepigastrica</b> menghubungkan v. epigastrica superficialis dengan v. thoracica lateralis. Bila VCI tersumbat, darah mengambil jalan <span class="rv">v. femoralis → v. epigastrica superficialis → v. thoracoepigastrica → v. axillaris → VCS</span>.</li>
+        <li>Limfe superfisial: di <b>atas</b> umbilicus → <span class="rv">nl. axillares</span>; di <b>bawah</b> umbilicus → <span class="rv">nl. inguinales superficiales</span>. Limfe profunda → nl. parasternales, lumbales, iliaci externi <span class="b bD">DOSEN</span>.</li>
+        <li>Arteri dinding <span class="b bT">LIT</span> (di PPT aslab hanya berupa gambar): a. epigastrica superior (dari a. thoracica interna), a. epigastrica inferior (dari a. iliaca externa), a. circumflexa ilium profunda, aa. intercostales posteriores &amp; a. subcostalis, serta a. epigastrica superficialis &amp; a. circumflexa ilium superficialis (dari a. femoralis).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ckhead"><p class="sec-ttl">Checklist responsi · dinding</p><span class="cnt" data-cnt="dinding"></span></div>
+    <div class="ck" data-ck="dinding">
+      <label><input type="checkbox"><span>Batas 4 kuadran &amp; 9 regio, plus nama garisnya</span></label>
+      <label><input type="checkbox"><span>Isi organ tiap regio</span></label>
+      <label><input type="checkbox"><span>Urutan 7 lapisan dinding anterolateral</span></label>
+      <label><input type="checkbox"><span>Fascia Camper vs Scarpa + lanjutan Scarpa</span></label>
+      <label><input type="checkbox"><span>M. obliquus externus / internus / transversus pada potongan</span></label>
+      <label><input type="checkbox"><span>M. rectus, intersectiones tendineae, m. pyramidalis</span></label>
+      <label><input type="checkbox"><span>Linea alba, linea arcuata, vagina recti (lamina anterior/posterior)</span></label>
+      <label><input type="checkbox"><span>Fascia transversalis, fascia extraperitonealis</span></label>
+      <label><input type="checkbox"><span>Dermatom T7, T10, L1</span></label>
+      <label><input type="checkbox"><span>V. thoracoepigastrica &amp; jalur kolateral VCI</span></label>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== 2 -->
+<section class="mod" id="inguinal">
+  <h3><span class="no">02</span> Regio inguinalis <span class="b bA">ASLAB</span></h3>
+  <p class="lead">Ligamentum inguinale = tepi bawah aponeurosis m. obliquus externus yang melipat, dari <b>SIAS</b> ke <b>tuberculum pubicum</b>. Di ujung medialnya: <b>lig. lacunare</b> (ke pecten pubis) dan <b>lig. pectineale (Cooper)</b> <span class="b bD">DOSEN</span>.</p>
+
+  <h4>Canalis inguinalis: dinding "MALT"</h4>
+  <p class="small">Panjang ±4 cm, dari <b>annulus inguinalis profundus</b> (lubang di fascia transversalis) ke <b>annulus inguinalis superficialis</b> (lubang di aponeurosis EO), berjalan ke inferomedial sejajar di atas lig. inguinale.</p>
+  <div class="tw"><table>
+    <tr><th>Dinding</th><th>Dibentuk oleh</th><th>Diperkuat oleh</th></tr>
+    <tr><td><span class="key">M</span> Superior (atap)</td><td class="rv">serabut melengkung <b>m. obliquus internus &amp; m. transversus</b> (Muscles)</td><td class="rv">—</td></tr>
+    <tr><td><span class="key">A</span> Anterior</td><td class="rv"><b>aponeurosis m. obliquus externus</b> (Aponeurosis)</td><td class="rv">m. obliquus internus di bagian <b>lateral</b></td></tr>
+    <tr><td><span class="key">L</span> Inferior (lantai)</td><td class="rv"><b>lig. inguinale</b> (Ligament)</td><td class="rv">lig. lacunare di bagian medial</td></tr>
+    <tr><td><span class="key">T</span> Posterior</td><td class="rv"><b>fascia transversalis</b> (Transversalis)</td><td class="rv"><b>falx inguinalis / conjoint tendon</b> (IO + TA) di bagian <b>medial</b></td></tr>
+  </table></div>
+  <p class="small"><b>Polanya:</b> dinding anterior diperkuat di <b>lateral</b> dan dinding posterior diperkuat di <b>medial</b>. Akibatnya, setiap titik di sepanjang kanal selalu punya satu dinding yang kuat. Isinya: laki-laki <b>funiculus spermaticus</b>, perempuan <b>lig. teres uteri (rotundum)</b>, ditambah r. genitalis n. genitofemoralis dan n. ilioinguinalis <span class="b bT">LIT</span>.</p>
+
+  <h4>Trigonum Hesselbach (trigonum inguinale)</h4>
+  <figure>
+    <svg viewBox="0 0 400 240" style="max-width:520px" role="img" aria-label="Trigonum Hesselbach dilihat dari dalam">
+      <polygon points="70,50 70,195 230,195" fill="var(--bad-soft)" stroke="none"/>
+      <line x1="70" y1="30" x2="70" y2="200" stroke="var(--bad)" stroke-width="3"/>
+      <line x1="40" y1="195" x2="380" y2="195" stroke="var(--text)" stroke-width="3"/>
+      <path d="M235 215 L230 195 L70 50" stroke="var(--accent)" stroke-width="3" fill="none"/>
+      <circle cx="285" cy="168" r="16" fill="var(--surface)" stroke="var(--flag)" stroke-width="2.5"/>
+      <text x="56" y="118" text-anchor="middle" class="lbl rv" transform="rotate(-90 56 118)">margo lateralis m. rectus (medial)</text>
+      <text x="157" y="113" text-anchor="middle" class="lbl rv" fill="var(--accent)" transform="rotate(42 157 113)">vasa epigastrica inferiora (lateral)</text>
+      <text x="140" y="213" text-anchor="middle" class="lbl rv">lig. inguinale (inferior)</text>
+      <text x="306" y="188" class="lbs rv">annulus profundus</text>
+      <path d="M120 120 l18 18" stroke="var(--bad)" stroke-width="2.5" marker-end="url(#ah)"/>
+      <text x="96" y="170" class="lbl rv" font-weight="700" fill="var(--bad-ink)">DIREK</text>
+      <path d="M350 112 l-48 42" stroke="var(--flag)" stroke-width="2.5" marker-end="url(#ah2)"/>
+      <text x="340" y="104" class="lbl rv" font-weight="700" fill="var(--flag-ink)">INDIREK</text>
+      <text x="20" y="22" class="lbs">← medial</text><text x="380" y="22" text-anchor="end" class="lbs">lateral →</text>
+      <defs>
+        <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="var(--bad)"/></marker>
+        <marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="var(--flag)"/></marker>
+      </defs>
+    </svg>
+    <figcaption>Skema dinding anterior kanan dilihat dari dalam. Segitiga merah = trigonum Hesselbach, locus minoris resistentiae.</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <tr><th></th><th>Hernia inguinalis DIREK</th><th>Hernia inguinalis INDIREK</th></tr>
+    <tr><td>Jalan masuk</td><td class="rv">menembus dinding posterior di <b>trigonum Hesselbach</b></td><td class="rv">masuk lewat <b>annulus profundus</b>, menyusuri canalis</td></tr>
+    <tr><td>Terhadap vasa epigastrica inferiora</td><td class="rv"><b>medial</b></td><td class="rv"><b>lateral</b></td></tr>
+  </table></div>
+  <p class="small"><b>Jembatan keledai:</b> "<b>M</b>D's don't <b>LI</b>e": <b>M</b>edial = <b>D</b>irek, <b>L</b>ateral = <b>I</b>ndirek, dengan vasa epigastrica inferiora sebagai patokan.</p>
+
+  <div class="card">
+    <div class="ckhead"><p class="sec-ttl">Checklist responsi · inguinal</p><span class="cnt" data-cnt="inguinal"></span></div>
+    <div class="ck" data-ck="inguinal">
+      <label><input type="checkbox"><span>Lig. inguinale (SIAS–tuberculum pubicum), lig. lacunare</span></label>
+      <label><input type="checkbox"><span>Annulus inguinalis profundus vs superficialis</span></label>
+      <label><input type="checkbox"><span>4 dinding canalis (MALT) + penguatnya</span></label>
+      <label><input type="checkbox"><span>Isi canalis laki-laki vs perempuan</span></label>
+      <label><input type="checkbox"><span>3 batas trigonum Hesselbach</span></label>
+      <label><input type="checkbox"><span>Hernia direk vs indirek terhadap a. epigastrica inferior</span></label>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== 3 -->
+<section class="mod" id="peritoneum">
+  <h3><span class="no">03</span> Peritoneum <span class="b bA">ASLAB</span></h3>
+  <p class="lead"><b>Parietale</b> melapisi dinding; <b>viscerale</b> membungkus organ. Di antara keduanya ada <b>cavitas peritonealis</b>, ruang potensial berisi sedikit cairan serosa. Ruang ini terbagi menjadi <b>cavum peritonei major</b> dan <b>minor (bursa omentalis)</b>, yang berhubungan lewat <b>foramen epiploicum Winslowi</b>.</p>
+
+  <h4>Intraperitoneal vs retroperitoneal</h4>
+  <div class="two">
+    <div class="card" style="border-top:4px solid var(--good)">
+      <p class="sec-ttl">Intraperitoneal (seluruh permukaan diliputi, punya penggantung, mobile)</p>
+      <p class="rv small">Gaster · duodenum pars superior (±2 cm awal) · jejunum · ileum · caecum (umumnya) · appendix · colon transversum · colon sigmoideum · cauda pancreas · lien · hepar · vesica fellea · 1/3 atas rectum (sebagian)</p>
+      <p class="small muted">Pola: punya <b>meso-</b> atau omentum → intraperitoneal. Nama penggantungnya sudah memberi jawaban (mesocolon transversum, mesocolon sigmoideum, mesoappendix, mesenterium).</p>
+    </div>
+    <div class="card" style="border-top:4px solid var(--flag)">
+      <p class="sec-ttl">Retroperitoneal: SAD PUCKER</p>
+      <p class="small rv"><b>S</b>uprarenal · <b>A</b>orta &amp; VCI · <b>D</b>uodenum (kecuali 2 cm pertama) · <b>P</b>ancreas (kecuali cauda) · <b>U</b>reter · <b>C</b>olon ascendens &amp; descendens · <b>K</b>idney (ren) · <b>E</b>sophagus · <b>R</b>ectum (2/3 bawah)</p>
+      <p class="small muted"><span class="b bD">DOSEN</span> Duodenum, colon ascendens/descendens, dan pancreas termasuk <b>retroperitoneal sekunder</b>: awalnya punya mesenterium, lalu menempel ke dinding posterior. Ren dan ureter termasuk <b>primer</b>.</p>
+    </div>
+  </div>
+  <div class="co"><b class="t">Senggol kasus</b>Organ yang punya mesenterium bisa terpuntir (<b>volvulus</b>), misalnya colon sigmoideum pada lansia. Perforasi organ retroperitoneal, misalnya duodenum pars descendens akibat trauma, sering <b>tidak</b> memberi tanda peritonitis di awal. <span class="b bD">DOSEN</span></div>
+
+  <h4>Duplicator peritoneum (lipatan dua lapis)</h4>
+  <div class="tw"><table>
+    <tr><th>Struktur</th><th>Asal embrio</th><th>Menghubungkan</th><th>Isi / catatan</th></tr>
+    <tr><td>Omentum majus</td><td class="rv">mesogastrium <b>dorsale</b></td><td class="rv">curvatura <b>major</b> gaster + duodenum pars superior → turun menutupi colon transversum &amp; usus halus → melipat ke atas ke colon transversum/mesocolon</td><td class="rv"><b>4 lapis</b> karena melipat; a/v <b>gastroomentalis</b> dextra et sinistra</td></tr>
+    <tr><td>Omentum minus</td><td class="rv">mesogastrium <b>ventrale</b></td><td class="rv">curvatura <b>minor</b> gaster + duodenum pars superior → facies visceralis hepar</td><td class="rv">2 lapis: <b>lig. hepatogastricum</b> (medial) + <b>lig. hepatoduodenale</b> (lateral, tepi bebas). Di tepi bebas: <b>v. porta, a. hepatica propria, ductus choledochus</b>. a/v gastrica dextra et sinistra di dekat curvatura minor</td></tr>
+    <tr><td>Mesenterium</td><td class="rv">mesogastrium dorsale</td><td class="rv">jejunum &amp; ileum → dinding posterior</td><td class="rv">Berbentuk kipas. Radix dari flexura duodenojejunalis (kiri VL atas) miring ke kanan bawah sampai junctura ileocaecalis (dekat art. sacroiliaca dextra)</td></tr>
+    <tr><td>Mesocolon transversum</td><td class="rv">dorsale</td><td class="rv">colon transversum → dinding posterior</td><td class="rv">Radixnya menyilang facies anterior caput &amp; corpus pancreas</td></tr>
+    <tr><td>Mesocolon sigmoideum</td><td class="rv">dorsale</td><td class="rv">colon sigmoideum → dinding</td><td class="rv">Berbentuk huruf <b>V terbalik</b>; apex dekat percabangan a. iliaca communis sinistra; berakhir setinggi S3</td></tr>
+  </table></div>
+  <p class="small"><b>Ligamenta peritonei</b> dinamai menurut dua struktur yang dihubungkannya: lig. falciforme, coronarium, triangulare (hepar), hepatogastricum, hepatoduodenale, gastrosplenicum, splenorenale, gastrophrenicum. Kalau namanya dibaca, yang dihubungkannya ikut terbaca.</p>
+
+  <h4>Foramen epiploicum (Winslow) <span class="b bD">DOSEN</span></h4>
+  <div class="tw tbl-sm"><table>
+    <tr><th>Batas</th><th>Struktur</th></tr>
+    <tr><td>Anterior</td><td class="rv">tepi bebas lig. hepatoduodenale (v. porta, a. hepatica propria, ductus choledochus)</td></tr>
+    <tr><td>Posterior</td><td class="rv">v. cava inferior</td></tr>
+    <tr><td>Superior</td><td class="rv">lobus caudatus hepar</td></tr>
+    <tr><td>Inferior</td><td class="rv">duodenum pars superior <span class="b bT">LIT</span> (PDF dosen menulis "pars descendens", lihat Koreksi)</td></tr>
+  </table></div>
+  <p class="small"><b>Sulci paracolici</b> <span class="b bA">ASLAB</span>: celah peritoneal di lateral colon ascendens/descendens, yang menjadi jalur cairan (pus, darah) mengalir antar-kompartemen. <b>Recessus hepatorenalis</b> <span class="b bD">DOSEN</span>: ruang antara hepar dan ren dexter.</p>
+
+  <div class="card">
+    <div class="ckhead"><p class="sec-ttl">Checklist responsi · peritoneum</p><span class="cnt" data-cnt="peritoneum"></span></div>
+    <div class="ck" data-ck="peritoneum">
+      <label><input type="checkbox"><span>Peritoneum parietale vs viscerale</span></label>
+      <label><input type="checkbox"><span>Daftar intra vs retro (SAD PUCKER)</span></label>
+      <label><input type="checkbox"><span>Omentum majus vs minus (asal, lapis, perlekatan)</span></label>
+      <label><input type="checkbox"><span>Lig. hepatogastricum &amp; hepatoduodenale + isinya</span></label>
+      <label><input type="checkbox"><span>Mesenterium, mesocolon transversum, mesocolon sigmoideum</span></label>
+      <label><input type="checkbox"><span>Bursa omentalis &amp; foramen Winslow + batas</span></label>
+      <label><input type="checkbox"><span>Sulci paracolici</span></label>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== 4 -->
+<section class="mod" id="pembuluh">
+  <h3><span class="no">04</span> Peta pembuluh &amp; saraf: satu kunci untuk semua organ</h3>
+  <p class="lead">Kalau tahu sebuah organ berasal dari foregut, midgut, atau hindgut, kamu langsung tahu arterinya, saraf parasimpatisnya, saraf simpatisnya, dan letak nyeri alihnya. <span class="b bD">DOSEN</span> Tabel ini merangkum isi PPT aslab per organ.</p>
+  <div class="tw"><table>
+    <tr><th></th><th><span class="pill pf">FOREGUT</span></th><th><span class="pill pm">MIDGUT</span></th><th><span class="pill ph">HINDGUT</span></th></tr>
+    <tr><td>Turunan</td><td class="rv">oesophagus, gaster, duodenum <b>proksimal papilla major</b>; hepar, VF, pancreas</td><td class="rv">duodenum distal papilla, jejunum, ileum, caecum, appendix, colon ascendens, <b>2/3 proksimal</b> colon transversum</td><td class="rv"><b>1/3 distal</b> colon transversum, descendens, sigmoideum, rectum, canalis analis di atas linea pectinata</td></tr>
+    <tr><td>Arteri</td><td class="rv"><b>Truncus coeliacus</b> (T12)</td><td class="rv"><b>A. mesenterica superior</b> (L1)</td><td class="rv"><b>A. mesenterica inferior</b> (L3)</td></tr>
+    <tr><td>Parasimpatis</td><td class="rv">n. vagus</td><td class="rv">n. vagus</td><td class="rv"><b>nn. splanchnici pelvici</b> (nn. erigentes, S2–S4)</td></tr>
+    <tr><td>Simpatis</td><td class="rv">n. splanchnicus <b>major</b> (T6–T9) via gangl. coeliacum</td><td class="rv">n. splanchnicus <b>minor</b> (T10–T11)</td><td class="rv">nn. splanchnici <b>lumbales</b> (T12–L2) = "splanchnolumbalis"</td></tr>
+    <tr><td>Nyeri alih</td><td class="rv"><b>epigastrium</b></td><td class="rv"><b>umbilicalis</b></td><td class="rv"><b>hypogastrium</b> (suprapubik)</td></tr>
+  </table></div>
+  <p class="small"><b>Turunkan, jangan hafalkan:</b> lienalis termasuk cabang truncus coeliacus, padahal lien bukan turunan usus. Ia ikut karena letaknya di mesogastrium dorsale. Batas foregut–midgut ada di <b>papilla duodeni major</b>. Batas midgut–hindgut ada di <b>2/3–1/3 colon transversum</b>, dan karena itulah colon transversum punya dua arteri dan dua persarafan.</p>
+
+  <h4>Pohon arteri</h4>
+  <div class="trees">
+    <div class="card gut-f">
+      <p class="sec-ttl">Truncus coeliacus</p>
+      <ul class="tree">
+        <li class="root">Truncus coeliacus
+          <ul>
+            <li>A. gastrica sinistra <span class="to rv">→ curvatura minor, oesophagus bawah</span></li>
+            <li>A. lienalis (splenica)
+              <ul>
+                <li class="rv">Rr. pancreatici</li>
+                <li class="rv">Aa. gastricae breves <span class="to">→ fundus</span></li>
+                <li class="rv">A. gastroomentalis sinistra <span class="to">→ curvatura major</span></li>
+              </ul></li>
+            <li>A. hepatica communis
+              <ul>
+                <li>A. hepatica propria
+                  <ul>
+                    <li class="rv">A. gastrica dextra</li>
+                    <li class="rv">R. dexter <span class="to">→ <b>a. cystica</b> (lewat trigonum Calot)</span></li>
+                    <li class="rv">R. sinister</li>
+                  </ul></li>
+                <li>A. gastroduodenalis
+                  <ul>
+                    <li class="rv">A. pancreaticoduodenalis superior</li>
+                    <li class="rv">A. gastroomentalis dextra</li>
+                  </ul></li>
+              </ul></li>
+          </ul></li>
+      </ul>
+    </div>
+    <div class="card gut-m">
+      <p class="sec-ttl">A. mesenterica superior</p>
+      <ul class="tree">
+        <li class="root">A. mesenterica superior
+          <ul>
+            <li class="rv">A. pancreaticoduodenalis inferior</li>
+            <li class="rv">Aa. jejunales et ileales <span class="to">(arkade + vasa recta)</span></li>
+            <li>A. ileocolica
+              <ul>
+                <li class="rv">R. caecalis anterior</li>
+                <li class="rv">R. caecalis posterior <span class="to">→ <b>a. appendicularis</b> (end artery)</span></li>
+                <li class="rv">R. ilealis <span class="to">→ ileum terminal</span></li>
+              </ul></li>
+            <li class="rv">A. colica dextra <span class="to">→ colon ascendens</span></li>
+            <li class="rv">A. colica media <span class="to">→ 2/3 proksimal transversum</span></li>
+          </ul></li>
+      </ul>
+    </div>
+    <div class="card gut-h">
+      <p class="sec-ttl">A. mesenterica inferior + iliaca interna</p>
+      <ul class="tree">
+        <li class="root">A. mesenterica inferior
+          <ul>
+            <li class="rv">A. colica sinistra <span class="to">→ 1/3 distal transversum, descendens</span></li>
+            <li class="rv">Aa. sigmoideae <span class="to">→ descendens bawah, sigmoideum</span></li>
+            <li class="rv">A. rectalis superior <span class="to">→ rectum, canalis analis di atas linea pectinata</span></li>
+          </ul></li>
+        <li class="root" style="margin-top:10px">A. iliaca interna
+          <ul>
+            <li class="rv">A. rectalis media</li>
+            <li>A. pudenda interna <ul><li class="rv">A. rectalis inferior <span class="to">→ di bawah linea pectinata</span></li></ul></li>
+          </ul></li>
+      </ul>
+    </div>
+  </div>
+  <div class="co flag"><b class="t">Jebakan klasik</b>A. gastroomentalis <b>dextra</b> berasal dari a. gastroduodenalis (cabang hepatica), sedangkan yang <b>sinistra</b> dari a. lienalis. A. gastrica <b>sinistra</b> langsung dari truncus coeliacus, sedangkan yang <b>dextra</b> dari a. hepatica propria. Polanya: pembuluh yang "sinistra" berasal dari cabang yang berada di kiri (lienalis atau langsung dari truncus).</div>
+</section>
+
+<!-- ===================================================== 5 -->
+<section class="mod" id="tenue">
+  <h3><span class="no">05</span> Jejunum &amp; ileum <span class="b bA">ASLAB</span></h3>
+  <div class="co"><b class="t">Ingat dulu: lig. Treitz</b>M. suspensorius duodeni, dari <b>flexura duodenojejunalis</b> ke <b>crus dextrum diafragma</b>. Ligamen ini menjadi batas <b>tractus digestivus superior vs inferior</b>. Secara klinis: perdarahan proksimal Treitz menimbulkan hematemesis/melena (SCBA), sedangkan perdarahan distal Treitz menimbulkan hematochezia (SCBB).</div>
+
+  <h4>Membedakan jejunum vs ileum</h4>
+  <div class="tw"><table>
+    <tr><th>Ciri</th><th>Jejunum</th><th>Ileum</th></tr>
+    <tr><td>Letak dominan</td><td class="rv">kiri atas (LUQ), regio umbilicalis</td><td class="rv">kanan bawah (RLQ), sebagian di pelvis</td></tr>
+    <tr><td>Diameter &amp; dinding</td><td class="rv">lebih lebar, tebal</td><td class="rv">lebih sempit, tipis</td></tr>
+    <tr><td>Plicae circulares (Kerckring)</td><td class="rv">tinggi &amp; rapat</td><td class="rv">rendah, makin jarang</td></tr>
+    <tr><td>Arkade arteri</td><td class="rv"><b>sedikit</b> (1–2 lengkung)</td><td class="rv"><b>banyak</b> (3–5 lengkung)</td></tr>
+    <tr><td>Vasa recta</td><td class="rv"><b>panjang</b></td><td class="rv"><b>pendek</b></td></tr>
+    <tr><td>Lemak mesenterium</td><td class="rv">sedikit</td><td class="rv">banyak</td></tr>
+    <tr><td>Jaringan limfoid</td><td class="rv">sedikit</td><td class="rv"><b>plak Peyer</b> menonjol</td></tr>
+  </table></div>
+  <p class="small"><b>Cara membaca tabel ini:</b> baca per <b>kolom</b>, bukan per baris. Jejunum adalah "usus kerja keras" (absorpsi): lebar, berlipat banyak, pembuluhnya langsung dan panjang. Ileum adalah "usus imun": sempit, berlemak, banyak arkade, punya plak Peyer. Pada preparat, cara tercepat membedakannya adalah dengan <b>menerawang mesenterium</b>: kalau arkadenya sedikit dan vasa rectanya panjang, itu jejunum.</p>
+
+  <h4>Dinding (luar → dalam)</h4>
+  <div class="flow"><span class="bx">Tunica serosa</span><span class="ar">→</span><span class="bx">Tunica muscularis: longitudinal (luar) | <b>plexus Auerbach</b> | sirkular (dalam)</span><span class="ar">→</span><span class="bx">Submucosa: <b>plexus Meissner</b></span><span class="ar">→</span><span class="bx">Mucosa: plicae circulares, villi, crypta Lieberkühn</span></div>
+  <p class="small">Auerbach terletak di antara dua lapis <b>otot</b> sehingga mengatur <b>gerak</b> (peristaltik). Meissner terletak di <b>submucosa</b> sehingga mengatur <b>sekresi dan aliran darah</b>. Letaknya sudah menjelaskan fungsinya.</p>
+
+  <h4>Neurovaskularisasi</h4>
+  <ul class="small">
+    <li>Arteri: <b>aa. jejunales et ileales</b> (cabang AMS); ileum terminal juga dari <b>a. ileocolica</b>. Vena: v. mesenterica superior.</li>
+    <li>Limfe: lacteal di villi → nl. juxta-intestinales → nl. mesenterici → nl. mesenterici superiores (sentral). Ileum terminal → nl. ileocolici.</li>
+    <li>Simpatis: n. splanchnicus minor (<b>menghambat</b>); parasimpatis: n. vagus (<b>merangsang</b>).</li>
+  </ul>
+  <div class="co"><b class="t">Senggol kasus</b><b>Divertikel Meckel</b> di ileum, "aturan 2": ±2% populasi, ±60 cm (2 kaki) dari valva ileocaecalis, panjang ±5 cm (2 inci). <span class="b bD">DOSEN</span></div>
+</section>
+
+<!-- ===================================================== 6 -->
+<section class="mod" id="crassum">
+  <h3><span class="no">06</span> Intestinum crassum <span class="b bA">ASLAB</span></h3>
+
+  <figure>
+    <svg viewBox="0 0 400 320" role="img" aria-label="Bingkai colon dengan wilayah arteri dan status peritoneum">
+      <!-- midgut (orange) -->
+      <path d="M80 250 V105 Q80 85 100 85" stroke="var(--mg)" stroke-width="12" fill="none" stroke-dasharray="14 7" stroke-linecap="round"/>
+      <path d="M100 85 Q160 150 245 112" stroke="var(--mg)" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <ellipse cx="80" cy="262" rx="24" ry="20" fill="var(--mg-soft)" stroke="var(--mg)" stroke-width="3"/>
+      <path d="M70 280 q-6 18 8 26" stroke="var(--mg)" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <!-- hindgut (green) -->
+      <path d="M245 112 Q285 92 310 60" stroke="var(--hg)" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <path d="M318 62 V215" stroke="var(--hg)" stroke-width="12" fill="none" stroke-dasharray="14 7" stroke-linecap="round"/>
+      <path d="M318 218 Q320 262 270 250 Q230 240 215 262" stroke="var(--hg)" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <path d="M212 266 V312" stroke="var(--hg)" stroke-width="12" fill="none" stroke-dasharray="14 7"/>
+      <!-- batas -->
+      <line x1="245" y1="92" x2="245" y2="134" stroke="var(--text)" stroke-width="2"/>
+      <text x="245" y="146" text-anchor="middle" class="lbs">2/3 | 1/3</text>
+      <!-- label -->
+      <text x="104" y="268" class="lbl rv">caecum</text>
+      <text x="22" y="312" class="lbs rv">appendix</text>
+      <text x="16" y="170" class="lbl rv" transform="rotate(-90 16 170)">colon ascendens</text>
+      <text x="96" y="74" class="lbs rv">flexura coli dextra (hepatica)</text>
+      <text x="128" y="142" class="lbl rv">transversum</text>
+      <text x="396" y="40" text-anchor="end" class="lbs rv">flexura coli sinistra (lienalis) · lebih tinggi</text>
+      <text x="345" y="140" class="lbl rv" transform="rotate(90 345 140)">colon descendens</text>
+      <text x="250" y="282" class="lbl rv">sigmoideum</text>
+      <text x="226" y="306" class="lbs rv">rectum (S3)</text>
+      <!-- arteri -->
+      <text x="96" y="228" class="lbs rv" fill="var(--mg)">a. ileocolica</text>
+      <text x="96" y="182" class="lbs rv" fill="var(--mg)">a. colica dextra</text>
+      <text x="150" y="104" class="lbs rv" fill="var(--mg)">a. colica media</text>
+      <text x="304" y="168" text-anchor="end" class="lbs rv" fill="var(--hg)">a. colica sinistra</text>
+      <text x="304" y="212" text-anchor="end" class="lbs rv" fill="var(--hg)">aa. sigmoideae</text>
+    </svg>
+    <figcaption>Oranye = wilayah AMS (midgut), hijau = wilayah AMI (hindgut). <b>Garis utuh = intraperitoneal</b>, <b>putus-putus = retroperitoneal</b>. Kiri gambar = kanan pasien.</figcaption>
+  </figure>
+  <p class="small"><b>Pola yang terlihat:</b> intra dan retro <b>berselang-seling</b>, yaitu caecum (intra) → ascendens (retro) → transversum (intra) → descendens (retro) → sigmoideum (intra) → rectum (retro). Bagian yang bisa "bergelantung" ada di ujung dan di tengah; bagian yang menempel ke dinding ada di sisi kanan dan kiri.</p>
+
+  <h4>Bangunan khas (pembeda dari usus halus)</h4>
+  <div class="tw"><table>
+    <tr><th>Bangunan</th><th>Penjelasan</th></tr>
+    <tr><td>Taenia coli</td><td class="rv">Stratum longitudinale yang menyusut menjadi 3 pita. <b>T. mesocolica</b> = tempat melekat mesocolon; <b>t. omentalis</b> = tempat melekat omentum majus; <b>t. libera</b> = tidak dilekati apa pun. Ketiganya <b>bertemu di pangkal appendix</b> dan menjadi lapisan utuh lagi di rectum, sehingga <b>tidak ada taenia di appendix dan rectum</b>.</td></tr>
+    <tr><td>Letak taenia</td><td class="rv">Colon transversum: mesocolica di <b>dorsal</b>, omentalis di <b>ventral</b>. Colon ascendens/descendens: mesocolica di <b>medial</b>, omentalis di <b>lateral</b>.</td></tr>
+    <tr><td>Haustra + incisura</td><td class="rv">Taenia lebih <b>pendek</b> daripada dindingnya, sehingga dinding mengerut menjadi kantong (haustra). Lekukan di antaranya disebut incisura.</td></tr>
+    <tr><td>Plicae semilunares</td><td class="rv">Lipatan stratum circulare ke arah lumen, tanpa villi</td></tr>
+    <tr><td>Appendices epiploicae (omentales)</td><td class="rv">Kantong lemak kecil dari tunica serosa</td></tr>
+  </table></div>
+  <p class="small">Logika "taenia lebih pendek → haustra" adalah contoh penurunan: dari satu fakta struktural kamu bisa menjelaskan dua bangunan sekaligus.</p>
+
+  <h4>Caecum &amp; appendix vermiformis</h4>
+  <div class="two">
+    <div class="card">
+      <p class="sec-ttl">Caecum</p>
+      <ul class="small">
+        <li>±7,5 cm, di fossa iliaca dextra di atas m. iliopsoas; intraperitoneal</li>
+        <li>Recessus: ileocaecalis superior, ileocaecalis inferior, retrocaecalis</li>
+        <li><b>Valvula ileocaecalis (Bauhini)</b>: labium superius (lebih cembung) &amp; inferius, bertemu sebagai <b>frenulum</b>; mencegah refluks dari caecum ke ileum</li>
+        <li>Arteri: <span class="rv">r. caecalis anterior &amp; posterior (dari a. ileocolica, AMS)</span>. Limfe: nl. mesoappendix &amp; ileocolici → mesenterici superiores</li>
+      </ul>
+    </div>
+    <div class="card">
+      <p class="sec-ttl">Appendix</p>
+      <ul class="small">
+        <li>Pangkalnya di dinding <b>posteromedial</b> caecum, di bawah junctura ileocaecalis, tempat ketiga taenia bertemu (gunakan taenia untuk mencarinya saat operasi)</li>
+        <li>Panjang 6–13 cm; penggantung: <b>mesoappendix (mesenteriolum)</b> berisi a/v appendicularis</li>
+        <li><b>Titik McBurney</b>: <span class="rv">1/3 lateral garis SIAS dextra → umbilicus (garis Monro-Richter), proyeksi <b>pangkal</b> appendix</span></li>
+        <li>Titik Lanz: pada garis SIAS dextra ↔ SIAS sinistra, proyeksi <b>ujung</b> appendix (lihat Koreksi soal pecahannya)</li>
+        <li>Variasi: <b>retrocaecal (tersering)</b>, postileal, preileal, pelvic, subcaecal</li>
+        <li>A. appendicularis: <span class="rv">dari a. caecalis posterior ← a. ileocolica ← AMS; <b>end artery</b></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <h4>Colon per segmen</h4>
+  <div class="tw"><table>
+    <tr><th>Segmen</th><th>Peritoneum</th><th>Arteri</th><th>Simpatis | Parasimpatis</th></tr>
+    <tr><td>Ascendens</td><td class="rv">retro</td><td class="rv">a. ileocolica, a. colica dextra (AMS)</td><td class="rv">splanchnicus minor | vagus</td></tr>
+    <tr><td>Transversum 2/3 proks.</td><td class="rv" rowspan="2">intra (mesocolon transversum)</td><td class="rv">a. colica media (AMS)</td><td class="rv">splanchnicus minor | vagus</td></tr>
+    <tr><td>Transversum 1/3 distal</td><td class="rv">a. colica sinistra (AMI)</td><td class="rv">splanchnolumbalis | nn. splanchnici pelvici</td></tr>
+    <tr><td>Descendens</td><td class="rv">retro</td><td class="rv">a. colica sinistra + aa. sigmoideae (AMI)</td><td class="rv">splanchnolumbalis | splanchnici pelvici</td></tr>
+    <tr><td>Sigmoideum</td><td class="rv">intra (mesocolon sigmoideum), fossa iliaca sinistra, lanjut ke rectum setinggi S3</td><td class="rv">aa. sigmoideae (AMI)</td><td class="rv">splanchnolumbalis | splanchnici pelvici</td></tr>
+  </table></div>
+  <p class="small">Vena mengikuti arterinya: wilayah AMS → v. mesenterica superior, wilayah AMI → v. mesenterica inferior. Flexura coli dextra di bawah hepar (costa IX–X), flexura coli sinistra di bawah lien dan <b>lebih tinggi</b>.</p>
+
+  <div class="card">
+    <div class="ckhead"><p class="sec-ttl">Checklist responsi · usus halus &amp; colon</p><span class="cnt" data-cnt="usus"></span></div>
+    <div class="ck" data-ck="usus">
+      <label><input type="checkbox"><span>Flexura duodenojejunalis &amp; lig. Treitz</span></label>
+      <label><input type="checkbox"><span>Jejunum vs ileum dari arkade &amp; vasa recta</span></label>
+      <label><input type="checkbox"><span>Lapisan dinding + plexus Auerbach/Meissner</span></label>
+      <label><input type="checkbox"><span>Plicae circulares, villi</span></label>
+      <label><input type="checkbox"><span>Taenia mesocolica / omentalis / libera</span></label>
+      <label><input type="checkbox"><span>Haustra, incisura, plica semilunaris, appendices epiploicae</span></label>
+      <label><input type="checkbox"><span>Caecum, valvula ileocaecalis, frenulum, ostium</span></label>
+      <label><input type="checkbox"><span>Appendix + mesoappendix + 5 variasi letak</span></label>
+      <label><input type="checkbox"><span>McBurney &amp; Lanz</span></label>
+      <label><input type="checkbox"><span>Flexura coli dextra &amp; sinistra</span></label>
+      <label><input type="checkbox"><span>Arteri tiap segmen colon</span></label>
+      <label><input type="checkbox"><span>Sulci paracolici</span></label>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== 7 -->
+<section class="mod" id="rectum">
+  <h3><span class="no">07</span> Rectum &amp; canalis analis <span class="b bA">ASLAB</span></h3>
+  <ul class="small">
+    <li>Rectum mulai setinggi <b>S3</b> di linea mediana, anterior sacrum. Rectum ±12–15 cm, canalis analis ±3–4 cm.</li>
+    <li>Luar: <b>flexura sacralis</b> &amp; <b>flexura anorectalis</b> (dijaga oleh tonus m. puborectalis → kontinensia).</li>
+    <li>Dalam: <b>plicae transversales recti (Houston)</b>, ±3; <b>ampulla recti</b> sebagai penampung feses. Tidak ada taenia, haustra, atau appendices epiploicae.</li>
+    <li>Canalis analis: <b>columnae anales (Morgagni)</b> 5–10 lipatan, <b>valvulae anales</b> menghubungkan ujung bawah columnae, <b>sinus anales</b> di antaranya, <b>linea pectinata (dentata)</b>, <b>pecten analis / zona alba</b>, dan linea anocutanea.</li>
+    <li>Sphincter: <b>m. sphincter ani internus</b> (polos, involunter), m. corrugator ani (polos), <b>m. sphincter ani externus</b> (lurik, n. pudendus), m. puborectalis (lurik, bagian levator ani).</li>
+  </ul>
+
+  <h4>Linea pectinata: batas dua dunia</h4>
+  <div class="tw"><table>
+    <tr><th>Aspek</th><th>Di ATAS linea pectinata</th><th>Di BAWAH linea pectinata</th></tr>
+    <tr><td>Asal embrio</td><td class="rv">endoderm (hindgut)</td><td class="rv">ektoderm (proctodeum)</td></tr>
+    <tr><td>Epitel</td><td class="rv">silindris/kuboid</td><td class="rv">skuamosa berlapis</td></tr>
+    <tr><td>Arteri</td><td class="rv">a. rectalis superior (AMI)</td><td class="rv">a. rectalis inferior (a. pudenda interna)</td></tr>
+    <tr><td>Vena</td><td class="rv">v. rectalis superior → v. mesenterica inferior → <b>v. porta</b></td><td class="rv">v. rectalis inferior → v. pudenda interna → v. iliaca interna → <b>VCI</b></td></tr>
+    <tr><td>Limfe <span class="b bD">DOSEN</span></td><td class="rv">nl. iliaci interni, mesenterici inferiores</td><td class="rv">nl. <b>inguinales superficiales</b></td></tr>
+    <tr><td>Saraf &amp; nyeri</td><td class="rv">viseral (otonom), <b>tidak nyeri tajam</b></td><td class="rv">somatik (n. pudendus / nn. rectales inferiores), <b>sangat nyeri</b></td></tr>
+    <tr><td>Hemoroid</td><td class="rv"><b>interna</b>: berdarah tanpa nyeri</td><td class="rv"><b>eksterna</b>: nyeri, bisa trombosis</td></tr>
+  </table></div>
+  <p class="small"><b>Satu prinsip untuk semua baris:</b> bagian atas adalah "usus" (endoderm, sistem porta, viseral), sedangkan bagian bawah adalah "kulit" (ektoderm, sistemik, somatik). A. rectalis media (a. iliaca interna) dan v. rectalis media → v. iliaca interna termasuk sistemik.</p>
+
+  <div class="card">
+    <div class="ckhead"><p class="sec-ttl">Checklist responsi · rectum</p><span class="cnt" data-cnt="rectum"></span></div>
+    <div class="ck" data-ck="rectum">
+      <label><input type="checkbox"><span>Flexura sacralis &amp; anorectalis</span></label>
+      <label><input type="checkbox"><span>Plicae transversales recti (Houston), ampulla recti</span></label>
+      <label><input type="checkbox"><span>Columnae, valvulae, sinus anales</span></label>
+      <label><input type="checkbox"><span>Linea pectinata, zona alba, linea anocutanea</span></label>
+      <label><input type="checkbox"><span>4 otot sphincter + jenis ototnya</span></label>
+      <label><input type="checkbox"><span>A/V rectalis superior, media, inferior + muaranya</span></label>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== 8 -->
+<section class="mod" id="hepar">
+  <h3><span class="no">08</span> Hepar <span class="b bA">ASLAB</span></h3>
+  <p class="lead">Letak: RUQ meluas ke LUQ, yaitu hypochondriaca dextra + epigastrica, bisa sampai hypochondriaca sinistra. Bagian yang dipelajari: <b>facies, margines, lobi, segmen, ligamenta</b>.</p>
+
+  <h4>Facies diaphragmatica (anterior–superior–posterior)</h4>
+  <p class="small">Halus, berbentuk kubah, ada <b>impressiones costarum</b>. Di permukaan ini terlihat: lobus dexter &amp; sinister dipisah <b>lig. falciforme</b>; tepi bebas lig. falciforme = <b>lig. teres hepatis</b> (sisa v. umbilicalis); <b>lig. coronarium</b> anterior &amp; posterior; <b>lig. triangulare</b> dextrum &amp; sinistrum (pertemuan lig. coronarium anterior dan posterior di tiap sisi). <b>Area nuda</b> = bagian yang langsung menempel ke diafragma tanpa peritoneum, dibatasi lig. coronarium dan triangulare.</p>
+
+  <h4>Facies visceralis: skema "huruf H"</h4>
+  <figure>
+    <svg viewBox="0 0 400 250" role="img" aria-label="Skema huruf H pada facies visceralis hepar">
+      <path d="M20 120 Q20 40 110 30 Q230 18 330 50 Q390 70 385 105 Q370 140 280 175 Q200 215 110 215 Q20 210 20 120 Z" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5"/>
+      <line x1="145" y1="45" x2="145" y2="205" stroke="var(--text)" stroke-width="6" stroke-linecap="round"/>
+      <line x1="245" y1="40" x2="245" y2="200" stroke="var(--text)" stroke-width="6" stroke-linecap="round"/>
+      <line x1="145" y1="122" x2="245" y2="122" stroke="var(--accent)" stroke-width="9" stroke-linecap="round"/>
+      <rect x="160" y="62" width="70" height="40" rx="6" fill="var(--surface)" stroke="var(--border-strong)"/>
+      <rect x="160" y="142" width="70" height="40" rx="6" fill="var(--surface)" stroke="var(--border-strong)"/>
+      <text x="195" y="86" text-anchor="middle" class="lbl rv">l. caudatus</text>
+      <text x="195" y="166" text-anchor="middle" class="lbl rv">l. quadratus</text>
+      <text x="195" y="139" text-anchor="middle" class="lbs rv" fill="var(--accent-ink)">porta hepatis</text>
+      <text x="138" y="66" text-anchor="end" class="lbs rv">sulcus v. cava inf.</text>
+      <text x="138" y="196" text-anchor="end" class="lbs rv">fossa vesicae felleae</text>
+      <text x="252" y="62" class="lbs rv">fissura lig. venosi</text>
+      <text x="252" y="196" class="lbs rv">fissura lig. teretis</text>
+      <text x="70" y="130" text-anchor="middle" class="lbl rv" font-weight="700">LOBUS DEXTER</text>
+      <text x="315" y="120" text-anchor="middle" class="lbl rv" font-weight="700">LOBUS SINISTER</text>
+      <text x="200" y="14" text-anchor="middle" class="lbs">↑ posterior</text>
+      <text x="200" y="240" text-anchor="middle" class="lbs">↓ anterior (margo inferior)</text>
+    </svg>
+    <figcaption>Dilihat dari bawah-belakang seperti di atlas: <b>kiri gambar = kanan pasien</b>. Atas = posterior, bawah = anterior.</figcaption>
+  </figure>
+  <div class="co good"><b class="t">Cara menurunkan huruf H tanpa menghafal</b>
+    <ol class="small" style="margin:4px 0 0">
+      <li><b>Kaki kiri pasien (kanan gambar)</b> diisi sisa sirkulasi janin: v. umbilicalis (anterior) mengalir lewat ductus venosus (posterior) ke VCI. Maka: <b>fissura lig. teretis di depan, fissura lig. venosi di belakang</b>.</li>
+      <li><b>Kaki kanan pasien</b> diisi dua "kantong" besar: VF di depan (fundusnya menonjol di margo inferior) dan VCI di belakang (menempel ke diafragma).</li>
+      <li><b>Palang tengah</b> = porta hepatis, pintu masuk hilum.</li>
+      <li>Lobus yang terjepit di antara dua struktur <b>depan</b> = <b>quadratus</b>; di antara dua struktur <b>belakang</b> = <b>caudatus</b> (cauda = ekor, ke arah belakang).</li>
+    </ol>
+  </div>
+  <div class="two">
+    <div class="card">
+      <p class="sec-ttl">Isi porta hepatis</p>
+      <ul class="small rv">
+        <li>Ductus hepaticus dexter et sinister</li>
+        <li>R. dexter et sinister a. hepatica propria</li>
+        <li>V. portae hepatis</li>
+        <li>Plexus hepaticus</li>
+        <li>Nl. hepatici</li>
+      </ul>
+      <p class="small muted"><span class="b bT">LIT</span> Di lig. hepatoduodenale: ductus choledochus di <b>kanan-depan</b>, a. hepatica propria di <b>kiri-depan</b>, v. porta di <b>belakang</b> keduanya.</p>
+    </div>
+    <div class="card">
+      <p class="sec-ttl">Tidak dilapisi peritoneum</p>
+      <ul class="small rv">
+        <li>Area nuda (pars affixa)</li>
+        <li>Porta hepatis</li>
+        <li>Fossa vesicae felleae</li>
+        <li>Sulcus v. cavae</li>
+        <li>Fissura lig. venosi &amp; lig. teretis</li>
+      </ul>
+      <p class="small muted">Polanya: tempat sesuatu <b>masuk atau menempel</b> tidak bisa ditutup peritoneum.</p>
+    </div>
+  </div>
+
+  <h4>Lobi, margines, segmen</h4>
+  <div class="tw"><table>
+    <tr><th>Lobus</th><th>Ciri / batas</th></tr>
+    <tr><td>Dexter</td><td class="rv">Terbesar. Secara anatomis, quadratus dan caudatus dihitung sebagai bagian lobus dexter</td></tr>
+    <tr><td>Sinister</td><td class="rv">Lebih kecil dari dexter, lebih besar dari dua lobus lainnya</td></tr>
+    <tr><td>Quadratus</td><td class="rv">Facies visceralis bagian <b>anterior</b>; batas kiri fissura lig. teretis, batas kanan fossa VF</td></tr>
+    <tr><td>Caudatus</td><td class="rv">Facies visceralis bagian <b>posterior</b>; batas kiri fissura lig. venosi, batas kanan sulcus VCI. Termasuk <b>segmen I</b></td></tr>
+  </table></div>
+  <p class="small">Margines: <b>anterior, inferior, posterosuperior</b>. Segmen Couinaud I–VIII (nice to know): I = caudatus, lalu II–VIII searah jarum jam; IVa/IVb = medial superior/inferior. Pembagian ini berdasarkan cabang a. hepatica, v. porta, dan drainase bilier, dan dipakai dalam reseksi hepar.</p>
+
+  <h4>Vaskularisasi &amp; persarafan</h4>
+  <div class="flow"><span class="bx">Truncus coeliacus</span><span class="ar">→</span><span class="bx">a. hepatica communis</span><span class="ar">→</span><span class="bx">a. hepatica propria</span><span class="ar">→</span><span class="bx">r. dexter / sinister</span><span class="ar">→</span><span class="bx">porta hepatis → a. interlobaris → intralobaris</span></div>
+  <ul class="small">
+    <li><b>Nutritif</b>: a. hepatica propria (masuk); <b>v. hepatica → VCI</b> (keluar).</li>
+    <li><b>Fungsional</b>: v. portae hepatis (lihat <a href="#porta">bagian 11</a>).</li>
+    <li>Inervasi: parasimpatis n. vagus; simpatis n. splanchnicus major (pre) → gangl. coeliacum (post).</li>
+    <li>Limfe: nl. hepatici → nl. gastrici sinistri &amp; coeliaci → cisterna chyli.</li>
+  </ul>
+
+  <div class="card">
+    <div class="ckhead"><p class="sec-ttl">Checklist responsi · hepar</p><span class="cnt" data-cnt="hepar"></span></div>
+    <div class="ck" data-ck="hepar">
+      <label><input type="checkbox"><span>Facies diaphragmatica vs visceralis</span></label>
+      <label><input type="checkbox"><span>Lig. falciforme, teres, coronarium, triangulare</span></label>
+      <label><input type="checkbox"><span>Area nuda + batasnya</span></label>
+      <label><input type="checkbox"><span>Huruf H: 4 kaki + porta</span></label>
+      <label><input type="checkbox"><span>Lobus quadratus &amp; caudatus + batasnya</span></label>
+      <label><input type="checkbox"><span>Isi porta hepatis</span></label>
+      <label><input type="checkbox"><span>Impressiones (gastrica, duodenalis, colica, renalis)</span></label>
+      <label><input type="checkbox"><span>Margo anterior, inferior, posterosuperior</span></label>
+      <label><input type="checkbox"><span>Segmen I–VIII</span></label>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== 9 -->
+<section class="mod" id="bilier">
+  <h3><span class="no">09</span> Vesica fellea, saluran empedu &amp; pancreas <span class="b bA">ASLAB</span></h3>
+  <div class="two">
+    <div class="card">
+      <p class="sec-ttl">Vesica fellea</p>
+      <ul class="small">
+        <li>Intraperitoneal, di facies visceralis antara lobus dexter &amp; quadratus; regio hypochondriaca dextra/epigastrica</li>
+        <li>Skeletopi fundus: setinggi ujung cartilago costa IX <span class="b bD">DOSEN</span></li>
+        <li>Bagian: <b>fundus → corpus → infundibulum → collum → ductus cysticus</b></li>
+        <li>Fungsi: menampung &amp; memekatkan empedu (empedu <b>diproduksi hepar</b>, bukan VF)</li>
+        <li>Arteri: <span class="rv"><b>a. cystica</b> dari r. dexter a. hepatica propria (±75%)</span>. Vena: v. cystica → v. porta</li>
+        <li>Inervasi: vagus | splanchnicus major. Limfe: nl. cysticus → nl. hepatici</li>
+      </ul>
+    </div>
+    <div class="card">
+      <p class="sec-ttl">Trigonum cholecystohepaticum (Calot)</p>
+      <ul class="small rv">
+        <li>Ductus cysticus</li>
+        <li>Ductus hepaticus communis</li>
+        <li>Tepi bawah hepar (facies visceralis)</li>
+      </ul>
+      <p class="small">Isinya: <b>a. cystica</b>. Inilah alasan trigonum ini penting dalam kolesistektomi.</p>
+    </div>
+  </div>
+
+  <h4>Jalan empedu &amp; getah pankreas</h4>
+  <div class="flow">
+    <span class="bx">ductus hepaticus dexter + sinister</span><span class="ar">→</span><span class="bx">ductus hepaticus communis</span><span class="ar">+</span><span class="bx">ductus cysticus (VF)</span><span class="ar">→</span><span class="bx hi">ductus choledochus</span>
+  </div>
+  <div class="flow">
+    <span class="bx hi">ductus choledochus</span><span class="ar">+</span><span class="bx">ductus pancreaticus major (Wirsung)</span><span class="ar">→</span><span class="bx">ampulla hepatopancreatica (Vater), dikelilingi m. sphincter Oddi</span><span class="ar">→</span><span class="bx hi">papilla duodeni major (pars descendens)</span>
+  </div>
+  <div class="flow">
+    <span class="bx">ductus pancreaticus accessorius (Santorini)</span><span class="ar">→</span><span class="bx hi">papilla duodeni minor</span><span class="ar">·</span><span class="muted">letaknya di <b>atas</b> papilla major</span>
+  </div>
+  <div class="co"><b class="t">Senggol kasus</b>Batu yang tersangkut di <b>ampulla Vater</b> menyumbat dua saluran sekaligus, sehingga menimbulkan <b>ikterus obstruktif</b> dan <b>pankreatitis bilier</b> bersamaan. Batu di VF disebut cholelithiasis; batu di ductus choledochus disebut choledocholithiasis. Batu yang menyumbat aliran keluar menyebabkan stasis, lalu iritasi, lalu cholecystitis. Radang di ductus choledochus disebut cholangitis.</div>
+
+  <h4>Pancreas</h4>
+  <div class="tw"><table>
+    <tr><th>Bagian</th><th>Ciri</th></tr>
+    <tr><td>Caput</td><td class="rv">Di dalam lengkung C duodenum. Punya <b>processus uncinatus</b> (melengkung ke bawah-belakang) dan <b>incisura pancreatis</b> di atasnya, tempat lewatnya <b>a/v mesenterica superior</b></td></tr>
+    <tr><td>Collum</td><td class="rv">Di belakangnya <b>v. porta terbentuk</b> (v. mesenterica superior + v. lienalis)</td></tr>
+    <tr><td>Corpus</td><td class="rv">Menyilang ke kiri di belakang gaster</td></tr>
+    <tr><td>Cauda</td><td class="rv">Satu-satunya bagian yang <b>intraperitoneal</b>; menuju hilum lienalis</td></tr>
+  </table></div>
+  <ul class="small">
+    <li>Letak: retroperitoneal (kecuali cauda), di belakang gaster; regio epigastrica &amp; hypochondriaca sinistra.</li>
+    <li>Arteri: <span class="rv">a. pancreaticoduodenalis superior (dari a. gastroduodenalis), a. pancreaticoduodenalis inferior (dari AMS), rr. pancreatici a. lienalis</span>. Caput diperdarahi dua sistem, yaitu foregut dan midgut, karena caput terletak di perbatasan keduanya.</li>
+    <li>Inervasi: vagus | splanchnicus major → gangl. coeliacum. Limfe: nl. pancreaticoduodenales.</li>
+    <li>Eksokrin (enzim, bikarbonat) dan endokrin (insulin, glukagon, somatostatin). <span class="b bD">DOSEN</span></li>
+  </ul>
+
+  <div class="card">
+    <div class="ckhead"><p class="sec-ttl">Checklist responsi · bilier &amp; pancreas</p><span class="cnt" data-cnt="bilier"></span></div>
+    <div class="ck" data-ck="bilier">
+      <label><input type="checkbox"><span>Fundus, corpus, infundibulum, collum VF</span></label>
+      <label><input type="checkbox"><span>Ductus cysticus, hepaticus communis, choledochus</span></label>
+      <label><input type="checkbox"><span>Trigonum Calot + a. cystica</span></label>
+      <label><input type="checkbox"><span>Ampulla Vater, sphincter Oddi</span></label>
+      <label><input type="checkbox"><span>Papilla duodeni major vs minor</span></label>
+      <label><input type="checkbox"><span>Ductus Wirsung vs Santorini</span></label>
+      <label><input type="checkbox"><span>Caput, proc. uncinatus, incisura, collum, corpus, cauda</span></label>
+      <label><input type="checkbox"><span>Arteri pancreas (3 sumber)</span></label>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== 10 -->
+<section class="mod" id="lien">
+  <h3><span class="no">10</span> Lien <span class="b bA">ASLAB</span></h3>
+  <ul class="small">
+    <li>Regio hypochondriaca sinistra (LUQ), <b>posterior</b> gaster, <b>anterior</b> ren sinister bagian atas &amp; diafragma. Skeletopi: costa IX–X sinistra.</li>
+    <li>Intraperitoneal, kecuali di <b>hilum lienalis</b>, yang dilalui a/v lienalis, plexus nervosus, dan plexus lymphaticus.</li>
+  </ul>
+  <div class="tw"><table>
+    <tr><th>Bagian</th><th>Isi</th></tr>
+    <tr><td>Facies</td><td class="rv"><b>Diaphragmatica</b> (cembung) &amp; <b>visceralis</b>, yang terdiri dari facies <b>gastrica, colica, renalis</b> (dinamai menurut organ yang dihadapinya)</td></tr>
+    <tr><td>Margo</td><td class="rv">Superior &amp; inferior</td></tr>
+    <tr><td>Extremitas / polus</td><td class="rv">Anterior &amp; posterior</td></tr>
+    <tr><td>Ligamenta</td><td class="rv"><b>Lig. gastrosplenicum</b> (ke curvatura major gaster) &amp; <b>lig. splenorenale</b> (ke ren), keduanya bagian dari omentum majus</td></tr>
+    <tr><td>Neurovaskular</td><td class="rv">a. lienalis, v. lienalis | vagus, splanchnicus major | nl. pancreaticolienales</td></tr>
+  </table></div>
+  <p class="small"><span class="b bT">LIT</span> Lig. gastrosplenicum berisi aa. gastricae breves &amp; a. gastroomentalis sinistra; lig. splenorenale berisi a/v lienalis dan cauda pancreas. Itulah sebabnya cauda pancreas bisa intraperitoneal.</p>
+  <p class="small">Klinis: <b>splenomegali</b> (diukur dengan skala Schuffner), <b>ruptur lien</b>.</p>
+</section>
+
+<!-- ===================================================== 11 -->
+<section class="mod" id="porta">
+  <h3><span class="no">11</span> Vena porta &amp; anastomosis portosistemik</h3>
+  <p class="lead">Darah dari 1/3 bawah oesophagus sampai 1/2 atas canalis analis, ditambah lien, pancreas, dan VF, "transit" dulu di hepar untuk detoksifikasi sebelum masuk ke v. hepatica, lalu VCI.</p>
+  <div class="flow">
+    <span class="bx">v. mesenterica inferior</span><span class="ar">→</span><span class="bx">v. lienalis</span><span class="ar">+</span><span class="bx">v. mesenterica superior</span><span class="ar">→</span><span class="bx hi">v. portae hepatis (di belakang collum pancreatis)</span><span class="ar">←</span><span class="bx">v. gastrica sinistra &amp; dextra, v. cystica, vv. paraumbilicales</span>
+  </div>
+  <div class="tw"><table>
+    <tr><th>Lokasi anastomosis</th><th>Sisi portal</th><th>Sisi sistemik</th><th>Bila hipertensi porta</th></tr>
+    <tr><td>Gastro-oesophageal</td><td class="rv">v. gastrica sinistra</td><td class="rv">vv. oesophageae → v. azygos</td><td class="rv"><b>varises oesophagus</b> → hematemesis masif</td></tr>
+    <tr><td>Anorectal</td><td class="rv">v. rectalis superior</td><td class="rv">v. rectalis media &amp; inferior</td><td class="rv"><b>varises anorektal / hemoroid</b></td></tr>
+    <tr><td>Periumbilical</td><td class="rv">vv. paraumbilicales</td><td class="rv">vena superfisial dinding abdomen</td><td class="rv"><b>caput medusae</b></td></tr>
+    <tr><td>Retroperitoneal <span class="b bD">DOSEN</span></td><td class="rv">vena colica, lienalis</td><td class="rv">vena dinding posterior</td><td class="rv">kolateral dinding posterior</td></tr>
+  </table></div>
+  <p class="small">Lokasi gangguan: <b>pre-hepatik</b> (aliran menuju hepar), <b>intra-hepatik</b> (sirosis, schistosomiasis; ini yang paling sering), dan <b>post-hepatik</b>. Polanya: setiap anastomosis berada di <b>perbatasan</b> antara wilayah "usus" dan wilayah "dinding atau kulit".</p>
+</section>
+
+<!-- ===================================================== 12 -->
+<section class="mod" id="superior">
+  <h3><span class="no">12</span> Tractus superior <span class="b bD">DOSEN</span> <span class="b bP">PRIORITAS 2</span></h3>
+  <p class="lead">Tidak ada di PPT aslab, jadi pelajari setelah bagian 1–11. Catatan: PDF dosen dinding abdomen menyebut <b>larynx &amp; pharynx dipelajari di blok THT</b>, jadi pharynx boleh paling akhir.</p>
+
+  <h4>Oesophagus: ±25 cm, C6 → cardia (T11)</h4>
+  <div class="tw"><table>
+    <tr><th>Penyempitan</th><th>Jarak dari gigi seri</th><th>Setinggi</th><th>Penyebab</th></tr>
+    <tr><td>1</td><td class="rv">±15 cm</td><td class="rv">C6</td><td class="rv">peralihan pharynx–oesophagus (m. cricopharyngeus)</td></tr>
+    <tr><td>2</td><td class="rv">±22 cm</td><td class="rv">T4</td><td class="rv">disilang arcus aortae</td></tr>
+    <tr><td>3</td><td class="rv">±27 cm</td><td class="rv">T5</td><td class="rv">disilang bronchus principalis sinister</td></tr>
+    <tr><td>4</td><td class="rv">±40 cm</td><td class="rv">T10</td><td class="rv">hiatus oesophageus diafragma</td></tr>
+  </table></div>
+  <p class="small">Otot: 1/3 atas lurik, 1/3 tengah campuran, 1/3 bawah polos. Arteri: cervicalis dari a. thyroidea inferior, thoracica dari aorta &amp; aa. bronchiales, abdominalis dari <b>a. gastrica sinistra</b> &amp; a. phrenica inferior. Vena pars abdominalis: v. gastrica sinistra → v. porta. Inilah dasar varises oesophagus.</p>
+
+  <h4>Gaster</h4>
+  <ul class="small">
+    <li>Pars cardiaca (ostium cardiacum, T11) → fundus (di bawah kubah diafragma kiri, berisi udara pada foto tegak) → corpus → pars pylorica (antrum + canalis pyloricus, m. sphincter pyloricus, setinggi L1).</li>
+    <li>Curvatura minor (omentum minus, incisura angularis) dan curvatura major (omentum majus, lig. gastrosplenicum).</li>
+    <li>Arteri: lihat <a href="#pembuluh">pohon truncus coeliacus</a>. Curvatura minor diperdarahi gastrica sinistra + dextra; curvatura major gastroomentalis sinistra + dextra; fundus aa. gastricae breves.</li>
+    <li>Saraf: truncus vagalis anterior &amp; posterior (sekresi asam, motilitas); simpatis T6–T9; nyeri dirasakan di epigastrium.</li>
+  </ul>
+  <div class="co"><b class="t">Senggol kasus</b>Ulkus di dinding <b>posterior</b> bulbus duodeni bisa mengerosi <b>a. gastroduodenalis</b> dan menimbulkan perdarahan SCBA berat. Stenosis pylorus hipertrofik pada bayi menimbulkan muntah proyektil dan teraba massa "olive".</div>
+
+  <h4>Duodenum: huruf C mengelilingi caput pancreatis</h4>
+  <div class="tw"><table>
+    <tr><th>Pars</th><th>Panjang</th><th>Setinggi</th><th>Hubungan penting</th></tr>
+    <tr><td>Superior</td><td class="rv">±5 cm</td><td class="rv">L1</td><td class="rv">ampulla (bulbus), tempat ulkus tersering; posteriornya a. gastroduodenalis &amp; ductus choledochus. Hanya ±2 cm awal yang intraperitoneal</td></tr>
+    <tr><td>Descendens</td><td class="rv">±8 cm</td><td class="rv">L1–L3</td><td class="rv">papilla duodeni major &amp; minor; posteriornya hilum ren dexter</td></tr>
+    <tr><td>Inferior (horizontalis)</td><td class="rv">±7 cm</td><td class="rv">L3</td><td class="rv">disilang di anterior oleh a/v mesenterica superior; bisa terjepit antara AMS dan aorta</td></tr>
+    <tr><td>Ascendens</td><td class="rv">±5 cm</td><td class="rv">L3–L2</td><td class="rv">flexura duodenojejunalis, lig. Treitz</td></tr>
+  </table></div>
+
+  <h4>Cavum oris, lingua, dentes, glandulae salivariae</h4>
+  <div class="tw"><table>
+    <tr><th>Bagian lingua</th><th>Sensibilitas umum</th><th>Pengecapan</th><th>Motorik</th></tr>
+    <tr><td>2/3 anterior</td><td class="rv">n. lingualis (V3)</td><td class="rv">chorda tympani (VII)</td><td class="rv" rowspan="2">n. XII (semua otot, <b>kecuali m. palatoglossus → n. X</b>)</td></tr>
+    <tr><td>1/3 posterior</td><td class="rv">n. IX</td><td class="rv">n. IX</td></tr>
+  </table></div>
+  <ul class="small">
+    <li>Sulcus terminalis (V) memisahkan 2/3 anterior dari 1/3 posterior; foramen caecum di apexnya (asal glandula thyroidea). Papillae: filiformes (terbanyak, <b>tanpa kuncup kecap</b>), fungiformes, vallatae (8–12, di depan sulcus terminalis), foliatae.</li>
+    <li>Lesi n. XII perifer: lidah menyimpang <b>ke sisi lesi</b> saat dijulurkan (m. genioglossus sisi sehat mendorong).</li>
+    <li>Dentes: decidui 20 (I2 C1 M2 per kuadran), permanentes 32 (I2 C1 P2 M3). Gigi atas dipersarafi nn. alveolares superiores (V2), gigi bawah n. alveolaris inferior (V3). Bagian gigi: corona, cervix, radix; lapisan: email, dentin, pulpa.</li>
+    <li>Glandulae: <b>parotis</b> (terbesar) → ductus Stensen menembus m. buccinator, bermuara di vestibulum setinggi <b>molar II atas</b>; <b>submandibularis</b> → ductus Wharton, di samping frenulum linguae; <b>sublingualis</b> → banyak ductus kecil di dasar mulut.</li>
+    <li>Palatum molle: semua otot dipersarafi plexus pharyngeus (X), <b>kecuali m. tensor veli palatini → V3</b>.</li>
+  </ul>
+</section>
+
+<!-- ===================================================== 13 -->
+<section class="mod" id="klinis">
+  <h3><span class="no">13</span> Kasus: dari gejala ke anatomi</h3>
+  <div class="tw"><table>
+    <tr><th>Gejala</th><th>Penjelasan anatomis</th></tr>
+    <tr><td>Nyeri samar di sekitar pusar, lalu pindah ke kanan bawah dan terasa tajam saat batuk</td><td class="rv">Appendicitis. Appendix berasal dari midgut, aferen viseralnya masuk di T10, sehingga nyeri awal terasa periumbilikal. Setelah radang mengenai peritoneum parietale (somatik), nyeri menjadi tajam dan terlokalisasi di titik McBurney</td></tr>
+    <tr><td>Appendix mudah perforasi</td><td class="rv">A. appendicularis adalah <b>end artery</b>, sehingga sumbatan dan edema menyebabkan iskemia, gangren, lalu perforasi</td></tr>
+    <tr><td>Appendicitis dengan psoas sign positif</td><td class="rv">Letak <b>retrocaecal</b> (menempel ke m. psoas). Letak pelvic memberi nyeri saat berkemih atau pada colok dubur</td></tr>
+    <tr><td>Benjolan inguinal medial a. epigastrica inferior</td><td class="rv">Hernia <b>direk</b> lewat trigonum Hesselbach</td></tr>
+    <tr><td>Pasien sirosis muntah darah masif</td><td class="rv">Hipertensi porta menyebabkan varises oesophagus (v. gastrica sinistra ↔ v. azygos) yang pecah</td></tr>
+    <tr><td>Vena melebar di sekitar umbilicus</td><td class="rv">Caput medusae (vv. paraumbilicales ↔ vena superfisial dinding)</td></tr>
+    <tr><td>Hemoroid berdarah tanpa nyeri</td><td class="rv">Di <b>atas</b> linea pectinata (interna, persarafan viseral)</td></tr>
+    <tr><td>Ikterus + pankreatitis bersamaan</td><td class="rv">Batu di <b>ampulla Vater</b> (saluran bersama choledochus + Wirsung)</td></tr>
+    <tr><td>Perdarahan dari lesi distal lig. Treitz</td><td class="rv">Perdarahan saluran cerna <b>bawah</b> (hematochezia)</td></tr>
+    <tr><td>Nyeri perut hebat tidak sebanding dengan pemeriksaan fisik, lansia dengan fibrilasi atrium</td><td class="rv">Iskemia mesenterika akut karena emboli ke AMS <span class="b bD">DOSEN</span></td></tr>
+    <tr><td>Garis kemerahan di perut bawah ibu hamil</td><td class="rv">Striae gravidarum (robekan jaringan ikat intradermal); setelah partus menjadi linea albicantes</td></tr>
+    <tr><td>Cairan di cavitas peritonei</td><td class="rv">Ascites (penyakit hepar, gagal jantung kanan); ditangani dengan paracentesis</td></tr>
+  </table></div>
+</section>
+
+<!-- ===================================================== koreksi -->
+<section class="mod" id="koreksi">
+  <h3><span class="no">!!</span> Koreksi &amp; perbedaan antar-sumber</h3>
+  <p class="lead">Kalau jawabanmu berbeda dari kunci aslab, bagian ini menjelaskan alasannya. Kalau sumber bertentangan, tanyakan ke aslab versi mana yang dipakai saat responsi.</p>
+  <div class="co bad"><b class="t">PPT aslab Accessoria, slide 12: "Sulcus V. Cava Superior"</b>Seharusnya <b>sulcus v. cavae (inferioris)</b>. Yang menempel di facies visceralis hepar adalah VCI; VCS berada di thorax.</div>
+  <div class="co bad"><b class="t">PDF dosen Peritoneum: omentum minus dan batas foramen Winslow menyebut "pars descendens duodeni"</b>Literatur standar (Moore, Netter) menyebut <b>pars superior</b>, baik untuk perlekatan omentum minus maupun untuk batas inferior foramen epiploicum. PPT aslab juga menulis pars superior.</div>
+  <div class="co bad"><b class="t">PDF dosen: "linea arcuata atau linea semilunaris (Douglasi)"</b>Ini dua garis yang berbeda. <b>Linea arcuata = linea semicircularis Douglasi</b> (tepi bawah lamina posterior vagina recti). <b>Linea semilunaris</b> adalah tepi lateral m. rectus abdominis yang berbentuk lengkung vertikal.</div>
+  <div class="co flag"><b class="t">Letak linea arcuata: aslab "3/4 atas", dosen tersirat 2/3</b>Pecahan ini perkiraan. Yang dinilai saat responsi biasanya <b>apa yang terjadi di bawah garis itu</b>: posterior rectus langsung bersentuhan dengan fascia transversalis.</div>
+  <div class="co flag"><b class="t">Titik Lanz: aslab "1/6 lateral dextra"</b>Sebagian besar literatur menyebut titik Lanz di perbatasan <b>1/3 kanan dan 1/3 tengah</b> garis interspinosa. Tanyakan ke aslab pecahan mana yang dipakai saat responsi.</div>
+  <div class="co flag"><b class="t">PPT aslab dinding: "dari v. epigastrica superior &amp; inferior menuju v. femoralis"</b>Lebih tepatnya: <b>v. epigastrica superficialis</b> → (v. saphena magna) → v. femoralis; <b>v. epigastrica inferior</b> → v. iliaca externa; <b>v. epigastrica superior</b> → v. thoracica interna. Jalur kolateral VCI lewat v. thoracoepigastrica di slide yang sama sudah benar.</div>
+  <div class="co flag"><b class="t">PPT aslab 9 regio: "ureter sinistra" di hypochondriaca sinistra</b>Ureter tidak berada di regio hypochondriaca. Ureter berjalan di regio lumbalis lalu turun ke pelvis.</div>
+  <div class="co flag"><b class="t">PPT aslab Accessoria: caput medusae "pada dinding dada sekitar umbilicus"</b>Maksudnya dinding <b>abdomen</b>.</div>
+  <div class="co"><b class="t">Bukan kesalahan, hanya beda penamaan</b>Dosen menulis "fascia profunda (fascia transversalis)", sedangkan aslab memisahkan keduanya. Keduanya bisa dibenarkan: fascia transversalis memang bagian fascia profunda yang paling berkembang. Untuk menyebut urutan 7 lapis di responsi, pakai versi aslab.</div>
+</section>
+
+<!-- ===================================================== latihan -->
+<section class="mod" id="latihan">
+  <h3><span class="no">→</span> Latihan soal</h3>
+  <div class="two">
+    <a class="card" href="index.html#/quiz/ub-1-3-responsi-anat" style="text-decoration:none;color:inherit;border-left:3px solid var(--accent)">
+      <p class="sec-ttl">PPT Aslab · Responsi Anatomi</p><b>Dinding, peritoneum, tractus inferior, accessoria</b><br><span class="small muted">Gaya responsi + kasus. Bisa difilter per modul.</span>
+    </a>
+    <a class="card" href="index.html#/quiz/ub-1-3-anat-dosen" style="text-decoration:none;color:inherit;border-left:3px solid var(--good)">
+      <p class="sec-ttl">PPT Dosen · Anatomi</p><b>Oesophagus, gaster, duodenum, cavum oris</b><br><span class="small muted">Prioritas 2.</span>
+    </a>
+  </div>
+</section>
+
+<p class="foot">Sumber: PPT Asistensi Dinding Abdomen (Zydane), Tractus Digestivus Inferior (Khai), Systema Digestiva Accessoria (Fatih); PDF kuliah Dinding Abdomen &amp; Peritoneum dan Organa Digestivus Accessoria (dr. Muthmainah), Anatomi Tractus Digestivus (Siti Munawaroh). Tambahan bertanda LIT dari Moore, <i>Clinically Oriented Anatomy</i>, dan Netter, <i>Atlas of Human Anatomy</i>. Skema digambar ulang secara skematik dan tidak sesuai skala.</p>
+
+</div>
+
+<script>
+(function(){
+  var APPKEY = "persiapan-ub.v1", CKKEY = "persiapan-ub.anatomi13.v1";
+  function rd(k){ try{ return JSON.parse(localStorage.getItem(k)) || {}; }catch(e){ return {}; } }
+  function wr(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  var root = document.documentElement, app = rd(APPKEY), ck = rd(CKKEY);
+
+  root.setAttribute("data-theme", app.theme || "light");
+  document.getElementById("tTheme").addEventListener("click", function(){
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next); app = rd(APPKEY); app.theme = next; wr(APPKEY, app);
+  });
+
+  /* Mode tutup jawaban */
+  var tb = document.getElementById("tTutup");
+  function setTutup(on){
+    document.body.classList.toggle("tutup", on);
+    tb.setAttribute("aria-pressed", on ? "true" : "false");
+    if(!on) document.querySelectorAll(".rv.shown").forEach(function(e){ e.classList.remove("shown"); });
+    ck._tutup = on; wr(CKKEY, ck);
+  }
+  tb.addEventListener("click", function(){ setTutup(!document.body.classList.contains("tutup")); });
+  document.addEventListener("click", function(ev){
+    if(!document.body.classList.contains("tutup")) return;
+    if(ev.target.closest("svg")) return; /* label SVG ditangani per figure */
+    var el = ev.target.closest(".rv");
+    if(el) el.classList.toggle("shown");
+  });
+  /* Label SVG yang tersembunyi tidak bisa diklik (opacity 0), jadi klik pada figure membuka semuanya */
+  document.querySelectorAll("figure").forEach(function(f){
+    f.addEventListener("click", function(ev){
+      if(!document.body.classList.contains("tutup") || !ev.target.closest("svg")) return;
+      var hidden = f.querySelectorAll("svg .rv:not(.shown)");
+      f.querySelectorAll("svg .rv").forEach(function(e){ e.classList.toggle("shown", hidden.length > 0); });
+    });
+  });
+  if(ck._tutup) setTutup(true);
+
+  /* Checklist */
+  function count(name){
+    var box = document.querySelector('[data-ck="'+name+'"]'), out = document.querySelector('[data-cnt="'+name+'"]');
+    if(!box || !out) return;
+    var all = box.querySelectorAll("input"), on = box.querySelectorAll("input:checked");
+    out.textContent = on.length + " / " + all.length;
+  }
+  document.querySelectorAll("[data-ck]").forEach(function(box){
+    var name = box.getAttribute("data-ck"), saved = ck[name] || [];
+    box.querySelectorAll("input").forEach(function(inp, i){
+      inp.checked = saved.indexOf(i) >= 0;
+      inp.addEventListener("change", function(){
+        var arr = [];
+        box.querySelectorAll("input").forEach(function(x, j){ if(x.checked) arr.push(j); });
+        ck[name] = arr; wr(CKKEY, ck); count(name);
+      });
+    });
+    count(name);
+  });
+})();
+</script>
+</body>
+</html>

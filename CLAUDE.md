@@ -2,7 +2,7 @@
 
 Baca dulu (urut): `../../INDEX.md` → `../../workflow.md` → `../../projects/persiapan-ub/STATE.md` → `../../projects/persiapan-ub/NEXT.md`.
 
-Project: dashboard "Persiapan UB" — hub web belajar FK, nampung banyak quiz recall per blok (sekarang Blok 1.1 dan 1.2).
+Project: dashboard "Persiapan UB" — hub web belajar FK, nampung banyak quiz recall per blok (sekarang Blok 1.1, 1.2, dan 1.3).
 Single `index.html` (shell home + daftar quiz + engine quiz), data bank soal per-quiz di `data/<id>.js`.
 GitHub Pages public: https://zer0braincell-001.github.io/persiapan-ub/
 
@@ -66,7 +66,8 @@ kartu nonaktif (`<div aria-disabled>`) selama `bankOf(id)` kosong dan otomatis j
 |---|---|---|---|
 | PPT Aslab | Responsi Fisiologi · Termoregulasi | `ub-1-3-responsi-fisio` | 179 |
 | PPT Aslab | Responsi Biokimia · Lipid & Karbohidrat | `ub-1-3-responsi-biokim` | 209 |
-| PPT Dosen | (kosong) | — | — |
+| PPT Aslab | Responsi Anatomi · Abdomen & digestif | `ub-1-3-responsi-anat` | 94 |
+| PPT Dosen | Anatomi · Tractus superior & cavum oris | `ub-1-3-anat-dosen` | 27 |
 | Naskah asli | Responsi Biokimia 1.3 | `ub-1-3-resp-asli` | 30 |
 | Naskah asli | AZYTRALIS 2022 | `ub-1-3-azytralis` | 29 |
 | Naskah asli | LATSOL Pre-Test 2026 | `ub-1-3-latsol` | 25 |
@@ -75,7 +76,8 @@ kartu nonaktif (`<div aria-disabled>`) selama `bankOf(id)` kosong dan otomatis j
 | Pretest Fisiologi | Pretest Fisiologi 2023 | `ub-1-3-pre-2023` | 20 |
 | Pretest Fisiologi | Pretest Termoregulasi 2018 | `ub-1-3-pre-2018` | 14 |
 
-`B13` punya **empat** seksi: `aslab`, `dosen`, `asli`, `pretest`. Total tab 1.3 = **545 soal**.
+`B13` punya **empat** seksi: `aslab`, `dosen`, `asli`, `pretest`. Total tab 1.3 = **666 soal**.
+Di atas seksi PPT Aslab ada kartu **Panduan belajar** (tautan ke `anatomi-1-3.html`).
 
 Menambah kartu = tambah satu entri ke `B13.aslab` atau `B13.dosen`, plus `data/<id>.js`,
 `<script src>`, dan entri `QUIZZES` (`sembunyi:true`). Tidak ada tempat lain yang disentuh.
@@ -255,6 +257,39 @@ bukan filter koordinat x.
 - **2018 #4** — slide sumber **tidak memuat opsi sama sekali**; kelima opsi baku sebab-akibat ditambahkan.
 
 **Berkas pretest tidak disimpan di repo**, sama seperti PPT aslab — user melampirkannya tiap sesi.
+
+### Quiz `ub-1-3-responsi-anat` + `ub-1-3-anat-dosen` — Anatomi 1.3
+`data/ub-1-3-responsi-anat.js` (**94 soal**, 12 modul) dari tiga PPT asistensi: Dinding Abdomen (Zydane),
+Tractus Digestivus Inferior (Khai), Systema Digestiva Accessoria (Fatih).
+`data/ub-1-3-anat-dosen.js` (**27 soal**, 6 modul) hanya berisi materi PDF dosen yang TIDAK dibahas aslab
+(oesophagus, gaster, duodenum, cavum oris/lingua, dentes, glandulae, pharynx), supaya tidak ada soal rangkap.
+Materi yang beririsan antara aslab dan dosen masuk bank aslab.
+- `modul` berformat `"Anatomi · <Subtopik>"`. Field `ppt` sengaja tidak dipakai (alasan sama dengan bank fisiologi).
+- `rationale` = penjelasan + `"  —  **Diskriminator:** ..."`; field tambahan `grup`, `bahas`, `diskriminator`.
+- Semua soal disusun sendiri, bukan naskah asli; kunci dari analisis. Belum ada peta bobot dari soal
+  responsi anatomi kakak tingkat — user akan mengunggahnya.
+- Sempat bernama `ub-1-3-aslab` / `ub-1-3-dosen` (PR #10, dibangun di atas main tanpa PR #9).
+  Diganti nama saat digabung dengan PR #9, sebelum ada progres user yang tersimpan.
+
+### `anatomi-1-3.html` — panduan belajar anatomi mandiri
+Halaman statis terpisah (bukan view di index.html), karena isinya HTML/SVG kaya yang tidak bisa lewat `richText()`.
+- Target ujian: **responsi/OSPE praktikum** + senggol kasus. User punya waktu 1–3 hari (Nov 2026).
+- Isi: urutan belajar + jadwal 3 hari/1 hari, 13 modul, skema SVG gambaran sendiri (vagina recti, dermatom,
+  Hesselbach, bingkai colon, huruf H hepar), tabel pembanding, checklist responsi, bagian **Koreksi sumber**.
+- **Tidak ada gambar atlas** — repo public, gambar PPT kebanyakan Netter/Sobotta. Jangan tambahkan.
+  Latihan tebak-struktur bergambar dibuat sebagai artifact PRIVAT di akun user, bukan di repo.
+- Label sumber: `ASLAB` (inti), `DOSEN` (pengayaan), `LIT` (tambahan literatur), `PRIORITAS 2`.
+- Mode **Tutup jawaban**: elemen ber-kelas `.rv` dikaburkan (teks SVG disembunyikan); ketuk untuk membuka.
+- localStorage: tema dibaca dari `persiapan-ub.v1` (sama dengan index), checklist + status tutup di
+  `persiapan-ub.anatomi13.v1`. Checklist disimpan per **indeks** checkbox dalam tiap `data-ck` —
+  kalau menyisipkan item di tengah, centang lama bergeser; tambahkan di akhir saja.
+- PPT anatomi berbeda dari PPT fisio/biokim: teksnya ADA di shape + notes, cukup python-pptx.
+
+Kesalahan sumber yang sudah ditandai di halaman (jangan "dibetulkan" balik):
+aslab "Sulcus V. Cava Superior" (seharusnya inferior); dosen "omentum minus/foramen Winslow ke pars
+descendens duodeni" (literatur: pars superior); dosen "linea arcuata atau linea semilunaris" (dua garis berbeda);
+aslab titik Lanz "1/6" (literatur umumnya 1/3); aslab ureter di hypochondriaca sinistra; aslab aliran
+v. epigastrica superior/inferior ke v. femoralis (yang ke femoralis adalah v. epigastrica superficialis).
 
 
 ## Bank naskah asli kakak tingkat (`ub-1-2-soal`, dst.)
