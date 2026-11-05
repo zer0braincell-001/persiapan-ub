@@ -71,12 +71,15 @@ kartu nonaktif (`<div aria-disabled>`) selama `bankOf(id)` kosong dan otomatis j
 | Naskah asli | Responsi Biokimia 1.3 | `ub-1-3-resp-asli` | 30 |
 | Naskah asli | AZYTRALIS 2022 | `ub-1-3-azytralis` | 29 |
 | Naskah asli | LATSOL Pre-Test 2026 | `ub-1-3-latsol` | 25 |
+| Naskah asli | Responsi Anatomi 1.3 | `ub-1-3-resp-anat` | 34 |
+| Naskah asli | Soal Responsi Anatomi FIX | `ub-1-3-resp-anat-fix` | 29 |
 | Pretest Fisiologi | Pretest Termoregulasi | `ub-1-3-pre-termo` | 19 |
 | Pretest Fisiologi | Pretest Anconeus 2021 | `ub-1-3-pre-2021` | 20 |
 | Pretest Fisiologi | Pretest Fisiologi 2023 | `ub-1-3-pre-2023` | 20 |
 | Pretest Fisiologi | Pretest Termoregulasi 2018 | `ub-1-3-pre-2018` | 14 |
+| Pretest | Pretes Digestivus Inferior (Aryo) | `ub-1-3-pre-digest` | 11 |
 
-`B13` punya **empat** seksi: `aslab`, `dosen`, `asli`, `pretest`. Total tab 1.3 = **666 soal**.
+`B13` punya **empat** seksi: `aslab`, `dosen`, `asli`, `pretest`. Total tab 1.3 = **740 soal** di 14 bank. Judul seksi pretest kini "Pretest (naskah asli)" karena memuat pretes anatomi juga.
 Di atas seksi PPT Aslab ada kartu **Panduan belajar** (tautan ke `anatomi-1-3.html`).
 
 Menambah kartu = tambah satu entri ke `B13.aslab` atau `B13.dosen`, plus `data/<id>.js`,
@@ -266,8 +269,24 @@ Tractus Digestivus Inferior (Khai), Systema Digestiva Accessoria (Fatih).
 Materi yang beririsan antara aslab dan dosen masuk bank aslab.
 - `modul` berformat `"Anatomi · <Subtopik>"`. Field `ppt` sengaja tidak dipakai (alasan sama dengan bank fisiologi).
 - `rationale` = penjelasan + `"  —  **Diskriminator:** ..."`; field tambahan `grup`, `bahas`, `diskriminator`.
-- Semua soal disusun sendiri, bukan naskah asli; kunci dari analisis. Belum ada peta bobot dari soal
-  responsi anatomi kakak tingkat — user akan mengunggahnya.
+- Semua soal disusun sendiri, bukan naskah asli; kunci dari analisis.
+
+**Peta bobot responsi anatomi** (46 soal unik dari dua naskah kating, 6 Nov 2026): cavum oris/lingua/glandula/pharynx
+12 (26%) · intestinum crassum 10 (22%) · VF/bilier/pancreas 8 (17%) · hepar+porta 4 · peritoneum 4 ·
+dinding+inguinal 4 · oesophagus+gaster 3 · lapisan dinding 1 · jejunum-ileum 0 (tapi nomor 1 di pretes).
+**Materi dosen (tractus superior + cavum oris) = 33% responsi** — versi pertama panduan salah melabelinya
+"prioritas 2"; sudah dikoreksi, label PRIORITAS 2 dihapus. Responsi berbentuk **isian**: struktur ditunjuk +
+satu pertanyaan lanjutan (saraf/embrio/muara/klinis).
+
+### Naskah asli anatomi (`ub-1-3-resp-anat`, `ub-1-3-resp-anat-fix`, `ub-1-3-pre-digest`)
+Sumber: RESPONSI_ANATOMI_1.3.docx (sesi Merah 24 nomor; sesi Hitam hanya mengulang parotis & omentum, tidak dimasukkan;
+no. 25 duplikat no. 2; 3A tak berjawaban dikecualikan), SOAL_RESPONSI_FIX.docx (22 nomor, no. 23 kosong),
+TIMER_Pretes_Trac_Digestivus_Inferior_Aryo.pptx (4 nomor akademik; no. 5 "hasil UB 1.2" dikecualikan).
+Semuanya soal ISIAN, jadi seluruh opsi dilengkapi (`asliPenuh:false` untuk semua). Sub-soal a/b dipecah,
+`kodeAsli` = nomor + huruf sumber. Soal bergambar diberi awalan `[Soal bergambar]` + deskripsi struktur;
+gambar tidak disalin ke repo. **Pembahasan Pretes 3B-C, 3D, 3E keliru** (jawab "midgut/hindgut" untuk arteri,
+"splanchnicus mayus" untuk midgut, "splanchnicolumbalis" untuk parasimpatis) — dikoreksi dengan `kunciDari:"analisis"`.
+Praktikum_Klinis_Allyssa.pptx.pdf hanya rangkuman klinis + latsol, dipakai untuk isi panduan (Murphy, Charcot, sirosis).
 - Sempat bernama `ub-1-3-aslab` / `ub-1-3-dosen` (PR #10, dibangun di atas main tanpa PR #9).
   Diganti nama saat digabung dengan PR #9, sebelum ada progres user yang tersimpan.
 
@@ -278,7 +297,7 @@ Halaman statis terpisah (bukan view di index.html), karena isinya HTML/SVG kaya 
   Hesselbach, bingkai colon, huruf H hepar), tabel pembanding, checklist responsi, bagian **Koreksi sumber**.
 - **Tidak ada gambar atlas** — repo public, gambar PPT kebanyakan Netter/Sobotta. Jangan tambahkan.
   Latihan tebak-struktur bergambar dibuat sebagai artifact PRIVAT di akun user, bukan di repo.
-- Label sumber: `ASLAB` (inti), `DOSEN` (pengayaan), `LIT` (tambahan literatur), `PRIORITAS 2`.
+- Label sumber: `ASLAB` (inti), `DOSEN` (pengayaan), `LIT` (tambahan literatur). Bagian 00 = peta bobot + urutan menurut bobot.
 - Mode **Tutup jawaban**: elemen ber-kelas `.rv` dikaburkan (teks SVG disembunyikan); ketuk untuk membuka.
 - localStorage: tema dibaca dari `persiapan-ub.v1` (sama dengan index), checklist + status tutup di
   `persiapan-ub.anatomi13.v1`. Checklist disimpan per **indeks** checkbox dalam tiap `data-ck` —

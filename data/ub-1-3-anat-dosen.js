@@ -1,4 +1,4 @@
-/* Bank soal Blok 1.3 — PPT DOSEN (anatomi, prioritas 2).
+/* Bank soal Blok 1.3 — PPT DOSEN (anatomi; 33% bobot responsi kating).
    Sumber: PDF kuliah Anatomi Tractus Digestivus (Siti Munawaroh) dan Organa Digestivus Accessoria
    (dr. Muthmainah). Hanya materi yang TIDAK ada di PPT aslab (oesophagus, gaster, duodenum,
    cavum oris, lingua, dentes, glandulae salivariae, pharynx), supaya tidak rangkap dengan ub-1-3-responsi-anat.

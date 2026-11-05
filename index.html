@@ -437,10 +437,10 @@
     </div>
 
     <div class="sec">
-      <p class="sec-ttl">Pretest Fisiologi (naskah asli)</p>
+      <p class="sec-ttl">Pretest (naskah asli)</p>
       <div class="qsgrid" id="b13pre"></div>
       <p class="empty" id="b13preKosong" hidden style="margin-top:9px">Belum ada naskah pretest.</p>
-      <p class="empty" style="margin-top:9px">Empat naskah pretest termoregulasi dari angkatan berbeda, disajikan apa adanya. Penanda kunci berbeda-beda tiap berkas: ada yang menyorot kuncinya, ada yang hanya memuat pembahasan, dan naskah 2018 tidak memuat keduanya sehingga seluruh kuncinya ditentukan lewat analisis.</p>
+      <p class="empty" style="margin-top:9px">Empat naskah pretest termoregulasi dari angkatan berbeda dan satu pretes anatomi digestivus inferior, disajikan apa adanya. Penanda kunci berbeda-beda tiap berkas: ada yang menyorot kuncinya, ada yang hanya memuat pembahasan, dan naskah 2018 tidak memuat keduanya sehingga seluruh kuncinya ditentukan lewat analisis.</p>
     </div>
   </div>
 
@@ -520,6 +520,9 @@
 <script src="data/ub-1-3-pre-2018.js"></script>
 <script src="data/ub-1-3-responsi-anat.js"></script>
 <script src="data/ub-1-3-anat-dosen.js"></script>
+<script src="data/ub-1-3-resp-anat.js"></script>
+<script src="data/ub-1-3-resp-anat-fix.js"></script>
+<script src="data/ub-1-3-pre-digest.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 <script>
@@ -563,6 +566,12 @@ const QUIZZES = [
     jumlahSoal:94, status:"siap", kind:"internal", sembunyi:true },
   { id:"ub-1-3-anat-dosen", judul:"Anatomi Dosen 1.3", topik:"Oesophagus, gaster, duodenum, cavum oris \u00b7 27 soal",
     jumlahSoal:27, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-resp-anat", judul:"Responsi Anatomi 1.3 (naskah asli)", topik:"Responsi isian, opsi dilengkapi \u00b7 34 soal",
+    jumlahSoal:34, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-resp-anat-fix", judul:"Soal Responsi Anatomi FIX (naskah asli)", topik:"Responsi isian, opsi dilengkapi \u00b7 29 soal",
+    jumlahSoal:29, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-pre-digest", judul:"Pretes Digestivus Inferior (naskah asli)", topik:"Pretes anatomi \u00b7 11 soal",
+    jumlahSoal:11, status:"siap", kind:"internal", sembunyi:true },
   { id:"recall-blok-1-1", judul:"Recall Integratif Blok 1.1", topik:"Blok 1.1 · 10 modul",
     jumlahSoal:100, status:"siap", kind:"internal" },
   { id:"hemoglobinopati", judul:"Hemoglobinopati", topik:"Genetika Molekuler",
@@ -1426,13 +1435,16 @@ const B13 = {
   asli: [
     { id:"ub-1-3-resp-asli", nama:"Responsi Biokimia 1.3", ket:"naskah asli" },
     { id:"ub-1-3-azytralis", nama:"AZYTRALIS 2022",        ket:"responsi + pembahasan" },
-    { id:"ub-1-3-latsol",    nama:"LATSOL Pre-Test 2026",  ket:"latihan soal" }
+    { id:"ub-1-3-latsol",    nama:"LATSOL Pre-Test 2026",  ket:"latihan soal" },
+    { id:"ub-1-3-resp-anat",     nama:"Responsi Anatomi 1.3",       ket:"isian, opsi dilengkapi" },
+    { id:"ub-1-3-resp-anat-fix", nama:"Soal Responsi Anatomi FIX",  ket:"isian, opsi dilengkapi" }
   ],
   pretest: [
     { id:"ub-1-3-pre-termo", nama:"Pretest Termoregulasi", ket:"kunci disorot di sumber" },
     { id:"ub-1-3-pre-2021",  nama:"Pretest Anconeus 2021", ket:"kunci + pembahasan" },
     { id:"ub-1-3-pre-2023",  nama:"Pretest Fisiologi 2023", ket:"kunci + pembahasan" },
-    { id:"ub-1-3-pre-2018",  nama:"Pretest Termoregulasi 2018", ket:"tanpa kunci, hasil analisis" }
+    { id:"ub-1-3-pre-2018",  nama:"Pretest Termoregulasi 2018", ket:"tanpa kunci, hasil analisis" },
+    { id:"ub-1-3-pre-digest", nama:"Pretes Digestivus Inferior", ket:"anatomi · 3 pembahasan dikoreksi" }
   ]
 };
 
