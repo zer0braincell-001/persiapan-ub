@@ -409,9 +409,18 @@
     </div>
 
     <div class="sec">
+      <p class="sec-ttl">Panduan belajar</p>
+      <a class="resume" href="anatomi-1-3.html" style="text-decoration:none;color:inherit">
+        <div class="rt"><div class="rl">Anatomi &middot; responsi</div>
+        <div class="rn">Skema &amp; urutan belajar: dinding abdomen, peritoneum, tractus digestivus, organa accessoria</div></div>
+        <span class="btn">Buka &rarr;</span>
+      </a>
+    </div>
+
+    <div class="sec">
       <p class="sec-ttl">Bank soal</p>
       <div class="qsgrid" id="b13bank"></div>
-      <p class="empty" style="margin-top:9px">Dua bank terpisah sesuai asal materinya: PPT yang dibawakan aslab dan PPT yang dibawakan dosen. Progres keduanya dicatat sendiri-sendiri.</p>
+      <p class="empty" style="margin-top:9px">Dua bank terpisah sesuai asal materinya. Bank Aslab berisi materi tiga PPT asistensi; bank Dosen hanya berisi materi yang tidak dibahas aslab (oesophagus, gaster, duodenum, cavum oris), jadi tidak ada soal rangkap. Progres keduanya dicatat sendiri-sendiri.</p>
     </div>
   </div>
 
@@ -480,6 +489,8 @@
 <script src="data/ub-1-2-soal.js"></script>
 <script src="data/ub-1-2-costraver.js"></script>
 <script src="data/ub-1-2-remed.js"></script>
+<script src="data/ub-1-3-aslab.js"></script>
+<script src="data/ub-1-3-dosen.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 <script>
@@ -500,6 +511,11 @@ const QUIZZES = [
     jumlahSoal:87, status:"siap", kind:"internal", sembunyi:true },
   { id:"ub-1-2-remed", judul:"REMED UB 1.2 (naskah asli)", topik:"Tentir + Rangkuman digabung \u00b7 130 soal",
     jumlahSoal:130, status:"siap", kind:"internal", sembunyi:true },
+  /* Blok 1.3 punya tab sendiri (#/blok13): disembunyikan dari Daftar Quiz. */
+  { id:"ub-1-3-aslab", judul:"Blok 1.3 \u00b7 PPT Aslab", topik:"Anatomi dinding abdomen, peritoneum, tractus inferior, accessoria \u00b7 94 soal",
+    jumlahSoal:94, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-dosen", judul:"Blok 1.3 \u00b7 PPT Dosen", topik:"Anatomi oesophagus, gaster, duodenum, cavum oris \u00b7 27 soal",
+    jumlahSoal:27, status:"siap", kind:"internal", sembunyi:true },
   { id:"recall-blok-1-1", judul:"Recall Integratif Blok 1.1", topik:"Blok 1.1 · 10 modul",
     jumlahSoal:100, status:"siap", kind:"internal" },
   { id:"hemoglobinopati", judul:"Hemoglobinopati", topik:"Genetika Molekuler",
