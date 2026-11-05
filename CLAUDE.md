@@ -66,8 +66,8 @@ kartu nonaktif (`<div aria-disabled>`) selama `bankOf(id)` kosong dan otomatis j
 |---|---|---|---|
 | PPT Aslab | Responsi Fisiologi · Termoregulasi | `ub-1-3-responsi-fisio` | 179 |
 | PPT Aslab | Responsi Biokimia · Lipid & Karbohidrat | `ub-1-3-responsi-biokim` | 209 |
-| PPT Aslab | Responsi Anatomi · Abdomen & digestif | `ub-1-3-responsi-anat` | 94 |
-| PPT Dosen | Anatomi · Tractus superior & cavum oris | `ub-1-3-anat-dosen` | 27 |
+| PPT Aslab | Responsi Anatomi · Abdomen & digestif | `ub-1-3-responsi-anat` | 150 |
+| PPT Dosen | (kosong) | — | — |
 | Naskah asli | Responsi Biokimia 1.3 | `ub-1-3-resp-asli` | 30 |
 | Naskah asli | AZYTRALIS 2022 | `ub-1-3-azytralis` | 29 |
 | Naskah asli | LATSOL Pre-Test 2026 | `ub-1-3-latsol` | 25 |
@@ -79,7 +79,7 @@ kartu nonaktif (`<div aria-disabled>`) selama `bankOf(id)` kosong dan otomatis j
 | Pretest Fisiologi | Pretest Termoregulasi 2018 | `ub-1-3-pre-2018` | 14 |
 | Pretest | Pretes Digestivus Inferior (Aryo) | `ub-1-3-pre-digest` | 11 |
 
-`B13` punya **empat** seksi: `aslab`, `dosen`, `asli`, `pretest`. Total tab 1.3 = **740 soal** di 14 bank. Judul seksi pretest kini "Pretest (naskah asli)" karena memuat pretes anatomi juga.
+`B13` punya **empat** seksi: `aslab`, `dosen`, `asli`, `pretest`. Total tab 1.3 = **769 soal** di 13 bank. Judul seksi pretest kini "Pretest (naskah asli)" karena memuat pretes anatomi juga.
 Di atas seksi PPT Aslab ada kartu **Panduan belajar** (tautan ke `anatomi-1-3.html`).
 
 Menambah kartu = tambah satu entri ke `B13.aslab` atau `B13.dosen`, plus `data/<id>.js`,
@@ -261,21 +261,27 @@ bukan filter koordinat x.
 
 **Berkas pretest tidak disimpan di repo**, sama seperti PPT aslab — user melampirkannya tiap sesi.
 
-### Quiz `ub-1-3-responsi-anat` + `ub-1-3-anat-dosen` — Anatomi 1.3
-`data/ub-1-3-responsi-anat.js` (**94 soal**, 12 modul) dari tiga PPT asistensi: Dinding Abdomen (Zydane),
-Tractus Digestivus Inferior (Khai), Systema Digestiva Accessoria (Fatih).
-`data/ub-1-3-anat-dosen.js` (**27 soal**, 6 modul) hanya berisi materi PDF dosen yang TIDAK dibahas aslab
-(oesophagus, gaster, duodenum, cavum oris/lingua, dentes, glandulae, pharynx), supaya tidak ada soal rangkap.
-Materi yang beririsan antara aslab dan dosen masuk bank aslab.
+### Quiz `ub-1-3-responsi-anat` — Responsi Anatomi 1.3
+`data/ub-1-3-responsi-anat.js`, **150 soal**, 18 modul, dari EMPAT PPT asistensi: Dinding Abdomen (Zydane),
+Tractus Digestivus Inferior (Khai), Systema Digestiva Accessoria (Fatih), Tractus Digestivus Superior (Naufal),
+dilengkapi PDF dosen. n 1–94 = tiga PPT pertama; n 95–121 = bekas bank `ub-1-3-anat-dosen` (oesophagus, gaster,
+duodenum, cavum oris, glandulae, pharynx) yang **dilebur** ke sini setelah PPT Naufal muncul; n 122–150 = PPT Naufal.
+Bank `ub-1-3-anat-dosen` sudah dihapus (belum pernah ter-deploy, jadi tidak ada progres user yang hilang).
 - `modul` berformat `"Anatomi · <Subtopik>"`. Field `ppt` sengaja tidak dipakai (alasan sama dengan bank fisiologi).
 - `rationale` = penjelasan + `"  —  **Diskriminator:** ..."`; field tambahan `grup`, `bahas`, `diskriminator`.
 - Semua soal disusun sendiri, bukan naskah asli; kunci dari analisis.
+- Sempat bernama `ub-1-3-aslab` (PR #10, dibangun di atas main tanpa PR #9); diganti nama saat digabung.
+
+**Kesalahan PPT Naufal yang ditandai** (jangan diikuti): a. lingualis "cabang a. carotis interna" (externa);
+angustia media "bronchus dexter" (sinister); batas parotis "inferior arcus zygomaticus" (zygoma = superior);
+foregut "sampai duodenum pars superior" (batasnya papilla major). Variasi, bukan salah: a. gastrica dextra
+dari a. hepatica communis (Naufal) vs propria (umum).
 
 **Peta bobot responsi anatomi** (46 soal unik dari dua naskah kating, 6 Nov 2026): cavum oris/lingua/glandula/pharynx
 12 (26%) · intestinum crassum 10 (22%) · VF/bilier/pancreas 8 (17%) · hepar+porta 4 · peritoneum 4 ·
 dinding+inguinal 4 · oesophagus+gaster 3 · lapisan dinding 1 · jejunum-ileum 0 (tapi nomor 1 di pretes).
-**Materi dosen (tractus superior + cavum oris) = 33% responsi** — versi pertama panduan salah melabelinya
-"prioritas 2"; sudah dikoreksi, label PRIORITAS 2 dihapus. Responsi berbentuk **isian**: struktur ditunjuk +
+**Tractus superior + cavum oris = 33% responsi** — versi pertama panduan salah melabelinya "prioritas 2"
+karena mengira materinya hanya dari dosen; ternyata ada PPT aslab Naufal. Sudah dikoreksi, label PRIORITAS 2 dihapus. Responsi berbentuk **isian**: struktur ditunjuk +
 satu pertanyaan lanjutan (saraf/embrio/muara/klinis).
 
 ### Naskah asli anatomi (`ub-1-3-resp-anat`, `ub-1-3-resp-anat-fix`, `ub-1-3-pre-digest`)
