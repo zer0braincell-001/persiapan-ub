@@ -195,6 +195,68 @@
   .qsc .v{font-size:22px; font-weight:700; font-family:"IBM Plex Mono",monospace; margin-top:3px;}
   .empty{color:var(--muted); font-size:14px; margin:0; padding:10px 0}
 
+  /* ===== tab Blok 1.3 ===== */
+  .b3seg{display:grid; grid-template-columns:1fr 1fr; gap:4px; margin-top:22px;
+    background:var(--surface-2); border:1px solid var(--border); border-radius:13px; padding:4px;}
+  .b3seg button{appearance:none; border:0; background:transparent; color:var(--muted); cursor:pointer;
+    font:600 14px/1.2 "IBM Plex Sans",sans-serif; padding:10px 8px; border-radius:10px;
+    display:flex; flex-direction:column; align-items:center; gap:2px;}
+  .b3seg button small{font:600 11px "IBM Plex Mono",monospace; color:var(--faint); letter-spacing:.02em}
+  .b3seg button[aria-selected="true"]{background:var(--surface); color:var(--text); box-shadow:var(--shadow);}
+  .b3seg button[aria-selected="true"] small{color:var(--accent-ink)}
+  .b3mtabs{display:flex; gap:8px; margin-top:14px; overflow-x:auto; padding-bottom:2px; scrollbar-width:none}
+  .b3mtabs::-webkit-scrollbar{display:none}
+  .b3mtabs button{appearance:none; flex:1 0 auto; cursor:pointer; text-align:left;
+    background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:9px 13px;
+    color:var(--text); font:600 14px/1.25 "IBM Plex Sans",sans-serif; min-width:104px;}
+  .b3mtabs button span{display:block; font:500 11.5px "IBM Plex Mono",monospace; color:var(--faint); margin-top:2px}
+  .b3mtabs button:hover{border-color:var(--border-strong)}
+  .b3mtabs button[aria-selected="true"]{border-color:var(--accent); background:var(--accent-soft); color:var(--accent-ink)}
+  .b3mtabs button[aria-selected="true"] span{color:var(--accent-ink)}
+  .b3head{margin-top:18px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:16px 17px; box-shadow:var(--shadow);}
+  .b3head .t{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap}
+  .b3head h3{font-family:"Spectral",Georgia,serif; font-size:23px; margin:0; letter-spacing:-.01em}
+  .b3head .tp{font-size:13.5px; color:var(--muted)}
+  .b3head .pr{display:flex; align-items:center; gap:10px; margin-top:12px}
+  .b3head .pr .bar{flex:1; height:6px; border-radius:99px; background:var(--surface-2)}
+  .b3head .pr .pct{font:600 12px "IBM Plex Mono",monospace; color:var(--muted); font-variant-numeric:tabular-nums; white-space:nowrap}
+  .b3guide{display:flex; align-items:center; gap:12px; margin-top:13px; padding:11px 13px; border-radius:11px;
+    background:var(--accent-soft); color:var(--accent-ink); text-decoration:none; border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+  .b3guide b{display:block; font-size:14px}
+  .b3guide small{display:block; font-size:12.5px; opacity:.85; margin-top:1px}
+  .b3guide .go{margin-left:auto; font-weight:700; white-space:nowrap}
+  .b3guide:hover{border-color:var(--accent)}
+  .b3grp{margin-top:22px}
+  .b3grp .gh{display:flex; align-items:baseline; gap:8px; margin:0 0 9px}
+  .b3grp .gh .sec-ttl{margin:0}
+  .b3grp .gh .n{font:600 11.5px "IBM Plex Mono",monospace; color:var(--faint)}
+  .b3grp .gn{font-size:12.5px; color:var(--muted); margin:8px 0 0; line-height:1.45}
+  .b3list{display:flex; flex-direction:column; gap:8px}
+  .b3row{display:grid; grid-template-columns:44px 1fr auto; gap:12px; align-items:center; text-decoration:none; color:inherit;
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:12px 14px; box-shadow:var(--shadow);
+    transition:border-color .15s, transform .08s;}
+  a.b3row:hover{border-color:var(--accent); transform:translateY(-1px)}
+  .b3row[aria-disabled="true"]{opacity:.55; box-shadow:none; background:var(--raise)}
+  .b3row .ic{height:44px; border-radius:11px; display:grid; place-items:center; background:var(--accent-soft); color:var(--accent-ink);
+    font:700 14px "IBM Plex Mono",monospace; font-variant-numeric:tabular-nums}
+  .b3row.asli .ic{background:var(--flag-soft); color:var(--flag-ink)}
+  .b3row .bd{min-width:0}
+  .b3row .nm{font-weight:600; font-size:14.5px; line-height:1.3}
+  .b3row .kt{font-size:12.5px; color:var(--muted); margin-top:2px; line-height:1.35}
+  .b3row .bar{height:4px; margin-top:7px; background:var(--surface-2); border-radius:99px}
+  .b3row .rp{text-align:right; font:600 12px "IBM Plex Mono",monospace; color:var(--muted); font-variant-numeric:tabular-nums; white-space:nowrap}
+  .b3row .rp b{display:block; font-size:15px; color:var(--text)}
+  .b3row.done .rp b{color:var(--good-ink)}
+  .b3empty{margin-top:18px; background:var(--raise); border:1px dashed var(--border-strong); border-radius:var(--radius);
+    padding:20px 18px; color:var(--muted); font-size:14px; text-align:center}
+  .b3empty b{display:block; color:var(--text); font-size:15px; margin-bottom:4px}
+  @media (max-width:520px){
+    .b3row{grid-template-columns:38px 1fr auto; gap:10px; padding:11px 12px}
+    .b3row .ic{height:38px; font-size:12.5px}
+    .b3head h3{font-size:21px}
+  }
+
   /* ===== Engine quiz ===== */
   .tools{display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:16px 0 12px}
 
@@ -408,40 +470,10 @@
       <p id="b13sub"></p>
     </div>
 
-    <div class="sec">
-      <p class="sec-ttl">Panduan belajar</p>
-      <a class="resume" href="anatomi-1-3.html" style="text-decoration:none;color:inherit">
-        <div class="rt"><div class="rl">Anatomi &middot; responsi</div>
-        <div class="rn">Skema &amp; urutan belajar: dinding abdomen, peritoneum, tractus digestivus, organa accessoria</div></div>
-        <span class="btn">Buka &rarr;</span>
-      </a>
-    </div>
-
-    <div class="sec">
-      <p class="sec-ttl">PPT Aslab</p>
-      <div class="qsgrid" id="b13aslab"></div>
-      <p class="empty" id="b13aslabKosong" hidden style="margin-top:9px">Belum ada bank soal dari materi aslab.</p>
-    </div>
-
-    <div class="sec">
-      <p class="sec-ttl">PPT Dosen</p>
-      <div class="qsgrid" id="b13dosen"></div>
-      <p class="empty" id="b13dosenKosong" hidden style="margin-top:9px">Belum ada bank soal dari materi dosen.</p>
-    </div>
-
-    <div class="sec">
-      <p class="sec-ttl">Naskah asli kakak tingkat</p>
-      <div class="qsgrid" id="b13asli"></div>
-      <p class="empty" id="b13asliKosong" hidden style="margin-top:9px">Belum ada naskah asli.</p>
-      <p class="empty" style="margin-top:9px">Soal responsi dan pre-test tahun-tahun sebelumnya, disajikan apa adanya. Banyak butir di sumber tidak memuat opsi lengkap, dan beberapa kuncinya bertentangan dengan PPT aslab &mdash; tiap soal membawa keterangan apakah opsinya utuh dari sumber dan dari mana kuncinya berasal.</p>
-    </div>
-
-    <div class="sec">
-      <p class="sec-ttl">Pretest (naskah asli)</p>
-      <div class="qsgrid" id="b13pre"></div>
-      <p class="empty" id="b13preKosong" hidden style="margin-top:9px">Belum ada naskah pretest.</p>
-      <p class="empty" style="margin-top:9px">Empat naskah pretest termoregulasi dari angkatan berbeda dan satu pretes anatomi digestivus inferior, disajikan apa adanya. Penanda kunci berbeda-beda tiap berkas: ada yang menyorot kuncinya, ada yang hanya memuat pembahasan, dan naskah 2018 tidak memuat keduanya sehingga seluruh kuncinya ditentukan lewat analisis.</p>
-    </div>
+    <!-- Lapis 1: sumber materi. Lapis 2: mata kuliah. Pilihan disimpan di app.b13. -->
+    <div class="b3seg" role="tablist" aria-label="Sumber materi" id="b13src"></div>
+    <div class="b3mtabs" role="tablist" aria-label="Mata kuliah" id="b13mapel"></div>
+    <div id="b13panel" role="tabpanel"></div>
   </div>
 
   <div id="viewPlay" hidden>
@@ -1415,69 +1447,161 @@ function renderB12(){
 
 /* ===========================================================
    TAB BLOK 1.3 — Sistem Digestif & Metabolisme
-   Dua bank TERPISAH (bukan satu bank berfilter seperti ub-1-2):
-   materi aslab dan materi dosen tidak beririsan, jadi tidak ada
-   risiko satu soal terhitung dua kali, dan progres tiap bank
-   berdiri sendiri. Kartu otomatis aktif begitu data/<id>.js dimuat.
+   Dua lapis navigasi: SUMBER (aslab | dosen) lalu MATA KULIAH.
+   Tiap kartu { id, nama, ket } = quiz sendiri dengan progres sendiri.
+   Kartu otomatis aktif begitu data/<id>.js dimuat (bankOf(id) terisi).
+   `asli` = naskah kakak tingkat (responsi/pretest), ditaruh di mata
+   kuliah yang sama dan hanya tampil di sumber aslab (responsi = aslab).
+   Pilihan tab disimpan di app.b13 = { src, mapel }; bisa juga lewat
+   #/blok13?src=aslab&m=anat.
    =========================================================== */
 const B13 = {
-  aslab: [
-    { id:"ub-1-3-responsi-fisio",  nama:"Responsi Fisiologi", ket:"Termoregulasi" },
-    { id:"ub-1-3-responsi-biokim", nama:"Responsi Biokimia",  ket:"Lipid & Karbohidrat" },
-    { id:"ub-1-3-responsi-anat",   nama:"Responsi Anatomi",   ket:"Abdomen & digestif" }
-  ],
-  dosen: [],
-  asli: [
-    { id:"ub-1-3-resp-asli", nama:"Responsi Biokimia 1.3", ket:"naskah asli" },
-    { id:"ub-1-3-azytralis", nama:"AZYTRALIS 2022",        ket:"responsi + pembahasan" },
-    { id:"ub-1-3-latsol",    nama:"LATSOL Pre-Test 2026",  ket:"latihan soal" },
-    { id:"ub-1-3-resp-anat",     nama:"Responsi Anatomi 1.3",       ket:"isian, opsi dilengkapi" },
-    { id:"ub-1-3-resp-anat-fix", nama:"Soal Responsi Anatomi FIX",  ket:"isian, opsi dilengkapi" }
-  ],
-  pretest: [
-    { id:"ub-1-3-pre-termo", nama:"Pretest Termoregulasi", ket:"kunci disorot di sumber" },
-    { id:"ub-1-3-pre-2021",  nama:"Pretest Anconeus 2021", ket:"kunci + pembahasan" },
-    { id:"ub-1-3-pre-2023",  nama:"Pretest Fisiologi 2023", ket:"kunci + pembahasan" },
-    { id:"ub-1-3-pre-2018",  nama:"Pretest Termoregulasi 2018", ket:"tanpa kunci, hasil analisis" },
-    { id:"ub-1-3-pre-digest", nama:"Pretes Digestivus Inferior", ket:"anatomi · 3 pembahasan dikoreksi" }
+  mapel: [
+    { key:"anat", nama:"Anatomi", topik:"Abdomen & tractus digestivus",
+      panduan:{ href:"anatomi-1-3.html", judul:"Panduan belajar anatomi",
+                ket:"Peta bobot responsi, urutan belajar, skema, checklist" },
+      aslab:[ { id:"ub-1-3-responsi-anat", nama:"Responsi Anatomi",
+                ket:"4 PPT aslab: dinding abdomen, tractus superior & inferior, organa accessoria" } ],
+      asli:[ { id:"ub-1-3-resp-anat",     nama:"Responsi Anatomi 1.3",       ket:"isian diubah ke pilihan ganda" },
+             { id:"ub-1-3-resp-anat-fix", nama:"Soal Responsi Anatomi FIX",  ket:"isian diubah ke pilihan ganda" },
+             { id:"ub-1-3-pre-digest",    nama:"Pretes Digestivus Inferior", ket:"3 pembahasan sumber dikoreksi" } ],
+      dosen:[] },
+    { key:"biokim", nama:"Biokimia", topik:"Lipid & karbohidrat",
+      aslab:[ { id:"ub-1-3-responsi-biokim", nama:"Responsi Biokimia",
+                ket:"4 PPT aslab: teori & praktikum lipid, teori & praktikum karbohidrat" } ],
+      asli:[ { id:"ub-1-3-resp-asli", nama:"Responsi Biokimia 1.3", ket:"naskah responsi" },
+             { id:"ub-1-3-azytralis", nama:"AZYTRALIS 2022",        ket:"responsi + pembahasan" },
+             { id:"ub-1-3-latsol",    nama:"LATSOL Pre-Test 2026",  ket:"latihan soal pretest" } ],
+      dosen:[] },
+    { key:"fisio", nama:"Fisiologi", topik:"Termoregulasi",
+      aslab:[ { id:"ub-1-3-responsi-fisio", nama:"Responsi Fisiologi",
+                ket:"3 PPT aslab: termoregulasi, praktikum, kelainan termoregulasi" } ],
+      asli:[ { id:"ub-1-3-pre-termo", nama:"Pretest Termoregulasi",      ket:"kunci disorot di sumber" },
+             { id:"ub-1-3-pre-2021",  nama:"Pretest Anconeus 2021",      ket:"kunci + pembahasan" },
+             { id:"ub-1-3-pre-2023",  nama:"Pretest Fisiologi 2023",     ket:"kunci + pembahasan" },
+             { id:"ub-1-3-pre-2018",  nama:"Pretest Termoregulasi 2018", ket:"tanpa kunci, hasil analisis" } ],
+      dosen:[] }
   ]
 };
+const B13_ASLI_NOTE = "Disajikan apa adanya. Banyak butir di sumber tidak memuat opsi lengkap dan beberapa kuncinya " +
+  "bertentangan dengan PPT, jadi tiap soal mencatat apakah opsinya utuh dari sumber dan dari mana kuncinya berasal.";
 
-function b13kartu(b){
+function b13stat(b){
   const bank = bankOf(b.id) || [];
   const st = readLS(quizKey(b.id), {});
   const dik = st.answers ? Object.keys(st.answers).length : 0;
-  const pct = bank.length ? Math.round(dik / bank.length * 100) : 0;
+  return { total: bank.length, dik: Math.min(dik, bank.length) };
+}
+function b13sum(list){
+  return (list || []).reduce((a, b) => { const s = b13stat(b); a.total += s.total; a.dik += s.dik; return a; }, { total:0, dik:0 });
+}
+function b13el(tag, cls, txt){ const e = document.createElement(tag); if(cls) e.className = cls; if(txt != null) e.textContent = txt; return e; }
 
-  const el = document.createElement(bank.length ? "a" : "div");
-  el.className = "qsc";
-  if(bank.length) el.href = "#/quiz/" + b.id;
-  else el.setAttribute("aria-disabled", "true");
+function b13row(b, asli){
+  const s = b13stat(b);
+  const pct = s.total ? Math.round(s.dik / s.total * 100) : 0;
+  const el = b13el(s.total ? "a" : "div", "b3row" + (asli ? " asli" : "") + (s.total && s.dik === s.total ? " done" : ""));
+  if(s.total) el.href = "#/quiz/" + b.id; else el.setAttribute("aria-disabled", "true");
+  el.appendChild(b13el("div", "ic", s.total ? String(s.total) : "—"));
+  const bd = b13el("div", "bd");
+  bd.append(b13el("div", "nm", b.nama), b13el("div", "kt", b.ket || ""));
+  const bar = b13el("div", "bar"); const i = document.createElement("i"); i.style.width = pct + "%"; bar.appendChild(i);
+  bd.appendChild(bar);
+  const rp = b13el("div", "rp");
+  rp.append(b13el("b", null, s.total ? pct + "%" : "—"), document.createTextNode(s.total ? s.dik + "/" + s.total : "belum ada"));
+  el.append(bd, rp);
+  return el;
+}
+function b13group(judul, list, asli, note){
+  const g = b13el("div", "b3grp");
+  const gh = b13el("div", "gh");
+  gh.append(b13el("p", "sec-ttl", judul), b13el("span", "n", b13sum(list).total + " soal"));
+  const ls = b13el("div", "b3list");
+  list.forEach(b => ls.appendChild(b13row(b, asli)));
+  g.append(gh, ls);
+  if(note) g.appendChild(b13el("p", "gn", note));
+  return g;
+}
 
-  const l = document.createElement("div"); l.className = "l";
-  l.textContent = b.nama + (b.ket ? " \u00b7 " + b.ket : "");
-  const v = document.createElement("div"); v.className = "v";
-  v.textContent = bank.length ? bank.length + " soal" : "\u2014";
-  const m = document.createElement("div"); m.className = "l"; m.style.marginTop = "4px";
-  m.textContent = bank.length ? pct + "% dikerjakan" : "belum ada soal";
-  el.append(l, v, m);
-  return { el, jumlah: bank.length };
+function b13state(){
+  const st = Object.assign({ src:"aslab", mapel:"anat" }, app.b13 || {});
+  const h = location.hash, qi = h.indexOf("?");
+  if(qi >= 0) h.slice(qi + 1).split("&").forEach(p => {
+    const [k, v] = p.split("=");
+    if(k === "src" && (v === "aslab" || v === "dosen")) st.src = v;
+    if(k === "m" && B13.mapel.some(m => m.key === v)) st.mapel = v;
+  });
+  if(!B13.mapel.some(m => m.key === st.mapel)) st.mapel = B13.mapel[0].key;
+  return st;
+}
+function b13set(patch){
+  app.b13 = Object.assign(b13state(), patch); saveApp();
+  try{ history.replaceState(null, "", "#/blok13?src=" + app.b13.src + "&m=" + app.b13.mapel); }catch(e){}
+  renderB13();
 }
 
 function renderB13(){
-  let total = 0;
-  [["aslab","#b13aslab","#b13aslabKosong"],["dosen","#b13dosen","#b13dosenKosong"],
-   ["asli","#b13asli","#b13asliKosong"],["pretest","#b13pre","#b13preKosong"]]
-  .forEach(([key, gridSel, kosongSel]) => {
-    const grid = $(gridSel); grid.innerHTML = "";
-    const daftar = B13[key] || [];
-    daftar.forEach(b => { const k = b13kartu(b); total += k.jumlah; grid.appendChild(k.el); });
-    $(kosongSel).hidden = daftar.length > 0;
-  });
-  const bank = (B13.aslab || []).length + (B13.dosen || []).length + (B13.asli || []).length + (B13.pretest || []).length;
-  $("#b13sub").textContent = total
-    ? total + " soal \u00b7 " + bank + " bank"
+  const st = b13state();
+  const srcList = m => st.src === "aslab" ? m.aslab.concat(m.asli) : m.dosen;
+  const all = B13.mapel.reduce((a, m) => a.concat(m.aslab, m.asli, m.dosen), []);
+  const tot = b13sum(all);
+  const nBank = all.filter(b => bankOf(b.id)).length;
+  $("#b13sub").textContent = tot.total
+    ? tot.total + " soal · " + nBank + " bank · " + Math.round(tot.dik / tot.total * 100) + "% dikerjakan"
     : "Belum ada soal. Bank akan muncul setelah PPT-nya diolah.";
+
+  /* Lapis 1: sumber */
+  const seg = $("#b13src"); seg.innerHTML = "";
+  [["aslab", "Materi Aslab"], ["dosen", "Materi Dosen"]].forEach(([k, label]) => {
+    const n = B13.mapel.reduce((a, m) => a + b13sum(k === "aslab" ? m.aslab.concat(m.asli) : m.dosen).total, 0);
+    const bt = b13el("button"); bt.type = "button"; bt.setAttribute("role", "tab");
+    bt.setAttribute("aria-selected", st.src === k ? "true" : "false");
+    bt.append(document.createTextNode(label), b13el("small", null, n ? n + " soal" : "belum ada"));
+    bt.addEventListener("click", () => b13set({ src:k }));
+    seg.appendChild(bt);
+  });
+
+  /* Lapis 2: mata kuliah */
+  const mt = $("#b13mapel"); mt.innerHTML = "";
+  B13.mapel.forEach(m => {
+    const n = b13sum(srcList(m)).total;
+    const bt = b13el("button"); bt.type = "button"; bt.setAttribute("role", "tab");
+    bt.setAttribute("aria-selected", st.mapel === m.key ? "true" : "false");
+    bt.append(document.createTextNode(m.nama), b13el("span", null, n ? n + " soal" : "—"));
+    bt.addEventListener("click", () => b13set({ mapel:m.key }));
+    mt.appendChild(bt);
+  });
+
+  /* Panel */
+  const m = B13.mapel.find(x => x.key === st.mapel);
+  const pn = $("#b13panel"); pn.innerHTML = "";
+  const list = srcList(m);
+  if(!list.length){
+    const e = b13el("div", "b3empty");
+    e.append(b13el("b", null, "Belum ada bank soal dari materi dosen " + m.nama + "."),
+      document.createTextNode("Kirim PPT atau PDF kuliahnya, nanti bank soalnya muncul di sini."));
+    pn.appendChild(e); return;
+  }
+  const head = b13el("div", "b3head");
+  const t = b13el("div", "t"); t.append(b13el("h3", null, m.nama), b13el("span", "tp", m.topik));
+  const sm = b13sum(list), pct = sm.total ? Math.round(sm.dik / sm.total * 100) : 0;
+  const pr = b13el("div", "pr"); const bar = b13el("div", "bar"); const i = document.createElement("i");
+  i.style.width = pct + "%"; bar.appendChild(i);
+  pr.append(bar, b13el("span", "pct", sm.dik + "/" + sm.total + " · " + pct + "%"));
+  head.append(t, pr);
+  if(st.src === "aslab" && m.panduan){
+    const a = b13el("a", "b3guide"); a.href = m.panduan.href;
+    const d = b13el("div"); d.append(b13el("b", null, m.panduan.judul), b13el("small", null, m.panduan.ket));
+    a.append(d, b13el("span", "go", "Buka →"));
+    head.appendChild(a);
+  }
+  pn.appendChild(head);
+  if(st.src === "aslab"){
+    pn.appendChild(b13group("Bank soal dari PPT aslab", m.aslab, false));
+    if(m.asli.length) pn.appendChild(b13group("Naskah asli kakak tingkat", m.asli, true, B13_ASLI_NOTE));
+  } else {
+    pn.appendChild(b13group("Bank soal dari materi dosen", m.dosen, false));
+  }
 }
 
 
