@@ -55,13 +55,22 @@ Kelas CSS: `.krow` (baris kuliah), `.qsc` (kartu mulai cepat), `.pchip` (chip po
 **Jangan pakai `.chip` untuk chip pola** — `.chip` adalah tombol palet nomor dan punya `aspect-ratio:1/1`.
 
 ## Tab Blok 1.3 (`#/blok13`) — Sistem Digestif & Metabolisme
-View `#viewB13`, dirender `renderB13()`. Konfigurasi di objek `B13`, yang berisi **dua seksi**
-berisi daftar kartu: `B13.aslab` dan `B13.dosen`. Tiap kartu `{ id, nama, ket }` adalah quiz
-tersendiri dengan progres localStorage sendiri. Helper `b13kartu()` membangun satu kartu;
-kartu nonaktif (`<div aria-disabled>`) selama `bankOf(id)` kosong dan otomatis jadi
-`<a href="#/quiz/<id>">` begitu datanya dimuat. Seksi tanpa kartu menampilkan baris
-"Belum ada bank soal..." lewat `#b13aslabKosong` / `#b13dosenKosong`.
+View `#viewB13`, dirender `renderB13()`. **Dua lapis navigasi** (UI dirombak 6 Nov 2026 atas permintaan user):
+1. Segmented control `#b13src`: **Materi Aslab | Materi Dosen**.
+2. Tab mata kuliah `#b13mapel`: **Anatomi | Biokimia | Fisiologi**.
+3. Panel `#b13panel`: kartu kepala mata kuliah (progres gabungan + tautan panduan bila ada), lalu grup
+   "Bank soal dari PPT aslab" dan "Naskah asli kakak tingkat" (hanya di sumber aslab, karena responsi = aslab).
+   Sumber dosen tanpa bank menampilkan empty state per mata kuliah.
 
+Konfigurasi `B13 = { mapel:[ { key, nama, topik, panduan?, aslab:[], asli:[], dosen:[] } ] }`.
+Tiap kartu `{ id, nama, ket }` = quiz sendiri dengan progres sendiri; baris jadi `<a>` begitu `bankOf(id)` terisi.
+Pilihan tab disimpan di `app.b13 = { src, mapel }` (localStorage `persiapan-ub.v1`) dan ditulis ke URL lewat
+`history.replaceState` → `#/blok13?src=aslab&m=anat` (bisa dibagikan; tidak memicu `route()`).
+Kelas CSS berawalan `.b3` (`.b3seg`, `.b3mtabs`, `.b3head`, `.b3guide`, `.b3grp`, `.b3row`, `.b3empty`).
+Menambah bank = satu entri di `aslab`/`asli`/`dosen` mata kuliah yang tepat, plus `data/<id>.js`,
+`<script src>`, dan entri `QUIZZES` (`sembunyi:true`). Mata kuliah baru = satu objek baru di `B13.mapel`.
+
+Pemetaan saat ini (kolom "seksi" = posisi lama sebelum UI dirombak):
 | seksi | kartu | quiz id | soal |
 |---|---|---|---|
 | PPT Aslab | Responsi Fisiologi · Termoregulasi | `ub-1-3-responsi-fisio` | 179 |
@@ -79,11 +88,8 @@ kartu nonaktif (`<div aria-disabled>`) selama `bankOf(id)` kosong dan otomatis j
 | Pretest Fisiologi | Pretest Termoregulasi 2018 | `ub-1-3-pre-2018` | 14 |
 | Pretest | Pretes Digestivus Inferior (Aryo) | `ub-1-3-pre-digest` | 11 |
 
-`B13` punya **empat** seksi: `aslab`, `dosen`, `asli`, `pretest`. Total tab 1.3 = **769 soal** di 13 bank. Judul seksi pretest kini "Pretest (naskah asli)" karena memuat pretes anatomi juga.
-Di atas seksi PPT Aslab ada kartu **Panduan belajar** (tautan ke `anatomi-1-3.html`).
-
-Menambah kartu = tambah satu entri ke `B13.aslab` atau `B13.dosen`, plus `data/<id>.js`,
-`<script src>`, dan entri `QUIZZES` (`sembunyi:true`). Tidak ada tempat lain yang disentuh.
+Total tab 1.3 = **769 soal** di 13 bank. Per mata kuliah: Anatomi 224 (150 + 74 naskah), Biokimia 293 (209 + 84), Fisiologi 252 (179 + 73).
+Naskah asli/pretest dikelompokkan per mata kuliah: resp-anat, resp-anat-fix, pre-digest → Anatomi; resp-asli, azytralis, latsol → Biokimia; pre-termo/2021/2023/2018 → Fisiologi.
 
 ### Quiz `ub-1-3-responsi-fisio` — Responsi Fisiologi 1.3 (Termoregulasi)
 `data/ub-1-3-responsi-fisio.js`, **179 soal**, 18 modul. Disusun dari tiga PPT aslab
