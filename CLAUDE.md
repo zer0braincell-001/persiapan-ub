@@ -55,39 +55,267 @@ Kelas CSS: `.krow` (baris kuliah), `.qsc` (kartu mulai cepat), `.pchip` (chip po
 **Jangan pakai `.chip` untuk chip pola** — `.chip` adalah tombol palet nomor dan punya `aspect-ratio:1/1`.
 
 ## Tab Blok 1.3 (`#/blok13`) — Sistem Digestif & Metabolisme
-View `#viewB13`, dirender `renderB13()`, konfigurasi di array `B13`. Isi tab: kartu **Panduan belajar**
-(tautan ke `anatomi-1-3.html`) lalu dua kartu bank soal.
+View `#viewB13`, dirender `renderB13()`. Konfigurasi di objek `B13`, yang berisi **dua seksi**
+berisi daftar kartu: `B13.aslab` dan `B13.dosen`. Tiap kartu `{ id, nama, ket }` adalah quiz
+tersendiri dengan progres localStorage sendiri. Helper `b13kartu()` membangun satu kartu;
+kartu nonaktif (`<div aria-disabled>`) selama `bankOf(id)` kosong dan otomatis jadi
+`<a href="#/quiz/<id>">` begitu datanya dimuat. Seksi tanpa kartu menampilkan baris
+"Belum ada bank soal..." lewat `#b13aslabKosong` / `#b13dosenKosong`.
 
-| kartu | quiz id | berkas | isi |
+| seksi | kartu | quiz id | soal |
 |---|---|---|---|
-| PPT Aslab | `ub-1-3-aslab` | `data/ub-1-3-aslab.js` | 94 soal anatomi: dinding abdomen, inguinal, peritoneum, pembuluh, tractus inferior, hepar, VF/pancreas, lien, porta, kasus |
-| PPT Dosen | `ub-1-3-dosen` | `data/ub-1-3-dosen.js` | 27 soal anatomi yang TIDAK ada di PPT aslab: oesophagus, gaster, duodenum, cavum oris/lingua, dentes, glandulae, pharynx |
+| PPT Aslab | Responsi Fisiologi · Termoregulasi | `ub-1-3-responsi-fisio` | 179 |
+| PPT Aslab | Responsi Biokimia · Lipid & Karbohidrat | `ub-1-3-responsi-biokim` | 209 |
+| PPT Aslab | Responsi Anatomi · Abdomen & digestif | `ub-1-3-responsi-anat` | 150 |
+| PPT Dosen | (kosong) | — | — |
+| Naskah asli | Responsi Biokimia 1.3 | `ub-1-3-resp-asli` | 30 |
+| Naskah asli | AZYTRALIS 2022 | `ub-1-3-azytralis` | 29 |
+| Naskah asli | LATSOL Pre-Test 2026 | `ub-1-3-latsol` | 25 |
+| Naskah asli | Responsi Anatomi 1.3 | `ub-1-3-resp-anat` | 34 |
+| Naskah asli | Soal Responsi Anatomi FIX | `ub-1-3-resp-anat-fix` | 29 |
+| Pretest Fisiologi | Pretest Termoregulasi | `ub-1-3-pre-termo` | 19 |
+| Pretest Fisiologi | Pretest Anconeus 2021 | `ub-1-3-pre-2021` | 20 |
+| Pretest Fisiologi | Pretest Fisiologi 2023 | `ub-1-3-pre-2023` | 20 |
+| Pretest Fisiologi | Pretest Termoregulasi 2018 | `ub-1-3-pre-2018` | 14 |
+| Pretest | Pretes Digestivus Inferior (Aryo) | `ub-1-3-pre-digest` | 11 |
 
-Dua bank **TERPISAH** (keputusan user, 1 Nov 2026). Untuk anatomi, materi aslab dan dosen sebenarnya
-**beririsan banyak** (topik sama). Supaya tetap tidak ada soal rangkap, bank Dosen sengaja hanya memuat
-materi yang tidak dibahas aslab. Materi beririsan masuk bank Aslab.
-Entri `QUIZZES` keduanya `sembunyi:true`. `modul` berformat `"Anatomi · <Subtopik>"` supaya nanti
-materi non-anatomi (histologi, fisiologi, biokimia) bisa masuk bank yang sama dengan prefix lain.
-`rationale` = penjelasan + `"  —  **Diskriminator:** ..."`; field tambahan `grup`, `bahas`, `diskriminator`.
-Semua soal disusun sendiri (bukan naskah UB asli), kunci dari analisis.
+`B13` punya **empat** seksi: `aslab`, `dosen`, `asli`, `pretest`. Total tab 1.3 = **769 soal** di 13 bank. Judul seksi pretest kini "Pretest (naskah asli)" karena memuat pretes anatomi juga.
+Di atas seksi PPT Aslab ada kartu **Panduan belajar** (tautan ke `anatomi-1-3.html`).
 
-### `anatomi-1-3.html` — panduan belajar mandiri
+Menambah kartu = tambah satu entri ke `B13.aslab` atau `B13.dosen`, plus `data/<id>.js`,
+`<script src>`, dan entri `QUIZZES` (`sembunyi:true`). Tidak ada tempat lain yang disentuh.
+
+### Quiz `ub-1-3-responsi-fisio` — Responsi Fisiologi 1.3 (Termoregulasi)
+`data/ub-1-3-responsi-fisio.js`, **179 soal**, 18 modul. Disusun dari tiga PPT aslab
+(Termoregulasi, Praktikum Termoregulasi, Kelainan Termoregulasi) ditambah dokumen
+Pembahasan Responsi Fisiologi 1.3.
+
+**Field `ppt` SENGAJA tidak dipakai di bank ini.** `buildExtraFilters()` melabeli dropdown
+`#fPpt` dengan `B12.kuliah[k]`, yaitu nama kuliah **Blok 1.2**. Memberi bank 1.3 field `ppt`
+akan menghasilkan label seperti "PPT 1 · Histologi Integument" — salah blok. Field `pola`
+aman karena `B12.pola[k] || k` punya fallback ke kodenya, jadi filter pola tetap aktif.
+
+**Penanda soal responsi.** Soal yang berasal dari dokumen responsi ditandai di awal
+`rationale` dengan `**[Responsi asli · SOAL n]**`, plus `asliResponsi:true` dan
+`kodeResponsi` berisi **nomor asli dokumen**. Saat ini 19 dari 179 soal.
+
+**Dokumen responsi memuat 19 soal, bukan 20:** bernomor 1–12 dan 14–20 — **nomor 13 tidak
+ada di berkas sumber**. Celah pada `kodeResponsi` itu benar; jangan dirapatkan.
+
+**Konflik sumber yang sudah ditandai `**Catatan:**` di bank dan sebaiknya dibiarkan:**
+- **Suhu aksila.** Slide Termoregulasi memuat dua versi dalam satu slide: setara oral
+  (Sherwood) dan lebih rendah ±0,5–1°C (Modul Skillslab). Soal responsi memakai versi
+  Modul Skillslab, dan itu yang dipakai sebagai kunci.
+- **Persentase perpindahan panas.** Gambar Guyton pada slide: radiasi 60%, evaporasi 22%,
+  konduksi ke udara 15%, konduksi ke benda 3% (total 100%). Catatan slide yang sama
+  menambahkan "konveksi 12%", yang tidak muat dalam total itu.
+- **Penyebab kenaikan suhu pasca-ovulasi.** Catatan PPT Termoregulasi mengutip Sherwood
+  bahwa penjelasan progesteron sudah tidak dipakai dan penyebabnya belum diketahui;
+  catatan PPT Kelainan Termoregulasi justru menjelaskannya lewat progesteron termogenik.
+  Dua PPT aslab bertentangan.
+- **Lokasi paling representatif terhadap suhu inti.** Satu catatan slide menyebut temporal
+  sebagai penentu terbaik menurut Sherwood, lalu menyimpulkan per rektal tetap yang paling
+  representatif. Kunci memakai per rektal, sesuai soal responsi.
+- **Soal katak (responsi #7).** Opsi sumber berbunyi pengaruh lingkungan "tidak dapat
+  ditoleransi" oleh suhu inti, berlawanan dengan definisi poikiloterm di slide praktikum.
+  Opsi sumber cacat dan tidak dipakai sebagai kunci.
+- **Responsi #5 dan #8 cacat di sumber** (dua opsi berisi titik; satu soal punya enam opsi
+  plus coretan). Sudah dilengkapi dan dirapikan, ditandai di `rationale`.
+- **Responsi #14 (edukasi banyak minum)** tidak ada di ketiga PPT, hanya di dokumen responsi.
+
+**PPT aslab tidak disimpan di repo** — sama seperti PPT Blok 1.2, user melampirkannya
+tiap sesi. Berlaku untuk SELURUH PPT aslab Blok 1.3 (fisiologi maupun biokimia):
+slide berupa **gambar polos tanpa teks sama sekali** (`slideTextChar` = 0), dan isi
+tertulisnya hanya sebagian ada di **speaker notes** — pada PPT biokimia bahkan hanya
+3 dari 42 slide yang ber-notes. **Wajib dua langkah:** ekstrak notes dengan python-pptx,
+DAN render tiap slide jadi gambar (LibreOffice ke PDF lalu `pdftoppm`) lalu dibaca.
+Membaca teks shape saja menghasilkan berkas kosong dan akan menyesatkan.
+Berkas PPT biokimia besar (sampai 110 MB), konversi butuh timeout longgar.
+
+### Quiz `ub-1-3-responsi-biokim` — Responsi Biokimia 1.3 (Lipid & Karbohidrat)
+`data/ub-1-3-responsi-biokim.js`, **209 soal**, 30 modul. Disusun dari empat PPT aslab
+(Teori Lipid, Praktikum Lipid, Praktikum Karbohidrat, Teori Karbohidrat) ditambah dokumen
+Responsi Biokimia 1.3. Field `ppt` tidak dipakai, alasannya sama seperti bank fisiologi.
+
+**Dokumen responsi memuat 30 soal dan semuanya tercakup** (`kodeResponsi` 1–30, tanpa celah).
+
+**Yang TIDAK ada di PPT aslab mana pun — sudah ditandai `**Catatan:**`:**
+- **Responsi #2** menanyakan nama enzim pada strip hijau GCU (glukosa oksidase). Slide hanya
+  menyebut strip hijau untuk glukosa, biru kolesterol, kuning asam urat; nama enzim tidak ada.
+- **Responsi #19** fungsi kolesterol (garam empedu, vitamin D, hormon steroid). **SUDAH TIDAK
+  BERLAKU** sejak revisi Teori Lipid 2 Nov 2026, yang menambahkan slide Kolesterol dan
+  membahas keempat fungsinya. Catatan di bank soal sudah diperbarui.
+- **Responsi #6** nama asam amino glukogenik (alanin, glutamin). Slide glukoneogenesis hanya
+  menyebut "protein dan lemak" tanpa nama asam amino.
+- **Responsi #16** istilah "dekarboksilasi oksidatif". Bagan Krebs menampilkan piruvat 3C →
+  asetil-KoA 2C, tetapi tidak menyebut istilahnya.
+- **Responsi #26** angka 120 hari masa hidup eritrosit. Tabel slide menyebut "2–3 bulan".
+- **Responsi #13** di dokumen sumber terpotong: tertulis "Butirat diberi H2SO4: ??" tanpa opsi
+  dan tanpa jawaban. Soal disusun ulang dari slide hidrolisis mentega (atas keputusan user).
+- **Nilai HDL** pada slide GCU: wanita >40, pria >50 mg/dL. Banyak rujukan klinis justru
+  menetapkan ambang lebih tinggi pada wanita. Dipakai versi slide, perbedaannya ditandai.
+- **Responsi #17** memuat dua opsi yang sama-sama benar sebagian (menurunkan tegangan
+  permukaan, dan penjelasan dua gugus). Slide menempatkan tegangan permukaan sebagai mekanisme utama.
+
+**Catatan berkas:** user sempat mengunggah `Praktikum_Lipid_Bella.pptx` dua kali. Berkas
+`..._(1).pptx` BUKAN duplikat identik — ia versi lebih kotor (salah ketik "d!an" pada notes
+slide 5, dan catatan nyasar berisi huruf "a" di slide 20). Dipakai berkas yang asli.
+
+### Naskah asli Blok 1.3 (`ub-1-3-resp-asli`, `ub-1-3-azytralis`, `ub-1-3-latsol`)
+Tiga naskah soal kakak tingkat, disajikan **apa adanya** di seksi "Naskah asli kakak tingkat"
+pada tab 1.3. Dibangun dengan konvensi yang sama seperti `B12_ASLI`: tiap soal membawa
+`asliPenuh` dan `kunciDari`, yang ikut dicetak di akhir `rationale`. Quiz-nya terpisah dari
+bank turunan, jadi progresnya sendiri — disengaja, dipakai sebagai try out.
+
+| id | asal | soal | opsi utuh | kunci dari pembahasan | bergambar |
+|---|---|---|---|---|---|
+| `ub-1-3-resp-asli` | Responsi Biokimia 1.3 | 30 | 6 | 21 | 0 |
+| `ub-1-3-azytralis` | AZYTRALIS 2022 | 29 | 12 | 29 | 2 |
+| `ub-1-3-latsol` | LATSOL Pre-Test 2026 | 25 | 21 | 21 | 3 |
+
+Total **84 soal**; hanya **39 yang opsinya utuh dari sumber**, 45 sisanya dilengkapi.
+
+**AZYTRALIS memuat 29 soal, bukan 30:** bernomor 1–11 dan 13–30 — **nomor 12 tidak ada di
+berkas sumber**. Celah pada `kodeAsli` itu benar; jangan dirapatkan.
+
+**LATSOL membawa data frekuensi** yang tidak ada di sumber lain: beberapa butir ditandai
+pernah muncul di pre-test astroxon 2020 dan anconeus 2021, dan dua butir mencatat aslab
+menyebut tabelnya wajib dihafal. Ini dipakai sebagai peta bobot dan dikutip di `rationale`.
+
+**Kunci yang BERTENTANGAN dengan PPT — ditandai, jangan didamaikan:**
+- **Enzim strip hijau GCU.** Tiga sumber, tiga jawaban: Responsi menulis glukosa oksidase,
+  AZYTRALIS nomor 6 menulis GDH FAH tetapi nomor 22 menulis glukosa oksidase (bertentangan
+  di dalam dokumen yang sama), LATSOL menulis GDH FAH. **PPT aslab tidak menyebut enzim
+  sama sekali**, hanya warna strip. Tidak ada rujukan yang dapat memutuskan.
+- **AZYTRALIS #30 (jari tengah/manis).** Kuncinya "kulitnya lebih tipis" — berlawanan dengan
+  catatan slide yang menyebut jari kelingking TIDAK disarankan justru karena kulitnya lebih
+  tipis. Dengan kaidah PPT, kulit tipis adalah alasan menghindari, bukan memilih. Soal cacat.
+- **AZYTRALIS #11 (bau akrolein).** Kuncinya sulfur dioksida, padahal slide menyebut bau itu
+  berasal dari akrolein hasil dehidrasi gliserol. Sulfur dioksida tidak disebut di PPT mana pun.
+- **AZYTRALIS #27 (kelarutan gliserol).** Penulis sumber menyatakan jawabannya diperoleh dari
+  percobaan di YouTube, bukan dari PPT maupun praktikum. Tidak dapat diverifikasi.
+- **AZYTRALIS #14 dan #26.** Penulis sendiri menyatakan ragu (#14) dan mengaku sempat menjawab
+  keliru (#26).
+- **AZYTRALIS #23 (residu kertas saring).** Slide hanya membahas bercak lemak, tidak membahas
+  penghitungan residu.
+- **LATSOL #6.** Sukrosa dan stachyosa sama-sama tersusun ikatan glikosidik, sehingga soal ini
+  punya dua opsi yang dapat dibenarkan.
+- **LATSOL #8.** Batang soal menanyakan "enzim", padahal jawabannya insulin yang merupakan
+  hormon. Kata enzim diganti zat agar tidak menyesatkan.
+
+### Pretest Fisiologi Blok 1.3 (`ub-1-3-pre-*`) — naskah asli termoregulasi
+Empat naskah pretest termoregulasi dari angkatan berbeda, disajikan **apa adanya** di seksi
+"Pretest Fisiologi (naskah asli)" pada tab 1.3 (`B13.pretest`). Konvensi sama seperti `B12_ASLI`:
+tiap soal membawa `asliPenuh` dan `kunciDari`, yang ikut dicetak di akhir `rationale`.
+
+| id | asal | soal | opsi utuh | penanda kunci di sumber |
+|---|---|---|---|---|
+| `ub-1-3-pre-termo` | Pretest Fisiologi 1.3 Sistem Termoregulasi | 19 | 19 | **highlight kuning**, lengkap |
+| `ub-1-3-pre-2021` | Pretest Anconeus 2021 | 20 | 20 | highlight kuning pada 11 soal, sisanya dari Pembahasan |
+| `ub-1-3-pre-2023` | Pretest Fisiologi 1.3 Tahun 2023 | 20 | 20 | **bold**, lengkap 20 soal |
+| `ub-1-3-pre-2018` | Pretest Termoregulasi, Kedokteran 2018 | 14 | 11 | **tidak ada sama sekali** |
+
+Total **73 soal**; 70 opsinya utuh dari sumber. Kunci: 59 dari pembahasan/penanda sumber, 14 dari analisis.
+
+**Keempat berkas adalah naskah BERBEDA, bukan duplikat** — md5 berbeda dan isinya berlainan.
+Jangan digabung.
+
+**Dua soal dikecualikan karena bukan soal akademik:** nomor 20 pada naskah Termoregulasi
+(teka-teki detektif tentang pembunuhan) dan nomor 15 pada naskah 2018 ("Sebutkan seluruh
+asisten fisiologi angkatan 2016 dan 2017"). Celah penomoran `kodeAsli` itu benar.
+
+**Cara penanda kunci diekstrak** (berbeda tiap berkas, jangan pakai satu metode untuk semua):
+- `.docx` Anconeus → `python-docx`, cek `run.font.highlight_color`.
+- PDF 2023 → `pymupdf`, cek `'Bold' in span['font']` atau bit flag 4.
+- PDF Termoregulasi → `pymupdf` **`page.get_drawings()`** dengan fill kuning (R>0.85, G>0.85, B<0.4).
+  Highlight-nya BUKAN anotasi dan BUKAN bold — `page.annots()` mengembalikan kosong.
+- `.pptx` 2018 → tidak ada penanda apa pun, seluruh kunci lewat analisis.
+
+**Jebakan parser yang sudah menelan waktu:** batang soal sering memuat daftar bernomor
+(`1.` `2.` `3.` `4.`) dan cara kerja praktikum bernomor sampai `16)`. Regex nomor soal polos
+akan membacanya sebagai soal baru. Yang bekerja: **syarat nomor berurutan** (`n == cur+1`),
+bukan filter koordinat x.
+
+**Konflik dan cacat sumber yang sudah ditandai `**Catatan:**` — jangan didamaikan:**
+- **Termoregulasi #14 (baju renang basah)** — sumber menyorot **DUA opsi sekaligus**, evaporasi
+  dan konduksi kepada objek. Batang soal menyebut kondisi memakai baju basah, sehingga kunci
+  yang dipakai konduksi kepada objek, sesuai isi pembahasannya sendiri.
+- **Anconeus #2 (faktor termogenesis)** — pembahasan sumber menyimpulkan nomor 1, 3, dan 4 benar,
+  tetapi **tidak ada opsi yang memuat ketiganya**. Dipakai opsi yang seluruh unsurnya benar
+  meski tidak lengkap. Soal cacat di sumber.
+- **2023 #16 vs Termoregulasi #7 (fever fisiologis atau patologis)** — naskah 2023 memasukkan
+  fever ke dalam sistem fisiologis yang berhubungan dengan suhu tubuh; naskah Termoregulasi
+  justru memisahkan variasi fisiologis dari patologis dan menempatkan demam di sisi patologis.
+  **Dua naskah bertentangan**, dibiarkan apa adanya.
+- **2023 #6 (persentase perpindahan panas)** — pembahasan mencantumkan konveksi 12 % di samping
+  radiasi 60 %, konduksi udara 15 %, konduksi benda 3 %, evaporasi 22 %. Empat angka terakhir
+  sudah 100 %, jadi angka konveksi itu tidak muat. Konflik yang sama dengan PPT aslab.
+- **2023 #20 (aksila vs oral)** — memakai versi Modul Skillslab (aksila lebih rendah), bukan
+  versi Sherwood (setara oral). Konsisten dengan kunci bank `ub-1-3-responsi-fisio`.
+- **2018 #2 (yang meningkatkan suhu tubuh)** — olahraga dan asupan makan sama-sama tercantum
+  sebagai faktor termogenesis di slide, jadi dua opsi dapat dibenarkan. Sumber hanya memuat
+  empat opsi, satu ditambahkan.
+- **2018 #3 (suhu sentral)** — organ thorax, abdomen, dan SSP sama-sama tergolong suhu inti.
+  Pemilihan organ thorax bersandar pada naskah Termoregulasi #19, bukan pada sumber 2018 sendiri.
+- **2018 #4** — slide sumber **tidak memuat opsi sama sekali**; kelima opsi baku sebab-akibat ditambahkan.
+
+**Berkas pretest tidak disimpan di repo**, sama seperti PPT aslab — user melampirkannya tiap sesi.
+
+### Quiz `ub-1-3-responsi-anat` — Responsi Anatomi 1.3
+`data/ub-1-3-responsi-anat.js`, **150 soal**, 18 modul, dari EMPAT PPT asistensi: Dinding Abdomen (Zydane),
+Tractus Digestivus Inferior (Khai), Systema Digestiva Accessoria (Fatih), Tractus Digestivus Superior (Naufal),
+dilengkapi PDF dosen. n 1–94 = tiga PPT pertama; n 95–121 = bekas bank `ub-1-3-anat-dosen` (oesophagus, gaster,
+duodenum, cavum oris, glandulae, pharynx) yang **dilebur** ke sini setelah PPT Naufal muncul; n 122–150 = PPT Naufal.
+Bank `ub-1-3-anat-dosen` sudah dihapus (belum pernah ter-deploy, jadi tidak ada progres user yang hilang).
+- `modul` berformat `"Anatomi · <Subtopik>"`. Field `ppt` sengaja tidak dipakai (alasan sama dengan bank fisiologi).
+- `rationale` = penjelasan + `"  —  **Diskriminator:** ..."`; field tambahan `grup`, `bahas`, `diskriminator`.
+- Semua soal disusun sendiri, bukan naskah asli; kunci dari analisis.
+- Sempat bernama `ub-1-3-aslab` (PR #10, dibangun di atas main tanpa PR #9); diganti nama saat digabung.
+
+**Kesalahan PPT Naufal yang ditandai** (jangan diikuti): a. lingualis "cabang a. carotis interna" (externa);
+angustia media "bronchus dexter" (sinister); batas parotis "inferior arcus zygomaticus" (zygoma = superior);
+foregut "sampai duodenum pars superior" (batasnya papilla major). Variasi, bukan salah: a. gastrica dextra
+dari a. hepatica communis (Naufal) vs propria (umum).
+
+**Peta bobot responsi anatomi** (46 soal unik dari dua naskah kating, 6 Nov 2026): cavum oris/lingua/glandula/pharynx
+12 (26%) · intestinum crassum 10 (22%) · VF/bilier/pancreas 8 (17%) · hepar+porta 4 · peritoneum 4 ·
+dinding+inguinal 4 · oesophagus+gaster 3 · lapisan dinding 1 · jejunum-ileum 0 (tapi nomor 1 di pretes).
+**Tractus superior + cavum oris = 33% responsi** — versi pertama panduan salah melabelinya "prioritas 2"
+karena mengira materinya hanya dari dosen; ternyata ada PPT aslab Naufal. Sudah dikoreksi, label PRIORITAS 2 dihapus. Responsi berbentuk **isian**: struktur ditunjuk +
+satu pertanyaan lanjutan (saraf/embrio/muara/klinis).
+
+### Naskah asli anatomi (`ub-1-3-resp-anat`, `ub-1-3-resp-anat-fix`, `ub-1-3-pre-digest`)
+Sumber: RESPONSI_ANATOMI_1.3.docx (sesi Merah 24 nomor; sesi Hitam hanya mengulang parotis & omentum, tidak dimasukkan;
+no. 25 duplikat no. 2; 3A tak berjawaban dikecualikan), SOAL_RESPONSI_FIX.docx (22 nomor, no. 23 kosong),
+TIMER_Pretes_Trac_Digestivus_Inferior_Aryo.pptx (4 nomor akademik; no. 5 "hasil UB 1.2" dikecualikan).
+Semuanya soal ISIAN, jadi seluruh opsi dilengkapi (`asliPenuh:false` untuk semua). Sub-soal a/b dipecah,
+`kodeAsli` = nomor + huruf sumber. Soal bergambar diberi awalan `[Soal bergambar]` + deskripsi struktur;
+gambar tidak disalin ke repo. **Pembahasan Pretes 3B-C, 3D, 3E keliru** (jawab "midgut/hindgut" untuk arteri,
+"splanchnicus mayus" untuk midgut, "splanchnicolumbalis" untuk parasimpatis) — dikoreksi dengan `kunciDari:"analisis"`.
+Praktikum_Klinis_Allyssa.pptx.pdf hanya rangkuman klinis + latsol, dipakai untuk isi panduan (Murphy, Charcot, sirosis).
+- Sempat bernama `ub-1-3-aslab` / `ub-1-3-dosen` (PR #10, dibangun di atas main tanpa PR #9).
+  Diganti nama saat digabung dengan PR #9, sebelum ada progres user yang tersimpan.
+
+### `anatomi-1-3.html` — panduan belajar anatomi mandiri
 Halaman statis terpisah (bukan view di index.html), karena isinya HTML/SVG kaya yang tidak bisa lewat `richText()`.
 - Target ujian: **responsi/OSPE praktikum** + senggol kasus. User punya waktu 1–3 hari (Nov 2026).
 - Isi: urutan belajar + jadwal 3 hari/1 hari, 13 modul, skema SVG gambaran sendiri (vagina recti, dermatom,
   Hesselbach, bingkai colon, huruf H hepar), tabel pembanding, checklist responsi, bagian **Koreksi sumber**.
 - **Tidak ada gambar atlas** — repo public, gambar PPT kebanyakan Netter/Sobotta. Jangan tambahkan.
-- Label sumber: `ASLAB` (inti), `DOSEN` (pengayaan), `LIT` (tambahan literatur), `PRIORITAS 2`.
+  Latihan tebak-struktur bergambar dibuat sebagai artifact PRIVAT di akun user, bukan di repo.
+- Label sumber: `ASLAB` (inti), `DOSEN` (pengayaan), `LIT` (tambahan literatur). Bagian 00 = peta bobot + urutan menurut bobot.
 - Mode **Tutup jawaban**: elemen ber-kelas `.rv` dikaburkan (teks SVG disembunyikan); ketuk untuk membuka.
 - localStorage: tema dibaca dari `persiapan-ub.v1` (sama dengan index), checklist + status tutup di
   `persiapan-ub.anatomi13.v1`. Checklist disimpan per **indeks** checkbox dalam tiap `data-ck` —
   kalau menyisipkan item di tengah, centang lama bergeser; tambahkan di akhir saja.
+- PPT anatomi berbeda dari PPT fisio/biokim: teksnya ADA di shape + notes, cukup python-pptx.
 
 Kesalahan sumber yang sudah ditandai di halaman (jangan "dibetulkan" balik):
 aslab "Sulcus V. Cava Superior" (seharusnya inferior); dosen "omentum minus/foramen Winslow ke pars
 descendens duodeni" (literatur: pars superior); dosen "linea arcuata atau linea semilunaris" (dua garis berbeda);
 aslab titik Lanz "1/6" (literatur umumnya 1/3); aslab ureter di hypochondriaca sinistra; aslab aliran
 v. epigastrica superior/inferior ke v. femoralis (yang ke femoralis adalah v. epigastrica superficialis).
+
 
 ## Bank naskah asli kakak tingkat (`ub-1-2-soal`, dst.)
 Selain bank soal tersusun (`ub-1-2`), ada bank **naskah asli** UB tahun sebelumnya yang disajikan apa adanya.

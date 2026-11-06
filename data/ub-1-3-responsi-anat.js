@@ -1,7 +1,8 @@
 /* Bank soal Blok 1.3 — PPT ASLAB (anatomi).
    Sumber: PPT Asistensi Dinding Abdomen (Zydane), Tractus Digestivus Inferior (Khai),
-   Systema Digestiva Accessoria (Fatih). Diperkaya PDF dosen bila perlu untuk menjelaskan.
-   94 soal gaya responsi + kasus. Bukan naskah UB asli: semua soal disusun sendiri, kunci dari analisis.
+   Systema Digestiva Accessoria (Fatih), Tractus Digestivus Superior (Naufal). Diperkaya PDF dosen bila perlu. n 95–121 berasal dari bank ub-1-3-anat-dosen yang dilebur ke sini
+   (6 Nov 2026) setelah ternyata tractus superior punya PPT aslab sendiri; n 122+ dari PPT Naufal.
+   150 soal gaya responsi + kasus. Bukan naskah UB asli: semua soal disusun sendiri, kunci dari analisis.
    Materi pendamping: anatomi-1-3.html (skema + urutan belajar).
 
    Skema engine: { n, modul, q, opsi[], kunciIndex, kunci, rationale }
@@ -9,7 +10,7 @@
    Markup **tebal** saja (BUKAN HTML), sesuai richText() di index.html.
    Nomor n jangan diubah bila menambah soal: progres localStorage dikunci per n. */
 window.QUIZ_BANK = window.QUIZ_BANK || {};
-window.QUIZ_BANK["ub-1-3-aslab"] = [
+window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
  {
   "n": 1,
   "modul": "Anatomi · Dinding Abdomen",
@@ -1701,5 +1702,1013 @@ window.QUIZ_BANK["ub-1-3-aslab"] = [
   "grup": "Kasus Integrasi",
   "bahas": "Lig. Treitz menjadi batas perdarahan saluran cerna atas (hematemesis/melena) dan bawah (hematochezia).",
   "diskriminator": "Distal Treitz = bawah."
+ },
+ {
+  "n": 95,
+  "modul": "Anatomi · Oesophagus",
+  "q": "Panjang oesophagus kira-kira…",
+  "opsi": [
+   "40 cm",
+   "12 cm",
+   "8 cm",
+   "60 cm",
+   "25 cm"
+  ],
+  "kunciIndex": 4,
+  "kunci": "25 cm",
+  "rationale": "Oesophagus ±25 cm, dari C6 (tepi bawah cartilago cricoidea) sampai cardia setinggi T11. Angka 40 cm adalah jarak hiatus dari gigi seri, bukan panjang oesophagus.  —  **Diskriminator:** Panjang organ 25 cm; jarak dari gigi seri 15–40 cm.",
+  "grup": "Oesophagus",
+  "bahas": "Oesophagus ±25 cm, dari C6 (tepi bawah cartilago cricoidea) sampai cardia setinggi T11. Angka 40 cm adalah jarak hiatus dari gigi seri, bukan panjang oesophagus.",
+  "diskriminator": "Panjang organ 25 cm; jarak dari gigi seri 15–40 cm."
+ },
+ {
+  "n": 96,
+  "modul": "Anatomi · Oesophagus",
+  "q": "Oesophagus menembus diafragma melalui hiatus oesophageus setinggi…",
+  "opsi": [
+   "C6",
+   "T12",
+   "L1",
+   "T10",
+   "T8"
+  ],
+  "kunciIndex": 3,
+  "kunci": "T10",
+  "rationale": "Hiatus oesophageus setinggi T10 (±40 cm dari gigi seri). T8 untuk foramen VCI, T12 untuk hiatus aorticus.  —  **Diskriminator:** Lubang diafragma: VCI T8, oesophagus T10, aorta T12.",
+  "grup": "Oesophagus",
+  "bahas": "Hiatus oesophageus setinggi T10 (±40 cm dari gigi seri). T8 untuk foramen VCI, T12 untuk hiatus aorticus.",
+  "diskriminator": "Lubang diafragma: VCI T8, oesophagus T10, aorta T12."
+ },
+ {
+  "n": 97,
+  "modul": "Anatomi · Oesophagus",
+  "q": "Penyempitan oesophagus setinggi T4 (±22 cm dari gigi seri) disebabkan oleh…",
+  "opsi": [
+   "Hiatus oesophageus",
+   "Persilangan arcus aortae",
+   "M. cricopharyngeus",
+   "Persilangan bronchus principalis sinister",
+   "Atrium sinistrum"
+  ],
+  "kunciIndex": 1,
+  "kunci": "Persilangan arcus aortae",
+  "rationale": "Urutan penyempitan: C6 (cricopharyngeus) 15 cm, T4 (arcus aortae) 22 cm, T5 (bronchus principalis sinister) 27 cm, T10 (hiatus) 40 cm.  —  **Diskriminator:** Arcus aortae di atas bronchus: T4 sebelum T5.",
+  "grup": "Oesophagus",
+  "bahas": "Urutan penyempitan: C6 (cricopharyngeus) 15 cm, T4 (arcus aortae) 22 cm, T5 (bronchus principalis sinister) 27 cm, T10 (hiatus) 40 cm.",
+  "diskriminator": "Arcus aortae di atas bronchus: T4 sebelum T5."
+ },
+ {
+  "n": 98,
+  "modul": "Anatomi · Oesophagus",
+  "q": "Seorang anak menelan koin. Lokasi tersangkut yang paling mungkin adalah…",
+  "opsi": [
+   "Duodenum pars horizontalis",
+   "Pylorus",
+   "Hiatus oesophageus",
+   "Penyempitan pertama, peralihan pharynx–oesophagus setinggi C6",
+   "Cardia gaster"
+  ],
+  "kunciIndex": 3,
+  "kunci": "Penyempitan pertama, peralihan pharynx–oesophagus setinggi C6",
+  "rationale": "Penyempitan pertama (m. cricopharyngeus, sfingter atas anatomis) adalah yang paling sempit, sehingga benda asing paling sering tersangkut di sini.  —  **Diskriminator:** Penyempitan tersempit = yang pertama.",
+  "grup": "Oesophagus",
+  "bahas": "Penyempitan pertama (m. cricopharyngeus, sfingter atas anatomis) adalah yang paling sempit, sehingga benda asing paling sering tersangkut di sini.",
+  "diskriminator": "Penyempitan tersempit = yang pertama."
+ },
+ {
+  "n": 99,
+  "modul": "Anatomi · Oesophagus",
+  "q": "Otot dinding oesophagus 1/3 bawah berupa…",
+  "opsi": [
+   "Otot polos",
+   "Otot jantung",
+   "Campuran lurik dan polos",
+   "Tidak memiliki tunica muscularis",
+   "Otot lurik"
+  ],
+  "kunciIndex": 0,
+  "kunci": "Otot polos",
+  "rationale": "1/3 atas lurik, 1/3 tengah campuran, 1/3 bawah polos, sesuai peralihan dari pharynx (lurik) ke gaster (polos).  —  **Diskriminator:** Atas lurik → bawah polos.",
+  "grup": "Oesophagus",
+  "bahas": "1/3 atas lurik, 1/3 tengah campuran, 1/3 bawah polos, sesuai peralihan dari pharynx (lurik) ke gaster (polos).",
+  "diskriminator": "Atas lurik → bawah polos."
+ },
+ {
+  "n": 100,
+  "modul": "Anatomi · Oesophagus",
+  "q": "Vena oesophagus pars abdominalis bermuara ke…",
+  "opsi": [
+   "V. azygos",
+   "V. thyroidea inferior",
+   "V. gastrica sinistra → v. porta",
+   "V. hemiazygos",
+   "V. cava superior langsung"
+  ],
+  "kunciIndex": 2,
+  "kunci": "V. gastrica sinistra → v. porta",
+  "rationale": "Pars abdominalis mengalir ke v. gastrica sinistra (sistem porta), sedangkan pars thoracica ke v. azygos/hemiazygos (sistemik). Pertemuan keduanya menjadi lokasi varises oesophagus.  —  **Diskriminator:** Oesophagus bawah = perbatasan porta–sistemik.",
+  "grup": "Oesophagus",
+  "bahas": "Pars abdominalis mengalir ke v. gastrica sinistra (sistem porta), sedangkan pars thoracica ke v. azygos/hemiazygos (sistemik). Pertemuan keduanya menjadi lokasi varises oesophagus.",
+  "diskriminator": "Oesophagus bawah = perbatasan porta–sistemik."
+ },
+ {
+  "n": 101,
+  "modul": "Anatomi · Gaster",
+  "q": "Bagian gaster yang berada di bawah kubah diafragma kiri dan tampak berisi udara pada foto tegak adalah…",
+  "opsi": [
+   "Pars cardiaca",
+   "Pars pylorica",
+   "Corpus",
+   "Antrum",
+   "Fundus"
+  ],
+  "kunciIndex": 4,
+  "kunci": "Fundus",
+  "rationale": "Fundus menonjol ke atas-kiri di bawah kubah diafragma sinistra; udara naik ke bagian tertinggi saat pasien berdiri.  —  **Diskriminator:** Bagian tertinggi = fundus.",
+  "grup": "Gaster",
+  "bahas": "Fundus menonjol ke atas-kiri di bawah kubah diafragma sinistra; udara naik ke bagian tertinggi saat pasien berdiri.",
+  "diskriminator": "Bagian tertinggi = fundus."
+ },
+ {
+  "n": 102,
+  "modul": "Anatomi · Gaster",
+  "q": "A. gastrica sinistra merupakan cabang langsung dari…",
+  "opsi": [
+   "Truncus coeliacus",
+   "A. lienalis",
+   "A. gastroduodenalis",
+   "Aorta abdominalis setinggi L1",
+   "A. hepatica propria"
+  ],
+  "kunciIndex": 0,
+  "kunci": "Truncus coeliacus",
+  "rationale": "A. gastrica sinistra langsung dari truncus coeliacus dan memperdarahi curvatura minor serta oesophagus bawah. A. gastrica dextra berasal dari a. hepatica.  —  **Diskriminator:** Gastrica sinistra = cabang terkecil truncus.",
+  "grup": "Gaster",
+  "bahas": "A. gastrica sinistra langsung dari truncus coeliacus dan memperdarahi curvatura minor serta oesophagus bawah. A. gastrica dextra berasal dari a. hepatica.",
+  "diskriminator": "Gastrica sinistra = cabang terkecil truncus."
+ },
+ {
+  "n": 103,
+  "modul": "Anatomi · Gaster",
+  "q": "Fundus gaster diperdarahi oleh…",
+  "opsi": [
+   "A. gastroduodenalis",
+   "A. pancreaticoduodenalis superior",
+   "Aa. gastricae breves",
+   "A. gastrica dextra",
+   "A. gastroomentalis dextra"
+  ],
+  "kunciIndex": 2,
+  "kunci": "Aa. gastricae breves",
+  "rationale": "Aa. gastricae breves dari a. lienalis mencapai fundus lewat lig. gastrosplenicum.  —  **Diskriminator:** Fundus dekat lien = breves dari lienalis.",
+  "grup": "Gaster",
+  "bahas": "Aa. gastricae breves dari a. lienalis mencapai fundus lewat lig. gastrosplenicum.",
+  "diskriminator": "Fundus dekat lien = breves dari lienalis."
+ },
+ {
+  "n": 104,
+  "modul": "Anatomi · Gaster",
+  "q": "Nyeri viseral dari gaster umumnya dirasakan di…",
+  "opsi": [
+   "Regio umbilicalis",
+   "Hypogastrium",
+   "Punggung bawah",
+   "Epigastrium",
+   "Regio inguinalis dextra"
+  ],
+  "kunciIndex": 3,
+  "kunci": "Epigastrium",
+  "rationale": "Gaster adalah turunan foregut; aferennya masuk T6–T9 sehingga nyeri dirasakan di epigastrium.  —  **Diskriminator:** Foregut = epigastrium.",
+  "grup": "Gaster",
+  "bahas": "Gaster adalah turunan foregut; aferennya masuk T6–T9 sehingga nyeri dirasakan di epigastrium.",
+  "diskriminator": "Foregut = epigastrium."
+ },
+ {
+  "n": 105,
+  "modul": "Anatomi · Gaster",
+  "q": "Bayi dengan muntah proyektil dan teraba massa seperti buah zaitun (olive) di epigastrium kemungkinan mengalami…",
+  "opsi": [
+   "Hirschsprung",
+   "Atresia oesophagus",
+   "Stenosis pylorus hipertrofik",
+   "Hernia hiatus",
+   "Divertikel Meckel"
+  ],
+  "kunciIndex": 2,
+  "kunci": "Stenosis pylorus hipertrofik",
+  "rationale": "Hipertrofi m. sphincter pyloricus menyumbat aliran keluar gaster sehingga terjadi muntah proyektil, dan otot yang menebal teraba sebagai olive.  —  **Diskriminator:** Olive + proyektil = pylorus.",
+  "grup": "Gaster",
+  "bahas": "Hipertrofi m. sphincter pyloricus menyumbat aliran keluar gaster sehingga terjadi muntah proyektil, dan otot yang menebal teraba sebagai olive.",
+  "diskriminator": "Olive + proyektil = pylorus."
+ },
+ {
+  "n": 106,
+  "modul": "Anatomi · Duodenum",
+  "q": "Bagian duodenum yang paling sering terkena ulkus peptikum adalah…",
+  "opsi": [
+   "Pars horizontalis",
+   "Pars descendens",
+   "Flexura duodenojejunalis",
+   "Pars superior (ampulla/bulbus)",
+   "Pars ascendens"
+  ],
+  "kunciIndex": 3,
+  "kunci": "Pars superior (ampulla/bulbus)",
+  "rationale": "Pars superior (bulbus) menerima langsung chyme asam dari gaster sehingga paling sering terkena ulkus.  —  **Diskriminator:** Ulkus = bagian pertama yang terkena asam.",
+  "grup": "Duodenum",
+  "bahas": "Pars superior (bulbus) menerima langsung chyme asam dari gaster sehingga paling sering terkena ulkus.",
+  "diskriminator": "Ulkus = bagian pertama yang terkena asam."
+ },
+ {
+  "n": 107,
+  "modul": "Anatomi · Duodenum",
+  "q": "Ulkus pada dinding POSTERIOR bulbus duodeni dapat menimbulkan perdarahan hebat karena mengerosi…",
+  "opsi": [
+   "A. gastroduodenalis",
+   "A. lienalis",
+   "A. gastrica sinistra",
+   "Aorta abdominalis",
+   "A. mesenterica superior"
+  ],
+  "kunciIndex": 0,
+  "kunci": "A. gastroduodenalis",
+  "rationale": "A. gastroduodenalis berjalan tepat di posterior duodenum pars superior.  —  **Diskriminator:** Posterior bulbus = gastroduodenalis.",
+  "grup": "Duodenum",
+  "bahas": "A. gastroduodenalis berjalan tepat di posterior duodenum pars superior.",
+  "diskriminator": "Posterior bulbus = gastroduodenalis."
+ },
+ {
+  "n": 108,
+  "modul": "Anatomi · Duodenum",
+  "q": "Papilla duodeni major terletak di…",
+  "opsi": [
+   "Flexura duodenojejunalis",
+   "Pars descendens duodeni",
+   "Pars ascendens duodeni",
+   "Pars horizontalis duodeni",
+   "Pars superior duodeni"
+  ],
+  "kunciIndex": 1,
+  "kunci": "Pars descendens duodeni",
+  "rationale": "Ampulla Vater bermuara di papilla duodeni major pada pars descendens (L1–L3). Papilla ini juga menjadi batas foregut–midgut.  —  **Diskriminator:** Papilla = descendens.",
+  "grup": "Duodenum",
+  "bahas": "Ampulla Vater bermuara di papilla duodeni major pada pars descendens (L1–L3). Papilla ini juga menjadi batas foregut–midgut.",
+  "diskriminator": "Papilla = descendens."
+ },
+ {
+  "n": 109,
+  "modul": "Anatomi · Duodenum",
+  "q": "Duodenum pars horizontalis disilang di sebelah anterior oleh…",
+  "opsi": [
+   "Colon transversum saja",
+   "Ductus choledochus",
+   "A. gastroduodenalis",
+   "A. dan v. mesenterica superior",
+   "V. porta"
+  ],
+  "kunciIndex": 3,
+  "kunci": "A. dan v. mesenterica superior",
+  "rationale": "Pars horizontalis (L3) terletak di antara AMS di depan dan aorta di belakang, sehingga bisa terjepit (sindrom a. mesenterica superior).  —  **Diskriminator:** Horizontalis terjepit AMS–aorta.",
+  "grup": "Duodenum",
+  "bahas": "Pars horizontalis (L3) terletak di antara AMS di depan dan aorta di belakang, sehingga bisa terjepit (sindrom a. mesenterica superior).",
+  "diskriminator": "Horizontalis terjepit AMS–aorta."
+ },
+ {
+  "n": 110,
+  "modul": "Anatomi · Duodenum",
+  "q": "Bagian duodenum yang berakhir di flexura duodenojejunalis dan berhubungan dengan lig. Treitz adalah…",
+  "opsi": [
+   "Pars ascendens",
+   "Pars descendens",
+   "Pars horizontalis",
+   "Bulbus",
+   "Pars superior"
+  ],
+  "kunciIndex": 0,
+  "kunci": "Pars ascendens",
+  "rationale": "Pars ascendens naik dari L3 ke L2 dan berakhir di flexura duodenojejunalis yang digantung lig. suspensorium (Treitz).  —  **Diskriminator:** Treitz = ujung duodenum.",
+  "grup": "Duodenum",
+  "bahas": "Pars ascendens naik dari L3 ke L2 dan berakhir di flexura duodenojejunalis yang digantung lig. suspensorium (Treitz).",
+  "diskriminator": "Treitz = ujung duodenum."
+ },
+ {
+  "n": 111,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Ductus parotideus (Stensen) bermuara di vestibulum oris setinggi…",
+  "opsi": [
+   "Molar I bawah",
+   "Premolar I atas",
+   "Molar II atas",
+   "Incisivus bawah",
+   "Caruncula sublingualis"
+  ],
+  "kunciIndex": 2,
+  "kunci": "Molar II atas",
+  "rationale": "Ductus Stensen berjalan di superficial m. masseter, menembus m. buccinator, dan bermuara di vestibulum setinggi molar II atas.  —  **Diskriminator:** Parotis = molar II ATAS.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "Ductus Stensen berjalan di superficial m. masseter, menembus m. buccinator, dan bermuara di vestibulum setinggi molar II atas.",
+  "diskriminator": "Parotis = molar II ATAS."
+ },
+ {
+  "n": 112,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Lesi n. hypoglossus perifer kanan menyebabkan lidah saat dijulurkan…",
+  "opsi": [
+   "Menyimpang ke kanan (sisi lesi)",
+   "Tidak dapat dijulurkan sama sekali",
+   "Bergetar tanpa deviasi",
+   "Menyimpang ke kiri (sisi sehat)",
+   "Tetap lurus"
+  ],
+  "kunciIndex": 0,
+  "kunci": "Menyimpang ke kanan (sisi lesi)",
+  "rationale": "M. genioglossus mendorong lidah ke depan-medial. Bila sisi kanan lumpuh, genioglossus kiri yang masih bekerja mendorong lidah ke kanan.  —  **Diskriminator:** Lidah menunjuk ke sisi lesi XII.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "M. genioglossus mendorong lidah ke depan-medial. Bila sisi kanan lumpuh, genioglossus kiri yang masih bekerja mendorong lidah ke kanan.",
+  "diskriminator": "Lidah menunjuk ke sisi lesi XII."
+ },
+ {
+  "n": 113,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Otot lidah yang TIDAK dipersarafi n. hypoglossus adalah…",
+  "opsi": [
+   "M. styloglossus",
+   "M. hyoglossus",
+   "M. longitudinalis superior",
+   "M. genioglossus",
+   "M. palatoglossus"
+  ],
+  "kunciIndex": 4,
+  "kunci": "M. palatoglossus",
+  "rationale": "Semua otot lidah intrinsik dan ekstrinsik dipersarafi n. XII, kecuali m. palatoglossus yang dipersarafi n. X (plexus pharyngeus).  —  **Diskriminator:** Palato- = ikut palatum = n. X.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "Semua otot lidah intrinsik dan ekstrinsik dipersarafi n. XII, kecuali m. palatoglossus yang dipersarafi n. X (plexus pharyngeus).",
+  "diskriminator": "Palato- = ikut palatum = n. X."
+ },
+ {
+  "n": 114,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Pengecapan 2/3 anterior lidah dihantarkan oleh…",
+  "opsi": [
+   "N. lingualis (V3) sendiri",
+   "Chorda tympani (n. VII) melalui n. lingualis",
+   "N. hypoglossus",
+   "N. glossopharyngeus",
+   "N. laryngeus internus"
+  ],
+  "kunciIndex": 1,
+  "kunci": "Chorda tympani (n. VII) melalui n. lingualis",
+  "rationale": "Sensibilitas umum 2/3 anterior lewat n. lingualis (V3), sedangkan pengecapannya lewat chorda tympani (VII) yang menumpang n. lingualis. 1/3 posterior keduanya lewat n. IX.  —  **Diskriminator:** Umum = V3, kecap = VII (2/3 anterior).",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "Sensibilitas umum 2/3 anterior lewat n. lingualis (V3), sedangkan pengecapannya lewat chorda tympani (VII) yang menumpang n. lingualis. 1/3 posterior keduanya lewat n. IX.",
+  "diskriminator": "Umum = V3, kecap = VII (2/3 anterior)."
+ },
+ {
+  "n": 115,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Papilla lidah yang TIDAK mengandung kuncup kecap adalah…",
+  "opsi": [
+   "Semua papilla mengandung kuncup kecap",
+   "Papillae filiformes",
+   "Papillae fungiformes",
+   "Papillae vallatae",
+   "Papillae foliatae"
+  ],
+  "kunciIndex": 1,
+  "kunci": "Papillae filiformes",
+  "rationale": "Papillae filiformes paling banyak tetapi tidak berisi taste buds dan berfungsi mekanis. Semua papilla lain mengandung kuncup kecap.  —  **Diskriminator:** Filiformes = banyak tapi tanpa kecap.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "Papillae filiformes paling banyak tetapi tidak berisi taste buds dan berfungsi mekanis. Semua papilla lain mengandung kuncup kecap.",
+  "diskriminator": "Filiformes = banyak tapi tanpa kecap."
+ },
+ {
+  "n": 116,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Otot palatum molle yang dipersarafi n. mandibularis (V3), bukan plexus pharyngeus, adalah…",
+  "opsi": [
+   "M. uvulae",
+   "M. levator veli palatini",
+   "M. palatopharyngeus",
+   "M. palatoglossus",
+   "M. tensor veli palatini"
+  ],
+  "kunciIndex": 4,
+  "kunci": "M. tensor veli palatini",
+  "rationale": "Semua otot palatum molle dipersarafi plexus pharyngeus (X), kecuali m. tensor veli palatini oleh V3.  —  **Diskriminator:** Tensor = trigeminus.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "Semua otot palatum molle dipersarafi plexus pharyngeus (X), kecuali m. tensor veli palatini oleh V3.",
+  "diskriminator": "Tensor = trigeminus."
+ },
+ {
+  "n": 117,
+  "modul": "Anatomi · Glandulae & Dentes",
+  "q": "Jumlah gigi permanen dan rumus per kuadrannya adalah…",
+  "opsi": [
+   "20; I2 C1 M2",
+   "28; I2 C1 P2 M2",
+   "32; I2 C1 P2 M3",
+   "24; I2 C1 P1 M2",
+   "32; I2 C1 P3 M2"
+  ],
+  "kunciIndex": 2,
+  "kunci": "32; I2 C1 P2 M3",
+  "rationale": "Gigi permanen 32 (I2 C1 P2 M3 per kuadran); gigi decidui 20 (I2 C1 M2, tanpa premolar).  —  **Diskriminator:** Decidui tidak punya premolar.",
+  "grup": "Glandulae & Dentes",
+  "bahas": "Gigi permanen 32 (I2 C1 P2 M3 per kuadran); gigi decidui 20 (I2 C1 M2, tanpa premolar).",
+  "diskriminator": "Decidui tidak punya premolar."
+ },
+ {
+  "n": 118,
+  "modul": "Anatomi · Glandulae & Dentes",
+  "q": "Gigi rahang bawah dipersarafi oleh…",
+  "opsi": [
+   "Nn. alveolares superiores (V2)",
+   "N. facialis",
+   "N. buccalis (V2)",
+   "N. alveolaris inferior (V3)",
+   "N. lingualis"
+  ],
+  "kunciIndex": 3,
+  "kunci": "N. alveolaris inferior (V3)",
+  "rationale": "Gigi atas oleh nn. alveolares superiores (V2), gigi bawah oleh n. alveolaris inferior (V3).  —  **Diskriminator:** Atas = V2, bawah = V3.",
+  "grup": "Glandulae & Dentes",
+  "bahas": "Gigi atas oleh nn. alveolares superiores (V2), gigi bawah oleh n. alveolaris inferior (V3).",
+  "diskriminator": "Atas = V2, bawah = V3."
+ },
+ {
+  "n": 119,
+  "modul": "Anatomi · Glandulae & Dentes",
+  "q": "Ductus Wharton adalah saluran keluar glandula…",
+  "opsi": [
+   "Sublingualis",
+   "Submandibularis",
+   "Lacrimalis",
+   "Glandulae salivariae minores",
+   "Parotis"
+  ],
+  "kunciIndex": 1,
+  "kunci": "Submandibularis",
+  "rationale": "Ductus Wharton dari glandula submandibularis bermuara di dasar mulut di samping frenulum linguae. Parotis lewat ductus Stensen; sublingualis lewat banyak ductus kecil.  —  **Diskriminator:** Wharton = submandibularis.",
+  "grup": "Glandulae & Dentes",
+  "bahas": "Ductus Wharton dari glandula submandibularis bermuara di dasar mulut di samping frenulum linguae. Parotis lewat ductus Stensen; sublingualis lewat banyak ductus kecil.",
+  "diskriminator": "Wharton = submandibularis."
+ },
+ {
+  "n": 120,
+  "modul": "Anatomi · Pharynx",
+  "q": "Lokasi tersering karsinoma nasopharynx adalah…",
+  "opsi": [
+   "Vallecula epiglottica",
+   "Isthmus faucium",
+   "Recessus pharyngeus (fossa Rosenmüller)",
+   "Tonsilla palatina",
+   "Recessus piriformis"
+  ],
+  "kunciIndex": 2,
+  "kunci": "Recessus pharyngeus (fossa Rosenmüller)",
+  "rationale": "Recessus pharyngeus (fossa Rosenmüller) di nasopharynx adalah lokasi tersering karsinoma nasopharynx. Recessus piriformis di laryngopharynx adalah tempat duri ikan tersangkut.  —  **Diskriminator:** Rosenmüller = nasopharynx = KNF.",
+  "grup": "Pharynx",
+  "bahas": "Recessus pharyngeus (fossa Rosenmüller) di nasopharynx adalah lokasi tersering karsinoma nasopharynx. Recessus piriformis di laryngopharynx adalah tempat duri ikan tersangkut.",
+  "diskriminator": "Rosenmüller = nasopharynx = KNF."
+ },
+ {
+  "n": 121,
+  "modul": "Anatomi · Pharynx",
+  "q": "Otot pharynx yang dipersarafi n. glossopharyngeus (IX), bukan plexus pharyngeus, adalah…",
+  "opsi": [
+   "M. stylopharyngeus",
+   "M. salpingopharyngeus",
+   "M. constrictor pharyngis superior",
+   "M. palatopharyngeus",
+   "M. constrictor pharyngis inferior"
+  ],
+  "kunciIndex": 0,
+  "kunci": "M. stylopharyngeus",
+  "rationale": "Semua otot pharynx dipersarafi plexus pharyngeus (X), kecuali m. stylopharyngeus oleh n. IX.  —  **Diskriminator:** Stylo- = IX.",
+  "grup": "Pharynx",
+  "bahas": "Semua otot pharynx dipersarafi plexus pharyngeus (X), kecuali m. stylopharyngeus oleh n. IX.",
+  "diskriminator": "Stylo- = IX."
+ },
+ {
+  "n": 122,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Cavitas oris membuka ke oropharynx melalui isthmus faucium yang terletak setinggi",
+  "opsi": [
+   "Vertebra C6",
+   "Vertebra C4",
+   "Vertebra C2",
+   "Os hyoideum",
+   "Vertebra T1"
+  ],
+  "kunciIndex": 2,
+  "kunci": "Vertebra C2",
+  "rationale": "PPT Naufal: isthmus oropharyngealis (faucium) setinggi VC2. C6 adalah batas bawah pharynx, bukan isthmus.  —  **Diskriminator:** Isthmus faucium = C2; ujung pharynx = C6.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "PPT Naufal: isthmus oropharyngealis (faucium) setinggi VC2. C6 adalah batas bawah pharynx, bukan isthmus.",
+  "diskriminator": "Isthmus faucium = C2; ujung pharynx = C6."
+ },
+ {
+  "n": 123,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Batas dorsal (posterior) vestibulum oris adalah",
+  "opsi": [
+   "Palatum durum",
+   "Labium superius et inferius",
+   "Processus alveolaris maxillae et mandibulae dan arcus dentalis",
+   "Diaphragma oris",
+   "Isthmus faucium"
+  ],
+  "kunciIndex": 2,
+  "kunci": "Processus alveolaris maxillae et mandibulae dan arcus dentalis",
+  "rationale": "Vestibulum terjepit di antara bibir/pipi (anterolateral) dan gigi–processus alveolaris (dorsal). Isthmus faucium adalah batas posterior cavitas oris propria.  —  **Diskriminator:** Vestibulum: luar = bibir, dalam = gigi.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "Vestibulum terjepit di antara bibir/pipi (anterolateral) dan gigi–processus alveolaris (dorsal). Isthmus faucium adalah batas posterior cavitas oris propria.",
+  "diskriminator": "Vestibulum: luar = bibir, dalam = gigi."
+ },
+ {
+  "n": 124,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Dasar (basis) cavitas oris propria dibentuk oleh",
+  "opsi": [
+   "Palatum molle",
+   "Diaphragma oris (m. mylohyoideus) dan lidah",
+   "Isthmus faucium",
+   "Corpus adiposum buccae",
+   "Processus alveolaris mandibulae"
+  ],
+  "kunciIndex": 1,
+  "kunci": "Diaphragma oris (m. mylohyoideus) dan lidah",
+  "rationale": "Cavitas oris propria: atap palatum durum & molle, dasar diaphragma oris + lingua, anterolateral processus alveolaris, posterior isthmus faucium.  —  **Diskriminator:** Atap = palatum, lantai = diaphragma oris.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "Cavitas oris propria: atap palatum durum & molle, dasar diaphragma oris + lingua, anterolateral processus alveolaris, posterior isthmus faucium.",
+  "diskriminator": "Atap = palatum, lantai = diaphragma oris."
+ },
+ {
+  "n": 125,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Palatum durum 1/3 posterior dibentuk oleh",
+  "opsi": [
+   "Vomer",
+   "Processus palatinus maxillae",
+   "Lamina horizontalis os palatinum",
+   "Lamina perpendicularis os ethmoidale",
+   "Os sphenoidale"
+  ],
+  "kunciIndex": 2,
+  "kunci": "Lamina horizontalis os palatinum",
+  "rationale": "2/3 anterior processus palatinus maxillae, 1/3 posterior lamina horizontalis os palatinum.  —  **Diskriminator:** Depan maxilla, belakang palatinum.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "2/3 anterior processus palatinus maxillae, 1/3 posterior lamina horizontalis os palatinum.",
+  "diskriminator": "Depan maxilla, belakang palatinum."
+ },
+ {
+  "n": 126,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Saraf yang menginervasi palatum durum dan gingiva sampai premolar, keluar melalui foramen palatinum majus, adalah",
+  "opsi": [
+   "N. palatinus major (cabang n. maxillaris)",
+   "N. nasopalatinus",
+   "N. lingualis",
+   "N. palatinus minor",
+   "N. alveolaris inferior"
+  ],
+  "kunciIndex": 0,
+  "kunci": "N. palatinus major (cabang n. maxillaris)",
+  "rationale": "N. palatinus major → palatum durum; n. palatinus minor → palatum molle; n. nasopalatinus lewat fossa incisiva → gingiva incisivus–caninus. Ketiganya dari V2.  —  **Diskriminator:** Major = durum; minor = molle; nasopalatinus = depan.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "N. palatinus major → palatum durum; n. palatinus minor → palatum molle; n. nasopalatinus lewat fossa incisiva → gingiva incisivus–caninus. Ketiganya dari V2.",
+  "diskriminator": "Major = durum; minor = molle; nasopalatinus = depan."
+ },
+ {
+  "n": 127,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Papilla lidah terbesar, berjumlah 8–12, tersusun seperti huruf V di depan sulcus terminalis adalah",
+  "opsi": [
+   "Papillae fungiformes",
+   "Papillae vallatae",
+   "Papillae foliatae",
+   "Tonsilla lingualis",
+   "Papillae filiformes"
+  ],
+  "kunciIndex": 1,
+  "kunci": "Papillae vallatae",
+  "rationale": "Vallatae (dulu circumvallatae) terbesar dan mengandung kuncup kecap. Filiformes terkecil dan terbanyak, berkornifikasi.  —  **Diskriminator:** V di depan sulcus = vallatae.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "Vallatae (dulu circumvallatae) terbesar dan mengandung kuncup kecap. Filiformes terkecil dan terbanyak, berkornifikasi.",
+  "diskriminator": "V di depan sulcus = vallatae."
+ },
+ {
+  "n": 128,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Cekungan di lateral plica glossoepiglottica lateralis yang sering menjadi tempat tersangkutnya benda TAJAM yang tertelan adalah",
+  "opsi": [
+   "Vallecula epiglottica",
+   "Fossa tonsillaris",
+   "Fossa (recessus) piriformis",
+   "Foramen caecum",
+   "Sulcus terminalis"
+  ],
+  "kunciIndex": 2,
+  "kunci": "Fossa (recessus) piriformis",
+  "rationale": "PPT Naufal: vallecula untuk benda tumpul, fossa piriformis (lateral plica glossoepiglottica lateralis) untuk benda tajam seperti duri ikan.  —  **Diskriminator:** Tumpul = vallecula; tajam = piriformis.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "PPT Naufal: vallecula untuk benda tumpul, fossa piriformis (lateral plica glossoepiglottica lateralis) untuk benda tajam seperti duri ikan.",
+  "diskriminator": "Tumpul = vallecula; tajam = piriformis."
+ },
+ {
+  "n": 129,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Foramen caecum linguae merupakan sisa dari",
+  "opsi": [
+   "Membrana buccopharyngea",
+   "Ductus thyroglossus",
+   "Ductus venosus",
+   "Ductus Wharton",
+   "Sinus cervicalis"
+  ],
+  "kunciIndex": 1,
+  "kunci": "Ductus thyroglossus",
+  "rationale": "Foramen caecum di tengah/apex sulcus terminalis adalah sisa ductus thyroglossus, jalur turunnya glandula thyroidea.  —  **Diskriminator:** Caecum lidah = jalan thyroid.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "Foramen caecum di tengah/apex sulcus terminalis adalah sisa ductus thyroglossus, jalur turunnya glandula thyroidea.",
+  "diskriminator": "Caecum lidah = jalan thyroid."
+ },
+ {
+  "n": 130,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Sensorik umum dan pengecapan daerah lidah dekat epiglottis dipersarafi oleh",
+  "opsi": [
+   "N. hypoglossus",
+   "N. lingualis",
+   "N. glossopharyngeus",
+   "R. internus n. laryngeus superior (n. X)",
+   "Chorda tympani"
+  ],
+  "kunciIndex": 3,
+  "kunci": "R. internus n. laryngeus superior (n. X)",
+  "rationale": "Sensorik umum: V3, IX, X; pengecapan: VII, IX, X. Area dekat epiglottis = r. internus n. laryngeus superior (X).  —  **Diskriminator:** Makin ke belakang: V3/VII → IX → X.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "Sensorik umum: V3, IX, X; pengecapan: VII, IX, X. Area dekat epiglottis = r. internus n. laryngeus superior (X).",
+  "diskriminator": "Makin ke belakang: V3/VII → IX → X."
+ },
+ {
+  "n": 131,
+  "modul": "Anatomi · Cavum Oris & Lingua",
+  "q": "Kelainan bawaan berupa palatum yang tidak menutup sehingga susu bayi mengalir ke hidung disebut",
+  "opsi": [
+   "Atresia ani",
+   "Stenosis pylorus",
+   "GERD",
+   "Cleft palate (palatoschisis)",
+   "Hernia hiatus"
+  ],
+  "kunciIndex": 3,
+  "kunci": "Cleft palate (palatoschisis)",
+  "rationale": "Korelasi klinis PPT Naufal: celah palatum durum membuat susu masuk ke cavum nasi; harus segera dikoreksi.  —  **Diskriminator:** Palatum = pemisah mulut–hidung.",
+  "grup": "Cavum Oris & Lingua",
+  "bahas": "Korelasi klinis PPT Naufal: celah palatum durum membuat susu masuk ke cavum nasi; harus segera dikoreksi.",
+  "diskriminator": "Palatum = pemisah mulut–hidung."
+ },
+ {
+  "n": 132,
+  "modul": "Anatomi · Glandulae & Dentes",
+  "q": "Glandula submandibularis bermuara melalui ductus Wharton ke",
+  "opsi": [
+   "Plica sublingualis",
+   "Papilla ductus parotidei di vestibulum",
+   "Caruncula sublingualis di samping frenulum linguae",
+   "Foramen caecum",
+   "Vallecula epiglottica"
+  ],
+  "kunciIndex": 2,
+  "kunci": "Caruncula sublingualis di samping frenulum linguae",
+  "rationale": "Wharton → caruncula sublingualis (kedua sisi frenulum, di belakang gigi seri, cavitas oris propria). Sublingualis → plica sublingualis. Parotis → papilla ductus parotidei di vestibulum.  —  **Diskriminator:** Wharton = caruncula; sublingualis = plica.",
+  "grup": "Glandulae & Dentes",
+  "bahas": "Wharton → caruncula sublingualis (kedua sisi frenulum, di belakang gigi seri, cavitas oris propria). Sublingualis → plica sublingualis. Parotis → papilla ductus parotidei di vestibulum.",
+  "diskriminator": "Wharton = caruncula; sublingualis = plica."
+ },
+ {
+  "n": 133,
+  "modul": "Anatomi · Glandulae & Dentes",
+  "q": "Batas posterior glandula parotis adalah",
+  "opsi": [
+   "Meatus acusticus externus di sisi inferior",
+   "M. sternocleidomastoideus",
+   "Arcus zygomaticus",
+   "Corpus mandibulae",
+   "Ramus mandibulae"
+  ],
+  "kunciIndex": 1,
+  "kunci": "M. sternocleidomastoideus",
+  "rationale": "Batas parotis: anterior ramus mandibulae/m. masseter, posterior m. sternocleidomastoideus (dan processus mastoideus), superior arcus zygomaticus.  **Catatan:** PPT Naufal menulis superior = meatus acusticus externus dan inferior = arcus zygomaticus. Arcus zygomaticus berada di ATAS parotis, sehingga yang dipakai di sini hanya batas anterior–posterior yang tidak bermasalah.  —  **Diskriminator:** Zygoma di atas, SCM di belakang.",
+  "grup": "Glandulae & Dentes",
+  "bahas": "Batas parotis: anterior ramus mandibulae/m. masseter, posterior m. sternocleidomastoideus (dan processus mastoideus), superior arcus zygomaticus.  **Catatan:** PPT Naufal menulis superior = meatus acusticus externus dan inferior = arcus zygomaticus. Arcus zygomaticus berada di ATAS parotis, sehingga yang dipakai di sini hanya batas anterior–posterior yang tidak bermasalah.",
+  "diskriminator": "Zygoma di atas, SCM di belakang."
+ },
+ {
+  "n": 134,
+  "modul": "Anatomi · Pharynx",
+  "q": "Oropharynx membentang setinggi",
+  "opsi": [
+   "Basis cranii",
+   "Vertebra C2–C3",
+   "Vertebra C1",
+   "Vertebra C4–C6",
+   "Vertebra C6–T1"
+  ],
+  "kunciIndex": 1,
+  "kunci": "Vertebra C2–C3",
+  "rationale": "PPT Naufal: oropharynx setinggi VC2–3, berhubungan dengan cavitas oris lewat isthmus faucium.  —  **Diskriminator:** Oro = setinggi mulut (C2–C3).",
+  "grup": "Pharynx",
+  "bahas": "PPT Naufal: oropharynx setinggi VC2–3, berhubungan dengan cavitas oris lewat isthmus faucium.",
+  "diskriminator": "Oro = setinggi mulut (C2–C3)."
+ },
+ {
+  "n": 135,
+  "modul": "Anatomi · Pharynx",
+  "q": "Annulus Waldeyer bagian lateral dibentuk oleh",
+  "opsi": [
+   "Tonsilla pharyngea (adenoid)",
+   "Tonsilla lingualis",
+   "Tonsilla tubaria",
+   "Nodus jugulodigastricus",
+   "Tonsilla palatina"
+  ],
+  "kunciIndex": 4,
+  "kunci": "Tonsilla palatina",
+  "rationale": "Cranial tonsilla pharyngea, lateral tonsilla palatina, caudal tonsilla lingualis, ditambah tonsilla tubaria.  —  **Diskriminator:** Lateral = palatina (amandel).",
+  "grup": "Pharynx",
+  "bahas": "Cranial tonsilla pharyngea, lateral tonsilla palatina, caudal tonsilla lingualis, ditambah tonsilla tubaria.",
+  "diskriminator": "Lateral = palatina (amandel)."
+ },
+ {
+  "n": 136,
+  "modul": "Anatomi · Oesophagus",
+  "q": "Pars thoracalis oesophagus terbentang setinggi",
+  "opsi": [
+   "T10–T11",
+   "C6–T1",
+   "T1–T10",
+   "C6–T4",
+   "T4–T12"
+  ],
+  "kunciIndex": 2,
+  "kunci": "T1–T10",
+  "rationale": "Cervicalis C6–T1, thoracalis T1–T10, abdominalis T10–T11. Oesophagus terletak posterior trachea.  —  **Diskriminator:** Thoracalis = dari T1 sampai hiatus T10.",
+  "grup": "Oesophagus",
+  "bahas": "Cervicalis C6–T1, thoracalis T1–T10, abdominalis T10–T11. Oesophagus terletak posterior trachea.",
+  "diskriminator": "Thoracalis = dari T1 sampai hiatus T10."
+ },
+ {
+  "n": 137,
+  "modul": "Anatomi · Oesophagus",
+  "q": "Angustia superior oesophagus terletak setinggi",
+  "opsi": [
+   "T10, pada hiatus oesophageus",
+   "C2, pada isthmus faucium",
+   "T5, pada bronchus sinister",
+   "T4, pada arcus aortae",
+   "C6, pada m. cricopharyngeus dan cartilago cricoidea"
+  ],
+  "kunciIndex": 4,
+  "kunci": "C6, pada m. cricopharyngeus dan cartilago cricoidea",
+  "rationale": "PPT Naufal membagi tiga angustia: superior C6 (cricopharyngeus), media T4/5 (arcus aortae + bronchus), inferior T10 (hiatus).  —  **Diskriminator:** Superior–media–inferior = C6–T4/5–T10.",
+  "grup": "Oesophagus",
+  "bahas": "PPT Naufal membagi tiga angustia: superior C6 (cricopharyngeus), media T4/5 (arcus aortae + bronchus), inferior T10 (hiatus).",
+  "diskriminator": "Superior–media–inferior = C6–T4/5–T10."
+ },
+ {
+  "n": 138,
+  "modul": "Anatomi · Oesophagus",
+  "q": "Angustia media oesophagus disebabkan oleh persilangan",
+  "opsi": [
+   "Hiatus oesophageus",
+   "Arcus aortae dan bronchus principalis dexter",
+   "Arcus aortae dan bronchus principalis sinister",
+   "V. azygos dan trachea",
+   "Atrium dextrum"
+  ],
+  "kunciIndex": 2,
+  "kunci": "Arcus aortae dan bronchus principalis sinister",
+  "rationale": "Oesophagus berada di kiri-belakang trachea dan disilang arcus aortae serta bronchus principalis sinister.  **Catatan:** PPT Naufal menulis bronchus dexter; PDF dosen dan literatur menyebut sinister.  —  **Diskriminator:** Aorta dan bronchus yang menyilang sama-sama di KIRI.",
+  "grup": "Oesophagus",
+  "bahas": "Oesophagus berada di kiri-belakang trachea dan disilang arcus aortae serta bronchus principalis sinister.  **Catatan:** PPT Naufal menulis bronchus dexter; PDF dosen dan literatur menyebut sinister.",
+  "diskriminator": "Aorta dan bronchus yang menyilang sama-sama di KIRI."
+ },
+ {
+  "n": 139,
+  "modul": "Anatomi · Oesophagus",
+  "q": "Struktur yang melewati hiatus oesophageus bersama oesophagus adalah",
+  "opsi": [
+   "N. phrenicus dexter",
+   "Aorta",
+   "V. azygos",
+   "Truncus vagalis",
+   "Ductus thoracicus"
+  ],
+  "kunciIndex": 3,
+  "kunci": "Truncus vagalis",
+  "rationale": "Hiatus oesophageus (T10) dilewati oesophagus dan truncus vagalis anterior/posterior. Aorta, ductus thoracicus, dan v. azygos lewat hiatus aorticus (T12).  —  **Diskriminator:** T10 = oesophagus + vagus.",
+  "grup": "Oesophagus",
+  "bahas": "Hiatus oesophageus (T10) dilewati oesophagus dan truncus vagalis anterior/posterior. Aorta, ductus thoracicus, dan v. azygos lewat hiatus aorticus (T12).",
+  "diskriminator": "T10 = oesophagus + vagus."
+ },
+ {
+  "n": 140,
+  "modul": "Anatomi · Oesophagus",
+  "q": "Penyakit refluks cairan lambung ke oesophagus akibat kelemahan lower esophageal sphincter disebut",
+  "opsi": [
+   "GERD",
+   "Akalasia",
+   "Divertikel Zenker",
+   "Stenosis pylorus",
+   "Ulkus duodeni"
+  ],
+  "kunciIndex": 0,
+  "kunci": "GERD",
+  "rationale": "GERD: nyeri retrosternal dan regurgitasi; penyebabnya LES lemah, hernia hiatus, atau inflamasi.  —  **Diskriminator:** Refluks = LES gagal.",
+  "grup": "Oesophagus",
+  "bahas": "GERD: nyeri retrosternal dan regurgitasi; penyebabnya LES lemah, hernia hiatus, atau inflamasi.",
+  "diskriminator": "Refluks = LES gagal."
+ },
+ {
+  "n": 141,
+  "modul": "Anatomi · Gaster",
+  "q": "Orificium cardiacum dan orificium pyloricum gaster secara berurutan setinggi",
+  "opsi": [
+   "T11 dan L1",
+   "L1 dan L3",
+   "T8 dan T12",
+   "T12 dan L2",
+   "T10 dan L3"
+  ],
+  "kunciIndex": 0,
+  "kunci": "T11 dan L1",
+  "rationale": "Orificium cardiacum setinggi VTh XI, orificium pyloricum VL I.  —  **Diskriminator:** Cardia T11, pylorus L1.",
+  "grup": "Gaster",
+  "bahas": "Orificium cardiacum setinggi VTh XI, orificium pyloricum VL I.",
+  "diskriminator": "Cardia T11, pylorus L1."
+ },
+ {
+  "n": 142,
+  "modul": "Anatomi · Gaster",
+  "q": "Lapisan tunica muscularis gaster yang membentuk canalis gastricus Waldeyer di sepanjang curvatura minor adalah",
+  "opsi": [
+   "Muscularis mucosae",
+   "Tunica serosa",
+   "Stratum circulare",
+   "Stratum longitudinale",
+   "Stratum obliquum"
+  ],
+  "kunciIndex": 4,
+  "kunci": "Stratum obliquum",
+  "rationale": "Gaster punya tiga lapis otot: longitudinal (luar), circular (membentuk m. sphincter pyloricus), obliquum (dalam, membentuk canalis gastricus di curvatura minor, jalur cairan langsung ke pylorus).  —  **Diskriminator:** Tiga lapis otot = khas gaster; obliquum = canalis gastricus.",
+  "grup": "Gaster",
+  "bahas": "Gaster punya tiga lapis otot: longitudinal (luar), circular (membentuk m. sphincter pyloricus), obliquum (dalam, membentuk canalis gastricus di curvatura minor, jalur cairan langsung ke pylorus).",
+  "diskriminator": "Tiga lapis otot = khas gaster; obliquum = canalis gastricus."
+ },
+ {
+  "n": 143,
+  "modul": "Anatomi · Gaster",
+  "q": "Lipatan mukosa pada corpus gastricum disebut",
+  "opsi": [
+   "Plicae circulares",
+   "Haustra",
+   "Rugae (plicae gastricae)",
+   "Plicae semilunares",
+   "Columnae anales"
+  ],
+  "kunciIndex": 2,
+  "kunci": "Rugae (plicae gastricae)",
+  "rationale": "Rugae gastricae khas gaster; plicae circulares usus halus; haustra dan plicae semilunares colon.  —  **Diskriminator:** Rugae = gaster.",
+  "grup": "Gaster",
+  "bahas": "Rugae gastricae khas gaster; plicae circulares usus halus; haustra dan plicae semilunares colon.",
+  "diskriminator": "Rugae = gaster."
+ },
+ {
+  "n": 144,
+  "modul": "Anatomi · Gaster",
+  "q": "Ligamentum berikut yang merupakan bagian omentum majus adalah",
+  "opsi": [
+   "Lig. hepatogastricum",
+   "Lig. coronarium",
+   "Lig. falciforme",
+   "Lig. hepatoduodenale",
+   "Lig. gastrocolicum"
+  ],
+  "kunciIndex": 4,
+  "kunci": "Lig. gastrocolicum",
+  "rationale": "Omentum majus: lig. gastrocolicum, gastrophrenicum, gastrolienale, splenorenale. Omentum minus: lig. hepatoduodenale dan hepatogastricum.  —  **Diskriminator:** Gastro-ke-bawah/kiri = majus; hepato- = minus.",
+  "grup": "Gaster",
+  "bahas": "Omentum majus: lig. gastrocolicum, gastrophrenicum, gastrolienale, splenorenale. Omentum minus: lig. hepatoduodenale dan hepatogastricum.",
+  "diskriminator": "Gastro-ke-bawah/kiri = majus; hepato- = minus."
+ },
+ {
+  "n": 145,
+  "modul": "Anatomi · Gaster",
+  "q": "V. gastroomentalis dextra bermuara ke",
+  "opsi": [
+   "V. cava inferior",
+   "V. portae langsung",
+   "V. mesenterica superior",
+   "V. gastrica sinistra",
+   "V. lienalis"
+  ],
+  "kunciIndex": 2,
+  "kunci": "V. mesenterica superior",
+  "rationale": "V. gastrica dextra et sinistra langsung ke v. porta; v. gastricae breves dan gastroomentalis sinistra ke v. lienalis; v. gastroomentalis dextra ke v. mesenterica superior.  —  **Diskriminator:** Vena kanan-bawah → SMV.",
+  "grup": "Gaster",
+  "bahas": "V. gastrica dextra et sinistra langsung ke v. porta; v. gastricae breves dan gastroomentalis sinistra ke v. lienalis; v. gastroomentalis dextra ke v. mesenterica superior.",
+  "diskriminator": "Vena kanan-bawah → SMV."
+ },
+ {
+  "n": 146,
+  "modul": "Anatomi · Gaster",
+  "q": "Pengaruh n. vagus terhadap m. sphincter pyloricus adalah",
+  "opsi": [
+   "Atrofi",
+   "Inhibisi (relaksasi)",
+   "Kontraksi tonik",
+   "Tidak ada pengaruh",
+   "Hipertrofi"
+  ],
+  "kunciIndex": 1,
+  "kunci": "Inhibisi (relaksasi)",
+  "rationale": "PPT Naufal: m. sphincter pyloricus mendapat impuls inhibisi (relaksasi) dari n. vagus, sehingga pengosongan lambung lancar.  —  **Diskriminator:** Parasimpatis = gerak maju, sphincter membuka.",
+  "grup": "Gaster",
+  "bahas": "PPT Naufal: m. sphincter pyloricus mendapat impuls inhibisi (relaksasi) dari n. vagus, sehingga pengosongan lambung lancar.",
+  "diskriminator": "Parasimpatis = gerak maju, sphincter membuka."
+ },
+ {
+  "n": 147,
+  "modul": "Anatomi · Duodenum",
+  "q": "Sudut pertemuan duodenum pars superior dan pars descendens disebut",
+  "opsi": [
+   "Bulbus duodeni",
+   "Flexura coli dextra",
+   "Flexura duodeni inferior",
+   "Flexura duodeni superior",
+   "Flexura duodenojejunalis"
+  ],
+  "kunciIndex": 3,
+  "kunci": "Flexura duodeni superior",
+  "rationale": "Superior–descendens = flexura duodeni superior; inferior–ascendens = flexura duodeni inferior; ascendens–jejunum = flexura duodenojejunalis.  —  **Diskriminator:** Nama flexura = dua pars yang bertemu.",
+  "grup": "Duodenum",
+  "bahas": "Superior–descendens = flexura duodeni superior; inferior–ascendens = flexura duodeni inferior; ascendens–jejunum = flexura duodenojejunalis.",
+  "diskriminator": "Nama flexura = dua pars yang bertemu."
+ },
+ {
+  "n": 148,
+  "modul": "Anatomi · Duodenum",
+  "q": "Arteri yang memperdarahi duodenum pars superior dan merupakan cabang a. gastroduodenalis adalah",
+  "opsi": [
+   "A. pancreaticoduodenalis inferior",
+   "A. gastrica sinistra",
+   "A. lienalis",
+   "A. colica media",
+   "A. supraduodenalis (Wilkie)"
+  ],
+  "kunciIndex": 4,
+  "kunci": "A. supraduodenalis (Wilkie)",
+  "rationale": "A. gastroduodenalis memberi a. supraduodenalis (Wilkie), a. retroduodenalis, dan a. pancreaticoduodenalis superior (anterior & posterior). Pancreaticoduodenalis inferior dari AMS.  —  **Diskriminator:** Supra-/retro-duodenalis = gastroduodenalis.",
+  "grup": "Duodenum",
+  "bahas": "A. gastroduodenalis memberi a. supraduodenalis (Wilkie), a. retroduodenalis, dan a. pancreaticoduodenalis superior (anterior & posterior). Pancreaticoduodenalis inferior dari AMS.",
+  "diskriminator": "Supra-/retro-duodenalis = gastroduodenalis."
+ },
+ {
+  "n": 149,
+  "modul": "Anatomi · Duodenum",
+  "q": "Papilla duodeni minor terletak kira-kira",
+  "opsi": [
+   "2–3 cm di atas papilla major",
+   "Di bulbus duodeni",
+   "Di flexura duodenojejunalis",
+   "2–3 cm di bawah papilla major",
+   "Di pars horizontalis"
+  ],
+  "kunciIndex": 0,
+  "kunci": "2–3 cm di atas papilla major",
+  "rationale": "Papilla minor (muara ductus Santorini) ±2–3 cm superior dari papilla major di pars descendens.  —  **Diskriminator:** Minor = di atas.",
+  "grup": "Duodenum",
+  "bahas": "Papilla minor (muara ductus Santorini) ±2–3 cm superior dari papilla major di pars descendens.",
+  "diskriminator": "Minor = di atas."
+ },
+ {
+  "n": 150,
+  "modul": "Anatomi · Pembuluh & Saraf",
+  "q": "Persarafan simpatis duodenum pars descendens, inferior, dan ascendens (midgut) dibawa oleh",
+  "opsi": [
+   "N. splanchnicus minor via plexus mesentericus",
+   "N. vagus",
+   "N. splanchnicus major via plexus coeliacus",
+   "Nn. splanchnici pelvici",
+   "Nn. splanchnici lumbales"
+  ],
+  "kunciIndex": 0,
+  "kunci": "N. splanchnicus minor via plexus mesentericus",
+  "rationale": "Pars superior duodeni (foregut) → splanchnicus major/plexus coeliacus; pars distal papilla (midgut) → splanchnicus minor/plexus mesentericus.  —  **Diskriminator:** Duodenum dibelah dua oleh papilla major.",
+  "grup": "Pembuluh & Saraf",
+  "bahas": "Pars superior duodeni (foregut) → splanchnicus major/plexus coeliacus; pars distal papilla (midgut) → splanchnicus minor/plexus mesentericus.",
+  "diskriminator": "Duodenum dibelah dua oleh papilla major."
  }
 ];

@@ -9,7 +9,7 @@
 <!--
   Panduan belajar anatomi Blok 1.3 (dinding abdomen, peritoneum, tractus digestivus, organa accessoria).
   Halaman mandiri: TIDAK memakai engine quiz di index.html. Soal latihannya ada di bank
-  ub-1-3-aslab dan ub-1-3-dosen, ditautkan dari bagian "Latihan".
+  ub-1-3-responsi-anat (+ naskah asli), ditautkan dari bagian "Latihan".
   Tidak ada gambar atlas di sini (repo public); semua skema digambar sendiri sebagai SVG/HTML.
   localStorage: tema dibaca dari "persiapan-ub.v1" (sama dengan index.html),
   checklist disimpan di "persiapan-ub.anatomi13.v1". Semua akses dibungkus try/catch.
@@ -215,9 +215,9 @@
 
 <div class="hero">
   <h2>Anatomi Dinding Abdomen, Tractus Digestivus &amp; Organa Accessoria</h2>
-  <p>Disusun dari tiga PPT asistensi (Zydane, Khai, Fatih) sebagai inti dan tiga PDF kuliah dosen sebagai pengayaan. Fokus: <b>responsi/OSPE</b>, dengan beberapa kasus klinis.</p>
+  <p>Disusun dari empat PPT asistensi (Zydane, Khai, Fatih, Naufal), tiga PDF kuliah dosen, dan urutannya diatur menurut bobot <b>46 soal responsi anatomi kakak tingkat</b>. Fokus: <b>responsi/OSPE</b>, dengan beberapa kasus klinis.</p>
   <nav class="toc" aria-label="Daftar isi">
-    <a href="#urutan">0 · Urutan belajar</a>
+    <a href="#urutan">0 · Peta bobot &amp; urutan</a>
     <a href="#kerangka">1 · Regio &amp; dinding</a>
     <a href="#inguinal">2 · Regio inguinalis</a>
     <a href="#peritoneum">3 · Peritoneum</a>
@@ -229,7 +229,7 @@
     <a href="#bilier">9 · VF &amp; pancreas</a>
     <a href="#lien">10 · Lien</a>
     <a href="#porta">11 · Vena porta</a>
-    <a href="#superior">12 · Tractus superior (dosen)</a>
+    <a href="#superior">12 · Cavum oris → duodenum</a>
     <a href="#klinis">13 · Kasus</a>
     <a href="#koreksi">Koreksi sumber</a>
     <a href="#latihan">Latihan soal</a>
@@ -238,51 +238,71 @@
 
 <div class="co">
   <b class="t">Cara memakai halaman ini</b>
-  Label <span class="b bA">ASLAB</span> berarti materinya ada di PPT asistensi; ini inti untuk responsi. <span class="b bD">DOSEN</span> berarti tambahan dari PDF kuliah. <span class="b bT">LIT</span> berarti aku tambahkan dari literatur standar (Moore/Netter) untuk menutup lubang, dan tidak tertulis di kedua sumber. <span class="b bP">PRIORITAS 2</span> berarti dipelajari setelah inti selesai.
+  Label <span class="b bA">ASLAB</span> berarti materinya ada di PPT asistensi; ini inti untuk responsi. <span class="b bD">DOSEN</span> berarti tambahan dari PDF kuliah. <span class="b bT">LIT</span> berarti aku tambahkan dari literatur standar (Moore/Netter) untuk menutup lubang, dan tidak tertulis di kedua sumber. Angka <b>bobot</b> di tiap bagian berasal dari soal responsi kakak tingkat.
   Tombol <b>Tutup jawaban</b> di atas mengaburkan isi tabel dan label skema. Ketuk satu per satu untuk mengecek hafalanmu. Begitulah responsi menguji: kamu melihat struktur, lalu harus menyebut namanya.
 </div>
 
 <!-- ===================================================== 0 -->
 <section class="mod" id="urutan">
-  <h3><span class="no">00</span> Urutan belajar</h3>
-  <p class="lead">Polanya: kerangka dulu, isi belakangan. Dinding, regio, dan peritoneum menjadi "peta"-nya. Tiga cabang aorta menjadi "jalan"-nya. Setelah itu baru tiap organ diletakkan ke peta tersebut.</p>
+  <h3><span class="no">00</span> Peta bobot &amp; urutan belajar</h3>
+  <p class="lead">Disusun ulang dari <b>46 soal responsi anatomi kakak tingkat</b> (RESPONSI ANATOMI 1.3 = 24 nomor, SOAL RESPONSI FIX = 22 nomor) dan Pretes Digestivus Inferior. Versi pertama halaman ini kususun tanpa data itu, dan urutannya keliru: sepertiga soal responsi justru berasal dari materi yang dulu kuberi label "prioritas 2". Waktu itu aku mengira materi tersebut hanya ada di PDF dosen, padahal ada PPT aslabnya sendiri (Tractus Digestivus Superior, Naufal).</p>
 
+  <div class="tw"><table>
+    <tr><th>Topik</th><th>Soal responsi</th><th>Porsi</th><th>Yang paling sering ditanya</th></tr>
+    <tr><td><a href="#superior">Cavum oris, lingua, glandulae, pharynx</a> <span class="b bA">ASLAB</span></td><td>12</td><td><b>26%</b></td><td>parotis + ductus Stensen + m. buccinator; parotitis → orchitis; vestibulum vs cavitas oris propria; isthmus faucium; persarafan lingua; otot intrinsik; vallecula; tonsilla palatina; skeletopi pharynx (2×)</td></tr>
+    <tr><td><a href="#crassum">Intestinum crassum, appendix, rectum</a></td><td>10</td><td><b>22%</b></td><td>identifikasi segmen, flexura coli dextra, haustra/incisura, appendix + mesoappendix + 5 letak + McBurney, valvula ileocaecalis, 1/3 distal transversum (hindgut, a. colica sinistra)</td></tr>
+    <tr><td><a href="#bilier">VF, saluran empedu, pancreas</a></td><td>8</td><td><b>17%</b></td><td>ductus choledochus, papilla major di pars descendens, 3 sphincter Oddi, fungsi VF, cholelithiasis vs choledocholithiasis, pankreatitis, ductus Wirsung</td></tr>
+    <tr><td><a href="#hepar">Hepar + vena porta</a></td><td>4</td><td>9%</td><td>lobus quadratus, lig. coronarium, sirosis, sistem porta</td></tr>
+    <tr><td><a href="#peritoneum">Peritoneum</a></td><td>4</td><td>9%</td><td>omentum majus (+ mesogastrium dorsale), omentum minus, foramen Winslow → bursa omentalis, intra/retro</td></tr>
+    <tr><td><a href="#kerangka">Dinding abdomen + inguinal</a></td><td>4</td><td>9%</td><td>m. obliquus externus + aponeurosisnya → lig. inguinale (3×), canalis inguinalis + hernia</td></tr>
+    <tr><td><a href="#superior">Oesophagus + gaster</a></td><td>3</td><td>7%</td><td>angustia di diafragma (T10), fundus, dua sphincter gaster</td></tr>
+    <tr><td><a href="#tenue">Lapisan dinding saluran</a></td><td>1</td><td>2%</td><td>4 lapis tunica</td></tr>
+    <tr><td><a href="#tenue">Jejunum–ileum</a></td><td>0</td><td>0%</td><td>tidak ada di responsi, tetapi jadi nomor 1 di Pretes (vasa recta, arkade, lemak)</td></tr>
+  </table></div>
+
+  <div class="co">
+    <b class="t">Bentuk soalnya isian, bukan pilihan ganda</b>
+    Polanya hampir selalu sama: <b>struktur ditunjuk di preparat, kamu menyebut namanya, lalu menjawab satu pertanyaan lanjutan</b>. Pertanyaan lanjutan itu bisa soal persarafan, asal embrio, tempat bermuara, letak, atau nama kelainan bila struktur itu sakit. Jadi untuk setiap struktur, siapkan empat jawaban: <b>nama, letak/batas, saraf atau pembuluh, dan satu klinis</b>. Mode <b>Tutup jawaban</b> lebih mirip ujian aslinya daripada kuis pilihan ganda.
+  </div>
+
+  <h4>Urutan baru (sesuai bobot, dengan satu pengecualian)</h4>
   <div class="steps">
-    <div class="step"><div><b>Regio + lapisan dinding abdomen</b><span>Semua soal letak ("organ X di regio apa") dan soal sayatan bertumpu di sini. Ini paling cepat dikuasai, jadi kerjakan dulu supaya kepercayaan dirimu naik.</span></div></div>
-    <div class="step"><div><b>Regio inguinalis</b><span>Hanya ada empat dinding dan satu segitiga, tapi ini favorit responsi dan soal hernia. Butuh lapisan otot dari langkah 1.</span></div></div>
-    <div class="step"><div><b>Peritoneum: intra vs retro, omentum, mesenterium, ligamenta</b><span>Kalau sudah paham ini, setiap organ berikutnya langsung punya satu jawaban gratis: intraperitoneal atau retroperitoneal.</span></div></div>
-    <div class="step"><div><b>Peta pembuluh dan saraf: foregut, midgut, hindgut</b><span>Satu tabel ini menjawab arteri, persarafan otonom, dan letak nyeri alih untuk SEMUA organ. Hafalkan sekali, lalu pakai berulang kali.</span></div></div>
-    <div class="step"><div><b>Tractus inferior: jejunum–ileum, caecum–appendix, colon, rectum–canalis analis</b><span>Organ tinggal "diisi" ke dalam peta dari langkah 4. Pembedanya: ciri morfologi, taenia, dan linea pectinata.</span></div></div>
-    <div class="step"><div><b>Organa accessoria: hepar, vesica fellea + pancreas, lien</b><span>Ini paling banyak struktur yang harus ditunjuk (facies visceralis hepar). Pakai skema "huruf H".</span></div></div>
-    <div class="step"><div><b>Vena porta + anastomosis portosistemik</b><span>Ini penyatu seluruh materi: hepar, oesophagus, rectum, dan dinding abdomen bertemu di satu konsep.</span></div></div>
-    <div class="step"><div><b>Tractus superior (oesophagus, gaster, duodenum, cavum oris)</b> <span class="b bP">PRIORITAS 2</span><span>Hanya ada di PDF dosen. Sebagian besar arterinya sudah kamu pelajari di langkah 4.</span></div></div>
+    <div class="step"><div><b>Peta pembuluh &amp; saraf: foregut, midgut, hindgut (20 menit)</b><span>Ini pengecualiannya. Bobotnya sendiri kecil, tetapi tabel ini menjawab pertanyaan lanjutan "arteri/saraf apa" untuk semua organ di bawah. Cukup baca, belum perlu hafal.</span></div></div>
+    <div class="step"><div><b>Cavum oris, lingua, glandulae salivariae, pharynx</b> <span class="b bA">ASLAB</span><span>26%, bobot terbesar. Sumbernya PPT Naufal (bagian 12), dilengkapi PDF dosen.</span></div></div>
+    <div class="step"><div><b>Intestinum crassum, appendix, rectum</b><span>22%. Fokus pada bangunan yang bisa ditunjuk: haustra, incisura, taenia, flexura, valvula, mesoappendix.</span></div></div>
+    <div class="step"><div><b>VF, saluran empedu, pancreas</b><span>17%. Hafalkan alur saluran dari hepar ke duodenum sampai bisa digambar ulang.</span></div></div>
+    <div class="step"><div><b>Hepar + vena porta</b><span>9%. Skema huruf H, ligamenta, dan tiga anastomosis.</span></div></div>
+    <div class="step"><div><b>Peritoneum</b><span>9%. Omentum majus/minus, asal mesogastrium, foramen Winslow.</span></div></div>
+    <div class="step"><div><b>Oesophagus, gaster, duodenum</b> <span class="b bA">ASLAB</span><span>7%. Angustia, bagian gaster, sphincter, empat pars duodenum.</span></div></div>
+    <div class="step"><div><b>Dinding abdomen + regio inguinalis</b><span>9%, dan hampir selalu soal yang sama: m. obliquus externus → aponeurosis → lig. inguinale → canalis inguinalis → hernia. Lapisan fascia lengkap boleh dibaca sekilas saja.</span></div></div>
+    <div class="step"><div><b>Jejunum–ileum + lapisan dinding</b><span>Untuk pretes, dan juga cepat dikuasai.</span></div></div>
   </div>
 
   <h4>Jadwal sesuai sisa waktu</h4>
   <div class="plan">
     <div class="day">
       <div class="dh">Kalau 3 hari</div>
-      <h5>Hari 1: Kerangka</h5>
-      <ol><li><a href="#kerangka">Regio &amp; lapisan dinding</a></li><li><a href="#inguinal">Regio inguinalis</a></li><li><a href="#peritoneum">Peritoneum</a></li><li><a href="#pembuluh">Peta pembuluh</a> (cukup baca satu kali)</li><li>Latihan soal modul Dinding &amp; Peritoneum</li></ol>
-      <div class="why">Kalau besok responsi dinding abdomen, hari ini sudah aman.</div>
+      <h5>Hari 1: Mulut sampai gaster</h5>
+      <ol><li><a href="#pembuluh">Peta pembuluh</a> (baca sekali)</li><li><a href="#superior">Cavum oris, lingua, glandulae, pharynx</a></li><li>Oesophagus, gaster, duodenum</li><li>Naskah asli: soal bertopik Lingua, Glandulae, Pharynx, Gaster</li></ol>
+      <div class="why">Sepertiga soal responsi selesai di hari pertama.</div>
     </div>
     <div class="day">
       <div class="dh">Kalau 3 hari</div>
-      <h5>Hari 2: Saluran</h5>
-      <ol><li>Ulang <a href="#pembuluh">peta pembuluh</a> sampai bisa digambar ulang</li><li><a href="#tenue">Jejunum–ileum</a></li><li><a href="#crassum">Intestinum crassum</a></li><li><a href="#rectum">Rectum &amp; canalis analis</a></li><li>Latihan soal modul Tractus inferior</li></ol>
-      <div class="why">Pembuluh diulang di awal hari 2 karena colon tidak bisa dipelajari tanpanya.</div>
+      <h5>Hari 2: Usus + saluran empedu</h5>
+      <ol><li><a href="#crassum">Intestinum crassum</a> + <a href="#rectum">rectum</a></li><li><a href="#bilier">VF, saluran empedu, pancreas</a></li><li><a href="#tenue">Jejunum–ileum</a></li><li>Bank Responsi Anatomi + Pretes Digestivus</li></ol>
+      <div class="why">39% dari bobot responsi.</div>
     </div>
     <div class="day">
       <div class="dh">Kalau 3 hari</div>
-      <h5>Hari 3: Organ tambahan + integrasi</h5>
-      <ol><li><a href="#hepar">Hepar</a> → <a href="#bilier">VF &amp; pancreas</a> → <a href="#lien">Lien</a></li><li><a href="#porta">Vena porta</a></li><li><a href="#superior">Tractus superior</a> (kalau masih ada waktu)</li><li><a href="#klinis">Kasus</a> + semua checklist dengan mode Tutup jawaban</li></ol>
-      <div class="why">Vena porta sengaja ditaruh terakhir karena ia menyatukan semua organ sebelumnya.</div>
+      <h5>Hari 3: Hepar, peritoneum, dinding</h5>
+      <ol><li><a href="#hepar">Hepar</a> + <a href="#porta">vena porta</a> + <a href="#lien">lien</a></li><li><a href="#peritoneum">Peritoneum</a></li><li><a href="#kerangka">Dinding</a> + <a href="#inguinal">inguinal</a> (fokus EO → lig. inguinale)</li><li>Kedua naskah asli dikerjakan penuh, lalu semua checklist dengan mode Tutup jawaban</li></ol>
+      <div class="why">Sisa 27%, ditambah latihan ulang seluruhnya.</div>
     </div>
     <div class="day" style="border-color:var(--flag)">
       <div class="dh" style="color:var(--flag-ink)">Kalau tinggal 1 hari</div>
       <h5>Mode kebut (±6 jam)</h5>
-      <ol><li>Lapisan dinding + vagina recti + MALT + Hesselbach (1 jam)</li><li>Intra/retro + omentum (40 mnt)</li><li>Tabel foregut/midgut/hindgut + pohon arteri (1 jam)</li><li>Jejunum vs ileum, taenia, bingkai colon, linea pectinata (1,5 jam)</li><li>Hepar huruf H, porta hepatis, saluran empedu, Calot (1,5 jam)</li><li>Anastomosis porta (20 mnt)</li></ol>
-      <div class="why">Yang dikorbankan: tractus superior, segmen Couinaud, dinding posterior, detail limfe.</div>
+      <ol><li>Cavum oris, lingua, glandulae, pharynx (1,5 jam)</li><li>Colon, appendix, rectum (1 jam)</li><li>Saluran empedu, papilla, pancreas (1 jam)</li><li>Hepar huruf H + porta + omentum/Winslow (1 jam)</li><li>EO → lig. inguinale → canalis + oesophagus/gaster (30 mnt)</li><li>Kerjakan kedua naskah asli (1 jam)</li></ol>
+      <div class="why">Yang dikorbankan: lapisan fascia lengkap, dinding posterior, segmen Couinaud, limfe, detail lien.</div>
     </div>
   </div>
 </section>
@@ -909,6 +929,8 @@
   </table></div>
   <p class="small">Margines: <b>anterior, inferior, posterosuperior</b>. Segmen Couinaud I–VIII (nice to know): I = caudatus, lalu II–VIII searah jarum jam; IVa/IVb = medial superior/inferior. Pembagian ini berdasarkan cabang a. hepatica, v. porta, dan drainase bilier, dan dipakai dalam reseksi hepar.</p>
 
+  <div class="co"><b class="t">Klinis hepar (ditanya di responsi)</b>Perjalanan penyakitnya normal → <b>steatosis (membesar)</b> → fibrosis → <b>sirosis (mengecil)</b>. Pada responsi: "peradangan parah yang membuat organ menyusut" jawabannya <b>sirosis hepatis</b>. Hepatomegali diukur dengan liver span, dan splenomegali dengan skala Schuffner.</div>
+
   <h4>Vaskularisasi &amp; persarafan</h4>
   <div class="flow"><span class="bx">Truncus coeliacus</span><span class="ar">→</span><span class="bx">a. hepatica communis</span><span class="ar">→</span><span class="bx">a. hepatica propria</span><span class="ar">→</span><span class="bx">r. dexter / sinister</span><span class="ar">→</span><span class="bx">porta hepatis → a. interlobaris → intralobaris</span></div>
   <ul class="small">
@@ -970,6 +992,8 @@
   <div class="flow">
     <span class="bx">ductus pancreaticus accessorius (Santorini)</span><span class="ar">→</span><span class="bx hi">papilla duodeni minor</span><span class="ar">·</span><span class="muted">letaknya di <b>atas</b> papilla major</span>
   </div>
+  <p class="small"><b>Tiga sphincter di papilla major</b> (ditanya di responsi) <span class="b bT">LIT</span>: <span class="rv">m. sphincter ductus choledochi, m. sphincter ductus pancreatici, m. sphincter ampullae</span>. Ketiganya bersama-sama disebut sphincter Oddi.</p>
+  <p class="small"><b>Pemeriksaan klinis</b> (dari PPT Praktikum Klinis): kolesistitis → <b>Murphy's sign</b>; kolangitis → <b>trias Charcot</b> (demam, ikterus, nyeri kuadran kanan atas <span class="b bT">LIT</span>).</p>
   <div class="co"><b class="t">Senggol kasus</b>Batu yang tersangkut di <b>ampulla Vater</b> menyumbat dua saluran sekaligus, sehingga menimbulkan <b>ikterus obstruktif</b> dan <b>pankreatitis bilier</b> bersamaan. Batu di VF disebut cholelithiasis; batu di ductus choledochus disebut choledocholithiasis. Batu yang menyumbat aliran keluar menyebabkan stasis, lalu iritasi, lalu cholecystitis. Radang di ductus choledochus disebut cholangitis.</div>
 
   <h4>Pancreas</h4>
@@ -1040,10 +1064,86 @@
 
 <!-- ===================================================== 12 -->
 <section class="mod" id="superior">
-  <h3><span class="no">12</span> Tractus superior <span class="b bD">DOSEN</span> <span class="b bP">PRIORITAS 2</span></h3>
-  <p class="lead">Tidak ada di PPT aslab, jadi pelajari setelah bagian 1–11. Catatan: PDF dosen dinding abdomen menyebut <b>larynx &amp; pharynx dipelajari di blok THT</b>, jadi pharynx boleh paling akhir.</p>
+  <h3><span class="no">12</span> Cavum oris, lingua, glandulae, pharynx → oesophagus, gaster, duodenum <span class="b bA">ASLAB</span></h3>
+  <p class="lead"><b>Bobot responsi: 15 dari 46 soal (33%)</b>. Sumber: PPT aslab Tractus Digestivus Superior (Naufal), dilengkapi PDF dosen. Versi pertama halaman ini memberi bagian ini label "prioritas 2" karena PPT Naufal belum ada, dan itu keliru.</p>
 
-  <h4>Oesophagus: ±25 cm, C6 → cardia (T11)</h4>
+  <h4>Cavum oris <span class="small muted">(responsi: 2 soal)</span></h4>
+  <div class="tw"><table>
+    <tr><th>Ruang</th><th>Batas</th><th>Yang bermuara / pembeda</th></tr>
+    <tr><td>Vestibulum oris</td><td class="rv">celah antara bibir/pipi dan gigi–gingiva</td><td class="rv">ductus parotideus (Stensen) setinggi <b>molar II atas</b></td></tr>
+    <tr><td>Cavitas oris propria</td><td class="rv">di dalam arcus dentalis; atap palatum, dasar m. mylohyoideus + lingua</td><td class="rv">ductus Wharton (submandibularis) di samping frenulum linguae; ductus sublingualis kecil-kecil</td></tr>
+    <tr><td>Isthmus faucium</td><td class="rv">dibatasi arcus palatoglossus</td><td class="rv"><b>penghubung cavitas oris propria → oropharynx</b></td></tr>
+  </table></div>
+  <div class="tw tbl-sm"><table>
+    <tr><th>Batas cavitas oris</th><th>Struktur</th></tr>
+    <tr><td>Atap</td><td class="rv">palatum durum &amp; palatum molle</td></tr>
+    <tr><td>Dasar</td><td class="rv">diaphragma oris (m. mylohyoideus) + lidah</td></tr>
+    <tr><td>Lateral</td><td class="rv">corpus adiposum buccae, processus alveolaris maxillae et mandibulae</td></tr>
+    <tr><td>Anterior</td><td class="rv">rima oris</td></tr>
+    <tr><td>Posterior</td><td class="rv">isthmus faucium, <b>setinggi C2</b></td></tr>
+  </table></div>
+  <p class="small"><b>Palatum</b> <span class="b bA">ASLAB</span>: durum 2/3 anterior processus palatinus maxillae, 1/3 posterior lamina horizontalis os palatinum. Otot palatum molle: tensor veli palatini, levator veli palatini, palatopharyngeus, uvulae, palatoglossus. Saraf (semua dari V2): <b>n. palatinus major</b> (foramen palatinum majus) → palatum durum + gingiva sampai premolar; <b>n. palatinus minor</b> → palatum molle; <b>n. nasopalatinus</b> (fossa incisiva) → gingiva incisivus–caninus. Arteri: a. palatina major (a. maxillaris), a. palatina minor, a. palatina ascendens (a. facialis), r. palatinus a. pharyngea ascendens. Vena → plexus pterygoideus.</p>
+  <p class="small">Bucca: m. buccinator (n. VII) menjaga makanan tetap di antara gigi. Pada parese n. facialis, makanan menumpuk di vestibulum sisi lesi.</p>
+
+  <h4>Lingua <span class="small muted">(responsi: 5 soal, paling banyak)</span></h4>
+  <div class="tw"><table>
+    <tr><th>Bagian lingua</th><th>Sensibilitas umum</th><th>Pengecapan</th><th>Motorik</th></tr>
+    <tr><td>2/3 anterior (pars presulcalis)</td><td class="rv">n. lingualis (V3)</td><td class="rv"><b>chorda tympani (VII)</b> lewat n. lingualis</td><td class="rv" rowspan="3">n. XII untuk semua otot, <b>kecuali m. palatoglossus → n. X</b></td></tr>
+    <tr><td>1/3 posterior (pars postsulcalis)</td><td class="rv">n. IX</td><td class="rv">n. IX</td></tr>
+    <tr><td>Pangkal dekat epiglottis</td><td class="rv">n. laryngeus internus (X)</td><td class="rv">n. laryngeus internus (X)</td></tr>
+  </table></div>
+  <div class="two">
+    <div class="card">
+      <p class="sec-ttl">Otot lingua</p>
+      <ul class="small">
+        <li><b>Intrinsik</b> (tidak melekat ke tulang, mengubah bentuk): <span class="rv">m. longitudinalis superior, m. longitudinalis inferior, m. transversus linguae, m. verticalis linguae</span></li>
+        <li>M. longitudinalis superior: <span class="rv">memendekkan lidah dan mengangkat ujung serta tepinya ke arah palatum</span> (ditanya di responsi sebagai benar/salah)</li>
+        <li><b>Ekstrinsik</b>: <span class="rv">genioglossus (menjulurkan), hyoglossus (menekan), styloglossus (menarik ke atas-belakang), palatoglossus (mengangkat pangkal, n. X)</span></li>
+        <li>Lesi n. XII perifer: lidah menyimpang <b>ke sisi lesi</b> saat dijulurkan</li>
+      </ul>
+    </div>
+    <div class="card">
+      <p class="sec-ttl">Lain-lain yang ditanya</p>
+      <ul class="small">
+        <li>Vaskularisasi: <span class="rv"><b>a. lingualis</b> (dari a. carotis externa); pangkal lidah juga dari r. tonsillaris a. facialis &amp; a. pharyngea ascendens</span> <span class="b bT">LIT</span></li>
+        <li>Korteks pengecap: <span class="rv"><b>area Brodmann 43</b></span> <span class="b bT">LIT</span></li>
+        <li>Sulcus terminalis (V) memisahkan 2/3 anterior dan 1/3 posterior; foramen caecum di apexnya</li>
+        <li>Papillae: filiformes (terbanyak, terkecil, berkornifikasi, <b>tanpa kuncup kecap</b>), fungiformes (merah membulat, di apex &amp; margo), vallatae (terbesar, 8–12, bentuk V di depan sulcus terminalis), foliatae (lipatan di margo dekat sulcus)</li>
+        <li>Pars postsulcalis: plica glossoepiglottica mediana &amp; lateralis, vallecula (tempat benda <b>tumpul</b> tersangkut), fossa piriformis di lateralnya (tempat benda <b>tajam</b> tersangkut)</li>
+        <li>Ringkasan saraf kranial: sensorik umum <b>V3, IX, X</b>; pengecapan <b>VII, IX, X</b>; motorik <b>XII</b> (+ X untuk palatoglossus)</li>
+        <li>Vena: v. lingualis dorsalis, v. profunda linguae</li>
+      </ul>
+    </div>
+  </div>
+
+  <h4>Glandulae salivariae <span class="small muted">(responsi: 3 soal, semuanya parotis)</span></h4>
+  <div class="tw"><table>
+    <tr><th>Kelenjar</th><th>Letak</th><th>Saluran &amp; muara</th></tr>
+    <tr><td>Parotis (terbesar)</td><td class="rv">depan bawah telinga. Batas: anterior ramus mandibulae, posterior m. sternocleidomastoideus, superior arcus zygomaticus (lihat Koreksi)</td><td class="rv"><b>ductus Stensen</b>: lewat superfisial m. masseter → <b>menembus m. buccinator</b> → vestibulum setinggi <b>molar II atas</b></td></tr>
+    <tr><td>Submandibularis</td><td class="rv">trigonum submandibulare</td><td class="rv"><b>ductus Wharton</b> → <b>caruncula sublingualis</b> di kedua sisi frenulum linguae</td></tr>
+    <tr><td>Sublingualis</td><td class="rv">di atas m. mylohyoideus, lateral m. genioglossus</td><td class="rv">banyak ductus kecil → <b>plica sublingualis</b></td></tr>
+  </table></div>
+  <ul class="small">
+    <li><b>Parotitis epidemika (mumps)</b>: komplikasi tersering pada laki-laki dewasa adalah <span class="rv"><b>orchitis</b></span>.</li>
+    <li>"Obat flu simpatomimetik meningkatkan sekresi saliva": <span class="rv"><b>Salah</b>. Saliva yang encer dan banyak diatur parasimpatis, sedangkan simpatomimetik membuat mulut kering</span>.</li>
+  </ul>
+
+  <h4>Pharynx <span class="small muted">(responsi: 4 soal)</span></h4>
+  <p class="small"><b>Skeletopi</b> (ditanya 2 kali): <span class="rv">dari <b>basis cranii</b> (corpus os sphenoidale, pars basilaris os occipitale) sampai setinggi <b>C6</b> (tepi bawah cartilago cricoidea), lalu berlanjut ke oesophagus</span>.</p>
+  <div class="tw"><table>
+    <tr><th>Bagian</th><th>Batas</th><th>Struktur penting</th></tr>
+    <tr><td>Nasopharynx</td><td class="rv">di belakang choanae, di atas palatum molle</td><td class="rv">ostium tubae auditivae, torus tubarius, tonsilla pharyngea (adenoid), recessus pharyngeus (Rosenmüller), lokasi tersering karsinoma nasopharynx</td></tr>
+    <tr><td>Oropharynx</td><td class="rv">palatum molle sampai tepi atas epiglottis</td><td class="rv">isthmus faucium; <b>tonsilla palatina</b> di antara arcus palatoglossus &amp; palatopharyngeus; <b>vallecula epiglottica</b></td></tr>
+    <tr><td>Laryngopharynx</td><td class="rv">epiglottis sampai C6</td><td class="rv">aditus laryngis, recessus piriformis (tempat duri ikan tersangkut)</td></tr>
+  </table></div>
+  <ul class="small">
+    <li><b>Vallecula epiglottica</b>: cekungan antara pangkal lidah dan epiglottis, dibatasi <span class="rv"><b>plica glossoepiglottica mediana et lateralis</b></span>. Tempat ujung laringoskop saat intubasi.</li>
+    <li><b>Oropharynx setinggi C2–C3</b> <span class="b bA">ASLAB</span>, berhubungan dengan cavitas oris lewat isthmus faucium.</li>
+    <li>Annulus Waldeyer: cranial tonsilla pharyngea (adenoid), <b>lateral tonsilla palatina</b>, caudal tonsilla lingualis, ditambah tonsilla tubaria. Pembesaran tonsilla palatina (tonsilitis) dapat menimbulkan gangguan menelan.</li>
+    <li>Otot: constrictor superior/medius/inferior + longitudinal. Semua plexus pharyngeus (X) <b>kecuali m. stylopharyngeus → n. IX</b>.</li>
+  </ul>
+
+<h4>Oesophagus: ±25 cm, C6 → cardia (T11) <span class="small muted">(responsi: 1 soal)</span></h4>
   <div class="tw"><table>
     <tr><th>Penyempitan</th><th>Jarak dari gigi seri</th><th>Setinggi</th><th>Penyebab</th></tr>
     <tr><td>1</td><td class="rv">±15 cm</td><td class="rv">C6</td><td class="rv">peralihan pharynx–oesophagus (m. cricopharyngeus)</td></tr>
@@ -1053,7 +1153,7 @@
   </table></div>
   <p class="small">Otot: 1/3 atas lurik, 1/3 tengah campuran, 1/3 bawah polos. Arteri: cervicalis dari a. thyroidea inferior, thoracica dari aorta &amp; aa. bronchiales, abdominalis dari <b>a. gastrica sinistra</b> &amp; a. phrenica inferior. Vena pars abdominalis: v. gastrica sinistra → v. porta. Inilah dasar varises oesophagus.</p>
 
-  <h4>Gaster</h4>
+  <h4>Gaster <span class="small muted">(responsi: 2 soal)</span></h4>
   <ul class="small">
     <li>Pars cardiaca (ostium cardiacum, T11) → fundus (di bawah kubah diafragma kiri, berisi udara pada foto tegak) → corpus → pars pylorica (antrum + canalis pyloricus, m. sphincter pyloricus, setinggi L1).</li>
     <li>Curvatura minor (omentum minus, incisura angularis) dan curvatura major (omentum majus, lig. gastrosplenicum).</li>
@@ -1071,19 +1171,40 @@
     <tr><td>Ascendens</td><td class="rv">±5 cm</td><td class="rv">L3–L2</td><td class="rv">flexura duodenojejunalis, lig. Treitz</td></tr>
   </table></div>
 
-  <h4>Cavum oris, lingua, dentes, glandulae salivariae</h4>
-  <div class="tw"><table>
-    <tr><th>Bagian lingua</th><th>Sensibilitas umum</th><th>Pengecapan</th><th>Motorik</th></tr>
-    <tr><td>2/3 anterior</td><td class="rv">n. lingualis (V3)</td><td class="rv">chorda tympani (VII)</td><td class="rv" rowspan="2">n. XII (semua otot, <b>kecuali m. palatoglossus → n. X</b>)</td></tr>
-    <tr><td>1/3 posterior</td><td class="rv">n. IX</td><td class="rv">n. IX</td></tr>
-  </table></div>
+    <div class="co"><b class="t">Versi PPT aslab Naufal (istilah ini yang dipakai di responsi)</b>
+    <ul class="small" style="margin:4px 0 0">
+      <li>Tiga pars: <b>cervicalis C6–T1, thoracalis T1–T10, abdominalis T10–T11</b>; letaknya posterior trachea.</li>
+      <li>Tiga angustia: <b>superior C6</b> (m. cricopharyngeus, cartilago cricoidea), <b>media T4/5</b> (arcus aortae + bronchus principalis sinister), <b>inferior T10</b> (hiatus oesophageus, yang juga dilewati truncus vagalis). PDF dosen memecah angustia media menjadi dua (T4 dan T5), sehingga totalnya empat.</li>
+      <li>Persarafan: parasimpatis n. vagus, simpatis n. splanchnicus major.</li>
+    </ul>
+  </div>
+  <p class="small"><b>Gaster versi aslab</b>: 4 bagian (fundus, pars cardiaca, corpus dengan <b>rugae</b>, pars pylorica = antrum + canalis pyloricus); orificium cardiacum <b>T11</b>, pyloricum <b>L1</b>. Tunica muscularis punya <b>3 lapis</b>: longitudinale (luar), circulare (membentuk m. sphincter pyloricus), <b>obliquum</b> (membentuk canalis gastricus Waldeyer di curvatura minor). Omentum majus = lig. gastrocolicum, gastrophrenicum, gastrolienale, splenorenale. Omentum minus = lig. hepatoduodenale + hepatogastricum. Vena: gastrica dextra et sinistra → v. porta; gastricae breves &amp; gastroomentalis sinistra → v. lienalis; gastroomentalis dextra → v. mesenterica superior. N. vagus <b>merelaksasikan</b> m. sphincter pyloricus.</p>
+  <p class="small"><b>Duodenum versi aslab</b>: flexura duodeni superior (superior–descendens), flexura duodeni inferior (inferior–ascendens), flexura duodenojejunalis. Papilla minor ±2–3 cm di atas papilla major. Arteri: a. supraduodenalis (Wilkie) dan a. retroduodenalis dari a. gastroduodenalis; aa. pancreaticoduodenales superiores (anterior &amp; posterior) dari a. gastroduodenalis; aa. pancreaticoduodenales inferiores dari AMS. Persarafan: pars superior (foregut) splanchnicus major; pars distal (midgut) splanchnicus minor.</p>
+  <p class="small">Klinis aslab: <b>cleft palate</b> (susu bayi masuk ke hidung), <b>GERD</b> (LES lemah, nyeri retrosternal, regurgitasi), pembesaran tonsilla palatina, ulkus gastricum.</p>
+  <p class="small">Penyempitan di diafragma disebut <b>angustia inferior (diaphragmatica)</b>, setinggi T10. Gaster punya <b>dua sphincter</b>: <span class="rv">sphincter gastro-oesophageal (cardia, fisiologis) dan m. sphincter pyloricus</span>.</p>
+
+  <h4>Dentes &amp; palatum</h4>
   <ul class="small">
-    <li>Sulcus terminalis (V) memisahkan 2/3 anterior dari 1/3 posterior; foramen caecum di apexnya (asal glandula thyroidea). Papillae: filiformes (terbanyak, <b>tanpa kuncup kecap</b>), fungiformes, vallatae (8–12, di depan sulcus terminalis), foliatae.</li>
-    <li>Lesi n. XII perifer: lidah menyimpang <b>ke sisi lesi</b> saat dijulurkan (m. genioglossus sisi sehat mendorong).</li>
-    <li>Dentes: decidui 20 (I2 C1 M2 per kuadran), permanentes 32 (I2 C1 P2 M3). Gigi atas dipersarafi nn. alveolares superiores (V2), gigi bawah n. alveolaris inferior (V3). Bagian gigi: corona, cervix, radix; lapisan: email, dentin, pulpa.</li>
-    <li>Glandulae: <b>parotis</b> (terbesar) → ductus Stensen menembus m. buccinator, bermuara di vestibulum setinggi <b>molar II atas</b>; <b>submandibularis</b> → ductus Wharton, di samping frenulum linguae; <b>sublingualis</b> → banyak ductus kecil di dasar mulut.</li>
-    <li>Palatum molle: semua otot dipersarafi plexus pharyngeus (X), <b>kecuali m. tensor veli palatini → V3</b>.</li>
+    <li>Decidui 20 (I2 C1 M2 per kuadran), permanentes 32 (I2 C1 P2 M3). Gigi atas: nn. alveolares superiores (V2); bawah: n. alveolaris inferior (V3). Bagian gigi: corona, cervix, radix; lapisan: email, dentin, pulpa.</li>
+    <li>Palatum molle: semua otot plexus pharyngeus (X), <b>kecuali m. tensor veli palatini → V3</b>.</li>
   </ul>
+
+  <div class="card">
+    <div class="ckhead"><p class="sec-ttl">Checklist responsi · cavum oris → duodenum</p><span class="cnt" data-cnt="superior"></span></div>
+    <div class="ck" data-ck="superior">
+      <label><input type="checkbox"><span>Vestibulum vs cavitas oris propria vs isthmus faucium</span></label>
+      <label><input type="checkbox"><span>Persarafan lingua 2/3 anterior vs 1/3 posterior</span></label>
+      <label><input type="checkbox"><span>4 otot intrinsik + n. XII (kecuali palatoglossus)</span></label>
+      <label><input type="checkbox"><span>Vaskularisasi lingua + Brodmann 43</span></label>
+      <label><input type="checkbox"><span>Parotis: ductus Stensen, m. buccinator, molar II atas</span></label>
+      <label><input type="checkbox"><span>Parotitis → orchitis; simpatomimetik → mulut kering</span></label>
+      <label><input type="checkbox"><span>Skeletopi pharynx (basis cranii – C6)</span></label>
+      <label><input type="checkbox"><span>Vallecula + plica glossoepiglottica; tonsilla palatina</span></label>
+      <label><input type="checkbox"><span>4 angustia oesophagus</span></label>
+      <label><input type="checkbox"><span>Bagian gaster + 2 sphincter</span></label>
+      <label><input type="checkbox"><span>4 pars duodenum + papilla di descendens</span></label>
+    </div>
+  </div>
 </section>
 
 <!-- ===================================================== 13 -->
@@ -1118,6 +1239,19 @@
   <div class="co flag"><b class="t">PPT aslab dinding: "dari v. epigastrica superior &amp; inferior menuju v. femoralis"</b>Lebih tepatnya: <b>v. epigastrica superficialis</b> → (v. saphena magna) → v. femoralis; <b>v. epigastrica inferior</b> → v. iliaca externa; <b>v. epigastrica superior</b> → v. thoracica interna. Jalur kolateral VCI lewat v. thoracoepigastrica di slide yang sama sudah benar.</div>
   <div class="co flag"><b class="t">PPT aslab 9 regio: "ureter sinistra" di hypochondriaca sinistra</b>Ureter tidak berada di regio hypochondriaca. Ureter berjalan di regio lumbalis lalu turun ke pelvis.</div>
   <div class="co flag"><b class="t">PPT aslab Accessoria: caput medusae "pada dinding dada sekitar umbilicus"</b>Maksudnya dinding <b>abdomen</b>.</div>
+  <h4>Koreksi pada PPT aslab Tractus Digestivus Superior (Naufal)</h4>
+  <div class="co bad"><b class="t">Slide 20: "A. lingualis (cab A. carotis interna)"</b>A. lingualis adalah cabang <b>a. carotis externa</b>. A. carotis interna tidak memberi cabang di leher.</div>
+  <div class="co bad"><b class="t">Slide 31: angustia media "di tempat arcus aorta dan bronkus primarius dexter menyilang"</b>Yang menyilang adalah bronchus principalis <b>sinister</b> (PDF dosen dan literatur). Oesophagus terletak di kiri trachea, sehingga bronchus kanan tidak menyilangnya.</div>
+  <div class="co bad"><b class="t">Notes slide 21: batas glandula parotis "superior meatus acusticus externus, inferior arcus zygomaticus"</b>Arcus zygomaticus adalah batas <b>superior</b>, bukan inferior. Batas inferiornya sekitar angulus mandibulae, dan meatus acusticus externus berada di posterosuperior.</div>
+  <div class="co flag"><b class="t">Slide 4: foregut "sampai duodenum pars superior"</b>Batas foregut–midgut ada di <b>papilla duodeni major</b> (pars descendens), bukan di ujung pars superior. Tabel di slide yang sama sebenarnya sudah menulis "hingga papilla duodeni major".</div>
+  <div class="co flag"><b class="t">Notes slide 38: a. gastrica dextra "berasal dari a. hepatica communis"</b>Asal pembuluh ini bervariasi. Yang paling sering dari a. hepatica <b>propria</b> (begitulah di pohon arteri bagian 4), tetapi bisa juga dari a. hepatica communis. Kalau ditanya saat responsi, ikuti versi aslab.</div>
+
+  <h4>Koreksi pada naskah kakak tingkat</h4>
+  <div class="co bad"><b class="t">Pretes Digestivus Inferior no. 3E: parasimpatis 1/3 distal colon transversum = "n. splanchnicolumbalis"</b>Splanchnici lumbales adalah saraf <b>simpatis</b>. Parasimpatisnya <b>nn. splanchnici pelvici (nn. erigentes)</b>, seperti tertulis di PPT aslab Khai.</div>
+  <div class="co bad"><b class="t">Pretes no. 3D: simpatis 2/3 proksimal colon transversum = "n. splanchnicus mayus"</b>Midgut dipersarafi n. splanchnicus <b>minor</b> (PPT aslab dan PDF dosen sepakat). Major untuk foregut.</div>
+  <div class="co flag"><b class="t">Pretes no. 3B–C: arteri colon transversum dijawab "midgut / hindgut"</b>Yang ditanya nama arterinya: a. colica media (2/3 proksimal) dan a. colica sinistra (1/3 distal).</div>
+  <div class="co flag"><b class="t">Soal Responsi FIX no. 1: "peradangan … yang menyebabkan batu = choledocholithiasis"</b>Choledocholithiasis adalah batu di ductus choledochus, bukan peradangan. Peradangan saluran empedu = cholangitis; peradangan VF = cholecystitis.</div>
+  <div class="co flag"><b class="t">Responsi Anatomi no. 20b: "saluran yang langsung mengalirkan cairan dari VF ke duodenum = ductus choledochus"</b>Yang keluar langsung dari VF adalah ductus cysticus; yang masuk langsung ke duodenum adalah ductus choledochus. Kalau soalnya muncul lagi, baca baik-baik kata "dari" dan "ke".</div>
   <div class="co"><b class="t">Bukan kesalahan, hanya beda penamaan</b>Dosen menulis "fascia profunda (fascia transversalis)", sedangkan aslab memisahkan keduanya. Keduanya bisa dibenarkan: fascia transversalis memang bagian fascia profunda yang paling berkembang. Untuk menyebut urutan 7 lapis di responsi, pakai versi aslab.</div>
 </section>
 
@@ -1125,16 +1259,19 @@
 <section class="mod" id="latihan">
   <h3><span class="no">→</span> Latihan soal</h3>
   <div class="two">
-    <a class="card" href="index.html#/quiz/ub-1-3-aslab" style="text-decoration:none;color:inherit;border-left:3px solid var(--accent)">
-      <p class="sec-ttl">Bank PPT Aslab</p><b>Dinding, peritoneum, tractus inferior, accessoria</b><br><span class="small muted">Gaya responsi + kasus. Bisa difilter per modul.</span>
+    <a class="card" href="index.html#/quiz/ub-1-3-responsi-anat" style="text-decoration:none;color:inherit;border-left:3px solid var(--accent)">
+      <p class="sec-ttl">PPT Aslab · Responsi Anatomi</p><b>150 soal: cavum oris sampai rectum, dinding, peritoneum, accessoria</b><br><span class="small muted">Gaya responsi + kasus. Bisa difilter per modul (misalnya hanya Lingua atau Gaster).</span>
     </a>
-    <a class="card" href="index.html#/quiz/ub-1-3-dosen" style="text-decoration:none;color:inherit;border-left:3px solid var(--good)">
-      <p class="sec-ttl">Bank PPT Dosen</p><b>Oesophagus, gaster, duodenum, cavum oris</b><br><span class="small muted">Prioritas 2.</span>
-    </a>
+  </div>
+  <p class="sec-ttl" style="margin-top:16px">Naskah asli kakak tingkat</p>
+  <div class="two">
+    <a class="card" href="index.html#/quiz/ub-1-3-resp-anat" style="text-decoration:none;color:inherit;border-left:3px solid var(--flag)"><b>Responsi Anatomi 1.3</b><br><span class="small muted">34 butir · isian diubah ke pilihan ganda</span></a>
+    <a class="card" href="index.html#/quiz/ub-1-3-resp-anat-fix" style="text-decoration:none;color:inherit;border-left:3px solid var(--flag)"><b>Soal Responsi Anatomi FIX</b><br><span class="small muted">29 butir</span></a>
+    <a class="card" href="index.html#/quiz/ub-1-3-pre-digest" style="text-decoration:none;color:inherit;border-left:3px solid var(--flag)"><b>Pretes Digestivus Inferior</b><br><span class="small muted">11 butir · 3 pembahasan dikoreksi</span></a>
   </div>
 </section>
 
-<p class="foot">Sumber: PPT Asistensi Dinding Abdomen (Zydane), Tractus Digestivus Inferior (Khai), Systema Digestiva Accessoria (Fatih); PDF kuliah Dinding Abdomen &amp; Peritoneum dan Organa Digestivus Accessoria (dr. Muthmainah), Anatomi Tractus Digestivus (Siti Munawaroh). Tambahan bertanda LIT dari Moore, <i>Clinically Oriented Anatomy</i>, dan Netter, <i>Atlas of Human Anatomy</i>. Skema digambar ulang secara skematik dan tidak sesuai skala.</p>
+<p class="foot">Sumber: PPT Asistensi Dinding Abdomen (Zydane), Tractus Digestivus Inferior (Khai), Systema Digestiva Accessoria (Fatih), Tractus Digestivus Superior (Naufal); naskah responsi &amp; pretes kakak tingkat; PDF kuliah Dinding Abdomen &amp; Peritoneum dan Organa Digestivus Accessoria (dr. Muthmainah), Anatomi Tractus Digestivus (Siti Munawaroh). Tambahan bertanda LIT dari Moore, <i>Clinically Oriented Anatomy</i>, dan Netter, <i>Atlas of Human Anatomy</i>. Skema digambar ulang secara skematik dan tidak sesuai skala.</p>
 
 </div>
 
