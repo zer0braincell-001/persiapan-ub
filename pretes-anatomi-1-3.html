@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<title>Latihan Pretes Anatomi</title>
+<!--
+  Latihan pretes anatomi Blok 1.3, meniru format pretes aslab (contoh: Pretes Tractus Digestivus
+  Inferior, Aryo): soal ISIAN bernomor dengan titik-titik berlabel (A), (B), (C), sebagian dengan
+  gambar yang diberi huruf. Soal disusun sendiri untuk latihan, BUKAN naskah asli.
+  Dua mode: "Pretes" (satu nomor per layar, timer 60 detik, jawaban dibuka di akhir) dan
+  "Latihan" (semua nomor tampil, buka jawaban per isian). Penilaian mandiri: tandai benar/salah.
+  Gambar = skema SVG gambaran sendiri (repo public, tidak ada gambar atlas).
+  localStorage "persiapan-ub.pretes13.v1": { [paketId]: { mark:{ "n-i": 1|0 } } }, dibungkus try/catch.
+  Tema dibaca dari "persiapan-ub.v1" (sama dengan index.html).
+-->
+<style>
+  :root{
+    --bg:#F3F5F7; --surface:#FFFFFF; --surface-2:#EAEEF2; --raise:#F6F8FA;
+    --text:#1A2230; --muted:#5A6675; --faint:#8A94A2;
+    --border:#DDE3EA; --border-strong:#C6D0DA;
+    --accent:#33698F; --accent-ink:#244F6B; --accent-soft:#DEEAF1;
+    --good:#2A8A5E; --good-soft:#DEF0E8; --good-ink:#1E6B47;
+    --bad:#B4534A; --bad-soft:#F3E3E0; --bad-ink:#8C3B34;
+    --flag:#B5811C; --flag-soft:#F5EBD3; --flag-ink:#8A6210;
+    --shadow:0 1px 2px rgba(26,34,48,.05), 0 4px 16px -8px rgba(26,34,48,.16);
+    --radius:14px; --maxw:760px;
+  }
+  :root:not([data-theme="light"]){
+    @media (prefers-color-scheme: dark){
+      --bg:#12171C; --surface:#1A2027; --surface-2:#222A32; --raise:#252E37;
+      --text:#E7ECF1; --muted:#9AA6B2; --faint:#6E7A86;
+      --border:#2C353F; --border-strong:#3A4550;
+      --accent:#6BA8CC; --accent-ink:#8FC0DD; --accent-soft:#1E2E3A;
+      --good:#54B98A; --good-soft:#183227; --good-ink:#84D7B0;
+      --bad:#D38177; --bad-soft:#33211E; --bad-ink:#E7A79F;
+      --flag:#D6A945; --flag-soft:#302710; --flag-ink:#E7C877;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 20px -10px rgba(0,0,0,.55);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12171C; --surface:#1A2027; --surface-2:#222A32; --raise:#252E37;
+    --text:#E7ECF1; --muted:#9AA6B2; --faint:#6E7A86;
+    --border:#2C353F; --border-strong:#3A4550;
+    --accent:#6BA8CC; --accent-ink:#8FC0DD; --accent-soft:#1E2E3A;
+    --good:#54B98A; --good-soft:#183227; --good-ink:#84D7B0;
+    --bad:#D38177; --bad-soft:#33211E; --bad-ink:#E7A79F;
+    --flag:#D6A945; --flag-soft:#302710; --flag-ink:#E7C877;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 20px -10px rgba(0,0,0,.55);
+  }
+  *{box-sizing:border-box}
+  [hidden]{display:none!important}
+  body{margin:0; background:var(--bg); color:var(--text); font-size:15px; line-height:1.55;
+    font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 16px 72px}
+  .topbar{position:sticky; top:0; z-index:30; background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:saturate(1.3) blur(10px); border-bottom:1px solid var(--border)}
+  .topbar-in{max-width:var(--maxw); margin:0 auto; padding:10px 16px; display:flex; align-items:center; gap:8px}
+  .topbar h1{font-family:"Spectral",Georgia,serif; font-size:18px; margin:0 auto 0 0}
+  .btn{appearance:none; border:1px solid var(--border-strong); background:var(--surface); color:var(--text);
+    font:600 13.5px/1 "IBM Plex Sans",sans-serif; border-radius:10px; padding:9px 12px; cursor:pointer;
+    text-decoration:none; display:inline-flex; align-items:center; gap:6px}
+  .btn:hover{background:var(--surface-2)}
+  .btn.ghost{border-color:transparent; background:transparent; color:var(--muted)}
+  .btn.pri{background:var(--accent); border-color:var(--accent); color:#fff}
+  .btn.pri:hover{background:var(--accent-ink)}
+  .btn:disabled{opacity:.45; cursor:not-allowed}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:6px}
+
+  .hero{padding:26px 0 4px}
+  .hero h2{font-family:"Spectral",Georgia,serif; font-size:29px; line-height:1.15; margin:0 0 6px; letter-spacing:-.015em}
+  .hero p{margin:0; color:var(--muted); font-size:14px}
+
+  .pk{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:8px; margin-top:18px}
+  .pk button{appearance:none; text-align:left; cursor:pointer; background:var(--surface); border:1px solid var(--border);
+    border-radius:12px; padding:10px 12px; color:var(--text); font:600 14px/1.25 "IBM Plex Sans",sans-serif}
+  .pk button span{display:block; font:500 11.5px "IBM Plex Mono",monospace; color:var(--faint); margin-top:3px}
+  .pk button[aria-selected="true"]{border-color:var(--accent); background:var(--accent-soft); color:var(--accent-ink)}
+  .pk button[aria-selected="true"] span{color:var(--accent-ink)}
+
+  .modebar{display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-top:14px}
+  .seg{display:inline-grid; grid-template-columns:1fr 1fr; gap:3px; background:var(--surface-2); border:1px solid var(--border); border-radius:11px; padding:3px}
+  .seg button{appearance:none; border:0; background:transparent; color:var(--muted); cursor:pointer; font:600 13px "IBM Plex Sans",sans-serif; padding:8px 14px; border-radius:8px}
+  .seg button[aria-selected="true"]{background:var(--surface); color:var(--text); box-shadow:var(--shadow)}
+  .score{margin-left:auto; font:600 12.5px "IBM Plex Mono",monospace; color:var(--muted); font-variant-numeric:tabular-nums}
+
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:16px 17px; box-shadow:var(--shadow); margin-top:14px}
+  .nh{display:flex; align-items:center; gap:10px; margin-bottom:6px}
+  .nh .no{font-family:"Spectral",Georgia,serif; font-weight:700; font-size:19px}
+  .nh .tm{margin-left:auto; font:600 13px "IBM Plex Mono",monospace; color:var(--muted); font-variant-numeric:tabular-nums;
+    background:var(--surface-2); border-radius:8px; padding:4px 9px}
+  .nh .tm.low{background:var(--bad-soft); color:var(--bad-ink)}
+  .soal{font-size:15.5px; margin:2px 0 10px; white-space:pre-line}
+  figure{margin:8px 0 12px}
+  figure svg{width:100%; max-width:520px; height:auto; display:block; margin:0 auto; background:var(--raise); border:1px solid var(--border); border-radius:12px}
+  svg text{font-family:"IBM Plex Sans",sans-serif; fill:var(--text)}
+  svg .L{font:700 13px "IBM Plex Mono",monospace; fill:var(--bad-ink)}
+  svg .s{font-size:9.5px; fill:var(--muted)}
+
+  .isi{display:flex; flex-direction:column; gap:7px}
+  .row{display:grid; grid-template-columns:30px 1fr; gap:10px; align-items:start; border:1px solid var(--border); border-radius:11px; padding:9px 11px; background:var(--surface)}
+  .row .lb{font:700 13px "IBM Plex Mono",monospace; color:var(--accent-ink); background:var(--accent-soft); border-radius:7px; height:26px; display:grid; place-items:center}
+  .row .pr{font-size:14.5px}
+  .row .dots{color:var(--faint); letter-spacing:2px}
+  .row .ans{margin-top:6px; padding:7px 10px; border-radius:8px; background:var(--good-soft); color:var(--good-ink); font-weight:600; font-size:14px}
+  .row .ans small{display:block; font-weight:400; color:var(--muted); font-size:12.5px; margin-top:3px}
+  .row .act{display:flex; gap:6px; margin-top:7px; flex-wrap:wrap}
+  .row .act button{appearance:none; cursor:pointer; border:1px solid var(--border-strong); background:var(--surface); color:var(--text);
+    border-radius:8px; padding:6px 10px; font:600 12.5px "IBM Plex Sans",sans-serif}
+  .row .act .ok[aria-pressed="true"]{background:var(--good); border-color:var(--good); color:#fff}
+  .row .act .no[aria-pressed="true"]{background:var(--bad); border-color:var(--bad); color:#fff}
+  .row.m1{border-color:color-mix(in srgb,var(--good) 45%,var(--border))}
+  .row.m0{border-color:color-mix(in srgb,var(--bad) 45%,var(--border))}
+
+  .nav{display:flex; gap:8px; justify-content:space-between; margin-top:14px}
+  .prog{height:4px; background:var(--surface-2); border-radius:99px; overflow:hidden; margin-top:12px}
+  .prog i{display:block; height:100%; background:var(--accent); width:0}
+  .intro{color:var(--muted); font-size:14px}
+  .intro ol{padding-left:20px; margin:8px 0}
+  .result{text-align:center}
+  .result .big{font:700 40px "IBM Plex Mono",monospace; font-variant-numeric:tabular-nums}
+  .result p{color:var(--muted); margin:4px 0 0}
+  .note{font-size:12.5px; color:var(--muted); margin-top:26px; border-top:1px solid var(--border); padding-top:12px}
+  @media (max-width:520px){ .hero h2{font-size:24px} .score{margin-left:0; width:100%} }
+</style>
+</head>
+<body>
+<div class="topbar"><div class="topbar-in">
+  <h1>Latihan Pretes Anatomi</h1>
+  <a class="btn ghost" href="index.html#/blok13?src=aslab&m=anat">&larr; Tab 1.3</a>
+  <button class="btn ghost" id="tTheme" title="Ganti tema">&#9681;</button>
+</div></div>
+
+<div class="wrap">
+  <div class="hero">
+    <h2>Latihan pretes per PPT aslab</h2>
+    <p>Formatnya meniru pretes aslab: isian bernomor (A), (B), (C), sebagian pakai gambar berhuruf. Semua soal di sini kususun sendiri untuk latihan, bukan bocoran naskah. Jawab di kepala atau di kertas, lalu buka kuncinya dan tandai sendiri benar atau salah.</p>
+  </div>
+
+  <div class="pk" role="tablist" aria-label="Paket" id="pk"></div>
+  <div class="modebar">
+    <div class="seg" role="tablist" aria-label="Mode">
+      <button type="button" data-mode="pretes">Mode pretes</button>
+      <button type="button" data-mode="latihan">Mode latihan</button>
+    </div>
+    <span class="score" id="score"></span>
+  </div>
+  <div id="main"></div>
+
+  <p class="note">Gambar berupa skema yang kugambar sendiri, tidak berskala, dan orientasinya seperti atlas (kiri gambar = kanan pasien), karena repo ini publik dan tidak boleh memuat gambar atlas. Untuk latihan menunjuk struktur di gambar aslinya, pakai PPT aslab. Kalau ada jawaban yang punya beberapa versi benar, semua versinya ditulis di kunci.</p>
+</div>
+
+<script>
+/* ---------------- Skema SVG (huruf = struktur yang ditanya) ---------------- */
+const FIG = {
+hepar: `<svg viewBox="0 0 400 250" role="img" aria-label="Skema facies visceralis hepar berhuruf">
+  <path d="M20 120 Q20 40 110 30 Q230 18 330 50 Q390 70 385 105 Q370 140 280 175 Q200 215 110 215 Q20 210 20 120 Z" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="1.5"/>
+  <line x1="145" y1="45" x2="145" y2="205" stroke="var(--text)" stroke-width="6" stroke-linecap="round"/>
+  <line x1="245" y1="40" x2="245" y2="200" stroke="var(--text)" stroke-width="6" stroke-linecap="round"/>
+  <line x1="145" y1="122" x2="245" y2="122" stroke="var(--accent)" stroke-width="9" stroke-linecap="round"/>
+  <rect x="160" y="62" width="70" height="40" rx="6" fill="var(--surface)" stroke="var(--border-strong)"/>
+  <rect x="160" y="142" width="70" height="40" rx="6" fill="var(--surface)" stroke="var(--border-strong)"/>
+  <text x="195" y="87" text-anchor="middle" class="L">F</text><text x="195" y="167" text-anchor="middle" class="L">G</text>
+  <text x="195" y="140" text-anchor="middle" class="L">E</text>
+  <text x="128" y="70" text-anchor="end" class="L">A</text><text x="128" y="190" text-anchor="end" class="L">B</text>
+  <text x="262" y="66" class="L">C</text><text x="262" y="190" class="L">D</text>
+  <text x="70" y="128" text-anchor="middle" class="L">H</text>
+  <text x="200" y="14" text-anchor="middle" class="s">posterior</text><text x="200" y="240" text-anchor="middle" class="s">anterior (margo inferior)</text>
+</svg>`,
+colon: `<svg viewBox="0 0 400 320" role="img" aria-label="Skema bingkai colon berhuruf">
+  <path d="M80 250 V105 Q80 85 100 85" stroke="var(--accent)" stroke-width="12" fill="none" stroke-linecap="round" opacity=".8"/>
+  <path d="M100 85 Q160 150 245 112 Q285 92 310 60" stroke="var(--accent)" stroke-width="12" fill="none" stroke-linecap="round" opacity=".8"/>
+  <ellipse cx="80" cy="262" rx="24" ry="20" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="3"/>
+  <path d="M70 280 q-6 18 8 26" stroke="var(--accent)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M318 62 V215 Q320 262 270 250 Q230 240 215 262" stroke="var(--accent)" stroke-width="12" fill="none" stroke-linecap="round" opacity=".8"/>
+  <path d="M212 266 V312" stroke="var(--accent)" stroke-width="12" fill="none"/>
+  <path d="M40 250 H62" stroke="var(--faint)" stroke-width="7" stroke-linecap="round"/><text x="14" y="246" class="s">ileum</text>
+  <text x="112" y="270" class="L">A</text><text x="44" y="315" class="L">B</text><text x="52" y="175" class="L">C</text>
+  <text x="70" y="70" class="L">D</text><text x="160" y="152" class="L">E</text><text x="312" y="40" class="L">F</text>
+  <text x="338" y="145" class="L">G</text><text x="266" y="282" class="L">H</text><text x="228" y="304" class="L">I</text>
+</svg>`,
+hessel: `<svg viewBox="0 0 400 240" role="img" aria-label="Skema trigonum inguinale berhuruf, dilihat dari dalam">
+  <polygon points="70,50 70,195 230,195" fill="var(--bad-soft)"/>
+  <line x1="70" y1="30" x2="70" y2="200" stroke="var(--bad)" stroke-width="3"/>
+  <line x1="40" y1="195" x2="380" y2="195" stroke="var(--text)" stroke-width="3"/>
+  <path d="M235 215 L230 195 L70 50" stroke="var(--accent)" stroke-width="3" fill="none"/>
+  <circle cx="285" cy="168" r="16" fill="var(--surface)" stroke="var(--flag)" stroke-width="2.5"/>
+  <text x="52" y="120" class="L">A</text><text x="160" y="112" class="L">B</text><text x="300" y="216" class="L">C</text>
+  <text x="280" y="173" class="L">D</text><text x="112" y="168" class="L">E</text>
+  <text x="20" y="22" class="s">&larr; medial</text><text x="380" y="22" text-anchor="end" class="s">lateral &rarr;</text>
+</svg>`,
+oris: `<svg viewBox="0 0 400 230" role="img" aria-label="Skema potongan sagital cavum oris dan pharynx berhuruf">
+  <path d="M40 60 H170 Q205 60 215 80" stroke="var(--text)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M215 80 Q232 98 226 116" stroke="var(--text)" stroke-width="5" fill="none" stroke-dasharray="7 4" stroke-linecap="round"/>
+  <path d="M70 150 Q90 100 170 104 Q218 108 236 150 Q244 174 238 196" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="2"/>
+  <path d="M40 175 Q120 196 236 198" stroke="var(--faint)" stroke-width="2" fill="none"/>
+  <path d="M30 70 Q22 112 30 160" stroke="var(--text)" stroke-width="3" fill="none"/>
+  <path d="M46 72 Q40 112 46 156" stroke="var(--faint)" stroke-width="2" fill="none" stroke-dasharray="3 3"/>
+  <path d="M262 40 V218" stroke="var(--text)" stroke-width="3" fill="none"/>
+  <path d="M252 172 Q246 156 236 152" stroke="var(--flag)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M242 158 l-6 10" stroke="var(--text)" stroke-width="1"/>
+  <text x="100" y="52" class="L">A</text><text x="230" y="98" class="L">B</text><text x="130" y="140" class="L">C</text>
+  <text x="34" y="118" class="L">D</text><text x="104" y="92" class="L">E</text><text x="244" y="140" class="L">F</text>
+  <text x="268" y="64" class="L">G</text><text x="268" y="120" class="L">H</text><text x="268" y="196" class="L">I</text>
+  <text x="118" y="206" class="s">m. mylohyoideus</text><text x="396" y="30" text-anchor="end" class="s">dinding posterior pharynx</text>
+</svg>`
+};
+
+/* ---------------- Bank pretes ----------------
+   isian: [label, pertanyaan (boleh kosong bila nomor berupa daftar), kunci, catatan?] */
+const PAKET = [
+{ id:"sup", nama:"Tractus Superior", ppt:"Naufal", nomor:[
+  { soal:"Perhatikan skema potongan sagital rongga mulut sampai pharynx. Sebutkan nama struktur yang ditunjuk!", fig:"oris", isian:[
+    ["A","Atap rongga mulut bagian depan (bertulang)","Palatum durum","2/3 anterior processus palatinus maxillae, 1/3 posterior lamina horizontalis os palatinum."],
+    ["B","Lanjutan atap ke belakang (tidak bertulang)","Palatum molle (velum palatinum)"],
+    ["C","","Lingua (dorsum linguae)"],
+    ["D","Celah antara bibir dan gigi","Vestibulum oris"],
+    ["E","Ruang di dalam arcus dentalis","Cavitas oris propria"],
+    ["F","Cekungan antara pangkal lidah dan epiglottis","Vallecula epiglottica","Dibatasi plica glossoepiglottica mediana et lateralis."],
+    ["G","","Nasopharynx"],["H","","Oropharynx (setinggi C2–C3)"],["I","","Laryngopharynx"] ]},
+  { soal:"Lingua", isian:[
+    ["A","Pengecapan 2/3 anterior lidah dihantarkan oleh n. ……","Chorda tympani (n. VII), menumpang n. lingualis"],
+    ["B","Sensorik umum 2/3 anterior lidah oleh n. ……","N. lingualis (V3)"],
+    ["C","Sensorik umum dan pengecapan 1/3 posterior oleh n. ……","N. glossopharyngeus (IX)"],
+    ["D","Semua otot lidah dipersarafi n. …… (D), kecuali m. …… (E)","N. hypoglossus (XII)"],
+    ["E","","M. palatoglossus (dipersarafi n. X)"],
+    ["F","Sebutkan satu otot intrinsik lidah!","M. longitudinalis superior / longitudinalis inferior / transversus linguae / verticalis linguae"],
+    ["G","Arteri utama lidah adalah a. …… cabang a. carotis ……","A. lingualis, cabang a. carotis EXTERNA","PPT Naufal menulis carotis interna; itu salah ketik."] ]},
+  { soal:"Glandulae salivariae", isian:[
+    ["A","Kelenjar ludah terbesar adalah glandula ……","Glandula parotis"],
+    ["B","Saluran keluarnya dinamakan ductus ……","Ductus parotideus (Stensen)"],
+    ["C","Saluran tersebut menembus m. ……","M. buccinator"],
+    ["D","dan bermuara di vestibulum setinggi gigi ……","Molar II atas"],
+    ["E","Ductus Wharton (glandula submandibularis) bermuara di ……","Caruncula sublingualis, di samping frenulum linguae"],
+    ["F","Komplikasi parotitis epidemika tersering pada laki-laki dewasa adalah ……","Orchitis"] ]},
+  { soal:"Pharynx dan oesophagus", isian:[
+    ["A","Skeletopi pharynx: dari …… sampai setinggi vertebra ……","Basis cranii sampai C6"],
+    ["B","Isthmus faucium (penghubung cavitas oris propria dengan oropharynx) terletak setinggi ……","C2"],
+    ["C","Massa limfoid di antara arcus palatoglossus dan palatopharyngeus adalah ……","Tonsilla palatina"],
+    ["D","Sebutkan 3 pars oesophagus beserta letaknya!","Cervicalis C6–T1, thoracalis T1–T10, abdominalis T10–T11"],
+    ["E","Penyempitan oesophagus saat menembus diafragma disebut …… setinggi ……","Angustia inferior (diaphragmatica), T10"],
+    ["F","Angustia media disebabkan persilangan arcus aortae dan ……","Bronchus principalis SINISTER","PPT Naufal menulis dexter; PDF dosen dan literatur menyebut sinister."] ]},
+  { soal:"Gaster dan duodenum", isian:[
+    ["A","Bagian gaster di bawah kubah diafragma kiri adalah ……","Fundus gastricus"],
+    ["B","Sebutkan 2 sphincter pada gaster!","Sphincter gastro-oesophageal (cardia) dan m. sphincter pyloricus"],
+    ["C","Lapisan otot yang hanya dimiliki gaster adalah stratum ……","Stratum obliquum (membentuk canalis gastricus di curvatura minor)"],
+    ["D","Curvatura minor diperdarahi a. …… dan a. ……","A. gastrica sinistra dan a. gastrica dextra"],
+    ["E","Curvatura major diperdarahi a. …… dan a. ……","A. gastroomentalis sinistra (dari a. lienalis) dan dextra (dari a. gastroduodenalis)"],
+    ["F","Papilla duodeni major terletak di duodenum pars ……","Pars descendens"] ]}
+]},
+{ id:"acc", nama:"Systema Accessoria", ppt:"Fatih", nomor:[
+  { soal:"Perhatikan skema facies visceralis hepar. Sebutkan nama bangunan A–H!", fig:"hepar", isian:[
+    ["A","","Sulcus v. cavae inferioris","PPT aslab menulis \"superior\"; itu salah ketik."],
+    ["B","","Fossa vesicae felleae"],["C","","Fissura lig. venosi"],["D","","Fissura lig. teretis"],
+    ["E","","Porta hepatis"],["F","","Lobus caudatus"],["G","","Lobus quadratus"],["H","","Lobus dexter"] ]},
+  { soal:"Hepar", isian:[
+    ["A","Lig. teres hepatis merupakan sisa ……","V. umbilicalis"],
+    ["B","Lig. venosum merupakan sisa ……","Ductus venosus (Arantii)"],
+    ["C","Area nuda dibatasi oleh lig. ……","Lig. coronarium (anterior et posterior) dan lig. triangulare"],
+    ["D","Sebutkan minimal 3 isi porta hepatis!","Ductus hepaticus dexter et sinister, r. dexter et sinister a. hepatica propria, v. portae, plexus hepaticus, nl. hepatici"],
+    ["E","Vaskularisasi nutritif hepar oleh a. ……","A. hepatica propria"],
+    ["F","Peradangan hepar berat sampai organ menyusut disebut ……","Sirosis hepatis"] ]},
+  { soal:"Lengkapi alur empedu dan getah pankreas!\nductus hepaticus dexter + sinister → (A) → bergabung dengan (B) dari vesica fellea → (C) → bergabung dengan (D) → (E) → bermuara di (F)", isian:[
+    ["A","","Ductus hepaticus communis"],["B","","Ductus cysticus"],["C","","Ductus choledochus"],
+    ["D","","Ductus pancreaticus major (Wirsung)"],["E","","Ampulla hepatopancreatica (Vater)"],
+    ["F","","Papilla duodeni major (pars descendens)"],
+    ["G","Sebutkan 3 sphincter pada ampulla tersebut!","M. sphincter ductus choledochi, m. sphincter ductus pancreatici, m. sphincter ampullae (kompleks sphincter Oddi)"] ]},
+  { soal:"Vesica fellea", isian:[
+    ["A","Sebutkan bagian vesica fellea (minimal 3)!","Fundus, corpus, infundibulum, collum"],
+    ["B","Sebutkan 3 batas trigonum Calot!","Ductus cysticus, ductus hepaticus communis, tepi bawah hepar"],
+    ["C","Arteri di dalam trigonum Calot adalah a. …… (C), cabang …… (D)","A. cystica"],
+    ["D","","R. dexter a. hepatica propria"],
+    ["E","Batu di dalam vesica fellea disebut …… (E), batu di ductus choledochus disebut …… (F)","Cholelithiasis"],
+    ["F","","Choledocholithiasis"],
+    ["G","Tanda pemeriksaan fisik untuk kolesistitis adalah ……","Murphy's sign"] ]},
+  { soal:"Pancreas, lien, dan vena porta", isian:[
+    ["A","Bagian pancreas yang intraperitoneal adalah ……","Cauda pancreatis"],
+    ["B","Tonjolan caput di belakang vasa mesenterica superior disebut ……","Processus uncinatus"],
+    ["C","V. porta dibentuk oleh v. …… dan v. …… (C) di belakang …… (D)","V. mesenterica superior + v. lienalis"],
+    ["D","","Collum pancreatis"],
+    ["E","Varises oesophagus terjadi di anastomosis v. …… dengan v. ……","V. gastrica sinistra dengan v. azygos (lewat vv. oesophageae)"],
+    ["F","Skeletopi lien setinggi ……","Costa IX–X sinistra"],
+    ["G","Ligamentum yang menghubungkan lien dengan gaster adalah ……","Lig. gastrosplenicum (gastrolienale)"] ]}
+]},
+{ id:"inf", nama:"Tractus Inferior", ppt:"Khai", nomor:[
+  { soal:"Perhatikan skema intestinum crassum. Sebutkan nama bagian A–I!", fig:"colon", isian:[
+    ["A","","Caecum"],["B","","Appendix vermiformis"],["C","","Colon ascendens"],["D","","Flexura coli dextra (hepatica)"],
+    ["E","","Colon transversum"],["F","","Flexura coli sinistra (lienalis)"],["G","","Colon descendens"],
+    ["H","","Colon sigmoideum"],["I","","Rectum"] ]},
+  { soal:"Bangunan khas colon", isian:[
+    ["A","Taenia tempat melekatnya omentum majus disebut taenia ……","Taenia omentalis"],
+    ["B","Taenia yang tidak dilekati apa pun disebut taenia ……","Taenia libera"],
+    ["C","Ketiga taenia bertemu di ……","Pangkal appendix vermiformis"],
+    ["D","Bagian colon yang menggembung disebut …… (D), lekukan di antaranya disebut …… (E)","Haustra"],
+    ["E","","Incisura"],
+    ["F","Kantong lemak kecil pada tunica serosa colon disebut ……","Appendices epiploicae (omentales)"] ]},
+  { soal:"Appendix vermiformis", isian:[
+    ["A","Titik McBurney terletak di ……","1/3 lateral garis SIAS dextra ke umbilicus (garis Monro-Richter)"],
+    ["B","Lipatan peritoneum penggantung appendix disebut ……","Mesoappendix (mesenteriolum)"],
+    ["C","A. appendicularis merupakan cabang dari ……","A. caecalis posterior, cabang a. ileocolica (AMS)"],
+    ["D","Letak appendix yang paling sering adalah ……","Retrocaecal"],
+    ["E","Appendicitis dengan psoas sign positif menunjukkan letak ……","Retrocaecal"] ]},
+  { soal:"Rectum dan canalis analis", isian:[
+    ["A","Rectum dimulai setinggi vertebra ……","S3"],
+    ["B","Lipatan transversal mukosa rectum disebut ……","Plicae transversales recti (Houston)"],
+    ["C","Batas endoderm dan ektoderm canalis analis adalah ……","Linea pectinata (dentata)"],
+    ["D","Hemoroid yang berdarah tanpa nyeri adalah hemoroid ……, terletak di …… linea pectinata","Hemoroid interna, di atas linea pectinata"],
+    ["E","V. rectalis superior bermuara ke v. …… lalu ke sistem ……","V. mesenterica inferior → v. porta"],
+    ["F","Sphincter yang berupa otot lurik adalah …… dan dipersarafi n. ……","M. sphincter ani externus, n. pudendus"] ]},
+  { soal:"Usus halus dan dindingnya", isian:[
+    ["A","Batas tractus digestivus superior dan inferior adalah ……","Lig. Treitz (m. suspensorius duodeni)"],
+    ["B","Ligamen tersebut membentang dari …… (B) ke …… (C)","Flexura duodenojejunalis"],
+    ["C","","Crus dextrum diafragma"],
+    ["D","Plexus saraf di antara dua lapis tunica muscularis adalah plexus ……, fungsinya ……","Plexus myentericus Auerbach, mengatur peristaltik"],
+    ["E","Plexus di tela submucosa adalah plexus ……","Plexus submucosus Meissner (sekresi dan aliran darah)"],
+    ["F","Sebutkan 4 lapisan dinding usus dari dalam ke luar!","Tunica mucosa, tela submucosa, tunica muscularis, tunica serosa"] ]}
+]},
+{ id:"din", nama:"Dinding Abdomen", ppt:"Zydane", nomor:[
+  { soal:"Perhatikan skema regio inguinal kanan yang dilihat dari dalam. Sebutkan bangunan A–D, lalu jawab E dan F!", fig:"hessel", isian:[
+    ["A","Batas medial segitiga","Margo lateralis m. rectus abdominis"],
+    ["B","Batas lateral segitiga","Vasa epigastrica inferiora"],
+    ["C","Batas inferior segitiga","Lig. inguinale"],
+    ["D","Lubang di lateral B","Annulus inguinalis profundus"],
+    ["E","Segitiga merah tersebut dinamakan …… (E). Hernia yang menembus segitiga ini disebut hernia ……","Trigonum Hesselbach; hernia inguinalis direk"],
+    ["F","Hernia yang masuk lewat D disebut hernia ……","Hernia inguinalis indirek (lateral dari vasa epigastrica inferiora)"] ]},
+  { soal:"Dinding anterolateral dan canalis inguinalis", isian:[
+    ["A","Otot dinding abdomen paling superfisial adalah m. ……","M. obliquus externus abdominis"],
+    ["B","Tepi bawah aponeurosisnya membentuk …… yang terbentang dari …… ke ……","Lig. inguinale, dari SIAS ke tuberculum pubicum"],
+    ["C","Dinding posterior canalis inguinalis dibentuk oleh ……","Fascia transversalis (diperkuat conjoint tendon di medial)"],
+    ["D","Dinding anterior canalis inguinalis dibentuk oleh ……","Aponeurosis m. obliquus externus (diperkuat m. obliquus internus di lateral)"],
+    ["E","Isi canalis inguinalis pada perempuan adalah ……","Lig. teres uteri (rotundum)"] ]},
+  { soal:"Lapisan dinding abdomen", isian:[
+    ["A","Lapisan lemak fascia superficialis disebut fascia …… (A), lapisan membranosanya fascia …… (B)","Fascia Camper"],
+    ["B","","Fascia Scarpa"],
+    ["C","Fascia Scarpa yang berlanjut ke scrotum menjadi ……","Fascia (tunica) dartos"],
+    ["D","Di bawah linea arcuata, permukaan posterior m. rectus langsung berbatasan dengan ……","Fascia transversalis"],
+    ["E","Dermatom kulit di sekitar umbilicus adalah ……","T10"] ]},
+  { soal:"Peritoneum", isian:[
+    ["A","Omentum majus merupakan derivat dari ……","Mesogastrium dorsale"],
+    ["B","Omentum minus terdiri dari lig. …… (B) dan lig. …… (C)","Lig. hepatogastricum"],
+    ["C","","Lig. hepatoduodenale"],
+    ["D","Sebutkan 3 struktur di tepi bebas lig. hepatoduodenale!","V. porta, a. hepatica propria, ductus choledochus"],
+    ["E","Penghubung cavum peritonei major dengan bursa omentalis adalah ……","Foramen epiploicum (Winslow)"],
+    ["F","Batas posterior lubang tersebut adalah ……","V. cava inferior"] ]},
+  { soal:"Sebutkan organ berikut!", isian:[
+    ["A","Organ retroperitoneal (sebutkan 3)","Contoh: duodenum (kecuali 2 cm awal), pancreas (kecuali cauda), colon ascendens, colon descendens, ren, ureter, suprarenal, aorta, VCI, rectum","Jembatan keledai: SAD PUCKER."],
+    ["B","Organ intraperitoneal (sebutkan 3)","Contoh: gaster, jejunum, ileum, caecum, appendix, colon transversum, colon sigmoideum, hepar, lien, cauda pancreas"],
+    ["C","Segmen colon yang retroperitoneal","Colon ascendens dan colon descendens"],
+    ["D","Bagian pancreas yang intraperitoneal","Cauda pancreatis"] ]}
+]}
+];
+
+/* ---------------- State ---------------- */
+const KEY = "persiapan-ub.pretes13.v1", APPKEY = "persiapan-ub.v1", DETIK = 60;
+function rd(k){ try{ return JSON.parse(localStorage.getItem(k)) || {}; }catch(e){ return {}; } }
+function wr(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+let S = rd(KEY);
+const ui = { pk: S._pk || "sup", mode: S._mode || "pretes", step: -1, open: {}, timer: null, left: DETIK };
+const root = document.documentElement, app = rd(APPKEY);
+root.setAttribute("data-theme", app.theme || "light");
+document.getElementById("tTheme").onclick = () => {
+  const nx = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nx); const a = rd(APPKEY); a.theme = nx; wr(APPKEY, a);
+};
+const paket = () => PAKET.find(p => p.id === ui.pk);
+const marks = id => (S[id] = S[id] || { mark:{} }).mark;
+function save(){ S._pk = ui.pk; S._mode = ui.mode; wr(KEY, S); }
+function total(p){ return p.nomor.reduce((a, n) => a + n.isian.length, 0); }
+function skor(p){ const m = marks(p.id); const v = Object.values(m); return { benar: v.filter(x => x === 1).length, dinilai: v.length, total: total(p) }; }
+function el(t, c, x){ const e = document.createElement(t); if(c) e.className = c; if(x != null) e.textContent = x; return e; }
+function stopTimer(){ if(ui.timer){ clearInterval(ui.timer); ui.timer = null; } }
+
+/* ---------------- Render ---------------- */
+function renderPk(){
+  const box = document.getElementById("pk"); box.innerHTML = "";
+  PAKET.forEach(p => {
+    const b = el("button"); b.type = "button"; b.setAttribute("role", "tab");
+    b.setAttribute("aria-selected", p.id === ui.pk ? "true" : "false");
+    const s = skor(p);
+    b.append(document.createTextNode(p.nama), el("span", null, p.ppt + " · " + (s.dinilai ? s.benar + "/" + s.total + " benar" : total(p) + " isian")));
+    b.onclick = () => { stopTimer(); ui.pk = p.id; ui.step = -1; ui.open = {}; save(); render(); };
+    box.appendChild(b);
+  });
+  document.querySelectorAll(".seg button").forEach(b => {
+    b.setAttribute("aria-selected", b.dataset.mode === ui.mode ? "true" : "false");
+    b.onclick = () => { stopTimer(); ui.mode = b.dataset.mode; ui.step = -1; ui.open = {}; save(); render(); };
+  });
+  const s = skor(paket());
+  document.getElementById("score").textContent = s.dinilai ? "Skor paket: " + s.benar + "/" + s.total + " (" + Math.round(s.benar / s.total * 100) + "%)" : "Belum dinilai";
+}
+
+function nomorCard(p, ni, showAns, timed){
+  const n = p.nomor[ni], card = el("div", "card");
+  const nh = el("div", "nh"); nh.appendChild(el("span", "no", "Nomor " + (ni + 1)));
+  if(timed){ const tm = el("span", "tm", ui.left + " dtk"); tm.id = "tm"; if(ui.left <= 10) tm.classList.add("low"); nh.appendChild(tm); }
+  card.appendChild(nh);
+  card.appendChild(el("p", "soal", n.soal));
+  if(n.fig){ const f = el("figure"); f.innerHTML = FIG[n.fig]; card.appendChild(f); }
+  const box = el("div", "isi"), m = marks(p.id);
+  n.isian.forEach((it, ii) => {
+    const k = ni + "-" + ii, row = el("div", "row" + (m[k] === 1 ? " m1" : m[k] === 0 ? " m0" : ""));
+    row.appendChild(el("span", "lb", it[0]));
+    const body = el("div");
+    const pr = el("div", "pr"); pr.textContent = it[1] ? it[1] + " " : ""; pr.appendChild(el("span", "dots", "…………")); body.appendChild(pr);
+    const open = showAns || ui.open[k];
+    if(open){
+      const a = el("div", "ans", it[2]); if(it[3]) a.appendChild(el("small", null, it[3])); body.appendChild(a);
+      const act = el("div", "act");
+      const ok = el("button", "ok", "Benar"), no = el("button", "no", "Salah");
+      ok.type = no.type = "button";
+      ok.setAttribute("aria-pressed", m[k] === 1 ? "true" : "false"); no.setAttribute("aria-pressed", m[k] === 0 ? "true" : "false");
+      ok.onclick = () => { m[k] = m[k] === 1 ? undefined : 1; if(m[k] === undefined) delete m[k]; save(); render(); };
+      no.onclick = () => { m[k] = m[k] === 0 ? undefined : 0; if(m[k] === undefined) delete m[k]; save(); render(); };
+      act.append(ok, no); body.appendChild(act);
+    } else if(!timed){
+      const act = el("div", "act"), b = el("button", null, "Lihat kunci"); b.type = "button";
+      b.onclick = () => { ui.open[k] = true; render(); };
+      act.appendChild(b); body.appendChild(act);
+    }
+    row.appendChild(body); box.appendChild(row);
+  });
+  card.appendChild(box);
+  return card;
+}
+
+function render(){
+  renderPk();
+  const p = paket(), main = document.getElementById("main"); main.innerHTML = "";
+  const N = p.nomor.length;
+  if(ui.mode === "latihan"){
+    p.nomor.forEach((_, ni) => main.appendChild(nomorCard(p, ni, false, false)));
+    const r = el("div", "nav"), all = el("button", "btn", "Buka semua kunci"), rs = el("button", "btn ghost", "Hapus penilaian paket ini");
+    all.onclick = () => { p.nomor.forEach((n, ni) => n.isian.forEach((_, ii) => ui.open[ni + "-" + ii] = true)); render(); };
+    rs.onclick = () => { S[p.id] = { mark:{} }; ui.open = {}; save(); render(); };
+    r.append(all, rs); main.appendChild(r); return;
+  }
+  /* Mode pretes */
+  if(ui.step < 0){
+    const c = el("div", "card intro");
+    c.innerHTML = "<b>Simulasi pretes " + p.nama + " (" + p.ppt + ")</b><ol><li>" + N + " nomor, satu nomor per layar, " + DETIK +
+      " detik per nomor. Layar pindah otomatis saat waktu habis.</li><li>Tulis jawabanmu di kertas, karena kunci baru dibuka setelah nomor terakhir.</li><li>Di layar hasil, tandai sendiri tiap isian benar atau salah.</li></ol>";
+    const b = el("button", "btn pri", "Mulai"); b.onclick = () => { ui.step = 0; ui.left = DETIK; startTimer(); render(); };
+    c.appendChild(b); main.appendChild(c); return;
+  }
+  if(ui.step < N){
+    main.appendChild(nomorCard(p, ui.step, false, true));
+    const pg = el("div", "prog"), i = el("i"); i.style.width = (ui.step / N * 100) + "%"; pg.appendChild(i); main.appendChild(pg);
+    const nav = el("div", "nav"), stop = el("button", "btn ghost", "Hentikan"), nx = el("button", "btn pri", ui.step === N - 1 ? "Selesai" : "Nomor berikutnya");
+    stop.onclick = () => { stopTimer(); ui.step = -1; render(); };
+    nx.onclick = () => next();
+    nav.append(stop, nx); main.appendChild(nav); return;
+  }
+  stopTimer();
+  const s = skor(p), res = el("div", "card result");
+  res.append(el("div", "big", s.dinilai ? s.benar + "/" + s.total : "—"),
+    el("p", null, s.dinilai < s.total ? "Tandai " + (s.total - s.dinilai) + " isian lagi di bawah untuk melihat skor akhir." : "Skor akhir paket ini: " + Math.round(s.benar / s.total * 100) + "%."));
+  const again = el("button", "btn", "Ulangi simulasi"); again.style.marginTop = "12px";
+  again.onclick = () => { S[p.id] = { mark:{} }; save(); ui.step = -1; render(); };
+  res.appendChild(again); main.appendChild(res);
+  p.nomor.forEach((_, ni) => main.appendChild(nomorCard(p, ni, true, false)));
+}
+function next(){ ui.step++; ui.left = DETIK; if(ui.step >= paket().nomor.length) stopTimer(); render(); }
+function startTimer(){
+  stopTimer();
+  ui.timer = setInterval(() => {
+    ui.left--;
+    const t = document.getElementById("tm");
+    if(t){ t.textContent = ui.left + " dtk"; t.classList.toggle("low", ui.left <= 10); }
+    if(ui.left <= 0){ next(); if(ui.step < paket().nomor.length) startTimer(); }
+  }, 1000);
+}
+render();
+</script>
+</body>
+</html>

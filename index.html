@@ -221,7 +221,7 @@
   .b3head .pr{display:flex; align-items:center; gap:10px; margin-top:12px}
   .b3head .pr .bar{flex:1; height:6px; border-radius:99px; background:var(--surface-2)}
   .b3head .pr .pct{font:600 12px "IBM Plex Mono",monospace; color:var(--muted); font-variant-numeric:tabular-nums; white-space:nowrap}
-  .b3guide{display:flex; align-items:center; gap:12px; margin-top:13px; padding:11px 13px; border-radius:11px;
+  .b3guide{display:flex; align-items:center; gap:12px; margin-top:10px; padding:11px 13px; border-radius:11px;
     background:var(--accent-soft); color:var(--accent-ink); text-decoration:none; border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
   .b3guide b{display:block; font-size:14px}
   .b3guide small{display:block; font-size:12.5px; opacity:.85; margin-top:1px}
@@ -1460,6 +1460,8 @@ const B13 = {
     { key:"anat", nama:"Anatomi", topik:"Abdomen & tractus digestivus",
       panduan:{ href:"anatomi-1-3.html", judul:"Panduan belajar anatomi",
                 ket:"Peta bobot responsi, urutan belajar, skema, checklist" },
+      latihan:{ href:"pretes-anatomi-1-3.html", judul:"Latihan pretes anatomi",
+                ket:"4 paket isian bergaya pretes aslab (satu per PPT), mode timer 60 detik" },
       aslab:[ { id:"ub-1-3-responsi-anat", nama:"Responsi Anatomi",
                 ket:"4 PPT aslab: dinding abdomen, tractus superior & inferior, organa accessoria" } ],
       asli:[ { id:"ub-1-3-resp-anat",     nama:"Responsi Anatomi 1.3",       ket:"isian diubah ke pilihan ganda" },
@@ -1589,12 +1591,12 @@ function renderB13(){
   i.style.width = pct + "%"; bar.appendChild(i);
   pr.append(bar, b13el("span", "pct", sm.dik + "/" + sm.total + " · " + pct + "%"));
   head.append(t, pr);
-  if(st.src === "aslab" && m.panduan){
-    const a = b13el("a", "b3guide"); a.href = m.panduan.href;
-    const d = b13el("div"); d.append(b13el("b", null, m.panduan.judul), b13el("small", null, m.panduan.ket));
-    a.append(d, b13el("span", "go", "Buka →"));
+  if(st.src === "aslab") [m.panduan, m.latihan].filter(Boolean).forEach(g => {
+    const a = b13el("a", "b3guide"); a.href = g.href;
+    const d = b13el("div"); d.append(b13el("b", null, g.judul), b13el("small", null, g.ket));
+    a.append(d, b13el("span", "go", "Buka \u2192"));
     head.appendChild(a);
-  }
+  });
   pn.appendChild(head);
   if(st.src === "aslab"){
     pn.appendChild(b13group("Bank soal dari PPT aslab", m.aslab, false));
