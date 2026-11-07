@@ -305,10 +305,13 @@ Praktikum_Klinis_Allyssa.pptx.pdf hanya rangkuman klinis + latsol, dipakai untuk
 ### `pretes-anatomi-1-3.html` — latihan pretes anatomi (isian)
 Halaman statis mandiri, ditautkan dari kepala mata kuliah Anatomi di tab 1.3 (`B13.mapel[anat].latihan`;
 `renderB13()` merender `panduan` dan `latihan` sebagai dua kartu `.b3guide`). Meniru format pretes aslab
-(contoh: Pretes Tractus Digestivus Inferior, Aryo): isian bernomor (A)(B)(C), sebagian dengan gambar berhuruf.
+(contoh: Pretes Tractus Digestivus Inferior, Aryo): isian bernomor (A)(B)(C).
 - 4 paket = 4 PPT aslab: Superior/Naufal (34 isian), Accessoria/Fatih (35), Inferior/Khai (32), Dinding/Zydane (26).
   Semua soal disusun sendiri untuk latihan, BUKAN naskah asli. Data inline di array `PAKET`.
-- Gambar = SVG skema sendiri di objek `FIG` (oris, hepar, colon, hessel), label huruf merah. Tidak ada gambar atlas.
+- **Tanpa gambar** (7 Nov 2026, atas permintaan user): skema SVG buatan sendiri (`FIG`) dihapus karena terlalu kasar dan
+  menyesatkan; nomor bergambar diganti isian deskriptif. Gambar asli PPT/atlas TIDAK boleh masuk repo public (kredit tidak cukup).
+  Latihan bergambar = file pribadi `Tebak_Struktur_Anatomi_1.3.html` (33 gambar dari dua naskah responsi kating), dikirim
+  ke user, sengaja tidak di-commit.
 - Mode **pretes**: satu nomor per layar, timer 60 dtk (`DETIK`), kunci dibuka setelah nomor terakhir. Mode **latihan**:
   semua nomor, tombol "Lihat kunci" per isian. Penilaian mandiri Benar/Salah, disimpan di
   `persiapan-ub.pretes13.v1` = `{ _pk, _mode, [paketId]: { mark: { "<nomorIdx>-<isianIdx>": 1|0 } } }`.
