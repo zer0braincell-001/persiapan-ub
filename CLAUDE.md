@@ -302,6 +302,19 @@ Praktikum_Klinis_Allyssa.pptx.pdf hanya rangkuman klinis + latsol, dipakai untuk
 - Sempat bernama `ub-1-3-aslab` / `ub-1-3-dosen` (PR #10, dibangun di atas main tanpa PR #9).
   Diganti nama saat digabung dengan PR #9, sebelum ada progres user yang tersimpan.
 
+### `pretes-anatomi-1-3.html` — latihan pretes anatomi (isian)
+Halaman statis mandiri, ditautkan dari kepala mata kuliah Anatomi di tab 1.3 (`B13.mapel[anat].latihan`;
+`renderB13()` merender `panduan` dan `latihan` sebagai dua kartu `.b3guide`). Meniru format pretes aslab
+(contoh: Pretes Tractus Digestivus Inferior, Aryo): isian bernomor (A)(B)(C), sebagian dengan gambar berhuruf.
+- 4 paket = 4 PPT aslab: Superior/Naufal (34 isian), Accessoria/Fatih (35), Inferior/Khai (32), Dinding/Zydane (26).
+  Semua soal disusun sendiri untuk latihan, BUKAN naskah asli. Data inline di array `PAKET`.
+- Gambar = SVG skema sendiri di objek `FIG` (oris, hepar, colon, hessel), label huruf merah. Tidak ada gambar atlas.
+- Mode **pretes**: satu nomor per layar, timer 60 dtk (`DETIK`), kunci dibuka setelah nomor terakhir. Mode **latihan**:
+  semua nomor, tombol "Lihat kunci" per isian. Penilaian mandiri Benar/Salah, disimpan di
+  `persiapan-ub.pretes13.v1` = `{ _pk, _mode, [paketId]: { mark: { "<nomorIdx>-<isianIdx>": 1|0 } } }`.
+  Kunci tanda dikunci per indeks → menyisipkan isian di tengah menggeser penilaian lama; tambahkan di akhir.
+- Kesalahan PPT Naufal (a. lingualis, angustia media) dan aslab Fatih (sulcus VCI) dicatat di catatan kunci.
+
 ### `anatomi-1-3.html` — panduan belajar anatomi mandiri
 Halaman statis terpisah (bukan view di index.html), karena isinya HTML/SVG kaya yang tidak bisa lewat `richText()`.
 - Target ujian: **responsi/OSPE praktikum** + senggol kasus. User punya waktu 1–3 hari (Nov 2026).
