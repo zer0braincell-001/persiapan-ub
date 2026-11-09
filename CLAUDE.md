@@ -356,8 +356,9 @@ crop dari render pakai `a:xfrm` elemen yang memuat `blipFill`.
   tetangga terdekat), jawaban SPESIFIK (mis. "Papila circumvallata", "Kelenjar Brunner"), bukan nama organ umum. Kalau ada
   penunjuk (panah/kotak/huruf/jarum), yang ditanya struktur yang ditunjuk. Data & pengecoh baku per jawaban di
   `DEF` skrip generator (tidak di repo); di halaman web disimpan inline di `DATA` (`{img,q,opsi[0]=benar,ket,asal}`), opsi diacak saat render.
-- **Status artifact berubah jadi PUBLIK** (dibagikan dari claude.ai, bukan oleh Claude). Republish ke artifact publik
-  diblokir pengaman otomatis; versi terbaru dikirim sebagai file ke user. Jangan republish tanpa izin eksplisit user.
+- **Status artifact:** sempat dijadikan PUBLIK oleh user (9 Nov); republish ke artifact publik diblokir pengaman otomatis.
+  User mengembalikannya ke PRIVAT, lalu versi soal-spesifik (106 soal tebak, 5 opsi) diterbitkan (versi `1794230272-51f3`).
+  Sebelum republish, cek `read` lewat get_artifact; kalau bukan `owner`, minta user memprivatkan dulu.
 - **Drive preparat user** (D:\DOWNLOAD2): `PREPARAT/GIT` (39 foto lab bersih, label dari nama file), `preparat4` (foto mikroskop
   HP + gambar tangan "Khas"). Dua folder `preparat4-…` berisi file dengan nama+ukuran sama (md5 tidak bisa dicek: shell device
   gagal start). Catatan tangan menulis "villi" untuk fundus/pylorus — gaster tidak punya vili.
