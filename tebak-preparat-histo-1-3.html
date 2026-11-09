@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tebak Preparat Histologi GIT 1.3</title>
+<!--
+  Kuis tebak preparat histologi GIT 1.3 (web). Gambar = foto mikroskop HP dari folder drive "preparat4" milik user,
+  BUKAN gambar PPT aslab/atlas (aturan repo: gambar PPT/atlas tidak boleh masuk repo public). Label = nama file pemilik drive.
+  Versi lengkap (gambar PPT + posttest kating) ada di artifact privat user, ditautkan di bawah.
+  localStorage: tema dari "persiapan-ub.v1"; skor terbaik di "persiapan-ub.tebakhisto13.v1".
+-->
+<style>
+ :root{--bg:#F5F3F1;--surface:#fff;--surface-2:#EFEBE7;--text:#221B1B;--muted:#6A5E5C;--border:#E2DAD5;--accent:#8C2B2B;--ok:#2A7A50;--ok-soft:#E0F0E6;--no:#A33E36;--no-soft:#F5E1DE}
+ :root[data-theme="dark"]{--bg:#161212;--surface:#201A1A;--surface-2:#2A2222;--text:#EEE7E5;--muted:#B0A3A0;--border:#3A3030;--accent:#E08A82;--ok:#6CC796;--ok-soft:#1C3127;--no:#E08E85;--no-soft:#3A2220}
+ *{box-sizing:border-box} [hidden]{display:none!important}
+ body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+ .top{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--border)}
+ .top .in{max-width:760px;margin:0 auto;padding:8px 12px;display:flex;gap:8px;align-items:center}
+ .top a{color:var(--accent);text-decoration:none;font-weight:600}.top .sp{flex:1}
+ .sc{font-weight:700;font-size:14px}
+ main{max-width:760px;margin:0 auto;padding:12px}
+ h1{font-size:20px;margin:6px 0}
+ .card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:12px;margin-bottom:12px}
+ .card img{width:100%;height:auto;display:block;border-radius:10px;background:#000}
+ .small{font-size:13px;color:var(--muted)}
+ .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+ select,button{font:inherit}
+ select{padding:6px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);max-width:100%}
+ .btn{border:0;border-radius:8px;padding:8px 12px;background:var(--accent);color:#fff}
+ .btn.alt{background:var(--surface-2);color:var(--text)}
+ .opts{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+ .opts button{border:1px solid var(--border);background:var(--surface-2);color:var(--text);border-radius:8px;padding:9px 6px;font-size:13px;text-align:left}
+ .opts button.ok{background:var(--ok-soft);border-color:var(--ok)} .opts button.no{background:var(--no-soft);border-color:var(--no)}
+ .key{margin-top:8px;padding:8px;border-radius:8px;background:var(--surface-2);font-size:14px}
+ .meta{font-size:12px;color:var(--muted);margin-bottom:6px}
+</style></head><body>
+<div class="top"><div class="in"><a href="index.html#/blok13?src=aslab&amp;m=histo">&larr; Tab 1.3</a><span class="sp"></span><span class="sc" id="sc"></span><button class="btn alt" id="tTheme">Tema</button></div></div>
+<main>
+<h1>Tebak preparat: histologi GIT</h1>
+<div class="card small">
+<p style="margin-top:0">Pilih organ untuk tiap foto. Fotonya diambil lewat mikroskop dengan HP (folder drive <b>preparat4</b>), dan labelnya mengikuti nama file pemilik drive, bukan verifikasi aslab. Gambar PPT aslab dan posttest kating tidak dipasang di sini karena web ini publik.</p>
+<p>Versi lengkap (103 gambar PPT + drive, posttest kating 50 soal bergambar): <a href="https://claude.ai/artifact/9Zocoz5Lyz2KPpp4R375HZ" target="_blank" rel="noopener">halaman latihan pribadi</a> (hanya bisa dibuka akun pemilik).</p>
+<p style="margin-bottom:0">Kunci cepat: Brunner di submukosa = duodenum · plak Peyer = ileum · tidak keduanya = jejunum · pit dangkal + kelenjar rapat = fundus · pit dalam bergelung = pylorus · tanpa vili + goblet melimpah = crassum · limfoid melingkar + kripte sedikit = appendix · kolumner ke skuamous = recto-anal.</p>
+<div class="row" style="margin-top:8px"><label>Organ <select id="org"></select></label><button class="btn" id="acak">Acak ulang</button></div>
+</div>
+<div id="box"></div>
+</main>
+<script>
+var DATA = [{"img": "img/histo13/anus2.jpg", "org": "Recto-anal junction", "asal": "anus2.JPG"}, {"img": "img/histo13/anus3.jpg", "org": "Recto-anal junction", "asal": "anus3.JPG"}, {"img": "img/histo13/anus5.jpg", "org": "Recto-anal junction", "asal": "anus5.JPG"}, {"img": "img/histo13/apendix2.jpg", "org": "Appendix", "asal": "apendix2.JPG"}, {"img": "img/histo13/apendix4.jpg", "org": "Appendix", "asal": "apendix4.JPG"}, {"img": "img/histo13/crassum2.jpg", "org": "Intestinum crassum / rektum", "asal": "crassum2.JPG"}, {"img": "img/histo13/crassum4.jpg", "org": "Intestinum crassum / rektum", "asal": "crassum4.JPG"}, {"img": "img/histo13/dodenum.jpg", "org": "Duodenum", "asal": "dodenum.JPG"}, {"img": "img/histo13/duodenum.jpg", "org": "Duodenum", "asal": "duodenum.JPG"}, {"img": "img/histo13/duodenum2.jpg", "org": "Duodenum", "asal": "duodenum2.JPG"}, {"img": "img/histo13/duodenum4.jpg", "org": "Duodenum", "asal": "duodenum4.JPG"}, {"img": "img/histo13/duodenum6.jpg", "org": "Duodenum", "asal": "duodenum6.JPG"}, {"img": "img/histo13/duodenum8.jpg", "org": "Duodenum", "asal": "duodenum8.JPG"}, {"img": "img/histo13/esopagus2.jpg", "org": "Esofagus", "asal": "esopagus2.JPG"}, {"img": "img/histo13/fundus.jpg", "org": "Fundus ventrikuli", "asal": "fundus.JPG"}, {"img": "img/histo13/fundus4.jpg", "org": "Fundus ventrikuli", "asal": "fundus4.JPG"}, {"img": "img/histo13/fundus5.jpg", "org": "Fundus ventrikuli", "asal": "fundus5.JPG"}, {"img": "img/histo13/ileum.jpg", "org": "Ileum", "asal": "ileum.JPG"}, {"img": "img/histo13/ileum2.jpg", "org": "Ileum", "asal": "ileum2.JPG"}, {"img": "img/histo13/ileum4.jpg", "org": "Ileum", "asal": "ileum4.JPG"}, {"img": "img/histo13/ileum8.jpg", "org": "Ileum", "asal": "ileum8.JPG"}, {"img": "img/histo13/ileum9.jpg", "org": "Ileum", "asal": "ileum9.JPG"}, {"img": "img/histo13/jejunum.jpg", "org": "Jejunum", "asal": "jejunum.JPG"}, {"img": "img/histo13/jejunum2.jpg", "org": "Jejunum", "asal": "jejunum2.JPG"}, {"img": "img/histo13/jejunum4.jpg", "org": "Jejunum", "asal": "jejunum4.JPG"}, {"img": "img/histo13/jejunum7.jpg", "org": "Jejunum", "asal": "jejunum7.JPG"}, {"img": "img/histo13/pylorus.jpg", "org": "Pylorus ventrikuli", "asal": "pylorus.JPG"}, {"img": "img/histo13/pylorus-2.jpg", "org": "Pylorus ventrikuli", "asal": "pylorus (2).JPG"}, {"img": "img/histo13/pylorus-5.jpg", "org": "Pylorus ventrikuli", "asal": "pylorus (5).JPG"}, {"img": "img/histo13/pylorus-6.jpg", "org": "Pylorus ventrikuli", "asal": "pylorus (6).JPG"}, {"img": "img/histo13/pylorus-9.jpg", "org": "Pylorus ventrikuli", "asal": "pylorus (9).JPG"}, {"img": "img/histo13/pylorus-11.jpg", "org": "Pylorus ventrikuli", "asal": "pylorus (11).JPG"}, {"img": "img/histo13/pylorus-12.jpg", "org": "Pylorus ventrikuli", "asal": "pylorus (12).JPG"}];
+var ORG = ["Esofagus","Fundus ventrikuli","Pylorus ventrikuli","Duodenum","Jejunum","Ileum","Appendix","Intestinum crassum / rektum","Recto-anal junction"];
+var APPKEY = "persiapan-ub.v1", KEY = "persiapan-ub.tebakhisto13.v1";
+function rd(k){ try{ return JSON.parse(localStorage.getItem(k)) || {}; }catch(e){ return {}; } }
+function wr(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+var root = document.documentElement, app = rd(APPKEY);
+root.setAttribute("data-theme", app.theme || "light");
+document.getElementById("tTheme").onclick = function(){ var n = root.getAttribute("data-theme")==="dark"?"light":"dark"; root.setAttribute("data-theme", n); app = rd(APPKEY); app.theme = n; wr(APPKEY, app); };
+function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+var sel = document.getElementById("org");
+sel.innerHTML = '<option value="*">Semua organ</option>' + ORG.map(function(o){ return '<option>'+o+'</option>'; }).join('');
+var list = [], sc = {b:0,n:0};
+function esc(s){ return String(s).replace(/[&<>"]/g,function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function score(){ var best = rd(KEY).best || 0; document.getElementById("sc").textContent = sc.b + "/" + sc.n + " · " + list.length + " foto" + (best ? " · terbaik " + best + "%" : ""); }
+function build(){
+  var o = sel.value; list = shuffle(DATA.filter(function(x){ return o==="*" || x.org===o; })); sc = {b:0,n:0};
+  document.getElementById("box").innerHTML = list.map(function(x,i){
+    return '<div class="card" data-i="'+i+'"><div class="meta">#'+(i+1)+'</div><img loading="lazy" src="'+esc(x.img)+'" alt="foto preparat '+(i+1)+'">' +
+      '<div class="opts">' + ORG.map(function(g){ return '<button data-o="'+esc(g)+'">'+esc(g)+'</button>'; }).join('') + '</div>' +
+      '<div class="key" hidden><b>'+esc(x.org)+'</b> · file: '+esc(x.asal)+'</div></div>';
+  }).join('');
+  score();
+}
+document.getElementById("box").addEventListener("click", function(e){
+  var b = e.target.closest(".opts button"); if(!b) return;
+  var c = b.closest(".card"); if(c.getAttribute("data-done")) return; c.setAttribute("data-done","1");
+  var x = list[+c.getAttribute("data-i")], ok = b.getAttribute("data-o") === x.org;
+  sc.n++; if(ok) sc.b++;
+  b.classList.add(ok ? "ok" : "no");
+  c.querySelectorAll(".opts button").forEach(function(q){ if(q.getAttribute("data-o")===x.org) q.classList.add("ok"); });
+  c.querySelector(".key").hidden = false;
+  if(sc.n === list.length && sel.value === "*"){ var p = Math.round(100*sc.b/sc.n), s = rd(KEY); if(!s.best || p > s.best){ s.best = p; wr(KEY, s); } }
+  score();
+});
+sel.onchange = build; document.getElementById("acak").onclick = build;
+build();
+</script></body></html>

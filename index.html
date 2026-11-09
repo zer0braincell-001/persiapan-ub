@@ -1493,8 +1493,10 @@ const B13 = {
     { key:"histo", nama:"Histologi", topik:"GIT atas & GIT bawah",
       panduan:{ href:"histologi-1-3.html", judul:"Panduan belajar histologi",
                 ket:"Peta bobot posttest, tabel pembanding per preparat, algoritma identifikasi, koreksi sumber" },
-      latihan:{ href:"https://claude.ai/artifact/9Zocoz5Lyz2KPpp4R375HZ", judul:"Latihan identifikasi bergambar (pribadi)",
-                ket:"Halaman privat di akun claude.ai pemilik; gambar PPT/drive tidak disimpan di repo" },
+      latihan:{ href:"tebak-preparat-histo-1-3.html", judul:"Kuis tebak preparat (33 foto)",
+                ket:"Foto mikroskop HP dari drive preparat4; pilih organnya" },
+      latihan2:{ href:"https://claude.ai/artifact/9Zocoz5Lyz2KPpp4R375HZ", judul:"Latihan bergambar lengkap (pribadi)",
+                ket:"103 gambar PPT + drive dan posttest kating 50 soal; hanya bisa dibuka akun pemilik" },
       aslab:[ { id:"ub-1-3-responsi-histo", nama:"Histologi GIT",
                 ket:"2 PPT aslab Afif: GIT atas, GIT bawah" } ],
       asli:[ { id:"ub-1-3-post-histo", nama:"Posttest Histologi GIT", ket:"Anconeus 2021 + kompilasi, 4 kunci kating dikoreksi" } ],
@@ -1607,7 +1609,7 @@ function renderB13(){
   i.style.width = pct + "%"; bar.appendChild(i);
   pr.append(bar, b13el("span", "pct", sm.dik + "/" + sm.total + " · " + pct + "%"));
   head.append(t, pr);
-  if(st.src === "aslab") [m.panduan, m.latihan].filter(Boolean).forEach(g => {
+  if(st.src === "aslab") [m.panduan, m.latihan, m.latihan2].filter(Boolean).forEach(g => {
     const a = b13el("a", "b3guide"); a.href = g.href; if(/^https?:/.test(g.href)){ a.target = "_blank"; a.rel = "noopener"; }
     const d = b13el("div"); d.append(b13el("b", null, g.judul), b13el("small", null, g.ket));
     a.append(d, b13el("span", "go", "Buka \u2192"));

@@ -347,6 +347,11 @@ crop dari render pakai `a:xfrm` elemen yang memuat `blipFill`.
   posttest 50 soal bergambar (screenshot dipotong ke area slide, tanpa wajah peserta), catatan gambar tangan drive.
   User sempat minta gambar itu masuk web repo ("link ga kesebar"); DITOLAK karena repo/Pages publik dan melanggar aturan
   gambar PPT/atlas — diganti artifact privat. Jangan pindahkan gambarnya ke repo.
+- **`tebak-preparat-histo-1-3.html`** (kuis web, `B13.mapel[histo].latihan`): 33 foto mikroskop HP dari drive `preparat4`
+  di `img/histo13/` (720px, q70, ±470 KB total). Ini satu-satunya gambar histo di repo, dan boleh karena **bukan** gambar
+  PPT/atlas (user meminta "kuis gambar masukin", 9 Nov). `ileum6` sengaja dibuang (isinya tidak jelas). Label = nama file
+  pemilik drive. Foto `PREPARAT/GIT` TIDAK dimasukkan: beberapa identik dengan gambar di PPT aslab. Skor terbaik di
+  `persiapan-ub.tebakhisto13.v1`. Artifact privat pindah ke `latihan2`; `renderB13()` kini merender panduan, latihan, latihan2.
 - **Drive preparat user** (D:\DOWNLOAD2): `PREPARAT/GIT` (39 foto lab bersih, label dari nama file), `preparat4` (foto mikroskop
   HP + gambar tangan "Khas"). Dua folder `preparat4-…` berisi file dengan nama+ukuran sama (md5 tidak bisa dicek: shell device
   gagal start). Catatan tangan menulis "villi" untuk fundus/pylorus — gaster tidak punya vili.
