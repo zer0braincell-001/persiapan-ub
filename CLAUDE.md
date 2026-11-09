@@ -57,7 +57,7 @@ Kelas CSS: `.krow` (baris kuliah), `.qsc` (kartu mulai cepat), `.pchip` (chip po
 ## Tab Blok 1.3 (`#/blok13`) — Sistem Digestif & Metabolisme
 View `#viewB13`, dirender `renderB13()`. **Dua lapis navigasi** (UI dirombak 6 Nov 2026 atas permintaan user):
 1. Segmented control `#b13src`: **Materi Aslab | Materi Dosen**.
-2. Tab mata kuliah `#b13mapel`: **Anatomi | Biokimia | Fisiologi**.
+2. Tab mata kuliah `#b13mapel`: **Anatomi | Biokimia | Fisiologi | Histologi** (di layar ≤520px tampil grid 2×2, bukan scroll samping).
 3. Panel `#b13panel`: kartu kepala mata kuliah (progres gabungan + tautan panduan bila ada), lalu grup
    "Bank soal dari PPT aslab" dan "Naskah asli kakak tingkat" (hanya di sumber aslab, karena responsi = aslab).
    Sumber dosen tanpa bank menampilkan empty state per mata kuliah.
@@ -87,8 +87,10 @@ Pemetaan saat ini (kolom "seksi" = posisi lama sebelum UI dirombak):
 | Pretest Fisiologi | Pretest Fisiologi 2023 | `ub-1-3-pre-2023` | 20 |
 | Pretest Fisiologi | Pretest Termoregulasi 2018 | `ub-1-3-pre-2018` | 14 |
 | Pretest | Pretes Digestivus Inferior (Aryo) | `ub-1-3-pre-digest` | 11 |
+| PPT Aslab | Histologi GIT (Afif) | `ub-1-3-responsi-histo` | 105 |
+| Naskah asli | Posttest Histologi GIT | `ub-1-3-post-histo` | 50 |
 
-Total tab 1.3 = **769 soal** di 13 bank. Per mata kuliah: Anatomi 224 (150 + 74 naskah), Biokimia 293 (209 + 84), Fisiologi 252 (179 + 73).
+Total tab 1.3 = **924 soal** di 15 bank. Per mata kuliah: Anatomi 224 (150 + 74 naskah), Biokimia 293 (209 + 84), Fisiologi 252 (179 + 73), Histologi 155 (105 + 50).
 Naskah asli/pretest dikelompokkan per mata kuliah: resp-anat, resp-anat-fix, pre-digest → Anatomi; resp-asli, azytralis, latsol → Biokimia; pre-termo/2021/2023/2018 → Fisiologi.
 
 ### Quiz `ub-1-3-responsi-fisio` — Responsi Fisiologi 1.3 (Termoregulasi)
@@ -317,6 +319,37 @@ Halaman statis mandiri, ditautkan dari kepala mata kuliah Anatomi di tab 1.3 (`B
   `persiapan-ub.pretes13.v1` = `{ _pk, _mode, [paketId]: { mark: { "<nomorIdx>-<isianIdx>": 1|0 } } }`.
   Kunci tanda dikunci per indeks → menyisipkan isian di tengah menggeser penilaian lama; tambahkan di akhir.
 - Kesalahan PPT Naufal (a. lingualis, angustia media) dan aslab Fatih (sulcus VCI) dicatat di catatan kunci.
+
+### Histologi 1.3 (`ub-1-3-responsi-histo`, `ub-1-3-post-histo`, `histologi-1-3.html`) — 9 Nov 2026
+Cakupan **hanya GIT atas + GIT bawah** (keputusan user). Hepar, vesica fellea, pankreas, kelenjar ludah TIDAK masuk.
+Sumber: `GIT_ATAS_AFIF.pptx` (30 slide) dan `GIT_BAWAH_AFIF.pptx` (33 slide), aslab Afif, Histromion 2024.
+Berbeda dari PPT fisio/biokim: teks ADA di shape + notes, tetapi preparatnya gambar (label/panah di gambar) → tetap render.
+Di PPT bawah gambar dipasang sebagai `blipFill` pada shape (bukan `p:pic`), jadi `shape_type==13` tidak menemukannya;
+crop dari render pakai `a:xfrm` elemen yang memuat `blipFill`.
+- **Bank aslab** 105 soal, `modul` = `"Histologi · <grup>"`, rationale = bahas + `  —  **Diskriminator:** ...`, field `grup/bahas/diskriminator`.
+- **Naskah asli** 50 soal = Posttest Anconeus 2021 (docx, 3 shift × 10; batang soal berupa screenshot Zoom, jawaban di
+  teks PEMBAHASAN) + kompilasi PDF 20 soal (jawaban **bold**). Dua PDF yang dilampirkan (`POSTEST_GIT.pdf`, `POSTEST_GIT_1.pdf`)
+  **identik** md5 `e3a09cda…`. Semua isian/BS → pilihan ganda, `asliPenuh:false`, `kodeAsli` = `"Anconeus S<shift> <no>"` / `"Kompilasi #<no>"`.
+- **Peta bobot** (50 soal, semuanya identifikasi gambar + 1 pertanyaan lanjutan, timer 10–45 dtk): lingua 6, duodenum 6,
+  fundus 5, pylorus 5, crassum 5, recto-anal 5, esofagus 4, ileum 4, appendix 4, pyloro-duodenal 3, jejunum 3.
+  GIT atas 46 % / bawah 54 %. Hormon, Cajal, GE junction, tonsila lingualis: 0 soal.
+- **Kunci kating SALAH** (dikoreksi, `kunciDari:"analisis"`): Kompilasi #9 (Meissner → Auerbach), #11 (duodenum/Brunner →
+  ileum; gambarnya identik slide ileum PPT, Anconeus S3 #9, dan foto drive `21 illeum.jpg`), #12 (submukosa "JP longgar"),
+  #20 (ciri lamina propria ditulis sebagai submukosa).
+- **Konflik dibiarkan:** GALT crassum di submukosa (PPT) vs lamina propria (kating); jumlah papila manusia 3 (notes) vs 4
+  (slide + kating); sel M di jejunum (slide) vs ileum (notes); gambar ileum yang sama dijawab plak Peyer vs dome area.
+- **Kesalahan PPT Afif** (jangan diikuti): adventitia bermesotel; goblet "buffer penetral kimus"; CCK "sekresi empedu oleh
+  hepatosit"; sekretin/motilin dari neuroendokrin lambung; "T. Muskularis Mukosa" sebagai tunika.
+- `histologi-1-3.html`: panduan statis tanpa gambar, mode Tutup jawaban (`.rv`), checklist; localStorage `persiapan-ub.histo13.v1`
+  (checklist per indeks, tambah item di akhir).
+- **Latihan bergambar = artifact PRIVAT** https://claude.ai/artifact/9Zocoz5Lyz2KPpp4R375HZ (slug `455da390-6f7a-44ca-bbfa-692bebc841a0`),
+  ditautkan dari `B13.mapel[histo].latihan` (link eksternal dibuka `target=_blank`). Isi: Tebak preparat 103 gambar (PPT + drive),
+  posttest 50 soal bergambar (screenshot dipotong ke area slide, tanpa wajah peserta), catatan gambar tangan drive.
+  User sempat minta gambar itu masuk web repo ("link ga kesebar"); DITOLAK karena repo/Pages publik dan melanggar aturan
+  gambar PPT/atlas — diganti artifact privat. Jangan pindahkan gambarnya ke repo.
+- **Drive preparat user** (D:\DOWNLOAD2): `PREPARAT/GIT` (39 foto lab bersih, label dari nama file), `preparat4` (foto mikroskop
+  HP + gambar tangan "Khas"). Dua folder `preparat4-…` berisi file dengan nama+ukuran sama (md5 tidak bisa dicek: shell device
+  gagal start). Catatan tangan menulis "villi" untuk fundus/pylorus — gaster tidak punya vili.
 
 ### `anatomi-1-3.html` — panduan belajar anatomi mandiri
 Halaman statis terpisah (bukan view di index.html), karena isinya HTML/SVG kaya yang tidak bisa lewat `richText()`.

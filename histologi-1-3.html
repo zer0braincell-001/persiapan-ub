@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panduan Histologi GIT 1.3</title>
+<!--
+  Panduan belajar histologi Blok 1.3: GIT atas dan GIT bawah (PPT aslab Afif, Histromion 2024).
+  Halaman mandiri, tidak memakai engine quiz di index.html.
+  TIDAK ADA gambar PPT/atlas di sini (repo public). Latihan identifikasi bergambar = file pribadi user.
+  localStorage: tema dibaca dari "persiapan-ub.v1" (sama dengan index.html); status "Tutup jawaban" dan
+  checklist di "persiapan-ub.histo13.v1". Checklist disimpan per indeks: tambahkan item di akhir saja.
+-->
+<style>
+  :root{--bg:#F5F3F1;--surface:#fff;--surface-2:#EFEBE7;--text:#221B1B;--muted:#6A5E5C;--border:#E2DAD5;
+    --accent:#8C2B2B;--accent-soft:#F6E4E2;--good:#2A7A50;--good-soft:#E0F0E6;--flag:#A66F12;--flag-soft:#F7ECD6;
+    --bad:#A33E36;--bad-soft:#F5E1DE;--radius:14px;--maxw:860px}
+  :root[data-theme="dark"]{--bg:#161212;--surface:#201A1A;--surface-2:#2A2222;--text:#EEE7E5;--muted:#B0A3A0;--border:#3A3030;
+    --accent:#E08A82;--accent-soft:#3A2422;--good:#6CC796;--good-soft:#1C3127;--flag:#E2B356;--flag-soft:#33291A;--bad:#E08E85;--bad-soft:#3A2220}
+  *{box-sizing:border-box}
+  [hidden]{display:none!important}
+  body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .top{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--border)}
+  .top .in{max-width:var(--maxw);margin:0 auto;padding:8px 12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .top a{color:var(--accent);text-decoration:none;font-weight:600}
+  .top .sp{flex:1}
+  button.tg{border:1px solid var(--border);background:var(--surface-2);color:var(--text);border-radius:999px;padding:6px 12px;font-size:13px}
+  button.tg[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+  main{max-width:var(--maxw);margin:0 auto;padding:12px}
+  h1{font-size:22px;margin:8px 0 4px}
+  h2{font-size:18px;margin:0 0 8px;color:var(--accent)}
+  h3{font-size:15px;margin:14px 0 6px}
+  .lead{color:var(--muted);margin:0 0 12px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;margin-bottom:14px}
+  .toc{display:flex;flex-wrap:wrap;gap:6px}
+  .toc a{font-size:13px;padding:4px 10px;border-radius:999px;background:var(--surface-2);color:var(--text);text-decoration:none}
+  .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:8px 0}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:480px}
+  th,td{border:1px solid var(--border);padding:6px 8px;text-align:left;vertical-align:top}
+  th{background:var(--surface-2)}
+  td:first-child{font-weight:600}
+  .co{border-left:4px solid var(--accent);background:var(--accent-soft);padding:8px 10px;border-radius:8px;margin:10px 0;font-size:14px}
+  .co.flag{border-color:var(--flag);background:var(--flag-soft)}
+  .co.bad{border-color:var(--bad);background:var(--bad-soft)}
+  .co.good{border-color:var(--good);background:var(--good-soft)}
+  .tag{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:6px;background:var(--surface-2);color:var(--muted);vertical-align:1px}
+  .tag.a{background:var(--accent-soft);color:var(--accent)}
+  ul,ol{padding-left:20px;margin:6px 0}
+  li{margin:3px 0}
+  .flow{counter-reset:s;list-style:none;padding:0}
+  .flow li{counter-increment:s;position:relative;padding:8px 10px 8px 40px;margin:6px 0;background:var(--surface-2);border-radius:10px}
+  .flow li::before{content:counter(s);position:absolute;left:10px;top:8px;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+  .ck label{display:block;padding:4px 0}
+  .small{font-size:13px;color:var(--muted)}
+  body.tutup .rv{filter:blur(5px);cursor:pointer;user-select:none}
+  body.tutup .rv.shown{filter:none}
+</style>
+</head>
+<body>
+<div class="top"><div class="in">
+  <a href="index.html#/blok13?src=aslab&amp;m=histo">&larr; Tab 1.3</a><span class="sp"></span>
+  <button class="tg" id="tTutup" aria-pressed="false">Tutup jawaban</button>
+  <button class="tg" id="tTheme">Tema</button>
+</div></div>
+<main>
+<h1>Histologi GIT atas dan bawah</h1>
+<p class="lead">Sumber inti: PPT aslab Afif (Histromion 2024), GIT Atas dan GIT Bawah. <span class="tag">LIT</span> = tambahan literatur (Junqueira, diFiore). Cakupan hanya saluran cerna; hepar, vesica fellea, pankreas, dan kelenjar ludah tidak termasuk PPT ini.</p>
+<div class="card"><div class="toc">
+ <a href="#s0">00 Peta bobot</a><a href="#s1">01 Kerangka 4 tunika</a><a href="#s2">02 Cavum oris &amp; lingua</a><a href="#s3">03 Esofagus</a>
+ <a href="#s4">04 Gaster</a><a href="#s5">05 Pyloro-duodenal</a><a href="#s6">06 Usus halus</a><a href="#s7">07 Appendix &amp; crassum</a>
+ <a href="#s8">08 Recto-anal</a><a href="#s9">09 Saraf &amp; hormon</a><a href="#s10">10 Algoritma identifikasi</a><a href="#s11">11 Koreksi sumber</a><a href="#s12">12 Checklist</a>
+</div></div>
+
+<section class="card" id="s0"><h2>00 · Peta bobot dan cara pakai malam ini</h2>
+<p>Data: 50 soal posttest kating (Anconeus 2021, 3 shift × 10, ditambah 20 soal kompilasi PDF). <b>Semua soal berbentuk gambar preparat</b> lalu satu pertanyaan lanjutan (isian atau B/S), dengan waktu 10–45 detik per soal.</p>
+<div class="tw"><table>
+<tr><th>Topik</th><th>Soal</th><th>%</th><th>Yang ditanyakan</th></tr>
+<tr><td>Lingua, papila, taste bud, epitel cavum oris</td><td>6</td><td>12</td><td>nama papila, von Ebner/Weber, 3 sel taste bud, kornifikasi</td></tr>
+<tr><td>Duodenum</td><td>6</td><td>12</td><td>Brunner (letak, muara), Auerbach</td></tr>
+<tr><td>Fundus ventrikuli</td><td>5</td><td>10</td><td>parietal vs chief (warna), 3 lapis muskularis</td></tr>
+<tr><td>Pylorus ventrikuli</td><td>5</td><td>10</td><td>sel G (B/S), tanpa parietal/chief, submukosa, serosa</td></tr>
+<tr><td>Intestinum crassum</td><td>5</td><td>10</td><td>goblet dominan, letak folikel limfoid (B/S)</td></tr>
+<tr><td>Recto-anal junction</td><td>5</td><td>10</td><td>perbedaan epitel dan lamina propria</td></tr>
+<tr><td>Esofagus</td><td>4</td><td>8</td><td>epitel, kelenjar esofagus + fungsinya, susunan otot</td></tr>
+<tr><td>Ileum</td><td>4</td><td>8</td><td>plak Peyer / dome area + fungsi</td></tr>
+<tr><td>Appendix</td><td>4</td><td>8</td><td>ciri mukosa (tanpa vili, kripte sedikit), centrum germinativum</td></tr>
+<tr><td>Pyloro-duodenal junction</td><td>3</td><td>6</td><td>3 perbedaan pylorus vs duodenum</td></tr>
+<tr><td>Jejunum</td><td>3</td><td>6</td><td>tanpa Peyer (B/S), Auerbach di muskularis</td></tr>
+</table></div>
+<p class="small">Bobotnya merata: GIT atas 46%, GIT bawah 54%. Sebagian soal PDF memakai gambar dan pertanyaan yang sama dengan naskah Anconeus, jadi topik yang berulang sedikit terlalu tinggi bobotnya. Yang tidak pernah muncul di 50 soal itu: tonsila lingualis, GE junction, tabel hormon, sel Cajal.</p>
+<div class="co good"><b>Urutan malam ini (pretes besok 10.00):</b>
+<ol>
+<li>Bagian 01 dan 10 dulu (kerangka 4 tunika dan algoritma identifikasi), sekitar 20 menit. Hampir semua soal "preparat apa?" terjawab dari dua bagian ini.</li>
+<li>Lalu 04, 06, 07, dan 08 (gaster, usus halus, appendix/crassum, recto-anal); bersama-sama ini 64% bobot.</li>
+<li>Kerjakan mode <b>Tebak preparat</b> di file pribadi sampai di atas 85%, lalu mode <b>Posttest kating</b> dengan timer.</li>
+<li>Pagi sebelum pretes: bagian 11 (koreksi sumber), karena jebakan B/S kating ada di sana.</li>
+</ol></div>
+</section>
+
+<section class="card" id="s1"><h2>01 · Kerangka: 4 tunika, lalu cari pengecualiannya</h2>
+<p>Seluruh saluran dari esofagus sampai anus memakai pola yang sama. Hafalkan polanya sekali, lalu tiap organ cukup diingat <b>apa yang berbeda</b> dari pola itu.</p>
+<div class="tw"><table>
+<tr><th>Tunika (dalam ke luar)</th><th>Isi</th><th>Saraf</th></tr>
+<tr><td>Mukosa</td><td>epitel · lamina propria (JP longgar) · muskularis mukosa (otot polos tipis)</td><td>-</td></tr>
+<tr><td>Submukosa</td><td>JP padat ireguler, pembuluh darah, limfe</td><td><span class="rv">Pleksus Meissner (submukosa)</span>: sekresi dan absorpsi</td></tr>
+<tr><td>Muskularis eksterna</td><td>otot polos sirkuler (dalam) + longitudinal (luar)</td><td><span class="rv">Pleksus Auerbach (myenterikus)</span>, di ANTARA dua lapis otot: kontraksi/peristaltik</td></tr>
+<tr><td>Serosa / adventitia</td><td>serosa = JP longgar + mesotel; adventitia = JP longgar saja</td><td>-</td></tr>
+</table></div>
+<div class="co"><b>Turunkan, jangan hafalkan letak pleksus.</b> Pleksus yang mengatur kontraksi harus duduk di antara otot yang dikontraksikannya, jadi Auerbach ada di muskularis eksterna. Pleksus yang mengatur kelenjar dan absorpsi harus dekat mukosa, jadi Meissner ada di submukosa. Jebakan kating: "di antara lapisan otot ada persarafan…" jawabannya <span class="rv">Auerbach</span>, bukan Meissner.</div>
+<div class="co flag"><b>Serosa vs adventitia.</b> PPT menulis "adventitia: epitel squamous selapis (mesothelium)" di banyak organ. Menurut definisinya, adventitia justru <b>tidak</b> punya mesotel; yang punya mesotel adalah serosa (organ yang terbungkus peritoneum). Kalau ditanya "tunika serosa tersusun atas…", jawab <span class="rv">JP longgar + mesotel</span>.</div>
+<h3>Pengecualian yang paling sering ditanya</h3>
+<div class="tw"><table>
+<tr><th>Organ</th><th>Apa yang berbeda dari pola</th></tr>
+<tr><td>Esofagus</td><td class="rv">epitel skuamous kompleks non-kornifikasi; kelenjar esofagus di SUBMUKOSA; jenis otot bergradasi (1/3 atas skelet, tengah campuran, 1/3 bawah polos)</td></tr>
+<tr><td>Gaster</td><td class="rv">muskularis 3 lapis: oblik (dalam) - sirkuler (tengah) - longitudinal (luar); mukosa ber-gastric pit</td></tr>
+<tr><td>Duodenum</td><td class="rv">kelenjar Brunner di SUBMUKOSA (satu-satunya kelenjar submukosa di usus)</td></tr>
+<tr><td>Ileum</td><td class="rv">plak Peyer di mukosa (lamina propria), berlanjut ke submukosa</td></tr>
+<tr><td>Crassum</td><td class="rv">longitudinal luar memadat jadi 3 pita = taenia coli; tidak ada vili</td></tr>
+<tr><td>Anus</td><td class="rv">epitel kembali skuamous; m. sphincter ani internus (penebalan sirkuler) dan externus (skelet)</td></tr>
+</table></div>
+</section>
+
+<section class="card" id="s2"><h2>02 · Cavum oris dan lingua</h2>
+<div class="tw"><table>
+<tr><th>Mukosa</th><th>Epitel</th><th>Alasannya</th></tr>
+<tr><td>Palatum mole, bibir, pipi, dasar mulut</td><td class="rv">skuamous kompleks TANPA kornifikasi</td><td>perlu lentur, tidak dipakai menggerus</td></tr>
+<tr><td>Gingiva, palatum durum</td><td class="rv">skuamous kompleks DENGAN kornifikasi</td><td>menahan gesekan saat mengunyah ("lapisan keratin")</td></tr>
+</table></div>
+<p><b>Lingua:</b> ventral halus, dorsal berpapila (papila = tonjolan epitel + lamina propria). Badan lidah = otot skelet bersilangan ke tiga arah, sehingga lidah bebas bergerak. Sulcus terminalis memisahkan 2/3 anterior (berpapila) dari 1/3 posterior (tonsila lingualis). Kelenjar: <span class="rv">Blandin-Nuhn (seromukous) di ujung lidah; von Ebner (serous) dan Weber (mukous) bermuara di dasar parit papila circumvallata</span>.</p>
+<h3>Papila: baca per kolom</h3>
+<div class="tw"><table>
+<tr><th>Papila</th><th>Bentuk</th><th>Letak</th><th>Taste bud</th><th>Keratin</th></tr>
+<tr><td>Filiformis</td><td>kerucut runcing</td><td>tengah dorsal, paling banyak</td><td class="rv">TIDAK ada</td><td class="rv">ADA (satu-satunya)</td></tr>
+<tr><td>Fungiformis</td><td>jamur</td><td>ujung dan tepi depan</td><td class="rv">ada</td><td>tidak</td></tr>
+<tr><td>Circumvallata</td><td>paling besar, dikelilingi parit</td><td>8–12 buah sepanjang sulcus terminalis</td><td class="rv">paling banyak</td><td>tidak</td></tr>
+<tr><td>Foliata</td><td>lipatan seperti daun</td><td>tepi lateral belakang</td><td class="rv">ada</td><td>tidak; kurang berkembang pada dewasa</td></tr>
+</table></div>
+<div class="co"><b>Diskriminator:</b> filiformis adalah kebalikan dari semua papila lain: satu-satunya yang berkeratin dan satu-satunya tanpa taste bud. Fungsinya mekanis (permukaan kasar), bukan pengecap. Soal B/S "papila filiformis punya banyak taste bud" = <span class="rv">SALAH</span>. Soal "tonjolan di ujung dan tepi depan yang tidak punya taste bud" = <span class="rv">SALAH, itu fungiformis dan ia punya taste bud</span>.</div>
+<p><b>Taste bud</b> (di circumvallata, foliata, fungiformis): struktur pucat berbentuk tong di dalam epitel, tersusun <span class="rv">sel gustus (pengecap), sel sustentakuler (penyokong), sel basal (cadangan)</span>.</p>
+<p><b>Tonsila lingualis:</b> posterior dari sulcus terminalis, jaringan limfoid dilapisi skuamous kompleks non-kornifikasi, mukosanya masuk membentuk kripte.</p>
+</section>
+
+<section class="card" id="s3"><h2>03 · Esofagus dan GE junction</h2>
+<div class="tw"><table>
+<tr><th>Tunika</th><th>Esofagus</th></tr>
+<tr><td>Mukosa</td><td class="rv">skuamous kompleks non-kornifikasi; lamina propria + pars ekskretorius (duktus) kelenjar esofagus; muskularis mukosa</td></tr>
+<tr><td>Submukosa</td><td class="rv">kelenjar esofagus (mukus), JP padat ireguler, Meissner</td></tr>
+<tr><td>Muskularis</td><td class="rv">sirkuler dalam, longitudinal luar; 1/3 atas skelet, 1/3 tengah campuran, 1/3 bawah polos; Auerbach</td></tr>
+<tr><td>Luar</td><td class="rv">adventitia (bagian toraks)</td></tr>
+</table></div>
+<p><b>Fungsi kelenjar esofagus:</b> <span class="rv">mukus melumasi agar bolus mudah lewat dan melindungi mukosa</span>. Ini satu-satunya kelenjar submukosa di saluran cerna selain Brunner, jadi kalau terlihat kelenjar di bawah muskularis mukosa, pilihannya tinggal esofagus atau duodenum, dan epitelnya yang memutuskan.</p>
+<p><b>Gradasi otot, diturunkan:</b> menelan dimulai secara sadar (otot skelet di atas, nyambung dari faring), lalu otomatis (otot polos di bawah).</p>
+<p><b>GE junction:</b> <span class="rv">skuamous kompleks (esofagus) berganti mendadak ke kolumner simpleks (kardia, dengan gastric pit)</span>. Kelenjar gastrik ada di MUKOSA gaster, kelenjar esofagus di SUBMUKOSA esofagus; slide menandainya dengan panah kuning dan panah merah.</p>
+</section>
+
+<section class="card" id="s4"><h2>04 · Gaster: fundus vs pylorus</h2>
+<p>Mukosa gaster: kolumner simpleks, permukaannya masuk membentuk <b>gastric pit (foveola)</b> yang bermuara ke kelenjar tubuler bercabang di lamina propria. Gaster <b>tidak punya vili</b>. Muskularis: <span class="rv">oblik (dalam) - sirkuler (tengah) - longitudinal (luar)</span>; sirkuler menebal di pylorus menjadi sfingter pilorus.</p>
+<div class="tw"><table>
+<tr><th>Ciri</th><th>Fundus (korpus)</th><th>Pylorus</th></tr>
+<tr><td>Gastric pit</td><td class="rv">DANGKAL</td><td class="rv">DALAM dan lebar</td></tr>
+<tr><td>Kelenjar</td><td class="rv">panjang, lurus, rapat seperti kipas/sisir</td><td class="rv">pendek, bergelung, tidak rapi</td></tr>
+<tr><td>Sel parietal dan chief</td><td class="rv">ADA</td><td class="rv">TIDAK ada</td></tr>
+<tr><td>Sel G (gastrin)</td><td class="rv">tidak ada</td><td class="rv">ADA</td></tr>
+<tr><td>Sekresi lain</td><td>HCl, faktor intrinsik, pepsinogen</td><td>mukus, lisozim, gastrin, somatostatin</td></tr>
+</table></div>
+<div class="co"><b>Logika rasio pit:kelenjar.</b> Fundus adalah pabrik asam dan enzim, jadi bagian kelenjarnya panjang dan pit-nya pendek. Pylorus hanya menghasilkan mukus dan hormon, jadi kelenjarnya pendek dan pit-nya yang dalam. Dengan aturan ini fundus dan pylorus bisa dibedakan tanpa menghafal.</div>
+<h3>Sel gastric gland (apikal, leher, basal)</h3>
+<div class="tw"><table>
+<tr><th>Sel</th><th>Letak</th><th>Produk</th><th>Warna H&amp;E</th></tr>
+<tr><td>Sel mukus permukaan</td><td>apikal/foveola</td><td>mukus alkalis (HCO3-)</td><td>pucat</td></tr>
+<tr><td>Sel mukus leher</td><td>leher</td><td>mukus kurang alkalis</td><td>pucat</td></tr>
+<tr><td>Stem cell</td><td>leher (isthmus)</td><td class="rv">regenerasi ke atas maupun ke bawah</td><td>-</td></tr>
+<tr><td>Parietal (oxyntic)</td><td>atas dan tengah</td><td class="rv">HCl + faktor intrinsik</td><td class="rv">asidofilik, TERANG</td></tr>
+<tr><td>Chief (zimogen, peptik)</td><td>basal</td><td class="rv">pepsinogen (diaktifkan HCl jadi pepsin)</td><td class="rv">basofilik, GELAP</td></tr>
+<tr><td>Neuroendokrin</td><td>tersebar</td><td>serotonin, gastrin (sel G di pylorus), somatostatin</td><td>-</td></tr>
+</table></div>
+<div class="co"><b>Turunkan warnanya.</b> Chief cell membuat protein ekspor (pepsinogen), jadi penuh RER; RNA bersifat asam dan menyerap hematoksilin yang basa, sehingga sel tampak basofilik (gelap). Parietal penuh mitokondria untuk pompa proton, dan mitokondria mengikat eosin, sehingga sel tampak asidofilik (terang). Mnemonik: Chief = Cokelat gelap.</div>
+<div class="co flag">"Stem cell di lamina propria" (soal kating) sebenarnya kurang tepat. Stem cell adalah sel epitel di leher kelenjar; kelenjarnya saja yang terbenam di lamina propria. Kalau ditanya, jawab stem cell.</div>
+</section>
+
+<section class="card" id="s5"><h2>05 · Pyloro-duodenal (gastroduodenal) junction</h2>
+<div class="tw"><table>
+<tr><th>Tunika</th><th>Pylorus</th><th>Duodenum</th></tr>
+<tr><td>Mukosa</td><td class="rv">gastric pit</td><td class="rv">vili intestinal</td></tr>
+<tr><td>Submukosa</td><td class="rv">tanpa kelenjar</td><td class="rv">kelenjar Brunner</td></tr>
+<tr><td>Muskularis</td><td class="rv">tebal, 3 lapis, ada sfingter pilorus</td><td class="rv">2 lapis, lebih tipis</td></tr>
+</table></div>
+<p class="small">Soal kating minta "1 perbedaan" atau "jelaskan perbedaan X dan Y". Tabel ini sudah memuat tiga jawaban lengkap, satu per tunika.</p>
+</section>
+
+<section class="card" id="s6"><h2>06 · Usus halus</h2>
+<p>Perluasan permukaan absorpsi bertingkat: <span class="rv">plica circularis (mukosa + submukosa) → vili (mukosa) → mikrovili (membran sel)</span>.</p>
+<h3>Sel-sel</h3>
+<div class="tw"><table>
+<tr><th>Sel</th><th>Ciri</th><th>Fungsi</th></tr>
+<tr><td>Enterosit</td><td>kolumner tinggi, inti lonjong basal, brush border</td><td class="rv">absorpsi</td></tr>
+<tr><td>Goblet</td><td>seperti piala, pucat</td><td class="rv">mukus: melindungi dan melumasi</td></tr>
+<tr><td>Paneth</td><td>dasar kripte, granul EOSINOFILIK besar</td><td class="rv">lisozim, defensin, fosfolipase A2 (imunitas alami)</td></tr>
+<tr><td>Enteroendokrin</td><td>tersebar</td><td>hormon peptida (sekretin, CCK, GIP, motilin)</td></tr>
+<tr><td>Sel M</td><td>di atas plak Peyer (ileum)</td><td class="rv">endositosis antigen, diserahkan ke APC/limfosit</td></tr>
+<tr><td>Stem cell</td><td>di kripte</td><td>asal semua sel epitel usus</td></tr>
+</table></div>
+<div class="co flag">Notes PPT menulis "sel goblet sebagai buffer menetralkan kimus". Ini keliru: goblet menghasilkan mukus pelindung dan pelumas. Yang menetralkan asam adalah bikarbonat dari Brunner dan pankreas. Kating #14 menguji ini: "goblet berfungsi untuk absorpsi makanan" jawabannya <span class="rv">SALAH</span>.</div>
+<h3>Duodenum vs jejunum vs ileum</h3>
+<p>Tips aslab sendiri: <b>bedakan dari mukosa dan submukosa, bukan dari bentuk vili.</b></p>
+<div class="tw"><table>
+<tr><th>Ciri</th><th>Duodenum</th><th>Jejunum</th><th>Ileum</th></tr>
+<tr><td>Submukosa</td><td class="rv">kelenjar BRUNNER (pucat berbusa)</td><td class="rv">kosong (JP padat + Meissner)</td><td class="rv">lanjutan plak Peyer</td></tr>
+<tr><td>Jaringan limfoid</td><td>-</td><td class="rv">tidak ada Peyer</td><td class="rv">PLAK PEYER + dome area</td></tr>
+<tr><td>Vili</td><td>lebar, pendek</td><td>panjang, rapi (seperti jari)</td><td>lebih pendek</td></tr>
+<tr><td>Muara khas</td><td class="rv">duktus Brunner ke kripte Lieberkuhn</td><td>-</td><td>-</td></tr>
+</table></div>
+<div class="co"><b>Diskriminator 3 langkah:</b> ada Brunner? Kalau ya, duodenum. Kalau tidak, ada plak Peyer? Kalau ya, ileum. Kalau tidak keduanya, jejunum. Jejunum dikenali dari <b>tidak adanya</b> kedua ciri itu.</div>
+<p><b>Kelenjar Brunner</b> menghasilkan sekret alkalis (bikarbonat + mukus) yang menetralkan kimus asam dari lambung. Itulah sebabnya ia hanya ada di duodenum, tepat setelah pylorus.</p>
+<p><b>Dome area (ileum):</b> <span class="rv">mukosa berbentuk kubah di atas folikel, disusun sel M, tanpa mikrovili, kripte, atau goblet; tempat uptake antigen dari lumen</span>.</p>
+<div class="co flag">Gambar kating yang sama dijawab "plak Peyer (GALT)" di satu naskah dan "dome area, uptake antigen" di naskah lain. Lihat ujung panahnya: kalau ke epitel kubah di atas folikel, jawabannya dome area; kalau ke folikel limfoid, jawabannya plak Peyer.</div>
+</section>
+
+<section class="card" id="s7"><h2>07 · Appendix vs intestinum crassum</h2>
+<div class="tw"><table>
+<tr><th>Ciri</th><th>Appendix</th><th>Crassum (dan rektum)</th></tr>
+<tr><td>Vili</td><td class="rv">tidak ada</td><td class="rv">tidak ada</td></tr>
+<tr><td>Kripte Lieberkuhn</td><td class="rv">SEDIKIT, pendek, tidak teratur</td><td class="rv">BANYAK, lurus, rapat, penuh goblet</td></tr>
+<tr><td>Limfoid</td><td class="rv">sangat banyak: folikel melingkar dengan centrum germinativum</td><td class="rv">folikel limfoid tersebar (GALT)</td></tr>
+<tr><td>Lumen</td><td class="rv">kecil, tidak teratur (bentuk bintang)</td><td>lebar</td></tr>
+<tr><td>Muskularis</td><td>sirkuler dalam, longitudinal luar</td><td class="rv">longitudinal luar membentuk 3 taenia coli</td></tr>
+<tr><td>Submukosa rektum</td><td>-</td><td class="rv">banyak vena</td></tr>
+</table></div>
+<p>Aslab: appendix paling mudah dikenali karena <b>tidak punya vili</b> dan limfoidnya melingkar. Crassum dikenali dari "bulat-bulat" di mukosa (kripte terpotong lintang); isi bulatan itu adalah sel goblet.</p>
+<div class="co flag"><b>Letak folikel limfoid crassum: sumber bertentangan.</b> PPT Afif menaruh GALT crassum di <b>submukosa</b>. Kunci posttest kating (dua shift) menyebut <b>lamina propria mukosa</b>. Literatur: folikel berasal dari lamina propria dan sering menjorok ke submukosa. Kalau soal B/S menyebut "serosa", jawabannya SALAH di kedua versi. Kalau menyebut mukosa atau submukosa, kunci kating mengikuti lamina propria.</div>
+<p><b>Appendix, centrum germinativum:</b> PPT menyebut centrum germinativum (GALT) di submukosa, sedangkan lamina propria berisi JP longgar dengan banyak limfosit.</p>
+</section>
+
+<section class="card" id="s8"><h2>08 · Rektum vs anus (recto-anal junction)</h2>
+<div class="tw"><table>
+<tr><th>Lapisan</th><th>Rektum</th><th>Anus</th></tr>
+<tr><td>Epitel</td><td class="rv">kolumner simpleks, goblet banyak</td><td class="rv">skuamous kompleks non-kornifikasi, lalu berkornifikasi (kulit)</td></tr>
+<tr><td>Lamina propria</td><td class="rv">JP longgar, banyak limfosit</td><td class="rv">kelenjar sudorifera (keringat) + pars ekskretorius kelenjar sirkumanal; agregasi limfosit menghilang</td></tr>
+<tr><td>Submukosa</td><td class="rv">JP padat ireguler, banyak vena</td><td class="rv">JP padat ireguler</td></tr>
+<tr><td>Muskularis</td><td class="rv">2 lapis otot polos</td><td class="rv">pars sekretorius kelenjar sirkumanal; m. sphincter ani externus</td></tr>
+</table></div>
+<div class="co">Identifikasi cukup dari epitelnya: peralihan kolumner simpleks ke skuamous kompleks terlihat sangat jelas. Ingat <b>arah</b>-nya: di GE junction epitel berubah dari skuamous ke kolumner, di recto-anal junction dari kolumner ke skuamous.</div>
+<div class="co flag">Kompilasi kating #20 menulis "submukosa rektum banyak limfosit, submukosa anus ada sudorifera". Lapisannya keliru: keduanya ciri <b>lamina propria</b>. Ciri submukosa rektum adalah banyak vena.</div>
+</section>
+
+<section class="card" id="s9"><h2>09 · Inervasi intrinsik dan kontrol hormonal</h2>
+<div class="tw"><table>
+<tr><th>Struktur</th><th>Letak</th><th>Fungsi</th></tr>
+<tr><td>Pleksus Meissner</td><td class="rv">submukosa</td><td>sekresi dan absorpsi lokal</td></tr>
+<tr><td>Pleksus Auerbach</td><td class="rv">muskularis (antara sirkuler dan longitudinal)</td><td>kontraksi: eksitasi segmen proksimal, inhibisi segmen distal</td></tr>
+<tr><td>Sel interstisial Cajal</td><td>seluruh GIT</td><td class="rv">pemacu slow wave kontinu</td></tr>
+</table></div>
+<div class="tw"><table>
+<tr><th>Hormon</th><th>Sel / lokasi</th><th>Efek</th></tr>
+<tr><td>Gastrin</td><td>sel G, pylorus</td><td>sekresi asam lambung</td></tr>
+<tr><td>Sekretin</td><td>sel S, usus halus</td><td class="rv">bikarbonat pankreas untuk menetralkan kimus</td></tr>
+<tr><td>CCK</td><td>sel I, usus halus</td><td class="rv">dipicu lemak; kontraksi kandung empedu, enzim pankreas, menghambat pengosongan lambung</td></tr>
+<tr><td>GIP</td><td>sel K, duodenum-jejunum</td><td class="rv">menurunkan motilitas, memperlambat pengosongan lambung</td></tr>
+<tr><td>Motilin</td><td>sel Mo, usus halus</td><td class="rv">meningkatkan motilitas; dihambat setelah makan</td></tr>
+<tr><td>Somatostatin</td><td>sel D, pylorus/duodenum</td><td>menghambat sekresi sel endokrin lain</td></tr>
+</table></div>
+<p class="small">Bagian ini tidak muncul di 50 soal posttest kating. Prioritasnya rendah untuk pretes yang berbasis gambar.</p>
+</section>
+
+<section class="card" id="s10"><h2>10 · Algoritma identifikasi preparat</h2>
+<ol class="flow">
+<li><b>Lihat epitel permukaan.</b> Skuamous kompleks: lingua (ada papila, otot skelet berbagai arah), esofagus (lumen berlipat, kelenjar di submukosa), atau anus. Kolumner simpleks: lanjut ke langkah 2. Ada peralihan dalam satu gambar: GE junction (skuamous ke kolumner + gastric pit) atau recto-anal junction (kolumner bergoblet ke skuamous).</li>
+<li><b>Gastric pit atau vili?</b> Mukosa berlubang-lubang rata (pit) = gaster, lanjut ke langkah 3. Tonjolan jari ke lumen (vili) = usus halus, lanjut ke langkah 4. Tidak ada keduanya, permukaan rata dengan kripte = langkah 5.</li>
+<li><b>Gaster:</b> pit dangkal + kelenjar panjang rapat (kipas/sisir) + sel terang dan gelap = fundus. Pit dalam + kelenjar pendek bergelung = pylorus. Pit di satu sisi dan vili di sisi lain = pyloro-duodenal junction.</li>
+<li><b>Usus halus:</b> Brunner di submukosa = duodenum. Plak Peyer = ileum. Tidak ada keduanya = jejunum.</li>
+<li><b>Tanpa vili:</b> kripte banyak, lurus, penuh goblet = crassum. Lumen kecil tidak teratur, dikelilingi folikel limfoid melingkar, kripte sedikit = appendix.</li>
+</ol>
+<div class="co">Latihan bergambar untuk algoritma ini: <a href="https://claude.ai/artifact/9Zocoz5Lyz2KPpp4R375HZ" target="_blank" rel="noopener">halaman latihan pribadi</a> (mode Tebak preparat, 103 gambar; posttest kating 50 soal). Halaman itu privat di akun pemiliknya; gambarnya sengaja tidak disimpan di repo karena berasal dari PPT dan atlas.</div>
+</section>
+
+<section class="card" id="s11"><h2>11 · Koreksi sumber</h2>
+<h3>Kunci kating yang salah</h3>
+<ul>
+<li><b>Kompilasi #9:</b> persarafan di antara lapisan otot muskularis duodenum dijawab Meissner. Yang benar <b>Auerbach</b>; naskah Anconeus untuk soal yang sama menjawab Auerbach.</li>
+<li><b>Kompilasi #11:</b> preparat dianggap duodenum dengan kelenjar Brunner. Gambarnya identik dengan slide ileum PPT Afif, dengan Anconeus Shift 3 #9 (ileum), dan dengan foto drive "21 illeum". Jadi preparatnya <b>ileum</b>, dan Brunner juga ditulis sebagai ciri mukosa padahal letaknya di submukosa.</li>
+<li><b>Kompilasi #12:</b> submukosa disebut "jaringan pengikat longgar". Menurut PPT submukosa adalah JP padat ireguler; JP longgar dengan limfosit adalah lamina propria.</li>
+<li><b>Kompilasi #20:</b> ciri lamina propria rektum dan anus ditulis sebagai ciri submukosa.</li>
+</ul>
+<h3>Sumber yang saling bertentangan (dibiarkan, tahu dua-duanya)</h3>
+<ul>
+<li>Letak folikel limfoid crassum: PPT di submukosa, kating di lamina propria.</li>
+<li>Jumlah papila pada manusia: notes PPT bilang 3 (foliata hanya pada hewan), slide PPT dan kating bilang 4. Aman: sebut 4, dengan foliata rudimenter.</li>
+<li>Sel M: notes PPT bilang di ileum (di atas plak Peyer), slide jejunum PPT menulis "terdapat M cell".</li>
+<li>Gambar ileum yang sama dijawab plak Peyer di satu naskah dan dome area di naskah lain.</li>
+</ul>
+<h3>Kesalahan PPT Afif</h3>
+<ul>
+<li>Adventitia ditulis bermesotel. Mesotel hanya dimiliki serosa.</li>
+<li>Goblet disebut "buffer penetral kimus". Goblet menghasilkan mukus; penetral kimus adalah bikarbonat Brunner dan pankreas.</li>
+<li>CCK disebut memicu "sekresi empedu oleh hepatosit". CCK memicu kontraksi kandung empedu, dan tabel di slide yang sama menulis begitu.</li>
+<li>Notes gaster menyebut sel neuroendokrin lambung menghasilkan sekretin dan motilin. Tabel 15-1 di PPT yang sama menempatkan keduanya di usus halus.</li>
+<li>Peta konsep menulis "T. Muskularis Mukosa" sebagai tunika tersendiri. Itu lapisan dari tunika mukosa.</li>
+</ul>
+<h3>Catatan gambar tangan di drive (preparat4)</h3>
+<ul><li>Beberapa catatan gaster menulis "villi" untuk fundus dan pylorus. Gaster tidak punya vili; yang dimaksud lipatan mukosa atau foveola.</li></ul>
+</section>
+
+<section class="card" id="s12"><h2>12 · Checklist sebelum pretes</h2>
+<div class="ck" data-ck="pre">
+<label><input type="checkbox"> Bisa menyebut isi 4 tunika dan letak Meissner vs Auerbach</label>
+<label><input type="checkbox"> Tabel papila: filiformis berkeratin, tanpa taste bud</label>
+<label><input type="checkbox"> 3 sel taste bud; von Ebner + Weber di papila circumvallata</label>
+<label><input type="checkbox"> Kornifikasi: gingiva dan palatum durum saja</label>
+<label><input type="checkbox"> Esofagus: kelenjar submukosa + fungsinya; gradasi otot 1/3</label>
+<label><input type="checkbox"> Fundus vs pylorus: pit, kelenjar, parietal/chief, sel G</label>
+<label><input type="checkbox"> Chief basofilik gelap, parietal asidofilik terang (bisa menurunkan alasannya)</label>
+<label><input type="checkbox"> Muskularis gaster: oblik - sirkuler - longitudinal</label>
+<label><input type="checkbox"> 3 perbedaan pylorus vs duodenum</label>
+<label><input type="checkbox"> Duodenum/jejunum/ileum dari Brunner dan Peyer</label>
+<label><input type="checkbox"> Dome area: sel M, uptake antigen</label>
+<label><input type="checkbox"> Appendix vs crassum: kripte sedikit vs banyak</label>
+<label><input type="checkbox"> Rektum vs anus: epitel dan lamina propria</label>
+<label><input type="checkbox"> Mode Tebak preparat di atas 85%</label>
+<label><input type="checkbox"> Posttest kating 50 soal dengan timer</label>
+</div>
+<p class="small" data-cnt="pre"></p>
+</section>
+</main>
+<script>
+(function(){
+  var APPKEY = "persiapan-ub.v1", KEY = "persiapan-ub.histo13.v1";
+  function rd(k){ try{ return JSON.parse(localStorage.getItem(k)) || {}; }catch(e){ return {}; } }
+  function wr(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  var root = document.documentElement, app = rd(APPKEY), st = rd(KEY);
+  root.setAttribute("data-theme", app.theme || "light");
+  document.getElementById("tTheme").addEventListener("click", function(){
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next); app = rd(APPKEY); app.theme = next; wr(APPKEY, app);
+  });
+  var tb = document.getElementById("tTutup");
+  function setTutup(on){
+    document.body.classList.toggle("tutup", on); tb.setAttribute("aria-pressed", on ? "true" : "false");
+    if(!on) document.querySelectorAll(".rv.shown").forEach(function(e){ e.classList.remove("shown"); });
+    st._tutup = on; wr(KEY, st);
+  }
+  tb.addEventListener("click", function(){ setTutup(!document.body.classList.contains("tutup")); });
+  document.addEventListener("click", function(ev){
+    if(!document.body.classList.contains("tutup")) return;
+    var el = ev.target.closest(".rv"); if(el) el.classList.toggle("shown");
+  });
+  if(st._tutup) setTutup(true);
+  document.querySelectorAll("[data-ck]").forEach(function(box){
+    var name = box.getAttribute("data-ck"), saved = (st.ck && st.ck[name]) || [];
+    var cbs = box.querySelectorAll("input[type=checkbox]"), out = document.querySelector('[data-cnt="'+name+'"]');
+    function upd(){ var n = 0; cbs.forEach(function(c){ if(c.checked) n++; }); if(out) out.textContent = n + " dari " + cbs.length + " selesai"; }
+    cbs.forEach(function(c, i){
+      c.checked = saved.indexOf(i) >= 0;
+      c.addEventListener("change", function(){
+        var arr = []; cbs.forEach(function(x, j){ if(x.checked) arr.push(j); });
+        st = rd(KEY); st.ck = st.ck || {}; st.ck[name] = arr; wr(KEY, st); upd();
+      });
+    });
+    upd();
+  });
+})();
+</script>
+</body>
+</html>
