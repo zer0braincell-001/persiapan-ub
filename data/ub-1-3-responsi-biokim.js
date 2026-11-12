@@ -95,10 +95,10 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Lipid: Klasifikasi",
   "q": "Kelompok prekursor dan lipid turunan menurut slide mencakup",
   "opsi": [
-   "Apoprotein dan reseptor sel",
+   "Apoprotein, reseptor sel, dan lipoprotein plasma",
    "Lemak, minyak, dan malam",
    "Fosfolipid dan glikolipid",
-   "Kilomikron dan VLDL",
+   "Kilomikron, VLDL, LDL, dan HDL dalam plasma",
    "Asam lemak, gliserol, hormon, steroid, dan badan keton"
   ],
   "kunciIndex": 4,
@@ -242,7 +242,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Lipid: Lipoprotein",
   "q": "Fungsi kilomikron menurut tabel pada slide adalah",
   "opsi": [
-   "Mengangkut trigliserida dari jaringan ekstrahepatik ke jaringan lemak",
+   "Mengangkut trigliserida dari hati ke jaringan ekstrahepatik untuk oksidasi, lalu ke jaringan lemak untuk ditimbun",
    "Mengangkut lipid dari makanan di lumen usus, terutama triasilgliserol, ke dalam peredaran darah",
    "Transport kolesterol ke jaringan perifer dan mengatur sintesis kolesterol",
    "Mengangkut kelebihan kolesterol dari jaringan perifer ke hati",
@@ -264,7 +264,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Fungsi LDL menurut tabel pada slide adalah",
   "opsi": [
    "Mengangkut lipid dari makanan di lumen usus",
-   "Mengangkut kelebihan kolesterol dari jaringan perifer ke hati",
+   "Mengangkut kelebihan kolesterol dari jaringan perifer kembali ke hati untuk diekskresi",
    "Transport kolesterol ke jaringan perifer dan mengatur sintesis kolesterol",
    "Membentuk badan keton",
    "Mengangkut trigliserida dari hati ke usus"
@@ -284,7 +284,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Lipid: Lipoprotein",
   "q": "Fungsi HDL menurut tabel pada slide adalah",
   "opsi": [
-   "Mengangkut trigliserida untuk ditimbun di jaringan lemak",
+   "Mengangkut trigliserida dari hati ke jaringan lemak untuk ditimbun sebagai cadangan energi",
    "Transport kolesterol ke jaringan perifer",
    "Mengangkut lipid dari makanan di lumen usus",
    "Mengangkut kelebihan kolesterol dari jaringan perifer ke hati untuk diekskresi",
@@ -390,7 +390,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Menurut tabel pada slide, VLDL mengangkut trigliserida melalui jalur",
   "opsi": [
    "Hati lalu dibuang melalui urine",
-   "Lumen usus lalu langsung ke hati",
+   "Lumen usus lalu langsung ke hati melalui vena porta, kemudian dibuang lewat empedu dan feses",
    "Jaringan perifer lalu dibuang lewat empedu",
    "Jaringan ekstrahepatik untuk oksidasi, lalu jaringan lemak untuk esterifikasi, lalu ditimbun",
    "Jaringan lemak lalu dipecah menjadi badan keton"
@@ -413,7 +413,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
    "Hormon yang mengatur kadar kolesterol",
    "Enzim yang memecah trigliserida dalam darah",
    "Reseptor lipoprotein pada permukaan sel",
-   "Lipid amfipatik penyusun selubung lipoprotein",
+   "Lipid amfipatik penyusun selubung luar lipoprotein bersama kolesterol bebas",
    "Molekul protein yang ada di dalam lipoprotein"
   ],
   "kunciIndex": 4,
@@ -452,7 +452,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Lipid: Apoprotein",
   "q": "Menurut slide, apoprotein dapat menempel pada lipoprotein dengan dua cara, yaitu",
   "opsi": [
-   "Menempel hanya di permukaan luar, atau hanya di inti",
+   "Menempel hanya di permukaan luar secara ionik, atau hanya di inti bersama triasilgliserol",
    "Menempel kuat secara integral, atau dapat berpindah ke lipoprotein lain",
    "Menempel secara ionik, atau secara kovalen",
    "Menempel pada fosfolipid, atau pada triasilgliserol",
@@ -557,7 +557,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Lipid: Asam Lemak Tak Jenuh",
   "q": "Ciri asam lemak tak jenuh menurut slide adalah",
   "opsi": [
-   "Tidak memiliki ikatan rangkap dan selalu berbentuk trans",
+   "Tidak memiliki ikatan rangkap pada rantai karbon dan selalu berbentuk trans yang lurus",
    "Memiliki ikatan rangkap pada rantai atom karbon dan dapat berbentuk cis atau trans",
    "Selalu memiliki dua puluh atom karbon",
    "Hanya ditemukan pada lemak hewani",
@@ -600,7 +600,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Contoh asam lemak monounsaturated menurut catatan slide adalah",
   "opsi": [
    "Asam arakidonat",
-   "Asam linoleat, yang merupakan omega enam",
+   "Asam linoleat, yang merupakan omega enam dan esensial",
    "Asam linolenat",
    "Asam oleat, yang merupakan omega sembilan",
    "Asam stearat"
@@ -621,7 +621,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Asam lemak polyunsaturated menurut catatan slide memiliki",
   "opsi": [
    "Dua puluh atom karbon",
-   "Tepat satu ikatan rangkap",
+   "Tepat satu ikatan rangkap pada atom karbon kesembilan",
    "Tidak ada ikatan rangkap",
    "Tepat tiga ikatan rangkap",
    "Dua atau lebih ikatan rangkap"
@@ -725,9 +725,9 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Lipid: Asam Lemak Esensial",
   "q": "Menurut slide, mengapa kelompok eikosanoid penting?",
   "opsi": [
-   "Karena menjadi cadangan lemak tubuh",
+   "Karena menjadi cadangan lemak tubuh utama yang disimpan di jaringan adiposa subkutan",
    "Karena menjadi sumber energi utama jaringan otot",
-   "Karena menyusun membran sel bersama fosfolipid",
+   "Karena menyusun membran sel bersama fosfolipid sehingga menentukan fluiditas membran",
    "Karena mengangkut kolesterol dari perifer ke hati",
    "Karena merupakan senyawa yang sangat penting terhadap keaktifan fisiologis dan farmakologis"
   ],
@@ -748,7 +748,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "opsi": [
    "Hidrofobik atau nonpolar",
    "Hidrofilik atau polar",
-   "Amfipatik sempurna",
+   "Amfipatik sempurna dan larut dalam air",
    "Bermuatan negatif",
    "Larut sempurna dalam air"
   ],
@@ -767,7 +767,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Lipid: Daya Larut",
   "q": "Prinsip kelarutan lipid menurut slide dirangkum dalam ungkapan",
   "opsi": [
-   "Lock and key",
+   "Lock and key (kunci-gembok)",
    "Like dissolves like",
    "All or none",
    "First in first out",
@@ -1021,7 +1021,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "opsi": [
    "Lima mililiter minyak dan lima mililiter air",
    "Tiga mililiter minyak dan satu mililiter air",
-   "Dua mililiter minyak dan dua mililiter air",
+   "Dua mililiter minyak dan dua mililiter air suling",
    "Satu mililiter minyak dan tiga mililiter air",
    "Satu mililiter minyak dan satu mililiter air"
   ],
@@ -1040,7 +1040,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Lipid: Emulgator",
   "q": "Emulsifying agent bekerja karena memiliki dua gugus, yaitu",
   "opsi": [
-   "Gugus aldehid dan gugus keton",
+   "Gugus aldehid yang mengikat air dan gugus keton yang mengikat minyak",
    "Gugus polar yang mengikat minyak dan gugus nonpolar yang mengikat air",
    "Dua gugus polar yang keduanya mengikat air",
    "Dua gugus nonpolar yang keduanya mengikat minyak",
@@ -1103,7 +1103,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Lipid: Saponifikasi",
   "q": "Persamaan reaksi saponifikasi menurut slide adalah",
   "opsi": [
-   "Sabun ditambah asam sulfat menghasilkan lemak",
+   "Sabun ditambah asam sulfat menghasilkan lemak, gliserol, dan garam natrium",
    "Lemak ditambah asam sulfat menghasilkan sabun dan gliserol",
    "Lemak ditambah natrium hidroksida menghasilkan sabun dan gliserol",
    "Gliserol ditambah kalium bisulfat menghasilkan sabun",
@@ -1145,7 +1145,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Lipid: Saponifikasi",
   "q": "Pada cara kerja saponifikasi, setelah lemak padat dipanaskan bersama air dan mencair, apa yang ditambahkan?",
   "opsi": [
-   "Natrium karbonat nol koma lima persen",
+   "Natrium karbonat nol koma lima persen lalu disaring",
    "Beberapa mililiter asam sulfat encer",
    "Larutan iodin",
    "Kalium bisulfat",
@@ -1167,7 +1167,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Tanda bahwa reaksi penyabunan pada hidrolisis mentega sudah lengkap adalah",
   "opsi": [
    "Larutan terlihat jernih dan tidak terdapat gumpalan di permukaan",
-   "Larutan menjadi keruh dan berbusa tebal",
+   "Larutan menjadi keruh dan berbusa tebal di seluruh permukaan tabung",
    "Terbentuk endapan merah bata",
    "Tercium bau akrolein yang menyengat",
    "Timbul warna merah yang menetap"
@@ -1250,10 +1250,10 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Lipid: Hidrolisis Mentega",
   "q": "Mengapa alkohol digunakan pada percobaan hidrolisis mentega?",
   "opsi": [
-   "Karena alkohol mengubah sabun menjadi gliserol",
+   "Karena alkohol mengubah sabun kembali menjadi gliserol dan asam lemak bebas sebelum diasamkan",
    "Karena alkohol mempercepat penguapan asam butirat",
    "Karena alkohol bertindak sebagai katalisator",
-   "Karena alkohol menaikkan tegangan permukaan",
+   "Karena alkohol menaikkan tegangan permukaan sehingga lemak dan basa lebih mudah bercampur",
    "Karena lemak tidak dapat larut dalam natrium hidroksida sehingga alkohol berfungsi melarutkan lemak"
   ],
   "kunciIndex": 4,
@@ -1272,9 +1272,9 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Fungsi pengasaman dengan asam kuat pada hidrolisis mentega adalah",
   "opsi": [
    "Memisahkan asam lemak dari gliserol sehingga asam lemak mudah menguap dan berbau asam",
-   "Menyabunkan lemak yang belum bereaksi",
+   "Menyabunkan lemak yang belum bereaksi sehingga larutan menjadi jernih sepenuhnya",
    "Melarutkan lemak yang tersisa",
-   "Mendehidrasi gliserol menjadi akrolein",
+   "Mendehidrasi gliserol menjadi akrolein yang berbau tajam seperti lemak terbakar",
    "Mengikat ikatan rangkap asam lemak"
   ],
   "kunciIndex": 0,
@@ -1292,7 +1292,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Lipid: Hidrolisis Mentega",
   "q": "Pada percobaan hidrolisis mentega, kertas lakmus biru akan berubah menjadi warna apa, dan itu menandakan apa?",
   "opsi": [
-   "Merah, menandakan suasana basa",
+   "Merah, menandakan sabun berada dalam suasana basa kuat",
    "Merah, menandakan sabun berada dalam suasana asam",
    "Biru tetap, menandakan suasana netral",
    "Hijau, menandakan terbentuknya gliserol",
@@ -1334,7 +1334,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Lipid: Reaksi Akrolein",
   "q": "Lemak yang dipanaskan bersama dehydrating agent akan terurai menjadi asam lemak dan gliserol, lalu gliserol mengalami dehidrasi membentuk",
   "opsi": [
-   "Ester kolesteril",
+   "Ester kolesteril yang berbau harum",
    "Asam butirat",
    "Sabun",
    "Akrolein, yaitu aldehid tidak jenuh",
@@ -1377,7 +1377,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Peran kalium bisulfat pada reaksi akrolein menurut catatan slide adalah",
   "opsi": [
    "Sebagai katalisator sehingga tidak ikut bereaksi",
-   "Sebagai reaktan yang habis bereaksi",
+   "Sebagai reaktan yang habis bereaksi membentuk akrolein",
    "Sebagai pelarut lemak",
    "Sebagai emulsifying agent",
    "Sebagai penanda warna"
@@ -1397,7 +1397,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Lipid: Reaksi Akrolein",
   "q": "Pada cara kerja reaksi akrolein, dua tabung masing-masing diisi kalium bisulfat lalu ditambahkan",
   "opsi": [
-   "Natrium hidroksida dan asam sulfat",
+   "Tiga sampai empat tetes minyak kelapa pada tabung pertama dan gliserol pada tabung kedua",
    "Tiga sampai empat tetes gliserol pada tabung pertama dan minyak kelapa pada tabung kedua",
    "Air dan alkohol",
    "Iodin dan kloroform",
@@ -1418,7 +1418,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Lipid: Reaksi Akrolein",
   "q": "Setelah uji hidrolisis mentega, hasilnya diuji dengan reaksi akrolein. Mengapa gliserol lebih cepat menimbulkan bau dibandingkan minyak kelapa?",
   "opsi": [
-   "Karena minyak kelapa tidak mengandung gliserol sama sekali",
+   "Karena minyak kelapa tidak mengandung gliserol sama sekali sehingga reaksinya baru muncul setelah lemak teroksidasi",
    "Karena gliserol memiliki titik didih lebih tinggi",
    "Karena gliserol langsung bereaksi, sedangkan minyak kelapa memiliki ikatan rangkap sehingga perlu waktu untuk memutusnya",
    "Karena gliserol bersifat nonpolar",
@@ -1523,7 +1523,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Lipid: Ikatan Tak Jenuh",
   "q": "Warna merah yang akhirnya tidak hilang pada percobaan ikatan tak jenuh menandakan",
   "opsi": [
-   "Gliserol telah terdehidrasi",
+   "Gliserol telah terdehidrasi menjadi akrolein seluruhnya",
    "Lemak telah tersabunkan",
    "Ikatan rangkap pada lemak telah berhasil diputus seluruhnya",
    "Emulsi telah terbentuk permanen",
@@ -1566,7 +1566,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Sampel yang dibandingkan pada percobaan ikatan tak jenuh menurut cara kerja slide adalah",
   "opsi": [
    "Minyak kelapa dan air saja",
-   "Mentega, gliserol, dan minyak kelapa",
+   "Mentega, gliserol, dan minyak kelapa yang dipanaskan",
    "Lemak sapi, eter, dan kloroform",
    "Glukosa, maltosa, dan laktosa",
    "Minyak kelapa cair, margarin, dan lemak padat"
@@ -1607,7 +1607,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Lipid: Ikatan Tak Jenuh",
   "q": "Semakin banyak larutan iod yang diperlukan sampai warna merah menetap, berarti sampel tersebut",
   "opsi": [
-   "Semakin jenuh karena ikatan rangkapnya semakin sedikit",
+   "Semakin jenuh karena ikatan rangkapnya semakin sedikit dan rantainya lurus",
    "Semakin tidak jenuh karena ikatan rangkapnya semakin banyak",
    "Semakin mudah larut dalam air",
    "Semakin mudah tersabunkan",
@@ -1671,7 +1671,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Mengapa target kolesterol LDL pada pasien berisiko penyakit jantung dibuat lebih rendah daripada pasien normal?",
   "opsi": [
    "Karena pasien jantung tidak memerlukan kolesterol untuk membran sel",
-   "Karena LDL pada pasien jantung tidak dapat diukur dengan akurat",
+   "Karena LDL pada pasien jantung tidak dapat diukur dengan akurat sehingga batasnya sengaja dibuat lebih rendah",
    "Karena pasien jantung memproduksi lebih sedikit HDL secara alami",
    "Karena obat penurun kolesterol hanya bekerja di bawah tujuh puluh",
    "Karena pasien itu memiliki faktor risiko ganda dan faktor yang tidak dapat dikendalikan sehingga rawan kekambuhan"
@@ -1693,7 +1693,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "opsi": [
    "Lebih dari empat puluh pada wanita dan lebih dari lima puluh pada pria",
    "Lebih dari lima puluh pada wanita dan lebih dari empat puluh pada pria",
-   "Kurang dari empat puluh pada keduanya",
+   "Kurang dari empat puluh pada wanita dan kurang dari lima puluh pada pria",
    "Kurang dari seratus pada keduanya",
    "Lebih dari dua ratus pada keduanya"
   ],
@@ -1712,7 +1712,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Lipid: GCU Kolesterol",
   "q": "Nilai normal trigliserida menurut slide adalah",
   "opsi": [
-   "Kurang dari dua ratus miligram per desiliter",
+   "Kurang dari dua ratus miligram per desiliter (sama dengan kolesterol)",
    "Kurang dari seratus lima puluh miligram per desiliter",
    "Kurang dari seratus miligram per desiliter",
    "Lebih dari lima puluh miligram per desiliter",
@@ -1776,7 +1776,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Reagen Molisch menurut slide tersusun atas",
   "opsi": [
    "Kalium bisulfat dan kloroform",
-   "Natrium hidroksida dan tembaga sulfat",
+   "Natrium hidroksida sepuluh persen dan tembaga sulfat lima persen dalam akuades",
    "Fenilhidrazin dan natrium asetat",
    "Natrium sitrat dan natrium karbonat",
    "Dua puluh lima gram alpha naphtol dan lima ratus mililiter alkohol"
@@ -1860,7 +1860,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Mengapa tabung sebaiknya dimiringkan sekitar empat puluh lima derajat saat menambahkan asam sulfat?",
   "opsi": [
    "Agar warna ungu menjadi lebih pekat",
-   "Agar reaksi berlangsung lebih cepat",
+   "Agar asam bercampur rata dengan sampel sehingga warna ungu cepat muncul",
    "Agar tabung tidak pecah karena panas",
    "Agar asam tidak tercampur dengan sampel sehingga cincin dapat terbentuk",
    "Agar furfural tidak menguap"
@@ -1922,7 +1922,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Karbohidrat: Uji Molisch",
   "q": "Cincin furfuran tersusun atas berapa atom karbon dan berapa atom oksigen?",
   "opsi": [
-   "Lima atom karbon dan satu atom oksigen",
+   "Lima atom karbon dan satu atom oksigen dalam cincin",
    "Empat atom karbon dan satu atom oksigen",
    "Enam atom karbon tanpa oksigen",
    "Tiga atom karbon dan dua atom oksigen",
@@ -1943,7 +1943,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Karbohidrat: Uji Molisch",
   "q": "Cincin aromatik menurut catatan slide adalah",
   "opsi": [
-   "Cincin dengan seluruh ikatan tunggal",
+   "Cincin dengan seluruh ikatan tunggal yang jenuh dan stabil",
    "Cincin dengan seluruh ikatan rangkap",
    "Gabungan ikatan tunggal dan ikatan rangkap yang selang-seling",
    "Cincin yang mengandung atom nitrogen",
@@ -1965,7 +1965,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Dehidrasi pentosa seperti ribosa menghasilkan apa, dan dehidrasi heksosa seperti glukosa menghasilkan apa?",
   "opsi": [
    "Keduanya menghasilkan osazon",
-   "Pentosa menghasilkan 5-hidroksimetil furfural, heksosa menghasilkan furfural",
+   "Pentosa menghasilkan 5-hidroksimetil furfural, heksosa menghasilkan furfural biasa",
    "Keduanya menghasilkan furfural yang sama",
    "Pentosa menghasilkan furfural, heksosa menghasilkan 5-hidroksimetil furfural",
    "Pentosa menghasilkan akrolein, heksosa menghasilkan furfural"
@@ -2090,7 +2090,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Karbohidrat: Uji Benedict",
   "q": "Semakin merah perubahan warna endapan pada uji Benedict berarti",
   "opsi": [
-   "Reaksinya gagal berlangsung",
+   "Reaksinya gagal berlangsung karena reagen rusak",
    "Konsentrasi gugus pereduksinya semakin rendah",
    "Sampelnya semakin tidak larut",
    "Sampelnya bukan karbohidrat",
@@ -2112,7 +2112,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Reagen Benedict menurut slide tersusun atas",
   "opsi": [
    "Natrium sulfat, natrium karbonat, akuades, dan tembaga sulfat",
-   "Natrium hidroksida dan tembaga sulfat saja",
+   "Natrium hidroksida, natrium tartrat, akuades, dan tembaga sulfat",
    "Alpha naphtol dan alkohol",
    "Fenilhidrazin HCl dan natrium asetat",
    "Natrium tartrat dan natrium hidroksida"
@@ -2154,7 +2154,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Prinsip uji Trommer menurut slide adalah",
   "opsi": [
    "Gula bereaksi dengan fenilhidrazin membentuk kristal",
-   "Karbohidrat didehidrasi membentuk furfural",
+   "Karbohidrat didehidrasi oleh asam kuat membentuk furfural yang berwarna ungu",
    "Polialkohol pada gula dapat mereduksi dan melarutkan tembaga hidroksida",
    "Lemak dihidrolisis oleh alkali",
    "Ikatan rangkap diadisi oleh iodin"
@@ -2178,7 +2178,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
    "Alpha naphtol dan alkohol",
    "Natrium sitrat dan natrium karbonat",
    "Tembaga sulfat dan natrium hidroksida",
-   "Natrium tartrat dan tembaga sulfat"
+   "Natrium tartrat dan tembaga sulfat (Fehling B)"
   ],
   "kunciIndex": 3,
   "kunci": "d",
@@ -2195,7 +2195,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Karbohidrat: Uji Trommer",
   "q": "Pada uji Trommer, tabung yang berisi glukosa akan menunjukkan hasil apa, dan tabung berisi gliserol bagaimana?",
   "opsi": [
-   "Glukosa membentuk cincin ungu, gliserol membentuk endapan",
+   "Glukosa membentuk cincin ungu, gliserol membentuk endapan merah bata di dasar tabung",
    "Glukosa tidak berubah, gliserol membentuk endapan merah",
    "Keduanya membentuk endapan merah",
    "Keduanya tidak berubah",
@@ -2237,7 +2237,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Karbohidrat: Perbandingan Uji Pereduksi",
   "q": "Persamaan uji Fehling, Benedict, dan Trommer menurut slide adalah",
   "opsi": [
-   "Ketiganya memakai reagen yang sama persis",
+   "Ketiganya memakai reagen yang sama persis dengan konsentrasi berbeda",
    "Ketiganya mencari keberadaan gugus pereduksi pada molekul gula",
    "Ketiganya menghasilkan cincin ungu",
    "Ketiganya memakai fenilhidrazin",
@@ -2323,7 +2323,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "opsi": [
    "Osazon berupa kristal",
    "Furfural",
-   "Cupro oxide",
+   "Cupro oxide (endapan merah bata)",
    "Akrolein",
    "Cincin ungu"
   ],
@@ -2366,7 +2366,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
    "Lima menit",
    "Dua menit",
    "Tiga puluh menit",
-   "Sepuluh menit",
+   "Sepuluh sampai lima belas menit",
    "Satu menit"
   ],
   "kunciIndex": 2,
@@ -2384,7 +2384,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Karbohidrat: Uji Osazon",
   "q": "Gula yang menghasilkan kristal osazon berbentuk seperti lidi atau jarum berkelompok menurut slide adalah",
   "opsi": [
-   "Laktosa dan sukrosa",
+   "Laktosa, maltosa, dan sukrosa",
    "Laktosa saja",
    "Sukrosa saja",
    "Glukosa, maltosa, dan fruktosa",
@@ -2490,7 +2490,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Mengapa kristal osazon laktosa berbeda dengan glukosa?",
   "opsi": [
    "Karena laktosa adalah polisakarida",
-   "Karena laktosa berbeda pada atom karbon nomor satu",
+   "Karena laktosa berbeda dari glukosa pada atom karbon nomor satu dan dua",
    "Karena laktosa tidak memiliki gugus karbonil",
    "Karena laktosa berbeda dari glukosa pada atom karbon nomor empat",
    "Karena laktosa tidak bereaksi dengan fenilhidrazin"
@@ -2552,9 +2552,9 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Karbohidrat: Monitoring Blood Glucose",
   "q": "Tujuan praktikum monitoring blood glucose menurut slide adalah",
   "opsi": [
-   "Mengetahui adanya gugus pereduksi dalam urine",
+   "Mengetahui adanya gugus pereduksi dalam urine pasien diabetes melitus di laboratorium",
    "Masyarakat mampu memonitor gula darah secara berkala dengan mandiri sehingga dapat mengatur pola diet",
-   "Mengukur kadar kolesterol total",
+   "Mengukur kadar kolesterol total dan trigliserida untuk menilai risiko penyakit jantung",
    "Membedakan aldosa dan ketosa",
    "Mengetahui bentuk kristal karbohidrat"
   ],
@@ -2637,7 +2637,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Jari yang direkomendasikan WHO sebagai tempat pengambilan sampel darah adalah",
   "opsi": [
    "Jari tengah dan jari manis",
-   "Ibu jari dan telunjuk",
+   "Ibu jari dan jari telunjuk",
    "Jari kelingking",
    "Telunjuk dan jari tengah",
    "Semua jari sama saja"
@@ -2678,7 +2678,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Karbohidrat: Monitoring Blood Glucose",
   "q": "Mengapa tetes darah pertama sebaiknya dihindari?",
   "opsi": [
-   "Karena kadar glukosanya selalu lebih tinggi",
+   "Karena kadar glukosanya selalu lebih tinggi daripada tetes darah berikutnya",
    "Karena jumlahnya selalu terlalu sedikit",
    "Karena bisa terkontaminasi jaringan kulit mati atau debris yang memengaruhi hasil",
    "Karena masih bercampur alkohol yang belum kering",
@@ -2783,7 +2783,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Praktikum Karbohidrat: Monitoring Blood Glucose",
   "q": "Pada penggunaan Easy Touch GCU, strip glucose dipasang di bagian mana alat?",
   "opsi": [
-   "Bagian bawah alat",
+   "Bagian bawah alat sampai muncul tulisan OK di layar",
    "Bagian belakang alat",
    "Bagian atas alat sampai muncul gambar tetesan darah",
    "Di dalam lanset pen",
@@ -2847,7 +2847,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Langkah pemasangan lanset menurut slide dimulai dengan",
   "opsi": [
    "Membuka ujung tempat lanset dengan cara memutar ke kanan",
-   "Memasukkan jarum lanset lalu memutar ke kiri",
+   "Memasukkan jarum lanset lebih dahulu lalu memutar ke kiri",
    "Melepas penutup jarum lebih dahulu",
    "Menekan pemantik lanset",
    "Mengusap ujung jari dengan alkohol swab"
@@ -2889,7 +2889,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Selain banyak gugus hidroksil, karbohidrat harus memiliki setidaknya satu gugus",
   "opsi": [
    "Amino",
-   "Karboksil",
+   "Karboksil, yaitu asam karboksilat",
    "Karbonil, yaitu aldehida atau keton",
    "Fosfat",
    "Sulfat"
@@ -2952,7 +2952,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Karbohidrat diklasifikasikan berdasarkan empat dasar menurut slide ringkasan, yaitu",
   "opsi": [
    "Jumlah unit gula, lokasi gugus karbonil, jumlah atom karbon pada rantai, dan stereokimia",
-   "Kelarutan, warna, rasa, dan bentuk kristal",
+   "Kelarutan dalam air, warna larutan, rasa manis, dan bentuk kristal osazon",
    "Sumber, fungsi, ukuran, dan muatan",
    "Jumlah atom oksigen, titik didih, kepolaran, dan reaktivitas",
    "Asal hewani, asal nabati, buatan, dan alami"
@@ -3224,7 +3224,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Karbohidrat: Disakarida",
   "q": "Disakarida adalah dua monosakarida yang dihubungkan oleh ikatan apa, dan terbentuk dari reaksi apa?",
   "opsi": [
-   "Ikatan ester, dari reaksi saponifikasi",
+   "Ikatan ester, dari reaksi saponifikasi dengan pelepasan satu molekul gliserol",
    "Ikatan peptida, dari reaksi hidrolisis",
    "Ikatan hidrogen, dari reaksi adisi",
    "Ikatan glikosidik, dari reaksi kondensasi dengan eliminasi satu molekul air",
@@ -3330,7 +3330,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Maltosa tersusun atas dua molekul glukosa dan merupakan hasil pemecahan apa oleh enzim apa?",
   "opsi": [
    "Laktosa oleh laktase",
-   "Glikogen oleh glukagon",
+   "Glikogen otot oleh hormon glukagon",
    "Selulosa oleh selulase",
    "Pati atau amilum oleh amilase",
    "Sukrosa oleh sukrase"
@@ -3435,7 +3435,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Sifat polisakarida menurut slide adalah",
   "opsi": [
    "Selalu dapat dicerna manusia",
-   "Sangat manis dan mudah larut",
+   "Sangat manis dan mudah larut, fungsi utamanya sebagai sumber energi cepat bagi otak dan otot",
    "Selalu berfungsi sebagai sumber energi cepat",
    "Tidak manis, tidak larut, dan fungsi utamanya bukan energi cepat melainkan struktur dan penyimpanan",
    "Selalu berasal dari hewan"
@@ -3456,7 +3456,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Polisakarida terbagi menjadi dua kelompok menurut slide, yaitu",
   "opsi": [
    "Pentosa dan heksosa",
-   "Aldosa dan ketosa",
+   "Aldosa dan ketosa (berdasarkan gugus karbonil)",
    "Reducing dan non-reducing",
    "Alfa dan beta",
    "Homopolisakarida dan heteropolisakarida"
@@ -3497,7 +3497,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Karbohidrat: Polisakarida",
   "q": "Pati dicerna oleh amilase menjadi",
   "opsi": [
-   "Glukosa dan fruktosa",
+   "Glukosa dan fruktosa bebas yang langsung diserap",
    "Maltosa, maltotriosa, dan alfa-dekstrin",
    "Galaktosa dan glukosa",
    "Selulosa dan dekstran",
@@ -3540,7 +3540,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Glikogen mirip amilopektin, tetapi berbeda dalam hal",
   "opsi": [
    "Tersusun atas fruktosa",
-   "Lebih sedikit cabang",
+   "Lebih sedikit cabang, yaitu setiap dua puluh lima sampai tiga puluh residu",
    "Sama sekali tidak bercabang",
    "Lebih banyak cabang, yaitu setiap delapan sampai sepuluh residu",
    "Tidak dapat dipecah menjadi glukosa"
@@ -3561,7 +3561,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Mengapa selulosa tidak dapat dicerna manusia?",
   "opsi": [
    "Karena selulosa dicerna di lambung saja",
-   "Karena selulosa tidak mengandung glukosa",
+   "Karena selulosa tidak mengandung glukosa sama sekali",
    "Karena selulosa terlalu larut dalam air",
    "Karena selulosa bukan polisakarida",
    "Karena manusia tidak memiliki enzim selulase"
@@ -3604,7 +3604,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "opsi": [
    "Tumbuhan, digunakan sebagai pemanis",
    "Bakteri dan jamur, digunakan sebagai plasma expander",
-   "Hati manusia, digunakan sebagai cadangan energi",
+   "Hati manusia, digunakan sebagai cadangan energi seperti glikogen",
    "Usus halus, digunakan sebagai pelumas",
    "Pankreas, digunakan sebagai hormon"
   ],
@@ -3645,7 +3645,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Mengapa glikosaminoglikan dapat berfungsi sebagai pelumas dan bantalan?",
   "opsi": [
    "Karena dapat dicerna oleh enzim sendi",
-   "Karena bersifat nonpolar sehingga licin",
+   "Karena bersifat nonpolar sehingga licin dan menolak air",
    "Karena tersusun atas rantai lurus tanpa cabang",
    "Karena sangat bermuatan negatif sehingga menarik air",
    "Karena mengandung banyak protein"
@@ -3666,7 +3666,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Contoh glikosaminoglikan menurut slide adalah",
   "opsi": [
    "Raffinosa dan stachyosa",
-   "Transferin dan imunoglobulin",
+   "Transferin, imunoglobulin, dan glikoforin",
    "Dekstran dan dekstrin",
    "Amilosa dan amilopektin",
    "Hialuronan, kondroitin sulfat, dan heparin"
@@ -3687,7 +3687,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Glikoprotein adalah campuran protein dengan oligosakarida dengan kandungan karbohidrat biasanya",
   "opsi": [
    "Sepuluh sampai lima belas persen",
-   "Lima puluh persen",
+   "Lima puluh sampai delapan puluh persen",
    "Delapan puluh persen",
    "Kurang dari satu persen",
    "Sembilan puluh persen"
@@ -3770,7 +3770,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Karbohidrat: Metabolisme",
   "q": "Glikolisis terjadi di bagian sel mana, dan pada kondisi apa?",
   "opsi": [
-   "Retikulum endoplasma, pada kondisi anaerob",
+   "Retikulum endoplasma hati saja, hanya pada kondisi anaerob",
    "Matriks mitokondria, hanya pada kondisi aerob",
    "Sitoplasma, hanya pada kondisi anaerob",
    "Nukleus, pada kondisi aerob",
@@ -3812,7 +3812,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Karbohidrat: Metabolisme",
   "q": "Tujuan glikogenolisis menurut slide adalah",
   "opsi": [
-   "Membentuk cadangan energi baru",
+   "Membentuk cadangan energi baru berupa glikogen setelah makan karbohidrat",
    "Menghasilkan energi dari cadangan yang tersimpan bila tidak ada asupan glukosa",
    "Mengubah protein menjadi glukosa",
    "Menyimpan kelebihan glukosa setelah makan",
@@ -3960,7 +3960,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Siklus Krebs memiliki beberapa nama lain menurut slide, yaitu",
   "opsi": [
    "Rantai transpor elektron",
-   "Siklus urea dan siklus Cori",
+   "Siklus urea, siklus Cori, dan siklus glukosa-alanin",
    "Jalur pentosa fosfat",
    "Siklus asam sitrat, CAC, dan TCA cycle",
    "Siklus glioksilat"
@@ -4024,18 +4024,18 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "opsi": [
    "Satu ATP, tiga NADH, satu FADH2, dan dua karbon dioksida",
    "Dua ATP, enam NADH, dua FADH2, dan empat karbon dioksida",
-   "Empat ATP, dua NADH, empat FADH2",
+   "Empat ATP, dua NADH, empat FADH2, dan dua karbon dioksida",
    "Enam ATP, dua NADH, enam FADH2",
    "Dua ATP saja tanpa NADH"
   ],
   "kunciIndex": 1,
   "kunci": "b",
-  "rationale": "Slide Krebs cycle mencantumkan hasil berupa dua ATP, enam NADH, dua FADH2, dan empat CO2.  —  **Pola Angka & daftar:** Angka ini dihitung untuk dua putaran dari satu molekul glukosa, karena satu glukosa menghasilkan dua piruvat.",
+  "rationale": "Slide Krebs cycle mencantumkan hasil berupa dua ATP, enam NADH, dua FADH2, dan empat CO2. **Catatan silang:** angka ini adalah hasil untuk SATU GLUKOSA, yaitu dua putaran (satu glukosa menghasilkan dua asetil-KoA). Per satu putaran hasilnya 1 GTP/ATP, 3 NADH, 1 FADH2, dan 2 CO2, dan angka per putaran itulah yang dipakai kuliah dosen (bank Metabolisme Karbohidrat). Untuk responsi aslab jawab sesuai slide; untuk UB dosen hitung per putaran.  —  **Pola Angka & daftar:** Angka ini dihitung untuk dua putaran dari satu molekul glukosa, karena satu glukosa menghasilkan dua piruvat.",
   "grup": "Metabolisme",
   "pola": "ANG",
   "asliResponsi": false,
   "kodeResponsi": "",
-  "bahas": "Slide Krebs cycle mencantumkan hasil berupa dua ATP, enam NADH, dua FADH2, dan empat CO2.",
+  "bahas": "Slide Krebs cycle mencantumkan hasil berupa dua ATP, enam NADH, dua FADH2, dan empat CO2. **Catatan silang:** angka ini adalah hasil untuk SATU GLUKOSA, yaitu dua putaran (satu glukosa menghasilkan dua asetil-KoA). Per satu putaran hasilnya 1 GTP/ATP, 3 NADH, 1 FADH2, dan 2 CO2, dan angka per putaran itulah yang dipakai kuliah dosen (bank Metabolisme Karbohidrat). Untuk responsi aslab jawab sesuai slide; untuk UB dosen hitung per putaran.",
   "diskriminator": "Angka ini dihitung untuk dua putaran dari satu molekul glukosa, karena satu glukosa menghasilkan dua piruvat."
  },
  {
@@ -4044,7 +4044,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Diabetes melitus menurut slide disebabkan oleh",
   "opsi": [
    "Kerusakan ginjal yang membuang glukosa",
-   "Produksi glukosa berlebihan oleh hati",
+   "Produksi glukosa berlebihan oleh hati meskipun pemindahan glukosa ke sel berjalan normal",
    "Gangguan pemindahan glukosa dari darah ke dalam sel sehingga kadar glukosa darah tinggi",
    "Kelebihan asupan karbohidrat semata",
    "Gangguan penyerapan glukosa di usus"
@@ -4064,7 +4064,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Karbohidrat: Korelasi Klinis",
   "q": "Diabetes melitus tipe satu menurut slide terjadi karena",
   "opsi": [
-   "Kelebihan produksi glukagon",
+   "Kelebihan produksi glukagon oleh sel alfa akibat infeksi virus pada pankreas eksokrin",
    "Produksi insulin normal tetapi jaringan tidak merespon",
    "Reseptor insulin berlebih di jaringan",
    "Tubuh tidak memproduksi insulin yang cukup akibat autoimun, dengan sel T menyerang sel beta pankreas",
@@ -4190,7 +4190,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Karbohidrat: Korelasi Klinis",
   "q": "Pemeriksaan gula urin menurut slide dilakukan dengan",
   "opsi": [
-   "Uji Hubl iod",
+   "Uji Hubl iod (titrasi)",
    "Uji Molisch",
    "Uji osazon",
    "Uji akrolein",
@@ -4317,7 +4317,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "q": "Mengapa laktosa yang tidak terpecah menyebabkan diare osmotik menurut catatan slide?",
   "opsi": [
    "Karena laktosa yang tidak terabsorpsi meningkatkan tekanan osmotik di lumen usus sehingga air tertarik masuk",
-   "Karena laktosa merusak dinding usus secara langsung",
+   "Karena laktosa yang tidak terabsorpsi merusak dinding usus secara langsung sehingga cairan sel bocor ke lumen",
    "Karena laktosa mempercepat gerakan peristaltik secara langsung",
    "Karena laktosa menghambat penyerapan natrium",
    "Karena laktosa membunuh flora normal usus"
@@ -4340,7 +4340,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
    "Karena laktosa langsung berubah menjadi gas di lambung",
    "Karena laktosa yang mencapai kolon difermentasi oleh bakteri flora normal menghasilkan asam organik dan gas",
    "Karena pasien menelan banyak udara saat diare",
-   "Karena laktase menghasilkan gas sebagai produk samping",
+   "Karena enzim laktase menghasilkan gas karbon dioksida sebagai produk samping saat memecah laktosa di usus halus",
    "Karena air yang tertarik ke lumen menguap menjadi gas"
   ],
   "kunciIndex": 1,
@@ -4358,7 +4358,7 @@ window.QUIZ_BANK["ub-1-3-responsi-biokim"] = [
   "modul": "Teori Karbohidrat: Korelasi Klinis",
   "q": "Mengapa karbohidrat harus berbentuk monosakarida agar dapat diabsorpsi menurut catatan slide?",
   "opsi": [
-   "Karena monosakarida tidak memerlukan enzim",
+   "Karena monosakarida tidak memerlukan enzim dan dapat melewati membran secara difusi bebas",
    "Karena monosakarida bersifat nonpolar",
    "Karena tubuh hanya dapat mengabsorpsi karbohidrat dalam bentuk monosakarida",
    "Karena monosakarida larut dalam lemak",

@@ -54,7 +54,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "opsi": [
    "Hypochondriaca dextra",
    "Umbilicalis",
-   "Lumbalis sinistra",
+   "Lumbalis sinistra dan umbilicalis",
    "Hypochondriaca sinistra",
    "Epigastrica"
   ],
@@ -179,7 +179,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "Ligamentum inguinale dibentuk oleh…",
   "opsi": [
    "Tepi bawah aponeurosis m. obliquus externus abdominis",
-   "Tepi bawah m. obliquus internus abdominis",
+   "Tepi bawah m. obliquus internus abdominis yang menebal",
    "Aponeurosis m. transversus abdominis",
    "Conjoint tendon",
    "Fascia transversalis yang menebal"
@@ -197,9 +197,9 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "M. rectus abdominis memiliki intersectiones tendineae. Pernyataan yang benar adalah…",
   "opsi": [
    "Umumnya 3, setinggi proc. xiphoideus, umbilicus, dan di antara keduanya",
-   "Hanya 1, setinggi umbilicus",
+   "Hanya 1, setinggi umbilicus, menyatu dengan linea alba",
    "Terletak di bawah linea arcuata",
-   "Umumnya 5, merata sepanjang otot",
+   "Umumnya 5, tersebar merata dari symphysis sampai xiphoideus",
    "Melekat ke lamina posterior vagina recti"
   ],
   "kunciIndex": 0,
@@ -251,9 +251,9 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "Di atas linea arcuata, lamina posterior vagina musculi recti dibentuk oleh…",
   "opsi": [
    "Aponeurosis m. obliquus internus (daun belakang) dan m. transversus abdominis",
-   "Aponeurosis m. obliquus externus dan internus",
+   "Aponeurosis m. obliquus externus dan seluruh aponeurosis m. obliquus internus",
    "Hanya aponeurosis m. obliquus externus",
-   "Aponeurosis ketiga otot pipih",
+   "Aponeurosis ketiga otot pipih yang seluruhnya lewat di belakang rectus",
    "Hanya fascia transversalis"
   ],
   "kunciIndex": 0,
@@ -325,7 +325,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "Nl. parasternales",
    "Nl. inguinales superficiales",
    "Nl. axillares",
-   "Nl. mesenterici superiores",
+   "Nl. mesenterici superiores melalui pembuluh limfe retroperitoneal",
    "Nl. coeliaci"
   ],
   "kunciIndex": 1,
@@ -340,11 +340,11 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Regio Inguinalis",
   "q": "Dinding posterior canalis inguinalis dibentuk oleh…",
   "opsi": [
-   "Aponeurosis m. obliquus externus",
+   "Aponeurosis m. obliquus externus, diperkuat lig. lacunare di medial",
    "Lig. inguinale dan lig. lacunare",
    "M. rectus abdominis",
    "Fascia transversalis, diperkuat conjoint tendon di medial",
-   "Serabut melengkung m. obliquus internus dan transversus"
+   "Serabut melengkung m. obliquus internus dan transversus abdominis"
   ],
   "kunciIndex": 3,
   "kunci": "Fascia transversalis, diperkuat conjoint tendon di medial",
@@ -379,7 +379,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "Lig. inguinale (dan lig. lacunare di medial)",
    "Lig. pectineale saja",
    "Conjoint tendon",
-   "Aponeurosis m. transversus abdominis",
+   "Aponeurosis m. transversus abdominis bagian bawah",
    "Fascia transversalis"
   ],
   "kunciIndex": 0,
@@ -397,7 +397,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "Aponeurosis m. obliquus internus dan m. transversus abdominis",
    "Lig. inguinale dan lig. lacunare",
    "M. rectus dan m. pyramidalis",
-   "Aponeurosis m. obliquus externus dan internus",
+   "Aponeurosis m. obliquus externus dan m. obliquus internus abdominis",
    "Fascia transversalis dan peritoneum"
   ],
   "kunciIndex": 0,
@@ -449,8 +449,8 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "Hernia inguinalis indirek masuk ke canalis inguinalis melalui…",
   "opsi": [
    "Canalis femoralis",
-   "Annulus inguinalis superficialis secara langsung",
-   "Trigonum Hesselbach",
+   "Annulus inguinalis superficialis secara langsung, medial dari a. epigastrica",
+   "Trigonum Hesselbach, medial dari a. epigastrica inferior",
    "Annulus inguinalis profundus, lateral dari a. epigastrica inferior",
    "Linea alba"
   ],
@@ -469,7 +469,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "Ureter",
    "Tuba uterina",
    "Lig. teres uteri (rotundum)",
-   "Lig. ovarii proprium",
+   "Lig. ovarii proprium dan tuba uterina",
    "Funiculus spermaticus"
   ],
   "kunciIndex": 2,
@@ -523,7 +523,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "Pars descendens",
    "±2 cm awal pars superior",
    "Seluruh duodenum",
-   "Pars horizontalis",
+   "Pars horizontalis di depan aorta",
    "Pars ascendens"
   ],
   "kunciIndex": 1,
@@ -740,7 +740,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "N. splanchnicus minor",
    "N. vagus",
    "Nn. splanchnici pelvici (nn. erigentes)",
-   "N. splanchnicus major"
+   "N. splanchnicus major dan n. vagus"
   ],
   "kunciIndex": 3,
   "kunci": "Nn. splanchnici pelvici (nn. erigentes)",
@@ -774,7 +774,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "opsi": [
    "Valvula ileocaecalis",
    "Pylorus",
-   "Papilla duodeni major",
+   "Papilla duodeni major (ampulla Vater)",
    "Lig. Treitz (m. suspensorius duodeni)",
    "Lig. hepatoduodenale"
   ],
@@ -864,7 +864,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "opsi": [
    "A. lienalis",
    "Aa. jejunales et ileales, cabang a. mesenterica superior",
-   "A. colica media",
+   "A. colica media dan a. ileocolica, cabang a. mesenterica inferior",
    "A. mesenterica inferior",
    "A. gastroduodenalis"
   ],
@@ -916,8 +916,8 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Intestinum Crassum",
   "q": "Kantong-kantong dinding colon (haustra) terbentuk karena…",
   "opsi": [
-   "Kontraksi m. sphincter",
-   "Adanya appendices epiploicae",
+   "Kontraksi m. sphincter dan tonus otot sirkuler yang tinggi",
+   "Adanya appendices epiploicae yang menarik dinding colon",
    "Plicae circulares yang tinggi",
    "Mukosa colon tidak memiliki villi",
    "Taenia coli lebih pendek daripada dinding colon"
@@ -938,7 +938,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "Colon descendens",
    "Colon sigmoideum",
    "Appendix vermiformis dan rectum",
-   "Caecum dan colon ascendens"
+   "Caecum dan colon ascendens (bagian retroperitoneal)"
   ],
   "kunciIndex": 3,
   "kunci": "Appendix vermiformis dan rectum",
@@ -952,7 +952,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Intestinum Crassum",
   "q": "Segmen colon yang intraperitoneal adalah…",
   "opsi": [
-   "Colon descendens dan sigmoideum",
+   "Colon descendens dan colon sigmoideum (keduanya bermesokolon)",
    "Colon ascendens dan transversum",
    "Colon transversum dan colon sigmoideum",
    "Colon ascendens dan descendens",
@@ -970,7 +970,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Intestinum Crassum",
   "q": "Colon transversum 1/3 distal mendapat perdarahan dari…",
   "opsi": [
-   "A. ileocolica",
+   "A. ileocolica (cabang a. mesenterica superior)",
    "A. colica dextra",
    "A. rectalis superior",
    "A. colica sinistra (cabang a. mesenterica inferior)",
@@ -1007,8 +1007,8 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "Titik McBurney, proyeksi pangkal appendix, terletak pada…",
   "opsi": [
    "Tepat di atas umbilicus",
-   "1/2 garis SIAS dextra ke symphysis",
-   "Pertengahan garis SIAS dextra–SIAS sinistra",
+   "1/2 garis dari SIAS dextra ke symphysis pubica",
+   "Pertengahan garis antara SIAS dextra dan SIAS sinistra",
    "1/3 medial garis dari SIAS dextra ke umbilicus",
    "1/3 lateral garis dari SIAS dextra ke umbilicus"
   ],
@@ -1042,9 +1042,9 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Intestinum Crassum",
   "q": "A. appendicularis disebut end artery. Implikasi klinisnya adalah…",
   "opsi": [
-   "Appendix mendapat darah dari dua arah",
+   "Appendix mendapat darah dari dua arah sehingga jarang iskemia",
    "Nyeri appendix dirasakan di epigastrium",
-   "Perdarahan appendix mudah berhenti sendiri",
+   "Perdarahan appendix mudah berhenti sendiri karena arterinya kecil sekali",
    "Sumbatan atau edema mudah menyebabkan gangren dan perforasi appendix",
    "Appendix tidak bisa terinfeksi"
   ],
@@ -1061,7 +1061,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "Katup antara ileum dan caecum yang memiliki labium superius, labium inferius, dan frenulum adalah…",
   "opsi": [
    "Pylorus",
-   "Plica semilunaris",
+   "Plica semilunaris coli (lipatan haustra)",
    "Valvula anales",
    "Sphincter Oddi",
    "Valvula ileocaecalis Bauhini"
@@ -1080,7 +1080,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "opsi": [
    "Vertebra sacralis I",
    "Vertebra sacralis III",
-   "Vertebra lumbalis III",
+   "Vertebra lumbalis III (promontorium)",
    "Promontorium",
    "Os coccygis"
   ],
@@ -1098,7 +1098,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "opsi": [
    "Plicae circulares Kerckring",
    "Plicae transversales recti Houston",
-   "Columnae anales Morgagni",
+   "Columnae anales Morgagni di canalis analis",
    "Valvulae anales",
    "Haustra"
   ],
@@ -1115,10 +1115,10 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "Drainase vena canalis analis di ATAS linea pectinata menuju…",
   "opsi": [
    "V. rectalis inferior → v. pudenda interna → VCI",
-   "V. azygos",
+   "V. rectalis superior → v. iliaca interna → v. cava inferior",
    "V. iliaca externa",
    "V. rectalis superior → v. mesenterica inferior → v. porta",
-   "V. rectalis media → v. iliaca interna → VCI"
+   "V. rectalis media → v. iliaca interna → v. cava inferior"
   ],
   "kunciIndex": 3,
   "kunci": "V. rectalis superior → v. mesenterica inferior → v. porta",
@@ -1151,7 +1151,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "Otot sphincter canalis analis yang berupa otot lurik dan dipersarafi n. pudendus adalah…",
   "opsi": [
    "M. levator veli palatini",
-   "M. sphincter ani internus",
+   "M. sphincter ani internus (otot polos)",
    "Tunica muscularis recti",
    "M. corrugator ani",
    "M. sphincter ani externus"
@@ -1171,7 +1171,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "Nl. paraaortici",
    "Nl. coeliaci",
    "Nl. inguinales superficiales",
-   "Nl. iliaci interni",
+   "Nl. iliaci interni di dinding pelvis",
    "Nl. mesenterici inferiores"
   ],
   "kunciIndex": 2,
@@ -1222,11 +1222,11 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Hepar",
   "q": "Area nuda (bare area) hepar dibatasi oleh…",
   "opsi": [
-   "Porta hepatis dan fossa VF",
+   "Porta hepatis, fossa vesica fellea, dan lig. hepatoduodenale",
    "Lig. coronarium anterior et posterior dan lig. triangulare",
    "Fissura lig. venosi dan sulcus VCI",
    "Lig. hepatogastricum dan hepatoduodenale",
-   "Lig. falciforme dan lig. teres"
+   "Lig. falciforme, lig. teres hepatis, dan lig. venosum"
   ],
   "kunciIndex": 1,
   "kunci": "Lig. coronarium anterior et posterior dan lig. triangulare",
@@ -1258,8 +1258,8 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Hepar",
   "q": "Lobus caudatus hepar dibatasi oleh…",
   "opsi": [
-   "Fissura lig. teretis dan fossa VF",
-   "Porta hepatis dan margo anterior",
+   "Fissura lig. teretis dan fossa vesicae felleae",
+   "Porta hepatis di bawah dan margo anterior hepar",
    "Fissura lig. venosi dan sulcus v. cavae inferioris",
    "Impressio renalis dan colica",
    "Lig. falciforme dan lig. coronarium"
@@ -1312,11 +1312,11 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Hepar",
   "q": "Persarafan simpatis hepar adalah…",
   "opsi": [
-   "Nn. splanchnici pelvici",
+   "Nn. splanchnici pelvici dengan postganglioner di dinding hepar",
    "N. splanchnicus minor",
    "N. splanchnicus major dengan postganglioner dari ganglion coeliacum",
    "N. vagus",
-   "N. phrenicus saja"
+   "N. phrenicus saja tanpa serabut simpatis lain"
   ],
   "kunciIndex": 2,
   "kunci": "N. splanchnicus major dengan postganglioner dari ganglion coeliacum",
@@ -1349,10 +1349,10 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "Urutan bagian vesica fellea dari ujung ke saluran keluar adalah…",
   "opsi": [
    "Infundibulum – fundus – corpus – collum",
-   "Corpus – fundus – collum – ductus choledochus",
+   "Corpus – fundus – collum – infundibulum – ductus choledochus",
    "Fundus – corpus – infundibulum – collum – ductus cysticus",
    "Collum – corpus – fundus – ductus cysticus",
-   "Fundus – collum – corpus – ductus hepaticus"
+   "Fundus – collum – corpus – infundibulum – ductus hepaticus"
   ],
   "kunciIndex": 2,
   "kunci": "Fundus – corpus – infundibulum – collum – ductus cysticus",
@@ -1369,7 +1369,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "Ductus pancreaticus",
    "Lig. falciforme",
    "V. porta",
-   "Duodenum pars superior",
+   "Duodenum pars superior (bulbus duodeni)",
    "Tepi bawah hepar (facies visceralis)"
   ],
   "kunciIndex": 4,
@@ -1384,7 +1384,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Vesica Fellea & Pancreas",
   "q": "A. cystica pada sebagian besar orang (±75%) merupakan cabang dari…",
   "opsi": [
-   "A. hepatica communis",
+   "A. hepatica communis sebelum bercabang",
    "A. gastroduodenalis",
    "A. mesenterica superior",
    "R. dexter a. hepatica propria",
@@ -1420,11 +1420,11 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Vesica Fellea & Pancreas",
   "q": "Ductus pancreaticus accessorius (Santorini) bermuara di…",
   "opsi": [
-   "Ductus choledochus",
+   "Ductus choledochus, sebelum ampulla Vater",
    "Papilla duodeni minor, sedikit di atas papilla major",
    "Gaster pars pylorica",
    "Papilla duodeni major",
-   "Duodenum pars horizontalis"
+   "Duodenum pars horizontalis, dekat a. mesenterica superior"
   ],
   "kunciIndex": 1,
   "kunci": "Papilla duodeni minor, sedikit di atas papilla major",
@@ -1546,7 +1546,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Lien",
   "q": "Facies visceralis lien terdiri dari…",
   "opsi": [
-   "Facies hepatica dan pancreatica",
+   "Facies hepatica, pancreatica, dan duodenalis",
    "Facies gastrica, colica, dan renalis",
    "Facies duodenalis dan jejunalis",
    "Facies anterior dan posterior",
@@ -1584,7 +1584,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "opsi": [
    "V. paraumbilicalis",
    "V. thoracoepigastrica",
-   "V. rectalis media",
+   "V. rectalis media (via plexus rectalis)",
    "V. azygos (via vv. oesophageae)",
    "V. hepatica"
   ],
@@ -1600,10 +1600,10 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Vena Porta",
   "q": "Caput medusae pada hipertensi porta terjadi akibat anastomosis antara…",
   "opsi": [
-   "V. lienalis dan v. renalis",
+   "V. lienalis dan v. renalis sinistra di retroperitoneum",
    "Vv. paraumbilicales dan vena superfisial dinding abdomen",
    "V. rectalis superior dan inferior",
-   "V. mesenterica inferior dan v. iliaca",
+   "V. mesenterica inferior dan v. iliaca communis sinistra",
    "V. gastrica sinistra dan v. azygos"
   ],
   "kunciIndex": 1,
@@ -1618,10 +1618,10 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Kasus Integrasi",
   "q": "Laki-laki 19 tahun mengeluh nyeri samar di sekitar pusar disertai mual, lalu beberapa jam kemudian nyeri pindah ke kanan bawah dan tajam saat batuk. Nyeri awal periumbilikal terjadi karena…",
   "opsi": [
-   "Saraf n. ilioinguinalis teriritasi",
+   "N. ilioinguinalis teriritasi lebih dulu sebelum peritoneum parietale",
    "Nyeri berasal dari m. rectus abdominis",
    "Peritoneum parietale di umbilicus teriritasi lebih dulu",
-   "Appendix terletak tepat di belakang umbilicus",
+   "Appendix terletak tepat di belakang umbilicus pada awal penyakit",
    "Appendix berasal dari midgut sehingga aferen viseralnya masuk segmen T10"
   ],
   "kunciIndex": 4,
@@ -1638,8 +1638,8 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "opsi": [
    "Varises di anastomosis v. gastrica sinistra – v. azygos",
    "Ruptur lien",
-   "Ulkus di curvatura major",
-   "Ruptur a. gastroduodenalis",
+   "Ulkus di curvatura major yang mengerosi a. gastroomentalis",
+   "Ruptur a. gastroduodenalis akibat ulkus di bulbus duodeni",
    "Perdarahan di linea pectinata"
   ],
   "kunciIndex": 0,
@@ -1764,7 +1764,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "opsi": [
    "Duodenum pars horizontalis",
    "Pylorus",
-   "Hiatus oesophageus",
+   "Hiatus oesophageus setinggi T10 (penyempitan terakhir)",
    "Penyempitan pertama, peralihan pharynx–oesophagus setinggi C6",
    "Cardia gaster"
   ],
@@ -1801,7 +1801,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "V. azygos",
    "V. thyroidea inferior",
    "V. gastrica sinistra → v. porta",
-   "V. hemiazygos",
+   "V. hemiazygos → v. azygos → VCS",
    "V. cava superior langsung"
   ],
   "kunciIndex": 2,
@@ -1888,7 +1888,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Gaster",
   "q": "Bayi dengan muntah proyektil dan teraba massa seperti buah zaitun (olive) di epigastrium kemungkinan mengalami…",
   "opsi": [
-   "Hirschsprung",
+   "Penyakit Hirschsprung segmen pendek",
    "Atresia oesophagus",
    "Stenosis pylorus hipertrofik",
    "Hernia hiatus",
@@ -1908,7 +1908,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "opsi": [
    "Pars horizontalis",
    "Pars descendens",
-   "Flexura duodenojejunalis",
+   "Flexura duodenojejunalis (dekat lig. Treitz)",
    "Pars superior (ampulla/bulbus)",
    "Pars ascendens"
   ],
@@ -1960,7 +1960,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Duodenum",
   "q": "Duodenum pars horizontalis disilang di sebelah anterior oleh…",
   "opsi": [
-   "Colon transversum saja",
+   "Colon transversum dan mesocolon transversum",
    "Ductus choledochus",
    "A. gastroduodenalis",
    "A. dan v. mesenterica superior",
@@ -2052,7 +2052,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "opsi": [
    "N. lingualis (V3) sendiri",
    "Chorda tympani (n. VII) melalui n. lingualis",
-   "N. hypoglossus",
+   "N. hypoglossus (n. XII) melalui ansa cervicalis",
    "N. glossopharyngeus",
    "N. laryngeus internus"
   ],
@@ -2159,7 +2159,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "Lokasi tersering karsinoma nasopharynx adalah…",
   "opsi": [
    "Vallecula epiglottica",
-   "Isthmus faucium",
+   "Isthmus faucium dan arcus palatoglossus",
    "Recessus pharyngeus (fossa Rosenmüller)",
    "Tonsilla palatina",
    "Recessus piriformis"
@@ -2213,7 +2213,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "Batas dorsal (posterior) vestibulum oris adalah",
   "opsi": [
    "Palatum durum",
-   "Labium superius et inferius",
+   "Labium superius et inferius serta m. orbicularis oris",
    "Processus alveolaris maxillae et mandibulae dan arcus dentalis",
    "Diaphragma oris",
    "Isthmus faucium"
@@ -2233,7 +2233,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "Palatum molle",
    "Diaphragma oris (m. mylohyoideus) dan lidah",
    "Isthmus faucium",
-   "Corpus adiposum buccae",
+   "Corpus adiposum buccae dan m. buccinator",
    "Processus alveolaris mandibulae"
   ],
   "kunciIndex": 1,
@@ -2268,7 +2268,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "opsi": [
    "N. palatinus major (cabang n. maxillaris)",
    "N. nasopalatinus",
-   "N. lingualis",
+   "N. lingualis (cabang n. mandibularis)",
    "N. palatinus minor",
    "N. alveolaris inferior"
   ],
@@ -2339,7 +2339,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "Sensorik umum dan pengecapan daerah lidah dekat epiglottis dipersarafi oleh",
   "opsi": [
    "N. hypoglossus",
-   "N. lingualis",
+   "N. lingualis (V3) bersama chorda tympani",
    "N. glossopharyngeus",
    "R. internus n. laryngeus superior (n. X)",
    "Chorda tympani"
@@ -2377,7 +2377,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "Plica sublingualis",
    "Papilla ductus parotidei di vestibulum",
    "Caruncula sublingualis di samping frenulum linguae",
-   "Foramen caecum",
+   "Foramen caecum di apex sulcus terminalis lidah",
    "Vallecula epiglottica"
   ],
   "kunciIndex": 2,
@@ -2464,8 +2464,8 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "modul": "Anatomi · Oesophagus",
   "q": "Angustia superior oesophagus terletak setinggi",
   "opsi": [
-   "T10, pada hiatus oesophageus",
-   "C2, pada isthmus faucium",
+   "T10, pada hiatus oesophageus dan crus dextrum",
+   "C2, pada isthmus faucium dan arcus palatoglossus",
    "T5, pada bronchus sinister",
    "T4, pada arcus aortae",
    "C6, pada m. cricopharyngeus dan cartilago cricoidea"
@@ -2485,7 +2485,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "Hiatus oesophageus",
    "Arcus aortae dan bronchus principalis dexter",
    "Arcus aortae dan bronchus principalis sinister",
-   "V. azygos dan trachea",
+   "V. azygos dan trachea pars thoracica",
    "Atrium dextrum"
   ],
   "kunciIndex": 2,
@@ -2611,7 +2611,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
    "V. cava inferior",
    "V. portae langsung",
    "V. mesenterica superior",
-   "V. gastrica sinistra",
+   "V. gastrica sinistra (v. coronaria)",
    "V. lienalis"
   ],
   "kunciIndex": 2,
@@ -2699,7 +2699,7 @@ window.QUIZ_BANK["ub-1-3-responsi-anat"] = [
   "q": "Persarafan simpatis duodenum pars descendens, inferior, dan ascendens (midgut) dibawa oleh",
   "opsi": [
    "N. splanchnicus minor via plexus mesentericus",
-   "N. vagus",
+   "N. vagus via truncus vagalis posterior",
    "N. splanchnicus major via plexus coeliacus",
    "Nn. splanchnici pelvici",
    "Nn. splanchnici lumbales"

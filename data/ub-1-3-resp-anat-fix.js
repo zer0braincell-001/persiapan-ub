@@ -34,7 +34,7 @@ window.QUIZ_BANK["ub-1-3-resp-anat-fix"] = [
    "Vallecula epiglottica, dibatasi plica glossoepiglottica mediana et lateralis",
    "Recessus piriformis, dibatasi plica aryepiglottica",
    "Recessus pharyngeus, dibatasi torus tubarius",
-   "Fossa tonsillaris, dibatasi arcus palatoglossus et palatopharyngeus",
+   "Fossa tonsillaris, dibatasi arcus palatoglossus et arcus palatopharyngeus di kiri-kanan",
    "Foramen caecum, dibatasi sulcus terminalis"
   ],
   "kunciIndex": 0,
@@ -154,7 +154,7 @@ window.QUIZ_BANK["ub-1-3-resp-anat-fix"] = [
    "Angustia superior, setinggi C6",
    "Angustia bronchialis, setinggi T5",
    "Angustia aortica, setinggi T4",
-   "Angustia inferior, setinggi T12",
+   "Angustia inferior (diaphragmatica), setinggi T12 bersama aorta",
    "Angustia inferior (diaphragmatica), setinggi T10"
   ],
   "kunciIndex": 4,
@@ -193,7 +193,7 @@ window.QUIZ_BANK["ub-1-3-resp-anat-fix"] = [
   "opsi": [
    "Excavatio rectovesicalis",
    "Sulcus paracolicus",
-   "Recessus hepatorenalis",
+   "Recessus hepatorenalis (kantong Morison)",
    "Cavum peritonei major",
    "Cavum peritonei minor (bursa omentalis)"
   ],
@@ -215,7 +215,7 @@ window.QUIZ_BANK["ub-1-3-resp-anat-fix"] = [
    "Colon descendens",
    "Ileum",
    "Caecum",
-   "Colon sigmoideum"
+   "Colon sigmoideum (berlanjut ke rectum)"
   ],
   "kunciIndex": 0,
   "kunci": "a",
@@ -252,7 +252,7 @@ window.QUIZ_BANK["ub-1-3-resp-anat-fix"] = [
   "q": "Arteri untuk 1/3 distal colon transversum berasal dari",
   "opsi": [
    "A. colica sinistra (cabang a. mesenterica inferior)",
-   "A. colica dextra",
+   "A. colica dextra (cabang a. mesenterica superior)",
    "A. colica media (cabang a. mesenterica superior)",
    "A. rectalis superior",
    "A. ileocolica"
@@ -354,7 +354,7 @@ window.QUIZ_BANK["ub-1-3-resp-anat-fix"] = [
    "M. sphincter ani internus, m. sphincter ani externus, m. puborectalis",
    "M. sphincter pyloricus, m. sphincter ampullae, m. sphincter ani internus",
    "M. sphincter ductus cystici, m. sphincter ductus hepatici, m. sphincter ampullae",
-   "M. sphincter Oddi, m. cricopharyngeus, m. sphincter pyloricus",
+   "M. sphincter Oddi, m. cricopharyngeus, dan m. sphincter pyloricus pada saluran cerna atas",
    "M. sphincter ampullae, m. sphincter ductus pancreatici, m. sphincter ductus choledochi"
   ],
   "kunciIndex": 4,
@@ -372,7 +372,7 @@ window.QUIZ_BANK["ub-1-3-resp-anat-fix"] = [
   "q": "[Soal bergambar] Lipatan peritoneum yang menggantungkan appendix vermiformis disebut",
   "opsi": [
    "Omentum minus",
-   "Lig. ileocaecale saja",
+   "Lig. ileocaecale dan mesocolon ascendens",
    "Mesoappendix (mesenteriolum)",
    "Mesenterium",
    "Mesocolon transversum"
@@ -395,7 +395,7 @@ window.QUIZ_BANK["ub-1-3-resp-anat-fix"] = [
    "Retrocolic, pericolic, subcolic",
    "Retrocaecal, subcaecal, preileal, postileal, pelvic",
    "Suprapubik, umbilikal, epigastrik",
-   "Retroperitoneal, intraperitoneal, subhepatik"
+   "Retroperitoneal, intraperitoneal, subhepatik, dan suprapubik"
   ],
   "kunciIndex": 2,
   "kunci": "c",
@@ -572,7 +572,7 @@ window.QUIZ_BANK["ub-1-3-resp-anat-fix"] = [
   "q": "Vaskularisasi lingua berasal dari",
   "opsi": [
    "A. lingualis, dengan tambahan a. pharyngea ascendens dan r. tonsillaris a. facialis",
-   "A. maxillaris dan a. temporalis superficialis",
+   "A. maxillaris dan a. temporalis superficialis, dengan tambahan a. facialis cabang palatina",
    "A. carotis interna",
    "A. facialis saja",
    "A. thyroidea superior saja"
