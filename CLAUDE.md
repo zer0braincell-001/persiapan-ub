@@ -76,7 +76,6 @@ Pemetaan saat ini (kolom "seksi" = posisi lama sebelum UI dirombak):
 | PPT Aslab | Responsi Fisiologi · Termoregulasi | `ub-1-3-responsi-fisio` | 179 |
 | PPT Aslab | Responsi Biokimia · Lipid & Karbohidrat | `ub-1-3-responsi-biokim` | 209 |
 | PPT Aslab | Responsi Anatomi · Abdomen & digestif | `ub-1-3-responsi-anat` | 150 |
-| PPT Dosen | (kosong) | — | — |
 | Naskah asli | Responsi Biokimia 1.3 | `ub-1-3-resp-asli` | 30 |
 | Naskah asli | AZYTRALIS 2022 | `ub-1-3-azytralis` | 29 |
 | Naskah asli | LATSOL Pre-Test 2026 | `ub-1-3-latsol` | 25 |
@@ -89,9 +88,54 @@ Pemetaan saat ini (kolom "seksi" = posisi lama sebelum UI dirombak):
 | Pretest | Pretes Digestivus Inferior (Aryo) | `ub-1-3-pre-digest` | 11 |
 | PPT Aslab | Histologi GIT (Afif) | `ub-1-3-responsi-histo` | 105 |
 | Naskah asli | Posttest Histologi GIT | `ub-1-3-post-histo` | 50 |
+| PPT Dosen | Anatomi Tractus Digestivus (Siti Munawaroh) | `ub-1-3-dosen-anat` | 97 |
+| PPT Dosen | Metabolisme Karbohidrat (Jarot S.) | `ub-1-3-dosen-metkh` | 61 |
+| PPT Dosen | Biokimia Pencernaan (Jarot S.) | `ub-1-3-dosen-pencernaan` | 64 |
+| PPT Dosen | Faal Sistem Pencernaan / Mekanika (Sinu Andhi) | `ub-1-3-dosen-fisio` | 97 |
+| PPT Dosen | Histologi Tractus Digestivus (Suyatmi) | `ub-1-3-dosen-histo-git` | 63 |
+| PPT Dosen | Histologi Organa Assesoria (Lies) | `ub-1-3-dosen-histo-acc` | 47 |
 
-Total tab 1.3 = **924 soal** di 15 bank. Per mata kuliah: Anatomi 224 (150 + 74 naskah), Biokimia 293 (209 + 84), Fisiologi 252 (179 + 73), Histologi 155 (105 + 50).
+Total tab 1.3 = **1353 soal** di 21 bank: aslab 924 (15 bank) + dosen 429 (6 bank). Per mata kuliah (aslab + dosen):
+Anatomi 224 + 97, Biokimia 293 + 125, Fisiologi 252 + 97, Histologi 155 + 110.
+Label topik mapel diperluas: Biokimia "Lipid, karbohidrat & pencernaan", Fisiologi "Termoregulasi & faal pencernaan", Histologi "GIT & organa assesoria".
 Naskah asli/pretest dikelompokkan per mata kuliah: resp-anat, resp-anat-fix, pre-digest → Anatomi; resp-asli, azytralis, latsol → Biokimia; pre-termo/2021/2023/2018 → Fisiologi.
+
+### Bank materi dosen Blok 1.3 (`ub-1-3-dosen-*`) — 12 Nov 2026
+Satu bank per berkas dosen, **masing-masing < 100 soal** (permintaan user: "dibawah 100", prioritas soal yang kalau
+dikerjakan berarti sudah paham). Semua disusun sendiri, kunci dari analisis berkas; bukan naskah asli. Skema sama dengan
+bank aslab 1.3: `modul` = `"<Mapel> · <grup>"`, field `grup/bahas/diskriminator`, `rationale` = bahas + `  —  **Diskriminator:** ...`
+(bagian diskriminator boleh kosong). Field `ppt` tidak dipakai (alasan sama dengan bank fisiologi aslab).
+- Berkas: `Metabolisme_Karbohidrat_2026c.pptx` (39 slide), `Biokimia_Pencernaan_2026c.pptx` (52), `2_Anatomi_Tractus_Digestivus_1.pdf` (47 hlm),
+  `KULIAH_4_8_Mekanika_Saluran_Pencernaan.pdf` (116 hlm, ±50 hlm hanya gambar Guyton/Netter), `The_histology_of_Digestive_tract-lecture_note.pdf` (62),
+  `Histologi_organa_assesoria_Dr._Lies_2026.pdf` (54). Tidak disimpan di repo. Dua PPT Jarot: teks ADA di shape (berbeda dengan PPT aslab
+  biokim), tetapi slide 21/27/29/49 Biokimia Pencernaan teksnya di gambar → tetap render.
+- Belum ada soal UB kating 1.3, jadi tidak ada peta bobot untuk materi dosen; prioritas hanya dari isi berkas.
+- PDF anatomi dosen kemungkinan sama dengan "PDF dosen" yang dipakai bank aslab n 95–121, tetapi md5 berkas lama tidak pernah dicatat.
+  md5 berkas sesi ini: anatomi `89278d2b…`, mekanika `c432561e…`, histo tractus `2e94b336…`, histo assesoria `0016505b…`,
+  metabolisme KH `24608a60…`, biokimia pencernaan `03239830…`.
+
+**Bias panjang opsi (WAJIB dicek untuk bank buatan baru).** Versi pertama bank dosen: kunci = opsi terpanjang pada 49–77 % soal,
+strategi "pilih yang terpanjang" mencetak sampai 71 %. Diperbaiki dengan menulis ulang pengecoh agar sama rinci, lalu menambah satu
+pengecoh panjang yang salah. Hasil akhir: strategi pilih-terpanjang 17–26 %, pilih-terpendek 2–13 % (acak = 20 %). Cek dengan
+skrip node kecil sebelum commit: hitung persentase soal yang kuncinya = opsi terpanjang, dan cari opsi yang merupakan prefiks opsi lain
+(pengecoh kembar). Bank lama (aslab) belum diaudit dengan cara ini.
+
+**Kesalahan / konflik sumber dosen yang ditandai `**Catatan:**` — jangan diikuti diam-diam:**
+- Metabolisme KH: suksinat → "malat" langsung (fumarat & fumarase terlewat, padahal ada di bagan slide yang sama); oksaloasetat
+  "kembali terkonversi menjadi asetil-KoA" (salah: OAA berkondensasi dengan asetil-KoA → sitrat); kalimat "fungsi: memenuhi kebutuhan
+  glukosa… organ utama hati & ginjal" ada di slide Krebs padahal milik glukoneogenesis; GDP normal 60–110 dan 2 jam PP < 170
+  (rujukan umum ≈70–99 dan < 140) — kunci memakai angka slide.
+- Biokimia Pencernaan: tabel tempat absorpsi menaruh besi di jejunum, Figure 43-3 di deck yang sama berlabel "duodenal mucosal cell";
+  "Salmonella thyposa" (baku: S. Typhi). pH pepsin 1,5–2,5 (biokim) vs pH lambung 1,6–2,4 (fisio) — berdekatan, dibiarkan.
+- Fisiologi (Sinu): CCK dari "sel T" (baku sel I; kuliah histologi dosen pun menulis sel I); "sel leher mukus (goblet cell)";
+  peristaltik "25 cm/dtk" (Guyton 0,5–2 cm/dtk); ghrelin ditaruh di kelenjar pilorik (literatur: mukosa oksintik).
+- Histologi Suyatmi: serosa/adventitia sama-sama "bermesotel" dan esofagus diberi serosa (anatomi dosen: adventitia); plak Peyer
+  "terutama di usus besar" + preparat "INTESTINUM CRASSUM – PLAQUE PEYER'S" (tabel dosen sendiri: Peyer = ileum); GRP "dari saraf
+  simpatis" (vagal); papila hanya 3 jenis (anatomi dosen: 4 termasuk foliata).
+- Histologi Lies: sublingual "seromukous" & submandibular "mukoserous" (Junqueira: submandibularis dominan serous, sublingualis dominan
+  mukous); duktus interkalatus parotis "pseudokolumner" (baku: kuboid); hepatosit "RE sedikit"; zona lobulus "permanent response"
+  (terminologi lama: permanent repose); otot vesica fellea "paling tebal".
+- Rectum "2/3 bawah retroperitoneal sekunder" (anatomi dosen) tidak dijadikan kunci soal (istilahnya meragukan; 1/3 bawah sebenarnya subperitoneal), hanya muncul sebagai pengecoh.
 
 ### Quiz `ub-1-3-responsi-fisio` — Responsi Fisiologi 1.3 (Termoregulasi)
 `data/ub-1-3-responsi-fisio.js`, **179 soal**, 18 modul. Disusun dari tiga PPT aslab
