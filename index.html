@@ -557,6 +557,12 @@
 <script src="data/ub-1-3-pre-digest.js"></script>
 <script src="data/ub-1-3-responsi-histo.js"></script>
 <script src="data/ub-1-3-post-histo.js"></script>
+<script src="data/ub-1-3-dosen-anat.js"></script>
+<script src="data/ub-1-3-dosen-metkh.js"></script>
+<script src="data/ub-1-3-dosen-pencernaan.js"></script>
+<script src="data/ub-1-3-dosen-fisio.js"></script>
+<script src="data/ub-1-3-dosen-histo-git.js"></script>
+<script src="data/ub-1-3-dosen-histo-acc.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 <script>
@@ -608,6 +614,18 @@ const QUIZZES = [
     jumlahSoal:105, status:"siap", kind:"internal", sembunyi:true },
   { id:"ub-1-3-post-histo", judul:"Posttest Histologi GIT (naskah asli)", topik:"Anconeus 2021 + kompilasi \u00b7 50 soal",
     jumlahSoal:50, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-dosen-anat", judul:"Anatomi Tractus Digestivus (materi dosen)", topik:"Blok 1.3 \u00b7 Siti Munawaroh \u00b7 97 soal",
+    jumlahSoal:97, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-dosen-metkh", judul:"Metabolisme Karbohidrat (materi dosen)", topik:"Blok 1.3 \u00b7 Jarot Subandono \u00b7 61 soal",
+    jumlahSoal:61, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-dosen-pencernaan", judul:"Biokimia Pencernaan (materi dosen)", topik:"Blok 1.3 \u00b7 Jarot Subandono \u00b7 64 soal",
+    jumlahSoal:64, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-dosen-fisio", judul:"Faal Sistem Pencernaan (materi dosen)", topik:"Blok 1.3 \u00b7 Sinu Andhi Jusup \u00b7 97 soal",
+    jumlahSoal:97, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-dosen-histo-git", judul:"Histologi Tractus Digestivus (materi dosen)", topik:"Blok 1.3 \u00b7 Suyatmi \u00b7 63 soal",
+    jumlahSoal:63, status:"siap", kind:"internal", sembunyi:true },
+  { id:"ub-1-3-dosen-histo-acc", judul:"Histologi Organa Assesoria (materi dosen)", topik:"Blok 1.3 \u00b7 Lies \u00b7 47 soal",
+    jumlahSoal:47, status:"siap", kind:"internal", sembunyi:true },
   { id:"recall-blok-1-1", judul:"Recall Integratif Blok 1.1", topik:"Blok 1.1 · 10 modul",
     jumlahSoal:100, status:"siap", kind:"internal" },
   { id:"hemoglobinopati", judul:"Hemoglobinopati", topik:"Genetika Molekuler",
@@ -1474,23 +1492,24 @@ const B13 = {
       asli:[ { id:"ub-1-3-resp-anat",     nama:"Responsi Anatomi 1.3",       ket:"isian diubah ke pilihan ganda" },
              { id:"ub-1-3-resp-anat-fix", nama:"Soal Responsi Anatomi FIX",  ket:"isian diubah ke pilihan ganda" },
              { id:"ub-1-3-pre-digest",    nama:"Pretes Digestivus Inferior", ket:"3 pembahasan sumber dikoreksi" } ],
-      dosen:[] },
-    { key:"biokim", nama:"Biokimia", topik:"Lipid & karbohidrat",
+      dosen:[ { id:"ub-1-3-dosen-anat", nama:"Anatomi Tractus Digestivus", ket:"Siti Munawaroh: fore/mid/hindgut, cavum oris–anus, porta, nyeri alih" } ] },
+    { key:"biokim", nama:"Biokimia", topik:"Lipid, karbohidrat & pencernaan",
       aslab:[ { id:"ub-1-3-responsi-biokim", nama:"Responsi Biokimia",
                 ket:"4 PPT aslab: teori & praktikum lipid, teori & praktikum karbohidrat" } ],
       asli:[ { id:"ub-1-3-resp-asli", nama:"Responsi Biokimia 1.3", ket:"naskah responsi" },
              { id:"ub-1-3-azytralis", nama:"AZYTRALIS 2022",        ket:"responsi + pembahasan" },
              { id:"ub-1-3-latsol",    nama:"LATSOL Pre-Test 2026",  ket:"latihan soal pretest" } ],
-      dosen:[] },
-    { key:"fisio", nama:"Fisiologi", topik:"Termoregulasi",
+      dosen:[ { id:"ub-1-3-dosen-metkh", nama:"Metabolisme Karbohidrat", ket:"Jarot S.: glukoneogenesis, siklus Krebs, gula darah, DM" },
+             { id:"ub-1-3-dosen-pencernaan", nama:"Biokimia Pencernaan", ket:"Jarot S.: enzim, zimogen, protease, empedu, absorpsi" } ] },
+    { key:"fisio", nama:"Fisiologi", topik:"Termoregulasi & faal pencernaan",
       aslab:[ { id:"ub-1-3-responsi-fisio", nama:"Responsi Fisiologi",
                 ket:"3 PPT aslab: termoregulasi, praktikum, kelainan termoregulasi" } ],
       asli:[ { id:"ub-1-3-pre-termo", nama:"Pretest Termoregulasi",      ket:"kunci disorot di sumber" },
              { id:"ub-1-3-pre-2021",  nama:"Pretest Anconeus 2021",      ket:"kunci + pembahasan" },
              { id:"ub-1-3-pre-2023",  nama:"Pretest Fisiologi 2023",     ket:"kunci + pembahasan" },
              { id:"ub-1-3-pre-2018",  nama:"Pretest Termoregulasi 2018", ket:"tanpa kunci, hasil analisis" } ],
-      dosen:[] },
-    { key:"histo", nama:"Histologi", topik:"GIT atas & GIT bawah",
+      dosen:[ { id:"ub-1-3-dosen-fisio", nama:"Faal Sistem Pencernaan", ket:"Sinu Andhi: motilitas, hormon GI, sekresi lambung, absorpsi" } ] },
+    { key:"histo", nama:"Histologi", topik:"GIT & organa assesoria",
       panduan:{ href:"histologi-1-3.html", judul:"Panduan belajar histologi",
                 ket:"Peta bobot posttest, tabel pembanding per preparat, algoritma identifikasi, koreksi sumber" },
       latihan:{ href:"tebak-preparat-histo-1-3.html", judul:"Kuis tebak preparat (33 foto)",
@@ -1500,7 +1519,8 @@ const B13 = {
       aslab:[ { id:"ub-1-3-responsi-histo", nama:"Histologi GIT",
                 ket:"2 PPT aslab Afif: GIT atas, GIT bawah" } ],
       asli:[ { id:"ub-1-3-post-histo", nama:"Posttest Histologi GIT", ket:"Anconeus 2021 + kompilasi, 4 kunci kating dikoreksi" } ],
-      dosen:[] }
+      dosen:[ { id:"ub-1-3-dosen-histo-git", nama:"Histologi Tractus Digestivus", ket:"Suyatmi: mulut–anus, sel enteroendokrin, GALT" },
+             { id:"ub-1-3-dosen-histo-acc", nama:"Histologi Organa Assesoria", ket:"Lies: kelenjar saliva, hepar, vesica fellea, pankreas" } ] }
   ]
 };
 const B13_ASLI_NOTE = "Disajikan apa adanya. Banyak butir di sumber tidak memuat opsi lengkap dan beberapa kuncinya " +
