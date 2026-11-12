@@ -98,7 +98,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Termoregulasi: Konsep Dasar",
   "q": "Secara etimologis, akhiran pada kata termolisis menunjukkan proses apa?",
   "opsi": [
-   "Penghambatan",
+   "Penghambatan atau penurunan",
    "Pembentukan",
    "Pengangkutan",
    "Penyimpanan",
@@ -182,7 +182,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Termoregulasi: Termogenesis & BMR",
   "q": "Kontraksi otot saat menggigil termasuk dalam faktor termogenesis yang mana?",
   "opsi": [
-   "Pengaruh tiroksin terhadap sel",
+   "Pengaruh hormon tiroksin terhadap sel otot rangka",
    "Laju metabolisme basal sel tubuh",
    "Efek termogenik makanan",
    "Laju metabolisme tambahan karena aktivitas otot",
@@ -245,11 +245,11 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Termoregulasi: Termogenesis & BMR",
   "q": "Mengapa peningkatan suhu di dalam sel sendiri dapat menambah produksi panas lebih lanjut?",
   "opsi": [
-   "Karena suhu tinggi membuka kanal kalsium otot rangka",
+   "Karena suhu tinggi membuka kanal kalsium otot rangka secara terus-menerus",
    "Karena suhu yang lebih tinggi meningkatkan aktivitas kimiawi di dalam sel",
    "Karena suhu tinggi menurunkan konduktivitas termal jaringan",
    "Karena suhu tinggi menstimulasi kelenjar keringat secara langsung",
-   "Karena suhu tinggi menaikkan set point hipotalamus"
+   "Karena suhu tinggi menaikkan set point hipotalamus sehingga produksi panas naik"
   ],
   "kunciIndex": 1,
   "kunci": "b",
@@ -267,10 +267,10 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Laju hilangnya panas tubuh ditentukan hampir seluruhnya oleh dua faktor. Pasangan mana yang benar?",
   "opsi": [
    "Laju aliran darah ginjal, dan laju filtrasi glomerulus",
-   "Laju produksi panas basal, dan laju aktivitas otot rangka",
+   "Laju produksi panas basal di hati, dan laju aktivitas kontraksi otot rangka",
    "Laju konduksi panas dari inti ke kulit, dan laju hilangnya panas dari kulit ke lingkungan",
    "Laju sekresi tiroksin, dan laju sekresi epinefrin",
-   "Laju pernapasan, dan laju denyut jantung"
+   "Laju pernapasan melalui paru, dan laju denyut jantung saat istirahat"
   ],
   "kunciIndex": 2,
   "kunci": "c",
@@ -372,7 +372,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Lemak subkutan berperan sebagai insulator tubuh. Konsekuensi pada individu dengan lapisan lemak lebih tebal adalah",
   "opsi": [
    "Kehilangan panas tidak berubah",
-   "Lebih cepat kehilangan panas ke lingkungan",
+   "Lebih cepat kehilangan panas ke lingkungan sekitar",
    "Lebih lambat kehilangan panas ke lingkungan",
    "Produksi panas basal menurun drastis",
    "Evaporasi melalui kulit meningkat tajam"
@@ -414,7 +414,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Suhu perifer adalah suhu pada bagian tubuh yang mana?",
   "opsi": [
    "Pembuluh darah besar mediastinum",
-   "Organ pada cavum abdomen dan thorax",
+   "Organ pada cavum abdomen dan thorax beserta pembuluh besarnya",
    "Susunan saraf pusat",
    "Otot rangka dalam",
    "Selubung luar tubuh yang terdiri dari kulit dan lemak subkutan"
@@ -435,10 +435,10 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Pernyataan yang benar tentang variasi suhu perifer adalah",
   "opsi": [
    "Lebih bervariasi dan umumnya lebih dingin tanpa menyebabkan kerusakan",
-   "Lebih stabil daripada suhu inti",
+   "Lebih stabil daripada suhu inti dan umumnya lebih hangat dari inti",
    "Selalu lebih tinggi daripada suhu inti",
    "Tidak dipengaruhi suhu lingkungan",
-   "Variasinya menandakan kerusakan jaringan"
+   "Variasinya selalu menandakan kerusakan jaringan perifer"
   ],
   "kunciIndex": 0,
   "kunci": "a",
@@ -479,7 +479,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
    "Tengah malam tepat",
    "Sore hari sekitar pukul lima sampai tujuh",
    "Pagi hari sebelum bangun, sekitar pukul enam sampai tujuh",
-   "Siang hari sekitar pukul dua belas",
+   "Siang hari sekitar pukul dua belas sampai satu, setelah makan siang",
    "Malam hari setelah makan besar"
   ],
   "kunciIndex": 2,
@@ -519,7 +519,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Setelah ovulasi hingga haid, suhu tubuh meningkat kira-kira berapa derajat?",
   "opsi": [
    "Tidak berubah sama sekali",
-   "Dua sampai tiga derajat Celsius",
+   "Dua sampai tiga derajat Celsius di atas nilai basal",
    "Tiga sampai empat derajat Celsius",
    "Lebih dari lima derajat Celsius",
    "Nol koma lima sampai satu derajat Celsius"
@@ -560,10 +560,10 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Termoregulasi: Suhu Inti & Perifer",
   "q": "Peningkatan suhu tubuh akibat kontraksi otot saat olahraga berat dinilai bagaimana?",
   "opsi": [
-   "Selalu dianggap demam berapa pun keadaannya",
+   "Selalu dianggap demam berapa pun keadaannya, sehingga perlu antipiretik segera",
    "Normal selama olahraga berat, meskipun pada keadaan istirahat nilainya dianggap demam",
    "Tidak pernah terjadi pada orang sehat",
-   "Hanya terjadi pada penderita gangguan tiroid",
+   "Hanya terjadi pada penderita gangguan tiroid dengan metabolisme basal tinggi",
    "Menandakan kerusakan hipotalamus"
   ],
   "kunciIndex": 1,
@@ -582,7 +582,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Nilai normal suhu oral menurut slide berada pada kisaran",
   "opsi": [
    "37,5 sampai 38 derajat Celsius",
-   "35 sampai 36 derajat Celsius",
+   "35 sampai 36 derajat Celsius (oral)",
    "36,6 sampai 37 derajat Celsius",
    "38 sampai 39 derajat Celsius",
    "34 sampai 35 derajat Celsius"
@@ -603,10 +603,10 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Suhu rektum dibandingkan suhu oral menurut slide adalah",
   "opsi": [
    "Lebih tinggi sekitar tiga derajat Celsius",
-   "Lebih rendah sekitar satu derajat Celsius",
+   "Lebih rendah sekitar satu derajat Celsius karena rektum jauh dari inti",
    "Selalu setara",
    "Lebih tinggi sekitar satu derajat Fahrenheit atau nol koma enam derajat Celsius",
-   "Lebih rendah sekitar nol koma lima derajat Celsius"
+   "Lebih rendah sekitar nol koma lima derajat Celsius atau satu derajat Fahrenheit"
   ],
   "kunciIndex": 3,
   "kunci": "d",
@@ -645,9 +645,9 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Mengapa pengukuran suhu per rektal lebih sering dipakai pada bayi?",
   "opsi": [
    "Karena bayi banyak bergerak sehingga termometer aksila mudah jatuh, dan bayi sakit dapat memiliki refleks muntah bila diukur per oral",
-   "Karena rektum bayi memiliki reseptor suhu paling banyak",
+   "Karena rektum bayi memiliki reseptor suhu paling banyak dan paling peka, sehingga hasilnya lebih cepat stabil dibanding aksila",
    "Karena suhu rektal bayi setara suhu lingkungan",
-   "Karena termometer oral tidak tersedia untuk bayi",
+   "Karena termometer oral dan aksila tidak tersedia dalam ukuran bayi, dan suhu oral bayi selalu lebih rendah dari suhu inti",
    "Karena suhu rektal bayi lebih rendah sehingga lebih aman"
   ],
   "kunciIndex": 0,
@@ -687,7 +687,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Mengenai hubungan suhu aksila dan suhu oral, slide memuat dua pernyataan sekaligus. Versi Modul Skillslab menyatakan bahwa suhu aksila",
   "opsi": [
    "Setara dengan oral",
-   "Lebih tinggi sekitar satu derajat Celsius",
+   "Lebih tinggi sekitar nol koma lima sampai satu derajat Celsius",
    "Lebih rendah sekitar nol koma lima sampai satu derajat Celsius",
    "Lebih rendah sekitar tiga derajat Celsius",
    "Tidak dapat dibandingkan"
@@ -750,7 +750,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Panas selalu mengalir mengikuti kaidah apa?",
   "opsi": [
    "Menuruni gradien termal dari bagian panas menuju bagian yang lebih dingin",
-   "Menaiki gradien termal dari dingin menuju panas",
+   "Menaiki gradien termal dari bagian dingin menuju bagian yang lebih panas",
    "Mengikuti gradien tekanan hidrostatik",
    "Mengikuti gradien osmotik",
    "Secara acak tanpa arah tertentu"
@@ -900,7 +900,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
    "60 persen",
    "22 persen",
    "3 persen",
-   "45 persen"
+   "45 persen (terbesar)"
   ],
   "kunciIndex": 2,
   "kunci": "c",
@@ -938,7 +938,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Termoregulasi: Perpindahan Panas",
   "q": "Selama suhu kulit lebih tinggi daripada suhu lingkungan, panas dapat hilang melalui",
   "opsi": [
-   "Konduksi dari lingkungan ke tubuh",
+   "Konduksi dan radiasi dari lingkungan ke tubuh",
    "Hanya evaporasi",
    "Hanya konveksi paksa",
    "Tidak ada jalur yang bekerja",
@@ -1065,9 +1065,9 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Mengapa tertiup kipas angin membuat tubuh terasa lebih sejuk?",
   "opsi": [
    "Karena lapisan udara dekat kulit digantikan udara baru yang suhunya lebih rendah",
-   "Karena kipas memancarkan gelombang inframerah dingin",
+   "Karena kipas memancarkan gelombang inframerah dingin yang langsung menyerap panas kulit",
    "Karena kipas menurunkan suhu inti secara langsung",
-   "Karena kipas meningkatkan konduktivitas termal kulit",
+   "Karena kipas meningkatkan konduktivitas termal kulit sehingga panas inti cepat keluar",
    "Karena kipas menaikkan set point hipotalamus"
   ],
   "kunciIndex": 0,
@@ -1085,10 +1085,10 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Termoregulasi: Perpindahan Panas",
   "q": "Konduktivitas termal paling tepat didefinisikan sebagai",
   "opsi": [
-   "Jumlah kalor yang disimpan suatu bahan",
+   "Jumlah kalor yang dapat disimpan suatu bahan per satuan massa",
    "Koefisien yang menyatakan kemampuan suatu bahan menghantarkan kalor",
    "Kecepatan penguapan air dari permukaan bahan",
-   "Selisih suhu antara dua bahan yang bersentuhan",
+   "Selisih suhu antara dua bahan yang bersentuhan dalam satu detik",
    "Besarnya pemuaian bahan saat dipanaskan"
   ],
   "kunciIndex": 1,
@@ -1109,7 +1109,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
    "Panas berpindah dari udara ke tubuh",
    "Perpindahan panas berlangsung maksimal",
    "Tidak terjadi perpindahan panas karena tidak ada perbedaan suhu",
-   "Panas berpindah dari tubuh ke udara dua kali lipat",
+   "Panas berpindah dari tubuh ke udara dua kali lipat lebih cepat dari biasanya",
    "Konduksi berubah menjadi radiasi"
   ],
   "kunciIndex": 2,
@@ -1128,8 +1128,8 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Zona thermonetral didefinisikan sebagai suhu lingkungan di mana suhu inti dapat dipertahankan konstan oleh",
   "opsi": [
    "Perubahan perilaku berpakaian",
-   "Mekanisme menggigil dan berkeringat secara bersamaan",
-   "Peningkatan laju metabolisme basal",
+   "Mekanisme menggigil dan berkeringat secara bersamaan tanpa respons vasomotor sama sekali",
+   "Peningkatan laju metabolisme basal dan sekresi tiroksin tanpa perubahan vasomotor",
    "Respons vasomotor saja, tanpa bantuan mekanisme produksi maupun kehilangan panas",
    "Peningkatan sekresi tiroksin"
   ],
@@ -1151,7 +1151,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
    "15 sampai 18 derajat Celsius",
    "20 sampai 22 derajat Celsius",
    "36,6 sampai 37 derajat Celsius",
-   "32 sampai 35 derajat Celsius",
+   "32 sampai 35 derajat Celsius (suhu kulit)",
    "27,8 sampai 30 derajat Celsius"
   ],
   "kunciIndex": 4,
@@ -1212,10 +1212,10 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Hipotalamus berfungsi sebagai apa dalam sistem termoregulasi?",
   "opsi": [
    "Organ efektor penghasil keringat",
-   "Reseptor utama suhu permukaan kulit",
+   "Reseptor utama suhu permukaan kulit yang mengirim sinyal ke medula spinalis",
    "Thermostat tubuh, yaitu pusat pengatur suhu yang memantau suhu darah terus-menerus",
    "Penyimpan cadangan panas tubuh",
-   "Penghantar panas dari inti ke perifer"
+   "Penghantar panas dari inti ke perifer melalui pembuluh darah yang dikendalikannya"
   ],
   "kunciIndex": 2,
   "kunci": "c",
@@ -1233,7 +1233,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Hipotalamus dapat mendeteksi perubahan suhu sekecil",
   "opsi": [
    "1 derajat Celsius",
-   "0,1 derajat Celsius",
+   "0,1 derajat Celsius (sepersepuluh)",
    "0,5 derajat Celsius",
    "0,01 derajat Celsius",
    "2 derajat Celsius"
@@ -1275,9 +1275,9 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Peran hipotalamus posterior dalam termoregulasi adalah",
   "opsi": [
    "Menerima sinyal dari area anterior dan reseptor perifer, lalu memicu respons menjaga suhu saat menghadapi dingin",
-   "Menjadi tempat dengan reseptor termal terbanyak",
+   "Menjadi tempat reseptor termal terbanyak dan langsung memicu berkeringat saat menghadapi panas berlebih",
    "Mengatur sekresi keringat secara langsung",
-   "Mendeteksi perubahan suhu darah sekecil nol koma nol satu derajat",
+   "Mendeteksi perubahan suhu darah sekecil nol koma nol satu derajat lalu memicu vasodilatasi saat kepanasan",
    "Menyimpan memori suhu lingkungan harian"
   ],
   "kunciIndex": 0,
@@ -1338,7 +1338,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Reseptor suhu di kulit lebih banyak yang peka terhadap suhu apa, dan berapa kali lipat?",
   "opsi": [
    "Panas, sekitar tiga kali lebih banyak",
-   "Panas, sekitar sepuluh kali lebih banyak",
+   "Panas, sekitar sepuluh kali lebih banyak dari reseptor dingin",
    "Dingin, sekitar dua kali lebih banyak",
    "Dingin, sekitar sepuluh kali lebih banyak",
    "Keduanya sama banyak"
@@ -1424,7 +1424,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
    "Tidak memengaruhi pengeluaran panas",
    "Darah yang mengalir ke perifer lebih sedikit sehingga panas dipertahankan",
    "Darah yang mengalir ke perifer lebih banyak sehingga panas yang dikeluarkan lebih banyak",
-   "Meningkatkan produksi panas oleh otot rangka",
+   "Meningkatkan produksi panas oleh otot rangka karena aliran darah ke otot bertambah banyak",
    "Menurunkan set point hipotalamus secara langsung"
   ],
   "kunciIndex": 2,
@@ -1505,9 +1505,9 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Termoregulasi: Komponen & Efektor",
   "q": "Menurut bagan slide, respons perilaku untuk meminimalkan kehilangan panas pada lingkungan dingin meliputi",
   "opsi": [
-   "Melepas pakaian dan berendam di air",
+   "Melepas pakaian dan berendam di air dingin untuk memperluas permukaan terpapar",
    "Menambah lapisan pakaian pelindung dan meringkuk untuk mengurangi permukaan terpapar",
-   "Memakai kipas untuk menambah konveksi",
+   "Memakai kipas untuk menambah konveksi dan menghindari sumber panas radiasi",
    "Menghindari sumber panas radiasi",
    "Mengurangi asupan makanan"
   ],
@@ -1591,7 +1591,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "opsi": [
    "Memakai baju tipis, mengipas wajah, dan tidak banyak bergerak",
    "Memakai baju tebal dan menghentakkan kaki",
-   "Meringkuk dan mendekati sumber panas",
+   "Meringkuk, mendekati sumber panas, dan menambah lapis pakaian",
    "Menambah asupan makanan berlemak",
    "Menahan napas untuk mengurangi evaporasi"
   ],
@@ -1610,7 +1610,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Praktikum: Poikiloterm & Homoioterm",
   "q": "Berdasarkan sistem termoregulasi, makhluk hidup digolongkan menjadi dua. Pasangan yang benar adalah",
   "opsi": [
-   "Ektoterm dan mesoterm",
+   "Ektoterm dan mesoterm (berdasarkan habitat)",
    "Poikiloterm dan homoioterm",
    "Heteroterm dan isoterm",
    "Termofil dan psikrofil",
@@ -1632,9 +1632,9 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Menurut slide, makhluk poikiloterm memiliki sifat apa terhadap suhu lingkungan?",
   "opsi": [
    "Tidak memiliki mekanisme pertukaran panas sama sekali",
-   "Suhu tubuhnya relatif konstan dan sedikit dipengaruhi lingkungan",
+   "Suhu tubuhnya relatif konstan dan hanya sedikit dipengaruhi suhu lingkungan sekitar",
    "Dapat mentoleransi perubahan suhu tubuh internal akibat pengaruh suhu lingkungan",
-   "Mampu menaikkan suhu inti di atas suhu lingkungan secara aktif",
+   "Mampu menaikkan suhu inti di atas suhu lingkungan secara aktif melalui menggigil",
    "Suhu tubuhnya selalu lebih tinggi daripada lingkungan"
   ],
   "kunciIndex": 2,
@@ -1824,7 +1824,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
    "Ruang terbuka, air dingin, dan air hangat",
    "Pagi, siang, dan malam",
    "Sebelum dan sesudah diikat saja",
-   "Air dingin, air hangat, dan air mendidih"
+   "Air dingin, air hangat, dan air mendidih (tiga suhu air)"
   ],
   "kunciIndex": 1,
   "kunci": "b",
@@ -1842,7 +1842,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Tujuan praktikum faktor pengaruh termolisis adalah",
   "opsi": [
    "Membandingkan suhu oral dan aksila",
-   "Mengukur laju termogenesis pada manusia",
+   "Mengukur laju termogenesis pada manusia dalam berbagai kondisi aktivitas",
    "Mengetahui faktor-faktor yang berpengaruh pada proses termolisis",
    "Mempelajari termoregulasi poikiloterm",
    "Menentukan nilai basal metabolic rate"
@@ -1947,10 +1947,10 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Mengapa kendi yang tidak dicat mendingin lebih cepat daripada kendi yang dicat?",
   "opsi": [
    "Karena kendi tidak dicat memiliki konduktivitas termal logam",
-   "Karena cat memantulkan radiasi inframerah ke dalam kendi",
+   "Karena cat memantulkan radiasi inframerah ke dalam kendi sehingga air di dalamnya tetap hangat",
    "Karena pori-porinya tetap terbuka sehingga penguapan air melalui permukaan berlangsung lebih mudah",
    "Karena cat menambah massa air di dalam kendi",
-   "Karena kendi tidak dicat menyerap panas dari lingkungan"
+   "Karena kendi tidak dicat menyerap panas dari lingkungan lebih cepat sehingga terjadi konveksi"
   ],
   "kunciIndex": 2,
   "kunci": "c",
@@ -1989,7 +1989,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Catatan slide mengibaratkan lapisan cat pada kendi seperti apa pada manusia?",
   "opsi": [
    "Kulit yang mengalami piloereksi",
-   "Keringat yang menguap dari permukaan kulit",
+   "Keringat yang menguap dari permukaan kulit saat beraktivitas berat",
    "Pembuluh darah yang berdilatasi",
    "Lemak coklat pada neonatus",
    "Jaket tebal yang memerangkap lapisan udara sebagai insulator"
@@ -2010,7 +2010,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Jaket tebal memperlambat kehilangan panas tubuh terutama melalui mekanisme apa menurut catatan slide?",
   "opsi": [
    "Lapisan udara terperangkap yang mengurangi konduksi dan konveksi",
-   "Peningkatan evaporasi keringat",
+   "Peningkatan evaporasi keringat yang tertahan di antara serat kain",
    "Pemantulan gelombang inframerah oleh serat kain",
    "Penurunan laju metabolisme basal",
    "Vasokonstriksi pembuluh darah kulit"
@@ -2032,7 +2032,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "opsi": [
    "Karena memiliki konduktivitas termal yang tinggi",
    "Karena memiliki konduktivitas termal yang rendah",
-   "Karena mengandung banyak pembuluh darah",
+   "Karena mengandung banyak pembuluh darah yang membawa panas ke kulit",
    "Karena mampu menguapkan air dengan cepat",
    "Karena memantulkan radiasi inframerah"
   ],
@@ -2093,7 +2093,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Praktikum: Pengukuran Suhu Manusia",
   "q": "Lokasi pengukuran suhu tubuh yang disebut pada dasar teori praktikum adalah",
   "opsi": [
-   "Aksila, inguinal, dan poplitea",
+   "Aksila, inguinal, poplitea, dan timpani",
    "Oral, aksila, dan timpani",
    "Rektum dan timpani saja",
    "Oral dan temporal saja",
@@ -2177,7 +2177,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Praktikum: Pengukuran Suhu Manusia",
   "q": "Mengapa lengan harus diadduksi saat termometer berada di fossa axilaris?",
   "opsi": [
-   "Agar keringat terus keluar membasahi termometer",
+   "Agar keringat terus keluar membasahi termometer sehingga pembacaan lebih cepat stabil",
    "Agar aliran darah ke lengan meningkat",
    "Agar termometer tidak pecah",
    "Agar fossa axilaris tertutup rapat sehingga tidak dipengaruhi udara lingkungan",
@@ -2264,7 +2264,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
    "Sepuluh menit",
    "Lima menit",
    "Satu sampai dua menit",
-   "Tiga puluh detik",
+   "Tiga puluh detik sampai satu menit",
    "Lima belas menit"
   ],
   "kunciIndex": 2,
@@ -2304,7 +2304,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Pada tahap kedua dan ketiga cara kerja per oral, termometer dimasukkan lagi tanpa diturunkan suhunya. Apa tujuan langkah ini?",
   "opsi": [
    "Agar hasil pengukuran selalu lebih rendah",
-   "Agar termometer tidak pecah karena perubahan suhu mendadak",
+   "Agar termometer tidak pecah karena perubahan suhu mendadak di rongga mulut",
    "Agar waktu praktikum lebih singkat",
    "Agar alkohol pada termometer tidak menguap",
    "Agar terbaca pemulihan suhu rongga mulut setelah perlakuan"
@@ -2347,7 +2347,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "opsi": [
    "Lebih tinggi daripada suhu per oral biasa",
    "Lebih rendah daripada suhu per oral biasa",
-   "Sama dengan suhu per oral biasa",
+   "Sama dengan suhu per oral biasa setelah satu menit",
    "Sama dengan suhu rektal",
    "Menjadi tidak terukur"
   ],
@@ -2388,7 +2388,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Variasi termoregulasi yang tergolong fisiologis didefinisikan sebagai",
   "opsi": [
    "Kegagalan total mekanisme heat loss",
-   "Gangguan mekanisme normal akibat penyakit",
+   "Gangguan mekanisme normal akibat penyakit sehingga suhu keluar dari batas homeostasis",
    "Kerusakan permanen pada hipotalamus",
    "Mekanisme normal yang digunakan tubuh untuk mengatur suhu agar tetap homeostasis",
    "Perubahan suhu yang selalu berbahaya"
@@ -2409,7 +2409,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Contoh variasi termoregulasi yang tergolong fisiologis menurut catatan slide adalah",
   "opsi": [
    "Hipotermia berat dan gangren",
-   "Hipertermia dan hipotermia",
+   "Hipertermia, hipotermia, heat cramps, dan malignant hyperthermia pada orang sehat",
    "Heat stroke dan frostbite",
    "Malignant hyperthermia dan heat cramps",
    "Post menopausal hot flashes, fever, ritme sirkadian, dan variasi siklus menstruasi"
@@ -2450,7 +2450,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Post Menopausal Hot Flashes",
   "q": "Post menopausal hot flashes didefinisikan sebagai",
   "opsi": [
-   "Peningkatan sementara set point akibat pirogen endogen",
+   "Peningkatan sementara set point thermostat pada wanita menopause akibat pelepasan pirogen endogen oleh makrofag",
    "Penurunan sementara set point thermostat pada wanita menopause akibat penurunan hormon estrogen secara drastis",
    "Kerusakan permanen hipotalamus akibat usia",
    "Peningkatan laju metabolisme basal akibat tiroksin",
@@ -2471,7 +2471,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Post Menopausal Hot Flashes",
   "q": "Urutan mekanisme hot flashes menurut slide adalah",
   "opsi": [
-   "Estrogen meningkat, set point menurun, tubuh berkeringat",
+   "Estrogen meningkat, set point menurun, suhu tubuh lebih rendah dari set point, memicu menggigil dan vasokonstriksi",
    "Estrogen menurun, set point meningkat, tubuh menggigil",
    "Estrogen menurun, set point menurun, suhu tubuh masih lebih tinggi dari set point, memicu respons termolisis",
    "Pirogen endogen naik, set point naik, tubuh menggigil",
@@ -2514,7 +2514,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Mengapa wanita dengan hot flashes merasa kepanasan padahal suhu tubuhnya tidak naik?",
   "opsi": [
    "Karena kelenjar keringat berhenti berfungsi",
-   "Karena suhu tubuh benar-benar naik melebihi empat puluh derajat Celsius",
+   "Karena suhu tubuh benar-benar naik melebihi empat puluh derajat Celsius akibat estrogen turun",
    "Karena reseptor dingin di kulit berhenti bekerja",
    "Karena produksi panas meningkat drastis",
    "Karena set point turun sehingga suhu tubuh yang tetap kini terbaca terlalu tinggi"
@@ -2555,7 +2555,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Fever",
   "q": "Pernyataan yang benar tentang demam menurut catatan slide adalah",
   "opsi": [
-   "Demam selalu menandakan kerusakan sistem termoregulasi",
+   "Demam selalu menandakan kerusakan sistem termoregulasi sehingga harus segera diturunkan",
    "Demam bukan penyakit melainkan respons normal tubuh yang disengaja terhadap infeksi",
    "Demam hanya terjadi pada infeksi bakteri",
    "Demam selalu memerlukan antibiotik",
@@ -2576,7 +2576,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Fever",
   "q": "Penyebab demam dibagi menjadi dua faktor menurut slide, yaitu",
   "opsi": [
-   "Faktor akut dan faktor kronik",
+   "Faktor akut dan faktor kronik penyakit",
    "Faktor sentral dan faktor perifer",
    "Faktor infeksi dan faktor noninfeksi",
    "Faktor genetik dan faktor lingkungan",
@@ -2618,7 +2618,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Fever",
   "q": "Contoh infeksi virus yang dapat menyebabkan demam menurut catatan slide adalah",
   "opsi": [
-   "Apendisitis dan otitis media",
+   "Apendisitis, otitis media, dan infeksi saluran kemih",
    "Pneumonia, bronkitis, dan osteomielitis",
    "Malaria dan toksoplasmosis",
    "Coccidioides dan imitis",
@@ -2681,7 +2681,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Pirogen & Mekanisme Demam",
   "q": "Secara etimologis, kata pirogen tersusun dari dua bagian yang berarti",
   "opsi": [
-   "Panas, dan menurunkan",
+   "Keadaan yang berhubungan dengan dingin, dan menghilangkan atau menurunkan",
    "Demam, dan menghilangkan",
    "Keadaan yang berhubungan dengan panas, dan membentuk atau menghasilkan",
    "Dingin, dan membentuk",
@@ -2703,7 +2703,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Pirogen dibagi menjadi dua kelompok, yaitu",
   "opsi": [
    "Pirogen akut dan pirogen kronik",
-   "Pirogen primer dan pirogen sekunder",
+   "Pirogen primer (bakteri) dan pirogen sekunder (virus)",
    "Pirogen sentral dan pirogen perifer",
    "Pirogen eksogen dan pirogen endogen",
    "Pirogen bakterial dan pirogen viral"
@@ -2723,7 +2723,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Pirogen & Mekanisme Demam",
   "q": "Contoh pirogen eksogen menurut catatan slide adalah",
   "opsi": [
-   "Interferon",
+   "Interferon yang dilepas sel terinfeksi virus ke sirkulasi",
    "Interleukin satu",
    "Interleukin enam",
    "Tumor necrosis factor alfa",
@@ -2745,7 +2745,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Yang termasuk pirogen endogen menurut slide adalah",
   "opsi": [
    "Interleukin satu, interleukin enam, tumor necrosis factor, dan interferon",
-   "Lipopolisakarida dan eksotoksin",
+   "Lipopolisakarida, eksotoksin, dan endotoksin bakteri gram negatif",
    "Prostaglandin E2 dan siklooksigenase dua",
    "Asam arakidonat dan siklik AMP",
    "Endotoksin bakteri gram negatif"
@@ -2765,7 +2765,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Pirogen & Mekanisme Demam",
   "q": "Sel apa yang memfagosit pirogen eksogen dan kemudian melepaskan pirogen endogen?",
   "opsi": [
-   "Eritrosit",
+   "Eritrosit dan trombosit",
    "Monosit dan makrofag",
    "Trombosit",
    "Sel goblet",
@@ -2807,7 +2807,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Pirogen & Mekanisme Demam",
   "q": "Urutan mekanisme demam yang benar menurut catatan slide adalah",
   "opsi": [
-   "Set point naik lebih dahulu, lalu pirogen endogen dilepas",
+   "Set point naik lebih dahulu, lalu makrofag memfagosit pirogen eksogen, pirogen endogen dilepas, prostaglandin E2 dilepas, tubuh berkeringat",
    "Pirogen eksogen langsung menaikkan set point tanpa perantara",
    "Prostaglandin E2 dilepas lebih dahulu, lalu makrofag memfagosit pirogen eksogen",
    "Pirogen eksogen difagosit makrofag, pirogen endogen dilepas, prostaglandin E2 dilepas, set point naik, tubuh memproduksi dan mengonservasi panas",
@@ -2850,7 +2850,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Pada fase chill demam, apa yang terjadi dan mengapa?",
   "opsi": [
    "Set point meningkat sehingga tubuh menggigil, kedinginan, dan vasokonstriksi untuk menaikkan suhu",
-   "Set point menurun sehingga tubuh berkeringat dan vasodilatasi",
+   "Set point menurun sehingga tubuh berkeringat, merasa kepanasan, dan vasodilatasi untuk membuang panas",
    "Set point tetap sementara suhu tubuh turun",
    "Pirogen hilang sehingga suhu kembali normal",
    "Hipotalamus rusak sehingga tidak ada respons"
@@ -2870,7 +2870,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Fase Demam & Medikasi",
   "q": "Pada fase crisis demam, apa yang terjadi?",
   "opsi": [
-   "Set point naik lagi sehingga tubuh menggigil",
+   "Pirogen bertambah sehingga set point naik lagi, suhu tubuh lebih rendah, lalu tubuh menggigil dan vasokonstriksi",
    "Pirogen menghilang sehingga set point turun, suhu tubuh masih lebih tinggi, lalu tubuh berkeringat dan vasodilatasi",
    "Suhu tubuh dan set point sama sehingga tidak ada respons",
    "Hipotalamus berhenti memantau suhu darah",
@@ -2912,7 +2912,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Fase Demam & Medikasi",
   "q": "Pada grafik demam di slide, saat krisis terjadi perubahan apa?",
   "opsi": [
-   "Suhu tubuh dan set point turun bersamaan",
+   "Suhu tubuh dan set point turun bersamaan secara perlahan tanpa berkeringat",
    "Set point tiba-tiba naik, diikuti menggigil",
    "Suhu tubuh naik tanpa perubahan set point",
    "Set point tiba-tiba turun ke nilai rendah, diikuti vasodilatasi dan berkeringat",
@@ -2975,10 +2975,10 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Fase Demam & Medikasi",
   "q": "Mengapa kompres air hangat suam kuku dapat menurunkan suhu tubuh?",
   "opsi": [
-   "Karena air hangat menyerap panas lebih banyak daripada air dingin",
+   "Karena air hangat menyerap panas tubuh lebih banyak daripada air dingin, sehingga konduksi berlangsung jauh lebih cepat ke kompres",
    "Karena tubuh mengartikan suhu luar sudah cukup hangat sehingga menurunkan set point, dan pembuluh perifer berdilatasi sehingga panas terbuang",
    "Karena air hangat membunuh pirogen di permukaan kulit",
-   "Karena air hangat memicu vasokonstriksi sehingga panas tertahan",
+   "Karena air hangat memicu vasokonstriksi perifer sehingga panas tertahan di inti, lalu set point turun dan tubuh berkeringat",
    "Karena air hangat meningkatkan produksi keringat tanpa vasodilatasi"
   ],
   "kunciIndex": 1,
@@ -2997,7 +2997,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Area tubuh yang dianjurkan untuk kompres menurut catatan slide adalah",
   "opsi": [
    "Telapak tangan dan telapak kaki",
-   "Punggung dan dada",
+   "Punggung, dada, dan telapak tangan",
    "Dahi, leher, ketiak, dan lipatan paha",
    "Perut dan pinggang",
    "Kulit kepala dan wajah saja"
@@ -3038,7 +3038,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Heat Related Disorder",
   "q": "Hot related disorder menurut slide terdiri atas empat keadaan, yaitu",
   "opsi": [
-   "Demam, heat exhaustion, hipotermia, dan frostbite",
+   "Demam, heat exhaustion, hipotermia ringan, dan frostbite derajat satu",
    "Heat exhaustion, hipotermia, frostbite, dan heat stroke",
    "Heat stroke, demam, hot flashes, dan heat cramps",
    "Heat cramps, frostbite, gangren, dan hipotermia",
@@ -3061,7 +3061,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "opsi": [
    "Mekanisme heat loss yang berlebihan sebagai respons paparan panas terus-menerus",
    "Kerusakan total sistem termoregulasi hipotalamus",
-   "Peningkatan set point oleh pirogen",
+   "Peningkatan set point oleh pirogen endogen akibat paparan panas",
    "Kerusakan kanal kalsium otot rangka",
    "Penurunan set point akibat estrogen"
   ],
@@ -3144,7 +3144,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Urutan mekanisme pingsan pada heat exhaustion menurut slide adalah",
   "opsi": [
    "Kehilangan elektrolit, kram otot, pingsan",
-   "Vasokonstriksi berlebihan, tekanan darah naik, pingsan",
+   "Vasokonstriksi berlebihan, tekanan darah naik, darah ke otak menurun, pingsan",
    "Kerusakan hipotalamus, suhu naik, pingsan",
    "Denaturasi protein, kolaps kardiovaskular, pingsan",
    "Vasodilatasi berlebihan, tekanan darah menurun, darah ke otak menurun, pingsan"
@@ -3185,7 +3185,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Heat Related Disorder",
   "q": "Mengapa pada heat exhaustion berat diberikan infus NaCl nol koma sembilan persen?",
   "opsi": [
-   "Untuk menurunkan set point hipotalamus",
+   "Untuk menurunkan set point hipotalamus dan menghentikan berkeringat",
    "Untuk meningkatkan cairan tubuh dan mengatasi kolaps sirkulasi",
    "Untuk menghambat produksi prostaglandin E2",
    "Untuk memperbaiki kanal kalsium otot",
@@ -3228,7 +3228,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Ciri utama heat stroke yang membedakannya dari heat exhaustion adalah",
   "opsi": [
    "Suhu inti di bawah tiga puluh sembilan derajat Celsius",
-   "Keringat masih keluar deras",
+   "Keringat masih keluar deras dan suhu inti di bawah tiga puluh sembilan derajat",
    "Kesadaran tetap penuh",
    "Sistem termoregulasi rusak total sehingga tidak ada mekanisme heat loss",
    "Tekanan darah selalu normal"
@@ -3249,7 +3249,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Berapa potensi kematian pada heat stroke menurut slide?",
   "opsi": [
    "Kurang dari satu persen",
-   "Hingga sepuluh persen",
+   "Hingga sepuluh persen dari jumlah kasus",
    "Hingga lima persen",
    "Hingga sembilan puluh persen",
    "Hingga lima puluh persen dari jumlah kasus"
@@ -3270,7 +3270,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Suhu tubuh pada heat stroke menurut slide berkisar",
   "opsi": [
    "40,5 sampai 42,2 derajat Celsius",
-   "37,5 sampai 39 derajat Celsius",
+   "37,5 sampai 39 derajat Celsius (suhu inti)",
    "36,6 sampai 37 derajat Celsius",
    "39 sampai 40 derajat Celsius",
    "42,2 sampai 45 derajat Celsius"
@@ -3312,7 +3312,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Mengapa pada heat stroke kulit teraba kering meskipun suhu tubuh sangat tinggi?",
   "opsi": [
    "Karena kelenjar keringat mengalami denaturasi lebih dahulu",
-   "Karena cairan tubuh sudah habis seluruhnya",
+   "Karena cairan tubuh sudah habis seluruhnya akibat berkeringat berlebihan sebelumnya sehingga kelenjar keringat kosong",
    "Karena sistem termoregulasi hipotalamus rusak sehingga mekanisme heat loss termasuk berkeringat tidak dapat diaktifkan",
    "Karena vasokonstriksi hebat menutup pori kulit",
    "Karena suhu lingkungan lebih rendah dari suhu kulit"
@@ -3333,7 +3333,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Kelompok usia yang rentan mengalami heat stroke menurut catatan slide adalah",
   "opsi": [
    "Dewasa muda, karena aktivitas fisiknya berat",
-   "Bayi baru lahir, karena brown fat belum terbentuk",
+   "Bayi baru lahir, karena brown fat belum terbentuk dan belum bisa menggigil",
    "Remaja, karena laju metabolismenya tinggi",
    "Usia lanjut, karena respons termoregulasinya lebih lambat dan kurang efisien",
    "Semua usia dengan risiko yang sama"
@@ -3375,7 +3375,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Mengapa kulit dipijat pada tatalaksana heat stroke?",
   "opsi": [
    "Untuk mengatasi efek vasokonstriksi akibat air dan mempercepat aliran darah",
-   "Untuk merangsang kelenjar keringat kembali aktif",
+   "Untuk merangsang kelenjar keringat kembali aktif dan menurunkan set point hipotalamus",
    "Untuk menurunkan set point hipotalamus",
    "Untuk mencegah denaturasi protein otot",
    "Untuk menghentikan kejang"
@@ -3395,7 +3395,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Heat Related Disorder",
   "q": "Heat cramps didefinisikan sebagai kejang atau kram otot involunter yang terjadi akibat",
   "opsi": [
-   "Kerusakan kanal kalsium akibat kelainan genetik",
+   "Kerusakan kanal kalsium otot rangka akibat kelainan genetik yang diturunkan dominan",
    "Kekurangan cairan dan elektrolit seperti natrium, kalium, klorida, atau magnesium",
    "Denaturasi protein otot pada suhu tinggi",
    "Peningkatan set point oleh prostaglandin E2",
@@ -3416,7 +3416,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Heat Related Disorder",
   "q": "Malignant hyperthermia disebabkan oleh apa menurut slide?",
   "opsi": [
-   "Paparan panas lingkungan yang terus-menerus",
+   "Paparan panas lingkungan yang terus-menerus tanpa hidrasi",
    "Infeksi bakteri gram negatif",
    "Kondisi genetik dengan kerusakan kanal kalsium",
    "Kekurangan natrium dan kalium",
@@ -3439,7 +3439,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "opsi": [
    "Kalsium menghambat kelenjar keringat",
    "Kalsium mengendap di pembuluh darah sehingga aliran panas terhambat",
-   "Kalsium merangsang hipotalamus menaikkan set point",
+   "Kalsium merangsang hipotalamus menaikkan set point, lalu tubuh menggigil dan vasokonstriksi sehingga panas tertahan",
    "Kalsium banyak dilepas ke sitoplasma, pengembaliannya memerlukan hidrolisis ATP, dan hidrolisis itu menghasilkan panas",
    "Kalsium memicu pelepasan prostaglandin E2"
   ],
@@ -3481,7 +3481,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "opsi": [
    "34,4 derajat Celsius",
    "29,4 derajat Celsius",
-   "32 derajat Celsius",
+   "32 derajat Celsius (hipotermia sedang)",
    "28 derajat Celsius",
    "35 derajat Celsius"
   ],
@@ -3502,7 +3502,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "opsi": [
    "34,4 derajat Celsius",
    "29,4 derajat Celsius",
-   "32 derajat Celsius",
+   "32 derajat Celsius (hipotermia sedang)",
    "28 derajat Celsius",
    "30 derajat Celsius"
   ],
@@ -3522,7 +3522,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Rantai akibat penurunan suhu inti pada hipotermia menurut slide adalah",
   "opsi": [
    "Suhu inti turun, metabolisme turun, konsumsi oksigen naik, kesadaran tetap",
-   "Suhu inti turun, metabolisme naik, konsumsi oksigen naik, kesadaran naik",
+   "Suhu inti turun, metabolisme naik, konsumsi oksigen naik, kesadaran meningkat",
    "Suhu inti turun, metabolisme turun, konsumsi oksigen turun, kesadaran turun",
    "Suhu inti naik, metabolisme turun, kesadaran turun",
    "Suhu inti turun, set point naik, kesadaran turun"
@@ -3564,7 +3564,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Gejala hipotermia ringan menurut slide meliputi",
   "opsi": [
    "Tekanan darah tidak terukur",
-   "Koma, apnea, dan nadi tak teraba",
+   "Koma, apnea, nadi tak teraba, dan tekanan darah melemah hingga tidak terukur",
    "Sudah tidak dapat menggigil dan pupil dilatasi",
    "Refleks cahaya negatif dan denyut jantung melemah",
    "Menggigil, kesadaran mulai menurun, hiperventilasi, takipnea, dan takikardi"
@@ -3585,7 +3585,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Ciri khas hipotermia sedang yang membedakannya dari hipotermia ringan adalah",
   "opsi": [
    "Sudah tidak dapat menggigil, denyut jantung melemah, pupil dilatasi, dan refleks cahaya negatif",
-   "Masih dapat menggigil dengan takikardi",
+   "Masih dapat menggigil hebat dengan takikardi, hiperventilasi, takipnea, dan kesadaran mulai menurun",
    "Koma dan apnea",
    "Nadi tidak teraba dan tekanan darah tidak terukur",
    "Hiperventilasi dan takipnea"
@@ -3607,7 +3607,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "opsi": [
    "Menggigil hebat dan takikardi",
    "Koma, apnea, nadi tak teraba, dan tekanan darah melemah hingga tidak terukur",
-   "Pupil dilatasi dengan kesadaran penuh",
+   "Menggigil hebat, kesadaran mulai menurun, hiperventilasi, takipnea, dan takikardi",
    "Hiperventilasi dengan refleks cahaya positif",
    "Kulit kemerahan, panas, dan kering"
   ],
@@ -3669,7 +3669,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "q": "Urutan akhir mekanisme hipotermia menurut bagan slide adalah",
   "opsi": [
    "Kristal es terbentuk dalam sel, sel lisis, lalu hipotermia",
-   "Menggigil meningkat, produksi panas meningkat, suhu kembali normal",
+   "Menggigil meningkat, produksi panas meningkat, susunan saraf pusat teraktivasi penuh, vasokonstriksi, lalu suhu kembali normal tanpa hipotermia",
    "Vasodilatasi, berkeringat, lalu hipotermia",
    "Set point naik, menggigil, lalu demam",
    "Timbul rasa mengantuk lalu koma, aktivitas pengaturan panas oleh susunan saraf pusat tertekan, mekanisme menggigil tercegah, lalu terjadi hipotermia"
@@ -3710,7 +3710,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "modul": "Kelainan: Cold Related Disorder",
   "q": "Daerah tubuh yang paling sering membeku pada frostbite menurut slide adalah",
   "opsi": [
-   "Dada dan perut",
+   "Dada, perut, punggung, dan pinggang yang tertutup pakaian",
    "Daun telinga, jari tangan, jari kaki, bibir, dan hidung",
    "Paha dan betis",
    "Punggung dan pinggang",
@@ -3734,7 +3734,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
    "Suhu inti turun, metabolisme turun, koma, sel lisis",
    "Tubuh terekspos dingin, vasodilatasi, aliran darah meningkat, sel lisis",
    "Tubuh terekspos suhu sangat dingin, vasokonstriksi, aliran darah penyalur panas ke jaringan menurun, kristal es terbentuk dalam sel, sel lisis",
-   "Kristal es terbentuk lebih dahulu, lalu vasokonstriksi, lalu gangren",
+   "Kristal es terbentuk lebih dahulu dalam sel, lalu vasodilatasi, aliran darah ke jaringan meningkat, protein terdenaturasi, lalu gangren",
    "Vasokonstriksi, denaturasi protein, lalu amputasi"
   ],
   "kunciIndex": 2,
@@ -3754,7 +3754,7 @@ window.QUIZ_BANK["ub-1-3-responsi-fisio"] = [
   "opsi": [
    "Peningkatan set point permanen",
    "Denaturasi protein otak",
-   "Kolaps kardiovaskular",
+   "Kolaps kardiovaskular dan kematian mendadak",
    "Gangren yang mengarah ke amputasi",
    "Kram otot involunter"
   ],

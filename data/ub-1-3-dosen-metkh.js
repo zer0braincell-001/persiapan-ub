@@ -757,9 +757,9 @@ window.QUIZ_BANK["ub-1-3-dosen-metkh"] = [
   ],
   "kunciIndex": 1,
   "kunci": "Dua",
-  "rationale": "Slide menunjukkan CO2 dilepas pada isositrat dehidrogenase dan α-ketoglutarat dehidrogenase; dua karbon asetil masuk, dua CO2 keluar.  —  **Diskriminator:** 2C masuk (asetil) = 2 CO2 keluar.",
+  "rationale": "Slide menunjukkan CO2 dilepas pada isositrat dehidrogenase dan α-ketoglutarat dehidrogenase; dua karbon asetil masuk, dua CO2 keluar. **Catatan silang:** slide aslab menulis 4 CO2 untuk 'satu putaran'; itu angka satu glukosa (dua putaran).  —  **Diskriminator:** 2C masuk (asetil) = 2 CO2 keluar.",
   "grup": "Siklus Krebs",
-  "bahas": "Slide menunjukkan CO2 dilepas pada isositrat dehidrogenase dan α-ketoglutarat dehidrogenase; dua karbon asetil masuk, dua CO2 keluar.",
+  "bahas": "Slide menunjukkan CO2 dilepas pada isositrat dehidrogenase dan α-ketoglutarat dehidrogenase; dua karbon asetil masuk, dua CO2 keluar. **Catatan silang:** slide aslab menulis 4 CO2 untuk 'satu putaran'; itu angka satu glukosa (dua putaran).",
   "diskriminator": "2C masuk (asetil) = 2 CO2 keluar."
  },
  {
@@ -829,9 +829,9 @@ window.QUIZ_BANK["ub-1-3-dosen-metkh"] = [
   ],
   "kunciIndex": 1,
   "kunci": "3 NADH, 1 FADH2, dan 1 GTP/ATP",
-  "rationale": "Hitung dari slide: NADH di isositrat DH, α-KG DH, malat DH (3); FADH2 di suksinat DH (1); GTP/ATP dari suksinil-KoA (1).  —  **Diskriminator:** hitung dari enzimnya, jangan dihafal angka.",
+  "rationale": "Hitung dari slide: NADH di isositrat DH, α-KG DH, malat DH (3); FADH2 di suksinat DH (1); GTP/ATP dari suksinil-KoA (1). **Catatan silang:** slide aslab Teori Karbohidrat menulis 2 ATP, 6 NADH, 2 FADH2, 4 CO2 sebagai hasil 'satu putaran'; angka itu sebenarnya untuk satu glukosa (dua putaran). Kunci di sini memakai per putaran.  —  **Diskriminator:** hitung dari enzimnya, jangan dihafal angka.",
   "grup": "Siklus Krebs",
-  "bahas": "Hitung dari slide: NADH di isositrat DH, α-KG DH, malat DH (3); FADH2 di suksinat DH (1); GTP/ATP dari suksinil-KoA (1).",
+  "bahas": "Hitung dari slide: NADH di isositrat DH, α-KG DH, malat DH (3); FADH2 di suksinat DH (1); GTP/ATP dari suksinil-KoA (1). **Catatan silang:** slide aslab Teori Karbohidrat menulis 2 ATP, 6 NADH, 2 FADH2, 4 CO2 sebagai hasil 'satu putaran'; angka itu sebenarnya untuk satu glukosa (dua putaran). Kunci di sini memakai per putaran.",
   "diskriminator": "hitung dari enzimnya, jangan dihafal angka."
  },
  {

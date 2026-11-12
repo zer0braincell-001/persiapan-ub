@@ -118,7 +118,23 @@ bank aslab 1.3: `modul` = `"<Mapel> · <grup>"`, field `grup/bahas/diskriminator
 strategi "pilih yang terpanjang" mencetak sampai 71 %. Diperbaiki dengan menulis ulang pengecoh agar sama rinci, lalu menambah satu
 pengecoh panjang yang salah. Hasil akhir: strategi pilih-terpanjang 17–26 %, pilih-terpendek 2–13 % (acak = 20 %). Cek dengan
 skrip node kecil sebelum commit: hitung persentase soal yang kuncinya = opsi terpanjang, dan cari opsi yang merupakan prefiks opsi lain
-(pengecoh kembar). Bank lama (aslab) belum diaudit dengan cara ini.
+(pengecoh kembar).
+
+**Audit bank aslab (12 Nov 2026).** Bank aslab ternyata lebih bias daripada bank dosen sebelum diperbaiki. Skor strategi
+pilih-terpanjang, sebelum → sesudah: responsi-histo 67→26 %, post-histo 68→10 %, responsi-anat 50→26 %, responsi-fisio 51→21 %,
+responsi-biokim 44→17 %, pre-digest 55→27 %, resp-anat-fix 48→21 % (dihitung hanya atas soal buatan). Yang diubah HANYA teks
+pengecoh: kunci, posisi kunci, `n`, rationale, dan jumlah opsi diverifikasi tidak berubah (skrip pembanding versi lama vs baru),
+jadi progres localStorage aman. **Tidak disentuh:** soal `asliResponsi:true` dan `asliPenuh:true` (opsi dari naskah asli), serta
+naskah dengan opsi sebagian asli (resp-asli, azytralis, latsol). Pretest 2023/termo juga bias (37–40 %), tetapi itu opsi asli
+kating, jadi dibiarkan. Pengecoh yang disebut di rationale tidak diganti. Di bank fisio dan biokim aslab, field `kunci` berisi
+**huruf** (a–e) sesuai posisi, bukan teks opsi; di bank lain `kunci` = teks opsi. Jangan "membetulkan" salah satunya.
+
+**Konflik silang aslab vs dosen (catatan silang ditambahkan di rationale):**
+- Hasil siklus Krebs: slide aslab (responsi-biokim #192, butir responsi asli) menulis "2 ATP, 6 NADH, 2 FADH2, 4 CO2" untuk
+  "satu putaran"; itu angka satu glukosa (dua putaran). Bank dosen metkh #42/#46 memakai per putaran (1 GTP, 3 NADH, 1 FADH2, 2 CO2).
+- GALT kolon: PPT aslab = submukosa; kating dan kuliah dosen Suyatmi = lamina propria (responsi-histo #93).
+- Lapisan luar esofagus toraks: aslab Afif dan anatomi dosen = adventitia; histologi dosen Suyatmi = serosa (responsi-histo #35, dosen-histo-git #26).
+- Konsisten antar-sumber (tidak perlu catatan): GDP 60–110, GLUT 1–4, sel G di pilorus, sekretin/motilin dari usus halus, plak Peyer = ileum.
 
 **Kesalahan / konflik sumber dosen yang ditandai `**Catatan:**` — jangan diikuti diam-diam:**
 - Metabolisme KH: suksinat → "malat" langsung (fumarat & fumarase terlewat, padahal ada di bagan slide yang sama); oksaloasetat

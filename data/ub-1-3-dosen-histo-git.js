@@ -469,9 +469,9 @@ window.QUIZ_BANK["ub-1-3-dosen-histo-git"] = [
   ],
   "kunciIndex": 3,
   "kunci": "Adventitia",
-  "rationale": "**Catatan:** kuliah histologi menulis T. serosa untuk esofagus. Kuliah anatomi dosen menegaskan adventitia bila tidak dilapisi peritoneum, misalnya esofagus torakalis; hanya segmen abdominal yang pendek berserosa. Dua kuliah dosen bertentangan; yang sesuai anatomi adalah adventitia.  —  **Diskriminator:** esofagus di mediastinum tidak berperitoneum → adventitia.",
+  "rationale": "**Catatan:** kuliah histologi menulis T. serosa untuk esofagus. Kuliah anatomi dosen menegaskan adventitia bila tidak dilapisi peritoneum, misalnya esofagus torakalis; hanya segmen abdominal yang pendek berserosa. Dua kuliah dosen bertentangan; yang sesuai anatomi adalah adventitia. PPT aslab Afif juga menulis adventitia untuk esofagus toraks.  —  **Diskriminator:** esofagus di mediastinum tidak berperitoneum → adventitia.",
   "grup": "Esofagus & Gaster",
-  "bahas": "**Catatan:** kuliah histologi menulis T. serosa untuk esofagus. Kuliah anatomi dosen menegaskan adventitia bila tidak dilapisi peritoneum, misalnya esofagus torakalis; hanya segmen abdominal yang pendek berserosa. Dua kuliah dosen bertentangan; yang sesuai anatomi adalah adventitia.",
+  "bahas": "**Catatan:** kuliah histologi menulis T. serosa untuk esofagus. Kuliah anatomi dosen menegaskan adventitia bila tidak dilapisi peritoneum, misalnya esofagus torakalis; hanya segmen abdominal yang pendek berserosa. Dua kuliah dosen bertentangan; yang sesuai anatomi adalah adventitia. PPT aslab Afif juga menulis adventitia untuk esofagus toraks.",
   "diskriminator": "esofagus di mediastinum tidak berperitoneum → adventitia."
  },
  {

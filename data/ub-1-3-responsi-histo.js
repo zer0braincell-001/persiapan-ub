@@ -64,10 +64,10 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Kerangka Tunika",
   "q": "Tunika submukosa saluran cerna tersusun atas jaringan pengikat…",
   "opsi": [
-   "Longgar dengan pleksus Auerbach",
+   "Longgar, tanpa pembuluh besar, berisi pleksus Auerbach dan sel otot polos",
    "Padat ireguler, dengan pembuluh darah, limfe, dan pleksus Meissner",
    "Padat reguler tanpa pembuluh",
-   "Longgar dengan mesotel",
+   "Padat reguler, dengan berkas kolagen sejajar dan dilapisi mesotel",
    "Otot polos dua lapis"
   ],
   "kunciIndex": 1,
@@ -84,7 +84,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "opsi": [
    "Tunika muskularis; kontraksi peristaltik",
    "Tunika submukosa; sekresi dan absorpsi lokal",
-   "Lamina propria; slow wave",
+   "Lamina propria; pembangkitan slow wave dan kontraksi segmental",
    "Tunika serosa; sekresi",
    "Tunika submukosa; kontraksi peristaltik"
   ],
@@ -100,9 +100,9 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Kerangka Tunika",
   "q": "Pleksus myenterikus Auerbach terletak di…",
   "opsi": [
-   "Di dalam tunika submukosa",
+   "Di dalam tunika submukosa, di antara kelenjar dan pembuluh darah besar",
    "Di antara lapisan otot sirkuler dan longitudinal tunika muskularis eksterna",
-   "Di lamina propria",
+   "Di lamina propria, tepat di bawah epitel dan di atas muskularis mukosa",
    "Di antara mukosa dan submukosa",
    "Di tunika serosa"
   ],
@@ -118,9 +118,9 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Kerangka Tunika",
   "q": "Fungsi pleksus myenterikus Auerbach adalah…",
   "opsi": [
-   "Mengatur sekresi dan absorpsi lokal",
+   "Mengatur sekresi kelenjar dan absorpsi lokal melalui eksitasi sel epitel mukosa",
    "Mengatur kontraksi sepanjang traktus melalui eksitasi segmen proksimal dan inhibisi segmen distal",
-   "Membangkitkan slow wave secara kontinu",
+   "Membangkitkan slow wave secara kontinu sebagai pacemaker di seluruh saluran cerna",
    "Menghasilkan sekretin",
    "Mengatur sekresi kelenjar Brunner saja"
   ],
@@ -157,7 +157,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
    "Otot polos sirkuler (dalam) dan longitudinal (luar)",
    "Otot polos longitudinal (dalam) dan sirkuler (luar)",
    "Otot polos oblik, sirkuler, longitudinal",
-   "Otot skelet dua lapis",
+   "Otot skelet dua lapis, sirkuler di dalam dan longitudinal di luar",
    "Satu lapis otot polos sirkuler"
   ],
   "kunciIndex": 0,
@@ -173,7 +173,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "q": "Tunika serosa tersusun atas…",
   "opsi": [
    "Jaringan pengikat padat ireguler saja",
-   "Epitel kubus selapis",
+   "Jaringan pengikat padat ireguler dengan epitel kubus selapis di permukaan",
    "Jaringan pengikat longgar tanpa epitel",
    "Otot polos dan mesotel",
    "Jaringan pengikat longgar dan mesotel (epitel squamous selapis)"
@@ -229,7 +229,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
    "Gingiva dan palatum durum",
    "Palatum mole dan pipi",
    "Bibir dan dasar mulut",
-   "Permukaan ventral lidah",
+   "Permukaan ventral lidah dan dasar mulut yang menempel ke mandibula",
    "Pipi dan gingiva"
   ],
   "kunciIndex": 0,
@@ -262,7 +262,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Lingua & Papila",
   "q": "Otot penyusun badan lidah adalah…",
   "opsi": [
-   "Otot polos sirkuler dan longitudinal",
+   "Otot polos yang tersusun sirkuler di dalam dan longitudinal di luar",
    "Otot skelet yang tersusun bersilangan ke berbagai arah",
    "Otot skelet satu arah longitudinal",
    "Otot jantung",
@@ -408,7 +408,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "opsi": [
    "Blandin-Nuhn dan Weber",
    "Kelenjar Brunner",
-   "Parotis dan sublingualis",
+   "Parotis (serous) dan sublingualis (mukous) lewat duktus panjang",
    "Von Ebner (serous) dan Weber (mukous)",
    "Von Ebner dan Blandin-Nuhn"
   ],
@@ -496,7 +496,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Lingua & Papila",
   "q": "Epitel yang melapisi permukaan dorsal lidah manusia adalah…",
   "opsi": [
-   "Skuamous kompleks berkornifikasi seluruhnya",
+   "Skuamous kompleks berkornifikasi seluruhnya, termasuk di papila fungiformis",
    "Kolumner simpleks",
    "Transisional",
    "Skuamous kompleks non-kornifikasi, kecuali pada papila filiformis",
@@ -515,7 +515,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "q": "Tonsila lingualis terletak di… dan dilapisi epitel…",
   "opsi": [
    "Anterior sulcus terminalis; kolumner simpleks",
-   "Ujung lidah; skuamous berkeratin",
+   "Anterior sulcus terminalis; skuamous kompleks dengan kornifikasi tebal",
    "Ventral lidah; transisional",
    "Posterior sulcus terminalis; kolumner bertingkat bersilia",
    "Posterior sulcus terminalis; skuamous kompleks non-kornifikasi"
@@ -534,7 +534,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "opsi": [
    "Skuamous kompleks berkornifikasi",
    "Kolumner simpleks",
-   "Kolumner bertingkat",
+   "Kolumner bertingkat bersilia dengan sel goblet seperti trakea",
    "Transisional",
    "Skuamous kompleks non-kornifikasi"
   ],
@@ -587,7 +587,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "q": "Fungsi kelenjar esofagus adalah…",
   "opsi": [
    "Mencerna lemak",
-   "Menetralkan HCl di kardia",
+   "Menetralkan HCl yang refluks di kardia dengan sekret bikarbonat dan enzim",
    "Menghasilkan faktor intrinsik",
    "Melumasi agar bolus mudah lewat dan melindungi mukosa",
    "Menyerap air"
@@ -608,7 +608,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
    "Seluruhnya otot skelet",
    "1/3 atas skelet, 1/3 tengah skelet dan polos, 1/3 bawah polos",
    "1/3 atas polos, 1/3 bawah skelet",
-   "Skelet di lapisan dalam, polos di luar"
+   "Skelet seluruhnya di lapisan dalam, polos seluruhnya di lapisan luar"
   ],
   "kunciIndex": 2,
   "kunci": "1/3 atas skelet, 1/3 tengah skelet dan polos, 1/3 bawah polos",
@@ -630,9 +630,9 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   ],
   "kunciIndex": 0,
   "kunci": "Tunika adventitia",
-  "rationale": "Esofagus toraks tidak dibungkus peritoneum. **Catatan:** PPT menulis adventitia bermesotel, tidak sesuai definisi.  —  **Diskriminator:** tidak di rongga peritoneum = adventitia.",
+  "rationale": "Esofagus toraks tidak dibungkus peritoneum. **Catatan:** PPT menulis adventitia bermesotel, tidak sesuai definisi. **Catatan silang:** kuliah anatomi dosen sepakat (adventitia); kuliah histologi dosen (Suyatmi) justru menulis serosa bermesotel untuk esofagus.  —  **Diskriminator:** tidak di rongga peritoneum = adventitia.",
   "grup": "Esofagus",
-  "bahas": "Esofagus toraks tidak dibungkus peritoneum. **Catatan:** PPT menulis adventitia bermesotel, tidak sesuai definisi.",
+  "bahas": "Esofagus toraks tidak dibungkus peritoneum. **Catatan:** PPT menulis adventitia bermesotel, tidak sesuai definisi. **Catatan silang:** kuliah anatomi dosen sepakat (adventitia); kuliah histologi dosen (Suyatmi) justru menulis serosa bermesotel untuk esofagus.",
   "diskriminator": "tidak di rongga peritoneum = adventitia."
  },
  {
@@ -643,7 +643,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
    "Gastric gland dan duodenum",
    "Goblet dan dome area",
    "Kelenjar esofagus di submukosa dan duktusnya di mukosa",
-   "Kelenjar Brunner dan duktusnya",
+   "Kelenjar Brunner di submukosa dan duktusnya yang menembus muskularis mukosa",
    "Ganglion Auerbach dan dendrit"
   ],
   "kunciIndex": 2,
@@ -658,7 +658,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · GE Junction",
   "q": "Pada gastroesophageal junction terjadi peralihan epitel dari…",
   "opsi": [
-   "Kolumner simpleks ke skuamous kompleks",
+   "Kolumner simpleks esofagus ke skuamous kompleks non-kornifikasi gaster",
    "Skuamous kompleks ke kolumner bertingkat",
    "Kubus ke kolumner",
    "Transisional ke kolumner",
@@ -676,7 +676,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · GE Junction",
   "q": "Pada slide GE junction, panah kuning dan panah merah menunjuk…",
   "opsi": [
-   "Kelenjar esofagus dan kelenjar Brunner",
+   "Kelenjar esofagus di mukosa gaster dan kelenjar Brunner di submukosa esofagus",
    "Gastric pit dan vili",
    "Kelenjar gastrik di mukosa gaster dan kelenjar esofagus di submukosa esofagus",
    "Muskularis mukosa dan submukosa",
@@ -714,7 +714,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "opsi": [
    "Vili",
    "Kripte Lieberkuhn",
-   "Plica circularis",
+   "Plica circularis (lipatan mukosa dan submukosa permanen)",
    "Rugae",
    "Gastric pit (foveola gastrica)"
   ],
@@ -730,8 +730,8 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Gaster",
   "q": "Rugae gaster terbentuk akibat… dan hilang ketika…",
   "opsi": [
-   "Kontraksi muskularis eksterna; lambung kosong",
-   "Proliferasi epitel; makan",
+   "Kontraksi muskularis eksterna; lambung kosong dan otot berelaksasi penuh",
+   "Proliferasi epitel permukaan; lambung terisi dan pH lumen naik",
    "Hipertrofi kelenjar; puasa",
    "Pleksus Auerbach; menelan",
    "Kontraksi muskularis mukosa; lambung terisi dan dindingnya meregang"
@@ -785,7 +785,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "q": "Glandula gastrica adalah kelenjar…",
   "opsi": [
    "Asinar majemuk di submukosa",
-   "Tubuler bergelung di submukosa",
+   "Tubuler bergelung bercabang di tunika submukosa, seperti Brunner",
    "Alveolar simpleks di muskularis",
    "Tubuler bercabang simpleks di lamina propria",
    "Holokrin di lamina propria"
@@ -820,10 +820,10 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Gaster",
   "q": "Chief cell menghasilkan…",
   "opsi": [
-   "Pepsin aktif langsung",
+   "Pepsin aktif yang langsung disekresi tanpa bentuk zimogen",
    "Pepsinogen, yang diubah menjadi pepsin oleh HCl",
    "HCl",
-   "Faktor intrinsik",
+   "Faktor intrinsik, yang mengikat vitamin B12 di lumen",
    "Serotonin"
   ],
   "kunciIndex": 1,
@@ -839,7 +839,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "q": "Nama lain chief cell adalah…",
   "opsi": [
    "Oxyntic cell",
-   "Argentaffin cell",
+   "Argentaffin cell atau enterochromaffin cell",
    "Peptic cell atau zymogenic cell",
    "Goblet cell",
    "Paneth cell"
@@ -874,7 +874,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Gaster",
   "q": "Sel parietal tercat terang dan bersifat asidofilik karena…",
   "opsi": [
-   "Kaya RER",
+   "Sitoplasmanya kaya RER dan granul zimogen",
    "Sitoplasmanya kaya mitokondria",
    "Penuh granul mukus",
    "Intinya piknotik",
@@ -893,9 +893,9 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "q": "Sel mukus permukaan gaster menghasilkan…",
   "opsi": [
    "HCl",
-   "Pepsinogen",
+   "Pepsinogen dan lipase lambung yang diaktifkan HCl di lumen",
    "Gastrin",
-   "Mukus asam",
+   "Mukus asam (sialomusin) yang ikut menurunkan pH lumen lambung",
    "Mukus alkalis (ion bikarbonat) yang melindungi mukosa dari HCl dan pepsin"
   ],
   "kunciIndex": 4,
@@ -910,8 +910,8 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Gaster",
   "q": "Stem cell gastric gland terletak di… dan berfungsi…",
   "opsi": [
-   "Dasar kelenjar; menghasilkan pepsinogen",
-   "Gastric pit; sekresi mukus",
+   "Dasar kelenjar; regenerasi sel hanya ke arah apikal menuju foveola",
+   "Gastric pit; sekresi mukus alkalis dan regenerasi epitel permukaan",
    "Daerah leher kelenjar; regenerasi sel ke arah apikal maupun basal",
    "Submukosa; imunitas",
    "Muskularis mukosa; kontraksi"
@@ -946,11 +946,11 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Fundus vs Pylorus",
   "q": "Ciri khas preparat fundus ventrikuli adalah…",
   "opsi": [
-   "Gastric pit dalam dan lebar, kelenjar bergelung",
+   "Gastric pit dalam dan lebar, kelenjar pendek bergelung dan tidak rapat",
    "Vili intestinal panjang",
    "Gastric pit dangkal, mukosa rata dan rapat membentuk gambaran kipas/sisir",
    "Kelenjar Brunner di submukosa",
-   "Kripte sedikit dengan folikel limfoid"
+   "Kripte rapat dengan banyak sel goblet dan folikel limfoid di mukosa"
   ],
   "kunciIndex": 2,
   "kunci": "Gastric pit dangkal, mukosa rata dan rapat membentuk gambaran kipas/sisir",
@@ -964,8 +964,8 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Fundus vs Pylorus",
   "q": "Ciri khas preparat pylorus ventrikuli adalah…",
   "opsi": [
-   "Gastric pit dangkal, kelenjar rapat",
-   "Sel parietal dan chief melimpah",
+   "Gastric pit dangkal, kelenjar panjang lurus dan rapat seperti sisir",
+   "Sel parietal dan chief melimpah dengan pit dangkal di permukaan",
    "Vili dan kelenjar Brunner",
    "Gastric pit lebih dalam dan lebar, kelenjar pendek bergelung tidak rapi",
    "Epitel skuamous kompleks"
@@ -1002,7 +1002,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "opsi": [
    "Sel G",
    "Sel mukus",
-   "Sel penghasil somatostatin",
+   "Sel penghasil somatostatin dan lisozim",
    "Stem cell",
    "Sel parietal dan chief cell"
   ],
@@ -1019,7 +1019,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "q": "Kelenjar pylorus menghasilkan zat berikut, KECUALI…",
   "opsi": [
    "Mukus",
-   "Lisozim",
+   "Lisozim dan somatostatin",
    "HCl dan pepsinogen",
    "Gastrin",
    "Somatostatin"
@@ -1037,7 +1037,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "q": "Pernyataan \"glandula fundica mengandung sel G\" adalah…",
   "opsi": [
    "Benar",
-   "Benar, sel G paling banyak di fundus",
+   "Benar, sel G paling banyak di glandula fundica",
    "Salah, sel G hanya di duodenum",
    "Salah, sel G ada di glandula pylorica",
    "Salah, sel G ada di kardia saja"
@@ -1054,10 +1054,10 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Fundus vs Pylorus",
   "q": "Mengapa kelenjar fundus panjang sedangkan pit-nya dangkal?",
   "opsi": [
-   "Fundus menyerap nutrien",
+   "Fundus terutama menyerap nutrien sehingga permukaan absorpsinya diperluas",
    "Fundus memproduksi asam dan enzim dalam jumlah besar sehingga bagian sekretorisnya panjang",
    "Fundus tidak punya muskularis mukosa",
-   "Pit dangkal karena tidak ada mukus",
+   "Pit dangkal karena fundus tidak menghasilkan mukus sama sekali di permukaan",
    "Kelenjar fundus terletak di submukosa"
   ],
   "kunciIndex": 1,
@@ -1072,7 +1072,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Fundus vs Pylorus",
   "q": "Tunika submukosa pylorus ventrikuli tersusun atas…",
   "opsi": [
-   "JP longgar dan mesotel",
+   "JP longgar dengan mesotel, kelenjar Brunner, dan pleksus Auerbach di dalamnya",
    "Kelenjar Brunner",
    "Kelenjar esofagus",
    "Otot skelet",
@@ -1090,7 +1090,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Gastroduodenal Junction",
   "q": "Pada gastroduodenal junction, perbedaan tunika mukosa pylorus dan duodenum adalah…",
   "opsi": [
-   "Pylorus memiliki vili, duodenum gastric pit",
+   "Pylorus memiliki vili intestinal, duodenum memiliki gastric pit",
    "Keduanya memiliki vili",
    "Pylorus skuamous, duodenum kolumner",
    "Pylorus memiliki gastric pit, duodenum memiliki vili intestinal",
@@ -1108,7 +1108,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Gastroduodenal Junction",
   "q": "Pada gastroduodenal junction, perbedaan tunika submukosa adalah…",
   "opsi": [
-   "Pylorus dengan Brunner, duodenum tanpa",
+   "Pylorus dengan kelenjar Brunner, duodenum tanpa kelenjar Brunner",
    "Keduanya punya Brunner",
    "Pylorus punya plak Peyer",
    "Duodenum punya kelenjar esofagus",
@@ -1126,7 +1126,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Gastroduodenal Junction",
   "q": "Pada gastroduodenal junction, tunika muskularis pylorus dibanding duodenum…",
   "opsi": [
-   "Lebih tipis, 2 lapis",
+   "Lebih tipis, 2 lapis, tanpa sfingter yang jelas",
    "Lebih tebal, 3 lapis, dengan sfingter pilorus",
    "Sama tebal, 2 lapis",
    "Hanya otot skelet",
@@ -1146,7 +1146,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "opsi": [
    "Rugae, vili, mikrovili",
    "Gastric pit, vili, kripte",
-   "Plica circularis, taenia coli, vili",
+   "Plica circularis, taenia coli, dan haustra",
    "Haustra, vili, mikrovili",
    "Plica circularis, vili, dan mikrovili"
   ],
@@ -1182,8 +1182,8 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "opsi": [
    "Sel piala dengan musin",
    "Sel silindris tinggi, inti lonjong di basal, brush border di apeks",
-   "Granul eosinofilik besar di dasar kripte",
-   "Tanpa mikrovili, banyak invaginasi basal",
+   "Sel piramid dengan granul eosinofilik besar di dasar kripte",
+   "Sel kuboid tanpa mikrovili, dengan banyak invaginasi membran basal",
    "Sel pipih berlapis"
   ],
   "kunciIndex": 1,
@@ -1201,7 +1201,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
    "Menyerap nutrien",
    "Menetralkan kimus dengan bikarbonat",
    "Menghasilkan mukus untuk melindungi dan melumasi lapisan usus",
-   "Menghasilkan lisozim",
+   "Menghasilkan lisozim dan defensin untuk membunuh bakteri lumen",
    "Uptake antigen"
   ],
   "kunciIndex": 2,
@@ -1216,7 +1216,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Sel Usus Halus",
   "q": "Sel Paneth terletak di… dan menghasilkan…",
   "opsi": [
-   "Ujung vili; mukus",
+   "Ujung vili; mukus, bikarbonat, dan IgA sekretori",
    "Dasar kripte Lieberkuhn; lisozim, defensin, fosfolipase A2",
    "Submukosa; bikarbonat",
    "Dome area; IgA",
@@ -1252,7 +1252,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Sel Usus Halus",
   "q": "Sel M (microfold) terdapat pada…",
   "opsi": [
-   "Dasar kripte duodenum",
+   "Dasar kripte Lieberkuhn duodenum, di antara sel Paneth",
    "Kelenjar fundus",
    "Epitel esofagus",
    "Epitel ileum yang menutupi folikel limfoid plak Peyer",
@@ -1270,9 +1270,9 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Sel Usus Halus",
   "q": "Fungsi sel M adalah…",
   "opsi": [
-   "Menyerap lemak",
+   "Menyerap lemak dan mengemasnya menjadi kilomikron untuk lakteal",
    "Menghasilkan mukus",
-   "Menghasilkan defensin",
+   "Menghasilkan defensin dan lisozim untuk membunuh bakteri lumen",
    "Mengendositosis antigen dan menyerahkannya ke makrofag, limfosit, dan sel dendritik",
    "Membangkitkan slow wave"
   ],
@@ -1290,7 +1290,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "opsi": [
    "Sel Paneth",
    "Sel M",
-   "Lamina propria",
+   "Sel di lamina propria vili",
    "Stem cell di kripte",
    "Sel goblet"
   ],
@@ -1307,7 +1307,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "q": "Ciri khas yang membedakan duodenum dari jejunum dan ileum adalah…",
   "opsi": [
    "Kelenjar Brunner di tunika submukosa",
-   "Plak Peyer",
+   "Plak Peyer di mukosa hingga submukosa",
    "Vili intestinal",
    "Kripte Lieberkuhn",
    "Sel goblet"
@@ -1324,7 +1324,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Duodenum",
   "q": "Fungsi kelenjar Brunner adalah…",
   "opsi": [
-   "Menghasilkan pepsinogen",
+   "Menghasilkan pepsinogen dan lipase untuk kimus",
    "Menghasilkan lisozim",
    "Menyerap glukosa",
    "Menetralkan asam lambung dengan sekret bikarbonat",
@@ -1362,7 +1362,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "opsi": [
    "Sangat tebal tiga lapis",
    "Terputus-putus oleh kelenjar",
-   "Tidak ada sama sekali",
+   "Tidak ada sama sekali di duodenum",
    "Berupa otot skelet",
    "Menyatu dengan serosa"
   ],
@@ -1381,7 +1381,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
    "Benar",
    "Salah, pleksus adalah saraf; yang bermuara ke kripte adalah kelenjar Brunner",
    "Benar pada duodenum saja",
-   "Salah, Auerbach bermuara ke vili",
+   "Salah, Auerbach bermuara ke vili; yang ke kripte adalah sel Paneth",
    "Salah, Auerbach bermuara ke lumen"
   ],
   "kunciIndex": 1,
@@ -1432,10 +1432,10 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Jejunum & Ileum",
   "q": "Ciri khas ileum adalah…",
   "opsi": [
-   "Kelenjar Brunner",
+   "Kelenjar Brunner di submukosa yang mendorong muskularis mukosa",
    "Gastric pit",
    "Plak Peyer berisi agregasi limfosit di mukosa, berlanjut ke submukosa",
-   "Taenia coli",
+   "Taenia coli dan haustra pada tunika muskularis eksterna",
    "Kelenjar esofagus"
   ],
   "kunciIndex": 2,
@@ -1450,9 +1450,9 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Jejunum & Ileum",
   "q": "Dome area adalah…",
   "opsi": [
-   "Lipatan mukosa dan submukosa jejunum",
+   "Lipatan mukosa dan submukosa jejunum yang permanen dan tidak hilang saat teregang",
    "Mukosa berbentuk kubah di atas nodul limfoid, disusun sel M tanpa mikrovili, kripte, maupun goblet",
-   "Dasar kripte berisi sel Paneth",
+   "Dasar kripte berisi sel Paneth bergranul eosinofilik penghasil lisozim dan defensin",
    "Penebalan muskularis pylorus",
    "Folikel limfoid appendix"
   ],
@@ -1468,7 +1468,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Jejunum & Ileum",
   "q": "Fungsi dome area adalah…",
   "opsi": [
-   "Absorpsi lemak",
+   "Tempat absorpsi lemak dan pembentukan kilomikron",
    "Sekresi bikarbonat",
    "Produksi gastrin",
    "Tempat uptake/masuknya antigen dari lumen GIT",
@@ -1486,7 +1486,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Jejunum & Ileum",
   "q": "Plak Peyer berfungsi sebagai…",
   "opsi": [
-   "Kelenjar eksokrin pencernaan",
+   "Kelenjar eksokrin penghasil enzim pencernaan protein",
    "Reseptor regang",
    "Jaringan limfoid mukosa (GALT) untuk pertahanan imun",
    "Penghasil hormon motilin",
@@ -1522,7 +1522,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Jejunum & Ileum",
   "q": "Menurut tips aslab, cara terbaik membedakan duodenum, jejunum, dan ileum adalah…",
   "opsi": [
-   "Melihat bentuk vili (daun atau jari)",
+   "Melihat bentuk vili (daun pada duodenum, jari pada ileum) dan tingginya",
    "Melihat tunika mukosa dan submukosa (Brunner, Peyer), bukan bentuk vili",
    "Menghitung lapisan muskularis",
    "Melihat epitel permukaan",
@@ -1540,7 +1540,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Appendix & Crassum",
   "q": "Ciri paling mudah untuk mengidentifikasi appendix adalah…",
   "opsi": [
-   "Vili panjang",
+   "Vili panjang dan kelenjar Brunner dengan sedikit folikel limfoid",
    "Kelenjar Brunner",
    "Tidak memiliki vili intestinal, dengan folikel limfoid melingkar",
    "Gastric pit dalam",
@@ -1594,9 +1594,9 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Appendix & Crassum",
   "q": "Ciri mukosa intestinum crassum adalah…",
   "opsi": [
-   "Vili panjang dan Brunner",
+   "Kolumner simpleks bervili panjang dengan kelenjar Brunner di submukosa",
    "Gastric pit dangkal",
-   "Skuamous kompleks non-kornifikasi",
+   "Skuamous kompleks non-kornifikasi dengan kelenjar di submukosa, tanpa kripte",
    "Tanpa sel goblet",
    "Kolumner simpleks dengan sel goblet banyak, tanpa vili, kripte Lieberkuhn banyak"
   ],
@@ -1632,7 +1632,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "opsi": [
    "Lipatan mukosa crassum",
    "Folikel limfoid crassum",
-   "Lapisan sirkuler yang menebal",
+   "Lapisan otot sirkuler dalam yang menebal membentuk cincin",
    "Tiga pita penebalan otot longitudinal luar crassum",
    "Kelenjar di submukosa crassum"
   ],
@@ -1650,7 +1650,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "opsi": [
    "Sel goblet tunggal",
    "Kripte yang terpotong melintang, diisi banyak sel goblet",
-   "Folikel limfoid",
+   "Folikel limfoid soliter yang terpotong melintang di mukosa",
    "Vili terpotong",
    "Kelenjar Brunner"
   ],
@@ -1674,9 +1674,9 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   ],
   "kunciIndex": 4,
   "kunci": "Tunika submukosa",
-  "rationale": "**Catatan:** kunci posttest kating menyebut lamina propria mukosa. Literatur: folikel berasal dari lamina propria dan sering menjorok ke submukosa. Bank ini mengikuti PPT.  —  **Diskriminator:** jebakan B/S: serosa selalu salah.",
+  "rationale": "**Catatan:** kunci posttest kating menyebut lamina propria mukosa. Literatur: folikel berasal dari lamina propria dan sering menjorok ke submukosa. Bank ini mengikuti PPT. Kuliah dosen histologi (Suyatmi) juga menempatkan agregasi limfoid kolon di lamina propria, jadi untuk ujian dosen jawab lamina propria.  —  **Diskriminator:** jebakan B/S: serosa selalu salah.",
   "grup": "Appendix & Crassum",
-  "bahas": "**Catatan:** kunci posttest kating menyebut lamina propria mukosa. Literatur: folikel berasal dari lamina propria dan sering menjorok ke submukosa. Bank ini mengikuti PPT.",
+  "bahas": "**Catatan:** kunci posttest kating menyebut lamina propria mukosa. Literatur: folikel berasal dari lamina propria dan sering menjorok ke submukosa. Bank ini mengikuti PPT. Kuliah dosen histologi (Suyatmi) juga menempatkan agregasi limfoid kolon di lamina propria, jadi untuk ujian dosen jawab lamina propria.",
   "diskriminator": "jebakan B/S: serosa selalu salah."
  },
  {
@@ -1685,7 +1685,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "q": "Epitel mukosa rektum adalah…",
   "opsi": [
    "Kolumner simpleks dengan banyak sel goblet",
-   "Skuamous kompleks non-kornifikasi",
+   "Skuamous kompleks non-kornifikasi seperti esofagus",
    "Skuamous berkornifikasi",
    "Transisional",
    "Kolumner bertingkat"
@@ -1702,10 +1702,10 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Rektum & Anus",
   "q": "Epitel mukosa anus adalah…",
   "opsi": [
-   "Kolumner simpleks",
+   "Kolumner simpleks dengan sel goblet yang langsung beralih ke kulit",
    "Kolumner bertingkat",
    "Kubus selapis",
-   "Transisional",
+   "Transisional seperti vesica urinaria, lalu kuboid berlapis",
    "Skuamous kompleks non-kornifikasi yang bertransisi menjadi berkornifikasi"
   ],
   "kunciIndex": 4,
@@ -1739,7 +1739,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "q": "Lamina propria anus mengandung…",
   "opsi": [
    "Kelenjar sudorifera dan pars ekskretorius kelenjar sirkumanal",
-   "Kelenjar Brunner",
+   "Kelenjar Brunner dan plak Peyer yang menembus muskularis mukosa",
    "Plak Peyer",
    "Kelenjar esofagus",
    "Sel parietal"
@@ -1756,7 +1756,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Rektum & Anus",
   "q": "Tunika muskularis anus membentuk…",
   "opsi": [
-   "Sfingter pilorus",
+   "Sfingter pilorus dan taenia coli",
    "Taenia coli",
    "M. sphincter ani internus dan externus",
    "Plica circularis",
@@ -1774,7 +1774,7 @@ window.QUIZ_BANK["ub-1-3-responsi-histo"] = [
   "modul": "Histologi · Rektum & Anus",
   "q": "Pada recto-anal junction, perbedaan paling jelas untuk identifikasi adalah…",
   "opsi": [
-   "Perbedaan jumlah vili",
+   "Perbedaan jumlah dan tinggi vili antara rektum dan anus",
    "Adanya Brunner",
    "Adanya gastric pit",
    "Ketebalan serosa",

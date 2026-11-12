@@ -13,7 +13,7 @@ window.QUIZ_BANK["ub-1-3-pre-digest"] = [
   "modul": "Anatomi · Jejunum-Ileum",
   "q": "Perbedaan karakteristik jejunum dan ileum yang benar adalah",
   "opsi": [
-   "Ileum: diameter lebih lebar dan dinding lebih tebal",
+   "Ileum: diameter lebih lebar, dinding lebih tebal, dan plicae circulares lebih tinggi; jejunum kebalikannya",
    "Ileum: plicae circulares lebih tinggi dan rapat daripada jejunum",
    "Jejunum: vasa recta pendek, arkade banyak, lemak mesenterium banyak",
    "Jejunum: memiliki plak Peyer lebih banyak daripada ileum",
@@ -134,7 +134,7 @@ window.QUIZ_BANK["ub-1-3-pre-digest"] = [
   "q": "Arteri colon transversum 2/3 proksimal dan 1/3 distal secara berurutan adalah",
   "opsi": [
    "A. colica sinistra dan a. sigmoidea",
-   "A. ileocolica dan a. colica media",
+   "A. ileocolica (AMS) dan a. colica media (AMS)",
    "A. colica media dan a. rectalis superior",
    "A. colica media (AMS) dan a. colica sinistra (AMI)",
    "A. colica dextra dan a. colica media"
@@ -195,7 +195,7 @@ window.QUIZ_BANK["ub-1-3-pre-digest"] = [
   "opsi": [
    "A. mesenterica superior dan a. mesenterica inferior",
    "Truncus coeliacus dan a. mesenterica superior",
-   "A. iliaca interna dan a. mesenterica inferior",
+   "A. iliaca interna dan a. mesenterica inferior (cabang aorta)",
    "A. mesenterica superior dan truncus coeliacus",
    "A. mesenterica inferior dan a. iliaca interna"
   ],
@@ -215,7 +215,7 @@ window.QUIZ_BANK["ub-1-3-pre-digest"] = [
   "opsi": [
    "A. gastroduodenalis, a. gastroomentalis dextra, a. cystica",
    "A. colica dextra, a. colica media, aa. jejunales et ileales",
-   "A. gastrica sinistra, a. lienalis, a. hepatica communis",
+   "A. gastrica sinistra, a. lienalis, a. hepatica communis, aa. gastricae breves",
    "A. colica sinistra, aa. sigmoideae, a. rectalis superior",
    "A. rectalis media, a. rectalis inferior, a. pudenda interna"
   ],
