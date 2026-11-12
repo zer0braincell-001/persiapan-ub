@@ -98,6 +98,7 @@ Pemetaan saat ini (kolom "seksi" = posisi lama sebelum UI dirombak):
 Total tab 1.3 = **1353 soal** di 21 bank: aslab 924 (15 bank) + dosen 429 (6 bank). Per mata kuliah (aslab + dosen):
 Anatomi 224 + 97, Biokimia 293 + 125, Fisiologi 252 + 97, Histologi 155 + 110.
 Label topik mapel diperluas: Biokimia "Lipid, karbohidrat & pencernaan", Fisiologi "Termoregulasi & faal pencernaan", Histologi "GIT & organa assesoria".
+Naskah asli/pretest dikelompokkan per mata kuliah: resp-anat, resp-anat-fix, pre-digest → Anatomi; resp-asli, azytralis, latsol → Biokimia; pre-termo/2021/2023/2018 → Fisiologi.
 
 ### Bank materi dosen Blok 1.3 (`ub-1-3-dosen-*`) — 12 Nov 2026
 Satu bank per berkas dosen, **masing-masing < 100 soal** (permintaan user: "dibawah 100", prioritas soal yang kalau
@@ -135,7 +136,6 @@ skrip node kecil sebelum commit: hitung persentase soal yang kuncinya = opsi ter
   mukous); duktus interkalatus parotis "pseudokolumner" (baku: kuboid); hepatosit "RE sedikit"; zona lobulus "permanent response"
   (terminologi lama: permanent repose); otot vesica fellea "paling tebal".
 - Rectum "2/3 bawah retroperitoneal sekunder" (anatomi dosen) tidak dijadikan kunci soal (istilahnya meragukan; 1/3 bawah sebenarnya subperitoneal), hanya muncul sebagai pengecoh.
-Naskah asli/pretest dikelompokkan per mata kuliah: resp-anat, resp-anat-fix, pre-digest → Anatomi; resp-asli, azytralis, latsol → Biokimia; pre-termo/2021/2023/2018 → Fisiologi.
 
 ### Quiz `ub-1-3-responsi-fisio` — Responsi Fisiologi 1.3 (Termoregulasi)
 `data/ub-1-3-responsi-fisio.js`, **179 soal**, 18 modul. Disusun dari tiga PPT aslab
