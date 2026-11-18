@@ -1,6 +1,7 @@
 # persiapan-ub
 
 Baca dulu (urut): `../../INDEX.md` → `../../workflow.md` → `../../projects/persiapan-ub/STATE.md` → `../../projects/persiapan-ub/NEXT.md`.
+(Per 18 Nov 2026 keempat berkas itu TIDAK ada di repo maupun di lingkungan sesi cloud; lanjutkan dengan CLAUDE.md ini saja.)
 
 Project: dashboard "Persiapan UB" — hub web belajar FK, nampung banyak quiz recall per blok (sekarang Blok 1.1, 1.2, dan 1.3).
 Single `index.html` (shell home + daftar quiz + engine quiz), data bank soal per-quiz di `data/<id>.js`.
@@ -94,11 +95,14 @@ Pemetaan saat ini (kolom "seksi" = posisi lama sebelum UI dirombak):
 | PPT Dosen | Faal Sistem Pencernaan / Mekanika (Sinu Andhi) | `ub-1-3-dosen-fisio` | 97 |
 | PPT Dosen | Histologi Tractus Digestivus (Suyatmi) | `ub-1-3-dosen-histo-git` | 63 |
 | PPT Dosen | Histologi Organa Assesoria (Lies) | `ub-1-3-dosen-histo-acc` | 47 |
+| Naskah asli | Responsi Biokimia 2023 | `ub-1-3-resp-2023` | 26 |
+| Naskah asli | Responsi Biokimia 2020 | `ub-1-3-resp-2020` | 30 |
+| Naskah asli | Latsol Responsi 2022 | `ub-1-3-latsol-2022` | 16 |
 
-Total tab 1.3 = **1353 soal** di 21 bank: aslab 924 (15 bank) + dosen 429 (6 bank). Per mata kuliah (aslab + dosen):
-Anatomi 224 + 97, Biokimia 293 + 125, Fisiologi 252 + 97, Histologi 155 + 110.
+Total tab 1.3 = **1425 soal** di 24 bank: aslab 996 (18 bank) + dosen 429 (6 bank). Per mata kuliah (aslab + dosen):
+Anatomi 224 + 97, Biokimia 365 + 125, Fisiologi 252 + 97, Histologi 155 + 110.
 Label topik mapel diperluas: Biokimia "Lipid, karbohidrat & pencernaan", Fisiologi "Termoregulasi & faal pencernaan", Histologi "GIT & organa assesoria".
-Naskah asli/pretest dikelompokkan per mata kuliah: resp-anat, resp-anat-fix, pre-digest → Anatomi; resp-asli, azytralis, latsol → Biokimia; pre-termo/2021/2023/2018 → Fisiologi.
+Naskah asli/pretest dikelompokkan per mata kuliah: resp-anat, resp-anat-fix, pre-digest → Anatomi; resp-asli, azytralis, latsol, resp-2023, resp-2020, latsol-2022 → Biokimia; pre-termo/2021/2023/2018 → Fisiologi.
 
 ### Bank materi dosen Blok 1.3 (`ub-1-3-dosen-*`) — 12 Nov 2026
 Satu bank per berkas dosen, **masing-masing < 100 soal** (permintaan user: "dibawah 100", prioritas soal yang kalau
@@ -270,6 +274,42 @@ menyebut tabelnya wajib dihafal. Ini dipakai sebagai peta bobot dan dikutip di `
   punya dua opsi yang dapat dibenarkan.
 - **LATSOL #8.** Batang soal menanyakan "enzim", padahal jawabannya insulin yang merupakan
   hormon. Kata enzim diganti zat agar tidak menyesatkan.
+
+### Naskah biokimia tambahan (`ub-1-3-resp-2023`, `ub-1-3-resp-2020`, `ub-1-3-latsol-2022`) — 18 Nov 2026
+User minta "langsung jadiin latsol, pure soalnya aja": naskah disajikan apa adanya (konvensi `asliPenuh`/`kunciDari`/`kodeAsli`),
+TIDAK ada soal turunan. Generator di luar repo; data langsung di `data/`.
+| id | berkas sumber (md5 awal) | soal | opsi utuh | penanda kunci |
+|---|---|---|---|---|
+| `ub-1-3-resp-2023` | `Responsi Biokimia 1.3.pdf` "TAHUN 2023" (`0ce3f9ae…`) | 26 | 7 | highlight kuning (`get_drawings`) + teks "Jawab:" |
+| `ub-1-3-resp-2020` | `Responsi Biokimia Blok 1.3 SoalKunci.docx` (`1df6ab60…`) | 30 | 30 | run bold/highlight; batang = numId 10, opsi = numId lain |
+| `ub-1-3-latsol-2022` | `pdf_20221212_201516_0000.pdf` "Latihan Soal Responsi, Azytralis 2022" (`13b9ba16…`) | 16 | 4 | soal di halaman genap, pembahasan di halaman sesudahnya |
+- Naskah 2023 nomor 27 kosong (dikecualikan). Banyak opsi tidak diingat penulis ("lupa"), jadi 19 soal dilengkapi.
+- 2022: sebagian besar isian → pilihan ganda; nomor 10–11 benar/salah tetap **2 opsi** (engine menerimanya). Nomor 2 dan 12 soal yang sama di sumber, dua-duanya dipertahankan.
+  BERBEDA dari `ub-1-3-azytralis` (itu "Soal dan Pembahasan Responsi" AZYTRALIS 2022).
+- 2020 nomor 3 tidak punya batang soal di sumber (batang disusun dari opsi); nomor 9 punya DUA opsi bertanda.
+- Berkas yang ikut dilampirkan tapi BUKAN baru: `1.3 Responsi Biokimia 2.pdf` (`e910ad5b…`) = naskah `ub-1-3-resp-asli`;
+  `SOAL DAN PEMBAHASAN RESPONSI BIOKIMIA BLOK 1.3 1.pdf` (`0a7b5b0e…`) = `ub-1-3-azytralis`.
+- **Kunci kating SALAH** (dikoreksi, `kunciDari:"analisis"`): 2023 #2 sorotan "lipoprotein" untuk bahan glukoneogenesis (→ alanin);
+  2023 #23 "VLDL" untuk pengangkut TAG makanan (→ kilomikron, sesuai tabel PPT aslab).
+- Cacat/konflik ditandai `**Catatan:**`: 2020 #1 semua opsi memuat alkohol (polar) padahal ditanya pelarut nonpolar; 2020 #8 akrolein
+  "kondensasi" (slide: dehidrasi, opsinya tidak ada); 2020 #11 kolesterol netral (slide) vs trigliserida juga netral (Harper);
+  2020 #17 kofaktor Krebs Fe (tidak ada di PPT); 2020 #24 dan 2023 #15 alasan "kulit tipis" terbalik (sama dengan AZYTRALIS #30);
+  2022 #8 pembahasan menyebut arteriosklerosis = penumpukan kalsium (kurang tepat); 2022 #11 glukoneogenesis dari lipid (hanya gliserol);
+  2022 #13 enzim GCU glukosa oksidase (konflik tiga sumber, lihat di atas).
+- Bias panjang opsi soal yang dilengkapi: pilih-terpanjang 1/19 (2023) dan 1/12 (2022, tidak termasuk seri), pilih-terpendek 4/19.
+
+### Temuan PPT aslab biokim sesi 17–18 Nov 2026 (belum masuk bank, dipakai saat mengajar)
+- md5 4 PPT yang dilampirkan sesi ini: Teori Karbohidrat Kayrene `aa5461c7…` (42 slide), Teori Lipid Agib `47724b9d…` (16 slide),
+  Praktikum Lipid Bella `906b6c4f…`, Praktikum Karbohidrat Lintang `a1812900…`. md5 sesi sebelumnya tidak pernah dicatat.
+- Teori KH: hanya contoh **aldosa** (slide 26); ketosa cuma fruktosa, padahal kating 2023 #7 (eritrulosa) dan 2020 #25 (ribulosa) menanyakan ketosa.
+  Slide 38 memakai kriteria ADA (GDP 100–125 prediabetes, ≥126 DM, HbA1c 5,7–6,4 / ≥6,5) — beda dengan angka dosen (GDP 60–110, 2 jam PP < 170).
+  Stereokimia hanya satu kotak di slide 6; 0 soal kating tentang D/L, epimer, anomer.
+- Teori Lipid slide 11: ejaan "lignokerat"/"kerotat" (baku lignoserat/serotat); valerat (5 C) satu-satunya ganjil. Notes slide 12: "asam lenoleat" (= linoleat).
+- Praktikum Lipid: urutan hasil ikatan tak jenuh (paling tidak jenuh) minyak kelapa → margarin → lemak padat, bertentangan dengan
+  komposisi minyak kelapa (kaya laurat/miristat jenuh, angka iod rendah). Kunci responsi tetap urutan slide.
+- **Peta bobot Teori KH** (42 soal dari 5 naskah, latsol 2022 belum dihitung): struktur & klasifikasi 11 (26 %), DM/GLUT/HbA1c 11 (26 %),
+  jalur glikolisis–glikogenolisis–glukoneogenesis–glikogenesis 10 (24 %), serat/laktosa/absorpsi 6 (14 %), Krebs 4 (10 %).
+  Mengajar Teori KH dimulai 17 Nov dari bagian struktur (diminta user: gugus fungsi, lalu D/L-glukosa), lalu asam lemak jenuh/tak jenuh.
 
 ### Pretest Fisiologi Blok 1.3 (`ub-1-3-pre-*`) — naskah asli termoregulasi
 Empat naskah pretest termoregulasi dari angkatan berbeda, disajikan **apa adanya** di seksi
@@ -476,7 +516,8 @@ Soal yang bergantung gambar diberi awalan `[Soal bergambar]`; kalau kuncinya jug
 
 ## ALUR KERJA MENGAJAR — baca ini sebelum menanggapi PPT baru
 
-User adalah mahasiswa kedokteran FK UNS yang sedang menyiapkan UB Blok 1.2.
+User adalah mahasiswa kedokteran FK UNS. Blok berjalan per Nov 2026: **1.3** (responsi aslab + UB). Bagian ini awalnya ditulis untuk Blok 1.2;
+untuk 1.3 bank kating = naskah di tabel tab 1.3 di atas, dan peta bobot dibuat per mata kuliah.
 Pola kerjanya tetap dan sudah terbukti: **user kirim PPT → ajarkan per bagian → buat soal → masukkan ke repo.**
 
 ### Langkah 0 — Peta bobot (WAJIB, sebelum mengajar apa pun)
